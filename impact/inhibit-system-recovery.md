@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1490**|
-|**Objective(s)**| [Impact](https://github.com/MAECProject/malware-behaviors/tree/master/impact)|
+|**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
 |**Related ATT&CK Technique(s)**|[Inhibit System Recovery](https://attack.mitre.org/techniques/T1490/)| 
 
 

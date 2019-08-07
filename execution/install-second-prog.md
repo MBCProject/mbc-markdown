@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**M0023**|
-|**Objective(s)**| [Execution](https://github.com/MAECProject/malware-behaviors/tree/master/execution), [Persistence](https://github.com/MAECProject/malware-behaviors/tree/master/persistence)|
+|**Objective(s)**| [Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
 |**Related ATT&CK Technique(s)**|None|
 
 

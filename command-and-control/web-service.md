@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1102**|
-|**Objective(s)**|[Command and Control](https://github.com/MAECProject/malware-behaviors/tree/master/command-and-control)|
+|**Objective(s)**|[Command and Control](https://github.com/MBCProject/mbc-markdown/tree/master/command-and-control)|
 |**Related ATT&CK Technique(s)**|[Web Service](https://attack.mitre.org/techniques/T1102/)|
 
 Web Service

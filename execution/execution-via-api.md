@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1106**|
-|**Objective(s)**|[Execution](https://github.com/MAECProject/malware-behaviors/tree/master/execution)|
+|**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
 |**Related ATT&CK Technique(s)**|[Execution through API](https://attack.mitre.org/techniques/T1106)|
 
 Execution through API

@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1044**|
-|**Objective(s)**|[Persistence](https://github.com/MAECProject/malware-behaviors/tree/master/persistence), [Privilege Escalation](https://github.com/MAECProject/malware-behaviors/tree/master/privilege-escalation)|
+|**Objective(s)**|[Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence), [Privilege Escalation](https://github.com/MBCProject/mbc-markdown/tree/master/privilege-escalation)|
 |**Related ATT&CK Technique(s)**|[File System Permissions Weakness](https://attack.mitre.org/techniques/T1044)|
 
 File System Permissions Weakness

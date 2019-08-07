@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**E1060**|
-|**Objective(s)**| [Persistence](https://github.com/MAECProject/malware-behaviors/tree/master/persistence)|
+|**Objective(s)**| [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
 |**Related ATT&CK Technique(s)**|[Registry Run Keys / Startup Folder](https://attack.mitre.org/techniques/T1060)|
 
 

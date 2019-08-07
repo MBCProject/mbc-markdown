@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1019**|
-|**Objective(s)**|[Persistence](https://github.com/MAECProject/malware-behaviors/tree/master/persistence)|
+|**Objective(s)**|[Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
 |**Related ATT&CK Technique(s)**|[Component Firmware](https://attack.mitre.org/techniques/T1109/)|
 
 System Firmware

@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**M0004**|
-|**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MAECProject/malware-behaviors/tree/master/anti-behavioral-analysis)|
+|**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis)|
 |**Related ATT&CK Technique(s)**|None|
 
 

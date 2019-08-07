@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1082**|
-|**Objective(s)**| [Discovery](https://github.com/MAECProject/malware-behaviors/tree/master/defense-evasion)|
+|**Objective(s)**| [Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
 |**Related ATT&CK Technique(s)**|[System Information Discovery](https://attack.mitre.org/techniques/T1082)
 
 System Information Discovery

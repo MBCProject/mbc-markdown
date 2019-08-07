@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1012**|
-|**Objective(s)**|[Discovery](https://github.com/MAECProject/malware-behaviors/tree/master/discovery)|
+|**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
 |**Related ATT&CK Technique(s)**|[Query Registry](https://attack.mitre.org/techniques/T1012)|
 
 

@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1075**|
-|**Objective(s)**|[Lateral Movement](https://github.com/MAECProject/malware-behaviors/tree/master/lateral-movement)|
+|**Objective(s)**|[Lateral Movement](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement)|
 |**Related ATT&CK Technique(s)**|[Pass the Hash](https://attack.mitre.org/techniques/T1075)|
 
 

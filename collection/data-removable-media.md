@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1025**|
-|**Objective(s)**|[Collection](https://github.com/MAECProject/malware-behaviors/tree/master/collection)|
+|**Objective(s)**|[Collection](https://github.com/MBCProject/mbc-markdown/tree/master/collection)|
 |**Related ATT&CK Technique(s)**|[Data from Removable Media](https://attack.mitre.org/techniques/T1025/)|
 
 Data from Removable Media

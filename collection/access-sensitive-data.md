@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1409**|
-|**Objective(s)**|[Collection](https://github.com/MAECProject/malware-behaviors/tree/master/collection), [Credential Access](https://github.com/MAECProject/malware-behaviors/tree/master/credential-access)|
+|**Objective(s)**|[Collection](https://github.com/MBCProject/mbc-markdown/tree/master/collection), [Credential Access](https://github.com/MBCProject/mbc-markdown/tree/master/credential-access)|
 |**Related ATT&CK Technique(s)**|[Access Sensitive Data or Credentials in Files](https://attack.mitre.org/techniques/T1409/)|
 
 Access Sensitive Data or Credentials in Files

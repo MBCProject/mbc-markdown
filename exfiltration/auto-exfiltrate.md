@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1020**|
-|**Objective(s)**| [Exfiltration](https://github.com/MAECProject/malware-behaviors/tree/master/exfiltration)|
+|**Objective(s)**| [Exfiltration](https://github.com/MBCProject/mbc-markdown/tree/master/exfiltration)|
 |**Related ATT&CK Technique(s)**|[Automated Exfiltration](https://attack.mitre.org/techniques/T1020/)|
 
 

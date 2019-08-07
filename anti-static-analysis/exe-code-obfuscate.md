@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**M0032**|
-|**Objective(s)**| [Anti-Static Analysis](https://github.com/MAECProject/malware-behaviors/tree/master/anti-static-analysis)|
+|**Objective(s)**| [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis)|
 |**Related ATT&CK Technique(s)**|None|
 
 
@@ -9,7 +9,7 @@ Executable Code Obfuscation
 ===========================
 Executable code uses obfuscation to hinder disassembly and static code analysis. Methods related to *anti-static analysis* are below. The Executable Code Obfuscation behavior is specific to a malware sample's executable code (data and text sections).
 
-For obfuscation behaviors related to non-malware-sample files and information, see ATT&CK: [**Obfuscated Files or Information**](https://attack.mitre.org/techniques/T1027/), under the [Defense Evasion](https://github.com/MAECProject/malware-behaviors/tree/master/defense-evasion) objective.
+For obfuscation behaviors related to non-malware-sample files and information, see ATT&CK: [**Obfuscated Files or Information**](https://attack.mitre.org/techniques/T1027/), under the [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion) objective.
 
 Methods
 -------
@@ -43,8 +43,8 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------------------------|--------|-----------------------------|
-|[**Heriplor Trojan**](https://github.com/MAECProject/malware-behaviors/blob/master/xample-malware/heriplor.md) | March 2019 | The Heriplor Trojan uses API Hashing. [[1]](#1)|
-|[**Geodo**](https://github.com/MAECProject/malware-behaviors/blob/master/xample-malware/geodo.md) |August 2018| Geodo macros are heavily obfuscated with junk functions and string substitutions. [[2]](#2)|
+|[**Heriplor Trojan**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/heriplor.md) | March 2019 | The Heriplor Trojan uses API Hashing. [[1]](#1)|
+|[**Geodo**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/geodo.md) |August 2018| Geodo macros are heavily obfuscated with junk functions and string substitutions. [[2]](#2)|
 
 References
 ----------

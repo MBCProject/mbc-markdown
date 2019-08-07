@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**M0026**|
-|**Objective(s)**|[Lateral Movement](https://github.com/MAECProject/malware-behaviors/tree/master/lateral-movement), [Persistence](https://github.com/MAECProject/malware-behaviors/tree/master/persistence)|
+|**Objective(s)**|[Lateral Movement](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
 |**Related ATT&CK Technique(s)**|None|
 
 Malicious Network Driver

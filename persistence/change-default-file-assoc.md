@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1042**|
-|**Objective(s)**| [Persistence](https://github.com/MAECProject/malware-behaviors/tree/master/persistence)|
+|**Objective(s)**| [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
 |**Related ATT&CK Technique(s)**|[Change Default File Association](https://attack.mitre.org/techniques/T1042)|
 
 

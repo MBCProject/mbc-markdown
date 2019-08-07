@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**E1109**|
-|**Objective(s)**|[Impact](https://github.com/MAECProject/malware-behaviors/tree/master/impact), [Persistence](https://github.com/MAECProject/malware-behaviors/tree/master/persistence), [Defense Evasion](https://github.com/MAECProject/malware-behaviors/tree/master/defense-evasion)|
+|**Objective(s)**|[Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence), [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
 |**Related ATT&CK Technique(s)**|[Component Firmware](https://attack.mitre.org/techniques/T1109/)|
 
 Component Firmware
