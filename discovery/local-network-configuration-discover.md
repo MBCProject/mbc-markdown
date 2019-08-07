@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1422**|
-|**Objective(s)**|[Discovery](https://github.com/MAECProject/malware-behaviors/tree/master/discovery)|
+|**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
 |**Related ATT&CK Technique(s)**|[Local Network Configuration Discovery](https://attack.mitre.org/techniques/T1422)|
 
 

@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1119**|
-|**Objective(s)**|[Collection](https://github.com/MAECProject/malware-behaviors/tree/master/collection)|
+|**Objective(s)**|[Collection](https://github.com/MBCProject/mbc-markdown/tree/master/collection)|
 |**Related ATT&CK Technique(s)**|[Automated Collection](https://attack.mitre.org/techniques/T1119/)|
 
 Automated Collection

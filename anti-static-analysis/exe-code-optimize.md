@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**M0034**|
-|**Objective(s)**| [Anti-Static Analysis](https://github.com/MAECProject/malware-behaviors/tree/master/anti-static-analysis)|
+|**Objective(s)**| [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis)|
 |**Related ATT&CK Technique(s)**|None|
 
 

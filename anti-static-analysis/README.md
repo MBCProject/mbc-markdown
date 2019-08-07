@@ -7,12 +7,12 @@ Behaviors and methods that prevent static analysis or make it more difficult. Si
 
 Two primary resources for anti-static analysis behaviors are [[1]](#1) and [[2]](#2).
 
-* **Call Graph Generation Evasion** [M0010](https://github.com/MAECProject/malware-behaviors/blob/master/anti-static-analysis/evade-call-graph.md)
-* **Disassembler Evasion** [M0012](https://github.com/MAECProject/malware-behaviors/blob/master/anti-static-analysis/evade-disassembler.md)
-* **Executable Code Compression** [E1045](https://github.com/MAECProject/malware-behaviors/blob/master/anti-static-analysis/exe-code-compression.md)
-* **Executable Code Obfuscation** [M0032](https://github.com/MAECProject/malware-behaviors/blob/master/anti-static-analysis/exe-code-obfuscate.md)
-* **Executable Code Optimization** [M0034](https://github.com/MAECProject/malware-behaviors/blob/master/anti-static-analysis/exe-code-optimize.md)
-* **Executable Code Virtualization** [M0008](https://github.com/MAECProject/malware-behaviors/blob/master/anti-static-analysis/exe-code-virtualize.md)
+* **Call Graph Generation Evasion** [M0010](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/evade-call-graph.md)
+* **Disassembler Evasion** [M0012](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/evade-disassembler.md)
+* **Executable Code Compression** [E1045](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-compression.md)
+* **Executable Code Obfuscation** [M0032](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md)
+* **Executable Code Optimization** [M0034](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-optimize.md)
+* **Executable Code Virtualization** [M0008](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-virtualize.md)
 
 
 References

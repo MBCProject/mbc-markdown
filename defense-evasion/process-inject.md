@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1055**|
-|**Objective(s)**| [Defense Evasion](https://github.com/MAECProject/malware-behaviors/tree/master/defense-evasion), [Privilege Excalation](https://github.com/MAECProject/malware-behaviors/tree/master/privilege-escalation)|
+|**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion), [Privilege Excalation](https://github.com/MBCProject/mbc-markdown/tree/master/privilege-escalation)|
 |**Related ATT&CK Technique(s)**|[Process Injection](https://attack.mitre.org/techniques/T1055)|
 
 

@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1032**|
-|**Objective(s)**|[Command and Control](https://github.com/MAECProject/malware-behaviors/tree/master/command-and-control)|
+|**Objective(s)**|[Command and Control](https://github.com/MBCProject/mbc-markdown/tree/master/command-and-control)|
 |**Related ATT&CK Technique(s)**|[Standard Cryptographic Protocol](https://attack.mitre.org/techniques/T1032/)|
 
 Standard Cryptographic Protocol

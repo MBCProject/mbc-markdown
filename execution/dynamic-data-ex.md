@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1173**|
-|**Objective(s)**|[Execution](https://github.com/MAECProject/malware-behaviors/tree/master/execution)|
+|**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
 |**Related ATT&CK Technique(s)**|[Dynamic Data Exchange](https://attack.mitre.org/techniques/T1173)|
 
 Dynamic Data Exchange

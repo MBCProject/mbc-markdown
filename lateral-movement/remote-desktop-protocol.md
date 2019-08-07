@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1076**|
-|**Objective(s)**|[Lateral Movement](https://github.com/MAECProject/malware-behaviors/tree/master/lateral-movement)|
+|**Objective(s)**|[Lateral Movement](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement)|
 |**Related ATT&CK Technique(s)**|[Remote Desktop Protocol](https://attack.mitre.org/techniques/T1076)|
 
 

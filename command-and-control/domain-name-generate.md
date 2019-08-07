@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**M0031:T1483**|
-|**Objective(s)**|[Command and Control](https://github.com/MAECProject/malware-behaviors/tree/master/command-and-control)|
+|**Objective(s)**|[Command and Control](https://github.com/MBCProject/mbc-markdown/tree/master/command-and-control)|
 |**Related ATT&CK Technique(s)**|[Domain Generation Algorithms](https://attack.mitre.org/techniques/T1483/)|
 
 Domain Name Generation
@@ -14,8 +14,8 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|--------|-----------------------------|
-|[**Kraken**](https://github.com/MAECProject/malware-behaviors/blob/master/xample-malware/kraken.md) | April 2008 | Kraken uses a domain generating algorithm to provide new domains. [[2]](#2)|
-|[**Conficker**](https://github.com/MAECProject/malware-behaviors/blob/master/xample-malware/conficker.md)| November 2008| Conficker uses a domain name generator. [[3]](#3)
+|[**Kraken**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/kraken.md) | April 2008 | Kraken uses a domain generating algorithm to provide new domains. [[2]](#2)|
+|[**Conficker**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/conficker.md)| November 2008| Conficker uses a domain name generator. [[3]](#3)
 
 References
 ----------

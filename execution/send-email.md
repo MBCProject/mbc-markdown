@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**M0020**|
-|**Objective(s)**|[Execution](https://github.com/MAECProject/malware-behaviors/tree/master/execution), [Lateral Movement](https://github.com/MAECProject/malware-behaviors/tree/master/lateral-movement)|
+|**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution), [Lateral Movement](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement)|
 |**Related ATT&CK Technique(s)**|[Spearphishing Attachment](https://attack.mitre.org/techniques/T1193), [Spearphishing Link](https://attack.mitre.org/techniques/T1192)|
 
 Send Email

@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**M0016:T1492**|
-|**Objective(s)**| [Impact](https://github.com/MAECProject/malware-behaviors/tree/master/impact)|
+|**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
 |**Related ATT&CK Technique**|[Stored Data Manipulation](https://attack.mitre.org/techniques/T1492/)|
 
 

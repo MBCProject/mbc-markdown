@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**E1195**|
-|**Objective(s)**|[Lateral Movement](https://github.com/MAECProject/malware-behaviors/tree/master/lateral-movement)|
+|**Objective(s)**|[Lateral Movement](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement)|
 |**Related ATT&CK Technique(s)**|[Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)|
 
 Supply Chain Compromise

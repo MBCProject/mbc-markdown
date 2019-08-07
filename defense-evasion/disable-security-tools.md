@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**E1089**|
-|**Objective(s)**|[Defense Evasion](https://github.com/MAECProject/malware-behaviors/tree/master/defense-evasion)|
+|**Objective(s)**|[Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
 |**Related ATT&CK Technique(s)**|[Disabling Security Tools](https://attack.mitre.org/techniques/T1089/)|
 
 Disabling Security Tools
@@ -22,7 +22,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
-|[**WebCobra**](https://github.com/MAECProject/malware-behaviors/blob/master/xample-malware/webcobra.md)| 2018 | Loads ntdll.dll and user32.dll as data files in memory and overwrites the first 8 bytes of those functions, which unhooks the APIs. [[1]](#1)|
+|[**WebCobra**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/webcobra.md)| 2018 | Loads ntdll.dll and user32.dll as data files in memory and overwrites the first 8 bytes of those functions, which unhooks the APIs. [[1]](#1)|
 
 References
 ----------

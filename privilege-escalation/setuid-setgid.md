@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1166**|
-|**Objective(s)**|[Persistence](https://github.com/MAECProject/malware-behaviors/tree/master/privilege-escalation), [Privilege Escalation](https://github.com/MAECProject/malware-behaviors/tree/master/privilege-escalation)|
+|**Objective(s)**|[Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/privilege-escalation), [Privilege Escalation](https://github.com/MBCProject/mbc-markdown/tree/master/privilege-escalation)|
 |**Related ATT&CK Technique(s)**|[Setuid and Setgid](https://attack.mitre.org/techniques/T1166)|
 
 Setuid and Setgid

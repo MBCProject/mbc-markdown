@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1091**|
-|**Objective(s)**|[Credential Access](https://github.com/MAECProject/malware-behaviors/tree/master/credential-access)|
+|**Objective(s)**|[Credential Access](https://github.com/MBCProject/mbc-markdown/tree/master/credential-access)|
 |**Related ATT&CK Technique(s)**|[Replicate Through Removeable Media](https://attack.mitre.org/techniques/T1091/)|
 
 Replicate Through Removable Media

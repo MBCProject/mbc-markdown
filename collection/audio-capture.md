@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1123**|
-|**Objective(s)**|[Collection](https://github.com/MAECProject/malware-behaviors/tree/master/collection)|
+|**Objective(s)**|[Collection](https://github.com/MBCProject/mbc-markdown/tree/master/collection)|
 |**Related ATT&CK Technique(s)**|[Audio Capture](https://attack.mitre.org/techniques/T1123/)|
 
 Audio Capture

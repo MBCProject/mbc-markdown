@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**M0018:T1496**|
-|**Objective(s)**| [Impact](https://github.com/MAECProject/malware-behaviors/tree/master/impact)|
+|**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
 |**Related ATT&CK Technique(s)**|[Resource Hijacking](https://attack.mitre.org/techniques/T1496/)|
 
 
