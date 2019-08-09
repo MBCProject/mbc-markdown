@@ -16,7 +16,7 @@ Malware Examples
 |Name|Date|Description|
 |-----------------------------|--------|-----------------------------|
 | Poison-Ivy | 2005 | After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)| 
-|DarkComet | 2008 | Allows an attacker to control the system via a GUI. |
+| Dark Comet | 2008 | Allows an attacker to control the system via a GUI. |
 
 References
 ----------

@@ -17,7 +17,7 @@ Methods
 * **Break Point Clearing**: Intentionally clearing software or hardware breakpoints.
 * **Byte Stealing**: Move or copy the first bytes / instructions of the original code elsewhere. AKA stolen bytes or code splicing. For example, a packer may incorporate the first few instructions of the original EntryPoint (EP) into its unpacking stub before the tail transition in order to confuse automated unpackers and novice analysts. This can make it harder for rebuilding and may bypass breakpoints if set prematurely.
 * **Change SizeOfImage**: Changinging this value during run time can prevent some debuggers from attaching. Also confuses some unpackers and dumpers.
-* **Code Integrity Check**: Check that the unpacking code is unmodified. Variation exists where unpacking code is part of the “key” used to unpack, therefore any Software Breakpoints during debugging causes unpacking to completely fail or result in malformed unpacked code.
+* **Code Integrity Check**: Check that the unpacking code is unmodified. Variation exists where unpacking code is part of the "key" used to unpack, therefore any Software Breakpoints during debugging causes unpacking to completely fail or result in malformed unpacked code.
 * **Exception Misdirection**: Using exception handling (SEH) to cause flow of program to non-obvious paths.
 * **Get Base Indirectly**: CALL to a POP; finds base of code or data, often the packed version of the code; also used often in obfuscated/packed shellcode.
 * **Guard Pages**: Encrypt blocks of code individually and decrypt temporarily only upon execution.
@@ -40,11 +40,11 @@ Methods
 * **Self-Debugging**: Debug itself to prevent another debugger to be attached.
 * **Self-Unmapping**: UnmapViewOfFile() on itself
 * **Static Linking**: Copy locally the whole content of API code.
-* **Stolen API Code**: A variation of “byte stealing” where the first few instructions or bytes of an API are executed in user code, allowing the IAT to point into the middle of an API function. This confuses IAT rebuilders such as ImpRec and Scylla and may bypass breakpoints.
+* **Stolen API Code**: A variation of "byte stealing" where the first few instructions or bytes of an API are executed in user code, allowing the IAT to point into the middle of an API function. This confuses IAT rebuilders such as ImpRec and Scylla and may bypass breakpoints.
 * **Tampering**: Erase or corrupt specific file parts to prevent rebuilding (header, packer stub, etc.).
 * **Thread Timeout**: Setting dwMilliseconds in WaitForSingleObject to a small number will timeout the thread before the analyst can step through and analyze the code executing in the thread. Modifying this via patch, register, or stack to the value `0xFFFFFFFF`, the **INFINITE** constant circumvents this anti-debugging technique.
 * **TIB Aware**: Accessing thread information (fs:[20h]) for debug detection or process obfuscation.
-* **Use Interrupts**: The unpacking code relies on use of int 1 or int 3, or it uses the interrupt vector table as part of the decryption “key”.
+* **Use Interrupts**: The unpacking code relies on use of int 1 or int 3, or it uses the interrupt vector table as part of the decryption "key".
 
 Malware Examples
 ----------------
