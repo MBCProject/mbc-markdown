@@ -17,7 +17,6 @@ Malware aims to remain on a system regardless of system events.
 * **Hidden Files and Directories** [T1158](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/hidden-files.md)
 * **Hooking** [E1179](https://github.com/MBCProject/mbc-markdown/tree/master/credential-access/hooking.md)
 * **Image File Execution Options Injection** [T1183](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/image-file-exe-opt-inj.md)
-* **Install Secondary Program** [M0023](https://github.com/MBCProject/mbc-markdown/blob/master/execution/install-second-prog.md)
 * **Kernel Modules and Extensions** [T1215](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/kernel-modules-ext.md)
 * **Launch Daemon** [T1160](https://github.com/MBCProject/mbc-markdown/blob/master/privilege-escalation/launch-daemon.md)
 * **Local Job Scheduling** [T1168](https://github.com/MBCProject/mbc-markdown/blob/master/execution/local-job-sch.md)

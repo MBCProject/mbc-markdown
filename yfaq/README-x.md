@@ -7,7 +7,7 @@
 
 ## <a name="relationship"><a/>MBC's Relationship to ATT&CK ##
 
-### We have [ATT&CK](https://attack.mitre.org), so why do we need the [Malware Behavior Catalog?](https://github.com/MBCProject/mbc-markdown) ###
+### We have [ATT&CK](https://attack.mitre.org), so why do we need the [Malware Behavior Catalog?](https://github.com/MAECProject/malware-behaviors) ###
 
 As a publicly available framework, The Malware Behavior Catalog (MBC) aims to directly and explicitly define malware behaviors and code characteristics to support malware analysis-oriented use cases. MBC includes behaviors defined by ATT&CK, as well as those outside ATT&CK's scope. 
 
@@ -17,7 +17,7 @@ Operationally, most malware behaviors are identified via analysis, either direct
 
 It's not feasible for ATT&CK to expand to cover *all* problem spaces, including the malware analysis space. As stated in the ATT&CK design and philosophy document [[1]](#1), "The basis of ATT&CK is the set of individual techniques that represent actions that adversaries can perform to accomplish objectives." This differs from the malware community's need to capture information discovered via *analysis* of malware code. 
 
-While malware sometimes acts as a surrogate for an adversary (i.e., there is overlap between malware and adversary behavior), there are aspects unique to malware, mostly notably anti-analysis characteristics that are only identified during analysis: [Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis) and [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis). Some MBC behaviors may be appropriate for inclusion in ATT&CK, but it is up to the ATT&CK team to identify them and integrate the content.
+While malware sometimes acts as a surrogate for an adversary (i.e., there is overlap between malware and adversary behavior), there are aspects unique to malware, mostly notably anti-analysis characteristics that are only identified during analysis: [Anti-Behavioral Analysis](https://github.com/MAECProject/malware-behaviors/tree/master/anti-behavioral-analysis) and [Anti-Static Analysis](https://github.com/MAECProject/malware-behaviors/tree/master/anti-static-analysis). Some MBC behaviors may be appropriate for inclusion in ATT&CK, but it is up to the ATT&CK team to identify them and integrate the content.
 
 ### Why does MBC include ATT&CK Techniques? Why not create a stand-alone supplement to ATT&CK? ###
 
@@ -29,11 +29,11 @@ No. Given that MBC aims to serve as a model and test case for how ATT&CK can be 
 
 ### Will MBC be updated when ATT&CK is updated? ###
 
-Yes. New and updated ATT&CK content supporting malware analysis use cases will be integrated into MBC. When a new ATT&CK Technique is defined *after* an MBC Behavior has been defined, the preexisting MBC identifier will be preserved and the ATT&CK identifier will be appended (e.g., M0123:T1234). See the [Identifier](https://github.com/MBCProject/mbc-markdown#ids) section for details.
+Yes. New and updated ATT&CK content supporting malware analysis use cases will be integrated into MBC. When a new ATT&CK Technique is defined *after* an MBC Behavior has been defined, the preexisting MBC identifier will be preserved and the ATT&CK identifier will be appended (e.g., M0123:T1234). See the [Identifier](https://github.com/MAECProject/malware-behaviors#ids) section for details.
 
 ### Will MBC *always* remain distinct from ATT&CK, or someday might its content be merged into ATT&CK? ###
 
-We can't predict what will happen in the long run, but currently there are no plans to merge MBC into ATT&CK. Over time, new ATT&CK techniques will be defined and some may directly pertain to malware in expanded ways. For example, the April 2019 ATT&CK update included a new technique - [Virtualization/Sandbox Evasion](https://attack.mitre.org/techniques/T1497/) - which may seem to blur the line between ATT&CK and MBC. However, the technique focuses on checks made by a human adversary (although malware is mentioned), and it's defined in the context of Defense Evasion and Discovery. Two related MBC behaviors pertain to malware anti-analysis objectives: [[Sandbox Detection]](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/detect-sandbox.md) and [[Virtual Machine Detection]](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/detect-vm.md) (ATT&CK doesn't define anti-analysis tactics). 
+We can't predict what will happen in the long run, but currently there are no plans to merge MBC into ATT&CK. Over time, new ATT&CK techniques will be defined and some may directly pertain to malware in expanded ways. For example, the April 2019 ATT&CK update included a new technique - [Virtualization/Sandbox Evasion](https://attack.mitre.org/techniques/T1497/) - which may seem to blur the line between ATT&CK and MBC. However, the technique focuses on checks made by a human adversary (although malware is mentioned), and it's defined in the context of Defense Evasion and Discovery. Two related MBC behaviors pertain to malware anti-analysis objectives: [[Sandbox Detection]](https://github.com/MAECProject/malware-behaviors/blob/master/anti-behavioral-analysis/detect-sandbox.md) and [[Virtual Machine Detection]](https://github.com/MAECProject/malware-behaviors/blob/master/anti-behavioral-analysis/detect-vm.md) (ATT&CK doesn't define anti-analysis tactics). 
 
 ##<a name="origin">MBC Origins ##
 
@@ -47,20 +47,20 @@ After noting clear overlap between EMA and ATT&CK, we initially decided that EMA
 
 ### How were MBC Behaviors identified? ###
 
-Many MBC Behaviors stemmed from the MAEC and EMA work, with the collection evolving to mesh with ATT&CK Tactics and Techniques. We also identified MBC Behaviors by studying publicly available analyses, reports, and output of automated analysis engines (some of which map behavior indicators to ATT&CK). Such resources enabled identification of malware-related ATT&CK Techniques, as well as definition of new Behaviors for results that could not be mapped to ATT&CK. Also, EMA Behaviors for which a real-world example could not be found are captured as proof-of-concept in the [Theoretical Behavior List](https://github.com/MBCProject/mbc-markdown/tree/master/theoretical-behaviors). 
+Many MBC Behaviors stemmed from the MAEC and EMA work, with the collection evolving to mesh with ATT&CK Tactics and Techniques. We also identified MBC Behaviors by studying publicly available analyses, reports, and output of automated analysis engines (some of which map behavior indicators to ATT&CK). Such resources enabled identification of malware-related ATT&CK Techniques, as well as definition of new Behaviors for results that could not be mapped to ATT&CK. Also, EMA Behaviors for which a real-world example could not be found are captured as proof-of-concept in the [Theoretical Behavior List](https://github.com/MAECProject/malware-behaviors/tree/master/theoretical-behaviors). 
 
 ##<a name="content">MBC Content ##
 
-### Why aren't ATT&CK [Initial Access](https://github.com/MBCProject/mbc-markdown/tree/master/initial-access) Techniques included in MBC? ###
+### Why aren't ATT&CK [Initial Access](https://github.com/MAECProject/malware-behaviors/tree/master/initial-access) Techniques included in MBC? ###
 
 Initial Access - the way malware gains an initial foothold within a system - is not typically determined by analyzing the malware's code. For example, in ATT&CK's [Spearphishing Attachment](https://attack.mitre.org/techniques/T1193/) Technique, the attachment may be a malicious executable file, but the *code* of the attached file's isn't related to its email delivery. This is not to say an analyst can't surmise initial access by studying a malware instance, but determining initial access requires evidence beyond the malware's code. 
 
-Some malware self-replicates or distributes other malware, but in keeping with MBC's *malware, code-oriented perspective*, such behaviors would be associated with the [Lateral Movement](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement/), [Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution/), and/or [Effects](https://github.com/MBCProject/mbc-markdown/tree/master/effects/) Objectives in MBC. For example, if malware sends spearphishing email, its behavior would be captured by the [Send Email](https://github.com/MBCProject/mbc-markdown/tree/master/execution/send-email.md) Behavior, which is associated with execution and lateral movement.
+Some malware self-replicates or distributes other malware, but in keeping with MBC's *malware, code-oriented perspective*, such behaviors would be associated with the [Lateral Movement](https://github.com/MAECProject/malware-behaviors/tree/master/lateral-movement/), [Execution](https://github.com/MAECProject/malware-behaviors/tree/master/execution/), and/or [Effects](https://github.com/MAECProject/malware-behaviors/tree/master/effects/) Objectives in MBC. For example, if malware sends spearphishing email, its behavior would be captured by the [Send Email](https://github.com/MAECProject/malware-behaviors/tree/master/execution/send-email.md) Behavior, which is associated with execution and lateral movement.
 
 ### Why aren't [PRE-ATT&CK](https://attack.mitre.org/techniques/pre/) Techniques used by malware authors included in MBC? ###
 **For example, why doesn't the [Obfuscate or Encrypt Code](https://attack.mitre.org/techniques/T1319/) Technique under the [Adversary OPSEC](https://attack.mitre.org/tactics/TA0021/) Tactic apply to malware showing signs of anti-analysis techniques?**
 
-PRE_ATT&CK is independent of technology and models an adversary's behavior as they attempt to gain access. By contrast, MBC captures behaviors associated with malware executable *code*. It does not capture human behaviors, even if the behaviors relate to malware. (Malware with obfuscated code, which makes analysis difficult, would be captured using the MBC [Executable Code Obfuscation](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md) Behavior.) 
+PRE_ATT&CK is independent of technology and models an adversary's behavior as they attempt to gain access. By contrast, MBC captures behaviors associated with malware executable *code*. It does not capture human behaviors, even if the behaviors relate to malware. (Malware with obfuscated code, which makes analysis difficult, would be captured using the MBC [Executable Code Obfuscation](https://github.com/MAECProject/malware-behaviors/blob/master/anti-static-analysis/exe-code-obfuscate.md) Behavior.) 
 
 ### ATT&CK defines "tactics" and "techniques." Why does MBC define "objectives" and "behaviors" instead? ###
 
@@ -74,7 +74,7 @@ To support malware analysis use cases, we didn't see value in distinguishing bet
 
 ATT&CK models the lifecycle of a human adversary, which results in an ordering of tactics (not necessarily strict), starting with Initial Access and ending with Impact. Software (malware code) executes sequentially but from a timing, lifecycle perspective, it executes simultaneously. Therefore, MBC objectives are presented alphabetically, and MBC doesn't provide a model in the same sense as ATT&CK: rather MBC captures an unordered collection of objections and behaviors applicable to a malware sample.
 
-### Some MBC Behaviors seem to be characteristics of code, not actual behaviors (e.g., [Executable Code Optimization](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-optimize.md)). Why are they captured and why are they called behaviors? ###
+### Some MBC Behaviors seem to be characteristics of code, not actual behaviors (e.g., [Executable Code Optimization](https://github.com/MAECProject/malware-behaviors/blob/master/anti-static-analysis/exe-code-optimize.md)). Why are they captured and why are they called behaviors? ###
 
 MBC captures traits of malware that are evident through analysis and that support one or more malware analysis use cases. For example, capturing a characteristic such as Executable Code Optimization supports use cases such as attribution and detection by indicating that optimization has been used to make the code harder to analyze. Such "characteristics" are called "behaviors" to simplify terminology.
 
@@ -96,7 +96,7 @@ This means additional MBC Techniques must sometimes be defined. For example, MBC
 
 Yes. Sometimes an ATT&CK Technique does not provide enough granularity for malware analysis-oriented use cases; therefore, multiple, more granular MBC Behaviors may link to the same ATT&CK Technique. 
 
-For example, MBC defines separate behaviors for detecting sandboxes ([Sandbox Detection](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/detect-sandbox.md)) and virtual machines ([Virtual Machine Detection](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/detect-vm.md)). When ATT&CK was updated to include the  [Virtualization/Sandbox Evasion](https://attack.mitre.org/techniques/T1497/) Technique, which includes detection of virtualization and sandboxes (although not obstruction in the sense of MBC's Dynamic Analysis Evasion behavior), the MBC Behaviors were not combined. Rather, both were updated to show a relationship to the new ATT&CK Technique.
+For example, MBC defines separate behaviors for detecting sandboxes ([Sandbox Detection](https://github.com/MAECProject/malware-behaviors/blob/master/anti-behavioral-analysis/detect-sandbox.md)) and virtual machines ([Virtual Machine Detection](https://github.com/MAECProject/malware-behaviors/blob/master/anti-behavioral-analysis/detect-vm.md)). When ATT&CK was updated to include the  [Virtualization/Sandbox Evasion](https://attack.mitre.org/techniques/T1497/) Technique, which includes detection of virtualization and sandboxes (although not obstruction in the sense of MBC's Dynamic Analysis Evasion behavior), the MBC Behaviors were not combined. Rather, both were updated to show a relationship to the new ATT&CK Technique.
 
 ##<a name="use">Using MBC ##
 
@@ -106,19 +106,14 @@ MBC enables consistency in reporting and consequently, supports analytics and si
 
 ### Can Behaviors be used without Objectives? Or must Objectives and Behaviors be specified in pairs? ###
 
-Objectives correspond to the intentions behind malware Behaviors. For example, malware may use [Hooking](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/hooking.md) to load and execute code within the context of another process either to hide its execution (defense evasion), to gain elevated privileges (privilege escalation), or to access the process's memory (credential access). Because it's not always possible to know intent, Behaviors can be used without Objectives. For example, automated sandbox analysis may indicate hooking behavior without corresponding information on intent, in which case objectives might not be specified, or *all* objectives associated with a Behavior might be noted.
+Objectives correspond to the intentions behind malware Behaviors. For example, malware may use [Hooking](https://github.com/MAECProject/malware-behaviors/blob/master/credential-access/hooking.md) to load and execute code within the context of another process either to hide its execution (defense evasion), to gain elevated privileges (privilege escalation), or to access the process's memory (credential access). Because it's not always possible to know intent, Behaviors can be used without Objectives. For example, automated sandbox analysis may indicate hooking behavior without corresponding information on intent, in which case objectives might not be specified, or *all* objectives associated with a Behavior might be noted.
 
 ### Can malware behaviors identified via analysis map to multiple MBC Behaviors, or should correspondence be one-to-one? ###
 
-A single malware behavior should map to a single MBC behavior. If this is not the case for an identified behavior, then it should be considered to see whether it can be broken down into smaller components that lead to one-to-one mappings.
+A single malware behavior should map to a single MBC behavior (which may be related to multiple objectives). If this is not immediately the case, then a behavior should be considered to see whether it can be broken down into smaller components, which lead to one-to-one mapping.
 
-For example, what might be considered a single behavior taken from [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md) reads, "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system." This multi-component behavior can be broken into three MBC behaviors:
+For example, the behavior taken from [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/blackenergy.md)
 
-* [Persistence: Redundant Access](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/redundant-access.md) ("installs two instances of itself")
-
-* [Discovery: Process Discovery](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/process-discover.md) ("monitors whether the first instance is still active)
-
-* [Execution: Install Additional Program](https://github.com/MBCProject/mbc-markdown/blob/master/execution/install-second-prog.md) ("reinstalls it if it has been removed")
 
 ### How are MBC behaviors at different levels of abstraction associated?###
 
@@ -133,11 +128,11 @@ MBC aims to support the malware analysis community so eventually, Methods could 
 
 ### If malware displays only some attributes defining a Behavior, it is correct to say it exhibits the Behavior? ###
 
-Yes. In many cases, malware will display only a subset of a Behavior's attributes. For example, the [System Information Discovery](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/system-info-discovery.md) Behavior includes discovery of a hostname, operating system version, patch information, processor architecture, etc. Malware that gathers only a hostname would still be said to exhibit the System Information Discovery Behavior.
+Yes. In many cases, malware will display only a subset of a Behavior's attributes. For example, the [System Information Discovery](https://github.com/MAECProject/malware-behaviors/blob/master/discovery/system-info-discovery.md) Behavior includes discovery of a hostname, operating system version, patch information, processor architecture, etc. Malware that gathers only a hostname would still be said to exhibit the System Information Discovery Behavior.
 
 ### What if no MBC Behavior is defined for something I need to capture? ###
 
-The MBC will evolve to better support the malware analysis community. If you have a suggestion for a new behavior (or any content change), please open an [issue](https://github.com/MBCProject/mbc-markdown/issues) on GitHub.
+The MBC will evolve to better support the malware analysis community. If you have a suggestion for a new behavior (or any content change), please open an [issue](https://github.com/MAECProject/malware-behaviors/issues) on GitHub.
 
 References
 ----------

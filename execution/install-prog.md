@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**M0023**|
-|**Objective(s)**| [Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
+|**Objective(s)**| [Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
 |**Related ATT&CK Technique(s)**|None|
 
 
@@ -23,7 +23,7 @@ Malware Examples
 |-----------------------------|--------|-----------------------------|
 | WebCobra| November 2018| Drops software to mine for cryptocurrency. [[1]](#1)|
 | Geneio| August 2015| Tricks OS X keychain to create application files. |
-| GoBotKR | July 2019 | Installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system. [[3]](#3)|
+| GoBotKR | July 2019 | GotBotKR reinstalls its running instance if it is removed. [[3]](#3)|
 
 References
 ----------

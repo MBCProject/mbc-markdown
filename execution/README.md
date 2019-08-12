@@ -12,7 +12,7 @@ Behaviors that execute code on a system to achieve secondary objectives, in conj
 * **Execution through API** [T1106](https://github.com/MBCProject/mbc-markdown/blob/master/execution/execution-via-api.md)
 * **Execution through Module Load** [T1129](https://github.com/MBCProject/mbc-markdown/blob/master/execution/execution-via-module-load.md)
 * **Exploit Software** [E1203](https://github.com/MBCProject/mbc-markdown/blob/master/execution/exploit-software.md)
-* **Install Additional Program** [M0023](https://github.com/MBCProject/mbc-markdown/blob/master/execution/install-second-prog.md)
+* **Install Additional Program** [M0023](https://github.com/MBCProject/mbc-markdown/blob/master/execution/install-prog.md)
 * **Local Job Scheduling** [T1168](https://github.com/MBCProject/mbc-markdown/blob/master/execution/local-job-sch.md)
 * **Power Shell** [T1086](https://github.com/MBCProject/mbc-markdown/blob/master/execution/power-shell.md)
 * **Prevent Concurrent Execution** [M0024](https://github.com/MBCProject/mbc-markdown/blob/master/execution/prevent-concurrent-exe.md)
