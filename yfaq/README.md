@@ -49,7 +49,7 @@ After noting clear overlap between EMA and ATT&CK, we initially decided that EMA
 
 Many MBC Behaviors stemmed from the MAEC and EMA work, with the collection evolving to mesh with ATT&CK Tactics and Techniques. We also identified MBC Behaviors by studying publicly available analyses, reports, and output of automated analysis engines (some of which map behavior indicators to ATT&CK). Such resources enabled identification of malware-related ATT&CK Techniques, as well as definition of new Behaviors for results that could not be mapped to ATT&CK. Also, EMA Behaviors for which a real-world example could not be found are captured as proof-of-concept in the [Theoretical Behavior List](https://github.com/MBCProject/mbc-markdown/tree/master/theoretical-behaviors). 
 
-##<a name="content"></a>MBC Content ##
+## <a name="content"></a>MBC Content ##
 
 ### Why aren't ATT&CK [Initial Access](https://github.com/MBCProject/mbc-markdown/tree/master/initial-access) Techniques included in MBC? ###
 
@@ -98,7 +98,7 @@ Yes. Sometimes an ATT&CK Technique does not provide enough granularity for malwa
 
 For example, MBC defines separate behaviors for detecting sandboxes ([Sandbox Detection](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/detect-sandbox.md)) and virtual machines ([Virtual Machine Detection](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/detect-vm.md)). When ATT&CK was updated to include the  [Virtualization/Sandbox Evasion](https://attack.mitre.org/techniques/T1497/) Technique, which includes detection of virtualization and sandboxes (although not obstruction in the sense of MBC's Dynamic Analysis Evasion behavior), the MBC Behaviors were not combined. Rather, both were updated to show a relationship to the new ATT&CK Technique.
 
-##<a name="use"></a>Using MBC ##
+## <a name="use"></a>Using MBC ##
 
 ### What are the primary use cases of MBC? ###
 
