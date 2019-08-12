@@ -122,7 +122,7 @@ For example, a [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master
 
 ### How are MBC behaviors, possibly at different levels of abstraction, associated? ###
 
-MBC does not define relationships between behaviors, so association of behaviors must be done at the reporting level. The [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md) example directly above is a good example of how multiple (three) behaviors can be associated by the human-oriented text, "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2).
+MBC does not define relationships between behaviors, so association of behaviors must be done at the reporting level. The [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md) example directly above illustrates how multiple (three) behaviors can be associated by the human-oriented text: "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2).
 
 
 ### How should information in the Methods section be used? ###
