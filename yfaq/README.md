@@ -110,15 +110,15 @@ Objectives correspond to the intentions behind malware Behaviors. For example, m
 
 ### Can malware behaviors identified via analysis map to multiple MBC Behaviors, or should correspondence be one-to-one? ###
 
-Each malware behavior identified during analysis should map to a single MBC behavior. If this is not the case, the the behavior should be considered to see whether it can be broken into smaller components that lead to one-to-one mappings.
+Each malware behavior identified during analysis should map to a single MBC behavior. If this is not the case, the reported behavior should be considered to see whether it can be broken into smaller components that lead to one-to-one mappings.
 
-For example, a [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md) report reads, "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2). Initially, one might think this is a single behavior, but it should be broken apart and mapped into three MBC behaviors:
+For example, a [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md) report reads, "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2). Initially, one might think this is a single behavior, but it can be broken apart and mapped into three MBC behaviors:
 
 * [Persistence: Redundant Access](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/redundant-access.md) ("installs two instances of itself")
 
-* [Discovery: Process Discovery](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/process-discover.md) ("monitors whether the first instance is still active)
+* [Discovery: Process Discovery](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/process-discover.md) ("monitors whether the first instance is still active")
 
-* [Execution: Install Additional Program](https://github.com/MBCProject/mbc-markdown/blob/master/execution/install-second-prog.md) ("reinstalls it if it has been removed")
+* [Execution: Install Additional Program](https://github.com/MBCProject/mbc-markdown/blob/master/execution/install-second-prog.md) ("reinstalls [itself] if it has been removed")
 
 ### How are MBC behaviors at different levels of abstraction associated?###
 
