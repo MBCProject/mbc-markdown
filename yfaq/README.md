@@ -110,9 +110,9 @@ Objectives correspond to the intentions behind malware Behaviors. For example, m
 
 ### Can malware behaviors identified via analysis map to multiple MBC Behaviors, or should correspondence be one-to-one? ###
 
-A single malware behavior should map to a single MBC behavior. If this is not the case for an identified behavior, then it should be considered to see whether it can be broken down into smaller components that lead to one-to-one mappings.
+A single malware behavior should map to a single MBC behavior. If this is not the case, the the behavior should be considered to see whether it can be broken into smaller components that lead to one-to-one mappings.
 
-For example, what might be considered a single behavior taken from [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md) reads, "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system." This multi-component behavior can be broken into three MBC behaviors:
+For example, a [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md) report reads, "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2). Initially, this might be considered a single behavior, but it can be broken into three MBC behaviors:
 
 * [Persistence: Redundant Access](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/redundant-access.md) ("installs two instances of itself")
 
@@ -142,3 +142,5 @@ The MBC will evolve to better support the malware analysis community. If you hav
 References
 ----------
 <a name="1">[1]</a> MITRE ATT&CK(TM): Design and Philosophy, https://www.mitre.org/sites/default/files/publications/pr-18-0944-11-mitre-attack-design-and-philosophy.pdf
+
+<a name="2">[2]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
