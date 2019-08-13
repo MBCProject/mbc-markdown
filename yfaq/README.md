@@ -4,6 +4,7 @@
 * [MBC Origins](./#origin)
 * [MBC Content](./#content)
 * [Using MBC](./#use)
+* [What's Next for MBC?](./#next)
 
 ## <a name="relationship"><a/>MBC's Relationship to ATT&CK ##
 
@@ -124,7 +125,6 @@ For example, a [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master
 
 MBC does not define relationships between behaviors, so association of behaviors must be done at the reporting level. The [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md) example directly above illustrates how multiple (three) behaviors can be associated by the human-oriented text: "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2).
 
-
 ### How should information in the Methods section be used? ###
 
 Methods are variations of behaviors and are provided to help explain Behaviors. Methods aren't intended to be referenced in analyses in the same way that Behaviors are, in part because it would be hard to enumerate all Methods associated with a Behavior. 
@@ -138,6 +138,25 @@ Yes. In many cases, malware will display only a subset of a Behavior's attribute
 ### What if no MBC Behavior is defined for something I need to capture? ###
 
 The MBC will evolve to better support the malware analysis community. If you have a suggestion for a new behavior (or any content change), please open an [issue](https://github.com/MBCProject/mbc-markdown/issues) on GitHub.
+
+## <a name="relationship"><a/>What's Next for MBC? ##
+
+### MBC Mailing List ###
+
+To join the MBC mailing list, please send a request to mbc@mitre.org.
+
+### STIX 2 Representation ###
+
+MBC content is now available in STIX 2 format - see the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository.
+
+### MBC Website ###
+
+An MBC website will replace markdown documents by the end of 2019.
+
+### Code Snippets ###
+
+In addition to associating malware samples to behaviors, we plan to capture code snippets that illustrate behavior implementation.
+
 
 References
 ----------
