@@ -141,21 +141,13 @@ The MBC will evolve to better support the malware analysis community. If you hav
 
 ## <a name="next"><a/>What's Next for MBC? ##
 
-### MBC Mailing List ###
+* **MBC Mailing List** - To join the MBC mailing list, please send a request to mbc@mitre.org.
 
-To join the MBC mailing list, please send a request to mbc@mitre.org.
+* **STIX 2 Representation** - MBC content is now available in STIX 2 format - see the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository.
 
-### STIX 2 Representation ###
+* **MBC Website** - An MBC website will replace markdown documents by the end of 2019.
 
-MBC content is now available in STIX 2 format - see the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository.
-
-### MBC Website ###
-
-An MBC website will replace markdown documents by the end of 2019.
-
-### Code Snippets ###
-
-In addition to associating malware samples to behaviors, we plan to capture code snippets that illustrate behavior implementation.
+* **Code Snippets** - In addition to associating malware samples to behaviors, we plan to capture code snippets that illustrate behavior implementation.
 
 
 References
