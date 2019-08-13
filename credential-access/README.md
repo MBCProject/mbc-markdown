@@ -15,4 +15,3 @@ Behaviors to obtain credential access, allowing it or its underlying threat acto
 * **LLMNR/NBT-NS Poisoning** [T1171](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/LLMNR-poison.md)
 * **Network Sniffing** [T1040](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/network-sniff.md)
 * **Private Keys** [T1145](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/private-keys.md)
-* **Replication Through Removable Media** [T1091](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/replicate-remove-media.md)
