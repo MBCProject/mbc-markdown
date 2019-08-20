@@ -6,6 +6,6 @@
 
 Scripting
 =========
-Malware may use scripts to bypass process monitoring mechanisms (e.g., VBScript). Malicious scripts can be embedded in Microsoft Office documents, which will execute when the document is opened.
+Malware may use scripts to bypass process monitoring mechanisms (e.g., VBScript). Malicious scripts can be embedded in Microsoft Office documents, which will execute when the document is opened or when the user enables and runs the macro.
 
 **See ATT&CK Technique:** [**Scripting**](https://attack.mitre.org/techniques/T1064).
