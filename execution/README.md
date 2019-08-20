@@ -3,7 +3,7 @@
 |**ID**|**M9009**|
 
 # Execution #
-Behaviors that execute code on a system to achieve secondary objectives, in conjunction with the malware primary objectives.
+Behaviors that execute code on a system to achieve a variety of goals.
 
 * **AppleScript** [T1155](https://github.com/MBCProject/mbc-markdown/blob/master/execution/applescript.md)
 * **Command-Line Interface** [T1059](https://github.com/MBCProject/mbc-markdown/blob/master/execution/command-line.md)
