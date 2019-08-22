@@ -77,7 +77,9 @@ ATT&CK models the lifecycle of a human adversary, which results in an ordering o
 
 ### Some MBC Behaviors seem to be characteristics of code, not actual behaviors (e.g., [Executable Code Optimization](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-optimize.md)). Why are they captured and why are they called behaviors? ###
 
-MBC captures traits of malware that are evident through analysis and that support one or more malware analysis use cases. For example, capturing a characteristic such as Executable Code Optimization supports use cases such as attribution and detection by indicating that optimization has been used to make the code harder to analyze. Such "characteristics" are called "behaviors" to simplify terminology.
+MBC captures traits of malware that are evident through analysis and that support one or more malware analysis use cases. For example, capturing a characteristic such as Executable Code Optimization supports use cases such as attribution and detection by indicating that optimization has been used to make the code harder to analyze. Such "characteristics" are called "behaviors" to simplify terminology. 
+
+Furthermore, while characteristics are evident by looking at the code, they may not relate to specific code snippets. For example, one may say that the malware has been obfuscated ([Executable Code Obfuscation](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md) ), which can be determined via a global view of the sample. 
 
 ### Do malware behaviors and adversary behaviors overlap? ###
 
@@ -107,13 +109,13 @@ MBC enables consistency in reporting and consequently, supports analytics and si
 
 ### Can Behaviors be used without Objectives? Or must Objectives and Behaviors be specified in pairs? ###
 
-Objectives correspond to the intentions behind malware Behaviors. For example, malware may use [Hooking](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/hooking.md) to load and execute code within the context of another process either to hide its execution (defense evasion), to gain elevated privileges (privilege escalation), or to access the process's memory (credential access). Because it's not always possible to know intent, Behaviors can be used without Objectives. For example, automated sandbox analysis may indicate hooking behavior without corresponding information on intent, in which case objectives might not be specified, or *all* objectives associated with a Behavior might be noted.
+Objectives correspond to the intentions behind malware behaviors. For example, malware may use [Hooking](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/hooking.md) to load and execute code within the context of another process either to hide its execution (defense evasion), to gain elevated privileges (privilege escalation), or to access the process's memory (credential access). Because it's not always possible to know intent, behaviors can be used without Objectives. For example, automated sandbox analysis may indicate hooking behavior without corresponding information on intent, in which case objectives might not be specified, or *all* objectives associated with a behavior might be noted.
 
-### Can malware behaviors identified via analysis map to multiple MBC Behaviors, or should correspondence be one-to-one? ###
+### Can malware behaviors identified via manual analysis map to multiple MBC behaviors, or should correspondence be one-to-one? ###
 
-Each malware behavior identified during analysis should map to a single MBC behavior. If this is not the case, the reported behavior should be considered to see whether it can be broken into smaller components that lead to one-to-one mappings.
+Each malware behavior identified during analysis and associated with a specific code snippet should map to a single MBC behavior. If multiple behaviors seem to apply, the reported behavior should be considered to see whether it can be broken into smaller components that lead to one-to-one mappings.
 
-For example, a [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md) report reads, "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2). Initially, one might think this is a single behavior, but it can be broken apart and mapped into three MBC behaviors:
+For example, a [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md) report reflecting manual analysis reads, "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2). Initially, one might think this is a single behavior, but it can be broken apart and mapped into three MBC behaviors:
 
 * [Persistence: Redundant Access](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/redundant-access.md) ("installs two instances of itself")
 
@@ -124,6 +126,10 @@ For example, a [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master
 ### How are MBC behaviors, possibly at different levels of abstraction, associated? ###
 
 MBC does not define relationships between behaviors, so association of behaviors must be done at the reporting level. The [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md) example directly above illustrates how multiple (three) behaviors can be associated by the human-oriented text: "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2).
+
+### Can malware behaviors identified by automated sandboxes and tools map to multiple MBC behaviors or should correspondence be one-to-one? ###
+
+Behaviors identified by automated tools are often intentionally broad to give a higher level overview of the malware sample's behavior. Broad behaviors will often map to multiple MBC behaviors. For example, if a tool reports that the Armadillo was used on the sample, both [Executable Code Obfuscation](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md) and [Executable Code Compression](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-compression.md) apply.
 
 ### How should information in the Methods section be used? ###
 
