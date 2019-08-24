@@ -21,6 +21,9 @@ Methods
    * *Thunk Code Insertion*: Variation on Jump Insertion. Used by some compilers for user-generated functions.
    * *Junk Code Insertion*: Insert dummy code between relevant opcodes. Can make signature writing more complex.
 * **Data Value Obfuscation**: Obfuscate data values through indirection of local or global variables. For example, the instruction *if (a == 0) do x* can be obfuscated by setting a global variable, *Z*, to zero and using it in the instruction: *if (a==Z) do x*.  [NEEDS REVIEW]
+* **Encoding**:
+   * *Standard Encoding*: A standard algorithm, such as base64 encoding, is used to encode the malware sample.
+   * *Custom Encoding*: A custom algorithm is used to encode the malware sample.
 * **Encryption**: 
    * *Standard Encryption*: A standard algorithm, such as Rijndael/AES, DES, RC4, is used to encrypt an executable file. Encryption hinders static analysis of malware code. Also known as **Code Encryption in File**.
    * *Standard Encryption of Code*: A standard encryption algorithm is used to encrypt a file's executable code, but not necessarily the file's data. 
