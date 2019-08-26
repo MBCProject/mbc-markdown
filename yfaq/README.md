@@ -107,9 +107,11 @@ For example, MBC defines separate behaviors for detecting sandboxes ([Sandbox De
 
 MBC enables consistency in reporting and consequently, supports analytics and similarity analysis. MBC's well-defined behaviors also support the definition of indicator signatures for detecting behaviors during analysis.
 
-### Can behaviors be used without objectives? Or must objectives and behaviors be specified in pairs? ###
+### Can behaviors be used without objectives? Can objectives be used without behaviors? Or must objectives and behaviors be specified in pairs? ###
 
-Objectives correspond to the intentions behind malware behaviors. For example, malware may use [Hooking](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/hooking.md) to load and execute code within the context of another process either to hide its execution (defense evasion), to gain elevated privileges (privilege escalation), or to access the process's memory (credential access). Because it's not always possible to know intent, behaviors can be used without objectives. For example, automated sandbox analysis may indicate hooking behavior without corresponding information on intent, in which case objectives might not be specified, or *all* objectives associated with a behavior might be noted.
+Objectives correspond to the intentions behind malware behaviors. For example, malware may use [Hooking](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/hooking.md) (behavior) to load and execute code within the context of another process either to hide its execution (defense evasion objective), to gain elevated privileges (privilege escalation objective), or to access the process's memory (credential access objective). Because it's not always possible to know intent, MBC behaviors can be used without objectives. For example, automated sandbox analysis may indicate hooking behavior without corresponding information on intent, in which case objectives might not be specified; alternatively, *all* objectives associated with a behavior might be noted. 
+
+If lower level behaviors are not known, it may be appropriate to only reference an MBC objective. For example, if a sandbox reports that a malware sample exhibits "self-defense" with no other details, the information is best captured by the Defense Evasion objective, without specifying any specific behaviors.
 
 ### Can malware behaviors identified via manual analysis map to multiple MBC behaviors, or should correspondence be one-to-one? ###
 
