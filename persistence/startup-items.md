@@ -12,3 +12,4 @@ Malware may add an entry to the macOS StartupItems directory to enable persisten
 See ATT&CK: [**Startup Items**](https://attack.mitre.org/techniques/T1165) . 
 
 References
+----------
