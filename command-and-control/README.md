@@ -3,7 +3,7 @@
 |**ID**|**M9004**|
 
 # Command and Control
-Behaviors to communicate with systems under its control within a target network. There are many ways malware can establish command and control with various levels of covertness, depending on system configuration and network topology. 
+Behaviors to communicate with controlling or controlled systems within a target network (e.g., c2 server, bots). There are many ways malware can establish command and control with various levels of covertness, depending on system configuration and network topology. Malware may be part of a larger botnet.
 
 * **Command and Control Communication** [M0030](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/command-control-comm.md)
 * **Commonly Used Port** [T1043](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/common-port.md)
