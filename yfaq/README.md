@@ -113,7 +113,7 @@ Objectives correspond to the intentions behind malware behaviors. For example, m
 
 If lower level behaviors are not known, it may be appropriate to only reference an MBC objective. For example, if a sandbox reports that a malware sample exhibits "self-defense" with no other details, the information is best captured by the Defense Evasion objective, without specifying any specific behaviors.
 
-### Can malware behaviors identified via manual analysis map to multiple MBC behaviors, or should correspondence be one-to-one? ###
+### <a name="gotbotkr"><a/>Can malware behaviors identified via manual analysis map to multiple MBC behaviors, or should correspondence be one-to-one? ###
 
 Each malware behavior identified during analysis and associated with a specific code snippet should map to a single MBC behavior. If multiple behaviors seem to apply, the reported behavior should be considered to see whether it can be broken into smaller components that lead to one-to-one mappings.
 
@@ -125,13 +125,13 @@ For example, a [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master
 
 * [Execution: Install Additional Program](https://github.com/MBCProject/mbc-markdown/blob/master/execution/install-second-prog.md) ("reinstalls [itself] if it has been removed")
 
-### How are MBC behaviors, possibly at different levels of abstraction, associated? ###
-
-MBC does not define relationships between behaviors, so association of behaviors must be done at the reporting level. The [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md) example directly above illustrates how multiple (three) behaviors can be associated by the human-readable text: "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2).
-
 ### Can malware behaviors identified by automated sandboxes and tools map to multiple MBC behaviors or should correspondence be one-to-one? ###
 
-behaviors identified by automated tools are often intentionally broad to give an overview of the malware sample's behavior. Broad behaviors will often map to multiple MBC behaviors. For example, if a tool reports that the Armadillo was used on the sample, both [Executable Code Obfuscation](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md) and [Executable Code Compression](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-compression.md) behaviors apply.
+Behaviors identified by automated tools are often intentionally broad to give an overview of the malware's behavior. Broad behaviors will often map to multiple MBC behaviors. For example, if a tool reports that the Armadillo was used on the sample, both [Executable Code Obfuscation](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md) and [Executable Code Compression](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-compression.md) behaviors apply.
+
+### How are MBC behaviors, possibly at different levels of abstraction, associated? ###
+
+MBC does not define relationships between behaviors, so association of behaviors must be done at the reporting level. The [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md) example [above](./gotbotkr) illustrates how multiple (three) behaviors can be associated by the human-readable text: "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2).
 
 ### How should information in the Methods section be used? ###
 
