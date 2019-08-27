@@ -31,5 +31,6 @@ Malware aims to remain on a system regardless of system events.
 * **Scheduled Task** [T1053](https://github.com/MBCProject/mbc-markdown/blob/master/execution/scheduled-task.md)
 * **Setuid and Setgid** [T1166](https://github.com/MBCProject/mbc-markdown/blob/master/privilege-escalation/setuid-setgid.md)
 * **Shutdown Event** [M0035](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/shutdown-event.md)
+* **Startup Items** [T1165](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/startup-items.md)
 * **System Firmware** [T1109](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/system-firmware.md)
 
