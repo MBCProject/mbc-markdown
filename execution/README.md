@@ -24,4 +24,5 @@ Behaviors that execute code on a system to achieve a variety of goals.
 * **Send Email** [M0020](https://github.com/MBCProject/mbc-markdown/blob/master/execution/send-email.md)
 * **Send Poisoned Text Message** [M0021](https://github.com/MBCProject/mbc-markdown/blob/master/execution/send-poison-text-msg.md)
 * **Service Execution** [T1035](https://github.com/MBCProject/mbc-markdown/blob/master/execution/service-exe.md)
+* **User Interaction** [E1204](https://github.com/MBCProject/mbc-markdown/blob/master/execution/user-interaction.md)
 * **Windows Management Instrumentation** [T1047](https://github.com/MBCProject/mbc-markdown/blob/master/execution/windows-mgt-inst.md)

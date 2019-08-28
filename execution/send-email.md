@@ -8,7 +8,7 @@ Send Email
 ==========
 Sends an email message from the system on which the malware is executing to one or more recipients, mostly commonly for the purpose of spamming or for distributing a malicious attachment or URL (malspamming).
 
-**See related ATT&CK Techniques:** [**Spearphishing Attachment**](https://attack.mitre.org/techniques/T1193), [**Spearphishing Link**](https://attack.mitre.org/techniques/T1192).
+**See related ATT&CK Techniques:** [**Spearphishing Attachment**](https://attack.mitre.org/techniques/T1193), [**Spearphishing Link**](https://attack.mitre.org/techniques/T1192). These techniques are defined in PRE-ATT&CK, and being related to initial access are not included in MBC.
 
 Malware Examples
 ----------------
