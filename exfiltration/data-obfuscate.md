@@ -7,7 +7,7 @@
 
 Data Obfuscated
 ===============
-Malware may obfuscate data before exfiltration. This behavior is more 
+Malware may obfuscate data before exfiltration.
 
 **See ATT&CK Technique:** [**Data Encrypted**](https://attack.mitre.org/techniques/T1022/).
 
