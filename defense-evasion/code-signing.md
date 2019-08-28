@@ -7,6 +7,6 @@
 
 Code Signing
 ============
-Malware code is digitally signed to appear as legitimate sofware. 
+Malware code is digitally signed to appear as legitimate software. 
 
 See ATT&CK: [**Code Signing**](https://attack.mitre.org/techniques/T1116).
