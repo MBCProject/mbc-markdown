@@ -1,8 +1,8 @@
 |||
 |---------|------------------------|
-|**ID**|**M0011**|
+|**ID**|**M0011:T1219**|
 |**Objective(s)**| [Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
-|**Related ATT&CK Technique(s)**|None|
+|**Related ATT&CK Technique(s)**|[Remote Access Tools](https://attack.mitre.org/techniques/T1219)|
 
 
 Remote Commands
@@ -15,7 +15,7 @@ Commands provided by the malware can be captured with the Methods defined below.
 
 It may still be useful to capture non-autonomous behaviors (commands) with autonomously-oriented behaviors because the associated descriptions could provide details of how the malware implements the behavior. Using autonomous behaviors in combination with the Execution:Remote Commands Behavior gives context.
 
-Autonomous behaviors - those done by the malware without an active attacker - should not be captured with Execution:Remote Commands. For example, malware that *automatically* destroys data would be tagged with the [Destroy Data](https://github.com/MBCProject/mbc-markdown/blob/master/impact/destroy-data.md) Behavior.
+Autonomous behaviors - those done by the malware without an active attacker - should not be captured with Execution:Remote Commands. For example, malware that *automatically* destroys data would be tagged with the [Impact: Destroy Data](https://github.com/MBCProject/mbc-markdown/blob/master/impact/destroy-data.md) Behavior.
 
 Methods
 -------
