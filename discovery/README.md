@@ -14,6 +14,7 @@ Behaviors that aim to gain knowledge about the system and internal network.
 * **Local Network Configuration Discovery** [T1422](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/local-network-configuration-discover.md)
 * **Network Sniffing** [T1040](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/network-sniff.md)
 * **Network Service Scanning** [T1046](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/network-service-scan.md)
+* **Network Share Discovery** [T1135](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/network-share-discover.md)
 * **Peripheral Device Discovery** [T1120](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/peripheral-device-discover.md)
 * **Process Discovery** [T1057](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/process-discover.md)
 * **Query Registry** [T1012](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/query-registry.md)
