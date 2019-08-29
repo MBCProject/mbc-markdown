@@ -15,7 +15,7 @@ This behavior is related to the ATT&CK [**Remote Access Tools**](https://attack.
 
 Methods
 -------
-* **reverse shell**: Malware may create a reverse shell by invoking cmd.exe and creating three pipes (stdin, stdout, stderr) to forward data between cmd.exe and an adversary. 
+* **Reverse Shell**: Malware may create a reverse shell by invoking cmd.exe and creating three pipes (stdin, stdout, stderr) to forward data between cmd.exe and an adversary. 
 
 Malware Examples
 ----------------
