@@ -13,6 +13,10 @@ Malware may also provide specific commands. Given an "execute" command, the atta
 
 This behavior is related to the ATT&CK [**Remote Access Tools**](https://attack.mitre.org/techniques/T1219/) technique which is defined under the ATT&CK Command and Control tactic, but it is not equivalent (reflected by its "M" ID).
 
+Methods
+-------
+* **reverse shell**: Malware may create a reverse shell by invoking cmd.exe and creating three pipes (stdin, stdout, stderr) to forward data between cmd.exe and an adversary. 
+
 Malware Examples
 ----------------
 |Name|Date|Description|

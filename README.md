@@ -2,7 +2,7 @@
 The Malware Behavior Catalog (MBC) is a catalog of malware Objectives and Behaviors, created to support malware analysis-oriented use cases, such as labeling, similarity analysis, and standardized reporting. Please see the [FAQ](https://github.com/MBCProject/mbc-markdown/blob/master/yfaq/README.md) page for answers to common questions.
 
 ### Objectives ###
-As shown below, malware Objectives are based on [ATT&CK Tactics](https://attack.mitre.org/tactics/enterprise/), and are tailored for the malware analysis use case of characterizing malware based on known Objectives and Behaviors. Two malware analysis-specific Objectives (Anti-Behavioral Analysis and Anti-Static Analysis) not in ATT&CK are also defined. 
+As shown below, malware Objectives are based on [ATT&CK Tactics](https://attack.mitre.org/tactics/enterprise/), and are tailored for the malware analysis use case of characterizing malware based on known Objectives and Behaviors. Two malware analysis-specific Objectives not in ATT&CK are also defined (Anti-Behavioral Analysis and Anti-Static Analysis). 
 
 ### Behaviors ###
 Under each Objective, MBC captures all behaviors and code characteristics discovered during malware analysis, with links to [ATT&CK Techniques](https://attack.mitre.org/techniques/enterprise/) as appropriate. Names of MBC Behaviors may or may not match related ATT&CK Techniques. Any content provided on Behavior pages is *supplemental* to ATT&CK content. In other words, ATT&CK content is not duplicated in MBC, and MBC users will want to reference ATT&CK while capturing malware Behaviors.

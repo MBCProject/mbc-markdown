@@ -37,7 +37,7 @@ Behaviors that evade detection or avoid other defenses.
 * **Obfuscated Files or Information** [E1027](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/obfuscate-files.md)
 * **Polymorphic Code** [M0029](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/polymorphic-code.md)
 * **Port Knocking** [T1205](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/port-knocking.md)
-* **Process Hollowing** [T1055](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/process-hollow.md)
+* **Process Hollowing** [T1093](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/process-hollow.md)
 * **Process Injection** [T1055](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/process-inject.md)
 * **Redundant Access** [T1008](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/redundant-access.md)
 * **Regsvr32** [T1117](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/regsvr32.md)
