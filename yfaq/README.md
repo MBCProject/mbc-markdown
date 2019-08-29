@@ -107,7 +107,7 @@ For example, MBC defines separate behaviors for detecting sandboxes ([Sandbox De
 
 MBC enables consistency in reporting and consequently, supports analytics and similarity analysis. MBC's well-defined behaviors also support the definition of indicator signatures for detecting behaviors during analysis.
 
-### Can behaviors be used without objectives? Can objectives be used without behaviors? Or must objectives and behaviors be specified in pairs? ###
+### Can MBC behaviors be used without MBC objectives? Can objectives be used without behaviors? Or must objectives and behaviors be specified in pairs? ###
 
 Objectives correspond to the intentions behind malware behaviors. For example, malware may use [Hooking](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/hooking.md) (behavior) to load and execute code within the context of another process either to hide its execution (defense evasion objective), to gain elevated privileges (privilege escalation objective), or to access the process's memory (credential access objective). Because it's not always possible to know intent, MBC behaviors can be used without objectives. For example, automated sandbox analysis may indicate hooking behavior without corresponding information on intent, in which case objectives might not be specified; alternatively, *all* objectives associated with a behavior might be noted. 
 
@@ -133,6 +133,10 @@ Behaviors identified by automated tools are often intentionally broad to give an
 
 MBC does not define relationships between behaviors, so association of behaviors must be done at the reporting level. The [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md) example [above](./gotbotkr) illustrates how multiple (three) behaviors can be associated by the human-readable text: "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2).
 
+### How do I map an analysis product's output to MBC when I don't know the details behind the behavior indicator? ###
+
+Ideally, the product vendor will provide the MBC mapping, but if not, it may be best to map to all potentially relevant MBC behaviors (a one-to-many mapping). For example, the indicator "opened listening port" could be mapped to both [Command and Control:C2 Communication](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/command-control-comm.md) and [Impact:Remote Access](https://github.com/MBCProject/mbc-markdown/blob/master/impact/remote-access.md).
+
 ### How should information in the Methods section be used? ###
 
 Methods are variations of behaviors and are provided to help explain behaviors. Methods aren't intended to be referenced in analyses in the same way that behaviors are, in part because it would be hard to enumerate all methods associated with a behavior. 
@@ -156,6 +160,8 @@ The MBC will evolve to better support the malware analysis community. If you hav
 * **MBC Website** - An MBC website will replace markdown documents by the end of 2019.
 
 * **Code Snippets** - In addition to associating malware samples to behaviors, we plan to capture code snippets that illustrate behavior implementation.
+
+* **Version Control** - Once MBC's initial development is completed at the end of 2019, all further changes will be tracked and released on a regular schedule.
 
 
 References
