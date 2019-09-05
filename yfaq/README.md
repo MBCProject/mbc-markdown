@@ -69,11 +69,11 @@ The cyber adversary behavior and malware analysis realms each have their own voc
 
 ### ATT&CK is organized by the Enterprise and Mobile technology domains. Why isn't MBC? ###
 
-To support malware analysis use cases, we didn't see value in distinguishing between enterprise and mobile malware.
+Although both domains are included in MBC, we didn't see value in distinguishing between enterprise and mobile malware for supporting malware analysis use cases.
 
 ### ATT&CK is a mid-level adversary model. Does MBC model malware in a similar way? ###
 
-ATT&CK models the lifecycle of a human adversary, which results in an ordering of tactics (not necessarily strict), starting with Initial Access and ending with Impact. Software (malware code) executes sequentially but from a timing, lifecycle perspective, it executes simultaneously. Therefore, MBC objectives are presented alphabetically, and MBC doesn't provide a model in the same sense as ATT&CK: rather MBC captures an unordered collection of objections and behaviors applicable to a malware sample.
+ATT&CK models the life cycle of a human adversary, which results in an ordering of tactics (not necessarily strict), starting with Initial Access and ending with Impact. Software (malware code) executes sequentially but from a timing, life cycle perspective, it executes simultaneously. Therefore, MBC objectives are presented alphabetically, and MBC doesn't provide a model in the same sense as ATT&CK: rather MBC captures an unordered collection of objections and behaviors applicable to a malware sample.
 
 ### Some MBC behaviors seem to be characteristics of code, not actual behaviors (e.g., [Executable Code Optimization](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-optimize.md)). Why are they captured and why are they called behaviors? ###
 
@@ -127,15 +127,15 @@ For example, a [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master
 
 ### Can malware behaviors identified by automated sandboxes and tools map to multiple MBC behaviors or should correspondence be one-to-one? ###
 
-Behaviors identified by automated tools are often intentionally broad to give an overview of the malware's behavior. Broad behaviors will often map to multiple MBC behaviors. For example, if a tool reports that the Armadillo was used on the sample, both [Executable Code Obfuscation](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md) and [Executable Code Compression](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-compression.md) behaviors apply.
+Behaviors identified by automated tools are often intentionally broad to give an overview of the malware sample's behavior. Broad behaviors will often map to multiple MBC behaviors. For example, if a tool reports that the Armadillo was used on the sample, both [Executable Code Obfuscation](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md) and [Executable Code Compression](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-compression.md) behaviors apply.
 
 ### How are MBC behaviors, possibly at different levels of abstraction, associated? ###
 
 MBC does not define relationships between behaviors, so association of behaviors must be done at the reporting level. The [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md) example [above](./gotbotkr) illustrates how multiple (three) behaviors can be associated by the human-readable text: "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2).
 
-### How do I map an analysis product's output to MBC when I don't know the details behind the behavior indicator? ###
+### How do I map an analysis product's output to MBC when I don't know the details behind the behavior indicators? ###
 
-Ideally, the product vendor will provide the MBC mapping, but if not, it may be best to map to all potentially relevant MBC behaviors (a one-to-many mapping). For example, the indicator "opened listening port" could be mapped to both [Command and Control:C2 Communication](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/command-control-comm.md) and [Impact:Remote Access](https://github.com/MBCProject/mbc-markdown/blob/master/impact/remote-access.md).
+Ideally, the product vendor will provide the MBC mapping, but if not and it's not possible to ask the signature developer for details, it may be best to map the indicator to all potentially relevant MBC behaviors (a one-to-many mapping). For example, the indicator "opened listening port" could be mapped to both [Command and Control:C2 Communication](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/command-control-comm.md) and [Impact:Remote Access](https://github.com/MBCProject/mbc-markdown/blob/master/impact/remote-access.md).
 
 ### How should information in the Methods section be used? ###
 

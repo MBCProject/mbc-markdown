@@ -2,16 +2,16 @@
 |---------|------------------------|
 |**ID**|**M0022**|
 |**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
-|**Related ATT&CK Technique(s)**|[**Remote Access Tools**](https://attack.mitre.org/techniques/T1219/)|
+|**Related ATT&CK Technique(s)**|None|
 
 
 Remote Access
 =============
-Malware may provide an attacker with potentially full access to a system via a remote network connection. 
+Malware may provide an attacker with potentially full access to a system via a remote network connection. Such malware is often referred to as a RAT (Remote Access Trojan).
 
-Malware may also provide specific commands. Given an "execute" command, the attacker may choose to delete files or corrupt data, power-off the machine, or upload and execute other applications. The malware may also provide specific commands to the attacker (e.g., Delete File). Explicit commands provided by the malware can be captured with Methods associated with the [Execution:Remote Commands](https://github.com/MBCProject/mbc-markdown/blob/master/execution/remote-commands.md) Behavior; examples include Execution:Remote Commands:Execute and Execution:Remote Commands:Delete File.
+If the malware provides an "execute" command, the attacker may choose to delete files or corrupt data, power-off the machine, or upload and execute other applications. The malware may also provide specific commands to the attacker (e.g., Delete File). Explicit commands provided by the malware can be captured with Methods associated with the [Execution:Remote Commands](https://github.com/MBCProject/mbc-markdown/blob/master/execution/remote-commands.md) behavior; examples include *Execution:Remote Commands:Execute* and *Execution:Remote Commands:Delete File*.
 
-This behavior is related to the ATT&CK [**Remote Access Tools**](https://attack.mitre.org/techniques/T1219/) technique which is defined under the ATT&CK Command and Control tactic, but it is not equivalent (reflected by its "M" ID).
+Note that the ATT&CK [**Remote Access Tools**](https://attack.mitre.org/techniques/T1219/) technique which is defined under the ATT&CK Command and Control tactic, is specific to "legitimate desktop support and remote access software” – which is different than a RAT malware. *Impact:Remote Access* and *Command and Control: Remote Access Tools* are equivalent (reflected by its "M" ID).
 
 Methods
 -------

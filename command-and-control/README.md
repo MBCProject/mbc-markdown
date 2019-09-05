@@ -3,7 +3,7 @@
 |**ID**|**M9004**|
 
 # Command and Control
-Behaviors to communicate with controlling or controlled systems within a target network (e.g., c2 server, bots). There are many ways malware can establish command and control with various levels of covertness, depending on system configuration and network topology. Malware may be part of a larger botnet.
+Behaviors malware may use to communicate with systems under its control within a target network. There are many ways malware can establish command and control with various levels of covertness, depending on system configuration and network topology. Behaviors may relate to C2 servers or a bot that is part of a botnet.
 
 * **Command and Control Communication** [M0030](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/command-control-comm.md)
 * **Commonly Used Port** [T1043](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/common-port.md)
@@ -16,6 +16,7 @@ Behaviors to communicate with controlling or controlled systems within a target 
 * **Fallback Channels** [T1008](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/fallback-channels.md)
 * **Multi-Stage Channels** [T1104](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/multi-stage-channels.md)
 * **Port Knocking** [T1205](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/port-knocking.md)
+* **Remote Access Tools** [T1105](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/remote-access-tools.md)
 * **Remote File Copy** [T1105](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/remote-file-copy.md)
 * **Standard Application Layer Protocol** [T1071](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/std-app-protocol.md)
 * **Standard Cryptographic Protocol** [T1032](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/std-crypto-protocol.md)
