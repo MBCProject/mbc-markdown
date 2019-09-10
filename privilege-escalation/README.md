@@ -14,7 +14,7 @@ Behaviors that aim to obtain a higher level of permission.
 * **Image File Execution Options Injection** [T1183](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/image-file-exe-opt-inj.md)
 * **Launch Daemon** [T1160](https://github.com/MBCProject/mbc-markdown/blob/master/privilege-escalation/launch-daemon.md)
 * **New Service** [T1050](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/new-service.md)
-* **Process Injection** [T1055](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/process-inject.md)
+* **Process Injection** [E1055](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/process-inject.md)
 * **Scheduled Task** [T1053](https://github.com/MBCProject/mbc-markdown/blob/master/execution/scheduled-task.md)
 * **Setuid and Setgid** [T1166](https://github.com/MBCProject/mbc-markdown/blob/master/privilege-escalation/setuid-setgid.md)
 * **Startup Items** [T1165](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/startup-items.md)
