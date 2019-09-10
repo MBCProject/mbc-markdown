@@ -13,7 +13,7 @@ See ATT&CK: [**Process Injection**](https://attack.mitre.org/techniques/T1055).
 
 Methods
 ------- 
-* **method...**: Method description...
+* **Method**: Method description...
 
 Malware Examples
 ----------------
