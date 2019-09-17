@@ -123,7 +123,7 @@ For example, a [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master
 
 * [Discovery: Process Discovery](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/process-discover.md) ("monitors whether the first instance is still active")
 
-* [Execution: Install Additional Program](https://github.com/MBCProject/mbc-markdown/blob/master/execution/install-second-prog.md) ("reinstalls [itself] if it has been removed")
+* [Execution: Install Additional Program](https://github.com/MBCProject/mbc-markdown/blob/master/execution/install-prog.md) ("reinstalls [itself] if it has been removed")
 
 ### Can malware behaviors identified by automated sandboxes and tools map to multiple MBC behaviors or should correspondence be one-to-one? ###
 
