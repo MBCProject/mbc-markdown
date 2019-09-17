@@ -21,7 +21,7 @@ Behaviors that evade detection or avoid other defenses.
 * **Executable Code Compression** [T1045:M0036](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-compression.md)
 * **Executable Code Obfuscation** [T1045:M0032](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md)
 * **Execution Guardrails** [E1480](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/execution-guardrails.md)
-* **Exploitations for Defense Evasion** [T1211](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/exploit-for-defense.md)
+* **Exploitation for Defense Evasion** [T1211](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/exploit-for-defense.md)
 * **File Deletion** [E1107](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/file-deletion.md)
 * **File System Logical Offsets** [T1006](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/file-sys-logical-offset.md)
 * **Hidden Files and Directories** [T1158](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/hidden-files.md)
