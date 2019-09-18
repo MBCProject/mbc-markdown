@@ -1,6 +1,6 @@
 |||
 |---------|------------------------|
-|**ID**|**M0033:T1498**|
+|**ID**|**M0033**|
 |**Objective(s)**|[Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
 |**Related ATT&CK Technique(s)**|[Network Denial of Device](https://attack.mitre.org/techniques/T1498/)|
 
@@ -11,7 +11,7 @@ Malware may make a network unavailable, for example, by launching a network-base
 
 Endpoint denial of service behaviors are captured by the [Endpoint Denial of Service](https://github.com/MBCProject/mbc-markdown/blob/master/impact/endpoint-denial-of-service.md) Behavior.
 
-See ATT&CK: [**Network Denial of Device**](https://attack.mitre.org/techniques/T1498/).
+The subsequently defined ATT&CK technique [Network Denial of Device](https://attack.mitre.org/techniques/T1498/) is related to this MBC behavior.
 
 Methods
 -------

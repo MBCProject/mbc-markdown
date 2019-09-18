@@ -1,6 +1,6 @@
 |||
 |---------|------------------------|
-|**ID**|**T1045:M0032**|
+|**ID**|**M0032**|
 |**Objective(s)**| [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis), [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
 |**Related ATT&CK Technique(s)**|[Software Packing](https://attack.mitre.org/techniques/T1045/)|
 
@@ -9,7 +9,7 @@ Executable Code Obfuscation
 ===========================
 Executable code uses obfuscation to hinder disassembly and static code analysis. Methods related to *anti-static analysis* are below. The Executable Code Obfuscation behavior is specific to a malware sample's executable code (data and text sections).
 
-See ATT&CK: [**Software Packing**](https://attack.mitre.org/techniques/T1045/).
+This and the [Executable Code Compression](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-compression.md) behavior refine the ATT&CK [**Software Packing**](https://attack.mitre.org/techniques/T1045) technique.
 
 For obfuscation behaviors related to non-malware-sample files and information, see ATT&CK: [**Obfuscated Files or Information**](https://attack.mitre.org/techniques/T1027/), under the [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion) objective.
 

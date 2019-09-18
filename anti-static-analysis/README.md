@@ -9,8 +9,8 @@ Two primary resources for anti-static analysis behaviors are [[1]](#1) and [[2]]
 
 * **Call Graph Generation Evasion** [M0010](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/evade-call-graph.md)
 * **Disassembler Evasion** [M0012](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/evade-disassembler.md)
-* **Executable Code Compression** [T1045:M0036](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-compression.md)
-* **Executable Code Obfuscation** [T1045:M0032](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md)
+* **Executable Code Compression** [M0036](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-compression.md)
+* **Executable Code Obfuscation** [M0032](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md)
 * **Executable Code Optimization** [M0034](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-optimize.md)
 * **Executable Code Virtualization** [M0008](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-virtualize.md)
 

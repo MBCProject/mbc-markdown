@@ -1,8 +1,8 @@
 |||
 |---------|------------------------|
-|**ID**|**M0011:T1219**|
+|**ID**|**M0011**|
 |**Objective(s)**| [Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
-|**Related ATT&CK Technique(s)**|[Remote Access Tools](https://attack.mitre.org/techniques/T1219)|
+|**Related ATT&CK Technique(s)**|None|
 
 
 Remote Commands
@@ -11,11 +11,11 @@ Malware may provide an attacker with explicit commands.
 
 Given an "execute" command, the attacker may choose to delete files or corrupt data, power-off the machine, or upload and execute other applications. The malware may also provide specific commands to the attacker (e.g., "delete file"). 
 
-Commands provided by the malware can be captured with the Methods defined below. For example, malware that enables an attacker to delete a file could be tagged with Execution:Remote Commands:Delete File.
+Commands provided by the malware can be captured with the methods defined below. For example, malware that enables an attacker to delete a file could be tagged with Execution:Remote Commands:Delete File.
 
-It may still be useful to capture non-autonomous behaviors (commands) with autonomously-oriented behaviors because the associated descriptions could provide details of how the malware implements the behavior. Using autonomous behaviors in combination with the Execution:Remote Commands Behavior gives context.
+It may be useful to capture remote commands along with related behaviors because the associated descriptions could provide details of how the malware implements the command. For example, Defense Evasion:File Deletion could be used to provide details and context to Execution:Remote Commands:Delete File.
 
-Autonomous behaviors - those done by the malware without an active attacker - should not be captured with Execution:Remote Commands. For example, malware that *automatically* destroys data would be tagged with the [Impact: Destroy Data](https://github.com/MBCProject/mbc-markdown/blob/master/impact/destroy-data.md) Behavior.
+Autonomous behaviors - those done by the malware without an active attacker - should not be captured with Execution:Remote Commands. For example, malware that *automatically* destroys data would be tagged with the [Impact: Data Destruction](https://github.com/MBCProject/mbc-markdown/blob/master/impact/data-destruction.md) behavior.
 
 Methods
 -------

@@ -6,9 +6,9 @@
 
 C2 Communication
 ================
-All command and control malware uses client/server communication. The methods listed below can be used to capture explicit communication details. Remote file copy behavior is captured separately, as is done in ATT&CK - see [Remote File Copy](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/remote-file-copy.md).
+All command and control malware use client/server communication. The methods listed below can be used to capture explicit communication details. Remote file copy behavior is captured separately, as is done in ATT&CK - see [Remote File Copy](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/remote-file-copy.md).
 
-Command and Control Communication relates to *autonomous* client/server communications, not commands that are provided to an adversary. Commands provided to an attacker should be captured under [Remote Commands](https://github.com/MBCProject/mbc-markdown/blob/master/execution/remote-commands.md) under the Execution objective.
+Command and Control Communication relates to *autonomous* client/server communications, not explicit, on-demand commands that malware provides to an adversary (such commands should be captured with [Remote Commands](https://github.com/MBCProject/mbc-markdown/blob/master/execution/remote-commands.md) under the Execution objective).
 
 Methods
 -------

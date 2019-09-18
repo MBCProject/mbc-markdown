@@ -1,6 +1,6 @@
 |||
 |---------|------------------------|
-|**ID**|**M0031:T1483**|
+|**ID**|**M0031**|
 |**Objective(s)**|[Command and Control](https://github.com/MBCProject/mbc-markdown/tree/master/command-and-control)|
 |**Related ATT&CK Technique(s)**|[Domain Generation Algorithms](https://attack.mitre.org/techniques/T1483/)|
 
@@ -8,7 +8,7 @@ Domain Name Generation
 ======================
 Malware generates the domain name of the command and control server to which it connects. Access to on the fly domains enables C2 to operate as domains and IP addresses are blocked. The algorithm can be complicated in more advanced bots; understanding the details so that names can be predicted can be useful in mitigation and response. [[1]](#1)
 
-The newly defined ATT&CK Technique ([Domain Generation Algorithms](https://attack.mitre.org/techniques/T1483/)) is oriented toward an adversary perspective, but the examples include malware.
+The subsequently defined ATT&CK technique [Domain Generation Algorithms](https://attack.mitre.org/techniques/T1483/) is oriented toward an adversary perspective (although its examples include malware) is related to this MBC behavior.
 
 Malware Examples
 ----------------

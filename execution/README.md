@@ -17,7 +17,7 @@ Behaviors that execute code on a system to achieve a variety of goals.
 * **Power Shell** [T1086](https://github.com/MBCProject/mbc-markdown/blob/master/execution/power-shell.md)
 * **Prevent Concurrent Execution** [M0024](https://github.com/MBCProject/mbc-markdown/blob/master/execution/prevent-concurrent-exe.md)
 * **Regsvr32** [T1117](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/regsvr32.md)
-* **Remote Commands** [M0011:T1219](https://github.com/MBCProject/mbc-markdown/blob/master/execution/remote-commands.md)
+* **Remote Commands** [M0011](https://github.com/MBCProject/mbc-markdown/blob/master/execution/remote-commands.md)
 * **Rundll32** [T1085](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/rundll32.md)
 * **Scheduled Task** [T1053](https://github.com/MBCProject/mbc-markdown/blob/master/execution/scheduled-task.md)
 * **Scripting** [T1064](https://github.com/MBCProject/mbc-markdown/blob/master/execution/scripting.md)

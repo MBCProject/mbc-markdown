@@ -12,7 +12,7 @@ Behaviors malware may use to communicate with systems under its control within a
 * **Custom Cryptographic Protocol** [T1024](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/custom-crypto-protocol.md)
 * **Data Encoding** [T1132](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/data-encode.md)
 * **Data Obfuscation** [T1001](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/data-obfuscate.md)
-* **Domain Name Generation** [M0031:T1483](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/domain-name-generate.md)
+* **Domain Name Generation** [M0031](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/domain-name-generate.md)
 * **Fallback Channels** [T1008](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/fallback-channels.md)
 * **Multi-Stage Channels** [T1104](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/multi-stage-channels.md)
 * **Port Knocking** [T1205](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/port-knocking.md)

@@ -6,9 +6,9 @@
 Behaviors that enable malware to achieve its mission.
 
 * **Component Firmware** [E1109](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/component-firmware.md)
-* **Compromise Data Integrity** [M0016:T1492](https://github.com/MBCProject/mbc-markdown/blob/master/impact/compromise-data.md)
+* **Compromise Data Integrity** [M0016](https://github.com/MBCProject/mbc-markdown/blob/master/impact/compromise-data.md)
 * **Data Destruction** [T1485](https://github.com/MBCProject/mbc-markdown/blob/master/impact/data-destruction.md)
-* **Denial of Service** [M0033:T1498](https://github.com/MBCProject/mbc-markdown/blob/master/impact/denial-of-service.md)
+* **Denial of Service** [M0033](https://github.com/MBCProject/mbc-markdown/blob/master/impact/denial-of-service.md)
 * **Destroy Hardware** [M0017](https://github.com/MBCProject/mbc-markdown/blob/master/impact/destroy-hardware.md)
 * **Disk Content Wipe** [T1488](https://github.com/MBCProject/mbc-markdown/blob/master/impact/disk-content-wipe.md)
 * **Disk Structure Wipe** [T1487](https://github.com/MBCProject/mbc-markdown/blob/master/impact/disk-structure-wipe.md)
@@ -20,6 +20,6 @@ Behaviors that enable malware to achieve its mission.
 * **Generate Fraudulent Advertising Revenue** [E1472](https://github.com/MBCProject/mbc-markdown/blob/master/impact/generate-fraud-rev.md)
 * **Hijack System Resources** [M0018](https://github.com/MBCProject/mbc-markdown/blob/master/impact/hijack-sys-resources.md)
 * **Inhibit System Recovery** [T1490](https://github.com/MBCProject/mbc-markdown/blob/master/impact/inhibit-system-recovery.md)
-* **Manipulate Network Traffic** [M0019:T1493](https://github.com/MBCProject/mbc-markdown/blob/master/impact/manipulate-network-traffic.md)
+* **Manipulate Network Traffic** [M0019](https://github.com/MBCProject/mbc-markdown/blob/master/impact/manipulate-network-traffic.md)
 * **Remote Access** [M0022](https://github.com/MBCProject/mbc-markdown/blob/master/impact/remote-access.md)
 * **Service Stop** [T1489](https://github.com/MBCProject/mbc-markdown/blob/master/impact/service-stop.md)
