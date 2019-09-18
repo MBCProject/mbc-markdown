@@ -1,6 +1,6 @@
 |||
 |---------|------------------------|
-|**ID**|**M0018:T1496**|
+|**ID**|**M0018**|
 |**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
 |**Related ATT&CK Technique(s)**|[Resource Hijacking](https://attack.mitre.org/techniques/T1496/)|
 
@@ -8,6 +8,8 @@
 Hijack System Resources
 =======================
 Uses system resources for other purposes; as a result, the system may not be available for intended uses.
+
+The subsequently defined ATT&CK technique [Resource Hijacking](https://attack.mitre.org/techniques/T1496/) is related to this MBC behavior.
 
 Methods
 -------
