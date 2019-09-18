@@ -1,6 +1,6 @@
 |||
 |---------|------------------------|
-|**ID**|**M0019:T1493**|
+|**ID**|**M0019**|
 |**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
 |**Related ATT&CK Technique(s)**|[Transmitted Data Manipulation](https://attack.mitre.org/techniques/T1493/)|
 
