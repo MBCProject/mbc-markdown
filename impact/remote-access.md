@@ -11,7 +11,7 @@ Malware may provide an attacker with potentially full access to a system via a r
 
 If the malware provides an "execute" command, the attacker may choose to delete files or corrupt data, power-off the machine, or upload and execute other applications. The malware may also provide specific commands to the attacker (e.g., Delete File). Explicit commands provided by the malware can be captured with Methods associated with the [Execution:Remote Commands](https://github.com/MBCProject/mbc-markdown/blob/master/execution/remote-commands.md) behavior; examples include *Execution:Remote Commands:Execute* and *Execution:Remote Commands:Delete File*.
 
-Note that the ATT&CK [**Remote Access Tools**](https://attack.mitre.org/techniques/T1219/) technique which is defined under the ATT&CK Command and Control tactic, is specific to "legitimate desktop support and remote access software” – which is different than a RAT malware. *Impact:Remote Access* and *Command and Control: Remote Access Tools* are equivalent (reflected by its "M" ID).
+Note that the [**Remote Access Tools**](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/remote-access-tools.md) behavior defined under the Command and Control tactic is specific to "legitimate desktop support and remote access software” – which is different than a RAT malware: *Impact:Remote Access* and *Command and Control: Remote Access Tools* are not equivalent.
 
 Methods
 -------
