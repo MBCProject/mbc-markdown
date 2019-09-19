@@ -29,7 +29,7 @@ Malware objectives are defined below. Follow the links to view associated behavi
 |[**Discovery**](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/README.md)|Malware aims to gain knowledge about the system and internal network.|
 |[**Execution**](https://github.com/MBCProject/mbc-markdown/blob/master/execution/README.md)| Malware aims to execute its code on a system to achieve a variety of goals.|
 |[**Exfiltration**](https://github.com/MBCProject/mbc-markdown/blob/master/exfiltration/README.md)|  Malware aims to steal data from the system on which it executes. This includes stored data (e.g., files) as well as data input into applications (e.g., web browser).|
-|[**Impact**](https://github.com/MBCProject/mbc-markdown/blob/master/impact/README.md)|Malware aims to execute its mission.|
+|[**Impact**](https://github.com/MBCProject/mbc-markdown/blob/master/impact/README.md)| Malware aims to achieve its mission of manipulating, interrupting, or destroying systems and data.|
 |[**Lateral Movement**](https://github.com/MBCProject/mbc-markdown/blob/master/lateral-movement/README.md)|Malware aims to propagate through the infection of a system or is able to infect a file after executing on a system. The malware may infect actively (e.g., gain access to a machine directly) or passively (e.g., send malicious email).|
 |[**Persistence**](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/README.md)|Malware aims to remain on a system regardless of system events.|
 |[**Privilege Escalation**](https://github.com/MBCProject/mbc-markdown/blob/master/privilege-escalation/README.md)|Malware aims to obtain a higher level of privilege for execution.|
