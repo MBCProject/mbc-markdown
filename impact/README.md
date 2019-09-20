@@ -3,7 +3,7 @@
 |**ID**|**M9008**|
 
 # Impact #
-Behaviors that enable malware to achieve its mission of manipulating, interrupting, or destroying systems and data.
+Behaviors that enable malware to achieve its mission of manipulating, interrupting, or destroying systems and/or data.
 
 * **Component Firmware** [E1109](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/component-firmware.md)
 * **Compromise Data Integrity** [M0016](https://github.com/MBCProject/mbc-markdown/blob/master/impact/compromise-data.md)
