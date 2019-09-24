@@ -5,6 +5,7 @@
 # Persistence #
 Malware aims to remain on a system regardless of system events.
 
+* **AppInit DLLs** [T1103](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/appinit-dlls.md)
 * **Application Shimming** [T1138](https://github.com/MBCProject/mbc-markdown/blob/master/privilege-escalation/app-shimming.md)
 * **Backdoor** [M0037](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/backdoor.md)
 * **.bash_profile and .bashrc** [T1156](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/bash.md)
@@ -31,6 +32,7 @@ Malware aims to remain on a system regardless of system events.
 * **Registry Run Keys / Startup Folder** [E1060](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/registry-run-startup.md)
 * **Scheduled Task** [T1053](https://github.com/MBCProject/mbc-markdown/blob/master/execution/scheduled-task.md)
 * **Setuid and Setgid** [T1166](https://github.com/MBCProject/mbc-markdown/blob/master/privilege-escalation/setuid-setgid.md)
+* **Shortcut Modification** [T1023](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/shortcut-mod.md)
 * **Shutdown Event** [M0035](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/shutdown-event.md)
 * **Startup Items** [T1165](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/startup-items.md)
 * **System Firmware** [T1109](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/system-firmware.md)

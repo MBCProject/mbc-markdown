@@ -5,6 +5,7 @@
 # Privilege Escalation #
 Behaviors that aim to obtain a higher level of permission.
 
+* **AppInit DLLs** [T1103](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/appinit-dlls.md)
 * **Application Shimming** [T1138](https://github.com/MBCProject/mbc-markdown/blob/master/privilege-escalation/app-shimming.md)
 * **Bypass User Account Control** [T1088](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/bypass-user-acct-cntl.md)
 * **DLL Search Order Hijacking** [T1038](https://github.com/MBCProject/mbc-markdown/blob/master/privilege-escalation/dll-search-order-hijack.md)
