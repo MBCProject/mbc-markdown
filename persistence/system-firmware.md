@@ -6,6 +6,6 @@
 
 System Firmware
 ===============
-Malware may overwrite the the system firmware with malicious firmware that is difficult to detect and/or enables persistence. 
+Malware may overwrite the system firmware with malicious firmware that is difficult to detect and/or enables persistence. 
 
 see ATT&CK: [**System Firmware**](https://attack.mitre.org/techniques/T1019/).

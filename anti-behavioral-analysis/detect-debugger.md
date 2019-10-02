@@ -21,7 +21,7 @@ Methods
 * **Stack Canary**: Similar to the anti-exploitation method of the same name, malware may try to detect mucking with values on the stack.
 * **TIB Aware**: Accessing thread information (e.g., fs:[20h]) for debug detection or process obfuscation.
 * **RtlAdjustPrivilege**: Calling RtlAdjustPrivilege to either prevent a debugger from attaching or to detect if a debugger is attached.
-* **Interrupt 2D**: If int 0x2d is mishandled by the debugger, it can cause a single-byte instrustion to be inadvertently skipped, which can be detected by the malware.
+* **Interrupt 2D**: If int 0x2d is mishandled by the debugger, it can cause a single-byte instruction to be inadvertently skipped, which can be detected by the malware.
 
 Malware Examples
 ----------------

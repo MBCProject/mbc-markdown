@@ -17,7 +17,7 @@ Methods
 * **Tampering**: Erase or corrupt specific file parts to prevent rebuilding (header, packer stub, etc.).
 * **Guard Pages**: Encrypt blocks of code individually and decrypt temporarily only upon execution.
 * **On-the-Fly APIs**: Resolve API addresses before each use to prevent complete dumping.
-* **Feed Misinformation**: API behavior can be altered to prevent prevent memory dumps. For example, inaccurate data can be reported when the contents of the physical memory of the system on which the malware instance is executing is retrieved. See [Hooking](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/hooking.md).
+* **Feed Misinformation**: API behavior can be altered to prevent memory dumps. For example, inaccurate data can be reported when the contents of the physical memory of the system on which the malware instance is executing is retrieved. See [Hooking](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/hooking.md).
 * **Flow Opcode Obstruction**: flow opcodes (e.g., jumps, loops) are removed and emulated (or decrypted) by the packer during execution, resulting in incorrect dumps. [[4]](#4)
 
 Malware Examples

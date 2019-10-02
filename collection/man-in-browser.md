@@ -6,6 +6,6 @@
 
 Man in the Browser
 ==================
-Malware leverages vulnerabilities and functionality in browser softwarwe to change content, modify behavior, and intercept information.
+Malware leverages vulnerabilities and functionality in browser software to change content, modify behavior, and intercept information.
 
 **See ATT&CK:** [**Man in the Browser**](https://attack.mitre.org/techniques/T1185/).

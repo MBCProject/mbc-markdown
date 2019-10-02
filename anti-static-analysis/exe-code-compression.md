@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**M0036**|
-|**Objective(s)**|[Anti-Behaviorial Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis), [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis), [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
+|**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis), [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis), [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
 |**Related ATT&CK Technique(s)**|[Software Packing](https://attack.mitre.org/techniques/T1045/)|
 
 Executable Code Compression
