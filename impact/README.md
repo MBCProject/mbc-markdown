@@ -16,7 +16,7 @@ Behaviors that enable malware to achieve its mission of manipulating, interrupti
 * **Endpoint Denial of Service** [T1499](https://github.com/MBCProject/mbc-markdown/blob/master/impact/endpoint-denial-of-service.md)
 * **Exploit Kit Behavior** [E1190](https://github.com/MBCProject/mbc-markdown/blob/master/impact/exploit-kit-behavior.md)
 * **Exploit Software** [E1203](https://github.com/MBCProject/mbc-markdown/blob/master/execution/exploit-software.md)
-* **Firmware Corruption** [T1495](https://github.com/MBCProject/mbc-markdown/blob/master/execution/firmware-corruption.md)
+* **Firmware Corruption** [T1495](https://github.com/MBCProject/mbc-markdown/blob/master/impact/firmware-corruption.md)
 * **Generate Fraudulent Advertising Revenue** [E1472](https://github.com/MBCProject/mbc-markdown/blob/master/impact/generate-fraud-rev.md)
 * **Hijack System Resources** [M0018](https://github.com/MBCProject/mbc-markdown/blob/master/impact/hijack-sys-resources.md)
 * **Inhibit System Recovery** [T1490](https://github.com/MBCProject/mbc-markdown/blob/master/impact/inhibit-system-recovery.md)
