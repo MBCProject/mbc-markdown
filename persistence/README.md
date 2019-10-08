@@ -14,6 +14,7 @@ Malware aims to remain on a system regardless of system events.
 * **Change Default File Association** [T1042](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/change-default-file-assoc.md)
 * **Component Firmware** [E1109](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/component-firmware.md)
 * **Component Object Model Hijacking** [T1122](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/component-hijack.md)
+* **Create Account** [T1136](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/create-account.md)
 * **DLL Search Order Hijacking** [T1038](https://github.com/MBCProject/mbc-markdown/blob/master/privilege-escalation/dll-search-order-hijack.md)
 * **File System Permissions Weakness** [T1044](https://github.com/MBCProject/mbc-markdown/blob/master/privilege-escalation/file-system-perm-weakness.md)
 * **Hidden Files and Directories** [T1158](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/hidden-files.md)

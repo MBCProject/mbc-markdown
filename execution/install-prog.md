@@ -7,7 +7,7 @@
 
 Install Additional Program
 ==========================
-Installs another, different program on the system. The additional program can be any secondary module; examples include backdoors, malicious drivers, and OS X Apps. Malware that installs another component is called a "dropper."
+Installs another, different program on the system. The additional program can be any secondary module; examples include backdoors, malicious drivers, kernel modules, and OS X Apps. Malware that installs another component is called a "dropper."
 
 Methods
 -------
