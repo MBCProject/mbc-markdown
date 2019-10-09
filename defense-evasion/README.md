@@ -23,6 +23,7 @@ Behaviors that evade detection or avoid other defenses.
 * **Execution Guardrails** [E1480](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/execution-guardrails.md)
 * **Exploitation for Defense Evasion** [T1211](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/exploit-for-defense.md)
 * **File Deletion** [E1107](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/file-deletion.md)
+* **File Permissions Modification** [T1222](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/file-permission-mod.md)
 * **File System Logical Offsets** [T1006](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/file-sys-logical-offset.md)
 * **Hidden Files and Directories** [T1158](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/hidden-files.md)
 * **Hidden Window** [T1143](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/hidden-window.md)
