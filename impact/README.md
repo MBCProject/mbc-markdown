@@ -7,7 +7,7 @@ Behaviors that enable malware to achieve its mission of manipulating, interrupti
 
 * **Component Firmware** [E1109](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/component-firmware.md)
 * **Compromise Data Integrity** [M0016](https://github.com/MBCProject/mbc-markdown/blob/master/impact/compromise-data.md)
-* **Data Destruction** [T1485](https://github.com/MBCProject/mbc-markdown/blob/master/impact/data-destruction.md)
+* **Data Destruction** [E1485](https://github.com/MBCProject/mbc-markdown/blob/master/impact/data-destruction.md)
 * **Denial of Service** [M0033](https://github.com/MBCProject/mbc-markdown/blob/master/impact/denial-of-service.md)
 * **Destroy Hardware** [M0017](https://github.com/MBCProject/mbc-markdown/blob/master/impact/destroy-hardware.md)
 * **Disk Content Wipe** [T1488](https://github.com/MBCProject/mbc-markdown/blob/master/impact/disk-content-wipe.md)
