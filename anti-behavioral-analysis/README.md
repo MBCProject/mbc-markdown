@@ -12,7 +12,7 @@ Two primary resources for anti-behavioral analysis behaviors are [[1]](#1) and [
 * **Dynamic Analysis Evasion** [M0003](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/evade-dynamic-analysis.md)
 * **Emulator Detection** [M0004](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/detect-emulator.md)
 * **Emulator Evasion** [M0005](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/evade-emulator.md)
-* **Executable Code Compression** [T1045:M0036](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-compression.md)
+* **Executable Code Compression** [M0036](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-compression.md)
 * **Executable Code Virtualization** [M0008](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-virtualize.md)
 * **Execution Guardrails** [E1480](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/execution-guardrails.md)
 * **Hooking** [E1179](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/hooking.md)
