@@ -11,6 +11,7 @@ Behaviors that aim to gain knowledge about the system and internal network.
 * **Application Window Discovery** [T1010](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/app-window-discover.md)
 * **Device Type Discovery** [T1419](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/device-type-discover.md)
 * **File and Directory Discovery** [T1083](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/file-and-directory-discover.md)
+* **Domain Trust Discovery** [T1482](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/domain-trust-discover.md)
 * **Local Network Configuration Discovery** [T1422](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/local-network-configuration-discover.md)
 * **Network Sniffing** [T1040](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/network-sniff.md)
 * **Network Service Scanning** [T1046](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/network-service-scan.md)
