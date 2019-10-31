@@ -5,7 +5,7 @@
 # Exfiltration #
 Behaviors that steal data from the system on which it executes. This includes stored data (e.g., files) as well as data input into applications (e.g., web browser).
 
-* **Automated Exfiltration** [T1020](https://github.com/MBCProject/mbc-markdown/blob/master/exfiltration/auto-exfiltrate.md)
+* **Automated Exfiltration** [E1020](https://github.com/MBCProject/mbc-markdown/blob/master/exfiltration/auto-exfiltrate.md)
 * **Data Compressed** [T1002](https://github.com/MBCProject/mbc-markdown/blob/master/exfiltration/data-compress.md)
 * **Data Obfuscated** [E1022](https://github.com/MBCProject/mbc-markdown/blob/master/exfiltration/data-obfuscated.md)
 * **Exfiltration Over Alternative Protocol** [T1048](https://github.com/MBCProject/mbc-markdown/blob/master/exfiltration/exfil-over-alternative-protocol.md)
