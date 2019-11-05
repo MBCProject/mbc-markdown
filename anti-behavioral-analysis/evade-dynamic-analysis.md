@@ -22,6 +22,7 @@ Methods
 * **Illusion**: Creates an illusion; makes the analyst think something happened when it didn't.
 * **Timing/Date Checks**: Calling GetSystemTime or equiv and only executing code if the current date/hour/minute/second passes some check. Often this is for running only after or only until a specific date. This behavior can be mitigated in non-automated analysis environments.
 * **Timing/Uptime Check**: Comparing single GetTickCount with some value to see if system has been started at least *X* amount ago. This behavior can be mitigated in non-automated analysis environments.
+* **Alternative ntdll.dll** A copy of ntdll.dll is dropped to the filesystem and then loaded. This alternative DLL is used to execute function calls to evade sandboxes which use hooking in the operating system's ntdll.dll.
 
 
 Malware Examples
@@ -31,6 +32,7 @@ Malware Examples
 |[**Ursnif**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/ursnif.md) | May 2016 | Ursnif uses malware macros to evade sandbox detection. [[2]](#2)|
 |[**Terminator**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/terminator.md) | October 2013 | The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[3]](#3)|
 |**Nap**| 2013 | Trojan Nap (tied to the Kelihos Botnet) uses extended sleep calls to evade sandbox analysis. [[3]](#3)|
+|**Smokeloader**| 2019 | Smokeloader drops a copy of ntdll.dll to %APPDATA%\Local\Temp\ [[4]] (#4) |
 
 References
 ----------
@@ -40,3 +42,4 @@ References
 
 <a name="3">[3]</a> https://www.fireeye.com/content/dam/fireeye-www/current-threats/pdfs/pf/file/fireeye-hot-knives-through-butter.pdf
 
+<a name="4">[4]</a> https://research.checkpoint.com/2019-resurgence-of-smokeloader/
