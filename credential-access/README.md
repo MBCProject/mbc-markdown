@@ -11,6 +11,7 @@ Behaviors to obtain credential access, allowing it or its underlying threat acto
 * **Credential Dumping** [T1003](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/credential-dump.md)
 * **Credentials in Files** [T1081](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/credentials-in-files.md)
 * **Credentials in Registry** [T1214](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/credentials-in-registry.md)
+* **Credentials in Web Browsers** [T1503](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/credentials-in-web-browsers.md)
 * **Hooking** [E1179](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/hooking.md)
 * **Input Capture** [T1056](https://github.com/MBCProject/mbc-markdown/blob/master/collection/input-capture.md)
 * **LLMNR/NBT-NS Poisoning** [T1171](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/LLMNR-poison.md)
