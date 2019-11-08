@@ -23,8 +23,8 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|--------|-----------------------------|
-|[**Redhip**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/redhip.md)| January 2011 | Redhip detects publicly available automated analysis workbenches (e.g., Joe Box) by considering OS product keys and special DLLs. [[1]](#1)|
-|**Rombertik**| May 2015| [[2]](#2)|
+|[**Redhip**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/redhip.md)|January 2011|Redhip detects publicly available automated analysis workbenches (e.g., Joe Box) by considering OS product keys and special DLLs. [[1]](#1)|
+|**Rombertik**|May 2015|[[2]](#2)|
 
 References
 ----------

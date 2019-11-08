@@ -17,7 +17,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
-|YiSpecter| October 2015| Attacks both jailbroken and non-jailbroken iOS devices by exploiting private APIs. [[1]](#1)|
+|[**YiSpecter**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/yispecter)|October 2015|Attacks both jailbroken and non-jailbroken iOS devices by exploiting private APIs. [[1]](#1)|
 
 References
 ----------

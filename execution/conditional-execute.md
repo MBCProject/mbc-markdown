@@ -16,7 +16,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|--------|-----------------------------|
-|[WebCobra](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/webcobra.md)| Drops either Cryptonight or Claymore's Zcash miner, depending on system architecture. [[1]](#1)|
+|[**WebCobra**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/webcobra.md)|2018|Drops either Cryptonight or Claymore's Zcash miner, depending on system architecture. [[1]](#1)|
 
 References
 ----------

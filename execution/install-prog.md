@@ -18,9 +18,9 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|--------|-----------------------------|
-| WebCobra| November 2018| Drops software to mine for cryptocurrency. [[1]](#1)|
-| Geneio| August 2015| Tricks OS X keychain to create application files. |
-| GoBotKR | July 2019 | GotBotKR reinstalls its running instance if it is removed. [[3]](#3)|
+|[**WebCobra**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/)|November 2018|Drops software to mine for cryptocurrency. [[1]](#1)|
+|[**Geneio**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/)|August 2015|Tricks OS X keychain to create application files.|
+|[**GoBotKR**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/)|July 2019 |GotBotKR reinstalls its running instance if it is removed. [[3]](#3)|
 
 References
 ----------

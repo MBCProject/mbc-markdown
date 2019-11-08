@@ -50,8 +50,8 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|--------|-----------------------------|
-|Fake Adobe Flash Update OS X | February 2016| [[2]](#2)|
-|Dridex| March 2015| [[3]](#3)|
+|**Fake Adobe Flash Update OS X**|February 2016|[[2]](#2)|
+|**Dridex**|March 2015|[[3]](#3)|
 
 References
 ----------
