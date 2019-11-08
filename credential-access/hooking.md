@@ -17,6 +17,9 @@ Methods
 -------
 * **Patch MmGetPhysicalMemoryRanges**: Patching this function to always return NULL prevents drivers from getting information about the physical address space layout, preventing memory dumps. [[1]](#1)
 * **Hook memory mapping APIs**: Prevents memory dumps by preventing mapping of memory into the kernel's virtual address space. [[1]](#1)
+* **Hook procedures**: Intercepts and executes designated code in response to events such as messages, keystrokes, and moust inputs.
+* **Import Address Hooking (IAT) Hooking**: uses modifications to a process's IAT where pointers to imported API functions are stored.
+* **Inline Hooking**: overwrites the first bytes in an API function to redirect code flow.
 
 Malware Examples
 ----------------
