@@ -25,7 +25,8 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
-|**Kronos** | June 2014 | Kronos hooks the API of processes to prevent detection. [[2]](#2)| 
+|**Kronos**|June 2014 |Kronos hooks the API of processes to prevent detection. [[2]](#2)|
+|[**TrickBot**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
 
 References
 ----------

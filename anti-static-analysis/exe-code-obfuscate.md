@@ -48,8 +48,9 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------------------------|--------|-----------------------------|
-|[**Heriplor Trojan**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/heriplor.md) | March 2019 | The Heriplor Trojan uses API Hashing. [[1]](#1)|
-|[**Geodo**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/geodo.md) |August 2018| Geodo macros are heavily obfuscated with junk functions and string substitutions. [[2]](#2)|
+|[**Heriplor Trojan**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/heriplor.md)|March 2019|The Heriplor Trojan uses API Hashing. [[1]](#1)|
+|**Geodo**|August 2018|Geodo macros are heavily obfuscated with junk functions and string substitutions. [[2]](#2)|
+|[**TrickBot**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
 
 References
 ----------

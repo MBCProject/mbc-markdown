@@ -21,7 +21,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
-|BlackEnergy| October 2007| Launches distributed denial of service attacks that can target more than one IP address per hostname. [[1]](#1)|
+|[**BlackEnergy**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/blackenergy.md)|October 2007|Launches distributed denial of service attacks that can target more than one IP address per hostname. [[1]](#1)|
 
 References
 ----------

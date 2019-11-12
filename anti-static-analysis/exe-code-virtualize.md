@@ -19,7 +19,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|--------|-----------------------------|
-| Locky Bart | January 2017 | Code virtualization is added to the Locky Bart binary using WPProtect. [[2]](#2)
+|[**Locky Bart**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/locky-bart.md)|January 2017|Code virtualization is added to the Locky Bart binary using WPProtect. [[2]](#2)|
 
 References
 ----------

@@ -9,3 +9,9 @@ Standard Application Layer Protocol
 Malware may use a standard application layer protocol (e.g., HTTP) to blend with usual traffic.
 
 **See ATT&CK:** [**Standard Application Layer Protocol**](https://attack.mitre.org/techniques/T1071/).
+
+Malware Examples
+----------------
+|Name|Date|Description|
+|-----------------------------|-----------|-----------------------------|
+|[**TrickBot**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|

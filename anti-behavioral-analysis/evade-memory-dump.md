@@ -24,7 +24,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
-|Kraken| April 2008| Dumping Kraken's c.dll module from the heap of its own process is tricky because its PE-header is erased in memory. [[2]](#2)|
+|[Kraken](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/kraken.md)| April 2008| Dumping Kraken's c.dll module from the heap of its own process is tricky because its PE-header is erased in memory. [[2]](#2)|
 
 References
 ----------

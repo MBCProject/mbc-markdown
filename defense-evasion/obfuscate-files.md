@@ -10,3 +10,9 @@ Obfuscated Files or Information
 Malware may make files or information difficult to discover or analyze by encoding, encrypting, or otherwise obfuscating the content. A related MBC behavior, associated explicitly with executable code and its analysis, is [Executable Code Obfuscation](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis/exe-code-obfuscate.md).
 
 See ATT&CK: [**Obfuscated Files or Information**](https://attack.mitre.org/techniques/T1027/).
+
+Malware Examples
+----------------
+|Name|Date|Description|
+|-----------------------------|-----------|-----------------------------|
+|[**TrickBot**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|

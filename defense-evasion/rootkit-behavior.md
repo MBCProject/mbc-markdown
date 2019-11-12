@@ -25,6 +25,14 @@ Methods
 * **Prevent Memory Access**: Prevents access to system memory where the malware instance may be storing code or data.
 * **Prevent Native API Hooking**: Prevents other software from hooking native system APIs.
 
+Malware Examples
+----------------
+|Name|Date|Description|
+|-----------------------------|--------|-----------------------------|
+|[**Poison-Ivy**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/poison-ivy.md)|2005|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
+
 References
 ----------
 <a name="1">[1]</a> https://en.wikipedia.org/wiki/Rootkit
+
+<a name="2">[2]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
