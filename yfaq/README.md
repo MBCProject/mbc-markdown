@@ -77,9 +77,9 @@ ATT&CK models the life cycle of a human adversary, which results in an ordering 
 
 ### Some MBC behaviors seem to be characteristics of code, not actual behaviors (e.g., [Executable Code Optimization](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-optimize.md)). Why are they captured and why are they called behaviors? ###
 
-MBC captures traits of malware that are evident through analysis and that support one or more malware analysis use cases. For example, capturing a characteristic such as Executable Code Optimization supports use cases such as attribution and detection by indicating that optimization has been used to make the code harder to analyze. Such "characteristics" are called "behaviors" to simplify terminology. 
+MBC captures traits of malware that are evident through code analysis and that support malware analysis use cases. For example, capturing a characteristic such as Executable Code Optimization supports use cases such as attribution and detection by indicating that optimization has been used to make the code harder to analyze. Such "characteristics" are called "behaviors" to simplify terminology and are captured under the "Observable Feature" objective.
 
-While characteristics are evident by looking at the code, they may not relate to specific code snippets. For example, one may say that the malware has been obfuscated ([Executable Code Obfuscation](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md) ), which can be determined via a global view of the sample. 
+While Observable Feature "behaviors" are evident by looking at the code, they may not relate to specific code snippets. For example, one may say that the malware has been obfuscated ([Executable Code Obfuscation](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md) ), which can be determined via a global view of the sample. 
 
 ### Do malware behaviors and adversary behaviors overlap? ###
 
@@ -105,13 +105,25 @@ For example, MBC defines separate behaviors for detecting sandboxes ([Sandbox De
 
 ### What are the primary use cases of MBC? ###
 
-MBC enables consistency in reporting and consequently, supports analytics and similarity analysis. MBC's well-defined behaviors also support the definition of indicator signatures for detecting behaviors during analysis.
+MBC's primary use cases are:
+* **Standardized reporting**: Enables consistent interpretation of result data and improves detection, mitigation, and remediation.
+* **Correlation of malware analysis results**: Correlates results of automated tools (e.g., sandboxes) or manual analysis, providing validation of results or identifying areas for further investigation.
+* **Labeled data sets for malware research**: using MBC to label malware samples provides a collection of malware meeting chosen criteria that can support research (e.g., assessment of tool effectiveness, similarity analysis).
+* **Malware analysis support**: Informs the malware analysis process because having a set of identified, organized behaviors helps an analyst know what to look for.
 
-### Can MBC behaviors be used without MBC objectives? Can objectives be used without behaviors? Or must objectives and behaviors be specified in pairs? ###
+### How should information in the Methods section be used? ###
+
+Methods are variations of behaviors and are provided to help explain behaviors. Methods aren't intended to be referenced in analyses in the same way that behaviors are, in part because it would be hard to enumerate all methods associated with a behavior. 
+
+MBC aims to support the malware analysis community so eventually, methods could be expanded and refined to serve as "sub-behaviors." If the expansion of methods is warranted, it may be they are used for manual mapping of behaviors while higher-level behaviors are used by automated analysis systems (which is not to say that some methods could not be identified automatically).
+
+### Can MBC behaviors be used without MBC objectives? Can objectives be used without behaviors? Or must objectives and behaviors be specified in pairs? Can methods be used alone? ###
 
 Objectives correspond to the intentions behind malware behaviors. For example, malware may use [Hooking](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/hooking.md) (behavior) to load and execute code within the context of another process either to hide its execution (defense evasion objective), to gain elevated privileges (privilege escalation objective), or to access the process's memory (credential access objective). Because it's not always possible to know intent, MBC behaviors can be used without objectives. For example, automated sandbox analysis may indicate hooking behavior without corresponding information on intent, in which case objectives might not be specified; alternatively, *all* objectives associated with a behavior might be noted. 
 
 If lower level behaviors are not known, it may be appropriate to only reference an MBC objective. For example, if a sandbox reports that a malware sample exhibits "self-defense" with no other details, the information is best captured by the Defense Evasion objective, without specifying any specific behaviors.
+
+Because methods are specific to a behavior, they're always associated with a behavior and aren’t used on their own
 
 ### <a name="gotbotkr"><a/>Can malware behaviors identified via manual analysis map to multiple MBC behaviors, or should correspondence be one-to-one? ###
 
@@ -137,11 +149,9 @@ MBC does not define relationships between behaviors, so association of behaviors
 
 Ideally, the product vendor will provide the MBC mapping, but if not and it's not possible to ask the signature developer for details, it may be best to map the indicator to all potentially relevant MBC behaviors (a one-to-many mapping). For example, the indicator "opened listening port" could be mapped to both [Command and Control:C2 Communication](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/command-control-comm.md) and [Impact:Remote Access](https://github.com/MBCProject/mbc-markdown/blob/master/impact/remote-access.md).
 
-### How should information in the Methods section be used? ###
+### Can variant names captured by an anti-virus tool be captured in MBC? ###
 
-Methods are variations of behaviors and are provided to help explain behaviors. Methods aren't intended to be referenced in analyses in the same way that behaviors are, in part because it would be hard to enumerate all methods associated with a behavior. 
-
-MBC aims to support the malware analysis community so eventually, methods could be expanded and refined to serve as "sub-behaviors." If the expansion of methods is warranted, it may be they are used for manual mapping of behaviors while higher-level behaviors are used by automated analysis systems (which is not to say that some methods could not be identified automatically).
+No. MBC captures behaviors and observable features directly associated with malware code. Variant names are outside MBC's scope. A variant name lead to published reports, in which case one could map the sample to the associated behaviors.
 
 ### If malware displays only some attributes defining a behavior, it is correct to say it exhibits the behavior? ###
 
