@@ -77,7 +77,7 @@ ATT&CK models the life cycle of a human adversary, which results in an ordering 
 
 ### Some MBC behaviors seem to be characteristics of code, not actual behaviors (e.g., [Executable Code Optimization](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-optimize.md)). Why are they captured and why are they called behaviors? ###
 
-MBC captures traits of malware that are evident through code analysis and that support malware analysis use cases. For example, capturing a characteristic such as Executable Code Optimization supports use cases such as attribution and detection by indicating that optimization has been used to make the code harder to analyze. Such "characteristics" are called "behaviors" to simplify terminology and are captured under the "Observable Feature" objective.
+MBC captures traits of malware that are evident through code analysis to support malware analysis use cases. For example, capturing a characteristic such as Executable Code Optimization supports use cases such as attribution and detection by indicating that optimization has been used to make the code harder to analyze. Such "characteristics" are called "behaviors" to simplify terminology and are captured under the "Observable Feature" objective.
 
 While Observable Feature "behaviors" are evident by looking at the code, they may not relate to specific code snippets. For example, one may say that the malware has been obfuscated ([Executable Code Obfuscation](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md) ), which can be determined via a global view of the sample. 
 
@@ -105,11 +105,10 @@ For example, MBC defines separate behaviors for detecting sandboxes ([Sandbox De
 
 ### What are the primary use cases of MBC? ###
 
-MBC's primary use cases are:
-* **Standardized reporting**: Enables consistent interpretation of result data and improves detection, mitigation, and remediation.
-* **Correlation of malware analysis results**: Correlates results of automated tools (e.g., sandboxes) or manual analysis, providing validation of results or identifying areas for further investigation.
-* **Labeled data sets for malware research**: using MBC to label malware samples provides a collection of malware meeting chosen criteria that can support research (e.g., assessment of tool effectiveness, similarity analysis).
-* **Malware analysis support**: Informs the malware analysis process because having a set of identified, organized behaviors helps an analyst know what to look for.
+* **Standardized reporting**: Enables consistent interpretation of result data to improve detection, mitigation, and remediation.
+* **Correlation of malware analysis results**: Correlates results of automated tools (e.g., sandboxes) or manual analysis, validating results or identifying areas for further investigation.
+* **Labeled data sets for malware research**: Using MBC to label malware samples provides a collection of malware meeting chosen criteria that can support research (e.g., assessment of tool effectiveness, similarity analysis).
+* **Malware analysis support**: MBC's set of identified, organized behaviors helps an analyst know what to look for, informing the malware analysis process.
 
 ### How should information in the Methods section be used? ###
 
@@ -123,7 +122,7 @@ Objectives correspond to the intentions behind malware behaviors. For example, m
 
 If lower level behaviors are not known, it may be appropriate to only reference an MBC objective. For example, if a sandbox reports that a malware sample exhibits "self-defense" with no other details, the information is best captured by the Defense Evasion objective, without specifying any specific behaviors.
 
-Because methods are specific to a behavior, they're always associated with a behavior and aren’t used on their own
+Because methods are specific to a behavior, they're always associated with a behavior and aren’t used on their own.
 
 ### <a name="gotbotkr"><a/>Can malware behaviors identified via manual analysis map to multiple MBC behaviors, or should correspondence be one-to-one? ###
 
@@ -151,7 +150,7 @@ Ideally, the product vendor will provide the MBC mapping, but if not and it's no
 
 ### Can variant names captured by an anti-virus tool be captured in MBC? ###
 
-No. MBC captures behaviors and observable features directly associated with malware code. Variant names are outside MBC's scope. A variant name lead to published reports, in which case one could map the sample to the associated behaviors.
+No. MBC captures behaviors and observable features directly associated with malware code. Variant names are outside MBC's scope. A variant name may lead to published reports, in which case one could map the sample to its associated behaviors.
 
 ### If malware displays only some attributes defining a behavior, it is correct to say it exhibits the behavior? ###
 
