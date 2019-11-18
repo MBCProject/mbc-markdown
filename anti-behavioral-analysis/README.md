@@ -7,6 +7,7 @@ Behaviors that prevent, obstruct, or evade behavioral analysis (sandbox, debugge
 
 Two primary resources for anti-behavioral analysis behaviors are [[1]](#1) and [[2]](#2).
 
+* **Capture Evasion** [M0036](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/evade-capture.md)
 * **Debugger Detection** [M0001](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/detect-debugger.md)
 * **Debugger Evasion** [M0002](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/evade-debugger.md)
 * **Dynamic Analysis Evasion** [M0003](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/evade-dynamic-analysis.md)
