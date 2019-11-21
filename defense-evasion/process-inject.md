@@ -13,7 +13,7 @@ See ATT&CK: [**Process Injection**](https://attack.mitre.org/techniques/T1055).
 
 Methods
 ------- 
-* **Method**: Method description...
+* **Shell_TrayWnd**: Injects code using the Shell_TRyaWnd technique.
 
 Malware Examples
 ----------------
