@@ -1,14 +1,14 @@
 |||
 |---------|------------------------|
-|**ID**|**M0036**|
+|**ID**|**E1045**|
 |**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis), [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis), [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
 |**Related ATT&CK Technique(s)**|[Software Packing](https://attack.mitre.org/techniques/T1045/)|
 
-Executable Code Compression
-===========================
-Executable Code Compression can make static and behavioral analysis difficult [[1]](#1). Methods related to anti-analysis are below. 
+Software Packing
+================
+This code characteristic - Executable Code Compression - can make static and behavioral analysis difficult and includes malware packed with a software protectors, such as Themida and Armadillo [[1]](#1). Methods related to anti-analysis are below. 
 
-This and the [Executable Code Obfuscation](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md) behavior refine the ATT&CK [**Software Packing**](https://attack.mitre.org/techniques/T1045/) technique.
+This description refines the ATT&CK [**Software Packing**](https://attack.mitre.org/techniques/T1045/) technique.
 
 Methods
 -------

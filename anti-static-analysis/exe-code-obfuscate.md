@@ -2,16 +2,14 @@
 |---------|------------------------|
 |**ID**|**M0032**|
 |**Objective(s)**| [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis), [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
-|**Related ATT&CK Technique(s)**|[Software Packing](https://attack.mitre.org/techniques/T1045/)|
+|**Related ATT&CK Technique(s)**|None|
 
 
 Executable Code Obfuscation
 ===========================
 Executable code uses obfuscation to hinder disassembly and static code analysis. Methods related to *anti-static analysis* are below. The Executable Code Obfuscation behavior is specific to a malware sample's executable code (data and text sections).
 
-This and the [Executable Code Compression](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-compression.md) behavior refine the ATT&CK [**Software Packing**](https://attack.mitre.org/techniques/T1045) technique.
-
-For obfuscation behaviors related to non-malware-sample files and information, see ATT&CK: [**Obfuscated Files or Information**](https://attack.mitre.org/techniques/T1027/), under the [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion) objective.
+For encryption and encoding characteristics of malware samples, as well as malware obfuscation behaviors related to non-malware-sample files and information, see [**Obfuscated Files or Information**](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/obfuscate-files.md).
 
 Methods
 -------
@@ -23,16 +21,6 @@ Methods
    * *Thunk Code Insertion*: Variation on Jump Insertion. Used by some compilers for user-generated functions.
    * *Junk Code Insertion*: Insert dummy code between relevant opcodes. Can make signature writing more complex.
 * **Data Value Obfuscation**: Obfuscate data values through indirection of local or global variables. For example, the instruction *if (a == 0) do x* can be obfuscated by setting a global variable, *Z*, to zero and using it in the instruction: *if (a==Z) do x*.  [NEEDS REVIEW]
-* **Encoding**:
-   * *Standard Encoding*: A standard algorithm, such as base64 encoding, is used to encode the malware sample.
-   * *Custom Encoding*: A custom algorithm is used to encode the malware sample.
-* **Encryption**: 
-   * *Standard Encryption*: A standard algorithm, such as Rijndael/AES, DES, RC4, is used to encrypt an executable file. Encryption hinders static analysis of malware code. Also known as **Code Encryption in File**.
-   * *Standard Encryption of Code*: A standard encryption algorithm is used to encrypt a file's executable code, but not necessarily the file's data. 
-   * *Standard Encryption of Data*: A standard encryption algorithm is used to encrypt a file's data, but not necessarily the file's code. 
-   * *Custom Encryption*: A custom algorithm is used to encrypt an executable file. Encryption hinders static analysis of malware code. Also known as **Code Encryption in File**.
-   * *Custom Encryption of Code*: A custom encryption algorithm is used to encrypt a file's executable code, but not necessarily the file's data.
-   * *Custom Encryption of Data*: A custom encryption algorithm is used to encrypt a file's data, but not necessarily the file's code.
 * **Entry Point Obfuscation**: Obfuscate the entry point of the malware executable.
 * **Guard Pages**: Encrypt blocks of code individually and decrypt temporarily only upon execution.
 * **Import Address Table Obfuscation**: Obfuscate the import address table.
