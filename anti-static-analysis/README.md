@@ -13,7 +13,7 @@ Two primary resources for anti-static analysis behaviors are [[1]](#1) and [[2]]
 * **Executable Code Optimization** [M0034](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-optimize.md)
 * **Executable Code Virtualization** [M0008](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-virtualize.md)
 * **Obfuscated Files or Information** [E1027](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/obfuscate-files.md)
-* **Software Packing** [M0036](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/software-packing.md)
+* **Software Packing** [E1045](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/software-packing.md)
 
 
 References

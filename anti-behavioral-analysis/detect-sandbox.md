@@ -13,6 +13,7 @@ The Sandbox Detection behavior relates to anti-analysis, whereas a related ATT&C
 
 Methods
 -------
+* **Check Clipboard Data**: Checks clipboard data which can be used to detect whether execution is inside a sandbox.
 * **Check Files**: Sandboxes create files on the file system. Malware can check the different folders to find sandbox artifacts.
 * **Human User Check**: Detects whether there is any "user" activity on the machine, such as the movement of the mouse cursor, non-default wallpaper, or recently opened Office files. If there is no human activity, the machine is suspected to be a virtualized machine and/or sandbox.
 * **Injected DLL Testing**: Testing for the name of a particular DLL that is known to be injected by a sandbox for API hooking is a common way of detecting sandbox environments. This can be achieved through the kernel32!GetModuleHandle API call and other means.
