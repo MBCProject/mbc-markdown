@@ -1,13 +1,13 @@
 |||
 |---------|------------------------|
 |**ID**|**M0032**|
-|**Objective(s)**| [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis), [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
+|**Objective(s)**| [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis)|
 |**Related ATT&CK Technique(s)**|None|
 
 
 Executable Code Obfuscation
 ===========================
-Executable code uses obfuscation to hinder disassembly and static code analysis. Methods related to *anti-static analysis* are below. The Executable Code Obfuscation behavior is specific to a malware sample's executable code (data and text sections).
+Executable code can be obfuscated to hinder disassembly and static code analysis. This behavior is specific to a malware sample's executable code (data and text sections).
 
 For encryption and encoding characteristics of malware samples, as well as malware obfuscation behaviors related to non-malware-sample files and information, see [**Obfuscated Files or Information**](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/obfuscate-files.md).
 
