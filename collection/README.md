@@ -19,6 +19,6 @@ Behaviors that identify and gather information, such as sensitive files, from a 
 * **Input Capture** [T1056](https://github.com/MBCProject/mbc-markdown/blob/master/collection/input-capture.md)
 * **Location Tracking** [T1430](https://github.com/MBCProject/mbc-markdown/blob/master/collection/location-track.md)
 * **Man in the Browser** [T1185](https://github.com/MBCProject/mbc-markdown/blob/master/collection/man-in-browser.md)
-* **Microphone or Camera Recordings** [T1429](https://github.com/MBCProject/mbc-markdown/blob/master/collection/micro-cam-capture.md)
+* **Microphone or Camera Capture** [T1429](https://github.com/MBCProject/mbc-markdown/blob/master/collection/micro-cam-capture.md)
 * **Screen Capture** [T1113](https://github.com/MBCProject/mbc-markdown/blob/master/collection/screen-capture.md)
 * **Video Capture** [T1125](https://github.com/MBCProject/mbc-markdown/blob/master/collection/video-capture.md)
