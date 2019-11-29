@@ -7,7 +7,7 @@ Behaviors that steal data from the system on which it executes. This includes st
 
 * **Automated Exfiltration** [E1020](https://github.com/MBCProject/mbc-markdown/blob/master/exfiltration/auto-exfiltrate.md)
 * **Data Compressed** [T1002](https://github.com/MBCProject/mbc-markdown/blob/master/exfiltration/data-compress.md)
-* **Data Obfuscated** [E1022](https://github.com/MBCProject/mbc-markdown/blob/master/exfiltration/data-obfuscated.md)
+* **Data Encrypted** [E1022](https://github.com/MBCProject/mbc-markdown/blob/master/exfiltration/data-encrypted.md)
 * **Exfiltration Over Alternative Protocol** [T1048](https://github.com/MBCProject/mbc-markdown/blob/master/exfiltration/exfil-over-alternative-protocol.md)
 * **Exfiltration Over Command and Control Channel** [T1041](https://github.com/MBCProject/mbc-markdown/blob/master/exfiltration/exfil-over-c2-channel.md)
 * **Exfiltration Over Other Network Medium** [T1011](https://github.com/MBCProject/mbc-markdown/blob/master/exfiltration/exfil-over-other-network-medium.md)

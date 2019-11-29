@@ -5,9 +5,9 @@
 |**Related ATT&CK Technique(s)**|[Data Encrypted](https://attack.mitre.org/techniques/T1022/)|
 
 
-Data Obfuscated
-===============
-Malware may obfuscate data before exfiltration.
+Data Encrypted
+==============
+Malware may obfuscate data via encryption or encoding before exfiltration.
 
 **See ATT&CK Technique:** [**Data Encrypted**](https://attack.mitre.org/techniques/T1022/).
 
