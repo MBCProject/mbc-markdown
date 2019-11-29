@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**E1027**|
-|**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
+|**Objective(s)**| [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis), [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
 |**Related ATT&CK Technique(s)**|[Obfuscated Files or Information](https://attack.mitre.org/techniques/T1027)|
 
 

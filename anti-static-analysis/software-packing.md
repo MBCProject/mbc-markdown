@@ -6,7 +6,7 @@
 
 Software Packing
 ================
-This code characteristic - Executable Code Compression - can make static and behavioral analysis difficult and includes malware packed with a software protectors, such as Themida and Armadillo [[1]](#1). Methods related to anti-analysis are below. 
+This code characteristic - Software Packing - can make static and behavioral analysis difficult and includes packing with a software protectors, such as Themida and Armadillo [[1]](#1). Methods related to anti-analysis are below. 
 
 This description refines the ATT&CK [**Software Packing**](https://attack.mitre.org/techniques/T1045/) technique.
 
