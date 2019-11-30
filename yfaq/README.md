@@ -18,7 +18,7 @@ Operationally, most malware behaviors are identified via analysis, either direct
 
 It's not feasible for ATT&CK to expand to cover *all* problem spaces, to include the malware analysis space. As stated in the ATT&CK design and philosophy document [[1]](#1), "The basis of ATT&CK is the set of individual techniques that represent actions that adversaries can perform to accomplish objectives." This differs from the malware community's need to capture information discovered via *analysis* of malware code. 
 
-While malware sometimes acts as a surrogate for an adversary (i.e., there is overlap between malware and adversary behavior), there are aspects unique to malware, mostly notably anti-analysis characteristics that are only identified during analysis: [Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis) and [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis). Some MBC behaviors may be appropriate for inclusion in ATT&CK, but it is up to the ATT&CK team to identify them and integrate the content.
+While malware sometimes acts as a surrogate for an adversary (i.e., there is overlap between malware and adversary behavior), there are aspects unique to malware, mostly notably anti-analysis characteristics that are only identified during analysis: [ANTI-BEHAVIORAL ANALYSIS](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis) and [ANTI-STATIC ANALYSIS](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis). Some MBC behaviors may be appropriate for inclusion in ATT&CK, but it is up to the ATT&CK team to identify them and integrate the content.
 
 ### Why does MBC include ATT&CK techniques? Why not create a stand-alone supplement to ATT&CK? ###
 
@@ -56,7 +56,7 @@ Many MBC behaviors stemmed from the MAEC and EMA work, with the collection evolv
 
 Initial Access - the way malware gains an initial foothold within a system - is not typically determined by analyzing the malware's code. For example, in ATT&CK's [Spearphishing Attachment](https://attack.mitre.org/techniques/T1193/) technique, the attachment may be a malicious executable file, but the *code* of the attached file's isn't related to its email delivery. This is not to say an analyst can't surmise initial access by studying a malware instance, but determining initial access requires evidence beyond the malware's code. 
 
-Some malware self-replicates or distributes other malware, but in keeping with MBC's *malware, code-oriented perspective*, such behaviors would be associated with the [Lateral Movement](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement/), [Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution/), and/or [Effects](https://github.com/MBCProject/mbc-markdown/tree/master/effects/) objectives in MBC. For example, if malware sends spearphishing email, its behavior would be captured by the [Send Email](https://github.com/MBCProject/mbc-markdown/tree/master/execution/send-email.md) behavior, which is associated with execution and lateral movement.
+Some malware self-replicates or distributes other malware, but in keeping with MBC's *malware, code-oriented perspective*, such behaviors would be associated with the [LATERAL MOVEMENT](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement/), [EXECUTION](https://github.com/MBCProject/mbc-markdown/tree/master/execution/), and/or [IMPACT](https://github.com/MBCProject/mbc-markdown/tree/master/impact/) objectives in MBC. For example, if malware sends spearphishing email, its behavior would be captured by the [Send Email](https://github.com/MBCProject/mbc-markdown/tree/master/execution/send-email.md) behavior, which is associated with execution and lateral movement.
 
 ### Why aren't [PRE-ATT&CK](https://attack.mitre.org/techniques/pre/) techniques used by malware authors included in MBC? ###
 **For example, why doesn't the [Obfuscate or Encrypt Code](https://attack.mitre.org/techniques/T1319/) technique under the [Adversary OPSEC](https://attack.mitre.org/tactics/TA0021/) tactic apply to malware showing signs of anti-analysis techniques?**
@@ -130,15 +130,15 @@ Each malware behavior identified during analysis and associated with a specific 
 
 For example, a [GotBotKR](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md) report reflecting manual analysis reads, "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2). Initially, one might think this is a single behavior, but it can be broken apart and mapped into three MBC behaviors:
 
-* [Persistence: Redundant Access](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/redundant-access.md) ("installs two instances of itself")
+* [PERSISTENCE::Redundant Access](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/redundant-access.md) ("installs two instances of itself")
 
-* [Discovery: Process Discovery](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/process-discover.md) ("monitors whether the first instance is still active")
+* [DISCOVERY::Process Discovery](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/process-discover.md) ("monitors whether the first instance is still active")
 
-* [Execution: Install Additional Program](https://github.com/MBCProject/mbc-markdown/blob/master/execution/install-prog.md) ("reinstalls [itself] if it has been removed")
+* [EXECUTION::Install Additional Program](https://github.com/MBCProject/mbc-markdown/blob/master/execution/install-prog.md) ("reinstalls [itself] if it has been removed")
 
 ### Can malware behaviors identified by automated sandboxes and tools map to multiple MBC behaviors or should correspondence be one-to-one? ###
 
-Behaviors identified by automated tools are often intentionally broad to give an overview of the malware sample's behavior. Broad behaviors will often map to multiple MBC behaviors. For example, if a tool reports that the Armadillo was used on the sample, both [Executable Code Obfuscation](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md) and [Executable Code Compression](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-compression.md) behaviors apply.
+Behaviors identified by automated tools are often intentionally broad to give an overview of the malware sample's behavior. Broad behaviors will often map to multiple MBC behaviors. For example, if a tool reports that Armadillo was used on the sample, both [Executable Code Obfuscation](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md) and [Software Packing](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/software-packing.md) behaviors apply.
 
 ### How are MBC behaviors, possibly at different levels of abstraction, associated? ###
 
@@ -146,11 +146,15 @@ MBC does not define relationships between behaviors, so association of behaviors
 
 ### How do I map an analysis product's output to MBC when I don't know the details behind the behavior indicators? ###
 
-Ideally, the product vendor will provide the MBC mapping, but if not and it's not possible to ask the signature developer for details, it may be best to map the indicator to all potentially relevant MBC behaviors (a one-to-many mapping). For example, the indicator "opened listening port" could be mapped to both [Command and Control:C2 Communication](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/command-control-comm.md) and [Impact:Remote Access](https://github.com/MBCProject/mbc-markdown/blob/master/impact/remote-access.md).
+Ideally, the product vendor will provide the MBC mapping, but if not and it's not possible to ask the signature developer for details, it may be best to map the indicator to all potentially relevant MBC behaviors (a one-to-many mapping). For example, the indicator "opened listening port" could be mapped to both [COMMAND AND CONTROL::C2 Communication](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/command-control-comm.md) and [IMPACT::Remote Access](https://github.com/MBCProject/mbc-markdown/blob/master/impact/remote-access.md).
 
 ### Can variant names captured by an anti-virus tool be captured in MBC? ###
 
-No. MBC captures behaviors and observable features directly associated with malware code. Variant names are outside MBC's scope. A variant name may lead to published reports, in which case one could map the sample to its associated behaviors.
+No. MBC captures behaviors and characteristics directly associated with malware code. Variant names are outside MBC's scope. A variant name may lead to published reports, in which case, one could map the sample to its associated behaviors.
+
+### Can MBC capture specific data values associated with a behavior? ###
+
+No. For example, MBC might capture the behavior ANTI-BEHAVIORAL ANALYSIS::Emulator Detection::Registry Keys, but the specific registry key (e.g., SYSTEM\ControlSet001\Services\VBoxMouse (VBOX)) would be captured outside of MBC (e.g., as STIX Windows Registry Key Object). 
 
 ### If malware displays only some attributes defining a behavior, it is correct to say it exhibits the behavior? ###
 
