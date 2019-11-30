@@ -30,7 +30,7 @@ No. Given that MBC aims to serve as a model and test case for how ATT&CK can be 
 
 ### Will MBC be updated when ATT&CK is updated? ###
 
-Yes. New and updated ATT&CK content supporting malware analysis use cases will be integrated into MBC. When a new ATT&CK technique is defined *after* an MBC behavior has been defined, the preexisting MBC identifier will be preserved and the ATT&CK identifier will be appended (e.g., M0123:T1234). See the [Identifier](https://github.com/MBCProject/mbc-markdown#ids) section for details.
+Yes. New and updated ATT&CK content supporting malware analysis use cases will be integrated into MBC. When a new ATT&CK technique is defined *after* an MBC behavior has been defined, the preexisting MBC identifier will be preserved. See the [Identifier](https://github.com/MBCProject/mbc-markdown#ids) section for details.
 
 ### Will MBC *always* remain distinct from ATT&CK, or someday might its content be merged into ATT&CK? ###
 
