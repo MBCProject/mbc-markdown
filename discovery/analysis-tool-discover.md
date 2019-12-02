@@ -7,7 +7,7 @@
 
 Analysis Tool Discovery
 =======================
-Malware can employ various means to detect whether analysis tools are present or running on the system on which it is executing. Note that analysis tools are used to *analyze* malware whereas security software (see [Security Software Discovery](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/security-sw-discover.md) aims to *detect/mitigate* malware on a system or network.
+Malware can employ various means to detect whether analysis tools are present or running on the system on which it is executing. Note that analysis tools are used to *analyze* malware whereas security software (see [Security Software Discovery](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/security-sw-discover.md)) aims to *detect/mitigate* malware on a system or network.
 
 Methods
 -------
