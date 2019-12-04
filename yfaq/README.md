@@ -168,7 +168,9 @@ The MBC will evolve to better support the malware analysis community. If you hav
 
 * **MBC Mailing List** - To join the MBC mailing list, please send a request to mbc@mitre.org.
 
-* **STIX 2 Representation** - MBC content is now available in STIX 2 format - see the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository.
+* **Cuckoo-MBC Mappings** - Cuckoo Sandbox 2.0.7 includes mappings between its signatures and ATT&CK. The MBC team is defining Cuckoo-MBC mappings; accuracy will be increased because of MBC’s malware focus. We hope to have the full set of mappings on GitHub by the end of 2019.
+
+* **STIX 2 Representation** - MBC content will soon be available in STIX 2 format - see the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository.
 
 * **MBC Website** - An MBC website will replace markdown documents by the end of 2019.
 
