@@ -17,7 +17,7 @@ Methods
 * **CreateRemoteThread**: Create a thread using CreateRemoteThread.
 * **SetWindowsHooksEx**
 * **NtCreateThreadEx**
-* **RtlCreateUserThread
+* **RtlCreateUserThread**
 * **APC**: QueueUserAPC / NtQueueApcThread [[3]](#3).
 * **RunPE**: GetThreadContext / SetThreadContext [[3]](#3).
 
