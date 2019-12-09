@@ -15,6 +15,12 @@ Methods
 ------- 
 * **Shell_TrayWnd**: Injects code using the Shell_TRyaWnd technique.
 * **CreateRemoteThread**: Create a thread using CreateRemoteThread.
+* **SetWindowsHooksEx**
+* **NtCreateThreadEx**
+* **RtlCreateUserThread
+* **APC**: QueueUserAPC / NtQueueApcThread [[3]](#3).
+* **RunPE**: GetThreadContext / SetThreadContext [[3]](#3).
+
 
 Malware Examples
 ----------------
@@ -29,3 +35,5 @@ References
 <a name="1">[1]</a> https://citizenlab.ca/2016/04/between-hong-kong-and-burma/
 
 <a name="2">[2]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
+
+<a name="3">[3]</a> https://github.com/LordNoteworthy/al-khaser 
