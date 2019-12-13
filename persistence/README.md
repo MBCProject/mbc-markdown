@@ -11,6 +11,7 @@ Malware aims to remain on a system regardless of system events.
 * **.bash_profile and .bashrc** [T1156](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/bash.md)
 * **BITS Jobs** [T1197](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/bits-jobs.md)
 * **Boot Sector Modification** [M0028](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/boot-sector-mod.md)
+* **Browser Extensions** [MT1176](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/browser-extend.md)
 * **Change Default File Association** [T1042](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/change-default-file-assoc.md)
 * **Component Firmware** [E1109](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/component-firmware.md)
 * **Component Object Model Hijacking** [T1122](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/component-hijack.md)
