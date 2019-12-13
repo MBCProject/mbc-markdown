@@ -93,7 +93,7 @@ MBC maintains a malware, code-oriented perspective, so MBC behavior names will n
 
 No. An objective of MBC is to encompass all ATT&CK techniques pertaining to malware; therefore a single MBC behavior is never mapped to multiple ATT&CK techniques (except when an ATT&CK *Enterprise* technique is similar to an ATT&CK *Mobile* technique). 
 
-This means additional MBC behaviors must sometimes be defined. For example, MBC initially defined one Denial of Service behavior, but after an update to ATT&CK included two related techniques - [Endpoint Denial of Service](https://attack.mitre.org/techniques/T1499/) and [Network Denial of Service](https://attack.mitre.org/techniques/T1498/) - MBC was expanded to include both as behaviors.
+This means additional MBC behaviors must sometimes be defined. For example, MBC initially defined one [Denial of Service](https://github.com/MBCProject/mbc-markdown/blob/master/impact/denial-of-service.md) behavior, which was not defined in ATT&CK. After an update to ATT&CK defined two related techniques - [Endpoint Denial of Service](https://attack.mitre.org/techniques/T1499/) and [Network Denial of Service](https://attack.mitre.org/techniques/T1498/) (equivalent to MBC's Denial of Service behavior), MBC was expanded to include the Endpoint Denial of Service behavior.
 
 ### Are different MBC behaviors linked (related) to the same ATT&CK technique? ###
 
