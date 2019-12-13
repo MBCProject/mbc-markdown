@@ -79,7 +79,9 @@ ATT&CK models the life cycle of a human adversary, which results in an ordering 
 
 MBC captures traits of malware that are evident through code analysis to support malware analysis use cases. For example, capturing a characteristic such as Executable Code Optimization supports use cases such as attribution and detection by indicating that optimization has been used to make the code harder to analyze. Such "characteristics" are captured as "behaviors" to simplify MBC's structure; however, their descriptions identify them as "characteristics."
 
-Characteristics are evident by looking at the code and may not relate to specific code snippets. For example, a high-level look at a malware instance can reveal that it is encrypted ([Obfuscated Files or Information](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/obfuscate-files.md) ). 
+Characteristics are evident by looking at the code and may not relate to specific code snippets. For example, a high-level look at a malware instance can reveal it is encrypted ([Obfuscated Files or Information](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/obfuscate-files.md) ). 
+
+Observables that do not reflect on the malware's *code* are not captured in MBC; for example, strings and data in the code are not captured in MBC.
 
 ### Do malware behaviors and adversary behaviors overlap? ###
 
