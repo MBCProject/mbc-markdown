@@ -14,6 +14,7 @@ Behaviors that evade detection or avoid other defenses.
 * **Bypass User Account Control** [T1088](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/bypass-user-acct-cntl.md)
 * **Code Signing** [T1116](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/code-signing.md)
 * **Component Object Model Hijacking** [T1122](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/component-hijack.md)
+* **Configuration Modification** [E1478](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/config-mod.md)
 * **DCShadow** [T1207](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/dcshadow.md)
 * **Deobfuscate/Decode Files or Information** [T1140](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/deobfuscate-files.md)
 * **Disabling Security Tools** [E1089](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/disable-security-tools.md)
