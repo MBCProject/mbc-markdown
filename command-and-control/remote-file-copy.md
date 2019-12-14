@@ -1,12 +1,12 @@
 |||
 |---------|------------------------|
-|**ID**|**T1105**|
-|**Objective(s)**|[Command and Control](https://github.com/MBCProject/mbc-markdown/tree/master/command-and-control), [Lateral Movement](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement)|
+|**ID**|**E1105**|
+|**Objective(s)**|[Command and Control](https://github.com/MBCProject/mbc-markdown/tree/master/command-and-control), [Lateral Movement](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
 |**Related ATT&CK Technique(s)**|[Remote File Copy](https://attack.mitre.org/techniques/T1105/)|
 
 Remote File Copy
 ================
-Malware may copy files from one system to another.
+Malware may copy files from one system to another. Note that this behavior is separate from the execution of the file, which is covered by the [Install Additional Program](https://github.com/MBCProject/mbc-markdown/blob/master/execution/install-prog.md) behavior. 
 
 **See ATT&CK:** [**Remote File Copy**](https://attack.mitre.org/techniques/T1105/).
 

@@ -33,6 +33,7 @@ Malware aims to remain on a system regardless of system events.
 * **Port Knocking** [T1205](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/port-knocking.md)
 * **Redundant Access** [T1008](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/redundant-access.md)
 * **Registry Run Keys / Startup Folder** [E1060](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/registry-run-startup.md)
+* **Remote File Copy** [E1105](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/remote-file-copy.md)
 * **Scheduled Task** [T1053](https://github.com/MBCProject/mbc-markdown/blob/master/execution/scheduled-task.md)
 * **Setuid and Setgid** [T1166](https://github.com/MBCProject/mbc-markdown/blob/master/privilege-escalation/setuid-setgid.md)
 * **Shortcut Modification** [T1023](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/shortcut-mod.md)
