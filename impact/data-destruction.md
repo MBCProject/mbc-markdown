@@ -14,4 +14,5 @@ see ATT&CK: [**Data Destruction**](https://attack.mitre.org/techniques/T1485/).
 Methods
 -------
 * **Delete Shadow Drive**: deletes shadow drive data, which is related to ransomware.
+* **Empty Recycle Bin**: empties the recycle bin, which can be related to ransomware.
 
