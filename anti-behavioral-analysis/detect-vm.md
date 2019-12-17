@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**M0009**|
 |**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis)|
-|**Related ATT&CK Technique(s)**|[Virtualization/Sandbox Evasion](https://attack.mitre.org/techniques/T1497/)|
+|**Related ATT&CK Technique**|[Virtualization/Sandbox Evasion](https://attack.mitre.org/techniques/T1497/)|
 
 
 Virtual Machine Detection

@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1132**|
 |**Objective(s)**|[Command and Control](https://github.com/MBCProject/mbc-markdown/tree/master/command-and-control)|
-|**Related ATT&CK Technique(s)**|[Data Encoding](https://attack.mitre.org/techniques/T1132/)|
+|**Related ATT&CK Technique**|[Data Encoding](https://attack.mitre.org/techniques/T1132/)|
 
 Data Encoding
 =============

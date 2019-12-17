@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1129**|
 |**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
-|**Related ATT&CK Technique(s)**|[Execution through Module Load](https://attack.mitre.org/techniques/T1129)|
+|**Related ATT&CK Technique**|[Execution through Module Load](https://attack.mitre.org/techniques/T1129)|
 
 Execution through Module Load
 =============================

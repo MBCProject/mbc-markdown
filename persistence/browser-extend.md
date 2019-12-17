@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1176**|
 |**Objective(s)**| [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
-|**Related ATT&CK Technique(s)**|[Browser Extensions](https://attack.mitre.org/techniques/T1176)|
+|**Related ATT&CK Technique**|[Browser Extensions](https://attack.mitre.org/techniques/T1176)|
 
 
 Browser Extensions

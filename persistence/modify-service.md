@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**E1031**|
 |**Objective(s)**| [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
-|**Related ATT&CK Technique(s)**|[Modify Existing Service](https://attack.mitre.org/techniques/T1031)|
+|**Related ATT&CK Technique**|[Modify Existing Service](https://attack.mitre.org/techniques/T1031)|
 
 
 Modify Existing Service

@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1007**|
 |**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
-|**Related ATT&CK Technique(s)**|[System Service Discovery](https://attack.mitre.org/techniques/T1007)|
+|**Related ATT&CK Technique**|[System Service Discovery](https://attack.mitre.org/techniques/T1007)|
 
 
 System Service Discovery

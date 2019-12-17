@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1108**|
 |**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
-|**Related ATT&CK Technique(s)**|[Redundant Access](https://attack.mitre.org/techniques/T1108)|
+|**Related ATT&CK Technique**|[Redundant Access](https://attack.mitre.org/techniques/T1108)|
 
 
 Redundant Access

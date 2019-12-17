@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1071**|
 |**Objective(s)**|[Command and Control](https://github.com/MBCProject/mbc-markdown/tree/master/command-and-control)|
-|**Related ATT&CK Technique(s)**|[Standard Application Layer Protocol](https://attack.mitre.org/techniques/T1071/)|
+|**Related ATT&CK Technique**|[Standard Application Layer Protocol](https://attack.mitre.org/techniques/T1071/)|
 
 Standard Application Layer Protocol
 ===================================

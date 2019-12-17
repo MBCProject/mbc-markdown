@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1050**|
 |**Objective(s)**| [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
-|**Related ATT&CK Technique(s)**|[New Service](https://attack.mitre.org/techniques/T1050)|
+|**Related ATT&CK Technique**|[New Service](https://attack.mitre.org/techniques/T1050)|
 
 
 New Service

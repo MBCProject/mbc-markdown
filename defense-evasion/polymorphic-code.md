@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**M0029**|
 |**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
-|**Related ATT&CK Technique(s)**|None|
+|**Related ATT&CK Technique**|None|
 
 
 Polymorphic Code

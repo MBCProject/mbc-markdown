@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1155**|
 |**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution), [Lateral Movement](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement)|
-|**Related ATT&CK Technique(s)**|[AppleScript](https://attack.mitre.org/techniques/T1155)|
+|**Related ATT&CK Technique**|[AppleScript](https://attack.mitre.org/techniques/T1155)|
 
 AppleScript
 ===========

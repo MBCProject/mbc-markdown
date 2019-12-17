@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1081**|
 |**Objective(s)**|[Credential Access](https://github.com/MBCProject/mbc-markdown/tree/master/credential-access)|
-|**Related ATT&CK Technique(s)**|[Credentials in Files](https://attack.mitre.org/techniques/T1081/)|
+|**Related ATT&CK Technique**|[Credentials in Files](https://attack.mitre.org/techniques/T1081/)|
 
 Credentials in Files
 ====================

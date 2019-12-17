@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**M0030**|
 |**Objective(s)**|[Command and Control](https://github.com/MBCProject/mbc-markdown/tree/master/command-and-control)|
-|**Related ATT&CK Technique(s)**|None|
+|**Related ATT&CK Technique**|None|
 
 C2 Communication
 ================

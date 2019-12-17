@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1047**|
 |**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
-|**Related ATT&CK Technique(s)**|[Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047)|
+|**Related ATT&CK Technique**|[Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047)|
 
 Windows Management Instrumentation
 ==================================

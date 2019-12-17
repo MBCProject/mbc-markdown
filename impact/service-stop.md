@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1489**|
 |**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
-|**Related ATT&CK Technique(s)**|[Service Stop](https://attack.mitre.org/techniques/T1489/)| 
+|**Related ATT&CK Technique**|[Service Stop](https://attack.mitre.org/techniques/T1489/)| 
 
 
 Service Stop

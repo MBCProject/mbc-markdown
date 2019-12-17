@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1430**|
 |**Objective(s)**|[Collection](https://github.com/MBCProject/mbc-markdown/tree/master/collection)|
-|**Related ATT&CK Technique(s)**|[Location Tracking](https://attack.mitre.org/techniques/T1430/)|
+|**Related ATT&CK Technique**|[Location Tracking](https://attack.mitre.org/techniques/T1430/)|
 
 Location Tracking
 =================

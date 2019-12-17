@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**E1480**|
 |**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis), [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
-|**Related ATT&CK Technique(s)**|[Execution Guardrails](https://attack.mitre.org/techniques/T1480/)|
+|**Related ATT&CK Technique**|[Execution Guardrails](https://attack.mitre.org/techniques/T1480/)|
 
 Execution Guardrails
 ====================

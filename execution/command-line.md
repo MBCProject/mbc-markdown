@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1059**|
 |**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
-|**Related ATT&CK Technique(s)**|[Command-Line Interface](https://attack.mitre.org/techniques/T1059)|
+|**Related ATT&CK Technique**|[Command-Line Interface](https://attack.mitre.org/techniques/T1059)|
 
 Command-Line Interface
 ======================

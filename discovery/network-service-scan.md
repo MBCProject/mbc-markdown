@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1046**|
 |**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
-|**Related ATT&CK Technique(s)**|[Network Service Scanning](https://attack.mitre.org/techniques/T1046)|
+|**Related ATT&CK Technique**|[Network Service Scanning](https://attack.mitre.org/techniques/T1046)|
 
 
 Network Service Scanning

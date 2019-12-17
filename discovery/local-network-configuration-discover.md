@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1422**|
 |**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
-|**Related ATT&CK Technique(s)**|[Local Network Configuration Discovery](https://attack.mitre.org/techniques/T1422)|
+|**Related ATT&CK Technique**|[Local Network Configuration Discovery](https://attack.mitre.org/techniques/T1422)|
 
 
 Local Network Configuration Discovery

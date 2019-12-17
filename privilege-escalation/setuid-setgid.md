@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1166**|
 |**Objective(s)**|[Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/privilege-escalation), [Privilege Escalation](https://github.com/MBCProject/mbc-markdown/tree/master/privilege-escalation)|
-|**Related ATT&CK Technique(s)**|[Setuid and Setgid](https://attack.mitre.org/techniques/T1166)|
+|**Related ATT&CK Technique**|[Setuid and Setgid](https://attack.mitre.org/techniques/T1166)|
 
 Setuid and Setgid
 =================

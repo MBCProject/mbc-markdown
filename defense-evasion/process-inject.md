@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**E1055**|
 |**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion), [Privilege Escalation](https://github.com/MBCProject/mbc-markdown/tree/master/privilege-escalation)|
-|**Related ATT&CK Technique(s)**|[Process Injection](https://attack.mitre.org/techniques/T1055)|
+|**Related ATT&CK Technique**|[Process Injection](https://attack.mitre.org/techniques/T1055)|
 
 
 Process Injection

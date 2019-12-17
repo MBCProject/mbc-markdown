@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1503**|
 |**Objective(s)**|[Credential Access](https://github.com/MBCProject/mbc-markdown/tree/master/credential-access)|
-|**Related ATT&CK Technique(s)**|[Credentials in Web Browsers](https://attack.mitre.org/techniques/T1503/)|
+|**Related ATT&CK Technique**|[Credentials in Web Browsers](https://attack.mitre.org/techniques/T1503/)|
 
 Credentials in Web Browsers
 ===========================

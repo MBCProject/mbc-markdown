@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1138**|
 |**Objective(s)**|[Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence), [Privilege Escalation](https://github.com/MBCProject/mbc-markdown/tree/master/privilege-escalation)|
-|**Related ATT&CK Technique(s)**|[Application Shimming](https://attack.mitre.org/techniques/T1138)|
+|**Related ATT&CK Technique**|[Application Shimming](https://attack.mitre.org/techniques/T1138)|
 
 Application Shimming
 ====================

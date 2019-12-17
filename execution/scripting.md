@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1064**|
 |**Objective(s)**|[Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion), [Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
-|**Related ATT&CK Technique(s)**|[Scripting](https://attack.mitre.org/techniques/T1064)|
+|**Related ATT&CK Technique**|[Scripting](https://attack.mitre.org/techniques/T1064)|
 
 Scripting
 =========

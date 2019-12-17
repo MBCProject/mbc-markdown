@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1011**|
 |**Objective(s)**| [Exfiltration](https://github.com/MBCProject/mbc-markdown/tree/master/exfiltration)|
-|**Related ATT&CK Technique(s)**|[Exfiltration Over Other Network Medium](https://attack.mitre.org/techniques/T1011/)|
+|**Related ATT&CK Technique**|[Exfiltration Over Other Network Medium](https://attack.mitre.org/techniques/T1011/)|
 
 
 Exfiltration Over Other Network Medium

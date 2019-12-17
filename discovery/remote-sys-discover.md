@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1018**|
 |**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
-|**Related ATT&CK Technique(s)**|[Remote System Discovery](https://attack.mitre.org/techniques/T1018)|
+|**Related ATT&CK Technique**|[Remote System Discovery](https://attack.mitre.org/techniques/T1018)|
 
 
 Remote System Discovery

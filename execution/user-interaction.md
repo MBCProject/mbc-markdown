@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**E1204**|
 |**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
-|**Related ATT&CK Technique(s)**|[User Execution](https://attack.mitre.org/techniques/T1204)|
+|**Related ATT&CK Technique**|[User Execution](https://attack.mitre.org/techniques/T1204)|
 
 User Interaction
 ================

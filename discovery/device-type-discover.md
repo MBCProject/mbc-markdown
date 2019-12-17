@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1419**|
 |**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
-|**Related ATT&CK Technique(s)**|[Device Type Discovery](https://attack.mitre.org/techniques/T1419)|
+|**Related ATT&CK Technique**|[Device Type Discovery](https://attack.mitre.org/techniques/T1419)|
 
 
 Device Type Discovery

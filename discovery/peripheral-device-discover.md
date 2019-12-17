@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1120**|
 |**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
-|**Related ATT&CK Technique(s)**|[Peripheral Device Discovery](https://attack.mitre.org/techniques/T1120)|
+|**Related ATT&CK Technique**|[Peripheral Device Discovery](https://attack.mitre.org/techniques/T1120)|
 
 
 Peripheral Device Discovery

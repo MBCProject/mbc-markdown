@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**M0028**|
 |**Objective(s)**|[Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
-|**Related ATT&CK Technique(s)**|[Bootkit](https://attack.mitre.org/techniques/T1067/)|
+|**Related ATT&CK Technique**|[Bootkit](https://attack.mitre.org/techniques/T1067/)|
 
 Boot Sector Modification
 ========================

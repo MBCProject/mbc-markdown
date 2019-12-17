@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**E1089**|
 |**Objective(s)**|[Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
-|**Related ATT&CK Technique(s)**|[Disabling Security Tools](https://attack.mitre.org/techniques/T1089/)|
+|**Related ATT&CK Technique**|[Disabling Security Tools](https://attack.mitre.org/techniques/T1089/)|
 
 Disabling Security Tools
 ========================

@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1016**|
 |**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
-|**Related ATT&CK Technique(s)**|[System Network Configuration Discovery](https://attack.mitre.org/techniques/T1016)|
+|**Related ATT&CK Technique**|[System Network Configuration Discovery](https://attack.mitre.org/techniques/T1016)|
 
 
 System Network Configuration Discovery

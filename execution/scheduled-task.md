@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1053**|
 |**Objective(s)**| [Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence), [Privilege Escalation](https://github.com/MBCProject/mbc-markdown/tree/master/privilege-escalation)|
-|**Related ATT&CK Technique(s)**|[Scheduled Task](https://attack.mitre.org/techniques/T1053/)|
+|**Related ATT&CK Technique**|[Scheduled Task](https://attack.mitre.org/techniques/T1053/)|
 
 
 Scheduled Task
