@@ -9,7 +9,6 @@ Behaviors that enable propagation through a compromised system or infected files
 * **Distributed Component Object Model** [T1175](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement/distributed-comp-obj-model.md)
 * **Exploitation of Remote Services** [T1210](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement/exploit-remote-services.md)
 * **Malicious Network Driver** [M0026](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/malicious-network-drv.md)
-* **Parent PID Spoofing** [T1502](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/parent-pid-spoof.md)
 * **Pass the Hash** [T1075](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement/pass-the-hash.md)
 * **Remote Desktop Protocol** [T1076](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement/remote-desktop-protocol.md)
 * **Remote File Copy** [E1105](https://github.com/MBCProject/mbc-markdown/tree/master/command-and-control/remote-file-copy.md)
