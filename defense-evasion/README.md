@@ -38,6 +38,7 @@ Behaviors that evade detection or avoid other defenses.
 * **Modify Trusted Execution Environment** [T1399](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/mod-trust-exe-environ.md)
 * **NTFS File Attributes** [T1096](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/ntfs-file-attr.md)
 * **Obfuscated Files or Information** [E1027](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/obfuscate-files.md)
+* **Parent PID Spoofing** [T1502](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/parent-pid-spoof.md)
 * **Polymorphic Code** [M0029](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/polymorphic-code.md)
 * **Port Knocking** [T1205](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/port-knocking.md)
 * **Process Hollowing** [T1093](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/process-hollow.md)
