@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1171**|
 |**Objective(s)**|[Credential Access](https://github.com/MBCProject/mbc-markdown/tree/master/credential-access)|
-|**Related ATT&CK Technique(s)**|[LLMNR/NBT-NS Poisoning](https://attack.mitre.org/techniques/T1171/)|
+|**Related ATT&CK Technique**|[LLMNR/NBT-NS Poisoning](https://attack.mitre.org/techniques/T1171/)|
 
 LLMNR/NBT-NS Poisoning
 ======================

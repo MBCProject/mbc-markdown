@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**M0012**|
 |**Objective(s)**| [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis)|
-|**Related ATT&CK Technique(s)**|None|
+|**Related ATT&CK Technique**|None|
 
 
 Disassembler Evasion

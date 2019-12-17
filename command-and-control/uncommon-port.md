@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1065**|
 |**Objective(s)**|[Command and Control](https://github.com/MBCProject/mbc-markdown/tree/master/command-and-control)|
-|**Related ATT&CK Technique(s)**|[Uncommonly Used Port](https://attack.mitre.org/techniques/T1065/)|
+|**Related ATT&CK Technique**|[Uncommonly Used Port](https://attack.mitre.org/techniques/T1065/)|
 
 Uncommonly Used Port
 ====================

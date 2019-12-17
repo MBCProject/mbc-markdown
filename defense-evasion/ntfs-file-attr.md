@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1096**|
 |**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
-|**Related ATT&CK Technique(s)**|[NTFS File Attributes](https://attack.mitre.org/techniques/T1096/)|
+|**Related ATT&CK Technique**|[NTFS File Attributes](https://attack.mitre.org/techniques/T1096/)|
 
 
 NTFS File Attributes

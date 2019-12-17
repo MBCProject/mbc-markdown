@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1429**|
 |**Objective(s)**|[Collection](https://github.com/MBCProject/mbc-markdown/tree/master/collection)|
-|**Related ATT&CK Technique(s)**|[Microphone or Camera Recordings](https://attack.mitre.org/techniques/T1429/), [Capture Camera](https://attack.mitre.org/techniques/T1512/), [Capture Audio](https://attack.mitre.org/techniques/T1429/)|
+|**Related ATT&CK Technique**|[Microphone or Camera Recordings](https://attack.mitre.org/techniques/T1429/), [Capture Camera](https://attack.mitre.org/techniques/T1512/), [Capture Audio](https://attack.mitre.org/techniques/T1429/)|
 
 Microphone or Camera Capture
 ============================

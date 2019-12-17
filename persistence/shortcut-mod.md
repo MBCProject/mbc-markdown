@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1023**|
 |**Objective(s)**| [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
-|**Related ATT&CK Technique(s)**|[Shortcut Modification](https://attack.mitre.org/techniques/T1023/)|
+|**Related ATT&CK Technique**|[Shortcut Modification](https://attack.mitre.org/techniques/T1023/)|
 
 
 Shortcut Modification

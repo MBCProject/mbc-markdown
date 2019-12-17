@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1156**|
 |**Objective(s)**| [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
-|**Related ATT&CK Technique(s)**|[.bash_profile and .bashrc](https://attack.mitre.org/techniques/T1156)|
+|**Related ATT&CK Technique**|[.bash_profile and .bashrc](https://attack.mitre.org/techniques/T1156)|
 
 
 .bash_profile and .bashrc

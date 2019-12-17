@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1003**|
 |**Objective(s)**|[Credential Access](https://github.com/MBCProject/mbc-markdown/tree/master/credential-access)|
-|**Related ATT&CK Technique(s)**|[Credential Dumping](https://attack.mitre.org/techniques/T1003/)|
+|**Related ATT&CK Technique**|[Credential Dumping](https://attack.mitre.org/techniques/T1003/)|
 
 Credential Dumping
 ==================

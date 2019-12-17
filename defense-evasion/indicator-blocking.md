@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**E1054**|
 |**Objective(s)**|[Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
-|**Related ATT&CK Technique(s)**|[Indicator Blocking](https://attack.mitre.org/techniques/T1054/)|
+|**Related ATT&CK Technique**|[Indicator Blocking](https://attack.mitre.org/techniques/T1054/)|
 
 Indicator Blocking
 ==================

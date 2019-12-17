@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**M0018**|
 |**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
-|**Related ATT&CK Technique(s)**|[Resource Hijacking](https://attack.mitre.org/techniques/T1496/)|
+|**Related ATT&CK Technique**|[Resource Hijacking](https://attack.mitre.org/techniques/T1496/)|
 
 
 Hijack System Resources

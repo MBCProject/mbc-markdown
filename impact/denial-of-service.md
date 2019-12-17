@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**M0033**|
 |**Objective(s)**|[Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
-|**Related ATT&CK Technique(s)**|[Network Denial of Device](https://attack.mitre.org/techniques/T1498/)|
+|**Related ATT&CK Technique**|[Network Denial of Device](https://attack.mitre.org/techniques/T1498/)|
 
 
 Denial of Service

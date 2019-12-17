@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**M0014**|
 |**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
-|**Related ATT&CK Technique(s)**|None|
+|**Related ATT&CK Technique**|None|
 
 
 SMTP Connection Discovery

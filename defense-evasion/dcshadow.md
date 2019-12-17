@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1207**|
 |**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
-|**Related ATT&CK Technique(s)**|[DCShadow](https://attack.mitre.org/techniques/T1207)|
+|**Related ATT&CK Technique**|[DCShadow](https://attack.mitre.org/techniques/T1207)|
 
 
 DCShadow

@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1487**|
 |**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
-|**Related ATT&CK Technique(s)**|[Disk Structure Wipe](https://attack.mitre.org/techniques/T1487/)| 
+|**Related ATT&CK Technique**|[Disk Structure Wipe](https://attack.mitre.org/techniques/T1487/)| 
 
 
 Disk Structure Wipe

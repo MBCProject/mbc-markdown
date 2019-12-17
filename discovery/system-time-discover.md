@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1087**|
 |**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
-|**Related ATT&CK Technique(s)**|[System Time Discovery](https://attack.mitre.org/techniques/T1124)|
+|**Related ATT&CK Technique**|[System Time Discovery](https://attack.mitre.org/techniques/T1124)|
 
 
 System Time Discovery

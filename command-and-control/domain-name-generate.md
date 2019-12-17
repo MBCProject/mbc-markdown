@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**M0031**|
 |**Objective(s)**|[Command and Control](https://github.com/MBCProject/mbc-markdown/tree/master/command-and-control)|
-|**Related ATT&CK Technique(s)**|[Domain Generation Algorithms](https://attack.mitre.org/techniques/T1483/)|
+|**Related ATT&CK Technique**|[Domain Generation Algorithms](https://attack.mitre.org/techniques/T1483/)|
 
 Domain Name Generation
 ======================

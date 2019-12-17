@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**E1105**|
 |**Objective(s)**|[Command and Control](https://github.com/MBCProject/mbc-markdown/tree/master/command-and-control), [Lateral Movement](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
-|**Related ATT&CK Technique(s)**|[Remote File Copy](https://attack.mitre.org/techniques/T1105/)|
+|**Related ATT&CK Technique**|[Remote File Copy](https://attack.mitre.org/techniques/T1105/)|
 
 Remote File Copy
 ================

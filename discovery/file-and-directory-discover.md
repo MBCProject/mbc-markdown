@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1083**|
 |**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
-|**Related ATT&CK Technique(s)**|[File and Directory Discovery](https://attack.mitre.org/techniques/T1083)|
+|**Related ATT&CK Technique**|[File and Directory Discovery](https://attack.mitre.org/techniques/T1083)|
 
 
 File and Directory Discovery

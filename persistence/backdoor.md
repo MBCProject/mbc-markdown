@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**M0037**|
 |**Objective(s)**| [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
-|**Related ATT&CK Technique(s)**|None|
+|**Related ATT&CK Technique**|None|
 
 
 Backdoor

@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**M0024**|
 |**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
-|**Related ATT&CK Technique(s)**|None|
+|**Related ATT&CK Technique**|None|
 
 Prevent Concurrent Execution
 ============================

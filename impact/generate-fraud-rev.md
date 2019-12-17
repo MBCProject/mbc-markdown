@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**E1472**|
 |**Objective(s)**|[Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
-|**Related ATT&CK Technique(s)**|[Generate Fraudulent Advertising Revenue](https://attack.mitre.org/techniques/T1472/)|
+|**Related ATT&CK Technique**|[Generate Fraudulent Advertising Revenue](https://attack.mitre.org/techniques/T1472/)|
 
 
 Generate Fraudulent Advertising Revenue

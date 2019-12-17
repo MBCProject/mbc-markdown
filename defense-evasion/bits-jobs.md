@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1197**|
 |**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
-|**Related ATT&CK Technique(s)**|[BITS Jobs](https://attack.mitre.org/techniques/T1197)|
+|**Related ATT&CK Technique**|[BITS Jobs](https://attack.mitre.org/techniques/T1197)|
 
 
 BITS Jobs

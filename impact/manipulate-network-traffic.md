@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**M0019**|
 |**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
-|**Related ATT&CK Technique(s)**|[Transmitted Data Manipulation](https://attack.mitre.org/techniques/T1493/)|
+|**Related ATT&CK Technique**|[Transmitted Data Manipulation](https://attack.mitre.org/techniques/T1493/)|
 
 
 Manipulate Network Traffic

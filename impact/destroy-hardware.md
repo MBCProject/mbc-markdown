@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**M0017**|
 |**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
-|**Related ATT&CK Technique(s)**|None|
+|**Related ATT&CK Technique**|None|
 
 
 Destroy Hardware

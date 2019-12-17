@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1094**|
 |**Objective(s)**|[Command and Control](https://github.com/MBCProject/mbc-markdown/tree/master/command-and-control)|
-|**Related ATT&CK Technique(s)**|[Custom Command and Control Protocol](https://attack.mitre.org/techniques/T1094/)|
+|**Related ATT&CK Technique**|[Custom Command and Control Protocol](https://attack.mitre.org/techniques/T1094/)|
 
 Custom Command and Control Protocol
 ===================================

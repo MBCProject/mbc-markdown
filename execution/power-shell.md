@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1086**|
 |**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
-|**Related ATT&CK Technique(s)**|[PowerShell](https://attack.mitre.org/techniques/T1086)|
+|**Related ATT&CK Technique**|[PowerShell](https://attack.mitre.org/techniques/T1086)|
 
 PowerShell
 ==========

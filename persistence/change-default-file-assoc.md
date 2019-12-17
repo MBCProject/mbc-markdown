@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1042**|
 |**Objective(s)**| [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
-|**Related ATT&CK Technique(s)**|[Change Default File Association](https://attack.mitre.org/techniques/T1042)|
+|**Related ATT&CK Technique**|[Change Default File Association](https://attack.mitre.org/techniques/T1042)|
 
 
 Change Default File Association

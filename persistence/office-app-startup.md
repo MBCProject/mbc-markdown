@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1137**|
 |**Objective(s)**| [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
-|**Related ATT&CK Technique(s)**|[Office Application Startup](https://attack.mitre.org/techniques/T1137)|
+|**Related ATT&CK Technique**|[Office Application Startup](https://attack.mitre.org/techniques/T1137)|
 
 
 Office Application Startup

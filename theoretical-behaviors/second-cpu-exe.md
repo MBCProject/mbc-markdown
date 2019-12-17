@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**M0015**|
 |**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
-|**Related ATT&CK Technique(s)**|None|
+|**Related ATT&CK Technique**|None|
 
 
 Secondary CPU Execution (THEORETICAL)

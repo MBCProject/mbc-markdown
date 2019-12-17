@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1185**|
 |**Objective(s)**|[Collection](https://github.com/MBCProject/mbc-markdown/tree/master/collection)|
-|**Related ATT&CK Technique(s)**|[Man in the Browser](https://attack.mitre.org/techniques/T1185/)|
+|**Related ATT&CK Technique**|[Man in the Browser](https://attack.mitre.org/techniques/T1185/)|
 
 Man in the Browser
 ==================

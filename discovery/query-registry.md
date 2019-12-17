@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1012**|
 |**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
-|**Related ATT&CK Technique(s)**|[Query Registry](https://attack.mitre.org/techniques/T1012)|
+|**Related ATT&CK Technique**|[Query Registry](https://attack.mitre.org/techniques/T1012)|
 
 
 Query Registry

@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1488**|
 |**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
-|**Related ATT&CK Technique(s)**|[Disk Content Wipe](https://attack.mitre.org/techniques/T1488/), [Wipe Device Data](https://attack.mitre.org/techniques/T1447/)| 
+|**Related ATT&CK Technique**|[Disk Content Wipe](https://attack.mitre.org/techniques/T1488/), [Wipe Device Data](https://attack.mitre.org/techniques/T1447/)| 
 
 
 Disk Content Wipe

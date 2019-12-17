@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**M0038**|
 |**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
-|**Related ATT&CK Technique(s)**|None|
+|**Related ATT&CK Technique**|None|
 
 
 Self Discovery

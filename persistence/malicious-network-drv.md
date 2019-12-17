@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**M0026**|
 |**Objective(s)**|[Lateral Movement](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
-|**Related ATT&CK Technique(s)**|None|
+|**Related ATT&CK Technique**|None|
 
 Malicious Network Driver
 ========================

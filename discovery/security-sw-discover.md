@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1063**|
 |**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
-|**Related ATT&CK Technique(s)**|[Security Software Discovery](https://attack.mitre.org/techniques/T1063)|
+|**Related ATT&CK Technique**|[Security Software Discovery](https://attack.mitre.org/techniques/T1063)|
 
 
 Security Software Discovery

@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1499**|
 |**Objective(s)**|[Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
-|**Related ATT&CK Technique(s)**|[**Endpoint Denial of Service**](https://attack.mitre.org/techniques/T1499/), [Lock User Out of Device](https://attack.mitre.org/techniques/T1446/)|
+|**Related ATT&CK Technique**|[**Endpoint Denial of Service**](https://attack.mitre.org/techniques/T1499/), [Lock User Out of Device](https://attack.mitre.org/techniques/T1446/)|
 
 
 Endpoint Denial of Service

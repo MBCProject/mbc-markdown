@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**M0004**|
 |**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis)|
-|**Related ATT&CK Technique(s)**|None|
+|**Related ATT&CK Technique**|None|
 
 
 Emulator Detection

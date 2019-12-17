@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1104**|
 |**Objective(s)**|[Command and Control](https://github.com/MBCProject/mbc-markdown/tree/master/command-and-control)|
-|**Related ATT&CK Technique(s)**|[Multi-Stage Channels](https://attack.mitre.org/techniques/T1104/)|
+|**Related ATT&CK Technique**|[Multi-Stage Channels](https://attack.mitre.org/techniques/T1104/)|
 
 Multi-Stage Channels
 ====================

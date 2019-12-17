@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1057**|
 |**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
-|**Related ATT&CK Technique(s)**|[Process Discovery](https://attack.mitre.org/techniques/T1057)|
+|**Related ATT&CK Technique**|[Process Discovery](https://attack.mitre.org/techniques/T1057)|
 
 
 Process Discovery

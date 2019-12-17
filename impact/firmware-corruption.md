@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1495**|
 |**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
-|**Related ATT&CK Technique(s)**|[Firmware Corruption](https://attack.mitre.org/techniques/T1495/)| 
+|**Related ATT&CK Technique**|[Firmware Corruption](https://attack.mitre.org/techniques/T1495/)| 
 
 Firmware Corruption
 ===================

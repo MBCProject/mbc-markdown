@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1048**|
 |**Objective(s)**| [Exfiltration](https://github.com/MBCProject/mbc-markdown/tree/master/exfiltration)|
-|**Related ATT&CK Technique(s)**|[Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048/)|
+|**Related ATT&CK Technique**|[Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048/)|
 
 
 Exfiltration Over Alternative Protocol

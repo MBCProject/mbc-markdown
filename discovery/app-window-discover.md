@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1010**|
 |**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
-|**Related ATT&CK Technique(s)**|[Application Window Discovery](https://attack.mitre.org/techniques/T1010)|
+|**Related ATT&CK Technique**|[Application Window Discovery](https://attack.mitre.org/techniques/T1010)|
 
 
 Application Window Discovery
