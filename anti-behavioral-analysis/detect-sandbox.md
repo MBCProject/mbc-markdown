@@ -17,13 +17,6 @@ Methods
 * **Check Files**: Sandboxes create files on the file system. Malware can check the different folders to find sandbox artifacts.
 * **Human User Check**: Detects whether there is any "user" activity on the machine, such as the movement of the mouse cursor, non-default wallpaper, or recently opened Office files. If there is no human activity, the machine is suspected to be a virtualized machine and/or sandbox. Other items used to detect a user: mouse clicks (single/double), DialogBox, scrolling, color of background pixel [[3]](#3).
 * **Injected DLL Testing**: Testing for the name of a particular DLL that is known to be injected by a sandbox for API hooking is a common way of detecting sandbox environments. This can be achieved through the kernel32!GetModuleHandle API call and other means.
-* **Machine Specs**: Different aspects of the hardware are inspected to determine whether the machine has standard, modern characteristics. Machines with substandard specs indicate a sandbox or virtual environment: 
-   * Total physical memory: most modern machines have at leave 4 GB of memory. (GlobalMemoryStatusEx) [[3]](#3).
-   * Drive size: most modern machines have at least 80 GB disks. May use DeviceloControl (IOCTL_DISK_GET_LENGTH_INFO) or GetDiskFreeSpaceEx (TotalNumberOfBytes) [[3]](#3).
-   * USB drive: checks whether there is a potential USB drive; if not a virtual environment is suspected.
-   * Printer: checks whether there is a potential connected printer or default Windows printers; if not a virtual environment is suspected.
-   * Processor count: checks number of processors; single CPU machines are suspect.
-   * Keyboard layout
 * **Software Check**: Malware may check software to determine whether its running in a sandbox. For example malicious Office documents might check Microsoft Office version, window size, or VB project name.
 * **Product Key/ID Testing**: Checking for a particular product key/ID associated with a sandbox environment (commonly associated with the Windows host OS used in the environment) can be used to detect whether a malware instance is being executed in a particular sandbox. This can be achieved through several means, including testing for the Key/ID in the Windows registry. 
 * **Screen Resolution Testing**: Sandboxes aren't used in the same manner as a typical user environment, so most of the time the screen resolution stays at the minimum 800x600 or lower. No one is actually working on a such small screen. Malware could potentially detect the screen resolution to determine if it's a user machine or a sandbox.

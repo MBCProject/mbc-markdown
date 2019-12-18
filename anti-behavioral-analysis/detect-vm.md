@@ -17,7 +17,7 @@ Methods
 * **HTML5 Performance Object**: In three browser families, it is possible to extract the frequency of the Windows performance counter frequency, using standard HTML and Javascript. This value can then be used to detect whether the code is being executed in a virtual machine, by detecting two specific frequencies commonly used in virtual but not physical machines.
 * **Human User Check**: Detects whether there is any "user" activity on the machine, such as the movement of the mouse cursor, non-default wallpaper, or recently opened Office files. If there is no human activity, the machine is suspected to be a virtualized machine and/or sandbox. Other items used to detect a user: mouse clicks (single/double), DialogBox, scrolling, color of background pixel [[5]](#5).
 * **Named System Object Checks**: Virtual machines often include specific named system objects by default, such as Windows device drivers, which can be detected by testing for specific strings, whether found in the Windows registry or other places.
-* **Machine Specs**: Different aspects of the hardware are inspected to determine whether the machine has standard, modern characteristics. Machines with substandard specs indicate a sandbox or virtual environment: 
+* **Hardware Information**: Different aspects of the hardware are inspected to determine whether the machine has standard, modern characteristics. A machine with substandard specifications indicates a virtual environment: 
    * Total physical memory: most modern machines have at leave 4 GB of memory. (GlobalMemoryStatusEx) [[5]](#5).
    * Drive size: most modern machines have at least 80 GB disks. May use DeviceloControl (IOCTL_DISK_GET_LENGTH_INFO) or GetDiskFreeSpaceEx (TotalNumberOfBytes) [[5]](#5).
    * USB drive: checks whether there is a potential USB drive; if not a virtual environment is suspected.
@@ -37,7 +37,7 @@ Methods
    * RDTSC
    * VMCPUID
    * VPCEXT
-* **Registry Keys**: Virtual machines and emulators register artifacts in the registry, which can be detected by malware. For example, a search for "VMware" or "VBOX" in the registry might reveal keys that include information about the virtual hard drive, adapters, and virtual mouse. [[2]](#2)
+* **Registry Keys**: Virtual machines and emulators register artifacts in the registry, which can be detected by malware. For example, a search for "VMware" or "VBOX" in the registry might reveal keys that include information about the virtual hard drive, adapters, and virtual mouse. [[2]](#2) Example registry key value artifacts include "HARDWARE\Description\System (SystemBiosVersion) (VBOX)" and "SYSTEM\ControlSet001\Control\SystemInformation (SystemManufacturer) (VMWARE)"; example registry key artifacts include "SOFTWARE\VMware, Inc.\VMware Tools (VMWARE)" and "SOFTWARE\Oracle\VirtualBox Guest Additions (VBOX)". [[5]](#5)
 * **Check Processes**: The VMware Tools use processes like VMwareServices.exe or VMwareTray.exe, to perform actions on the virtual environment. A malware can list the process and searches for the VMware string. Process related to Virtualbox can be detected by malware by query the process list. [[2]](#2)
 * **Check Files**: Virtual machines create files on the file system (e.g., VMware creates files in the installation directory C:\Program Files\VMware\VMware Tools). Malware can check the different folders to find virtual machine artifacts (e.g., Virtualbox has the artifact VBoxMouse.sys). [[2]](#2)
 * **Check for Window**: Checks for the presence of a window.
