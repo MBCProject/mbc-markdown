@@ -47,9 +47,9 @@ Methods
 * **Check Running Services**: VMwareService.exe runs the VMware Tools Service as a child of services.exe. It can be identified by listing services. [[2]](#2)
 * **Check Files**: Virtual machines create files on the file system (e.g., VMware creates files in the installation directory C:\Program Files\VMware\VMware Tools). Malware can check the different folders to find virtual machine artifacts (e.g., Virtualbox has the artifact VBoxMouse.sys). [[2]](#2)
 * **Window Check**: Malware may check windows for VM-related characteristics such as:
-	* window size
+	* window size: tiny window size may indicate a VM.
 	* unique windows: may check for the presence of known windows from analysis tools running in a VM.
-	* title bars**: may inject malicious code to svchost.exe to check all open window title bar text to a list of strings indicating virtualized environment.
+	* title bars: may inject malicious code to svchost.exe to check all open window title bar text to a list of strings indicating virtualized environment.
 
 Malware Examples
 ----------------
