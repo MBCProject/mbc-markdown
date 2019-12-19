@@ -15,18 +15,23 @@ Methods
 -------
 * **Guest Process Testing**: Virtual machines offer guest additions that can be installed to add functionality such as clipboard sharing. Detecting the process responsible for these tasks, via its name or other methods, is a technique employed by malware for detecting whether it is being executed in a virtual machine.
 * **HTML5 Performance Object**: In three browser families, it is possible to extract the frequency of the Windows performance counter frequency, using standard HTML and Javascript. This value can then be used to detect whether the code is being executed in a virtual machine, by detecting two specific frequencies commonly used in virtual but not physical machines.
-* **Human User Check**: Detects whether there is any "user" activity on the machine, such as the movement of the mouse cursor, non-default wallpaper, or recently opened Office files. If there is no human activity, the machine is suspected to be a virtualized machine and/or sandbox. Other items used to detect a user: mouse clicks (single/double), DialogBox, scrolling, color of background pixel [[5]](#5).
+* **Human User Check**: Detects whether there is any "user" activity on the machine, such as the movement of the mouse cursor, non-default wallpaper, or recently opened Office files. If there is no human activity, the machine is suspected to be a virtualized machine and/or sandbox. Other items used to detect a user: mouse clicks (single/double), DialogBox, scrolling, color of background pixel, change in foreground window [[5]](#5).
 * **Named System Object Checks**: Virtual machines often include specific named system objects by default, such as Windows device drivers, which can be detected by testing for specific strings, whether found in the Windows registry or other places.
-* **Hardware Information**: Different aspects of the hardware are inspected to determine whether the machine has standard, modern characteristics. A machine with substandard specifications indicates a virtual environment: 
+* **Check for Modern Specs**: Different aspects of the hardware are inspected to determine whether the machine has modern characteristics. A machine with substandard specifications indicates a virtual environment: 
    * Total physical memory: most modern machines have at leave 4 GB of memory. (GlobalMemoryStatusEx) [[5]](#5).
    * Drive size: most modern machines have at least 80 GB disks. May use DeviceloControl (IOCTL_DISK_GET_LENGTH_INFO) or GetDiskFreeSpaceEx (TotalNumberOfBytes) [[5]](#5).
    * USB drive: checks whether there is a potential USB drive; if not a virtual environment is suspected.
    * Printer: checks whether there is a potential connected printer or default Windows printers; if not a virtual environment is suspected.
    * Processor count: checks number of processors; single CPU machines are suspect.
    * Keyboard layout
-* **Check CPU Location**: When an Operating System is virtualized, the CPU is relocated. That allows a malware to detect the virtual environment. [[2]](#2)
+   * Software: checks whether software is relatively current.
+* **Check for Unique Hardware/Firmware**: Malware may check for hardware characteristics unique to being virtualized, allowing the malware to detect the virtual environment. Items checked include:
+   * BIOS
+   * I/O Communication Port: VMware uses virtual I/O ports for communication between the virtual machine and the host operating system to support functionality like copy and paste between the two systems. The port can be queried and compared with a magic number VMXh to identify the use of VMware.
+   * CPU name
+   * CPU Location: When an Operating System is virtualized, the CPU is relocated. [[2]](#2)
+   * Mac Address: VMware uses specific virtual Mac address that can be detected. The usual mac address used started with the following numbers: "00:0C:29", "00:1C:14", "00:50:56", "00:05:69". Virtualbox uses specific virtual Mac address that can be detected by Malware. The usual mac address used started with the following numbers: 08:00:27. [[2]](#2)
 * **Check for Memory Artifacts**: VMware leaves many artifacts in memory. Some are critical processor structures, which, because they are either moved or changed on a virtual machine, leave recognizable footprints. Malware can search through physical memory for the strings VMware, commonly used to detect memory artifacts. [[2]](#2)
-* **Check Mac Address**: VMware uses specific virtual Mac address that can be detected. The usual mac address used started with the following numbers: "00:0C:29", "00:1C:14", "00:50:56", "00:05:69". Virtualbox uses specific virtual Mac address that can be detected by Malware. The usual mac address used started with the following numbers: 08:00:27. [[2]](#2)
 * **x86 Instructions**: The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2)
    * SIDT (red pill): Red Pill is an anti-VM technique that executes the SIDT instruction to grab the value of the IDTR register. The virtual machine monitor must relocate the guest's IDTR to avoid conflict with the host's IDTR. Since the virtual machine monitor is not notified when the virtual machine runs the SIDT instruction, the IDTR for the virtual machine is returned.
    * SGDT/SLDT (no pill): The No Pill technique relies on the fact that the LDT structure is assigned to a processor not an Operating System. The LDT location on a host machine will be zero and on a virtual machine will be non-zero.
@@ -38,12 +43,13 @@ Methods
    * VMCPUID
    * VPCEXT
 * **Check Registry Keys**: Virtual machines and emulators register artifacts in the registry, which can be detected by malware. For example, a search for "VMware" or "VBOX" in the registry might reveal keys that include information about the virtual hard drive, adapters, and virtual mouse. [[2]](#2) Example registry key value artifacts include "HARDWARE\Description\System (SystemBiosVersion) (VBOX)" and "SYSTEM\ControlSet001\Control\SystemInformation (SystemManufacturer) (VMWARE)"; example registry key artifacts include "SOFTWARE\VMware, Inc.\VMware Tools (VMWARE)" and "SOFTWARE\Oracle\VirtualBox Guest Additions (VBOX)". [[5]](#5)
-* **Check Processes**: The VMware Tools use processes like VMwareServices.exe or VMwareTray.exe, to perform actions on the virtual environment. A malware can list the process and searches for the VMware string. Process related to Virtualbox can be detected by malware by query the process list. [[2]](#2)
-* **Check Files**: Virtual machines create files on the file system (e.g., VMware creates files in the installation directory C:\Program Files\VMware\VMware Tools). Malware can check the different folders to find virtual machine artifacts (e.g., Virtualbox has the artifact VBoxMouse.sys). [[2]](#2)
-* **Check for Window**: Checks for the presence of a window.
-* **Check Window Title Bars**: Injects malicious code to svchost.exe to check all open window title bar text to a list of strings indicating analysis environment.
+* **Check Processes**: The VMware Tools use processes like VMwareServices.exe or VMwareTray.exe, to perform actions on the virtual environment. Malware can list the process and searches for the VMware string. Process related to Virtualbox can be detected by malware by query the process list. [[2]](#2)
 * **Check Running Services**: VMwareService.exe runs the VMware Tools Service as a child of services.exe. It can be identified by listing services. [[2]](#2)
-* **Query I/O Communication Port**: VMware uses virtual I/O ports for communication between the virtual machine and the host operating system to support functionality like copy and paste between the two systems. The port can be queried and compared with a magic number VMXh to identify the use of VMware.
+* **Check Files**: Virtual machines create files on the file system (e.g., VMware creates files in the installation directory C:\Program Files\VMware\VMware Tools). Malware can check the different folders to find virtual machine artifacts (e.g., Virtualbox has the artifact VBoxMouse.sys). [[2]](#2)
+* **Window Check**: Malware may check windows for VM-related characteristics such as:
+	* window size
+	* unique windows: may check for the presence of known windows from analysis tools running in a VM.
+	* title bars**: may inject malicious code to svchost.exe to check all open window title bar text to a list of strings indicating virtualized environment.
 
 Malware Examples
 ----------------
