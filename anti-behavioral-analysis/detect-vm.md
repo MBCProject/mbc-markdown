@@ -27,7 +27,7 @@ Methods
 * **Unique Hardware/Firmware Check**: Malware may check for hardware characteristics unique to being virtualized, allowing the malware to detect the virtual environment. Items checked include:
    * BIOS: characteristics of the BIOS, such as version, can indicate virtualization.
    * I/O Communication Port: VMware uses virtual I/O ports for communication between the virtual machine and the host operating system to support functionality like copy and paste between the two systems. The port can be queried and compared with a magic number VMXh to identify the use of VMware.
-   * CPU name
+   * CPU Name
    * CPU Location: When an Operating System is virtualized, the CPU is relocated. [[2]](#2)
    * Mac Address: VMware uses specific virtual Mac address that can be detected. The usual mac address used started with the following numbers: "00:0C:29", "00:1C:14", "00:50:56", "00:05:69". Virtualbox uses specific virtual Mac address that can be detected by Malware. The usual mac address used started with the following numbers: 08:00:27. [[2]](#2)
 * **x86 Instruction Testing**: The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2)

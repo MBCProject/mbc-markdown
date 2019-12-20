@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**E1485**|
 |**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
-|**Related ATT&CK Technique**|[Data Destruction](https://attack.mitre.org/techniques/T1485/)| 
+|**Related ATT&CK Technique**|[Data Destruction](https://attack.mitre.org/techniques/T1485/), [Delete Device Data](https://attack.mitre.org/techniques/T1447/)| 
 
 
 Data Destruction
@@ -15,4 +15,4 @@ Methods
 -------
 * **Delete Shadow Drive**: deletes shadow drive data, which is related to ransomware.
 * **Empty Recycle Bin**: empties the recycle bin, which can be related to ransomware.
-
+* **Delete Application/Software**: an application or software is deleted.
