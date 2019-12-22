@@ -7,6 +7,10 @@
 
 Process Hollowing
 =================
-Malware may create a process in a suspended state, unmapping its memory and replacing it with malicious code. 
+Instead of performing [Process Injection](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/process-inject.md), malware may unmap (hollows out) legitimate code from the target process's memory (e.g., svchost.exe) and overwrite the memory space with a malicious code. [[1]](#1)
 
 See ATT&CK: [**Process Hollowing**](https://attack.mitre.org/techniques/T1093).
+
+References
+----------
+<a name="1"[1]</a> https://www.endgame.com/blog/technical-blog/ten-process-injection-techniques-technical-survey-common-and-trending-process 
