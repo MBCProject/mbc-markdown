@@ -19,7 +19,7 @@ Malware aims to remain on a system regardless of system events.
 * **Create Account** [T1136](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/create-account.md)
 * **DLL Search Order Hijacking** [T1038](https://github.com/MBCProject/mbc-markdown/blob/master/privilege-escalation/dll-search-order-hijack.md)
 * **File System Permissions Weakness** [T1044](https://github.com/MBCProject/mbc-markdown/blob/master/privilege-escalation/file-system-perm-weakness.md)
-* **Hidden Files and Directories** [T1158](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/hidden-files.md)
+* **Hidden Files and Directories** [E1158](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/hidden-files.md)
 * **Hooking** [E1179](https://github.com/MBCProject/mbc-markdown/tree/master/credential-access/hooking.md)
 * **Image File Execution Options Injection** [T1183](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/image-file-exe-opt-inj.md)
 * **Kernel Modules and Extensions** [T1215](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/kernel-modules-ext.md)

@@ -17,7 +17,7 @@ Methods
 -------
 * **Patch MmGetPhysicalMemoryRanges**: Patching this function to always return NULL prevents drivers from getting information about the physical address space layout, preventing memory dumps. [[1]](#1)
 * **Hook memory mapping APIs**: Prevents memory dumps by preventing mapping of memory into the kernel's virtual address space. [[1]](#1)
-* **Hook procedures**: Intercepts and executes designated code in response to events such as messages, keystrokes, and moust inputs.
+* **Hook procedures**: Intercepts and executes designated code in response to events such as messages, keystrokes, and mouse inputs. [[3]](#3)
 * **Import Address Hooking (IAT) Hooking**: uses modifications to a process's IAT where pointers to imported API functions are stored.
 * **Inline Hooking**: overwrites the first bytes in an API function to redirect code flow.
 
@@ -33,6 +33,8 @@ References
 <a name="1">[1]</a> J. Stuttgen, M. Cohen, Anti-forensic resilient memory acquisition, www.dfrws.org/sites/default/files/session-files/paper-anti-forensic_resilient_memory_acquisition.pdf
 
 <a name="2">[2]</a> https://blog.malwarebytes.com/cybercrime/2017/08/inside-kronos-malware/ 
+
+<a name="3">[3]</a> https://www.endgame.com/blog/technical-blog/ten-process-injection-techniques-technical-survey-common-and-trending-process
 
 
  

@@ -24,7 +24,7 @@ Behaviors that evade detection or avoid other defenses.
 * **File Deletion** [E1107](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/file-deletion.md)
 * **File Permissions Modification** [T1222](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/file-permission-mod.md)
 * **File System Logical Offsets** [T1006](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/file-sys-logical-offset.md)
-* **Hidden Files and Directories** [T1158](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/hidden-files.md)
+* **Hidden Files and Directories** [E1158](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/hidden-files.md)
 * **Hidden Window** [T1143](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/hidden-window.md)
 * **HISTCONTROL** [T1148](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/histcontrol.md)
 * **Hooking** [E1179](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/hooking.md)
