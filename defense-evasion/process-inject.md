@@ -41,4 +41,4 @@ References
 
 <a name="3">[3]</a> https://github.com/LordNoteworthy/al-khaser 
 
-<a name="4">[4]</a> https://www.endgame.com/blog/technical-blog/ten-process-injection-techniques-technical-survey-common-and-trending-process 
+<a name="4">[4]</a> Ashkan Hosseini, *Ten Process Injection Techniques: A Technical Survey of Common and Trending Process Injection Techniques*, July 2017. https://www.endgame.com/blog/technical-blog/ten-process-injection-techniques-technical-survey-common-and-trending-process 

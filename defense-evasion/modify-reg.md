@@ -1,13 +1,13 @@
 |||
 |---------|------------------------|
-|**ID**|**T1112**|
+|**ID**|**E1112**|
 |**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
 |**Related ATT&CK Technique**|[Modify Registry](https://attack.mitre.org/techniques/T1112)|
 
 
 Modify Registry
 ===============
-Malware may make changes to the Windows Registry to hide execution. 
+Malware may make changes to the Windows Registry to hide execution or to persist on the system (note that ATT&CK does not extend this behavior to the Persistence objective). 
 
 See ATT&CK: [**Modify Registry**](https://attack.mitre.org/techniques/T1112).
 

@@ -34,7 +34,7 @@ Behaviors that evade detection or avoid other defenses.
 * **Indirect Command Execution** [T1202](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/indirect-command.md)
 * **Install Root Certificate** [T1130](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/install-root-cert.md)
 * **Masquerading** [T1036](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/masquerading.md)
-* **Modify Registry** [T1112](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/modify-reg.md)
+* **Modify Registry** [E1112](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/modify-reg.md)
 * **Modify Trusted Execution Environment** [T1399](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/mod-trust-exe-environ.md)
 * **NTFS File Attributes** [T1096](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/ntfs-file-attr.md)
 * **Obfuscated Files or Information** [E1027](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/obfuscate-files.md)

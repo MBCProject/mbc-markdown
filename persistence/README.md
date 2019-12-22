@@ -27,7 +27,7 @@ Malware aims to remain on a system regardless of system events.
 * **Local Job Scheduling** [T1168](https://github.com/MBCProject/mbc-markdown/blob/master/execution/local-job-sch.md)
 * **Malicious Network Driver** [M0026](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/malicious-network-drv.md)
 * **Modify Existing Service** [E1031](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/modify-service.md)
-* **Modify Registry** [T1112](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/modify-reg.md)
+* **Modify Registry** [E1112](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/modify-reg.md)
 * **Modify Trusted Execution Environment** [T1399](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/mod-trust-exe-environ.md)
 * **New Service** [T1050](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/new-service.md)
 * **Office Application Startup** [T1137](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/office-app-startup.md)
