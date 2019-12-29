@@ -6,7 +6,7 @@
 
 Disabling Security Tools
 ========================
-Malware may disable security tools to avoid detection. Security tools include OS updating tools, anti-virus (AV) tools, firewalls, tool components providing security related logging and/or reporting, and Antimalware Scan Interface (AMSI) related capabilities.
+Malware may disable security tools to avoid detection. Security tools include OS security features and updating tools, anti-virus (AV) tools, firewalls, tool components providing security related logging and/or reporting, and Antimalware Scan Interface (AMSI) related capabilities.
 
 Malware-related methods extending ATT&CK's definition are below. 
 
