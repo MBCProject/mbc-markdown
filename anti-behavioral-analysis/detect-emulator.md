@@ -15,7 +15,7 @@ Methods
 * **Check for Emulator-related Files**: Checks whether particular files (e.g., QEMU files) exist.
 * **Check for WINE Version**: Checks for WINE via the `get_wine_version` function from WINE's `ntdll.dll`.
 * **Check CPU Location**: When an Operating System is virtualized, the CPU is relocated. That allows a malware to detect the emulated environment. [[1]](#1)
-* **Registry Keys**: Virtual machines and emulators register artifacts in the registry, which can be detected by malware. For example, installation of QEMU results in the registry key: *HARDWARE\DEVICEMAP\Scsi\Scsi Port 0\Scsi Bus 0\Target Id 0\Logical Unit Id 0* with value=*Identifier* and data=*QEMU*, or registry key: *HARDWARE\Description\System* with value=*SystemBiosVersion* and data=*QEMU*. [[1]](#1)
+* **Check Registry Keys**: Virtual machines and emulators register artifacts in the registry, which can be detected by malware. For example, installation of QEMU results in the registry key: *HARDWARE\DEVICEMAP\Scsi\Scsi Port 0\Scsi Bus 0\Target Id 0\Logical Unit Id 0* with value=*Identifier* and data=*QEMU*, or registry key: *HARDWARE\Description\System* with value=*SystemBiosVersion* and data=*QEMU*. [[1]](#1)
 
 Malware Examples
 ----------------
