@@ -53,17 +53,17 @@ Malware Examples
 
 References
 ----------
-<a name="1">[1]</a> Alexander Antukh, "Anti-debugging Techniques Cheat Sheet," 19 January 2015. [Online]. Available:  http://antukh.com/blog/2015/01/19/malware-techniques-cheat-sheet/. 
+<a name="1">[1]</a> Alexander Antukh, "Anti-debugging Techniques Cheat Sheet," 19 January 2015.  http://antukh.com/blog/2015/01/19/malware-techniques-cheat-sheet/. 
 
-<a name="2">[2]</a> Joshua Cannell, Malwarebytes Labs, "Five Anti-Analysis Tricks that sometimes Fool Analysts," 31 March 2016. [Online]. Available: https://blog.malwarebytes.com/threat-analysis/2014/09/five-anti-debugging-tricks-that-sometimes-fool-analysts/
+<a name="2">[2]</a> Joshua Cannell, Malwarebytes Labs, "Five Anti-Analysis Tricks that sometimes Fool Analysts," 31 March 2016. https://blog.malwarebytes.com/threat-analysis/2014/09/five-anti-debugging-tricks-that-sometimes-fool-analysts/.
 
-<a name="3">[3]</a> Peter Ferrie, "The 'Ultimate' Anti-Debugging Reference," 4 May 2011. [Online]. Available: https://anti-reversing.com/Downloads/Anti-Reversing/The_Ultimate_Anti-Reversing_Reference.pdf
+<a name="3">[3]</a> Peter Ferrie, "The 'Ultimate' Anti-Debugging Reference," 4 May 2011. https://anti-reversing.com/Downloads/Anti-Reversing/The_Ultimate_Anti-Reversing_Reference.pdf.
 
-<a name="4">[4]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html 
+<a name="4">[4]</a> Atif Mushtaq, FireEye, "The Dead Giveaways of VM-Aware Malware," 27 January 2011. https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html. 
 
-<a name="5">[5]</a> https://github.com/LordNoteworthy/al-khaser
+<a name="5">[5]</a> Ayoub Faouzi (LordNoteworthy), Al-Khaser v0.79. https://github.com/LordNoteworthy/al-khaser
 
-<a name="6">[6]</a> https://www.symantec.com/connect/articles/windows-anti-debug-reference
+<a name="6">[6]</a> Nicolas Falliere, Symantec, "Windows Anti-Debug Reference," 11 September 2007. https://www.symantec.com/connect/articles/windows-anti-debug-reference.
 
-<a name="7">[7]</a> https://github.com/LordNoteworthy/al-khaser/wiki/Anti-Debugging-Tricks
+<a name="7">[7]</a> Anti Debugging Tricks, Al-Khaser. https://github.com/LordNoteworthy/al-khaser/wiki/Anti-Debugging-Tricks
  
