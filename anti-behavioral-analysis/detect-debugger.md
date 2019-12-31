@@ -9,7 +9,7 @@ Debugger Detection
 ==================
 Malware detects whether it's being executed inside a debugger. If so, conditional execution selects a benign execution path. [[1]](#1), [[2]](#2)
 
-Details on methods of detecting debuggers are given in [[3]](#3),[[5]](#5), and [[7]](#7); many are listed as methods below.
+Details on methods of detecting debuggers are given in [[3]](#3),[[5]](#5), and [[7]](#7); many are listed below.
 
 Methods
 -------
@@ -31,7 +31,7 @@ Methods
 * **Software Breakpoints**: (INT3/0xCC)
 * **Memory Breakpoints**: (PAGE_GUARD); Guard pages trigger an exception the first time they are accessed and can be used to detect a debugger. See [[7]](#7) for details.
 * **Interrupt 0x2d**: If int 0x2d is mishandled by the debugger, it can cause a single-byte instruction to be inadvertently skipped, which can be detected by malware.
-* **Interrupt 1**:
+* **Interrupt 1**: [[7]](#7)
 * **Parent Process**: (Explorer.exe); Executing an application by a debugger will result in the parent process being the debugger process rather than the shell process (Explorer.exe) or the command line. Malware checks its parent process; if it's not explorer.exe, it's assumed to be a debugger. [[7]](#7)
 * **SeDebugPrivilege**: (Csrss.exe); Using the OpenProcess function on the csrss.exe process can detect a debugger. [[7]](#7)
 * **NtYieldExecution/SwitchToThread**: [[7]](#7)
