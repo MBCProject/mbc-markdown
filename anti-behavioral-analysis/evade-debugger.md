@@ -21,7 +21,6 @@ Methods
 * **Exception Misdirection**: Using exception handling (SEH) to cause flow of program to non-obvious paths.
 * **Get Base Indirectly**: CALL to a POP; finds base of code or data, often the packed version of the code; also used often in obfuscated/packed shellcode.
 * **Guard Pages**: Encrypt blocks of code individually and decrypt temporarily only upon execution.
-* **Hook File System**: execution happens when a particular file or directory is accessed, often through hooking certain API calls such as CreateFileA and CreateFileW.
 * **Hook Interrupt**: modification of interrupt vector or descriptor tables.
 * **Import Obfuscation**: Add obfuscation between imports calls and APIs.
 * **Inlining**: variation of static linking where full API code inserted everywhere it would have been called.
@@ -43,7 +42,6 @@ Methods
 * **Stolen API Code**: A variation of "byte stealing" where the first few instructions or bytes of an API are executed in user code, allowing the IAT to point into the middle of an API function. This confuses IAT rebuilders such as ImpRec and Scylla and may bypass breakpoints.
 * **Tampering**: Erase or corrupt specific file parts to prevent rebuilding (header, packer stub, etc.).
 * **Thread Timeout**: Setting dwMilliseconds in WaitForSingleObject to a small number will timeout the thread before the analyst can step through and analyze the code executing in the thread. Modifying this via patch, register, or stack to the value `0xFFFFFFFF`, the **INFINITE** constant circumvents this anti-debugging technique.
-* **TIB Aware**: Accessing thread information (fs:[20h]) for debug detection or process obfuscation.
 * **Use Interrupts**: The unpacking code relies on use of int 1 or int 3, or it uses the interrupt vector table as part of the decryption "key".
 
 Malware Examples

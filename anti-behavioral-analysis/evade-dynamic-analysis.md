@@ -12,17 +12,15 @@ See [Emulator Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/an
 
 Methods
 -------
+* **Alternative ntdll.dll** A copy of ntdll.dll is dropped to the filesystem and then loaded. This alternative DLL is used to execute function calls to evade sandboxes which use hooking in the operating system's ntdll.dll.
 * **Data Flood**: Overloads a sandbox by generating a flood of meaningless behavioral data. [[1]](#1)
 * **Delayed Execution** - Stalling code is typically executed before any malicious behavior. The malware's aim is to delay the execution of the malicious activity long enough so that an automated dynamic analysis system fails to extract the interesting malicious behavior. 
 * **Demo Mode**: Inclusion of a demo binary/mode that is executed when token is absent or not enough privileged.
 * **Drop Code**: Original file is written to disk then executed. May confuse some sandboxes, especially if the dropped executable must be provided specific arguments and the original dropper is not associated with the drop file(s).
 * **Encode File**: Encode a file on disk, such as an implant's config file.
-* **Hook File System**: do something when particular file/dir is accessed; often through hooking certain API calls such as CreateFileA and CreateFileW.
+* **Hook File System**: execution happens when a particular file or directory is accessed, often through hooking certain API calls such as CreateFileA and CreateFileW.
 * **Hook Interrupt**: modification of interrupt vector or descriptor tables.
 * **Illusion**: Creates an illusion; makes the analyst think something happened when it didn't.
-* **Timing/Date Checks**: Calling GetSystemTime or equiv and only executing code if the current date/hour/minute/second passes some check. Often this is for running only after or only until a specific date. This behavior can be mitigated in non-automated analysis environments.
-* **Timing/Uptime Check**: Comparing single GetTickCount with some value to see if system has been started at least *X* amount ago. This behavior can be mitigated in non-automated analysis environments.
-* **Alternative ntdll.dll** A copy of ntdll.dll is dropped to the filesystem and then loaded. This alternative DLL is used to execute function calls to evade sandboxes which use hooking in the operating system's ntdll.dll.
 
 
 Malware Examples
