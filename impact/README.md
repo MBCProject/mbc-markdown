@@ -23,4 +23,4 @@ Behaviors that enable malware to achieve its mission of manipulating, interrupti
 * **Remote Access** [M0022](https://github.com/MBCProject/mbc-markdown/blob/master/impact/remote-access.md)
 * **Resource Hijacking** [M0018](https://github.com/MBCProject/mbc-markdown/blob/master/impact/hijack-sys-resources.md)
 * **Service Stop** [T1489](https://github.com/MBCProject/mbc-markdown/blob/master/impact/service-stop.md)
-* **Spamming** [M0038](https://github.com/MBCProject/mbc-markdown/blob/master/impact/spamming.md)
+* **Spamming** [M0039](https://github.com/MBCProject/mbc-markdown/blob/master/impact/spamming.md)
