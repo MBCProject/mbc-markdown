@@ -29,5 +29,7 @@ Malware Examples
 References
 ----------
 <a name="1">[1]</a> https://en.wikipedia.org/wiki/Remote_access_trojan
+
 <a name="2">[2]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
+
 <a name="3">[3]</a> https://en.wikipedia.org/wiki/DarkComet
