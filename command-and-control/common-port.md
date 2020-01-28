@@ -2,7 +2,7 @@
 |---------|------------------------|
 |**ID**|**T1043**|
 |**Objective(s)**|[Command and Control](https://github.com/MBCProject/mbc-markdown/tree/master/command-and-control)|
-|**Related ATT&CK Technique**|[Commonly Used Port](https://attack.mitre.org/techniques/T1043/), [Commonly Used Port (Mobile)](https://attack.mitre.org/techniques/T1436/)|
+|**Related ATT&CK Technique**|[Commonly Used Port](https://attack.mitre.org/techniques/T1043/), [Commonly Used Port - Mobile](https://attack.mitre.org/techniques/T1436/)|
 
 Commonly Used Port
 ==================
