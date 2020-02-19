@@ -166,6 +166,12 @@ Yes. In many cases, malware will display only a subset of a behavior's attribute
 
 The MBC will evolve to better support the malware analysis community. If you have a suggestion for a new behavior (or any content change), please open an [issue](https://github.com/MBCProject/mbc-markdown/issues) on GitHub.
 
+## <a name="use"></a>MBC and STIX 2 ##
+
+### How are MBC behaviors captured in STIX 2? ###
+
+
+
 ## <a name="next"><a/>What's Next for MBC? ##
 
 * **MBC Mailing List** - To join the MBC mailing list, please send a request to mbc@mitre.org.
