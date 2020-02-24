@@ -5,7 +5,7 @@
 # Credential Access
 Behaviors to obtain credential access, allowing it or its underlying threat actor to assume control of an account, with the associated system and network permissions.
 
-* **Access Sensitive Data or Credentials in Files** [T1409](https://github.com/MBCProject/mbc-markdown/blob/master/collection/access-sensitive-data.md)
+* **Access Sensitive Data or Credentials in Files** [E1409](https://github.com/MBCProject/mbc-markdown/blob/master/collection/access-sensitive-data.md)
 * **Account Manipulation** [T1098](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/acct-manipulate.md)
 * **Capture SMS Messages** [T1412](https://github.com/MBCProject/mbc-markdown/blob/master/collection/capture-sms.md)
 * **Credential Dumping** [T1003](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/credential-dump.md)
@@ -13,7 +13,7 @@ Behaviors to obtain credential access, allowing it or its underlying threat acto
 * **Credentials in Registry** [T1214](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/credentials-in-registry.md)
 * **Credentials in Web Browsers** [T1503](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/credentials-in-web-browsers.md)
 * **Hooking** [E1179](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/hooking.md)
-* **Input Capture** [T1056](https://github.com/MBCProject/mbc-markdown/blob/master/collection/input-capture.md)
+* **Input Capture** [E1056](https://github.com/MBCProject/mbc-markdown/blob/master/collection/input-capture.md)
 * **LLMNR/NBT-NS Poisoning** [T1171](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/LLMNR-poison.md)
 * **Network Sniffing** [T1040](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/network-sniff.md)
 * **Private Keys** [T1145](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/private-keys.md)

@@ -6,7 +6,7 @@
 Behaviors that identify and gather information, such as sensitive files, from a target network prior to exfiltration. This objective includes locations on a system or network where the malware may look for information to exfiltrate.
 
 * **Access Call Log** [T1433](https://github.com/MBCProject/mbc-markdown/blob/master/collection/access-call-log.md)
-* **Access Sensitive Data or Credentials in Files** [T1409](https://github.com/MBCProject/mbc-markdown/blob/master/collection/access-sensitive-data.md)
+* **Access Sensitive Data or Credentials in Files** [E1409](https://github.com/MBCProject/mbc-markdown/blob/master/collection/access-sensitive-data.md)
 * **Audio Capture** [T1123](https://github.com/MBCProject/mbc-markdown/blob/master/collection/audio-capture.md)
 * **Automated Collection** [T1119](https://github.com/MBCProject/mbc-markdown/blob/master/collection/auto-collect.md)
 * **Capture SMS Message** [T1412](https://github.com/MBCProject/mbc-markdown/blob/master/collection/capture-sms.md)
@@ -16,7 +16,7 @@ Behaviors that identify and gather information, such as sensitive files, from a 
 * **Data from Removable Media** [T1025](https://github.com/MBCProject/mbc-markdown/blob/master/collection/data-removable-media.md)
 * **Data Staged** [T1074](https://github.com/MBCProject/mbc-markdown/blob/master/collection/data-staged.md)
 * **Email Collection** [T1114](https://github.com/MBCProject/mbc-markdown/blob/master/collection/email-collect.md)
-* **Input Capture** [T1056](https://github.com/MBCProject/mbc-markdown/blob/master/collection/input-capture.md)
+* **Input Capture** [E1056](https://github.com/MBCProject/mbc-markdown/blob/master/collection/input-capture.md)
 * **Location Tracking** [T1430](https://github.com/MBCProject/mbc-markdown/blob/master/collection/location-track.md)
 * **Man in the Browser** [T1185](https://github.com/MBCProject/mbc-markdown/blob/master/collection/man-in-browser.md)
 * **Microphone or Camera Capture** [T1429](https://github.com/MBCProject/mbc-markdown/blob/master/collection/micro-cam-capture.md)
