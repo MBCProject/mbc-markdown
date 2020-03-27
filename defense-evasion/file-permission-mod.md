@@ -9,4 +9,4 @@ File Permissions Modification
 ============================
 Malware may modify file permissions to evade detection. 
 
-See ATT&CK: [**File Permissions Modification**](https://attack.mitre.org/techniques/T1122).
+See ATT&CK: [**File Permissions Modification**](https://attack.mitre.org/techniques/T1222).
