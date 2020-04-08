@@ -1,6 +1,6 @@
 |||
 |---------|------------------------|
-|**ID**|**T1082**|
+|**ID**|**E1082**|
 |**Objective(s)**| [Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
 |**Related ATT&CK Technique**|[System Information Discovery](https://attack.mitre.org/techniques/T1082)
 
@@ -9,6 +9,10 @@ System Information Discovery
 Malware may attempt to get detailed information about the system. 
 
 See ATT&CK: [**System Information Discovery**](https://attack.mitre.org/techniques/T1082).
+
+Methods
+-------
+* **Generate Windows Exception**: malware may trigger an exception as a way of gathering system details.
 
 Malware Examples
 ----------------

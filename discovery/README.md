@@ -23,7 +23,7 @@ Behaviors that aim to gain knowledge about the system and internal network.
 * **Self Discovery** [M0038](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/self-discover.md)
 * **SMTP Connection Discovery** [M0014](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/smtp-connect-discover.md)
 * **Software Discovery** [T1518](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/sw-discover.md)
-* **System Information Discovery** [T1082](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/system-info-discover.md)
+* **System Information Discovery** [E1082](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/system-info-discover.md)
 * **System Network Configuration Discovery** [T1016](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/system-network-config-discover.md)
 * **System Network Connections Discovery** [T1049](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/system-network-conn-discover.md)
 * **System Owner/User Discovery** [T1033](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/system-owner-discover.md)
