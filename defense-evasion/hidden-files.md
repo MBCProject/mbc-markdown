@@ -14,3 +14,4 @@ See ATT&CK: [**Hidden Files and Directories**](https://attack.mitre.org/techniqu
 Methods
 -------
 * **File Extension Change**: Malware may change the file extension of a file.
+* **Change File Location**: Malware may change the location of itself or another file to prevent detection.
