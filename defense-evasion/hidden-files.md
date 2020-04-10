@@ -13,5 +13,4 @@ See ATT&CK: [**Hidden Files and Directories**](https://attack.mitre.org/techniqu
 
 Methods
 -------
-* **Registry Storage**: Malware may store files and data, to include binaries or configuration files, as a long sequence of bytes in the registry.
 * **File Extension Change**: Malware may change the file extension of a file.
