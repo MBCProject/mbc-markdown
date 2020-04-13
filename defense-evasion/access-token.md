@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**T1134**|
-|**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
+|**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion), [Privilege Escalation](https://github.com/MBCProject/mbc-markdown/tree/master/privilege-escalation)|
 |**Related ATT&CK Technique**|[Access Token Manipulation](https://attack.mitre.org/techniques/T1134)|
 
 
