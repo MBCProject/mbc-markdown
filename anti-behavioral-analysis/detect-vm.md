@@ -19,6 +19,7 @@ Methods
 * **Check Processes**: The VMware Tools use processes like VMwareServices.exe or VMwareTray.exe, to perform actions on the virtual environment. Malware can list the process and searches for the VMware string. Process related to Virtualbox can be detected by malware by query the process list. [[2]](#2)
 * **Check Registry Keys**: Virtual machines register artifacts in the registry, which can be detected by malware. For example, a search for "VMware" or "VBOX" in the registry might reveal keys that include information about a virtual hard drive, adapters, running services, or virtual mouse. [[2]](#2) Example registry key value artifacts include "HARDWARE\Description\System (SystemBiosVersion) (VBOX)" and "SYSTEM\ControlSet001\Control\SystemInformation (SystemManufacturer) (VMWARE)"; example registry key artifacts include "SOFTWARE\VMware, Inc.\VMware Tools (VMWARE)" and "SOFTWARE\Oracle\VirtualBox Guest Additions (VBOX)". [[5]](#5)
 * **Check Running Services**: VMwareService.exe runs the VMware Tools Service as a child of services.exe. It can be identified by listing services. [[2]](#2)
+* **Check Software**: Malware may check whether software is relatively current.
 * **Check Virtual Devices**: The presence of virtual devices can indicate a virtualized environment (e.g., "\\.\VBoxTrayIPC"). [[5]](#5)
 * **Check Windows**: Malware may check windows for VM-related characteristics such as:
 	* *Window size*: tiny window size may indicate a VM.
@@ -34,7 +35,6 @@ Methods
    * *Printer*: checks whether there is a potential connected printer or default Windows printers; if not a virtual environment is suspected.
    * *Processor count*: checks number of processors; single CPU machines are suspect.
    * *Keyboard layout*
-   * *Software*: checks whether software is relatively current.
 * **Unique Hardware/Firmware Check**: Malware may check for hardware characteristics unique to being virtualized, allowing the malware to detect the virtual environment. Items checked include:
    * *BIOS*: characteristics of the BIOS, such as version, can indicate virtualization.
    * *I/O Communication Port*: VMware uses virtual I/O ports for communication between the virtual machine and the host operating system to support functionality like copy and paste between the two systems. The port can be queried and compared with a magic number VMXh to identify the use of VMware.
