@@ -178,7 +178,7 @@ The MBC will evolve to better support the malware analysis community. If you hav
 
 * **Cuckoo-MBC Mappings** - Cuckoo Sandbox 2.0.7 includes mappings between its signatures and ATT&CK. The MBC team is defining Cuckoo-MBC mappings; accuracy will be increased because of MBC’s malware focus. We hope to have the full set of mappings on GitHub by the end of 2019.
 
-* **STIX 2 Representation** - MBC content will soon be available in STIX 2 format - see the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository.
+* **STIX 2 Representation** - MBC content is available in STIX 2.1 format - see the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository. It also has instructions on how to load MBC Content into the [ATT&CK® Navigator](https://github.com/mitre-attack/attack-navigator).
 
 * **MBC Website** - An MBC website will replace markdown documents by the end of 2019.
 
