@@ -176,17 +176,17 @@ The MBC will evolve to better support the malware analysis community. If you hav
 
 * **MBC Mailing List** - To join the MBC mailing list, please send a request to mbc@mitre.org.
 
-* **Cuckoo-MBC Mappings** - Cuckoo Sandbox 2.0.7 includes mappings between its signatures and ATT&CK. The MBC team defined Cuckoo-MBC mappings; accuracy will be increased because of MBC’s malware focus. A fork of the Cuckoo community repo is now available on [MBCProject](https://github.com/MBCProject).
+* **Cuckoo-MBC Mappings** - Cuckoo Sandbox 2.0.7 includes mappings between its signatures and ATT&CK. The MBC team defined Cuckoo-MBC mappings, increasing accuracy via MBC’s malware focus. A fork of the Cuckoo community repo is now available on [MBCProject](https://github.com/MBCProject) (see the community and cuckoo repos).
 
 * **STIX 2 Representation** - MBC content is available in STIX 2.1 format - see the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository. It also has instructions on how to load MBC Content into the [ATT&CK® Navigator](https://github.com/mitre-attack/attack-navigator).
 
 * **Micro-behaviors** - Low-level malware behaviors that support other objectives and behaviors will be captured as micro-behaviors in MBC.
 
+* **Version Control** - MBC v1.0 was released at the end of January 2020. All further changes will be tracked. Releases will happen on an as-needed basis. The next release, expected in summer 2020, will include micro-behaviors and changes associated with [ATT&CK sub-techniques] (https://attack.mitre.org/beta/).
+
 * **MBC Website** - An MBC website will replace markdown documents by the end of 2020.
 
 * **Code Snippets** - In addition to associating malware samples to behaviors, we plan to capture code snippets that illustrate behavior implementation.
-
-* **Version Control** - MBC v1.0 was released at the end of January 2020. All further changes will be tracked. Releases will happen on an as-needed basis. The next release, expected in summer 2020, will include changes as a result of [ATT&CK sub-techniques] (https://attack.mitre.org/beta/).
 
 
 References
