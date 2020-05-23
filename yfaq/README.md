@@ -182,7 +182,7 @@ The MBC will evolve to better support the malware analysis community. If you hav
 
 * **Micro-behaviors** - Low-level malware behaviors that support other objectives and behaviors will be captured as micro-behaviors in MBC.
 
-* **Version Control** - MBC v1.0 was released at the end of January 2020. All further changes will be tracked. Releases will happen on an as-needed basis. The next release, expected in summer 2020, will include micro-behaviors and changes associated with [ATT&CK sub-techniques] (https://attack.mitre.org/beta/).
+* **Version Control** - MBC v1.0 was released at the end of January 2020. All further changes will be tracked. Releases will happen on an as-needed basis. The next release, expected in summer 2020, will include micro-behaviors and changes associated with [ATT&CK sub-techniques](https://attack.mitre.org/beta/).
 
 * **MBC Website** - An MBC website will replace markdown documents by the end of 2020.
 
