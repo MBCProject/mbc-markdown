@@ -169,8 +169,7 @@ The MBC will evolve to better support the malware analysis community. If you hav
 ## <a name="use"></a>MBC and STIX 2 ##
 
 ### How are MBC behaviors captured in STIX 2? ###
-
-
+MBC content is available in STIX 2.1 format. See the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository for details. The [usage document](https://github.com/MBCProject/mbc-stix2/blob/master/USAGE.md) gives details of how behavior are captured with STIX 2 objects.
 
 ## <a name="next"><a/>What's Next for MBC? ##
 
@@ -178,7 +177,7 @@ The MBC will evolve to better support the malware analysis community. If you hav
 
 * **Cuckoo-MBC Mappings** - Cuckoo Sandbox 2.0.7 includes mappings between its signatures and ATT&CK. The MBC team defined Cuckoo-MBC mappings, increasing accuracy via MBC’s malware focus. A fork of the Cuckoo community repo is now available on [MBCProject](https://github.com/MBCProject) (see the community and cuckoo repos).
 
-* **STIX 2 Representation** - MBC content is available in STIX 2.1 format - see the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository. It also has instructions on how to load MBC Content into the [ATT&CK® Navigator](https://github.com/mitre-attack/attack-navigator).
+* **STIX 2 Representation** - MBC content is available in STIX 2.1 format - see the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository.
 
 * **Micro-behaviors** - Low-level malware behaviors that support other objectives and behaviors will be captured as micro-behaviors in MBC.
 
