@@ -1,13 +1,13 @@
 # <a name="faq"></a>Malware Behavior Catalog Frequently Asked Questions # 
 
-* [What's New for MBC?](./#next)
+* [What's New?](./#next)
 * [Using MBC](./#use)
 * [MBC and STIX 2](./#stix)
 * [MBC's Relationship to ATT&CK](./#relationship)
 * [MBC Origins](./#origin)
 * [MBC Content](./#content)
 
-## <a name="next"><a/>What's New for MBC? ##
+## <a name="next"><a/>What's New? ##
 
 * **MBC Mailing List** - The MBC mailing list is now active. To join, please send a request to mbc@mitre.org.
 
