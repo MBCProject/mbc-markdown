@@ -107,11 +107,11 @@ While malware sometimes acts as a surrogate for an adversary (i.e., there is ove
 
 ### Why does MBC include ATT&CK techniques? Why not create a stand-alone supplement to ATT&CK? ###
 
-We believe that to most effectively support malware analysis, MBC should aim to provide a complete set of malware-related behaviors. Consequently, MBC defines new, malware-related behaviors, but also leverages ATT&CK as much as possible, identifying the reduced set of ATT&CK techniques pertaining to malware.
+We believe that to most effectively support malware analysis, MBC should aim to provide a complete set of malware-related behaviors. Consequently, MBC defines new, malware-related behaviors, but also leverages ATT&CK as much as possible, identifying the restricted set of ATT&CK techniques pertaining to malware.
 
 ### Is there a formal relationship between ATT&CK and MBC? ###
 
-No. Given that MBC aims to serve as a model and test case for how ATT&CK can be extended by second parties, we consult with the ATT&CK team to keep them apprised of our work, but there is no formal relationship between ATT&CK and MBC. While content of MBC was not coordinated with the ATT&CK team, we borrowed from ATT&CK's philosophy and methodology [[1]](#1). Namely, MBC will maintain a malware, code-oriented perspective; focus on real-world use of behaviors through empirical malware examples, drawing upon publicly available analysis and reporting; and maintain a level of abstraction appropriate for supporting malware analysis use cases (e.g., develop malware signatures, mitigate infection, drive analytics, attribution).  
+No. Given that MBC aims to serve as a model and test case for how ATT&CK can be expanded by second parties, we consult with the ATT&CK team to keep them apprised of our work, but there is no formal relationship between ATT&CK and MBC. While content of MBC was not coordinated with the ATT&CK team, we borrowed from ATT&CK's philosophy and methodology [[1]](#1). Namely, MBC will maintain a malware, code-oriented perspective; focus on real-world use of behaviors through empirical malware examples, drawing upon publicly available analysis and reporting; and maintain a level of abstraction appropriate for supporting malware analysis use cases (e.g., develop malware signatures, mitigate infection, drive analytics, attribution).  
 
 ### Will MBC be updated when ATT&CK is updated? ###
 
