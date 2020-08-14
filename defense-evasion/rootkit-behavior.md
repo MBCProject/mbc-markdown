@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**E1014**|
-|**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-beta/tree/master/defense-evasion)|
+|**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
 |**Related ATT&CK Technique**|[Rootkit](https://attack.mitre.org/techniques/T1014)|
 
 
@@ -31,7 +31,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|--------|-----------------------------|
-|[**Poison-Ivy**](https://github.com/MBCProject/mbc-beta/tree/master/xample-malware/poison-ivy.md)|2005|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
+|[**Poison-Ivy**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/poison-ivy.md)|2005|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
 
 References
 ----------

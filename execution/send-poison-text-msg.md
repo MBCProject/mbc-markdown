@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**B0021**|
-|**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-beta/tree/master/execution), [Lateral Movement](https://github.com/MBCProject/mbc-beta/tree/master/lateral-movement/)|
+|**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution), [Lateral Movement](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement/)|
 |**Related ATT&CK Technique**| None |
 
 
@@ -13,7 +13,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|--------|-----------------------------|
-|[**MazarBot**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/mazarbot.md) |  | MazarBot is delivered via a poisoned SMS message. [[1]](#1)|
+|[**MazarBot**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/mazarbot.md) |  | MazarBot is delivered via a poisoned SMS message. [[1]](#1)|
 
 References
 ----------

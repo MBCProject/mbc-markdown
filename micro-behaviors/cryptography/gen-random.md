@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**C0021**|
-|**Objective(s)**|[Cryptography](https://github.com/MBCProject/mbc-beta/tree/master/micro-behaviors/cryptography)|
+|**Objective(s)**|[Cryptography](https://github.com/MBCProject/mbc-markdown/tree/master/micro-behaviors/cryptography)|
 |**Related ATT&CK Technique**|None|
 
 

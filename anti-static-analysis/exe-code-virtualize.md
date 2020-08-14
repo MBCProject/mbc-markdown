@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**B0008**|
-|**Objective(s)**| [Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-beta/tree/master/anti-behavioral-analysis), [Anti-Static Analysis](https://github.com/MBCProject/mbc-beta/tree/master/anti-static-analysis)|
+|**Objective(s)**| [Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis), [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis)|
 |**Related ATT&CK Technique**|None|
 
 
@@ -21,7 +21,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|--------|-----------------------------|
-|[**Locky Bart**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/locky-bart.md)|January 2017|Code virtualization is added to the Locky Bart binary using WPProtect. [[2]](#2)|
+|[**Locky Bart**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/locky-bart.md)|January 2017|Code virtualization is added to the Locky Bart binary using WPProtect. [[2]](#2)|
 
 References
 ----------

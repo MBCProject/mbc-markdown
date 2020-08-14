@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**E1020**|
-|**Objective(s)**| [Exfiltration](https://github.com/MBCProject/mbc-beta/tree/master/exfiltration)|
+|**Objective(s)**| [Exfiltration](https://github.com/MBCProject/mbc-markdown/tree/master/exfiltration)|
 |**Related ATT&CK Technique**|[Automated Exfiltration](https://attack.mitre.org/techniques/T1020/)|
 
 

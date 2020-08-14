@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**C0015**|
-|**Objective(s)**|[File Manipulation](https://github.com/MBCProject/mbc-beta/tree/master/micro-behaviors/file-manipulation)|
+|**Objective(s)**|[File Manipulation](https://github.com/MBCProject/mbc-markdown/tree/master/micro-behaviors/file-manipulation)|
 |**Related ATT&CK Technique**|None|
 
 

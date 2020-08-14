@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**F0002**|
-|**Objective(s)**|[Collection](https://github.com/MBCProject/mbc-beta/tree/master/collection), [Credential Access](https://github.com/MBCProject/mbc-beta/tree/master/credential-access)|
+|**Objective(s)**|[Collection](https://github.com/MBCProject/mbc-markdown/tree/master/collection), [Credential Access](https://github.com/MBCProject/mbc-markdown/tree/master/credential-access)|
 |**Related ATT&CK Sub-Technique**|[Input Capture: Keylogging](https://attack.mitre.org/techniques/T1056/001)|
 
 Keylogging

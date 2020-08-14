@@ -7,13 +7,13 @@ Behaviors and code characteristics that prevent static analysis or make it more 
 
 Two primary resources for anti-static analysis behaviors are [[1]](#1) and [[2]](#2).
 
-* **Call Graph Generation Evasion** [B0010](https://github.com/MBCProject/mbc-beta/blob/master/anti-static-analysis/evade-call-graph.md)
-* **Disassembler Evasion** [B0012](https://github.com/MBCProject/mbc-beta/blob/master/anti-static-analysis/evade-disassembler.md)
-* **Executable Code Obfuscation** [B0032](https://github.com/MBCProject/mbc-beta/blob/master/anti-static-analysis/exe-code-obfuscate.md)
-* **Executable Code Optimization** [B0034](https://github.com/MBCProject/mbc-beta/blob/master/anti-static-analysis/exe-code-optimize.md)
-* **Executable Code Virtualization** [B0008](https://github.com/MBCProject/mbc-beta/blob/master/anti-static-analysis/exe-code-virtualize.md)
-* **Obfuscated Files or Information** [E1027](https://github.com/MBCProject/mbc-beta/blob/master/defense-evasion/obfuscate-files.md)
-* **Software Packing** [F0001](https://github.com/MBCProject/mbc-beta/blob/master/anti-static-analysis/software-packing.md)
+* **Call Graph Generation Evasion** [B0010](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/evade-call-graph.md)
+* **Disassembler Evasion** [B0012](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/evade-disassembler.md)
+* **Executable Code Obfuscation** [B0032](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-obfuscate.md)
+* **Executable Code Optimization** [B0034](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-optimize.md)
+* **Executable Code Virtualization** [B0008](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/exe-code-virtualize.md)
+* **Obfuscated Files or Information** [E1027](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/obfuscate-files.md)
+* **Software Packing** [F0001](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/software-packing.md)
 
 
 References

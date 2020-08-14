@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**B0010**|
-|**Objective(s)**| [Anti-Static Analysis](https://github.com/MBCProject/mbc-beta/tree/master/anti-static-analysis)|
+|**Objective(s)**| [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis)|
 |**Related ATT&CK Technique**|None|
 
 

@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**E1027**|
-|**Objective(s)**| [Anti-Static Analysis](https://github.com/MBCProject/mbc-beta/tree/master/anti-static-analysis), [Defense Evasion](https://github.com/MBCProject/mbc-beta/tree/master/defense-evasion)|
+|**Objective(s)**| [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis), [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
 |**Related ATT&CK Technique**|[Obfuscated Files or Information](https://attack.mitre.org/techniques/T1027)|
 
 
@@ -9,7 +9,7 @@ Obfuscated Files or Information
 ===============================
 Malware may make files or information difficult to discover or analyze by encoding, encrypting, or otherwise obfuscating the content. In addition, a malware sample itself can be encoded or encrypted (i.e., encoding/encryption is a code characteristic).
 
-A related MBC behavior, associated explicitly with executable code and making its analysis more difficult, is [Executable Code Obfuscation](https://github.com/MBCProject/mbc-beta/tree/master/anti-static-analysis/exe-code-obfuscate.md).
+A related MBC behavior, associated explicitly with executable code and making its analysis more difficult, is [Executable Code Obfuscation](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis/exe-code-obfuscate.md).
 
 See ATT&CK: [**Obfuscated Files or Information**](https://attack.mitre.org/techniques/T1027/).
 
@@ -42,6 +42,6 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
-|[**TrickBot**](https://github.com/MBCProject/mbc-beta/tree/master/xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
-|[**Poison Ivy**](https://github.com/MBCProject/mbc-beta/tree/master/xample-malware/poison-ivy.md)|2005|Obfuscates files.|
-|[**WebCobra**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/webcobra.md)|2018|Obfuscates files.|
+|[**TrickBot**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**Poison Ivy**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/poison-ivy.md)|2005|Obfuscates files.|
+|[**WebCobra**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/webcobra.md)|2018|Obfuscates files.|

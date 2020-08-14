@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**E1472**|
-|**Objective(s)**|[Impact](https://github.com/MBCProject/mbc-beta/tree/master/impact)|
+|**Objective(s)**|[Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
 |**Related ATT&CK Technique**|[Generate Fraudulent Advertising Revenue](https://attack.mitre.org/techniques/T1472/)|
 
 
@@ -22,8 +22,8 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
-|[**DNSChanger**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/dnschanger.md)| November 2011| Alters DNS server settings to route to a rogue DNS server for the purpose of click hijacking. [[1]](#1)|
-|[**Kovter**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/kovter.md)|2016|Performs click-fraud. [[4]](#4)|
+|[**DNSChanger**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/dnschanger.md)| November 2011| Alters DNS server settings to route to a rogue DNS server for the purpose of click hijacking. [[1]](#1)|
+|[**Kovter**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/kovter.md)|2016|Performs click-fraud. [[4]](#4)|
 
 References
 ----------

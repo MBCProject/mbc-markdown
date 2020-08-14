@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**F0009**|
-|**Objective(s)**|[Impact](https://github.com/MBCProject/mbc-beta/tree/master/impact), [Persistence](https://github.com/MBCProject/mbc-beta/tree/master/persistence), [Defense Evasion](https://github.com/MBCProject/mbc-beta/tree/master/defense-evasion)|
+|**Objective(s)**|[Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence), [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
 |**Related ATT&CK Sub-Technique**|[Pre-OS Boot: Component Firmware](https://attack.mitre.org/techniques/T1542/002/)|
 
 Component Firmware
@@ -20,7 +20,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
-|[**SYNful Knock**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/synful-knock.md)|2015| SYNful Knock is a stealthy modification of the router's firmware image that can be used to maintain persistence within a victim's network. [[2]](#2)
+|[**SYNful Knock**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/synful-knock.md)|2015| SYNful Knock is a stealthy modification of the router's firmware image that can be used to maintain persistence within a victim's network. [[2]](#2)
 
 References
 ----------

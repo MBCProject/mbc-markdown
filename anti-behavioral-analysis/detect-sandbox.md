@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**B0007**|
-|**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-beta/tree/master/anti-behavioral-analysis)|
+|**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis)|
 |**Related ATT&CK Sub-techniques**|[Virtualization/Sandbox Evasion: System Checks](https://attack.mitre.org/techniques/T1497/001/), [Virtualization/Sandbox Evasion: User Activity Based Checks](https://attack.mitre.org/techniques/T1497/002/)|
 
 
@@ -9,7 +9,7 @@ Sandbox Detection
 =================
 Detects whether the malware instance is being executed inside an instrumented sandbox environment (e.g., Cuckoo Sandbox). If so, conditional execution selects a benign execution path.
 
-The Sandbox Detection behavior relates to anti-analysis, whereas a related ATT&CK technique relates to [Defense Evasion](https://github.com/MBCProject/mbc-beta/tree/master/defense-evasion): for details, see the ATT&CK [**Virtualization/Sandbox Evasion**](https://attack.mitre.org/techniques/T1497/) technique and its sub-techniques.
+The Sandbox Detection behavior relates to anti-analysis, whereas a related ATT&CK technique relates to [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion): for details, see the ATT&CK [**Virtualization/Sandbox Evasion**](https://attack.mitre.org/techniques/T1497/) technique and its sub-techniques.
 
 Methods
 -------
@@ -29,10 +29,10 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|--------|-----------------------------|
-|[**Redhip**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/redhip.md)|January 2011|Redhip detects publicly available automated analysis workbenches (e.g., Joe Box) by considering OS product keys and special DLLs. [[1]](#1)|
-|[**Rombertik**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/rombertik.md)|May 2015|[[2]](#2)|
-|[**Terminator**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/terminator.md)|May 2013|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[4]](#4) |
-|[**Ursnif**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/ursnif.md)|2016|Ursnif uses malware macros to evade sandbox detection.|
+|[**Redhip**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/redhip.md)|January 2011|Redhip detects publicly available automated analysis workbenches (e.g., Joe Box) by considering OS product keys and special DLLs. [[1]](#1)|
+|[**Rombertik**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/rombertik.md)|May 2015|[[2]](#2)|
+|[**Terminator**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/terminator.md)|May 2013|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[4]](#4) |
+|[**Ursnif**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/ursnif.md)|2016|Ursnif uses malware macros to evade sandbox detection.|
 
 References
 ----------

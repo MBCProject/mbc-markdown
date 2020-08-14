@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**F0005**|
-|**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-beta/tree/master/defense-evasion), [Persistence](https://github.com/MBCProject/mbc-beta/tree/master/persistence)|
+|**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
 |**Related ATT&CK Sub-Technique**|[Hide Artifacts: Hidden Files and Directories](https://attack.mitre.org/techniques/T1564/001/)|
 
 

@@ -1,14 +1,14 @@
 |||
 |---------|------------------------|
 |**ID**|**B0003**|
-|**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-beta/tree/master/anti-behavioral-analysis)|
+|**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis)|
 |**Related ATT&CK Technique**|[Virtualization/Sandbox Evasion](https://attack.mitre.org/techniques/T1497/)|
 
 Dynamic Analysis Evasion
 ========================
 Malware may obstruct dynamic analysis in a sandbox, emulator, or virtual machine. 
 
-See [Emulator Evasion](https://github.com/MBCProject/mbc-beta/tree/master/anti-behavioral-analysis/evade-emulator.md) for an  emulator-specific evasion behavior, and see [Execution Guardrails](https://github.com/MBCProject/mbc-beta/blob/master/anti-behavioral-analysis/execution-guardrails.md) for a behavior that constrains dynamic execution based on environmental conditions. 
+See [Emulator Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis/evade-emulator.md) for an  emulator-specific evasion behavior, and see [Execution Guardrails](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/execution-guardrails.md) for a behavior that constrains dynamic execution based on environmental conditions. 
 
 Methods
 -------
@@ -30,11 +30,11 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
-|[**Ursnif**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/ursnif.md)|May 2016|Ursnif uses malware macros to evade sandbox detection. [[2]](#2)|
-|[**Terminator**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/terminator.md)|October 2013|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[3]](#3)|
+|[**Ursnif**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/ursnif.md)|May 2016|Ursnif uses malware macros to evade sandbox detection. [[2]](#2)|
+|[**Terminator**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/terminator.md)|October 2013|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[3]](#3)|
 |**Nap**|2013|Trojan Nap (tied to the Kelihos Botnet) uses extended sleep calls to evade sandbox analysis. [[3]](#3)|
 |**Smokeloader**|2019|Smokeloader drops a copy of ntdll.dll to %APPDATA%\Local\Temp\ [[4]](#4)|
-|[**WebCobra**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/webcobra.md)|2018|Evades dynamic analysis.)|
+|[**WebCobra**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/webcobra.md)|2018|Evades dynamic analysis.)|
 
 References
 ----------

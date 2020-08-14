@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**E1485**|
-|**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-beta/tree/master/impact)|
+|**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
 |**Related ATT&CK Technique**|[Data Destruction](https://attack.mitre.org/techniques/T1485/), [Delete Device Data](https://attack.mitre.org/techniques/T1447/)| 
 
 
@@ -23,7 +23,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
-|[**Shamoon**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/shamoon.md)| 2012 |A 2018 variant includes a component that erases files and then wipes the master boot record, preventing file recovery.[[1]](#1)| 
+|[**Shamoon**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/shamoon.md)| 2012 |A 2018 variant includes a component that erases files and then wipes the master boot record, preventing file recovery.[[1]](#1)| 
 
 References
 ----------

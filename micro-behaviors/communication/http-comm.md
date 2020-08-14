@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**C0002**|
-|**Objective(s)**|[Communication](https://github.com/MBCProject/mbc-beta/tree/master/micro-behaviors/communication)|
+|**Objective(s)**|[Communication](https://github.com/MBCProject/mbc-markdown/tree/master/micro-behaviors/communication)|
 |**Related ATT&CK Technique**|None|
 
 
@@ -19,7 +19,7 @@ Methods
 |C0002.004|**GET Request**|HTTP Get request.|
 |C0002.005|**POST Request**|HTTP Post request.|
 |C0002.006|**PUT Request**|HTTP Put request.| 
-|C0002.007|**WinINet API**|A HTTP request is made via the Windows Internet (WinINet) application programming interface (API). A specific function can be specified as a method on the [WinInet](https://github.com/MBCProject/mbc-beta/blob/master/micro-behaviors/communication/wininet.md) microbehavior.
+|C0002.007|**WinINet API**|A HTTP request is made via the Windows Internet (WinINet) application programming interface (API). A specific function can be specified as a method on the [WinInet](https://github.com/MBCProject/mbc-markdown/blob/master/micro-behaviors/communication/wininet.md) microbehavior.
 |C0002.008|**WinHTTP API**|An HTTP request is made via the Windows HTTP Services (WinHTTP) application programming interface (API).|
 |C0002.008|**URLMON Function**|A HTTP request is made via a URLMON function. Specific functions can be captured: e.g., COMMUNICATION::HTTP Communication::URLMON Function.URLDownloadToFileW.  
 |C0002.008|**IWebBrowser**|The IWebBrowser interface exposes methods and properties implemented by the WebBrowser control or implemented by an instance of the InternetExplorer application. Specific methods and properties can be captured: e.g., COMMUNICATION::HTTP Communication::IWebBrowser.get_Document.

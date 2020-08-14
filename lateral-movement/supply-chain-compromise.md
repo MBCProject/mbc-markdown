@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**E1195**|
-|**Objective(s)**|[Lateral Movement](https://github.com/MBCProject/mbc-beta/tree/master/lateral-movement)|
+|**Objective(s)**|[Lateral Movement](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement)|
 |**Related ATT&CK Technique**|[Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)|
 
 Supply Chain Compromise
@@ -19,7 +19,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
-|[**YiSpecter**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/yispecter.md)|October 2015|Attacks both jailbroken and non-jailbroken iOS devices by exploiting private APIs. [[1]](#1)|
+|[**YiSpecter**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/yispecter.md)|October 2015|Attacks both jailbroken and non-jailbroken iOS devices by exploiting private APIs. [[1]](#1)|
 
 References
 ----------

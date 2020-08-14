@@ -5,9 +5,9 @@ Like regular MBC behaviors, micro-behaviors are associated with objectives and c
 
 |**Objective**|**Description**|
 |------------------------------------------------------------------|----------------------------|
-|[**Communication**](https://github.com/MBCProject/mbc-beta/blob/master/micro-behaviors/communication) |Malware uses various protocols and components to communication.|
-|[**Cryptography**](https://github.com/MBCProject/mbc-beta/blob/master/micro-behaviors/cryptography)|Malware uses elements of cryptography.|
-|[**Data Manipulation**](https://github.com/MBCProject/mbc-beta/blob/master/micro-behaviors/data-manipulation)| Malware manipulates data.|
-|[**File Manipulation**](https://github.com/MBCProject/mbc-beta/blob/master/micro-behaviors/file-manipulation) | Malware manipulates files.|
-|[**Memory Manipulation**](https://github.com/MBCProject/mbc-beta/blob/master/micro-behaviors/memory-manipulation) |Malware manipulates memory.|
-|[**Processes**](https://github.com/MBCProject/mbc-beta/blob/master/micro-behaviors/processes)|Malware uses processes.|
+|[**Communication**](https://github.com/MBCProject/mbc-markdown/blob/master/micro-behaviors/communication) |Malware uses various protocols and components to communication.|
+|[**Cryptography**](https://github.com/MBCProject/mbc-markdown/blob/master/micro-behaviors/cryptography)|Malware uses elements of cryptography.|
+|[**Data Manipulation**](https://github.com/MBCProject/mbc-markdown/blob/master/micro-behaviors/data-manipulation)| Malware manipulates data.|
+|[**File Manipulation**](https://github.com/MBCProject/mbc-markdown/blob/master/micro-behaviors/file-manipulation) | Malware manipulates files.|
+|[**Memory Manipulation**](https://github.com/MBCProject/mbc-markdown/blob/master/micro-behaviors/memory-manipulation) |Malware manipulates memory.|
+|[**Processes**](https://github.com/MBCProject/mbc-markdown/blob/master/micro-behaviors/processes)|Malware uses processes.|

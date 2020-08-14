@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**F0013**|
-|**Objective(s)**|[Defense Evasion](https://github.com/MBCProject/mbc-beta/tree/master/defense-evasion), [Persistence](https://github.com/MBCProject/mbc-beta/tree/master/persistence)|
+|**Objective(s)**|[Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
 |**Related ATT&CK Sub-Technique**|[Pre-OS Boot: Bootkit](https://attack.mitre.org/techniques/T1542/003)|
 
 Bootkit
@@ -14,7 +14,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
-|[**Mebromi**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/mebromi.md)|2011|An MBR bootkit and a BIOS bootkit targeting Award BIOS. [[1]](#1)|
+|[**Mebromi**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/mebromi.md)|2011|An MBR bootkit and a BIOS bootkit targeting Award BIOS. [[1]](#1)|
 
 References
 ----------

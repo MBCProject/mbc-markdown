@@ -1,17 +1,17 @@
 |||
 |------------------|------------------------|
 |**ID**|**F0003**|
-|**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-beta/tree/master/anti-behavioral-analysis), [Collection](https://github.com/MBCProject/mbc-beta/tree/master/collection), [Credential Access](https://github.com/MBCProject/mbc-beta/tree/master/credential-access), [Defense Evasion](https://github.com/MBCProject/mbc-beta/tree/master/defense-evasion), [Persistence](https://github.com/MBCProject/mbc-beta/tree/master/persistence), [Privilege Escalation](https://github.com/MBCProject/mbc-beta/tree/master/privilege-escalation)|
+|**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis), [Collection](https://github.com/MBCProject/mbc-markdown/tree/master/collection), [Credential Access](https://github.com/MBCProject/mbc-markdown/tree/master/credential-access), [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence), [Privilege Escalation](https://github.com/MBCProject/mbc-markdown/tree/master/privilege-escalation)|
 |**Related ATT&CK Sub-Technique**|[Input Capture: Credential API Hooking](https://attack.mitre.org/techniques/T1056/004/)|
 
 
 Hooking
 =======
-Malware alters API behavior or redirects execution to a malicious API version for a variety of purposes. Malware may use hooking to load and execute code within the context of another process, hiding execution and gaining elevated privileges and access to the process's memory. Methods related to anti-behavioral analysis are below. For example, hooking can be used to prevent memory dumps - see also [Memory Dump Evasion](https://github.com/MBCProject/mbc-beta/blob/master/anti-behavioral-analysis/evade-memory-dump.md).
+Malware alters API behavior or redirects execution to a malicious API version for a variety of purposes. Malware may use hooking to load and execute code within the context of another process, hiding execution and gaining elevated privileges and access to the process's memory. Methods related to anti-behavioral analysis are below. For example, hooking can be used to prevent memory dumps - see also [Memory Dump Evasion](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/evade-memory-dump.md).
 
 For discussion related to the Credential Access and Collection objectives, see ATT&CK: [**Input Capture: Credential API Hooking**](https://attack.mitre.org/techniques/T1056/004/). 
 
-Note that in MBC, Hooking is also associated with the [Defense Evasion](https://github.com/MBCProject/mbc-beta/tree/master/defense-evasion), [Persistence](https://github.com/MBCProject/mbc-beta/tree/master/persistence), [Privilege Escalation](https://github.com/MBCProject/mbc-beta/tree/master/privilege-escalation), and [Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-beta/tree/master/anti-behavioral-analysis) objectives.
+Note that in MBC, Hooking is also associated with the [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence), [Privilege Escalation](https://github.com/MBCProject/mbc-markdown/tree/master/privilege-escalation), and [Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis) objectives.
 
 Methods
 -------
@@ -28,7 +28,7 @@ Malware Examples
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
 |**Kronos**|June 2014 |Kronos hooks the API of processes to prevent detection. [[2]](#2)|
-|[**TrickBot**](https://github.com/MBCProject/mbc-beta/tree/master/xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**TrickBot**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
 
 References
 ----------

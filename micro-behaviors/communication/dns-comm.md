@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**C0011**|
-|**Objective(s)**|[Communication](https://github.com/MBCProject/mbc-beta/tree/master/micro-behaviors/communication)|
+|**Objective(s)**|[Communication](https://github.com/MBCProject/mbc-markdown/tree/master/micro-behaviors/communication)|
 |**Related ATT&CK Technique**|None|
 
 

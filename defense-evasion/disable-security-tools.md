@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**F0004**|
-|**Objective(s)**|[Defense Evasion](https://github.com/MBCProject/mbc-beta/tree/master/defense-evasion)|
+|**Objective(s)**|[Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
 |**Related ATT&CK Sub-Technique**|[Impair Defenses: Disable or Modify Tools](https://attack.mitre.org/techniques/T1562/001/)|
 
 Disable Security Tools
@@ -26,9 +26,9 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
-|[**WebCobra**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/webcobra.md)| 2018 | Loads ntdll.dll and user32.dll as data files in memory and overwrites the first 8 bytes of those functions, which unhooks the APIs. [[1]](#1)|
-|[**TrickBot**](https://github.com/MBCProject/mbc-beta/tree/master/xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
-|[**DNSChanger**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/dnschanger.md)|2011|Prevents the infected system from installing anti-virus software updates. [[2]](#2)|
+|[**WebCobra**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/webcobra.md)| 2018 | Loads ntdll.dll and user32.dll as data files in memory and overwrites the first 8 bytes of those functions, which unhooks the APIs. [[1]](#1)|
+|[**TrickBot**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**DNSChanger**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/dnschanger.md)|2011|Prevents the infected system from installing anti-virus software updates. [[2]](#2)|
 
 References
 ----------
