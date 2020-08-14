@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
 |**ID**|**E1204**|
-|**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
+|**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-beta/tree/master/execution)|
 |**Related ATT&CK Technique**|[User Execution](https://attack.mitre.org/techniques/T1204)|
 
 User Interaction
@@ -14,4 +14,4 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
-|[**TrickBot**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**TrickBot**](https://github.com/MBCProject/mbc-beta/tree/master/xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|

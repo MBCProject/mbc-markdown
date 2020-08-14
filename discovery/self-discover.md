@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
-|**ID**|**M0038**|
-|**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
+|**ID**|**B0038**|
+|**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-beta/tree/master/discovery)|
 |**Related ATT&CK Technique**|None|
 
 

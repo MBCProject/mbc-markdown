@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
-|**ID**|**M0039**|
-|**Objective(s)**|[Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
+|**ID**|**B0039**|
+|**Objective(s)**|[Impact](https://github.com/MBCProject/mbc-beta/tree/master/impact)|
 |**Related ATT&CK Technique**|None|
 
 

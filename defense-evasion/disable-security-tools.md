@@ -1,32 +1,37 @@
 |||
 |---------|------------------------|
-|**ID**|**E1089**|
-|**Objective(s)**|[Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
-|**Related ATT&CK Technique**|[Disabling Security Tools](https://attack.mitre.org/techniques/T1089/)|
+|**ID**|**F0004**|
+|**Objective(s)**|[Defense Evasion](https://github.com/MBCProject/mbc-beta/tree/master/defense-evasion)|
+|**Related ATT&CK Sub-Technique**|[Impair Defenses: Disable or Modify Tools](https://attack.mitre.org/techniques/T1562/001/)|
 
-Disabling Security Tools
+Disable Security Tools
 ========================
 Malware may disable security tools to avoid detection. Security tools include OS security features and updating tools, anti-virus (AV) tools, firewalls, tool components providing security related logging and/or reporting, and Antimalware Scan Interface (AMSI) related capabilities.
 
 Malware-related methods extending ATT&CK's definition are below. 
 
-See ATT&CK: [**Disabling Security Tools**](https://attack.mitre.org/techniques/T1089/).
+See ATT&CK: [**Impair Defenses: Disable or Modify Tools**](https://attack.mitre.org/techniques/T1562/001).
 
 Methods
 -------
-* **Disable Kernel Patch Protection**: Bypasses or disables kernel patch protection mechanisms such as Windows' PatchGuard, enabling the malware instance to operate at the same level as the operating system kernel and kernel mode drivers (KMD).
-
-* **Disable System File Overwrite Protection**: Disables system file overwrite protection mechanisms such as Windows file protection, thereby enabling system files to be modified or replaced.
-
-* **Unhook APIs**: Security products may hook APIs to monitor the behavior of malware. To avoid being found, malware may load DLLs in memory and overwrite their bytes. 
+|ID|Name|Description|
+|-----------------------------|--------|-----------------------------|
+|F0004.001|**Disable Kernel Patch Protection**|Bypasses or disables kernel patch protection mechanisms such as Windows' PatchGuard, enabling the malware instance to operate at the same level as the operating system kernel and kernel mode drivers (KMD).|
+|F0004.002|**Disable System File Overwrite Protection**|Disables system file overwrite protection mechanisms such as Windows file protection, thereby enabling system files to be modified or replaced.|
+|F0004.003|**Unhook APIs**|Security products may hook APIs to monitor the behavior of malware. To avoid being found, malware may load DLLs in memory and overwrite their bytes.|
+|F0004.004|**AMSI Bypass**|Malware bypasses AMSI (Anti-malware Scan Interface).|
+|F0004.005|**Modify Policy**|Malware may modify policies to make software less effective.|
 
 Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
-|[**WebCobra**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/webcobra.md)| 2018 | Loads ntdll.dll and user32.dll as data files in memory and overwrites the first 8 bytes of those functions, which unhooks the APIs. [[1]](#1)|
-|[**TrickBot**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**WebCobra**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/webcobra.md)| 2018 | Loads ntdll.dll and user32.dll as data files in memory and overwrites the first 8 bytes of those functions, which unhooks the APIs. [[1]](#1)|
+|[**TrickBot**](https://github.com/MBCProject/mbc-beta/tree/master/xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**DNSChanger**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/dnschanger.md)|2011|Prevents the infected system from installing anti-virus software updates. [[2]](#2)|
 
 References
 ----------
 <a name="1">[1]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+
+<a name="2">[2]</a> https://www.huffingtonpost.com/2011/11/09/click-hijack-hackers-online-ad-scam_n_1084497.html 

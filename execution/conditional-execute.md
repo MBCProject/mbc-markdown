@@ -1,7 +1,7 @@
 |||
 |---------|------------------------|
-|**ID**|**M0025**|
-|**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
+|**ID**|**B0025**|
+|**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-beta/tree/master/execution)|
 |**Related ATT&CK Technique**|None|
 
 Conditional Execution
@@ -10,13 +10,16 @@ Malware checks system environment conditions or characteristics to determine exe
 
 Methods
 -------
-* **Suicide Exit**: Malware terminates its execution based on a trigger condition or value (or because it has completed). 
+|ID|Name|Description|
+|-----------------------------|--------|-----------------------------|
+|B0025.001|**Suicide Exit**|Malware terminates its execution based on a trigger condition or value (or because it has completed).|
 
 Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|--------|-----------------------------|
-|[**WebCobra**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/webcobra.md)|2018|Drops either Cryptonight or Claymore's Zcash miner, depending on system architecture. [[1]](#1)|
+|[**WebCobra**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/webcobra.md)|2018|Drops either Cryptonight or Claymore's Zcash miner, depending on system architecture. [[1]](#1)|
+|[**Conficker**](https://github.com/MBCProject/mbc-beta/blob/master/xample-malware/conficker.md)|2008|A routine causes the process to suicide exit if the keyboard language is set to Ukranian.|
 
 References
 ----------
