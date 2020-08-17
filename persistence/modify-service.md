@@ -1,15 +1,15 @@
 |||
 |---------|------------------------|
-|**ID**|**E1031**|
-|**Objective(s)**| [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
-|**Related ATT&CK Technique**|[Modify Existing Service](https://attack.mitre.org/techniques/T1031)|
+|**ID**|**F0011**|
+|**Objective(s)**| [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence), [Privilege Escalation](https://github.com/MBCProject/mbc-markdown/tree/master/privilege-escalation)|
+|**Related ATT&CK Sub-Technique**|[Create or Modify System Process: Windows Service](https://attack.mitre.org/techniques/T1543/003/)|
 
 
 Modify Existing Service
 =======================
 Malware may modify an existing service to gain persistence. Modification may include disabling a service.
 
-See ATT&CK: [**Modify Existing Service**](https://attack.mitre.org/techniques/T1031).
+See ATT&CK: [**Create or Modify System Process: Windows Service**](https://attack.mitre.org/techniques/T1543/003/).
 
 Malware Examples
 ----------------

@@ -1,6 +1,6 @@
 |||
 |---------|------------------------|
-|**ID**|**M0011**|
+|**ID**|**B0011**|
 |**Objective(s)**| [Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
 |**Related ATT&CK Technique**|None|
 
@@ -19,19 +19,13 @@ Autonomous behaviors - those done by the malware without an active attacker - sh
 
 Methods
 -------
-* **Delete File**
-* **Download File**
-* **Execute**
-* **Shutdown**
-* **Sleep**
-* **Uninstall**
-* **Upload File**
-
-Malware Examples
-----------------
-|Name|Date|Description|
+|ID|Name|Description|
 |-----------------------------|--------|-----------------------------|
+|B0011.001|**Delete File**| |
+|B0011.002|**Download File**| |
+|B0011.003|**Execute**| |
+|B0011.004|**Shutdown**| |
+|B0011.005|**Sleep**| |
+|B0011.006|**Uninstall**| |
+|B0011.007|**Upload File**| |
 
-
-References
-----------

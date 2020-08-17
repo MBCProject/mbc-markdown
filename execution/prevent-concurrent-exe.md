@@ -1,6 +1,6 @@
 |||
 |---------|------------------------|
-|**ID**|**M0024**|
+|**ID**|**B0024**|
 |**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
 |**Related ATT&CK Technique**|None|
 

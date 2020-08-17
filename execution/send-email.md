@@ -1,14 +1,14 @@
 |||
 |---------|------------------------|
-|**ID**|**M0020**|
+|**ID**|**B0020**|
 |**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution), [Lateral Movement](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement)|
-|**Related ATT&CK Technique**|[Spearphishing Attachment](https://attack.mitre.org/techniques/T1193), [Spearphishing Link](https://attack.mitre.org/techniques/T1192)|
+|**Related ATT&CK Technique**|[Phishing](https://attack.mitre.org/techniques/T1566/)|
 
 Send Email
 ==========
 Sends an email message from the system on which the malware is executing to one or more recipients, mostly commonly for the purpose of spamming or for distributing a malicious attachment or URL (malspamming).
 
-**See related ATT&CK Techniques:** [**Spearphishing Attachment**](https://attack.mitre.org/techniques/T1193), [**Spearphishing Link**](https://attack.mitre.org/techniques/T1192). These techniques are defined in PRE-ATT&CK, and being related to initial access are not included in MBC.
+**See related ATT&CK Techniques:** [**Phishing**](https://attack.mitre.org/techniques/T1566/). This technique is defined in PRE-ATT&CK, which being related to initial access, is not included in MBC.
 
 Malware Examples
 ----------------

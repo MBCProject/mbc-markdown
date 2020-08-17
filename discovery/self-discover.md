@@ -1,6 +1,6 @@
 |||
 |---------|------------------------|
-|**ID**|**M0038**|
+|**ID**|**B0038**|
 |**Objective(s)**|[Discovery](https://github.com/MBCProject/mbc-markdown/tree/master/discovery)|
 |**Related ATT&CK Technique**|None|
 

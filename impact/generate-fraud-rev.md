@@ -13,16 +13,17 @@ See ATT&CK: [**Generate Fraudulent Advertising Revenue**](https://attack.mitre.o
 
 Methods
 -------
-* **Click Hijacking**: Malware alters DNS server settings to route to a rogue DNS server: when the user clicks on a search result link displayed through a search engine query, malware re-routes the user to different website. Instead of going to the requested site, the user is taken to an alternate website such that the click triggers payment to the threat actor. [[1]](#1)
-
-* **Advertisement Replacement Fraud**:  Malware injects ad windows onto websites the user is views. [[2]](#2) 
+|ID|Name|Description|
+|-----------------------------|--------|-----------------------------|
+|E1472.m01|**Click Hijacking**|Malware alters DNS server settings to route to a rogue DNS server: when the user clicks on a search result link displayed through a search engine query, malware re-routes the user to different website. Instead of going to the requested site, the user is taken to an alternate website such that the click triggers payment to the threat actor. [[1]](#1)|
+|E1472.m02|**Advertisement Replacement Fraud**|Malware injects ad windows onto websites the user views. [[2]](#2)|
 
 Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
-|DNSChanger| November 2011| Alters DNS server settings to route to a rogue DNS server for the purpose of click hijacking. [[1]](#1)|
-|Kovter|2016|Performs click-fraud. [[4]](#4)|
+|[**DNSChanger**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/dnschanger.md)| November 2011| Alters DNS server settings to route to a rogue DNS server for the purpose of click hijacking. [[1]](#1)|
+|[**Kovter**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/kovter.md)|2016|Performs click-fraud. [[4]](#4)|
 
 References
 ----------

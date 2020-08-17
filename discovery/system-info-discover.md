@@ -12,10 +12,13 @@ See ATT&CK: [**System Information Discovery**](https://attack.mitre.org/techniqu
 
 Methods
 -------
-* **Generate Windows Exception**: malware may trigger an exception as a way of gathering system details.
+|ID|Name|Description|
+|-----------------------------|--------|-----------------------------|
+|E1082.m01|**Generate Windows Exception**|Malware may trigger an exception as a way of gathering system details.|
 
 Malware Examples
 ----------------
 |Name|Date|Description|
 |-----------------------------|-----------|-----------------------------|
 |[**TrickBot**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**WebCobra**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/webcobra.md)|2018|Learns about the system so it can drop compatible miner software.|

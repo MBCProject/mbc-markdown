@@ -1,6 +1,6 @@
 |||
 |---------|------------------------|
-|**ID**|**M0006**|
+|**ID**|**B0006**|
 |**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis)|
 |**Related ATT&CK Technique**|None|
 
@@ -10,15 +10,17 @@ Malware hinders retrieval and/or discovery of the contents of the physical memor
 
 Methods
 -------
-* **Code Encryption in Memory**: Encrypt the executing malware instance code in memory.
-* **Erase the PE header**: Erase PE header from memory.
-* **Hide virtual memory**: Hide arbitrary segments of virtual memory.
-* **SizeOfImage**: Set the SizeOfImage field of PEB.LoaderData to be huge.
-* **Tampering**: Erase or corrupt specific file parts to prevent rebuilding (header, packer stub, etc.).
-* **Guard Pages**: Encrypt blocks of code individually and decrypt temporarily only upon execution.
-* **On-the-Fly APIs**: Resolve API addresses before each use to prevent complete dumping.
-* **Feed Misinformation**: API behavior can be altered to prevent memory dumps. For example, inaccurate data can be reported when the contents of the physical memory of the system on which the malware instance is executing is retrieved. See [Hooking](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/hooking.md).
-* **Flow Opcode Obstruction**: flow opcodes (e.g., jumps, loops) are removed and emulated (or decrypted) by the packer during execution, resulting in incorrect dumps. [[4]](#4)
+|ID|Name|Description|
+|-----------------------------|--------|-----------------------------|
+|B0006.001|**Code Encryption in Memory**|Encrypt the executing malware instance code in memory.|
+|B0006.002|**Erase the PE header**|Erase PE header from memory.|
+|B0006.003|**Hide virtual memory**|Hide arbitrary segments of virtual memory.|
+|B0006.004|**SizeOfImage**|Set the SizeOfImage field of PEB.LoaderData to be huge.|
+|B0006.005|**Tampering**|Erase or corrupt specific file parts to prevent rebuilding (header, packer stub, etc.).|
+|B0006.006|**Guard Pages**|Encrypt blocks of code individually and decrypt temporarily only upon execution.|
+|B0006.007|**On-the-Fly APIs**|Resolve API addresses before each use to prevent complete dumping.|
+|B0006.008|**Feed Misinformation**|API behavior can be altered to prevent memory dumps. For example, inaccurate data can be reported when the contents of the physical memory of the system on which the malware instance is executing is retrieved. See [Hooking](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/hooking.md).|
+|B0006.009|**Flow Opcode Obstruction**|Flow opcodes (e.g., jumps, loops) are removed and emulated (or decrypted) by the packer during execution, resulting in incorrect dumps. [[4]](#4).
 
 Malware Examples
 ----------------

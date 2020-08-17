@@ -1,28 +1,16 @@
 |||
 |--|-----|
-|**ID**|**M9009**|
+|**ID**|**OB0009**|
 
 # Execution #
 Behaviors that execute code on a system to achieve a variety of goals.
 
-* **AppleScript** [T1155](https://github.com/MBCProject/mbc-markdown/blob/master/execution/applescript.md)
-* **Command-Line Interface** [T1059](https://github.com/MBCProject/mbc-markdown/blob/master/execution/command-line.md)
-* **Conditional Execution** [M0025](https://github.com/MBCProject/mbc-markdown/blob/master/execution/conditional-execute.md)
-* **Dynamic Data Exchange** [T1173](https://github.com/MBCProject/mbc-markdown/blob/master/execution/dynamic-data-ex.md)
-* **Execution through API** [T1106](https://github.com/MBCProject/mbc-markdown/blob/master/execution/execution-via-api.md)
-* **Execution through Module Load** [E1129](https://github.com/MBCProject/mbc-markdown/blob/master/execution/execution-via-module-load.md)
+* **Command and Scripting Interpreter** [E1059](https://github.com/MBCProject/mbc-markdown/blob/master/execution/command-line.md)
+* **Conditional Execution** [B0025](https://github.com/MBCProject/mbc-markdown/blob/master/execution/conditional-execute.md)
 * **Exploitation for Client Execution** [E1203](https://github.com/MBCProject/mbc-markdown/blob/master/execution/exploit-software.md)
-* **Install Additional Program** [M0023](https://github.com/MBCProject/mbc-markdown/blob/master/execution/install-prog.md)
-* **Local Job Scheduling** [T1168](https://github.com/MBCProject/mbc-markdown/blob/master/execution/local-job-sch.md)
-* **PowerShell** [T1086](https://github.com/MBCProject/mbc-markdown/blob/master/execution/power-shell.md)
-* **Prevent Concurrent Execution** [M0024](https://github.com/MBCProject/mbc-markdown/blob/master/execution/prevent-concurrent-exe.md)
-* **Regsvr32** [T1117](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/regsvr32.md)
-* **Remote Commands** [M0011](https://github.com/MBCProject/mbc-markdown/blob/master/execution/remote-commands.md)
-* **Rundll32** [T1085](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/rundll32.md)
-* **Scheduled Task** [T1053](https://github.com/MBCProject/mbc-markdown/blob/master/execution/scheduled-task.md)
-* **Scripting** [T1064](https://github.com/MBCProject/mbc-markdown/blob/master/execution/scripting.md)
-* **Send Email** [M0020](https://github.com/MBCProject/mbc-markdown/blob/master/execution/send-email.md)
-* **Send Poisoned Text Message** [M0021](https://github.com/MBCProject/mbc-markdown/blob/master/execution/send-poison-text-msg.md)
-* **Service Execution** [T1035](https://github.com/MBCProject/mbc-markdown/blob/master/execution/service-exe.md)
-* **User Interaction** [E1204](https://github.com/MBCProject/mbc-markdown/blob/master/execution/user-interaction.md)
-* **Windows Management Instrumentation** [T1047](https://github.com/MBCProject/mbc-markdown/blob/master/execution/windows-mgt-inst.md)
+* **Install Additional Program** [B0023](https://github.com/MBCProject/mbc-markdown/blob/master/execution/install-prog.md)
+* **Prevent Concurrent Execution** [B0024](https://github.com/MBCProject/mbc-markdown/blob/master/execution/prevent-concurrent-exe.md)
+* **Remote Commands** [B0011](https://github.com/MBCProject/mbc-markdown/blob/master/execution/remote-commands.md)
+* **Send Email** [B0020](https://github.com/MBCProject/mbc-markdown/blob/master/execution/send-email.md)
+* **Send Poisoned Text Message** [B0021](https://github.com/MBCProject/mbc-markdown/blob/master/execution/send-poison-text-msg.md)
+* **User Execution** [E1204](https://github.com/MBCProject/mbc-markdown/blob/master/execution/user-interaction.md)

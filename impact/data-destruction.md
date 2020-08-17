@@ -13,6 +13,18 @@ see ATT&CK: [**Data Destruction**](https://attack.mitre.org/techniques/T1485/).
 
 Methods
 -------
-* **Delete Shadow Drive**: deletes shadow drive data, which is related to ransomware.
-* **Empty Recycle Bin**: empties the recycle bin, which can be related to ransomware.
-* **Delete Application/Software**: an application or software is deleted.
+|ID|Name|Description|
+|-----------------------------|--------|-----------------------------|
+|E1485.m01|**Delete Shadow Drive**|Deletes shadow drive data, which is related to ransomware.|
+|E1485.m02|**Empty Recycle Bin**|Empties the recycle bin, which can be related to ransomware.|
+|E1485.m03|**Delete Application/Software**|An application or software is deleted.|
+
+Malware Examples
+----------------
+|Name|Date|Description|
+|-----------------------------|-----------|-----------------------------|
+|[**Shamoon**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/shamoon.md)| 2012 |A 2018 variant includes a component that erases files and then wipes the master boot record, preventing file recovery.[[1]](#1)| 
+
+References
+----------
+<a name="1">[1]</a> http://www.darkreading.com/attacks-breaches/disk-wiping-shamoon-malware-resurfaces-with-file-erasing-malware-in-tow/d/d-id/1333509 
