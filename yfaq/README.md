@@ -9,10 +9,6 @@
 
 ## <a name="next"><a/>What's New? ##
 
-* **MBC Beta** is under development:
-   * New, low-level [micro-behaviors](https://github.com/MBCProject/mbc-markdown/tree/master/micro-behaviors/README.md) are being defined.
-   * [ATT&CK for sub-techniques](https://attack.mitre.org/beta/) is referenced. ATT&CK techniques and sub-techniques that have been enhanced with malware-specific content are defined, but "stubs" to unmodified ATT&CK techniques are not included.
-
 * **MBC Mailing List** - The MBC mailing list is now active. To join, please send a request to mbc@mitre.org.
 
 * **Cuckoo-MBC Mappings** - Cuckoo Sandbox 2.0.7 includes mappings between its signatures and ATT&CK. The MBC team updated the mappings using MBC, which increased the accuracy due to MBC’s malware focus. A fork of the Cuckoo community repo is now available on [MBCProject](https://github.com/MBCProject) (see [community](https://github.com/MBCProject/community) and [cuckoo](https://github.com/MBCProject/cuckoo)).
