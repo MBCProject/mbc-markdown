@@ -36,8 +36,6 @@ Two letters of an identifier relay information about an objective.
 |---|---|---|
 |**OB**|*OB0001*|An MBC objective.|
 |**OC**|*OC0003*|An MBC micro-objective.|
-|**TA**|*TA0005*|An ATT&CK tactic.|
-|**TE**|*TE0006*|An ATT&CK tactic that has been made malware-focused. The numerical portion of the identifier will match the ATT&CK ID (e.g., TE0007 enhances TA0007).|
 
 Identifiers of methods are formatted in the same say as ATT&CK sub-techniques. If MBC defines a new method for an existing ATT&CK technique, the identifier is changed from "T" to "E" and an "m" identifier is added (e.g., a method added to T1234 would be denoted *E1234.m01* and is different than *T1234.001*, although both refer to the T1234 ATT&CK technique). Method identifiers of "B", "C", and "F" behaviors are defined without the "m" (e.g., *B0008.009*; *C0005.002*; *F0001.005*).
 
