@@ -1,6 +1,7 @@
 |||
-|--|-----|
+|---|---|
 |**ID**|**OB0003**|
+
 
 # Collection #
 Behaviors that identify and gather information, such as sensitive files, from a target network prior to exfiltration. This objective includes locations on a system or network where the malware may look for information to exfiltrate.

@@ -1,6 +1,7 @@
 |||
-|--|-----|
+|---|---|
 |**ID**|**OB0007**|
+
 
 # Discovery #
 Behaviors that aim to gain knowledge about the system and internal network.

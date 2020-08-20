@@ -1,7 +1,7 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**B0012**|
-|**Objective(s)**| [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis)|
+|**Objective(s)**|[Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis)|
 |**Related ATT&CK Technique**|None|
 
 
@@ -12,7 +12,7 @@ Malware code evades disassembly in a recursive or linear disassembler. Some meth
 Methods
 -------
 |ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
+|---|---|---|
 |B0012.001|**Argument Obfuscation**|Simple number or string arguments to API calls are calculated at runtime, making linear disassembly more difficult.|
 |B0012.002|**Conditional Misdirection**|Conditional jumps are sometimes used to confuse disassembly engines, resulting in the wrong instruction boundaries and thus wrong mnemonic and operands; identified by instructions *jmp/jcc to a label+#* (e.g., JNE loc_401345fe+2).|
 |B0012.003|**Value Dependent Jumps**|Explicit use of computed values for control flow, often many times in the same basic block or function.|
@@ -27,4 +27,4 @@ References
 
 <a name="3">[3]</a> https://isc.sans.edu/diary/Malicious+VBA+Office+Document+Without+Source+Code/24870
 
-<a name="4">[4]</a> https://boingboing.net/2019/05/05/p-code-r-us.html 
+<a name="4">[4]</a> https://boingboing.net/2019/05/05/p-code-r-us.html

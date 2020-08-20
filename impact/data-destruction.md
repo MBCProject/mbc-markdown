@@ -1,8 +1,8 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**E1485**|
-|**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
-|**Related ATT&CK Technique**|[Data Destruction](https://attack.mitre.org/techniques/T1485/), [Delete Device Data](https://attack.mitre.org/techniques/T1447/)| 
+|**Objective(s)**|[Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
+|**Related ATT&CK Technique**|[Data Destruction](https://attack.mitre.org/techniques/T1485/), [Delete Device Data](https://attack.mitre.org/techniques/T1447/)|
 
 
 Data Destruction
@@ -14,7 +14,7 @@ see ATT&CK: [**Data Destruction**](https://attack.mitre.org/techniques/T1485/).
 Methods
 -------
 |ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
+|---|---|---|
 |E1485.m01|**Delete Shadow Drive**|Deletes shadow drive data, which is related to ransomware.|
 |E1485.m02|**Empty Recycle Bin**|Empties the recycle bin, which can be related to ransomware.|
 |E1485.m03|**Delete Application/Software**|An application or software is deleted.|
@@ -22,9 +22,9 @@ Methods
 Malware Examples
 ----------------
 |Name|Date|Description|
-|-----------------------------|-----------|-----------------------------|
-|[**Shamoon**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/shamoon.md)| 2012 |A 2018 variant includes a component that erases files and then wipes the master boot record, preventing file recovery.[[1]](#1)| 
+|---|---|---|
+|[**Shamoon**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/shamoon.md)|2012|A 2018 variant includes a component that erases files and then wipes the master boot record, preventing file recovery.[[1]](#1)|
 
 References
 ----------
-<a name="1">[1]</a> http://www.darkreading.com/attacks-breaches/disk-wiping-shamoon-malware-resurfaces-with-file-erasing-malware-in-tow/d/d-id/1333509 
+<a name="1">[1]</a> http://www.darkreading.com/attacks-breaches/disk-wiping-shamoon-malware-resurfaces-with-file-erasing-malware-in-tow/d/d-id/1333509

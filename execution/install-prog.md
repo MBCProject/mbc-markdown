@@ -1,7 +1,7 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**B0023**|
-|**Objective(s)**| [Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
+|**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
 |**Related ATT&CK Technique**|None|
 
 
@@ -14,10 +14,10 @@ Malware that installs another component is called a "dropper." If the code is co
 Malware Examples
 ----------------
 |Name|Date|Description|
-|-----------------------------|--------|-----------------------------|
+|---|---|---|
 |[**WebCobra**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/webcobra.md)|November 2018|Drops software to mine for cryptocurrency. [[1]](#1)|
 |[**Geneio**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/geneio.md)|August 2015|Tricks OS X keychain to create application files.|
-|[**GotBotKR**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md)|July 2019 |GotBotKR reinstalls its running instance if it is removed. [[3]](#3)|
+|[**GotBotKR**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/gotbotkr.md)|July 2019|GotBotKR reinstalls its running instance if it is removed. [[3]](#3)|
 |[**MazarBot**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/mazarbot.md)|2016|Installs a backdoor.|
 |[**Mebromi**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/mebromi.md)|2011|A Trojan downloader.|
 |[**YiSpecter**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/yispecter.md)|2015|Can download and install arbitrary iOS apps.|

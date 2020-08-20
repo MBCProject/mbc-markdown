@@ -1,6 +1,7 @@
 |||
-|--|-----|
+|---|---|
 |**ID**|**OB0013**|
+
 
 # Privilege Escalation #
 Behaviors that aim to obtain a higher level of permission.

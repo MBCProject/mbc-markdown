@@ -1,7 +1,7 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**F0005**|
-|**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
+|**Objective(s)**|[Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
 |**Related ATT&CK Sub-Technique**|[Hide Artifacts: Hidden Files and Directories](https://attack.mitre.org/techniques/T1564/001/)|
 
 
@@ -14,6 +14,6 @@ See ATT&CK: [**Hide Artifacts: Hidden Files and Directories**](https://attack.mi
 Methods
 -------
 |ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
+|---|---|---|
 |F0005.001|**File Extension Change**|Malware may change the file extension of a file.|
 |F0005.002|**Change File Location**|Malware may change the location of itself or another file to prevent detection.|

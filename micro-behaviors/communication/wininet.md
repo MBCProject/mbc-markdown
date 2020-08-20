@@ -1,5 +1,5 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**C0005**|
 |**Objective(s)**|[Communication](https://github.com/MBCProject/mbc-markdown/tree/master/micro-behaviors/communication)|
 |**Related ATT&CK Technique**|None|
@@ -14,7 +14,7 @@ The methods below are those of most interest in malware analysis. Details can be
 Methods
 -------
 |ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
+|---|---|---|
 |C0005.001|**InternetConnect**|Opens an FTP or HTTP session for a given site.|
 |C0005.002|**InternetOpen**|Initializes an application's use of the WinINet functions.|
 |C0005.003|**InternetOpenURL**|Opens a resource specified by a complete FTP or HTTP URL.|
@@ -23,5 +23,4 @@ Methods
 
 References
 ----------
-<a name="1">[1]</a> https://docs.microsoft.com/en-us/windows/win32/wininet/wininet-functions. 
-
+<a name="1">[1]</a> https://docs.microsoft.com/en-us/windows/win32/wininet/wininet-functions

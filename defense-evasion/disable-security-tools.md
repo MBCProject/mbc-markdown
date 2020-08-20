@@ -1,8 +1,9 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**F0004**|
 |**Objective(s)**|[Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
 |**Related ATT&CK Sub-Technique**|[Impair Defenses: Disable or Modify Tools](https://attack.mitre.org/techniques/T1562/001/)|
+
 
 Disable Security Tools
 ========================
@@ -15,7 +16,7 @@ See ATT&CK: [**Impair Defenses: Disable or Modify Tools**](https://attack.mitre.
 Methods
 -------
 |ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
+|---|---|---|
 |F0004.001|**Disable Kernel Patch Protection**|Bypasses or disables kernel patch protection mechanisms such as Windows' PatchGuard, enabling the malware instance to operate at the same level as the operating system kernel and kernel mode drivers (KMD).|
 |F0004.002|**Disable System File Overwrite Protection**|Disables system file overwrite protection mechanisms such as Windows file protection, thereby enabling system files to be modified or replaced.|
 |F0004.003|**Unhook APIs**|Security products may hook APIs to monitor the behavior of malware. To avoid being found, malware may load DLLs in memory and overwrite their bytes.|
@@ -25,8 +26,8 @@ Methods
 Malware Examples
 ----------------
 |Name|Date|Description|
-|-----------------------------|-----------|-----------------------------|
-|[**WebCobra**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/webcobra.md)| 2018 | Loads ntdll.dll and user32.dll as data files in memory and overwrites the first 8 bytes of those functions, which unhooks the APIs. [[1]](#1)|
+|---|---|---|
+|[**WebCobra**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/webcobra.md)|2018|Loads ntdll.dll and user32.dll as data files in memory and overwrites the first 8 bytes of those functions, which unhooks the APIs. [[1]](#1)|
 |[**TrickBot**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
 |[**DNSChanger**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/dnschanger.md)|2011|Prevents the infected system from installing anti-virus software updates. [[2]](#2)|
 
@@ -34,4 +35,4 @@ References
 ----------
 <a name="1">[1]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
-<a name="2">[2]</a> https://www.huffingtonpost.com/2011/11/09/click-hijack-hackers-online-ad-scam_n_1084497.html 
+<a name="2">[2]</a> https://www.huffingtonpost.com/2011/11/09/click-hijack-hackers-online-ad-scam_n_1084497.html

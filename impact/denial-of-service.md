@@ -1,5 +1,5 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**B0033**|
 |**Objective(s)**|[Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
 |**Related ATT&CK Technique**|[Network Denial of Device](https://attack.mitre.org/techniques/T1498/)|
@@ -16,12 +16,10 @@ The subsequently defined ATT&CK technique [Network Denial of Device](https://att
 Malware Examples
 ----------------
 |Name|Date|Description|
-|-----------------------------|-----------|-----------------------------|
-|[**BlackEnergy**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/blackenergy.md)| October 2007| Launches distributed denial of service attacks that can target more than one IP address per hostname. [[1]](#1)|
+|---|---|---|
+|[**BlackEnergy**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/blackenergy.md)|October 2007|Launches distributed denial of service attacks that can target more than one IP address per hostname. [[1]](#1)|
 
 References
 ----------
 <a name="1">[1]</a> http://atlas-public.ec2.arbor.net/docs/BlackEnergy+DDoS+Bot+Analysis.pdf
-
-
  

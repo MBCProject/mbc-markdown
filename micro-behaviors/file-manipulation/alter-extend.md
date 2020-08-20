@@ -1,5 +1,5 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**C0015**|
 |**Objective(s)**|[File Manipulation](https://github.com/MBCProject/mbc-markdown/tree/master/micro-behaviors/file-manipulation)|
 |**Related ATT&CK Technique**|None|
@@ -12,5 +12,5 @@ Malware alters a file extension. This could be done for many reasons, including 
 Methods
 -------
 |ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
-|C0015.001|**Append Extension**|A new extension is appended.| 
+|---|---|---|
+|C0015.001|**Append Extension**|A new extension is appended.|

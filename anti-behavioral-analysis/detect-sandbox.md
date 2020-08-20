@@ -1,5 +1,5 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**B0007**|
 |**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis)|
 |**Related ATT&CK Sub-techniques**|[Virtualization/Sandbox Evasion: System Checks](https://attack.mitre.org/techniques/T1497/001/), [Virtualization/Sandbox Evasion: User Activity Based Checks](https://attack.mitre.org/techniques/T1497/002/)|
@@ -14,7 +14,7 @@ The Sandbox Detection behavior relates to anti-analysis, whereas a related ATT&C
 Methods
 -------
 |ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
+|---|---|---|
 |B0007.001|**Check Clipboard Data**|Checks clipboard data which can be used to detect whether execution is inside a sandbox.|
 |B0007.002|**Check Files**|Sandboxes create files on the file system. Malware can check the different folders to find sandbox artifacts.|
 |B0007.003|**Human User Check**|Detects whether there is any "user" activity on the machine, such as the movement of the mouse cursor, non-default wallpaper, or recently opened Office files. Directories or file might be counted. If there is no human activity, the machine is suspected to be a virtualized machine and/or sandbox. Other items used to detect a user: mouse clicks (single/double), DialogBox, scrolling, color of background pixel [[3]](#3). This method is very similar to ATT&CK's [Virtualization/Sandbox Evasion: User Activity Based Checks](https://attack.mitre.org/techniques/T1497/002/) sub-technique.|
@@ -28,10 +28,10 @@ Methods
 Malware Examples
 ----------------
 |Name|Date|Description|
-|-----------------------------|--------|-----------------------------|
+|---|---|---|
 |[**Redhip**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/redhip.md)|January 2011|Redhip detects publicly available automated analysis workbenches (e.g., Joe Box) by considering OS product keys and special DLLs. [[1]](#1)|
 |[**Rombertik**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/rombertik.md)|May 2015|[[2]](#2)|
-|[**Terminator**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/terminator.md)|May 2013|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[4]](#4) |
+|[**Terminator**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/terminator.md)|May 2013|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[4]](#4)|
 |[**Ursnif**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/ursnif.md)|2016|Ursnif uses malware macros to evade sandbox detection.|
 
 References
@@ -42,4 +42,4 @@ References
 
 <a name="3">[3]</a> https://github.com/LordNoteworthy/al-khaser
 
-<a name="4">[4]</a> https://www.fireeye.com/content/dam/fireeye-www/current-threats/pdfs/pf/file/fireeye-hot-knives-through-butter.pdf 
+<a name="4">[4]</a> https://www.fireeye.com/content/dam/fireeye-www/current-threats/pdfs/pf/file/fireeye-hot-knives-through-butter.pdf

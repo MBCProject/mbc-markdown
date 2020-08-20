@@ -1,6 +1,7 @@
 |||
-|--|-----|
+|---|---|
 |**ID**|**OB0001**|
+
 
 # Anti-Behavioral Analysis
 Behaviors that prevent, obstruct, or evade behavioral analysis (sandbox, debugger, etc). Because the underlying methods differ, separate "detection" and "evasion" behaviors are defined for some anti-behavioral analysis areas (e.g., anti-debugger). 
@@ -26,5 +27,3 @@ References
 <a name="1">[1]</a> Unprotect Project, a database about malware self-defense and protection. http://unprotect.tdgt.org/index.php/Unprotect_Project
 
 <a name="2">[2]</a> InDepthUnpacking, course content for teaching malware anti-analysis techniques and mitigations, with emphasis on packers. https://github.com/knowmalware/InDepthUnpacking
-
- 

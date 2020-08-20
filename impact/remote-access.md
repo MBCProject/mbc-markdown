@@ -1,7 +1,7 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**B0022**|
-|**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
+|**Objective(s)**|[Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
 |**Related ATT&CK Technique**|None|
 
 
@@ -16,13 +16,13 @@ Note that the [**Ingress Tool Transfer**](https://attack.mitre.org/techniques/T1
 Methods
 -------
 |ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
+|---|---|---|
 |B0022.001|**Reverse Shell**|Malware may create a reverse shell. For example, malware can invoke cmd.exe and create three pipes (stdin, stdout, stderr) to forward data between cmd.exe and an adversary.|
 
 Malware Examples
 ----------------
 |Name|Date|Description|
-|-----------------------------|--------|-----------------------------|
+|---|---|---|
 |[**Poison-Ivy**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/poison-ivy.md)|2005|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
 |[**Dark Comet**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/dark-comet.md)|2008|Allows an attacker to control the system via a GUI.|
 

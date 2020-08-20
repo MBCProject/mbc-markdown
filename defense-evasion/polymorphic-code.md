@@ -1,7 +1,7 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**B0029**|
-|**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
+|**Objective(s)**|[Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
 |**Related ATT&CK Technique**|None|
 
 
@@ -12,10 +12,10 @@ Polymorphic code, a file with the same functionality but different execution, is
 Methods
 -------
 |ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
+|---|---|---|
 |B0029.001|**Packer Stub**|A packer stub can generate polymorphic code.|
-|B0029.002|**Call Indirections**|[[1]](#1).
-|B0029.003|**Code Reordering**|[[1]](#1).
+|B0029.002|**Call Indirections**|[[1]](#1)|
+|B0029.003|**Code Reordering**|[[1]](#1)|
 
 References
 ----------

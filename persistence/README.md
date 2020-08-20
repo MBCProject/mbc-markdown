@@ -1,6 +1,7 @@
 |||
-|--|-----|
+|---|---|
 |**ID**|**OB0012**|
+
 
 # Persistence #
 Malware aims to remain on a system regardless of system events.
@@ -17,4 +18,3 @@ Malware aims to remain on a system regardless of system events.
 * **Registry Run Keys / Startup Folder** [F0012](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/registry-run-startup.md)
 * **Remote File Copy** [E1105](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/remote-file-copy.md)
 * **Shutdown Event** [B0035](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/shutdown-event.md)
-

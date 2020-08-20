@@ -1,8 +1,9 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**B0030**|
 |**Objective(s)**|[Command and Control](https://github.com/MBCProject/mbc-markdown/tree/master/command-and-control)|
 |**Related ATT&CK Technique**|None|
+
 
 C2 Communication
 ================
@@ -13,7 +14,7 @@ Command and Control Communication relates to *autonomous* client/server communic
 Methods
 -------
 |ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
+|---|---|---|
 |B0030.001|**Send Data**|Send data to a C2 server.|
 |B0030.002|**Receive Data**|Receive data from a C2 server.|
 |B0030.003|**Server to Client File Transfer**|File is transferred from server to client.|

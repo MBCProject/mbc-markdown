@@ -1,5 +1,5 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**B0001**|
 |**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis)|
 |**Related ATT&CK Technique**|None|
@@ -14,7 +14,7 @@ Details on methods of detecting debuggers are given in the references; many are 
 Methods
 -------
 |ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
+|---|---|---|
 |B0001.001|**API Hook Detection**|Module bounds based [[7]](#7).|
 |B0001.034|**Anti-debugging Instructions**|Malware code contains mnemonics related to anti-debugging (e.g., rdtsc, icebp).|
 |B0001.002|**CheckRemoteDebuggerPresent**|The kernel32!CheckRemoteDebuggerPresent function calls NtQueryInformationProcess with ProcessInformationClass parameter set to 7 (ProcessDebugPort constant).|
@@ -30,9 +30,9 @@ Methods
 |B0001.012|**NtQueryInformationProcess**|Calling NtQueryInformationProcess with its ProcessInformationClass parameter set to 0x07 (ProcessDebugPort constant) will cause the system to set ProcessInformation to -1 if the process is being debugged. Calling with ProcessInformationClass set to 0x0E (ProcessDebugFlags) or 0x11 (ProcessDebugObject) are used similarly. Testing "ProcessDebugPort" is equivalent to using the kernel32!CheckRemoteDebuggerPresent API call (see next method).|
 |B0001.013|**NtQueryObject**|The ObjectTypeInformation and ObjectAllTypesInformation flags are checked for debugger detection.|
 |B0001.014|**NtSetInformationThread**|Calling this API with a fake class length or thread handle can indicate whether it is hooked. After calling NtSetInformationThread properly, the HideThreadFromDebugger flag is checked with the NtQueryInformationThread API. [[7]](#7)|
-|B0001.015|**NtYieldExecution/SwitchToThread**| [[7]](#7)|
+|B0001.015|**NtYieldExecution/SwitchToThread**|[[7]](#7)|
 |B0001.016|**OutputDebugString**|(GetLastError); The OutputDebugString function will demonstrate different behavior depending whether or not a debugger is present. See [[7]](#7) for details.|
-|B0001.017|**Page Exception Breakpoint Detection**| [[7]](#7).|
+|B0001.017|**Page Exception Breakpoint Detection**|[[7]](#7)|
 |B0001.018|**Parent Process**|(Explorer.exe); Executing an application by a debugger will result in the parent process being the debugger process rather than the shell process (Explorer.exe) or the command line. Malware checks its parent process; if it's not explorer.exe, it's assumed to be a debugger. [[7]](#7)|
 |B0001.019|**Process Environment Block**|The Process Environment Block (PEB) is a Windows data structure associated with each process that contains several fields, such as "BeingDebugged," "NtGlobalFlag," and "IsDebugged". Testing the value of this PEB field of a particular process can indicate whether the process is being debugged. Testing "BeingDebugged" is equivalent to using the kernel32!IsDebuggerPresent API call (see separate method).|
 |B0001.035|**Process Environment Block BeingDebugged**|The BeingDebugged field is tested to determine whether the process is being debugged.|
@@ -55,9 +55,9 @@ Methods
 
 Malware Examples
 ----------------
-|Name|Date|ID|Description|
-|-----------------------------|--------|--------|-----------------------------|
-|[**Redhip**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/redhip.md)|January 2011|M0001.034, M0001.019|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[4]](#4)|
+|Name|Date|Description|
+|---|---|---|
+|[**Redhip**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/redhip.md)|January 2011|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[4]](#4)|
 
 References
 ----------
@@ -74,4 +74,3 @@ References
 <a name="6">[6]</a> Nicolas Falliere, Symantec, "Windows Anti-Debug Reference," 11 September 2007. https://www.symantec.com/connect/articles/windows-anti-debug-reference.
 
 <a name="7">[7]</a> Anti Debugging Tricks, Al-Khaser. https://github.com/LordNoteworthy/al-khaser/wiki/Anti-Debugging-Tricks
- 

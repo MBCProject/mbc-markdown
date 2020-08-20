@@ -1,5 +1,5 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**B0002**|
 |**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis)|
 |**Related ATT&CK Technique**|None|
@@ -14,17 +14,17 @@ A thorough reference for anti-debugging, both detection and evasion, is given in
 Methods
 -------
 |ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
+|---|---|---|
 |B0002.001|**Block Interrupts**|Block interrupt (via hooking) 1 and/or 3 to prevent debuggers from working.|
 |B0002.002|**Break Point Clearing**|Intentionally clearing software or hardware breakpoints.|
 |B0002.003|**Byte Stealing**|Move or copy the first bytes / instructions of the original code elsewhere. AKA stolen bytes or code splicing. For example, a packer may incorporate the first few instructions of the original EntryPoint (EP) into its unpacking stub before the tail transition in order to confuse automated unpackers and novice analysts. This can make it harder for rebuilding and may bypass breakpoints if set prematurely.|
-|B0002.004|**Change SizeOfImage**|Changinging this value during run time can prevent some debuggers from attaching. Also confuses some unpackers and dumpers.|
+|B0002.004|**Change SizeOfImage**|Changing this value during run time can prevent some debuggers from attaching. Also confuses some unpackers and dumpers.|
 |B0002.005|**Code Integrity Check**|Check that the unpacking code is unmodified. Variation exists where unpacking code is part of the "key" used to unpack, therefore any Software Breakpoints during debugging causes unpacking to completely fail or result in malformed unpacked code.|
 |B0002.006|**Exception Misdirection**|Using exception handling (SEH) to cause flow of program to non-obvious paths.|
 |B0002.007|**Get Base Indirectly**|CALL to a POP; finds base of code or data, often the packed version of the code; also used often in obfuscated/packed shellcode.|
 |B0002.008|**Guard Pages**|Encrypt blocks of code individually and decrypt temporarily only upon execution.|
 |B0002.009|**Hook Interrupt**|Modification of interrupt vector or descriptor tables.|
-|B0002.010|**Import Obfuscation**: Add obfuscation between imports calls and APIs.|
+|B0002.010|**Import Obfuscation**|Add obfuscation between imports calls and APIs.|
 |B0002.011|**Inlining**|Variation of static linking where full API code inserted everywhere it would have been called.|
 |B0002.012|**Loop Escapes**|Use SEH or other methods to break out of a loop instead of a conditional jump.|
 |B0002.013|**Malloc Use**|Instead of unpacking into a pre-defined section/segment (ex: .text) of the binary, use malloc() / VirtualAlloc() to create a new segment. This makes keeping track of memory locations across different runs more difficult, as there is no guarantee that malloc/VirtualAlloc will assign the same address range each time.|
@@ -49,7 +49,7 @@ Methods
 Malware Examples
 ----------------
 |Name|Date|Description|
-|-----------------------------|--------|-----------------------------|
+|---|---|---|
 |**Fake Adobe Flash Update OS X**|February 2016|[[2]](#2)|
 |**Dridex**|March 2015|[[3]](#3)|
 |[**Redhip**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/redhip.md)|2011|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFICE. [[6]](#6)|
@@ -65,5 +65,5 @@ References
 <a name="4">[4]</a> http://antukh.com/blog/2015/01/19/malware-techniques-cheat-sheet/
 
 <a name="5">[5]</a> http://unprotect.tdgt.org/index.php/Unprotect_Project
- 
-<a name="6">[6]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html 
+
+<a name="6">[6]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
