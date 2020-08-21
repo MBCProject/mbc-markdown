@@ -17,7 +17,7 @@ Methods
 |---|---|---|
 |E1560.m01|**Encoding**|Data is encoded.|
 |E1560.m02|**Encryption**|Data is encrypted.|
-|E1560.m03|**Standard Encoding**|A standard algorithm, such as base64 encoding, is used to encode the exfiltrated data.|
-|E1560.m04|**Custom Encoding**|A custom algorithm is used to encode the exfiltrated data.|
-|E1560.m05|**Standard Encryption**|A standard algorithm, such as Rijndael/AES, DES, RC4, is used to encrypt the exfiltrated data.|
-|E1560.m06|**Custom Encryption**|A custom algorithm is used to encrypt the exfiltrated data.|
+|E1560.m03|**Encoding - Standard Encoding**|Data is encoded. A standard algorithm, such as base64 encoding, is used to encode the exfiltrated data.|
+|E1560.m04|**Encoding - Custom Encoding**|Data is encoded. A custom algorithm is used to encode the exfiltrated data.|
+|E1560.m05|**Encryption - Standard Encryption**|Data is encrypted. A standard algorithm, such as Rijndael/AES, DES, RC4, is used to encrypt the exfiltrated data.|
+|E1560.m06|**Encryption - Custom Encryption**|Data is encrypted. A custom algorithm is used to encrypt the exfiltrated data.|

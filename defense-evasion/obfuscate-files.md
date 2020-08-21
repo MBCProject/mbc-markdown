@@ -18,15 +18,15 @@ Methods
 |ID|Name|Description|
 |---|---|---|
 |E1027.m01|**Encoding**|The malware sample, file, or other information is encoded.|
-|E1027.m02|**Standard Encoding**|A standard algorithm, such as base64 encoding, is used to encode the malware sample, a file, or other information.|
-|E1027.m03|**Custom Encoding**|A custom algorithm is used to encode the malware sample, a file, or other information.|
+|E1027.m02|**Encoding - Standard Encoding**|The malware sample, file, or other information is encoded. A standard algorithm, such as base64 encoding, is used to encode the malware sample, a file, or other information.|
+|E1027.m03|**Encoding - Custom Encoding**|The malware sample, file, or other information is encoded. A custom algorithm is used to encode the malware sample, a file, or other information.|
 |E1027.m04|**Encryption**|The malware sample, file, or other information is encrypted.|
-|E1027.m05|**Standard Encryption**|A standard algorithm, such as Rijndael/AES, DES, RC4, is used to encrypt an executable file. Encryption hinders static analysis of malware code. Also known as *Code Encryption in File*.|
-|E1027.m06|**Standard Encryption of Code**|A standard encryption algorithm is used to encrypt a file's executable code, but not necessarily the file's data.|
-|E1027.m07|**Standard Encryption of Data**|A standard encryption algorithm is used to encrypt a file's data, but not necessarily the file's code.|
-|E1027.m08|**Custom Encryption**|A custom algorithm is used to encrypt an executable file. Encryption hinders static analysis of malware code. Also known as *Code Encryption in File*.|
-|E1027.m09|**Custom Encryption of Code**|A custom encryption algorithm is used to encrypt a file's executable code, but not necessarily the file's data.|
-|E1027.m10|**Custom Encryption of Data**|A custom encryption algorithm is used to encrypt a file's data, but not necessarily the file's code.|
+|E1027.m05|**Encryption - Standard Encryption**|The malware sample, file, or other information is encrypted. A standard algorithm, such as Rijndael/AES, DES, RC4, is used to encrypt an executable file. Encryption hinders static analysis of malware code. Also known as *Code Encryption in File*.|
+|E1027.m06|**Encryption - Standard Encryption of Code**|The malware sample, file, or other information is encrypted. A standard encryption algorithm is used to encrypt a file's executable code, but not necessarily the file's data.|
+|E1027.m07|**Encryption - Standard Encryption of Data**|The malware sample, file, or other information is encrypted. A standard encryption algorithm is used to encrypt a file's data, but not necessarily the file's code.|
+|E1027.m08|**Encryption - Custom Encryption**|The malware sample, file, or other information is encrypted. A custom algorithm is used to encrypt an executable file. Encryption hinders static analysis of malware code. Also known as *Code Encryption in File*.|
+|E1027.m09|**Encryption - Custom Encryption of Code**|The malware sample, file, or other information is encrypted. A custom encryption algorithm is used to encrypt a file's executable code, but not necessarily the file's data.|
+|E1027.m10|**Encryption - Custom Encryption of Data**|The malware sample, file, or other information is encrypted. A custom encryption algorithm is used to encrypt a file's data, but not necessarily the file's code.|
 
 Malware Examples
 ----------------
