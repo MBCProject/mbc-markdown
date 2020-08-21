@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**B0018**|
-|**Objective(s)**|[Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
+|**Objective(s)**|[Impact](../impact)|
 |**Related ATT&CK Technique**|[Resource Hijacking](https://attack.mitre.org/techniques/T1496/)|
 
 
@@ -22,7 +22,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |---|---|---|
-|[**WebCobra**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/webcobra.md)|2018|Drops software to mine for cryptocurrency. [[1]](#1)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|Drops software to mine for cryptocurrency. [[1]](#1)|
 |Adylkuzz|May 2017|Consumes system resources to mine for cryptocurrency. [[2]](#2)|
 
 References

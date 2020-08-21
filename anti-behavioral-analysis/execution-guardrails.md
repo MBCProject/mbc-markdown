@@ -1,13 +1,13 @@
 |||
 |---|---|
 |**ID**|**E1480**|
-|**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis), [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
+|**Objective(s)**|[Anti-Behavioral Analysis](../anti-behavioral-analysis), [Defense Evasion](../defense-evasion)|
 |**Related ATT&CK Technique**|[Execution Guardrails](https://attack.mitre.org/techniques/T1480)|
 
 
 Execution Guardrails
 ====================
-Malware may use execution guardrails (environmental conditions) to constrain execution. This behavior is related to the [Evade Dynamic Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis/evade-dynamic-analysis.md) behavior that obstructs dynamic analysis in a sandbox, emulator, or virtual machine.
+Malware may use execution guardrails (environmental conditions) to constrain execution. This behavior is related to the [Evade Dynamic Analysis](../anti-behavioral-analysis/evade-dynamic-analysis.md) behavior that obstructs dynamic analysis in a sandbox, emulator, or virtual machine.
 
 **See ATT&CK:** [**Execution Guardrails**](https://attack.mitre.org/techniques/T1480) (which under ATT&CK does not pertain to anti-behavioral analysis behaviors).
 

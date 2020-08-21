@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**F0001**|
-|**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis), [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis), [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
+|**Objective(s)**|[Anti-Behavioral Analysis](../anti-behavioral-analysis), [Anti-Static Analysis](../anti-static-analysis), [Defense Evasion](../defense-evasion)|
 |**Related ATT&CK Sub-Technique**|[Obfuscated Files or Information: Software Packing](https://attack.mitre.org/techniques/T1027/002)|
 
 Software Packing
@@ -31,7 +31,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |---|---|---|
-|[**Redhip**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/redhip.md)|2011|Redhip samples are packed with different custom packers. [[3]](#3)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|Redhip samples are packed with different custom packers. [[3]](#3)|
 
 References
 ----------

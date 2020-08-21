@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**E1560**|
-|**Objective(s)**|[Exfiltration](https://github.com/MBCProject/mbc-markdown/tree/master/exfiltration)|
+|**Objective(s)**|[Exfiltration](../exfiltration)|
 |**Related ATT&CK Technique**|[Archive Collected Data](https://attack.mitre.org/techniques/T1560/)|
 
 

@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**B0027**|
-|**Objective(s)**|[Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
+|**Objective(s)**|[Defense Evasion](../defense-evasion)|
 |**Related ATT&CK Technique**|None|
 
 
@@ -20,7 +20,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |---|---|---|
-|[**Kovter**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/kovter.md)|2016|Stores malware files in the Registry instead of the hard drive. [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|Stores malware files in the Registry instead of the hard drive. [[1]](#1)|
 
 References
 ----------

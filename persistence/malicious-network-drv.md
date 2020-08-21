@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**B0026**|
-|**Objective(s)**|[Lateral Movement](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement), [Persistence](https://github.com/MBCProject/mbc-markdown/tree/master/persistence)|
+|**Objective(s)**|[Lateral Movement](../lateral-movement), [Persistence](../persistence)|
 |**Related ATT&CK Technique**|None|
 
 

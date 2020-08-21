@@ -8,5 +8,5 @@ Micro-behaviors related to malware manipulating data.
 
 |Name|ID|Description|
 |---|---|---|
-|[**Check String**](https://github.com/MBCProject/mbc-markdown/blob/master/micro-behaviors/data-manipulation/check-string.md)|C0019||
-|[**Use Constant**](https://github.com/MBCProject/mbc-markdown/blob/master/micro-behaviors/data-manipulation/use-constant.md)|C0020||
+|[**Check String**](../micro-behaviors/data-manipulation/check-string.md)|C0019||
+|[**Use Constant**](../micro-behaviors/data-manipulation/use-constant.md)|C0020||

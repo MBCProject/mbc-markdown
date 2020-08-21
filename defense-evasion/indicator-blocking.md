@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**F0006**|
-|**Objective(s)**|[Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
+|**Objective(s)**|[Defense Evasion](../defense-evasion)|
 |**Related ATT&CK Sub-Technique**|[Impair Defenses: Indicator Blocking](https://attack.mitre.org/techniques/T1562/006/)|
 
 

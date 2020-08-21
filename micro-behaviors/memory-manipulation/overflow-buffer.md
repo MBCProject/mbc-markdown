@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**C0010**|
-|**Objective(s)**|[Memory Manipulation](https://github.com/MBCProject/mbc-markdown/tree/master/micro-behaviors/memory-manipulation)|
+|**Objective(s)**|[Memory Manipulation](../micro-behaviors/memory-manipulation)|
 |**Related ATT&CK Technique**|None|
 
 

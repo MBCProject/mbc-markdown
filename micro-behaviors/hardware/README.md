@@ -8,4 +8,4 @@ Micro-behaviors related to hardware.
 
 |Name|ID|Description|
 |---|---|---|
-|[**Load Driver**](https://github.com/MBCProject/mbc-markdown/blob/master/micro-behaviors/hardware/load-driver.md)|C0023||
+|[**Load Driver**](../micro-behaviors/hardware/load-driver.md)|C0023||

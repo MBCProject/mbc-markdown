@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**B0001**|
-|**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis)|
+|**Objective(s)**|[Anti-Behavioral Analysis](../anti-behavioral-analysis)|
 |**Related ATT&CK Technique**|None|
 
 
@@ -57,7 +57,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |---|---|---|
-|[**Redhip**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/redhip.md)|January 2011|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[4]](#4)|
+|[**Redhip**](../xample-malware/redhip.md)|January 2011|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[4]](#4)|
 
 References
 ----------

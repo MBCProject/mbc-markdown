@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**B0005**|
-|**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis)|
+|**Objective(s)**|[Anti-Behavioral Analysis](../anti-behavioral-analysis)|
 |**Related ATT&CK Technique**|None|
 
 
@@ -22,4 +22,4 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |---|---|---|
-|[**WebCobra**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/webcobra.md)|2018|Evades emulator-based analysis.)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|Evades emulator-based analysis.)|

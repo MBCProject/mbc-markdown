@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**B0025**|
-|**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution)|
+|**Objective(s)**|[Execution](../execution)|
 |**Related ATT&CK Technique**|None|
 
 
@@ -19,8 +19,8 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |---|---|---|
-|[**WebCobra**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/webcobra.md)|2018|Drops either Cryptonight or Claymore's Zcash miner, depending on system architecture. [[1]](#1)|
-|[**Conficker**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/conficker.md)|2008|A routine causes the process to suicide exit if the keyboard language is set to Ukranian.|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|Drops either Cryptonight or Claymore's Zcash miner, depending on system architecture. [[1]](#1)|
+|[**Conficker**](../xample-malware/conficker.md)|2008|A routine causes the process to suicide exit if the keyboard language is set to Ukranian.|
 
 References
 ----------

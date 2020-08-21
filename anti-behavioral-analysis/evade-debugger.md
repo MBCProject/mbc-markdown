@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**B0002**|
-|**Objective(s)**|[Anti-Behavioral Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-behavioral-analysis)|
+|**Objective(s)**|[Anti-Behavioral Analysis](../anti-behavioral-analysis)|
 |**Related ATT&CK Technique**|None|
 
 
@@ -52,7 +52,7 @@ Malware Examples
 |---|---|---|
 |**Fake Adobe Flash Update OS X**|February 2016|[[2]](#2)|
 |**Dridex**|March 2015|[[3]](#3)|
-|[**Redhip**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/redhip.md)|2011|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFICE. [[6]](#6)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFICE. [[6]](#6)|
 
 References
 ----------

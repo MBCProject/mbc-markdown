@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**E1486**|
-|**Objective(s)**|[Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
+|**Objective(s)**|[Impact](../impact)|
 |**Related ATT&CK Techniques**|[Data Encrypted for Impact](https://attack.mitre.org/techniques/T1486/), [Data Encrypted for Impact (Mobile)](https://attack.mitre.org/techniques/T1471/)|
 
 
@@ -15,10 +15,10 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |---|---|---|
-|[**CryptoWall**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/cryptowall.md)|2014|[[1]](#1)|
-|[**CryptoLocker**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/cryptolocker.md)|2013|[[2]](#2)|
-|[**Locky Bart**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/locky-bart.md)|2017|Encrypts files for ransom without any connection to the Internet.|
-|[**SamSam**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/samsam.md)|2015|Ransomware.|
+|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|[[1]](#1)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|[[2]](#2)|
+|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|Encrypts files for ransom without any connection to the Internet.|
+|[**SamSam**](../xample-malware/samsam.md)|2015|Ransomware.|
 
 References
 ----------

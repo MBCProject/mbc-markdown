@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**B0028**|
-|**Objective(s)**|[Collection](https://github.com/MBCProject/mbc-markdown/tree/master/collection), [Credential Access](https://github.com/MBCProject/mbc-markdown/tree/master/credential-access)|
+|**Objective(s)**|[Collection](../collection), [Credential Access](../credential-access)|
 |**Related ATT&CK Technique**|None|
 
 
