@@ -16,7 +16,6 @@ Methods
 |ID|Name|Description|
 |---|---|---|
 |B0001.001|**API Hook Detection**|Module bounds based [[7]](#7).|
-|B0001.034|**Anti-debugging Instructions**|Malware code contains mnemonics related to anti-debugging (e.g., rdtsc, icebp).|
 |B0001.002|**CheckRemoteDebuggerPresent**|The kernel32!CheckRemoteDebuggerPresent function calls NtQueryInformationProcess with ProcessInformationClass parameter set to 7 (ProcessDebugPort constant).|
 |B0001.003|**CloseHandle**|(NtClose); If an invalid handle is passed to the CloseHandle function and a debugger is present, then an EXCEPTION_INVALID_HANDLE (0xC0000008) exception will be raised. [[7]](#7)|
 |B0001.004|**Debugger Artifacts**|Malware may detect a debugger by its artifact (window title, device driver, exports, etc.).|
@@ -35,9 +34,6 @@ Methods
 |B0001.017|**Page Exception Breakpoint Detection**|[[7]](#7)|
 |B0001.018|**Parent Process**|(Explorer.exe); Executing an application by a debugger will result in the parent process being the debugger process rather than the shell process (Explorer.exe) or the command line. Malware checks its parent process; if it's not explorer.exe, it's assumed to be a debugger. [[7]](#7)|
 |B0001.019|**Process Environment Block**|The Process Environment Block (PEB) is a Windows data structure associated with each process that contains several fields, such as "BeingDebugged," "NtGlobalFlag," and "IsDebugged". Testing the value of this PEB field of a particular process can indicate whether the process is being debugged. Testing "BeingDebugged" is equivalent to using the kernel32!IsDebuggerPresent API call (see separate method).|
-|B0001.035|**Process Environment Block BeingDebugged**|The BeingDebugged field is tested to determine whether the process is being debugged.|
-|B0001.036|**Process Environment Block NtGlobalFlag**|The NtGlobalFlag field is tested to determine whether the process is being debugged.|
-|B0001.037|**Process Environment Block IsDebugged**|The IsDebugged field is tested to determine whether the process is being debugged.|
 |B0001.020|**Process Jobs**|[[7]](#7)|
 |B0001.021|**ProcessHeap**|Process heaps are affected by debuggers. Malware can detect a debugger by checking heap header fields such as Flags (debugger present if value greater than 2) or ForceFlags (debugger present if value greater than 0).|
 |B0001.022|**RtlAdjustPrivilege**|Malware may call RtlAdjustPrivilege to detect if a debugger is attached (or to prevent a debugger from attaching).|
@@ -47,11 +43,15 @@ Methods
 |B0001.026|**Stack Canary**|Similar to the anti-exploitation method of the same name, malware may try to detect mucking with values on the stack.|
 |B0001.027|**TIB Aware**|Malware may access information in the Thread Information Block (TIB) for debug detection or process obfuscation detection. The TIB can be accessed as an offset of the segment register (e.g., fs:[20h]).|
 |B0001.028|**Timing/Delay Check**|Malware may compare time between two points to detect unusual execution, such as the (relative) massive delays introduced by debugging.|
-|B0001.032|**Timing/Delay Check GetTickCount**|Malware uses GetTickCount function in a timing/delay check.|
-|B0001.033|**Timing/Delay Check QueryPerformanceCounter**|Malware uses QueryPerformanceCounter in a timing/delay check.|
 |B0001.029|**TLS Callbacks**|[[7]](#7)|
 |B0001.030|**UnhandledExceptionFilter**|The UnhandledExceptionFilter function is called if no registered exception handlers exist, but it will not be reached if a debugger is present. See [[7]](#7) for details.|
 |B0001.031|**WudfIsAnyDebuggerPresent**|Includes use of WudfIsAnyDebuggerPresent, WudfIsKernelDebuggerPresent, WudfIsUserDebuggerPresent.|
+|B0001.032|**Timing/Delay Check GetTickCount**|Malware uses GetTickCount function in a timing/delay check.|
+|B0001.033|**Timing/Delay Check QueryPerformanceCounter**|Malware uses QueryPerformanceCounter in a timing/delay check.|
+|B0001.034|**Anti-debugging Instructions**|Malware code contains mnemonics related to anti-debugging (e.g., rdtsc, icebp).|
+|B0001.035|**Process Environment Block BeingDebugged**|The BeingDebugged field is tested to determine whether the process is being debugged.|
+|B0001.036|**Process Environment Block NtGlobalFlag**|The NtGlobalFlag field is tested to determine whether the process is being debugged.|
+|B0001.037|**Process Environment Block IsDebugged**|The IsDebugged field is tested to determine whether the process is being debugged.|
 
 Malware Examples
 ----------------
