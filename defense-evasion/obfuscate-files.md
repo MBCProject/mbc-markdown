@@ -15,18 +15,18 @@ See ATT&CK: [**Obfuscated Files or Information**](https://attack.mitre.org/techn
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|E1027.m01|**Encoding**|The malware sample, file, or other information is encoded.|
-|E1027.m02|**Encoding - Standard Encoding**|The malware sample, file, or other information is encoded. A standard algorithm, such as base64 encoding, is used to encode the malware sample, a file, or other information.|
-|E1027.m03|**Encoding - Custom Encoding**|The malware sample, file, or other information is encoded. A custom algorithm is used to encode the malware sample, a file, or other information.|
-|E1027.m04|**Encryption**|The malware sample, file, or other information is encrypted.|
-|E1027.m05|**Encryption - Standard Encryption**|The malware sample, file, or other information is encrypted. A standard algorithm, such as Rijndael/AES, DES, RC4, is used to encrypt an executable file. Encryption hinders static analysis of malware code. Also known as *Code Encryption in File*.|
-|E1027.m06|**Encryption - Standard Encryption of Code**|The malware sample, file, or other information is encrypted. A standard encryption algorithm is used to encrypt a file's executable code, but not necessarily the file's data.|
-|E1027.m07|**Encryption - Standard Encryption of Data**|The malware sample, file, or other information is encrypted. A standard encryption algorithm is used to encrypt a file's data, but not necessarily the file's code.|
-|E1027.m08|**Encryption - Custom Encryption**|The malware sample, file, or other information is encrypted. A custom algorithm is used to encrypt an executable file. Encryption hinders static analysis of malware code. Also known as *Code Encryption in File*.|
-|E1027.m09|**Encryption - Custom Encryption of Code**|The malware sample, file, or other information is encrypted. A custom encryption algorithm is used to encrypt a file's executable code, but not necessarily the file's data.|
-|E1027.m10|**Encryption - Custom Encryption of Data**|The malware sample, file, or other information is encrypted. A custom encryption algorithm is used to encrypt a file's data, but not necessarily the file's code.|
+|**Encoding**|E1027.m01|The malware sample, file, or other information is encoded.|
+|**Encoding - Custom Encoding**|E1027.m03|The malware sample, file, or other information is encoded. A custom algorithm is used to encode the malware sample, a file, or other information.|
+|**Encoding - Standard Encoding**|E1027.m02|The malware sample, file, or other information is encoded. A standard algorithm, such as base64 encoding, is used to encode the malware sample, a file, or other information.|
+|**Encryption**|E1027.m04|The malware sample, file, or other information is encrypted.|
+|**Encryption - Custom Encryption**|E1027.m08|The malware sample, file, or other information is encrypted. A custom algorithm is used to encrypt an executable file. Encryption hinders static analysis of malware code. Also known as *Code Encryption in File*.|
+|**Encryption - Custom Encryption of Code**|E1027.m09|The malware sample, file, or other information is encrypted. A custom encryption algorithm is used to encrypt a file's executable code, but not necessarily the file's data.|
+|**Encryption - Custom Encryption of Data**|E1027.m10|The malware sample, file, or other information is encrypted. A custom encryption algorithm is used to encrypt a file's data, but not necessarily the file's code.|
+|**Encryption - Standard Encryption**|E1027.m05|The malware sample, file, or other information is encrypted. A standard algorithm, such as Rijndael/AES, DES, RC4, is used to encrypt an executable file. Encryption hinders static analysis of malware code. Also known as *Code Encryption in File*.|
+|**Encryption - Standard Encryption of Code**|E1027.m06|The malware sample, file, or other information is encrypted. A standard encryption algorithm is used to encrypt a file's executable code, but not necessarily the file's data.|
+|**Encryption - Standard Encryption of Data**|E1027.m07|The malware sample, file, or other information is encrypted. A standard encryption algorithm is used to encrypt a file's data, but not necessarily the file's code.|
 
 Malware Examples
 ----------------

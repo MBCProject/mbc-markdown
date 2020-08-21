@@ -13,9 +13,9 @@ See ATT&CK: [**System Information Discovery**](https://attack.mitre.org/techniqu
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|E1082.m01|**Generate Windows Exception**|Malware may trigger an exception as a way of gathering system details.|
+|**Generate Windows Exception**|E1082.m01|Malware may trigger an exception as a way of gathering system details.|
 
 Malware Examples
 ----------------

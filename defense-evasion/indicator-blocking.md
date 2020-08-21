@@ -13,6 +13,6 @@ See ATT&CK: [**Impair Defenses: Indicator Blocking**](https://attack.mitre.org/t
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|F0006.001|**Remove SMS Warning Messages**|Malware captures the message body of incoming SMS messages and aborts displaying messages that meets a certain criteria.|
+|**Remove SMS Warning Messages**|F0006.001|Malware captures the message body of incoming SMS messages and aborts displaying messages that meets a certain criteria.|

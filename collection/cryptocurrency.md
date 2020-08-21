@@ -11,8 +11,8 @@ Malware accesses files that contain sensitive data or credentials related to Bit
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|B0028.001|**Bitcoin**|Access Bitcoin data.|
-|B0028.002|**Ethereum**|Access Ethereum data.|
-|B0028.003|**Zcash**|Access Zcash data.|
+|**Bitcoin**|B0028.001|Access Bitcoin data.|
+|**Ethereum**|B0028.002|Access Ethereum data.|
+|**Zcash**|B0028.003|Access Zcash data.|

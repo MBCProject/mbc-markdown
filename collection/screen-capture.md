@@ -13,6 +13,6 @@ Malware takes screen captures of the desktop.
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|E1113.m01|**WinAPI**|Screen is captured using WinAPI functions (e.g., user32.GetDesktopWindow).|
+|**WinAPI**|E1113.m01|Screen is captured using WinAPI functions (e.g., user32.GetDesktopWindow).|

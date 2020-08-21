@@ -13,7 +13,7 @@ See ATT&CK: [**Hide Artifacts: Hidden Files and Directories**](https://attack.mi
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|F0005.001|**File Extension Change**|Malware may change the file extension of a file.|
-|F0005.002|**Change File Location**|Malware may change the location of itself or another file to prevent detection.|
+|**Change File Location**|F0005.002|Malware may change the location of itself or another file to prevent detection.|
+|**File Extension Change**|F0005.001|Malware may change the file extension of a file.|

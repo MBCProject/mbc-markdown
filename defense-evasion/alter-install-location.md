@@ -11,10 +11,10 @@ Malware may install itself not as a file on the hard drive. [[1]](#1)
 
 Methods
 ------- 
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|B0027.001|**Fileless Malware**|Stores itself in memory.|
-|B0027.002|**Registry Install**|Stores itself in the Windows registry.|
+|**Fileless Malware**|B0027.001|Stores itself in memory.|
+|**Registry Install**|B0027.002|Stores itself in the Windows registry.|
 
 Malware Examples
 ----------------

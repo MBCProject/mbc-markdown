@@ -13,14 +13,14 @@ This behavior corresponds to simple, general discovery of analysis tools. Behavi
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|B0013.001|**Process detection**|Malware can scan for the process name associated with common analysis tools.|
-|B0013.002|**Process detection - Debuggers**|Malware can scan for the process name associated with common analysis tools. OllyDBG / ImmunityDebugger / WinDbg / IDA Pro|
-|B0013.003|**Process detection - SysInternals Suite Tools**|Malware can scan for the process name associated with common analysis tools. Process Explorer / Process Monitor / Regmon / Filemon, TCPView, Autoruns|
-|B0013.004|**Process detection - PCAP Utilities**|Malware can scan for the process name associated with common analysis tools. Wireshark / Dumpcap|
-|B0013.005|**Process detection - Process Utilities**|Malware can scan for the process name associated with common analysis tools. ProcessHacker / SysAnalyzer / HookExplorer / SysInspector|
-|B0013.006|**Process detection - PE Utilities**|Malware can scan for the process name associated with common analysis tools. ImportREC / PETools / LordPE|
-|B0013.007|**Process detection - Sandboxes**|Malware can scan for the process name associated with common analysis tools. Joe Sandbox, etc.|
-|B0013.008|**Known File Location**|Malware may detect an analysis tool by the presence of a file in a known location.|
-|B0013.009|**Known Window**|Malware may detect an analysis tool via the presence of a known window.|
+|**Known File Location**|B0013.008|Malware may detect an analysis tool by the presence of a file in a known location.|
+|**Known Window**|B0013.009|Malware may detect an analysis tool via the presence of a known window.|
+|**Process detection**|B0013.001|Malware can scan for the process name associated with common analysis tools.|
+|**Process detection - Debuggers**|B0013.002|Malware can scan for the process name associated with common analysis tools. OllyDBG / ImmunityDebugger / WinDbg / IDA Pro|
+|**Process detection - PCAP Utilities**|B0013.004|Malware can scan for the process name associated with common analysis tools. Wireshark / Dumpcap|
+|**Process detection - PE Utilities**|B0013.006|Malware can scan for the process name associated with common analysis tools. ImportREC / PETools / LordPE|
+|**Process detection - Process Utilities**|B0013.005|Malware can scan for the process name associated with common analysis tools. ProcessHacker / SysAnalyzer / HookExplorer / SysInspector|
+|**Process detection - Sandboxes**|B0013.007|Malware can scan for the process name associated with common analysis tools. Joe Sandbox, etc.|
+|**Process detection - SysInternals Suite Tools**|B0013.003|Malware can scan for the process name associated with common analysis tools. Process Explorer / Process Monitor / Regmon / Filemon, TCPView, Autoruns|

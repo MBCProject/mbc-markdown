@@ -11,9 +11,9 @@ The Interprocess Communication micro-behavior focuses on interprocess communicat
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|C0003.001|**Create Pipe**||
-|C0003.002|**Connect Pipe**||
-|C0003.003|**Read Pipe**||
-|C0003.004|**Write Pipe**||
+|**Connect Pipe**|C0003.002||
+|**Create Pipe**|C0003.001||
+|**Read Pipe**|C0003.003||
+|**Write Pipe**|C0003.004||

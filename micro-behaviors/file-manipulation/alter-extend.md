@@ -11,6 +11,6 @@ Malware alters a file extension. This could be done for many reasons, including 
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|C0015.001|**Append Extension**|A new extension is appended.|
+|**Append Extension**|C0015.001|A new extension is appended.|

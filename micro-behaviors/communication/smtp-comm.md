@@ -11,7 +11,7 @@ This micro-behavior focuses on SMTP communication.
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|C0012.001|**Server Connect**|Connects to an smtp server.|
-|C0012.002|**Request**|Makes SMTP request.|
+|**Request**|C0012.002|Makes SMTP request.|
+|**Server Connect**|C0012.001|Connects to an smtp server.|

@@ -11,9 +11,9 @@ Malware checks system environment conditions or characteristics to determine exe
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|B0025.001|**Suicide Exit**|Malware terminates its execution based on a trigger condition or value (or because it has completed).|
+|**Suicide Exit**|B0025.001|Malware terminates its execution based on a trigger condition or value (or because it has completed).|
 
 Malware Examples
 ----------------

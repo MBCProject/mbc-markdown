@@ -11,10 +11,10 @@ The DNS Communication micro-behavior focuses on DNS communication.
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|C0011.001|**Resolve**|Resolves a domain.|
-|C0011.002|**Server Connect**|Connects to DNS server.|
-|C0011.003|**DDNS Domain Connect**|Connects to dynamic DNS domain.|
-|C0011.004|**Resolve TLD**|Resolves top level domain.|
-|C0011.005|**Resolve Free Hosting Domain**|Resolves a free hosting domain (e.g., freeiz.com).|
+|**DDNS Domain Connect**|C0011.003|Connects to dynamic DNS domain.|
+|**Resolve**|C0011.001|Resolves a domain.|
+|**Resolve Free Hosting Domain**|C0011.005|Resolves a free hosting domain (e.g., freeiz.com).|
+|**Resolve TLD**|C0011.004|Resolves top level domain.|
+|**Server Connect**|C0011.002|Connects to DNS server.|

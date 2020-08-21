@@ -13,9 +13,9 @@ Malware captures user input.
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|E1056.m01|**Mouse Events**|Mouse events are captured.|
+|**Mouse Events**|E1056.m01|Mouse events are captured.|
 
 Malware Examples
 ----------------

@@ -13,9 +13,9 @@ Virtualized code is a software protection technique. Themida is a commercial too
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|B0008.001|**Multiple VMs**|Multiple virtual machines with different architectures (CISC, RISC, etc.) can be used inside of a single executable in order to make reverse engineering even more difficult.|
+|**Multiple VMs**|B0008.001|Multiple virtual machines with different architectures (CISC, RISC, etc.) can be used inside of a single executable in order to make reverse engineering even more difficult.|
 
 Malware Examples
 ----------------

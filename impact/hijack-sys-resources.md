@@ -13,10 +13,10 @@ The subsequently defined ATT&CK technique [Resource Hijacking](https://attack.mi
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|B0018.001|**Password Cracking**|Consume system resources for the purpose of password cracking.|
-|B0018.002|**Cryptojacking**|Consume system resources to mine for cryptocurrency (e.g., Bitcoin, Litecoin, etc.).|
+|**Cryptojacking**|B0018.002|Consume system resources to mine for cryptocurrency (e.g., Bitcoin, Litecoin, etc.).|
+|**Password Cracking**|B0018.001|Consume system resources for the purpose of password cracking.|
 
 Malware Examples
 ----------------

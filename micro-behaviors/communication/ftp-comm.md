@@ -11,7 +11,7 @@ The FTP Communication micro-behavior focuses on FTP communication.
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|C0004.001|**Put**|FTP Put|
-|C0004.002|**WinINet API**|Send FTP command via WinINet.|
+|**Put**|C0004.001|FTP Put|
+|**WinINet API**|C0004.002|Send FTP command via WinINet.|

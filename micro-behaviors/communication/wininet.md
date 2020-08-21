@@ -13,13 +13,13 @@ The methods below are those of most interest in malware analysis. Details can be
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|C0005.001|**InternetConnect**|Opens an FTP or HTTP session for a given site.|
-|C0005.002|**InternetOpen**|Initializes an application's use of the WinINet functions.|
-|C0005.003|**InternetOpenURL**|Opens a resource specified by a complete FTP or HTTP URL.|
-|C0005.004|**InternetReadFile**|Reads data from an open Internet file (URL data).|
-|C0005.005|**InternetWriteFile**|Writes data to an open Internet file.|
+|**InternetConnect**|C0005.001|Opens an FTP or HTTP session for a given site.|
+|**InternetOpen**|C0005.002|Initializes an application's use of the WinINet functions.|
+|**InternetOpenURL**|C0005.003|Opens a resource specified by a complete FTP or HTTP URL.|
+|**InternetReadFile**|C0005.004|Reads data from an open Internet file (URL data).|
+|**InternetWriteFile**|C0005.005|Writes data to an open Internet file.|
 
 References
 ----------

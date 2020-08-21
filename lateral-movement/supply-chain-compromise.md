@@ -11,10 +11,10 @@ The supply chain may be compromised to enable initial malware infection. Malware
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|E1195.m01|**Abuse Enterprise Certificates**|Abusing enterprise certificates enables malware to exploit private APIs and infect a wide range of users (see *Exploit Private APIs* below).|
-|E1195.m02|**Exploit Private APIs**|Malware can exploit private APIs to infect jailbroken and non-jailbroken iOS devices. Research shows that over 100 apps in the App Store have abused private APIs and bypassed Apple’s strict code review.|
+|**Abuse Enterprise Certificates**|E1195.m01|Abusing enterprise certificates enables malware to exploit private APIs and infect a wide range of users (see *Exploit Private APIs* below).|
+|**Exploit Private APIs**|E1195.m02|Malware can exploit private APIs to infect jailbroken and non-jailbroken iOS devices. Research shows that over 100 apps in the App Store have abused private APIs and bypassed Apple’s strict code review.|
 
 Malware Examples
 ----------------

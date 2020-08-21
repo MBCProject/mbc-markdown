@@ -19,12 +19,12 @@ Autonomous behaviors - those done by the malware without an active attacker - sh
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|B0011.001|**Delete File**||
-|B0011.002|**Download File**||
-|B0011.003|**Execute**||
-|B0011.004|**Shutdown**||
-|B0011.005|**Sleep**||
-|B0011.006|**Uninstall**||
-|B0011.007|**Upload File**||
+|**Delete File**|B0011.001||
+|**Download File**|B0011.002||
+|**Execute**|B0011.003||
+|**Shutdown**|B0011.004||
+|**Sleep**|B0011.005||
+|**Uninstall**|B0011.006||
+|**Upload File**|B0011.007||

@@ -13,6 +13,6 @@ See ATT&CK: [**Indicator Removal on Host: File Deletion**](https://attack.mitre.
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|F0007.001|**COMSPEC Environment Variable**|Uninstalls self via COMSPEC environment variable.|
+|**COMSPEC Environment Variable**|F0007.001|Uninstalls self via COMSPEC environment variable.|

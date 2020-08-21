@@ -11,12 +11,12 @@ Behaviors that obstruct analysis in an emulator.
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|B0005.001|**Different Opcode Sets**|Use different opcodes sets (ex: FPU, MMX, SSE) to block emulators.|
-|B0005.002|**Undocumented Opcodes**|Use rare or undocumented opcodes to block non-exhaustive emulators.|
-|B0005.003|**Unusual/Undocumented API Calls**|Call unusual APIs to block non-exhaustive emulators (particularly anti-virus).|
-|B0005.004|**Extra Loops/Time Locks**|Add extra loops to make time-constraint emulators give up.|
+|**Different Opcode Sets**|B0005.001|Use different opcodes sets (ex: FPU, MMX, SSE) to block emulators.|
+|**Extra Loops/Time Locks**|B0005.004|Add extra loops to make time-constraint emulators give up.|
+|**Undocumented Opcodes**|B0005.002|Use rare or undocumented opcodes to block non-exhaustive emulators.|
+|**Unusual/Undocumented API Calls**|B0005.003|Call unusual APIs to block non-exhaustive emulators (particularly anti-virus).|
 
 Malware Examples
 ----------------

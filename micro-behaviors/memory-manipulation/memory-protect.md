@@ -11,7 +11,7 @@ Malware may change memory protection. For example, read-write memory may be chan
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|C0002.001|**Executable Stack**|The stack is made executable.|
-|C0002.002|**Executable Heap**|The heap is made executable.|
+|**Executable Heap**|C0002.002|The heap is made executable.|
+|**Executable Stack**|C0002.001|The stack is made executable.|

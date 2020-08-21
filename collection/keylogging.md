@@ -13,7 +13,7 @@ Malware captures user keyboard input.
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|F0002.001|**Application Hook**|Keystrokes are captured with an application hook.|
-|F0002.002|**Polling**|Keystrokes are captured via polling (e.g., user32.GetAsyncKeyState, user32.GetKeyState).|
+|**Application Hook**|F0002.001|Keystrokes are captured with an application hook.|
+|**Polling**|F0002.002|Keystrokes are captured via polling (e.g., user32.GetAsyncKeyState, user32.GetKeyState).|

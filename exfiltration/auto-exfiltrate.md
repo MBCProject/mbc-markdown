@@ -13,6 +13,6 @@ Malware may exfiltrate data via automated processing or scripting.
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|E1020.m01|**Exfiltrate via File Hosting Service**|Malware may exfiltrate files to a file hosting location.|
+|**Exfiltrate via File Hosting Service**|E1020.m01|Malware may exfiltrate files to a file hosting location.|

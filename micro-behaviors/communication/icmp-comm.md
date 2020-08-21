@@ -11,6 +11,6 @@ This micro-behavior is related to ICMP communication.
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|C0014.001|**Generate Traffic**|Generate ICMP traffic.|
+|**Generate Traffic**|C0014.001|Generate ICMP traffic.|

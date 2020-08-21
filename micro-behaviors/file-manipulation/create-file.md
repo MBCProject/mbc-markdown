@@ -11,7 +11,7 @@ Malware creates a file.
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|C0016.001|**Create Office Document**|An Office document is created.|
-|C0016.002|**Create Ransomware File**|Create a file used by ransomware.|
+|**Create Office Document**|C0016.001|An Office document is created.|
+|**Create Ransomware File**|C0016.002|Create a file used by ransomware.|

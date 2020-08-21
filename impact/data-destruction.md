@@ -13,11 +13,11 @@ see ATT&CK: [**Data Destruction**](https://attack.mitre.org/techniques/T1485/).
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|E1485.m01|**Delete Shadow Drive**|Deletes shadow drive data, which is related to ransomware.|
-|E1485.m02|**Empty Recycle Bin**|Empties the recycle bin, which can be related to ransomware.|
-|E1485.m03|**Delete Application/Software**|An application or software is deleted.|
+|**Delete Application/Software**|E1485.m03|An application or software is deleted.|
+|**Delete Shadow Drive**|E1485.m01|Deletes shadow drive data, which is related to ransomware.|
+|**Empty Recycle Bin**|E1485.m02|Empties the recycle bin, which can be related to ransomware.|
 
 Malware Examples
 ----------------

@@ -11,7 +11,7 @@ Malware may hide data or binary files within other files, the registry, etc.
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|B0040.001|**Hide Data in Registry**|Malware may use a registry key to store a long sequence of bytes.|
-|B0040.002|**Steganography**|Malware may store information in an image.|
+|**Hide Data in Registry**|B0040.001|Malware may use a registry key to store a long sequence of bytes.|
+|**Steganography**|B0040.002|Malware may store information in an image.|

@@ -11,12 +11,12 @@ This micro-behavior focuses on TCP communication.
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|C0001.001|**Client**|General TCP client behavior.|
-|C0001.002|**Server**|General TCP server behavior.|
-|C0001.003|**Create Socket**|A server or client creates a TCP socket.|
-|C0001.004|**Connect Socket**|A server or client connects via a TCP socket.|
-|C0001.005|**Listen Socket**|A server listens for client requests.|
-|C0001.006|**Receive Data**|Receive data on socket.|
-|C0001.007|**Send Data**|Send data on socket.|
+|**Client**|C0001.001|General TCP client behavior.|
+|**Connect Socket**|C0001.004|A server or client connects via a TCP socket.|
+|**Create Socket**|C0001.003|A server or client creates a TCP socket.|
+|**Listen Socket**|C0001.005|A server listens for client requests.|
+|**Receive Data**|C0001.006|Receive data on socket.|
+|**Send Data**|C0001.007|Send data on socket.|
+|**Server**|C0001.002|General TCP server behavior.|

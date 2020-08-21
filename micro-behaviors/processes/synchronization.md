@@ -11,6 +11,6 @@ Malware enables two or more processes/threads to share a resource.
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|C0022.001|**Create Mutex**|Malware creates a mutex to enable synchronization.|
+|**Create Mutex**|C0022.001|Malware creates a mutex to enable synchronization.|

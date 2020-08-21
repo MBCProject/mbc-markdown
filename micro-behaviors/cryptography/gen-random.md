@@ -11,8 +11,8 @@ The Generate Pseudo-random Sequence microbehavior can be used for a number of pu
 
 Methods
 -------
-|ID|Name|Description|
+|Name|ID|Description|
 |---|---|---|
-|C0021.001|**GetTickCount**|Generate random using GetTickCount.|
-|C0021.002|**rand**|Generate random using rand.|
-|C0021.003|**Use API**|Generate random using a Windows API.|
+|**GetTickCount**|C0021.001|Generate random using GetTickCount.|
+|**Use API**|C0021.003|Generate random using a Windows API.|
+|**rand**|C0021.002|Generate random using rand.|
