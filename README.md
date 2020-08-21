@@ -1,5 +1,5 @@
 # <a name="mbc"></a>Malware Behavior Catalog v2.0 #
-The Malware Behavior Catalog (MBC) is a catalog of malware objectives and behaviors, created to support malware analysis-oriented use cases, such as labeling, similarity analysis, and standardized reporting. Please see the [FAQ](../yfaq/README.md) page for answers to common questions.
+The Malware Behavior Catalog (MBC) is a catalog of malware objectives and behaviors, created to support malware analysis-oriented use cases, such as labeling, similarity analysis, and standardized reporting. Please see the [FAQ](./yfaq/README.md) page for answers to common questions.
 
 Check out the [MBC presentation](https://www.youtube.com/watch?v=KY8Ty-0sdVU) given at BSides DC (October 2019).
 
@@ -17,7 +17,7 @@ Methods are associated with behaviors and serve different roles, depending on th
 Note that a method cannot be used without a behavior.
 
 ### Micro-behaviors ###
-Some malware behaviors are low-level, support many objectives and other behaviors, and aren't necessarily malicious. For example, a TCP socket may be created, or a string may be checked for some condition. Because such behaviors are often noted in malware analysis, they are captured in MBC. See [Micro-behaviors](../micro-behaviors/README.md) for details.
+Some malware behaviors are low-level, support many objectives and other behaviors, and aren't necessarily malicious. For example, a TCP socket may be created, or a string may be checked for some condition. Because such behaviors are often noted in malware analysis, they are captured in MBC. See [Micro-behaviors](./micro-behaviors/README.md) for details.
 
 ### <a name="ids"></a>Identifiers ###
 As shown below, the letter of an identifier relays information about a behavior. 
@@ -47,7 +47,7 @@ The canonical representation for MBC content is **OBJECTIVE::Behavior::Method**.
 Objectives and behaviors can be used alone, but a method *must* be associated with a behavior.
 
 ### Example Malware ###
-The MBC also contains a collection of [example malware](./xample-malware) that are characterized with malware behaviors.
+The MBC also contains a collection of [example malware](./xample-malware/README.md) that are characterized with malware behaviors.
 
 ## Micro-behavior Objectives ##
 [Micro-behaviors](./micro-behaviors/README.md) and their associated objectives are under development.
