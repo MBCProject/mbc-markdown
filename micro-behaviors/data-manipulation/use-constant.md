@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**C0020**|
-|**Objective(s)**|[Data Manipulation](../micro-behaviors/data-manipulation)|
+|**Objective(s)**|[Data Manipulation](../data-manipulation)|
 |**Related ATT&CK Technique**|None|
 
 

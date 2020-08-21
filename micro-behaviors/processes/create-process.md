@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**C0017**|
-|**Objective(s)**|[Processes](../micro-behaviors/processes)|
+|**Objective(s)**|[Processes](../processes)|
 |**Related ATT&CK Technique**|None|
 
 

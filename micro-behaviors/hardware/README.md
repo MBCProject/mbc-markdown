@@ -8,4 +8,4 @@ Micro-behaviors related to hardware.
 
 |Name|ID|Description|
 |---|---|---|
-|[**Load Driver**](../micro-behaviors/hardware/load-driver.md)|C0023||
+|[**Load Driver**](../hardware/load-driver.md)|C0023||

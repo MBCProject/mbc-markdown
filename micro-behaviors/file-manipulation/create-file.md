@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**C0016**|
-|**Objective(s)**|[File Manipulation](../micro-behaviors/file-manipulation)|
+|**Objective(s)**|[File Manipulation](../file-manipulation)|
 |**Related ATT&CK Technique**|None|
 
 

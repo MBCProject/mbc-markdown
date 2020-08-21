@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**C0002**|
-|**Objective(s)**|[Communication](../micro-behaviors/communication)|
+|**Objective(s)**|[Communication](../communication)|
 |**Related ATT&CK Technique**|None|
 
 
@@ -24,4 +24,4 @@ Methods
 |**Server**|C0002.001|General HTTP server behavior.|
 |**URLMON Function**|C0002.008|A HTTP request is made via a URLMON function. Specific functions can be captured: e.g., COMMUNICATION::HTTP Communication::URLMON Function.URLDownloadToFileW.|
 |**WinHTTP API**|C0002.008|An HTTP request is made via the Windows HTTP Services (WinHTTP) application programming interface (API).|
-|**WinINet API**|C0002.007|A HTTP request is made via the Windows Internet (WinINet) application programming interface (API). A specific function can be specified as a method on the [WinInet](../micro-behaviors/communication/wininet.md) microbehavior.|
+|**WinINet API**|C0002.007|A HTTP request is made via the Windows Internet (WinINet) application programming interface (API). A specific function can be specified as a method on the [WinInet](../communication/wininet.md) microbehavior.|

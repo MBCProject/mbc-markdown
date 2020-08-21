@@ -47,26 +47,26 @@ The canonical representation for MBC content is **OBJECTIVE::Behavior::Method**.
 Objectives and behaviors can be used alone, but a method *must* be associated with a behavior.
 
 ### Example Malware ###
-The MBC also contains a collection of [example malware](../xample-malware) that are characterized with malware behaviors.
+The MBC also contains a collection of [example malware](./xample-malware) that are characterized with malware behaviors.
 
 ## Micro-behavior Objectives ##
-[Micro-behaviors](../micro-behaviors/README.md) and their associated objectives are under development.
+[Micro-behaviors](./micro-behaviors/README.md) and their associated objectives are under development.
 
 ## Malware Objective Descriptions ##
 Malware objectives are defined below. Follow the links to view associated behaviors. Please see the [MBC Matrix](http://maecproject.github.io/ema/index.html) to view all behaviors.
 
 |**Objective**|**Description**|
 |---|---|
-|[**Anti-Behavioral Analysis**](../anti-behavioral-analysis/README.md)|Malware aims to prevent, obstruct, or evade behavioral analysis done in a sandbox, debugger, etc.|
-|[**Anti-Static Analysis**](../anti-static-analysis/README.md)|Malware aims to prevent static analysis or make it more difficult. Simpler static analysis identifies features such as embedded strings, executable header information, hash values, and file metadata. More involved static analysis involves the disassembly of the binary code.|
-|[**Collection**](../collection/README.md)|Malware aims to identify and gather information, such as sensitive files, from a target network prior to exfiltration. This objective includes locations on a system or network where the malware may look for information to exfiltrate.|
-|[**Command and Control**](../command-and-control/README.md)|Malware aims to communicate (receive and/or execute remotely submitted commands) with controlling or controlled systems within a target network (C2 servers, bots, etc.).|
-|[**Credential Access**](../credential-access/README.md)|Malware aims to obtain credential access, allowing it or its underlying threat actor to assume control of an account, with the associated system and network permissions.|
-|[**Defense Evasion**](../defense-evasion/README.md)|Malware aims to evade detection or avoid other cybersecurity defenses.|
-|[**Discovery**](../discovery/README.md)|Malware aims to gain knowledge about the system and internal network.|
-|[**Execution**](../execution/README.md)|Malware aims to execute its code on a system to achieve a variety of goals.|
-|[**Exfiltration**](../exfiltration/README.md)|Malware aims to steal data from the system on which it executes. This includes stored data (e.g., files) as well as data input into applications (e.g., web browser).|
-|[**Impact**](../impact/README.md)|Malware aims to achieve its mission of manipulating, interrupting, or destroying systems and data.|
-|[**Lateral Movement**](../lateral-movement/README.md)|Malware aims to propagate through the infection of a system or is able to infect a file after executing on a system. The malware may infect actively (e.g., gain access to a machine directly) or passively (e.g., send malicious email).|
-|[**Persistence**](../persistence/README.md)|Malware aims to remain on a system regardless of system events.|
-|[**Privilege Escalation**](../privilege-escalation/README.md)|Malware aims to obtain a higher level of privilege for execution.|
+|[**Anti-Behavioral Analysis**](./anti-behavioral-analysis/README.md)|Malware aims to prevent, obstruct, or evade behavioral analysis done in a sandbox, debugger, etc.|
+|[**Anti-Static Analysis**](./anti-static-analysis/README.md)|Malware aims to prevent static analysis or make it more difficult. Simpler static analysis identifies features such as embedded strings, executable header information, hash values, and file metadata. More involved static analysis involves the disassembly of the binary code.|
+|[**Collection**](./collection/README.md)|Malware aims to identify and gather information, such as sensitive files, from a target network prior to exfiltration. This objective includes locations on a system or network where the malware may look for information to exfiltrate.|
+|[**Command and Control**](./command-and-control/README.md)|Malware aims to communicate (receive and/or execute remotely submitted commands) with controlling or controlled systems within a target network (C2 servers, bots, etc.).|
+|[**Credential Access**](./credential-access/README.md)|Malware aims to obtain credential access, allowing it or its underlying threat actor to assume control of an account, with the associated system and network permissions.|
+|[**Defense Evasion**](./defense-evasion/README.md)|Malware aims to evade detection or avoid other cybersecurity defenses.|
+|[**Discovery**](./discovery/README.md)|Malware aims to gain knowledge about the system and internal network.|
+|[**Execution**](./execution/README.md)|Malware aims to execute its code on a system to achieve a variety of goals.|
+|[**Exfiltration**](./exfiltration/README.md)|Malware aims to steal data from the system on which it executes. This includes stored data (e.g., files) as well as data input into applications (e.g., web browser).|
+|[**Impact**](./impact/README.md)|Malware aims to achieve its mission of manipulating, interrupting, or destroying systems and data.|
+|[**Lateral Movement**](./lateral-movement/README.md)|Malware aims to propagate through the infection of a system or is able to infect a file after executing on a system. The malware may infect actively (e.g., gain access to a machine directly) or passively (e.g., send malicious email).|
+|[**Persistence**](./persistence/README.md)|Malware aims to remain on a system regardless of system events.|
+|[**Privilege Escalation**](./privilege-escalation/README.md)|Malware aims to obtain a higher level of privilege for execution.|

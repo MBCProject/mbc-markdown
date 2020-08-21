@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**C0012**|
-|**Objective(s)**|[Communication](../micro-behaviors/communication)|
+|**Objective(s)**|[Communication](../communication)|
 |**Related ATT&CK Technique**|None|
 
 

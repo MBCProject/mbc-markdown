@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**C0021**|
-|**Objective(s)**|[Cryptography](../micro-behaviors/cryptography)|
+|**Objective(s)**|[Cryptography](../cryptography)|
 |**Related ATT&CK Technique**|None|
 
 

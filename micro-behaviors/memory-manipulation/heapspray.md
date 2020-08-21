@@ -1,7 +1,7 @@
 |||
 |---|---|
 |**ID**|**C0006**|
-|**Objective(s)**|[Memory Manipulation](../micro-behaviors/memory-manipulation)|
+|**Objective(s)**|[Memory Manipulation](../memory-manipulation)|
 |**Related ATT&CK Technique**|None|
 
 
