@@ -1,7 +1,7 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**E1014**|
-|**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
+|**Objective(s)**|[Defense Evasion](../defense-evasion)|
 |**Related ATT&CK Technique**|[Rootkit](https://attack.mitre.org/techniques/T1014)|
 
 
@@ -13,25 +13,25 @@ See ATT&CK: [**Rootkit**](https://attack.mitre.org/techniques/T1014).
 
 Methods
 ------- 
-|ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
-|E1014.m01|**Hide Kernel Modules**|Hides the usage of any kernel modules by the malware instance.|
-|E1014.m02|**Hide Services**|Hides any system services that the malware instance creates or injects itself into.|
-|E1014.m04|**Hide Threads**|Hides one or more threads that belong to the malware instance.|
-|E1014.m05|**Hide Userspace Libraries**|Hides the usage of userspace libraries by the malware instance.|
-|E1014.m06|**Prevent API Unhooking**|Prevents the API hooks installed by the malware instance from being removed.|
-|E1014.m07|**Prevent Registry Access**|Prevents access to the Windows registry, including to the entire registry and/or to particular registry keys/values.|
-|E1014.m08|**Prevent Registry Deletion**|Prevent Windows registry keys and/or values associated with the malware instance from being deleted from a system.|
-|E1014.m09|**Prevent File Access**|Prevents access to the file system, including to specific files and/or directories associated with the malware instance.|
-|E1014.m10|**Prevent File Deletion**|Prevents files and/or directories associated with the malware instance from being deleted from a system.|
-|E1014.m11|**Prevent Memory Access**|Prevents access to system memory where the malware instance may be storing code or data.|
-|E1014.m12|**Prevent Native API Hooking**|Prevents other software from hooking native system APIs.|
+|Name|ID|Description|
+|---|---|---|
+|**Hide Kernel Modules**|E1014.m01|Hides the usage of any kernel modules by the malware instance.|
+|**Hide Services**|E1014.m02|Hides any system services that the malware instance creates or injects itself into.|
+|**Hide Threads**|E1014.m04|Hides one or more threads that belong to the malware instance.|
+|**Hide Userspace Libraries**|E1014.m05|Hides the usage of userspace libraries by the malware instance.|
+|**Prevent API Unhooking**|E1014.m06|Prevents the API hooks installed by the malware instance from being removed.|
+|**Prevent File Access**|E1014.m09|Prevents access to the file system, including to specific files and/or directories associated with the malware instance.|
+|**Prevent File Deletion**|E1014.m10|Prevents files and/or directories associated with the malware instance from being deleted from a system.|
+|**Prevent Memory Access**|E1014.m11|Prevents access to system memory where the malware instance may be storing code or data.|
+|**Prevent Native API Hooking**|E1014.m12|Prevents other software from hooking native system APIs.|
+|**Prevent Registry Access**|E1014.m07|Prevents access to the Windows registry, including to the entire registry and/or to particular registry keys/values.|
+|**Prevent Registry Deletion**|E1014.m08|Prevent Windows registry keys and/or values associated with the malware instance from being deleted from a system.|
 
 Malware Examples
 ----------------
 |Name|Date|Description|
-|-----------------------------|--------|-----------------------------|
-|[**Poison-Ivy**](https://github.com/MBCProject/mbc-markdown/tree/master/xample-malware/poison-ivy.md)|2005|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
+|---|---|---|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
 
 References
 ----------

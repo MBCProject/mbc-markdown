@@ -1,8 +1,8 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**B0021**|
-|**Objective(s)**|[Execution](https://github.com/MBCProject/mbc-markdown/tree/master/execution), [Lateral Movement](https://github.com/MBCProject/mbc-markdown/tree/master/lateral-movement/)|
-|**Related ATT&CK Technique**| None |
+|**Objective(s)**|[Execution](../execution), [Lateral Movement](../lateral-movement)|
+|**Related ATT&CK Technique**|None|
 
 
 Send Poisoned Text Message
@@ -12,8 +12,8 @@ A malicious attachment is sent via spam SMS or MMS messages. When the user click
 Malware Examples
 ----------------
 |Name|Date|Description|
-|-----------------------------|--------|-----------------------------|
-|[**MazarBot**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/mazarbot.md) |  | MazarBot is delivered via a poisoned SMS message. [[1]](#1)|
+|---|---|---|
+|[**MazarBot**](../xample-malware/mazarbot.md)||MazarBot is delivered via a poisoned SMS message. [[1]](#1)|
 
 References
 ----------

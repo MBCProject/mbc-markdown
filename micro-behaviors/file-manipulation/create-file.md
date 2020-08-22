@@ -1,7 +1,7 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**C0016**|
-|**Objective(s)**|[File Manipulation](https://github.com/MBCProject/mbc-markdown/tree/master/micro-behaviors/file-manipulation)|
+|**Objective(s)**|[File Manipulation](../file-manipulation)|
 |**Related ATT&CK Technique**|None|
 
 
@@ -11,8 +11,7 @@ Malware creates a file.
 
 Methods
 -------
-|ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
-|C0016.001|**Create Office Document**|An Office document is created.|
-|C0016.002|**Create Ransomware File**|Create a file used by ransomware.|
-
+|Name|ID|Description|
+|---|---|---|
+|**Create Office Document**|C0016.001|An Office document is created.|
+|**Create Ransomware File**|C0016.002|Create a file used by ransomware.|

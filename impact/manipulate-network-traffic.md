@@ -1,7 +1,7 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**B0019**|
-|**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
+|**Objective(s)**|[Impact](../impact)|
 |**Related ATT&CK Sub-Technique**|[Data Manipulation: Transmitted Data Manipulation](https://attack.mitre.org/techniques/T1565/002/)|
 
 
@@ -14,9 +14,9 @@ The subsequently defined ATT&CK sub-technique [Data Manipulation: Transmitted Da
 Malware Examples
 ----------------
 |Name|Date|Description|
-|-----------------------------|--------|-----------------------------|
-|[**SearchAwesome**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/searchawesome.md)| 2018| Intercepts encrypted web traffic to inject adds. [[1]](#1)|
-|[**MazarBot**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/mazarbot.md)|2016|Intercepts data coming into and going out of device.|
+|---|---|---|
+|[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|Intercepts encrypted web traffic to inject adds. [[1]](#1)|
+|[**MazarBot**](../xample-malware/mazarbot.md)|2016|Intercepts data coming into and going out of device.|
 
 References
 ----------

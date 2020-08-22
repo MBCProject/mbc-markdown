@@ -1,7 +1,7 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**F0007**|
-|**Objective(s)**| [Defense Evasion](https://github.com/MBCProject/mbc-markdown/tree/master/defense-evasion)|
+|**Objective(s)**|[Defense Evasion](../defense-evasion)|
 |**Related ATT&CK Sub-Technique**|[Indicator Removal on Host: File Deletion](https://attack.mitre.org/techniques/T1070/004/)|
 
 
@@ -13,7 +13,6 @@ See ATT&CK: [**Indicator Removal on Host: File Deletion**](https://attack.mitre.
 
 Methods
 -------
-|ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
-|F0007.001|**COMSPEC Environment Variable**|Uninstalls self via COMSPEC environment variable.|
-
+|Name|ID|Description|
+|---|---|---|
+|**COMSPEC Environment Variable**|F0007.001|Uninstalls self via COMSPEC environment variable.|

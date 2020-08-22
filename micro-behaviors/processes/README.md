@@ -1,10 +1,13 @@
 |||
-|--|-----|
+|---|---|
 |**ID**|**OC0003**|
+
 
 # Process Micro-objectives #
 Micro-behaviors related to processes.
 
-* **Create Process** [C0017](https://github.com/MBCProject/mbc-markdown/blob/master/micro-behaviors/processes/create-process.md)
-* **Synchronization** [C0022](https://github.com/MBCProject/mbc-markdown/blob/master/micro-behaviors/processes/synchronization.md)
-* **Terminate Process** [C0018](https://github.com/MBCProject/mbc-markdown/blob/master/micro-behaviors/processes/terminate-process.md) 
+|Name|ID|Description|
+|---|---|---|
+|[**Create Process**](../processes/create-process.md)|C0017||
+|[**Synchronization**](../processes/synchronization.md)|C0022||
+|[**Terminate Process**](../processes/terminate-process.md)|C0018||

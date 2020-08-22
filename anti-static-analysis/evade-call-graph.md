@@ -1,7 +1,7 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**B0010**|
-|**Objective(s)**| [Anti-Static Analysis](https://github.com/MBCProject/mbc-markdown/tree/master/anti-static-analysis)|
+|**Objective(s)**|[Anti-Static Analysis](../anti-static-analysis)|
 |**Related ATT&CK Technique**|None|
 
 
@@ -11,10 +11,10 @@ Malware code evades accurate call graph generation during disassembly. Call grap
 
 Methods
 -------
-|ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
-|B0010.001|**Two-layer Function Return**|Two layer jumping confuses tools plotting call graphs. [[3]](#3)|
-|B0010.002|**Invoke NTDLL System Calls via Encoded Table**|Invokes ntdll.dll functions without using an export table; an encoded translation table on the stack is used instead. [[3]](#3)|
+|Name|ID|Description|
+|---|---|---|
+|**Invoke NTDLL System Calls via Encoded Table**|B0010.002|Invokes ntdll.dll functions without using an export table; an encoded translation table on the stack is used instead. [[3]](#3)|
+|**Two-layer Function Return**|B0010.001|Two layer jumping confuses tools plotting call graphs. [[3]](#3)|
 
 References
 ----------

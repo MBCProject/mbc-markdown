@@ -1,7 +1,7 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**C0008**|
-|**Objective(s)**|[Memory Manipulation](https://github.com/MBCProject/mbc-markdown/tree/master/micro-behaviors/memory-manipulation)|
+|**Objective(s)**|[Memory Manipulation](../memory-manipulation)|
 |**Related ATT&CK Technique**|None|
 
 
@@ -9,13 +9,9 @@ Change Memory Protection
 ========================
 Malware may change memory protection. For example, read-write memory may be changed to read-execute. Changing memory protection may exploits (e.g., bypass Data Execution Prevention).
 
-
 Methods
 -------
-|ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
-|C0002.001|**Executable Stack**|The stack is made executable.|
-|C0002.002|**Executable Heap**|The heap is made executable.|
-
-
-
+|Name|ID|Description|
+|---|---|---|
+|**Executable Heap**|C0002.002|The heap is made executable.|
+|**Executable Stack**|C0002.001|The stack is made executable.|

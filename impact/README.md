@@ -1,20 +1,21 @@
 |||
-|--|-----|
+|---|---|
 |**ID**|**OB0008**|
+
 
 # Impact #
 Behaviors that enable malware to achieve its mission of manipulating, interrupting, or destroying systems and/or data.
 
-* **Component Firmware** [F0009](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/component-firmware.md)
-* **Compromise Data Integrity** [B0016](https://github.com/MBCProject/mbc-markdown/blob/master/impact/compromise-data.md)
-* **Data Destruction** [E1485](https://github.com/MBCProject/mbc-markdown/blob/master/impact/data-destruction.md)
-* **Data Encrypted for Impact** [E1486](https://github.com/MBCProject/mbc-markdown/blob/master/impact/encrypt-impact.md)
-* **Denial of Service** [B0033](https://github.com/MBCProject/mbc-markdown/blob/master/impact/denial-of-service.md)
-* **Destroy Hardware** [B0017](https://github.com/MBCProject/mbc-markdown/blob/master/impact/destroy-hardware.md)
-* **Exploit Kit Behavior** [E1190](https://github.com/MBCProject/mbc-markdown/blob/master/impact/exploit-kit-behavior.md)
-* **Exploitation for Client Execution** [E1203](https://github.com/MBCProject/mbc-markdown/blob/master/execution/exploit-software.md)
-* **Generate Fraudulent Advertising Revenue** [E1472](https://github.com/MBCProject/mbc-markdown/blob/master/impact/generate-fraud-rev.md)
-* **Manipulate Network Traffic** [B0019](https://github.com/MBCProject/mbc-markdown/blob/master/impact/manipulate-network-traffic.md)
-* **Remote Access** [B0022](https://github.com/MBCProject/mbc-markdown/blob/master/impact/remote-access.md)
-* **Resource Hijacking** [B0018](https://github.com/MBCProject/mbc-markdown/blob/master/impact/hijack-sys-resources.md)
-* **Spamming** [B0039](https://github.com/MBCProject/mbc-markdown/blob/master/impact/spamming.md)
+* **Component Firmware** [F0009](../persistence/component-firmware.md)
+* **Compromise Data Integrity** [B0016](../impact/compromise-data.md)
+* **Data Destruction** [E1485](../impact/data-destruction.md)
+* **Data Encrypted for Impact** [E1486](../impact/encrypt-impact.md)
+* **Denial of Service** [B0033](../impact/denial-of-service.md)
+* **Destroy Hardware** [B0017](../impact/destroy-hardware.md)
+* **Exploit Kit Behavior** [E1190](../impact/exploit-kit-behavior.md)
+* **Exploitation for Client Execution** [E1203](../execution/exploit-software.md)
+* **Generate Fraudulent Advertising Revenue** [E1472](../impact/generate-fraud-rev.md)
+* **Manipulate Network Traffic** [B0019](../impact/manipulate-network-traffic.md)
+* **Remote Access** [B0022](../impact/remote-access.md)
+* **Resource Hijacking** [B0018](../impact/hijack-sys-resources.md)
+* **Spamming** [B0039](../impact/spamming.md)

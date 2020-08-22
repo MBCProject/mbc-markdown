@@ -1,5 +1,5 @@
 # <a name="mbc"></a>Malware Behavior Catalog v2.0 #
-The Malware Behavior Catalog (MBC) is a catalog of malware objectives and behaviors, created to support malware analysis-oriented use cases, such as labeling, similarity analysis, and standardized reporting. Please see the [FAQ](https://github.com/MBCProject/mbc-markdown/blob/master/yfaq/README.md) page for answers to common questions.
+The Malware Behavior Catalog (MBC) is a catalog of malware objectives and behaviors, created to support malware analysis-oriented use cases, such as labeling, similarity analysis, and standardized reporting. Please see the [FAQ](./yfaq/README.md) page for answers to common questions.
 
 Check out the [MBC presentation](https://www.youtube.com/watch?v=KY8Ty-0sdVU) given at BSides DC (October 2019).
 
@@ -17,25 +17,25 @@ Methods are associated with behaviors and serve different roles, depending on th
 Note that a method cannot be used without a behavior.
 
 ### Micro-behaviors ###
-Some malware behaviors are low-level, support many objectives and other behaviors, and aren't necessarily malicious. For example, a TCP socket may be created, or a string may be checked for some condition. Because such behaviors are often noted in malware analysis, they are captured in MBC. See [Micro-behaviors](https://github.com/MBCProject/mbc-markdown/tree/master/micro-behaviors/README.md) for details.
+Some malware behaviors are low-level, support many objectives and other behaviors, and aren't necessarily malicious. For example, a TCP socket may be created, or a string may be checked for some condition. Because such behaviors are often noted in malware analysis, they are captured in MBC. See [Micro-behaviors](./micro-behaviors/README.md) for details.
 
 ### <a name="ids"></a>Identifiers ###
 As shown below, the letter of an identifier relays information about a behavior. 
 
 |**Letter**|**Example**|**Description**|
-|----------------|----------------------|-------------|
-| **B** | *B0040* | An MBC behavior. |
-| **C** | *C0015* | An MBC micro-behavior.|
-| **T** | *T1234* | An ATT&CK technique.|
-| **E** | *E1234* | An ATT&CK technique that has been enhanced with malware-specific details. The numerical portion of the identifier will match the ATT&CK ID (e.g., E1234 enhances T1234).|
-| **F** | *F0004* | An ATT&CK sub-technique that has been enhanced with malware-specific details.| 
+|---|---|---|
+|**B**|*B0040*|An MBC behavior.|
+|**C**|*C0015*|An MBC micro-behavior.|
+|**T**|*T1234*|An ATT&CK technique.|
+|**E**|*E1234*|An ATT&CK technique that has been enhanced with malware-specific details. The numerical portion of the identifier will match the ATT&CK ID (e.g., E1234 enhances T1234).|
+|**F**|*F0004*|An ATT&CK sub-technique that has been enhanced with malware-specific details.|
 
 Two letters of an identifier relay information about an objective.
 
 |**Letter**|**Example**|**Description**|
-|----------------|----------------------|-------------|
-| **OB** | *OB0001* | An MBC objective.|
-| **OC** | *OC0003* | An MBC micro-objective.|
+|---|---|---|
+|**OB**|*OB0001*|An MBC objective.|
+|**OC**|*OC0003*|An MBC micro-objective.|
 
 Identifiers of methods are formatted in the same say as ATT&CK sub-techniques. If MBC defines a new method for an existing ATT&CK technique, the identifier is changed from "T" to "E" and an "m" identifier is added (e.g., a method added to T1234 would be denoted *E1234.m01* and is different than *T1234.001*, although both refer to the T1234 ATT&CK technique). Method identifiers of "B", "C", and "F" behaviors are defined without the "m" (e.g., *B0008.009*; *C0005.002*; *F0001.005*).
 
@@ -47,27 +47,26 @@ The canonical representation for MBC content is **OBJECTIVE::Behavior::Method**.
 Objectives and behaviors can be used alone, but a method *must* be associated with a behavior.
 
 ### Example Malware ###
-The MBC also contains a collection of [example malware](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/) that are characterized with malware behaviors.
+The MBC also contains a collection of [example malware](./xample-malware/README.md) that are characterized with malware behaviors.
 
 ## Micro-behavior Objectives ##
-[Micro-behaviors](https://github.com/MBCProject/mbc-markdown/tree/master/micro-behaviors/README.md) and their associated objectives are under development.
+[Micro-behaviors](./micro-behaviors/README.md) and their associated objectives are under development.
 
 ## Malware Objective Descriptions ##
 Malware objectives are defined below. Follow the links to view associated behaviors. Please see the [MBC Matrix](http://maecproject.github.io/ema/index.html) to view all behaviors.
 
 |**Objective**|**Description**|
-|------------------------------------------------------------------|----------------------------|
-|[**Anti-Behavioral Analysis**](https://github.com/MBCProject/mbc-markdown/blob/master/anti-behavioral-analysis/README.md) |Malware aims to prevent, obstruct, or evade behavioral analysis done in a sandbox, debugger, etc.|
-|[**Anti-Static Analysis**](https://github.com/MBCProject/mbc-markdown/blob/master/anti-static-analysis/README.md)| Malware aims to prevent static analysis or make it more difficult. Simpler static analysis identifies features such as embedded strings, executable header information, hash values, and file metadata. More involved static analysis involves the disassembly of the binary code.|
-|[**Collection**](https://github.com/MBCProject/mbc-markdown/blob/master/collection/README.md) | Malware aims to identify and gather information, such as sensitive files, from a target network prior to exfiltration. This objective includes locations on a system or network where the malware may look for information to exfiltrate.|
-|[**Command and Control**](https://github.com/MBCProject/mbc-markdown/blob/master/command-and-control/README.md) |Malware aims to communicate (receive and/or execute remotely submitted commands) with controlling or controlled systems within a target network (C2 servers, bots, etc.).|
-|[**Credential Access**](https://github.com/MBCProject/mbc-markdown/blob/master/credential-access/README.md)|Malware aims to obtain credential access, allowing it or its underlying threat actor to assume control of an account, with the associated system and network permissions.|
-|[**Defense Evasion**](https://github.com/MBCProject/mbc-markdown/blob/master/defense-evasion/README.md)|Malware aims to evade detection or avoid other cybersecurity defenses.|
-|[**Discovery**](https://github.com/MBCProject/mbc-markdown/blob/master/discovery/README.md)|Malware aims to gain knowledge about the system and internal network.|
-|[**Execution**](https://github.com/MBCProject/mbc-markdown/blob/master/execution/README.md)| Malware aims to execute its code on a system to achieve a variety of goals.|
-|[**Exfiltration**](https://github.com/MBCProject/mbc-markdown/blob/master/exfiltration/README.md)|  Malware aims to steal data from the system on which it executes. This includes stored data (e.g., files) as well as data input into applications (e.g., web browser).|
-|[**Impact**](https://github.com/MBCProject/mbc-markdown/blob/master/impact/README.md)| Malware aims to achieve its mission of manipulating, interrupting, or destroying systems and data.|
-|[**Lateral Movement**](https://github.com/MBCProject/mbc-markdown/blob/master/lateral-movement/README.md)|Malware aims to propagate through the infection of a system or is able to infect a file after executing on a system. The malware may infect actively (e.g., gain access to a machine directly) or passively (e.g., send malicious email).|
-|[**Persistence**](https://github.com/MBCProject/mbc-markdown/blob/master/persistence/README.md)|Malware aims to remain on a system regardless of system events.|
-|[**Privilege Escalation**](https://github.com/MBCProject/mbc-markdown/blob/master/privilege-escalation/README.md)|Malware aims to obtain a higher level of privilege for execution.|
-
+|---|---|
+|[**Anti-Behavioral Analysis**](./anti-behavioral-analysis/README.md)|Malware aims to prevent, obstruct, or evade behavioral analysis done in a sandbox, debugger, etc.|
+|[**Anti-Static Analysis**](./anti-static-analysis/README.md)|Malware aims to prevent static analysis or make it more difficult. Simpler static analysis identifies features such as embedded strings, executable header information, hash values, and file metadata. More involved static analysis involves the disassembly of the binary code.|
+|[**Collection**](./collection/README.md)|Malware aims to identify and gather information, such as sensitive files, from a target network prior to exfiltration. This objective includes locations on a system or network where the malware may look for information to exfiltrate.|
+|[**Command and Control**](./command-and-control/README.md)|Malware aims to communicate (receive and/or execute remotely submitted commands) with controlling or controlled systems within a target network (C2 servers, bots, etc.).|
+|[**Credential Access**](./credential-access/README.md)|Malware aims to obtain credential access, allowing it or its underlying threat actor to assume control of an account, with the associated system and network permissions.|
+|[**Defense Evasion**](./defense-evasion/README.md)|Malware aims to evade detection or avoid other cybersecurity defenses.|
+|[**Discovery**](./discovery/README.md)|Malware aims to gain knowledge about the system and internal network.|
+|[**Execution**](./execution/README.md)|Malware aims to execute its code on a system to achieve a variety of goals.|
+|[**Exfiltration**](./exfiltration/README.md)|Malware aims to steal data from the system on which it executes. This includes stored data (e.g., files) as well as data input into applications (e.g., web browser).|
+|[**Impact**](./impact/README.md)|Malware aims to achieve its mission of manipulating, interrupting, or destroying systems and data.|
+|[**Lateral Movement**](./lateral-movement/README.md)|Malware aims to propagate through the infection of a system or is able to infect a file after executing on a system. The malware may infect actively (e.g., gain access to a machine directly) or passively (e.g., send malicious email).|
+|[**Persistence**](./persistence/README.md)|Malware aims to remain on a system regardless of system events.|
+|[**Privilege Escalation**](./privilege-escalation/README.md)|Malware aims to obtain a higher level of privilege for execution.|

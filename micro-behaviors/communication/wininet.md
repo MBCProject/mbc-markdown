@@ -1,7 +1,7 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**C0005**|
-|**Objective(s)**|[Communication](https://github.com/MBCProject/mbc-markdown/tree/master/micro-behaviors/communication)|
+|**Objective(s)**|[Communication](../communication)|
 |**Related ATT&CK Technique**|None|
 
 
@@ -13,15 +13,14 @@ The methods below are those of most interest in malware analysis. Details can be
 
 Methods
 -------
-|ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
-|C0005.001|**InternetConnect**|Opens an FTP or HTTP session for a given site.|
-|C0005.002|**InternetOpen**|Initializes an application's use of the WinINet functions.|
-|C0005.003|**InternetOpenURL**|Opens a resource specified by a complete FTP or HTTP URL.|
-|C0005.004|**InternetReadFile**|Reads data from an open Internet file (URL data).|
-|C0005.005|**InternetWriteFile**|Writes data to an open Internet file.|
+|Name|ID|Description|
+|---|---|---|
+|**InternetConnect**|C0005.001|Opens an FTP or HTTP session for a given site.|
+|**InternetOpen**|C0005.002|Initializes an application's use of the WinINet functions.|
+|**InternetOpenURL**|C0005.003|Opens a resource specified by a complete FTP or HTTP URL.|
+|**InternetReadFile**|C0005.004|Reads data from an open Internet file (URL data).|
+|**InternetWriteFile**|C0005.005|Writes data to an open Internet file.|
 
 References
 ----------
-<a name="1">[1]</a> https://docs.microsoft.com/en-us/windows/win32/wininet/wininet-functions. 
-
+<a name="1">[1]</a> https://docs.microsoft.com/en-us/windows/win32/wininet/wininet-functions

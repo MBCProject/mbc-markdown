@@ -1,7 +1,7 @@
 |||
-|---------|------------------------|
+|---|---|
 |**ID**|**B0018**|
-|**Objective(s)**| [Impact](https://github.com/MBCProject/mbc-markdown/tree/master/impact)|
+|**Objective(s)**|[Impact](../impact)|
 |**Related ATT&CK Technique**|[Resource Hijacking](https://attack.mitre.org/techniques/T1496/)|
 
 
@@ -13,17 +13,17 @@ The subsequently defined ATT&CK technique [Resource Hijacking](https://attack.mi
 
 Methods
 -------
-|ID|Name|Description|
-|-----------------------------|--------|-----------------------------|
-|B0018.001|**Password Cracking**|Consume system resources for the purpose of password cracking.|
-|B0018.002|**Cryptojacking**|Consume system resources to mine for cryptocurrency (e.g., Bitcoin, Litecoin, etc.).|
+|Name|ID|Description|
+|---|---|---|
+|**Cryptojacking**|B0018.002|Consume system resources to mine for cryptocurrency (e.g., Bitcoin, Litecoin, etc.).|
+|**Password Cracking**|B0018.001|Consume system resources for the purpose of password cracking.|
 
 Malware Examples
 ----------------
 |Name|Date|Description|
-|-----------------------------|--------|-----------------------------|
-|[**WebCobra**](https://github.com/MBCProject/mbc-markdown/blob/master/xample-malware/webcobra.md)|2018|Drops software to mine for cryptocurrency. [[1]](#1)|
-| Adylkuzz| May 2017| Consumes system resources to mine for cryptocurrency. [[2]](#2)| 
+|---|---|---|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|Drops software to mine for cryptocurrency. [[1]](#1)|
+|Adylkuzz|May 2017|Consumes system resources to mine for cryptocurrency. [[2]](#2)|
 
 References
 ----------
