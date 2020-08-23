@@ -140,11 +140,11 @@ Some malware self-replicates or distributes other malware, but in keeping with M
 ### Why aren't [PRE-ATT&CK](https://attack.mitre.org/techniques/pre/) techniques used by malware authors included in MBC? ###
 **For example, why doesn't the [Obfuscate or Encrypt Code](https://attack.mitre.org/techniques/T1319/) technique under the [Adversary OPSEC](https://attack.mitre.org/tactics/TA0021/) tactic apply to malware showing signs of anti-analysis techniques?**
 
-PRE_ATT&CK is independent of technology and models an adversary's behavior as they attempt to gain access. By contrast, MBC captures behaviors associated with malware executable *code*. It does not capture human behaviors, even if the behaviors relate to malware. (Malware with obfuscated code, which makes analysis difficult, would be captured using the MBC [Executable Code Obfuscation](../anti-static-analysis/exe-code-obfuscate.md) behavior.) 
+PRE-ATT&CK is independent of technology and models an adversary's behavior as they attempt to gain access. By contrast, MBC captures behaviors associated with malware executable *code*. It does not capture human behaviors, even if the behaviors relate to malware. (Malware with obfuscated code, which makes analysis difficult, would be captured using the MBC [Executable Code Obfuscation](../anti-static-analysis/exe-code-obfuscate.md) behavior.) 
 
 ### ATT&CK defines "tactics" and "techniques." Why does MBC define "objectives" and "behaviors" instead? ###
 
-The cyber adversary behavior and malware analysis realms each have their own vocabulary, and MBC aims to reflect malware analysis common word usage. Just as "tactics," "techniques," and "procedures" (TTPs) are considered when discussing advanced persistent threats (APTs), "objectives" and "behaviors" commonly considered when analyzing malware.
+The cyber adversary behavior and malware analysis realms each have their own vocabulary, and MBC aims to reflect malware analysis common word usage. Just as "tactics," "techniques," and "procedures" (TTPs) are considered when discussing advanced persistent threats (APTs), "objectives" and "behaviors" are commonly considered when analyzing malware.
 
 ### ATT&CK is organized by the Enterprise and Mobile technology domains. Why isn't MBC? ###
 
@@ -152,7 +152,7 @@ Although both domains are included in MBC, we didn't see value in distinguishing
 
 ### ATT&CK is a mid-level adversary model. Does MBC model malware in a similar way? ###
 
-ATT&CK models the life cycle of a human adversary, which results in an ordering of tactics (not necessarily strict), starting with Initial Access and ending with Impact. Software (malware code) executes sequentially but from a timing, life cycle perspective, it executes simultaneously. Therefore, MBC objectives are presented alphabetically, and MBC doesn't provide a model in the same sense as ATT&CK: rather MBC captures an unordered collection of objections and behaviors applicable to a malware sample.
+ATT&CK models the life cycle of a human adversary, which results in an ordering of tactics (not necessarily strict), starting with Initial Access and ending with Impact. Software (malware code) executes sequentially but from a timing, life cycle perspective, it executes simultaneously. Therefore, MBC objectives are presented alphabetically, and MBC doesn't provide a model in the same sense as ATT&CK: rather MBC captures an unordered collection of objectives and behaviors applicable to a malware sample.
 
 ### Some MBC behaviors seem to be characteristics of code, not actual behaviors (e.g., [Executable Code Optimization](../anti-static-analysis/exe-code-optimize.md)). Why are they captured and why are they called behaviors? ###
 
