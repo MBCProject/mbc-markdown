@@ -22,7 +22,7 @@ Note that a method cannot be used without a behavior.
 Some malware behaviors are low-level, support many objectives and other behaviors, and aren't necessarily malicious. For example, a TCP socket may be created, or a string may be checked for some condition. Because such behaviors are often noted in malware analysis, they are captured in MBC. See [Micro-behaviors](./micro-behaviors/README.md) for details.
 
 ### <a name="ids"></a>Identifiers ###
-As shown below, the letter of an identifier relays information about a behavior. Note that letters used in MBC 2.0 are different than in earlier versions.
+As shown below, the letter of an identifier relays information about a behavior. Note that letters used in MBC 2.0 are changed from previous versions.
 
 |**Letter**|**Example**|**Description**|
 |---|---|---|
