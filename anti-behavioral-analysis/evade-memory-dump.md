@@ -31,7 +31,7 @@ Malware Examples
 
 References
 ----------
-<a name="1">[1]</a> J. Stuttgen, M. Cohen, Anti-forensic resilient memory acquisition, www.dfrws.org/sites/default/files/session-files/paper-anti-forensic_resilient_memory_acquisition.pdf
+<a name="1">[1]</a> J. Stuttgen, M. Cohen, Anti-forensic resilient memory acquisition, https://www.dfrws.org/sites/default/files/session-files/paper-anti-forensic_resilient_memory_acquisition.pdf
 
 <a name="2">[2]</a> http://blog.threatexpert.com/2008/04/kraken-changes-tactics.html
 
