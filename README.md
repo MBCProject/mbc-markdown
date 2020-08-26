@@ -3,6 +3,8 @@ The Malware Behavior Catalog (MBC) is a catalog of malware objectives and behavi
 
 Check out the [MBC presentation](https://www.youtube.com/watch?v=KY8Ty-0sdVU) given at BSides DC (October 2019).
 
+The presentation, "[Standardized reporting with the Malware Behavior Catalog](https://vblocalhost.com/presentations/standardized-reporting-with-the-malware-behavior-catalog/)," will be available on demand during the 2020 Virus Bulletin Conference, which will be free and online! Visit [VB2020 localhost](https://vblocalhost.com/) for details.
+
 To join the **MBC mailing list**, please send a request to mbc@mitre.org.
 
 ### Objectives ###
@@ -20,7 +22,7 @@ Note that a method cannot be used without a behavior.
 Some malware behaviors are low-level, support many objectives and other behaviors, and aren't necessarily malicious. For example, a TCP socket may be created, or a string may be checked for some condition. Because such behaviors are often noted in malware analysis, they are captured in MBC. See [Micro-behaviors](./micro-behaviors/README.md) for details.
 
 ### <a name="ids"></a>Identifiers ###
-As shown below, the letter of an identifier relays information about a behavior. 
+As shown below, the letter of an identifier relays information about a behavior. Note that letters used in MBC 2.0 are different than in earlier versions.
 
 |**Letter**|**Example**|**Description**|
 |---|---|---|
