@@ -13,5 +13,5 @@ Methods
 -------
 |Name|ID|Description|
 |---|---|---|
-|**Executable Heap**|C0002.002|The heap is made executable.|
-|**Executable Stack**|C0002.001|The stack is made executable.|
+|**Executable Heap**|C0008.002|The heap is made executable.|
+|**Executable Stack**|C0008.001|The stack is made executable.|
