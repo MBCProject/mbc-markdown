@@ -15,6 +15,7 @@ Methods
 |Name|ID|Description|
 |---|---|---|
 |**Armadillo**|F0001.012|Uses Armadillo.|
+|**ASPack**|F0001.013|Uses ASPack.|
 |**Confuser**|F0001.009|Uses Confuser packer.|
 |**Custom Compression**|F0001.005|Uses a custom algorithm to compress an executable file.|
 |**Custom Compression of Code**|F0001.006|Uses a custom algorithm to compress opcode mnemonics.|
