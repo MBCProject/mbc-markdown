@@ -24,6 +24,6 @@ Two primary resources for anti-behavioral analysis behaviors are [[1]](#1) and [
 
 References
 ----------
-<a name="1">[1]</a> Unprotect Project, a database about malware self-defense and protection. http://unprotect.tdgt.org/index.php/Unprotect_Project
+<a name="1">[1]</a> Unprotect Project, a database about malware self-defense and protection. https://search.unprotect.it/map
 
 <a name="2">[2]</a> InDepthUnpacking, course content for teaching malware anti-analysis techniques and mitigations, with emphasis on packers. https://github.com/knowmalware/InDepthUnpacking
