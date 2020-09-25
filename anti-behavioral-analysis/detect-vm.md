@@ -66,7 +66,7 @@ References
 ----------
 <a name="1">[1]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
 
-<a name="2">[2]</a> http://unprotect.tdgt.org/index.php/Sandbox_Evasion
+<a name="2">[2]</a> https://search.unprotect.it/map/sandbox-evasion/
 
 <a name="3">[3]</a> https://www.hackread.com/gravityrat-malware-evades-detection-targets-india/
 
