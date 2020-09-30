@@ -13,5 +13,5 @@ Methods
 -------
 |Name|ID|Description|
 |---|---|---|
-|**Put**|C0004.001|FTP Put|
-|**WinINet API**|C0004.002|Send FTP command via WinINet.|
+|**Send File**|C0004.001|Send FTP file.|
+|**WinINet**|C0004.002|Send FTP command via WinINet.|
