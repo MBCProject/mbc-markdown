@@ -1,6 +1,6 @@
 |||
 |---|---|
-|**ID**|**C0013**|
+|**ID**|**C0023**|
 |**Objective(s)**|[Processes](../processes)|
 |**Related ATT&CK Technique**|None|
 
