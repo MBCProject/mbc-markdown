@@ -9,6 +9,8 @@ Socket Communication
 ====================
 This micro-behavior focuses on socket (TCP, UDP) communication. 
 
+Instead of being listed alphabetically, methods have been grouped to better faciliate labeling and mapping.
+
 Methods
 -------
 |Name|ID|Description|
@@ -30,10 +32,3 @@ Methods
 |**TCP Server**|C0001.002|TCP server behavior.|
 |**TCP Client**|C0001.008|TCP client behavior.|
 |**UDP Client**|C0001.013|UDP client behavior.|
-
-
-
-
-
-
-

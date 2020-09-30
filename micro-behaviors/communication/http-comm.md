@@ -9,6 +9,8 @@ HTTP Communication
 ==================
 This micro-behavior is related to HTTP communication. 
 
+Instead of being listed alphabetically, methods have been grouped to better faciliate labeling and mapping.
+
 Methods
 -------
 |Name|ID|Description|
