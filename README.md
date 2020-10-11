@@ -1,9 +1,10 @@
 # <a name="mbc"></a>Malware Behavior Catalog v2.0 #
 The Malware Behavior Catalog (MBC) is a catalog of malware objectives and behaviors, created to support malware analysis-oriented use cases, such as labeling, similarity analysis, and standardized reporting. Please see the [FAQ](./yfaq/README.md) page for answers to common questions.
 
-Check out the [MBC presentation](https://www.youtube.com/watch?v=KY8Ty-0sdVU) given at BSides DC (October 2019).
+Check out the MBC presentations:
 
-The presentation, "[Standardized reporting with the Malware Behavior Catalog](https://vblocalhost.com/presentations/standardized-reporting-with-the-malware-behavior-catalog/)," will be available on demand during the 2020 Virus Bulletin Conference, which will be free and online! Visit [VB2020 localhost](https://vblocalhost.com/) for details.
+* [Standardized Reporting with the Malware Behavior Catalog](https://youtu.be/qZef-SoREdY), VB2020 localhost (October 2020)
+* [Malware Behavior Catalog](https://youtu.be/KY8Ty-0sdVU), BSides DC (October 2019)
 
 To join the **MBC mailing list**, please send a request to mbc@mitre.org.
 
