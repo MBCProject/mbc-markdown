@@ -9,5 +9,6 @@ Like regular MBC behaviors, micro-behaviors are associated with objectives and c
 |[**Cryptography**](./cryptography)|Malware uses elements of cryptography.|
 |[**Data Manipulation**](./data-manipulation)|Malware manipulates data.|
 |[**File Manipulation**](./file-manipulation)|Malware manipulates files.|
+|[**Hardware**](./hardware)|Malware has hardware-related behaviors.|
 |[**Memory Manipulation**](./memory-manipulation)|Malware manipulates memory.|
 |[**Processes**](./processes)|Malware uses processes.|

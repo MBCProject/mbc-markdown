@@ -6,7 +6,5 @@
 # File Manipulation Micro-objectives #
 Micro-behaviors related to file manipulation.
 
-|Name|ID|Description|
-|---|---|---|
-|[**Alter File Extension**](../file-manipulation/alter-extend.md)|C0015||
-|[**Create File**](../file-manipulation/create-file.md)|C0016||
+* **Alter File Extension** [C0015](../file-manipulation/alter-extend.md)
+* **Create File** [C0016](../file-manipulation/create-file.md)

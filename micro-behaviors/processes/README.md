@@ -6,8 +6,6 @@
 # Process Micro-objectives #
 Micro-behaviors related to processes.
 
-|Name|ID|Description|
-|---|---|---|
-|[**Create Process**](../processes/create-process.md)|C0017||
-|[**Synchronization**](../processes/synchronization.md)|C0022||
-|[**Terminate Process**](../processes/terminate-process.md)|C0018||
+* **Create Process** [C0017](../processes/create-process.md)
+* **Synchronization** [C0022](../processes/synchronization.md)
+* **Terminate Process** [C0018](../processes/terminate-process.md)

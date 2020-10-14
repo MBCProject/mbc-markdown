@@ -13,5 +13,5 @@ Methods
 -------
 |Name|ID|Description|
 |---|---|---|
-|**IEncodingFilterFactory**|C0025.002|Malware compresses data using IEncodingFilterFactory.|
-|**QuickLZ**|C0025.001|Malware compresses data using QuickLZ.|
+|**IEncodingFilterFactory**|C0024.002|Malware compresses data using IEncodingFilterFactory.|
+|**QuickLZ**|C0024.001|Malware compresses data using QuickLZ.|
