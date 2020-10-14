@@ -24,9 +24,9 @@ Methods
 |**RC6**|C0027.010|Malware encrypts with RC6 algorithm.|
 |**RSA**|C0027.011|Malware encrypts with RSA algorithm.|
 |**Skipjack**|C0027.013|Malware encrypts with the Skipjack block cipher algorithm.|
-|**Sosemanuk**|C0027.008|Malware encrypts with Sosemanuk stream cipher.|
+|**Sosemanuk**|C0027.011|Malware encrypts with Sosemanuk stream cipher.|
 |**Stream Cipher**|C0027.012|Malware encrypts using a stream cipher.|
-|**Twofish**|C0027.005|Malware encrypts using the Twofish algorithm.|
+|**Twofish**|C0027.015|Malware encrypts using the Twofish algorithm.|
 
 
 

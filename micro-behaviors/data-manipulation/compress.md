@@ -8,3 +8,10 @@
 Compress Data
 =============
 Malware may compress data.
+
+Methods
+-------
+|Name|ID|Description|
+|---|---|---|
+|**IEncodingFilterFactory**|C0025.002|Malware compresses data using IEncodingFilterFactory.|
+|**QuickLZ**|C0025.001|Malware compresses data using QuickLZ.|
