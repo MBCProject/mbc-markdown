@@ -5,8 +5,8 @@
 |**Related ATT&CK Technique**|None|
 
 
-Use Cryptographic Hash
-======================
+Cryptographic Hash
+==================
 Malware may use a cryptographic hash. 
 
 Methods

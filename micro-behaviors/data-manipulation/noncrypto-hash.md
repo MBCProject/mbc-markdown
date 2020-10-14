@@ -5,8 +5,8 @@
 |**Related ATT&CK Technique**|None|
 
 
-Use Non-Cryptographic Hash
-==========================
+Non-Cryptographic Hash
+======================
 Malware may use a non-cryptographic hash. 
 
 Methods
