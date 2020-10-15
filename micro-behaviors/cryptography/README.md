@@ -3,7 +3,7 @@
 |**ID**|**OC0005**|
 
 
-# Cryptography Micro-objectives #
+# Cryptography Micro-objective #
 Micro-behaviors that enable malware to use crypto.
 
 * **Encrypt Data** [C0027](../cryptography/encrypt.md)

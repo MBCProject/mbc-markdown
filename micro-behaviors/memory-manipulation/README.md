@@ -3,7 +3,7 @@
 |**ID**|**OC0002**|
 
 
-# Memory Manipulation Micro-objectives #
+# Memory Manipulation Micro-objective #
 Micro-behaviors related to malware manipulating machine memory.
 
 * **Allocate Memory** [C0007](../memory-manipulation/allocate-memory.md)

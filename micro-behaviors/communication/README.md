@@ -3,7 +3,7 @@
 |**ID**|**OC0006**|
 
 
-# Communication Micro-objectives #
+# Communication Micro-objective #
 Micro-behaviors that enable malware to communicate.
 
 * **DNS Communication** [C0011](../communication/dns-comm.md)

@@ -3,7 +3,7 @@
 |**ID**|**OC0003**|
 
 
-# Process Micro-objectives #
+# Process Micro-objective #
 Micro-behaviors related to processes.
 
 * **Create Process** [C0017](../processes/create-process.md)

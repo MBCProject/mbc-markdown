@@ -3,7 +3,7 @@
 |**ID**|**OC0004**|
 
 
-# Data Manipulation Micro-objectives #
+# Data Manipulation Micro-objective #
 Micro-behaviors related to malware manipulating data.
 
 * **Check String** [C0019](../data-manipulation/check-string.md)
