@@ -3,16 +3,14 @@
 |**ID**|**OC0006**|
 
 
-# Communication Micro-objectives #
+# Communication Micro-objective #
 Micro-behaviors that enable malware to communicate.
 
-|Name|ID|Description|
-|---|---|---|
-|[**DNS Communication**](../communication/dns-comm.md)|C0011||
-|[**FTP Communication**](../communication/ftp-comm.md)|C0004||
-|[**HTTP Communication**](../communication/http-comm.md)|C0002||
-|[**ICMP Communication**](../communication/icmp-comm.md)|C0014||
-|[**Interprocess Communication**](../communication/inter-process.md)|C0003||
-|[**SMTP Communication**](../communication/smtp-comm.md)|C0012||
-|[**Socket Communication**](../communication/socket-comm.md)|C0001||
-|[**WinINet Communication**](../communication/wininet.md)|C0005||
+* **DNS Communication** [C0011](../communication/dns-comm.md)
+* **FTP Communication** [C0004](../communication/ftp-comm.md)
+* **HTTP Communication** [C0002](../communication/http-comm.md)
+* **ICMP Communication** [C0014](../communication/icmp-comm.md)
+* **Interprocess Communication** [C0003](../communication/inter-process.md)
+* **SMTP Communication** [C0012](../communication/smtp-comm.md)
+* **Socket Communication** [C0001](../communication/socket-comm.md)
+* **WinINet Communication** [C0005](../communication/wininet.md)

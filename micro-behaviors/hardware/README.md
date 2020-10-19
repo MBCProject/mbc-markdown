@@ -3,9 +3,7 @@
 |**ID**|**OC0007**|
 
 
-# Hardware Micro-objectives #
+# Hardware Micro-objective #
 Micro-behaviors related to hardware.
 
-|Name|ID|Description|
-|---|---|---|
-|[**Load Driver**](../hardware/load-driver.md)|C0023||
+* **Load Driver** [C0023](../hardware/load-driver.md)
