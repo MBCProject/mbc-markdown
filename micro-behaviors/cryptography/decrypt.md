@@ -27,6 +27,3 @@ Methods
 |**Sosemanuk**|C0031.012|Malware decrypts data encrypted with the Sosemanuk stream cipher.|
 |**Stream Cipher**|C0031.013|Malware decrypts data encrypted with a stream cipher.|
 |**Twofish**|C0031.014|Malware decrypts data encrypted with the Twofish algorithm.|
-
-
-

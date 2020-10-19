@@ -19,7 +19,3 @@ Methods
 |**SHA256**|C0029.003|Malware uses a SHA-256 hash.|
 |**Snefru**|C0029.006|Malware uses a Snefru hash.|
 |**Tiger**|C0029.005|Malware uses a Tiger hash.|
-
-
-
-

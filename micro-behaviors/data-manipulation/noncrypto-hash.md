@@ -17,6 +17,3 @@ Methods
 |**pHash**|C0030.002|Malware uses the pHash hash function.|
 |**Fast-Hash**|C0030.003|Malware uses the Fast-Hash hash function.|
 |**dhash**|C0030.004|Malware uses the dhash hash function.|
-
-
-

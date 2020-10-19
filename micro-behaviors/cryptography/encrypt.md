@@ -27,6 +27,3 @@ Methods
 |**Sosemanuk**|C0027.008|Malware encrypts with the Sosemanuk stream cipher.|
 |**Stream Cipher**|C0027.012|Malware encrypts with a stream cipher.|
 |**Twofish**|C0027.005|Malware encrypts with the Twofish algorithm.|
-
-
-
