@@ -3,9 +3,11 @@
 |**ID**|**OC0005**|
 
 
-# Cryptography Micro-objectives #
+# Cryptography Micro-objective #
 Micro-behaviors that enable malware to use crypto.
 
-|Name|ID|Description|
-|---|---|---|
-|[**Generate Pseudo-random Sequence**](../cryptography/gen-random.md)|C0021||
+* **Encrypt Data** [C0027](../cryptography/encrypt.md)
+* **Decrypt Data** [C0031](../cryptography/decrypt.md)
+* **Generate Pseudo-random Sequence** [C0021](../cryptography/gen-random.md)
+* **Cryptography Hash** [C0029](../cryptography/crypto-hash.md)
+* **Encryption Key** [C0028](../cryptography/key.md)
