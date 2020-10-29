@@ -56,7 +56,7 @@ The MBC also contains a collection of [example malware](./xample-malware/README.
 [Micro-behaviors](./micro-behaviors/README.md) and their associated objectives are under development.
 
 ## Malware Objective Descriptions ##
-Malware objectives are defined below. Follow the links to view associated behaviors. Please see the [MBC Matrix](http://maecproject.github.io/ema/index.html) to view all behaviors.
+Malware objectives are defined below. Follow the links to view associated behaviors.
 
 |**Objective**|**Description**|
 |---|---|
