@@ -34,6 +34,39 @@ Malware Examples
 |[**Terminator**](../xample-malware/terminator.md)|May 2013|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[4]](#4)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|Ursnif uses malware macros to evade sandbox detection.|
 
+Code Snippets
+-------------
+**B0007.005**
+x86 assembly
+```
+push    ebx
+add     esp, 0FFFFFEF4h
+xor     ebx, ebx
+push    esp             ; phkResult
+push    1               ; samDesired
+push    0               ; ulOptions
+push    offset SubKey   ; "Software\Microsoft\Windows\CurrentVersi"...
+push    80000002h       ; hKey
+call    RegOpenKeyExA
+test    eax, eax
+jnz     short loc_405387
+mov     [esp+110h+cbData], 101h
+lea     eax, [esp+110h+cbData]
+push    eax             ; lpcbData
+lea     eax, [esp+114h+Data]
+push    eax             ; lpData
+push    0               ; lpType 
+push    0               ; lpReserved
+push    offset ValueName ; "ProductId"
+mov     eax, [esp+124h+hKey]
+push    eax             ; hKey
+call    RegQueryValueExA
+lea     eax, [esp+110h+Data]
+cmp     eax, offset a55274640267306 ; "55274-640-2673064-23950"
+jnz     short loc_405387
+mov     bl, 1
+```
+
 References
 ----------
 <a name="1">[1]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html 
