@@ -36,7 +36,7 @@ Malware Examples
 
 Code Snippets
 -------------
-**B0007.005** (Sandbox Detection::Product Key/ID Testing)
+**Sandbox Detection::Product Key/ID Testing** (B0007.005)
 ```
 push    ebx
 add     esp, 0FFFFFEF4h
