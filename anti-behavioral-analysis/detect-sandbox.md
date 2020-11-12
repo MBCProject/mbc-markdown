@@ -36,8 +36,7 @@ Malware Examples
 
 Code Snippets
 -------------
-**B0007.005**
-x86 assembly
+**B0007.005** (Sandbox Detection::Product Key/ID Testing)
 ```
 push    ebx
 add     esp, 0FFFFFEF4h
