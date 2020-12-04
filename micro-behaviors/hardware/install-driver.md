@@ -1,10 +1,10 @@
 |||
 |---|---|
-|**ID**|**C0023**|
+|**ID**|**C0037**|
 |**Objective(s)**|[Hardware](../hardware)|
 |**Related ATT&CK Technique**|None|
 
 
-Load Driver
-===========
-Malware loads a device driver.
+Install Driver
+==============
+Malware installs a driver.

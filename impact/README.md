@@ -6,6 +6,7 @@
 # Impact #
 Behaviors that enable malware to achieve its mission of manipulating, interrupting, or destroying systems and/or data.
 
+* **Clipboard Modification** [E1510] (../impact/clipboard-mod.md)
 * **Component Firmware** [F0009](../persistence/component-firmware.md)
 * **Compromise Data Integrity** [B0016](../impact/compromise-data.md)
 * **Data Destruction** [E1485](../impact/data-destruction.md)
@@ -16,6 +17,7 @@ Behaviors that enable malware to achieve its mission of manipulating, interrupti
 * **Exploitation for Client Execution** [E1203](../execution/exploit-software.md)
 * **Generate Fraudulent Advertising Revenue** [E1472](../impact/generate-fraud-rev.md)
 * **Manipulate Network Traffic** [B0019](../impact/manipulate-network-traffic.md)
+* **Modify Hardware** [B0042](../impact/modify-hardware.md)	
 * **Remote Access** [B0022](../impact/remote-access.md)
 * **Resource Hijacking** [B0018](../impact/hijack-sys-resources.md)
 * **Spamming** [B0039](../impact/spamming.md)
