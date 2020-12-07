@@ -23,6 +23,7 @@ Methods
 |**Force Lazy Writing**|F0004.006|Some operating systems will sometimes use a form of "lazy writing" for disk I/O, which may obscure the true provenance of the write operation. This method occurs when code intentionally forces the operating system to perform a lazy writing operation. For example, in Windows, a file may be opened, memory mapped, and closed, but the memory map will still exist and can be written to, which will cause a lazy write that looks like it is coming from the System process. [[3]](#3)|
 |**Modify Policy**|F0004.005|Malware may modify policies to make software less effective.|
 |**Unhook APIs**|F0004.003|Security products may hook APIs to monitor the behavior of malware. To avoid being found, malware may load DLLs in memory and overwrite their bytes.|
+|**Bypass Windows File Protection**|F0004.007|Malware bypasses Windows file protection.|
 
 Malware Examples
 ----------------
