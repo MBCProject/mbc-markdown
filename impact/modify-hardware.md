@@ -13,6 +13,6 @@ Methods
 -------
 |Name|ID|Description|
 |---|---|---|
-|**CD-ROM**|B0042.001|The CD-ROM is modified.|
+|**CDROM**|B0042.001|The CD-ROM is modified.|
 |**Mouse**|B0042.002|The mouse is modified.|
 |**Printer**|B0042.003|The printer is modified.|

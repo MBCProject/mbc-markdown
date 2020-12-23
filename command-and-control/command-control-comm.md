@@ -17,7 +17,7 @@ Methods
 |---|---|---|
 |**Check for Payload**|B0030.005|Check for payload.|
 |**Client to Server File Transfer**|B0030.004|File is transferred from client to server.|
-|**Receive Data**|B0030.002|Receive data from a C2 server.|
+|**Receive Data**|B0030.002|Receive data or command from a C2 server.|
 |**Request Command**|B0030.008|Client requests a command.|
 |**Request Email Address List**|B0030.010|Request email address list.|
 |**Request Email Template**|B0030.009|Request email template.|
