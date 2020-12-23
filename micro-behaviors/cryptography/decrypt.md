@@ -34,7 +34,7 @@ Code Snippets
 
 Sample (SHA256): c86cbf5e78c9f05ecfc11e4f2c147781cef77842a457e19ba690477eb564c22b
 
-```
+```asm
 push    ebx
 mov     ebx, [esp+4+arg_4]
 push    esi
