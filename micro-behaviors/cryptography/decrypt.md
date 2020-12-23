@@ -31,7 +31,9 @@ Methods
 Code Snippets
 -------------
 **Decrypt Data** (C0031) - the snippet encrypts and decrypts data.
+
 Sample (SHA256): c86cbf5e78c9f05ecfc11e4f2c147781cef77842a457e19ba690477eb564c22b
+
 ```
 push    ebx
 mov     ebx, [esp+4+arg_4]
