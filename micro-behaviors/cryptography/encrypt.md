@@ -27,3 +27,57 @@ Methods
 |**Sosemanuk**|C0027.008|Malware encrypts with the Sosemanuk stream cipher.|
 |**Stream Cipher**|C0027.012|Malware encrypts with a stream cipher.|
 |**Twofish**|C0027.005|Malware encrypts with the Twofish algorithm.|
+
+Code Snippets
+-------------
+**Encrypt Data** (C0031) - the snippet encrypts and decrypts data.
+Sample (SHA256): c86cbf5e78c9f05ecfc11e4f2c147781cef77842a457e19ba690477eb564c22b
+```
+push    ebx
+mov     ebx, [esp+4+arg_4]
+push    esi
+lea     eax, [ebx+20h]
+push    eax             ; unsigned int
+call    ??2@YAPAXI@Z    ; operator new(uint)
+mov     ecx, [esp+0Ch+arg_C]
+mov     edx, eax
+add     esp, 4
+mov     esi, [ecx]
+mov     [edx], esi
+mov     esi, [ecx+4]
+mov     [edx+4], esi
+mov     ecx, [ecx+8]
+mov     [edx+8], ecx
+mov     edx, [esp+8+arg_8]
+test    ebx, ebx
+mov     [eax+0Ch], edx
+jle     short loc_B
+mov     esi, [esp+8+arg_0]
+push    edi
+mov     edi, 0FFFFFFFDh
+lea     edx, [eax+3]
+sub     edi, eax
+
+loc_A:
+mov     cl, [edx-3]
+xor     cl, [edx+2]
+xor     cl, [edx-1]
+xor     cl, [edx]
+mov     [edx+0Dh], cl
+xor     [esi], cl
+inc     edx
+inc     esi
+lea     ecx, [edi+edx]
+cmp     ecx, ebx
+jl      short loc_A
+pop     edi
+
+loc_B:
+push    eax             ; void *
+call    ??3@YAXPAX@Z    ; operator delete(void *)
+add     esp, 4
+mov     eax, 1
+pop     esi
+pop     ebx
+retn
+```
