@@ -44,7 +44,7 @@ MBC aims to support the malware analysis community so eventually, methods could 
 
 Micro-behaviors should be used when context isn’t clear but there is value in capturing basic mechanics. For example, a behavior of “write and execute a file” can ideally map to [Execution::Install Additional Program](../execution/install-prog.md), but if the context isn't clear, the behaviors can be captured as [File System::Create File](../micro-behaviors/file-system/create-file.md) and [Process::Create Process](../micro-behaviors/process/create-process.md).
 
-###Can MBC behaviors be used without MBC objectives? Can objectives be used without behaviors? Or must objectives and behaviors be specified in pairs? Can methods be used alone? ###
+### Can MBC behaviors be used without MBC objectives? Can objectives be used without behaviors? Or must objectives and behaviors be specified in pairs? Can methods be used alone? ###
 
 Objectives correspond to the intentions behind malware behaviors. For example, malware may use [Hooking](../credential-access/hooking.md) (behavior) to load and execute code within the context of another process either to hide its execution (defense evasion objective), to gain elevated privileges (privilege escalation objective), or to access the process's memory (credential access objective). Because it's not always possible to know intent, MBC behaviors can be used without objectives. For example, automated sandbox analysis may indicate hooking behavior without corresponding information on intent, in which case objectives might not be specified; alternatively, *all* objectives associated with a behavior might be noted. 
 
