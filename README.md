@@ -6,6 +6,11 @@ Check out the MBC presentations:
 * [Standardized Reporting with the Malware Behavior Catalog](https://youtu.be/qZef-SoREdY), VB2020 localhost (October 2020)
 * [Malware Behavior Catalog](https://youtu.be/KY8Ty-0sdVU), BSides DC (October 2019)
 
+We've also mapped MBC (and ATT&CK) to two open-source malware analysis tools:
+
+* [Cuckoo community signatures](https://github.com/MBCProject/community)
+* [capa rules](https://github.com/fireeye/capa-rules)
+
 To join the **MBC mailing list**, please send a request to mbc@mitre.org.
 
 ### Objectives ###
