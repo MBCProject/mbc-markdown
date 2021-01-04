@@ -1,4 +1,4 @@
-# <a name="faq"></a>Malware Behavior Catalog BETA Frequently Asked Questions # 
+# <a name="faq"></a>Malware Behavior Catalog Frequently Asked Questions # 
 
 * [What's New?](./#next)
 * [Using MBC](./#use)
@@ -9,17 +9,19 @@
 
 ## <a name="next"><a/>What's New? ##
 
-* **MBC Mailing List** - The MBC mailing list is now active. To join, please send a request to mbc@mitre.org.
+* **MBC Mailing List** - To join the MBC mailing list, please send a request to mbc@mitre.org.
 
 * **Cuckoo-MBC Mappings** - Cuckoo Sandbox 2.0.7 includes mappings between its signatures and ATT&CK. The MBC team updated the mappings using MBC, which increased the accuracy due to MBC’s malware focus. A fork of the Cuckoo community repo is now available on [MBCProject](https://github.com/MBCProject) (see [community](https://github.com/MBCProject/community) and [cuckoo](https://github.com/MBCProject/cuckoo)).
 
 * **STIX 2 Representation** - MBC content is available in STIX 2.1 format - see the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository.
 
-* **Micro-behaviors** - Low-level malware behaviors that support other objectives and behaviors will be captured as micro-behaviors in MBC Beta.
+* **Micro-behaviors** - Low-level malware behaviors that support other objectives and behaviors are captured as micro-behaviors in MBC 2.0.
 
-* **Version Control** - MBC v1.0 was released at the end of January 2020. All further changes will be tracked. Releases will happen on an as-needed basis. The next release, expected in summer 2020, will include micro-behaviors and changes associated with [ATT&CK sub-techniques](https://attack.mitre.org/resources/updates/updates-july-2020/index.html).
+* **Version Control** - MBC v1.0 was released at the end of January 2020. Further changes are being tracked and releases will happen on an as-needed basis: 
+	- MBC v2.0 was released in September 2020 and includes micro-behaviors and changes associated with [ATT&CK sub-techniques](https://attack.mitre.org/resources/updates/updates-july-2020/index.html).
+	- MBC v2.1 will be released in early 2021.
 
-* **MBC Website** - An MBC website will replace markdown documents by the end of 2020.
+* **MBC Website** - An MBC website will replace markdown documents by mid-2021.
 
 * **Code Snippets** - In addition to associating malware samples to behaviors, we plan to capture code snippets that illustrate behavior implementation.
 
@@ -38,7 +40,11 @@ Methods are variations of behaviors and are provided to help explain behaviors. 
 
 MBC aims to support the malware analysis community so eventually, methods could be expanded and refined to serve as "sub-behaviors." If the expansion of methods is warranted, it may be they are used for manual mapping of behaviors while higher-level behaviors are used by automated analysis systems (which is not to say that some methods could not be identified automatically).
 
-### Can MBC behaviors be used without MBC objectives? Can objectives be used without behaviors? Or must objectives and behaviors be specified in pairs? Can methods be used alone? ###
+### When should micro-behaviors be used? ###
+
+Micro-behaviors should be used when context isn’t clear but there is value in capturing basic mechanics. For example, a behavior of “write and execute a file” can ideally map to [Execution::Install Additional Program](../execution/install-prog.md), but if the context isn't clear, the behaviors can be captured as [File System::Create File](../micro-behaviors/file-system/create-file.md) and [Process::Create Process](../micro-behaviors/process/create-process.md).
+
+###Can MBC behaviors be used without MBC objectives? Can objectives be used without behaviors? Or must objectives and behaviors be specified in pairs? Can methods be used alone? ###
 
 Objectives correspond to the intentions behind malware behaviors. For example, malware may use [Hooking](../credential-access/hooking.md) (behavior) to load and execute code within the context of another process either to hide its execution (defense evasion objective), to gain elevated privileges (privilege escalation objective), or to access the process's memory (credential access objective). Because it's not always possible to know intent, MBC behaviors can be used without objectives. For example, automated sandbox analysis may indicate hooking behavior without corresponding information on intent, in which case objectives might not be specified; alternatively, *all* objectives associated with a behavior might be noted. 
 
@@ -103,9 +109,9 @@ It's not feasible for ATT&CK to expand to cover *all* problem spaces, to include
 
 While malware sometimes acts as a surrogate for an adversary (i.e., there is overlap between malware and adversary behavior), there are aspects unique to malware, mostly notably anti-analysis characteristics that are only identified during analysis: [ANTI-BEHAVIORAL ANALYSIS](../anti-behavioral-analysis) and [ANTI-STATIC ANALYSIS](../anti-static-analysis). Some MBC behaviors may be appropriate for inclusion in ATT&CK, but it is up to the ATT&CK team to identify them and integrate the content.
 
-### MBC v1.0 included ATT&CK techniques? Why is MBC Beta a stand-alone *supplement* to ATT&CK? ###
+### MBC 1.0 included ATT&CK techniques? Why is MBC v2.0 a stand-alone *supplement* to ATT&CK? ###
 
-Although we believe that to most effectively support malware analysis, MBC should provide a complete set of malware-related behaviors, updates to ATT&CK, including addition of new platforms (e.g., ICS and cloud), make it difficult to keep MBC current. Also, most malware vendors using ATT&CK in their reporting consider the complete set of ATT&CK techniques, even though some techniques are never used. Consequently, MBC Beta defines new, malware-related behaviors, as well as malware-focused enhancements to ATT&CK techniques, but it no longer defines a restricted set of ATT&CK techniques that pertains to malware.
+Although we believe that to most effectively support malware analysis, MBC should provide a complete set of malware-related behaviors, updates to ATT&CK, including addition of new platforms (e.g., ICS and cloud), make it difficult to keep MBC current. Also, most malware vendors using ATT&CK in their reporting consider the complete set of ATT&CK techniques, even though some techniques are never used. Consequently, MBC v2.0 defines new, malware-related behaviors, as well as malware-focused enhancements to ATT&CK techniques, but it no longer defines a restricted set of ATT&CK techniques that pertains to malware.
 
 ### Is there a formal relationship between ATT&CK and MBC? ###
 
