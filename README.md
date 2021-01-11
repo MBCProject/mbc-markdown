@@ -61,7 +61,9 @@ The MBC also contains a collection of [example malware](./xample-malware/README.
 [Micro-behaviors](./micro-behaviors/README.md) and their associated objectives are under development.
 
 ## Malware Objective Descriptions ##
-Malware objectives are defined below. Follow the links to view associated behaviors. Please see the [MBC Matrix](./yfaq/mbc_matrix_without_ids.svg) to view all Behaviors. There is an additional SVG file with the Behavior IDs present - we recommend viewing the file on `https://raw.githubusercontent.com/` since the image is large.
+Malware objectives are defined in the table below. Follow the links to view associated behaviors. A visual representation of the MBC Matrix is also available (opens in a new window). There is another version under [FAQ](./yfaq/) with behavior ids.
+
+<img src="https://raw.githubusercontent.com/MBCProject/mbc-markdown/master/yfaq/mbc_matrix_without_ids.svg" alt="mbc matrix without ids">
 
 |**Objective**|**Description**|
 |---|---|
