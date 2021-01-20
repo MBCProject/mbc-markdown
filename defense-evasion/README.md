@@ -11,7 +11,7 @@ Behaviors that evade detection or avoid other defenses.
 * **Bypass DEP** [B0037](../defense-evasion/bypass-dep.md)
 * **Component Firmware** [F0009](../persistence/component-firmware.md)
 * **Covert Location** [B0040](../defense-evasion/covert-location.md)
-* **Disable Security Tools** [F0004](../defense-evasion/disable-security-tools.md)
+* **Disable or Evade Security Tools** [F0004](../defense-evasion/disable-security-tools.md)
 * **Execution Guardrails** [E1480](../anti-behavioral-analysis/execution-guardrails.md)
 * **Hidden Files and Directories** [F0005](../defense-evasion/hidden-files.md)
 * **Hooking** [F0003](../credential-access/hooking.md)
