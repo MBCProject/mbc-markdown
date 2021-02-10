@@ -2,14 +2,14 @@
 |---|---|
 |**ID**|**F0011**|
 |**Objective(s)**|[Persistence](../persistence), [Privilege Escalation](../privilege-escalation)|
-|**Related ATT&CK Sub-Technique**|[Create or Modify System Process: Windows Service](https://attack.mitre.org/techniques/T1543/003/)|
+|**Related ATT&CK Sub-Technique**|[Create or Modify System Process::Windows Service](https://attack.mitre.org/techniques/T1543/003/)|
 
 
 Modify Existing Service
 =======================
 Malware may modify an existing service to gain persistence. Modification may include disabling a service.
 
-See ATT&CK: [**Create or Modify System Process: Windows Service**](https://attack.mitre.org/techniques/T1543/003/).
+See ATT&CK: [**Create or Modify System Process::Windows Service**](https://attack.mitre.org/techniques/T1543/003/).
 
 Malware Examples
 ----------------
