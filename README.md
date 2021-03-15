@@ -81,4 +81,4 @@ Malware objectives are defined in the table below. Follow the links to view asso
 |[**Persistence**](./persistence/README.md)|Malware aims to remain on a system regardless of system events.|
 |[**Privilege Escalation**](./privilege-escalation/README.md)|Malware aims to obtain a higher level of privilege for execution.|
 
-<p style="text-align:center;">Copyright 2021 The MITRE Corporation. [Terms of Use](tou.md)</p>
+**Copyright 2021 The MITRE Corporation. [Terms of Use](./tou.md)**
