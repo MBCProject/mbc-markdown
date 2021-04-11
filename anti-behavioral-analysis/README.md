@@ -9,13 +9,13 @@ Behaviors that prevent, obstruct, or evade behavioral analysis (sandbox, debugge
 Two primary resources for anti-behavioral analysis behaviors are [[1]](#1) and [[2]](#2).
 
 * **Capture Evasion** [B0036](../anti-behavioral-analysis/evade-capture.md)
+* **Conditional Execution** [B0025](../execution/conditional-execute.md)
 * **Debugger Detection** [B0001](../anti-behavioral-analysis/detect-debugger.md)
 * **Debugger Evasion** [B0002](../anti-behavioral-analysis/evade-debugger.md)
 * **Dynamic Analysis Evasion** [B0003](../anti-behavioral-analysis/evade-dynamic-analysis.md)
 * **Emulator Detection** [B0004](../anti-behavioral-analysis/detect-emulator.md)
 * **Emulator Evasion** [B0005](../anti-behavioral-analysis/evade-emulator.md)
 * **Executable Code Virtualization** [B0008](../anti-static-analysis/exe-code-virtualize.md)
-* **Execution Guardrails** [E1480](../anti-behavioral-analysis/execution-guardrails.md)
 * **Hooking** [F0003](../credential-access/hooking.md)
 * **Memory Dump Evasion** [B0006](../anti-behavioral-analysis/evade-memory-dump.md)
 * **Sandbox Detection** [B0007](../anti-behavioral-analysis/detect-sandbox.md)
