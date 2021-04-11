@@ -8,7 +8,7 @@ Disk Content Wipe
 =================
 Malware may erase the content of storage devices.
 
-This description refines the ATT&CK [**Disk Wipe::Disk Content Wipe](https://attack.mitre.org/techniques/T1561/001/) sub-technique.
+This description refines the ATT&CK [**Disk Wipe::Disk Content Wipe**](https://attack.mitre.org/techniques/T1561/001/) sub-technique.
 
 Methods
 -------
