@@ -11,6 +11,12 @@ Malware may encrypt files stored on the system to prevent user access until a ra
 
 See ATT&CK: [**Data Encrypted for Impact**](https://attack.mitre.org/techniques/T1486/) and [**Data Encrypted for Impact (Mobile)**](https://attack.mitre.org/techniques/T1471/). 
 
+Methods
+-------
+|Name|ID|Description|
+|---|---|---|
+|**Ransom Note**|E1486.001|Ransomware displays a ransom note. Ransom notes are sometimes used to link instances of ransomware, even when the code or anti-analysis techniques change.|
+
 Malware Examples
 ----------------
 |Name|Date|Description|
