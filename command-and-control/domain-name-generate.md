@@ -7,7 +7,7 @@
 
 Domain Name Generation
 ======================
-Malware generates the domain name of the command and control server to which it connects. Access to on the fly domains enables C2 to operate as domains and IP addresses are blocked. The algorithm can be complicated in more advanced bots; understanding the details so that names can be predicted can be useful in mitigation and response. [[1]](#1)
+Malware generates the domain name of the controller to which it connects. Access to on the fly domains enables C2 to operate as domains and IP addresses are blocked. The algorithm can be complicated in more advanced implants; understanding the details so that names can be predicted can be useful in mitigation and response. [[1]](#1)
 
 The subsequently defined ATT&CK sub-technique [Dynamic Resolution: Domain Generation Algorithms](https://attack.mitre.org/techniques/T1568/002/), which is oriented toward an adversary perspective (although its examples include malware), is related to this MBC behavior.
 
