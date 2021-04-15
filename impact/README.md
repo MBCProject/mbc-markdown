@@ -13,7 +13,7 @@ Behaviors that enable malware to achieve its mission of manipulating, interrupti
 * **Data Encrypted for Impact** [E1486](../impact/encrypt-impact.md)
 * **Denial of Service** [B0033](../impact/denial-of-service.md)
 * **Destroy Hardware** [B0017](../impact/destroy-hardware.md)
-* **Disk Content Wipe** [F0014](../impact/disk-content-wipe.md)
+* **Disk Wipe** [F0014](../impact/disk-wipe.md)
 * **Exploit Kit Behavior** [E1190](../impact/exploit-kit-behavior.md)
 * **Exploitation for Client Execution** [E1203](../execution/exploit-software.md)
 * **Generate Fraudulent Advertising Revenue** [E1472](../impact/generate-fraud-rev.md)

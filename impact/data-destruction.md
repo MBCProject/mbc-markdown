@@ -16,6 +16,7 @@ Methods
 |Name|ID|Description|
 |---|---|---|
 |**Delete Application/Software**|E1485.m03|An application or software is deleted.|
+|**Delete Shadow Copies**|E1485.m04|Deletes shadow drive data, which is related to ransomware.|
 |**Empty Recycle Bin**|E1485.m02|Empties the recycle bin, which can be related to ransomware.|
 
 Malware Examples
