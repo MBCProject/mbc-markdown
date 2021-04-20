@@ -7,6 +7,7 @@ Behaviors that execute code on a system to achieve a variety of goals.
 
 * **Command and Scripting Interpreter** [E1059](../execution/command-line.md)
 * **Conditional Execution** [B0025](../execution/conditional-execute.md)
+* **Execution Dependency** [B0026](../execution/execution-dependency.md)
 * **Exploitation for Client Execution** [E1203](../execution/exploit-software.md)
 * **Install Additional Program** [B0023](../execution/install-prog.md)
 * **Prevent Concurrent Execution** [B0024](../execution/prevent-concurrent-exe.md)
