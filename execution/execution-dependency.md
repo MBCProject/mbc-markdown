@@ -1,6 +1,6 @@
 |||
 |---|---|
-|**ID**|**B0026**|
+|**ID**|**B0044**|
 |**Objective(s)**|[Execution](../execution)|
 |**Related ATT&CK Technique**|None|
 
