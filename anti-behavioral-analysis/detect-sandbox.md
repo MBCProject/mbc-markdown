@@ -37,7 +37,7 @@ Malware Examples
 Code Snippets
 -------------
 **Sandbox Detection::Product Key/ID Testing** (B0007.005) - the value 55274-640-2673064-23950 corresponds to Joe Sandbox.
-```
+```asm
 push    ebx
 add     esp, 0FFFFFEF4h
 xor     ebx, ebx
