@@ -62,6 +62,44 @@ Malware Examples
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|WebCobra injects malicious code to svchost.exe and uses an infinite loop to check all open windows and to compare each window’s title bar text with a set of strings to determine whether it is running in an isolated, malware analysis environment [[4]](#4)|
 |[**Redhip**](../xample-malware/redhip.md)|2011|Redhip detects VMWare, Virtual PC and Virtual Box. It also detects VM environments in general by considering timing lapses. [[6]](#6)|
 
+Code Snippets
+-------------
+**Virtual Machine Detection::Instruction Testing** (B0009.029)
+ <br/>MD5: 0e058126f26b54b3a4a950313ec5dbce
+```asm
+; ___unwind { // __except handler4
+push ebp
+mov ebp, esp
+push 0FFFFFFFEh
+push offset stru_413980
+push offset __except handler4
+mov eax, large fs:0
+push eax
+sub esp, 14h
+push ebx
+push esi
+push edi
+mov eax, ___security_cookie
+xor [epb+ms_exc.registration.ScopeTable], eax
+xor eax, ebp
+push eax
+lea eax, [ebp+ms_exc.registration]
+mov large fs:0 eax
+mov [ebp+var_19], al
+;  __try { // __except at loc_401CB8
+mov [ebp+ms_exc.registration.TryLevel], eax
+push ebx
+mov ebx, 0
+mov eax, 1
+vpcext 7, 08h
+test ebx, ebx
+setz [ebp+var_19]
+pop ebx
+jmp short loc_401CBB
+```
+
+
+
 References
 ----------
 <a name="1">[1]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
