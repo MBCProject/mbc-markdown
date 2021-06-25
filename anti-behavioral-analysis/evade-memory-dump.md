@@ -29,6 +29,48 @@ Malware Examples
 |---|---|---|
 |[Kraken](../xample-malware/kraken.md)|April 2008|Dumping Kraken's c.dll module from the heap of its own process is tricky because its PE-header is erased in memory. [[2]](#2)|
 
+Code Snippets
+-------------
+**Memory Dump::Code Encryption in Memory** (B0006.011)
+ <br/>MD5: b6e1a2048ea6bd6a941a72300b2d41ce
+```asm
+mov cl, 65h ; 'e'
+mov al, 70h ; 'p'
+mov [ebp+var_23], cl
+mov [ebp+var_1F], cl
+mov [ebp+String], bl
+mov [ebp+var_12], bl
+mov [ebp+var_2E], al
+mov [ebp+var_2D], al
+lea ecx, [ebp+String]
+mov al, 74h ; 't'
+mov bl, 2Eh ; '.'
+push ecx
+mov [ebp+var_13], 30h
+mov [ebp+var_11], 30h
+mov [ebp+var_10], 0
+mov [ebp+cp]
+mov [ebp+var_2F], 75h
+mov [ebp+var_2C], 6Fh
+mov [ebp+var_2B], 72h
+mov [ebp+var_2A], al
+mov [ebp+var_29], bl
+mov [ebp+var_28], 62h
+mov [ebp+var_27], 79h
+mov [ebp+var_26], 69h
+mov [ebp+var_25], dl
+mov [ebp+var_24], al
+mov [ebp+var_22], 72h
+mov [ebp+var_21], bl
+mov [ebp+var_20], dl
+mov [ebp+var_1E], al
+mov [ebp+var_1D], 0
+call ds:atoi
+add esp, 4
+mov dword ptr [ebp+hostshort], eax
+jmp short loc_401326
+```
+
 References
 ----------
 <a name="1">[1]</a> J. Stuttgen, M. Cohen, Anti-forensic resilient memory acquisition, https://www.dfrws.org/sites/default/files/session-files/paper-anti-forensic_resilient_memory_acquisition.pdf

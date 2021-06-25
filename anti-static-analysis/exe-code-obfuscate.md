@@ -42,6 +42,60 @@ Malware Examples
 |[**Emotet**](../xample-malware/emotet.md)|2018|Emotet macros are heavily obfuscated with junk functions and string substitutions. [[2]](#2)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
 
+Code Snippets
+-------------
+**Obfuscated Files or Information::Encoding-Standard Algorithm** (E1027.m02)
+ <br/>MD5: b6e1a2048ea6bd6a941a72300b2d41ce
+```asm
+jle short_40182F
+mov dl, byte ptr [ebp+eax+var_7CA8]
+xor dl, cl
+mov byte ptr [ebp+eax+var_7CA8], dl
+inc eax
+cmp eax, edi
+jl short loc_40181A
+```
+**Executable Code Obfuscation::Stack Strings** (B0032.017)
+ <br/>MD5: b6e1a2048ea6bd6a941a72300b2d41ce
+```asm
+mov cl, 65h ; 'e'
+mov al, 70h ; 'p'
+mov [ebp+var_23], cl
+mov [ebp_var_1f], cl
+mov [ebp_Str], bl
+mov [ebp+var_12], bl
+mov [ebp+var_2E], al
+mov [ebp+var_2D], al
+lea ecx, [ebp+Str]
+mov al, 74h ; 't'
+mov bl, 2Eh ; '.'
+mov dl. 6Eh ; 'n'
+push ecx ; STR
+mov [ebp+var_13], 30h ; '0'
+mov [ebp+var_11], 30h ; '0'
+mov [ebp+var_10], 0
+mov [ebp+cp], 73h ; 's'
+mov [ebp+var_2F], 75h ; u'
+mov [ebp+var_2C], 6Fh ; 'o'
+mov [ebp+var_2B], 72h ; 'r'
+mov [ebp+var_2A], al
+mov [ebp+var_29], bl
+mov [ebp+var_28], 62h ; 'b'
+mov [ebp+var_27], 79h ; 'y'
+mov [ebp+var_26], 69h ; 'i'
+mov [ebp+var_25], dl
+mov [ebp+var_24], al
+mov [ebp+var_22], 72h ; 'r'
+mov [ebp+var_21], bl
+mov [ebp+var_20], dl
+mov [ebp+var_1E], al
+mov [ebp+var_1D], h
+call ds:atoi
+add esp, 4
+mov dword ptr [ebp+hostshort], eax
+jmp short loc_401326
+```
+
 References
 ----------
 <a name="1">[1]</a> https://insights.sei.cmu.edu/cert/2019/03/api-hashing-tool-imagine-that.html

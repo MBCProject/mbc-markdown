@@ -31,3 +31,22 @@ Methods
 |**Send System Information**|B0030.006|Implant sends system information.|
 |**Server to Client File Transfer**|B0030.003|File is transferred from controller to implant.|
 |**Start Interactive Shell**|B0030.016|Start an interactive shell using a built-in program (e.g. cmd.exe, PowerShell, bash). This is often implemented with polling the network connection from the controller for text commands to redirect to the shell's stdin and polling the shell's stdout and stderr to redirect over the network to the controller. This differs from Execute Shell Command because the shell process runs across multiple iterations of the recv-command(s)-send-result loop.|
+
+Code Snippets
+-------------
+**C2 Communication::Recieve Data** (B0030.02)
+ <br/>MD5: b6e1a2048ea6bd6a941a72300b2d41ce
+```asm
+loc_401981
+mov ecx, s
+mov edx, edi
+sub edx, esi
+push 0 ; flags
+lea eax, [esi+ebx]
+push edx ;len
+push eax ;buf
+push ecx ;s
+call recv
+jmp short loc_4019A2
+```
+
