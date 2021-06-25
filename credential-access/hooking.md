@@ -19,7 +19,7 @@ Methods
 |---|---|---|
 |**Hook memory mapping APIs**|F0003.002|Prevents memory dumps by preventing mapping of memory into the kernel's virtual address space. [[1]](#1)|
 |**Hook procedures**|F0003.003|Intercepts and executes designated code in response to events such as messages, keystrokes, and mouse inputs. [[3]](#3)|
-|**Import Address Hooking (IAT) Hooking**|F0003.004|Uses modifications to a process's IAT where pointers to imported API functions are stored.|
+|**Import Address Table (IAT) Hooking**|F0003.004|Uses modifications to a process's IAT where pointers to imported API functions are stored.|
 |**Inline Hooking**|F0003.005|Overwrites the first bytes in an API function to redirect code flow.|
 |**Patch MmGetPhysicalMemoryRanges**|F0003.001|Patching this function to always return NULL prevents drivers from getting information about the physical address space layout, preventing memory dumps. [[1]](#1)|
 
