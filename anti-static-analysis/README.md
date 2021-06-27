@@ -10,6 +10,7 @@ Two primary resources for anti-static analysis behaviors are [[1]](#1) and [[2]]
 
 * **Call Graph Generation Evasion** [B0010](../anti-static-analysis/evade-call-graph.md)
 * **Disassembler Evasion** [B0012](../anti-static-analysis/evade-disassembler.md)
+* **Data Flow Analysis Evasion** [B0045](../anti-static-analysis/evade-data-flow-analysis.md)
 * **Executable Code Obfuscation** [B0032](../anti-static-analysis/exe-code-obfuscate.md)
 * **Executable Code Optimization** [B0034](../anti-static-analysis/exe-code-optimize.md)
 * **Executable Code Virtualization** [B0008](../anti-static-analysis/exe-code-virtualize.md)
