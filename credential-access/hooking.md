@@ -13,15 +13,18 @@ For discussion related to the Credential Access and Collection objectives, see A
 
 Note that in MBC, Hooking is also associated with the [Defense Evasion](../defense-evasion), [Persistence](../persistence), [Privilege Escalation](../privilege-escalation), and [Anti-Behavioral Analysis](../anti-behavioral-analysis) objectives.
 
+For hooking related to memory dump evasion, see [Memory Dump Evasion](../anti-behavioral-analysis/evade-memory-dump.md).
+
 Methods
 -------
 |Name|ID|Description|
 |---|---|---|
-|**Hook memory mapping APIs**|F0003.002|Prevents memory dumps by preventing mapping of memory into the kernel's virtual address space. [[1]](#1)|
-|**Hook procedures**|F0003.003|Intercepts and executes designated code in response to events such as messages, keystrokes, and mouse inputs. [[3]](#3)|
-|**Import Address Table (IAT) Hooking**|F0003.004|Uses modifications to a process's IAT where pointers to imported API functions are stored.|
-|**Inline Hooking**|F0003.005|Overwrites the first bytes in an API function to redirect code flow.|
-|**Patch MmGetPhysicalMemoryRanges**|F0003.001|Patching this function to always return NULL prevents drivers from getting information about the physical address space layout, preventing memory dumps. [[1]](#1)|
+|**Procedure Hooking**|F0003.003|Intercepts and executes designated code in response to events such as messages, keystrokes, and mouse inputs. [[1]](#1)|
+|**Inline Patching**|F0003.002|Overwrites the first bytes in an API function to redirect code flow.|
+|**Export Address Table (EAT) Hooking**|F0003.006|Hooks the export address table (EAT).|
+|**Import Address Table (IAT) Hooking**|F0003.001|Modifies a process's import address table (IAT), which stores pointers to imported API functions.|
+|**System Service Dispatch Table Hooking**|F0003.004|Hooks the system service dispatch table (SSDT), also called the system service descriptor table. The SSDT contains information about the service tables used by the operating system for dispatching system calls. Hooking the SSDT enables malware to hide files, registry keys, and network connections.|
+|**Shadow SDT Hooking**|F0003.005|Hooks the Shadow SSDT similarly to how the SSDT and IAT are hooked. The target of the hooking with the Shadow SSDT is the Windows subsystem (win32k.sys).|
 
 Malware Examples
 ----------------
@@ -32,8 +35,8 @@ Malware Examples
 
 References
 ----------
-<a name="1">[1]</a> J. Stuttgen, M. Cohen, Anti-forensic resilient memory acquisition, https://www.dfrws.org/sites/default/files/session-files/paper-anti-forensic_resilient_memory_acquisition.pdf
+<a name="1">[1]</a> https://docs.microsoft.com/en-us/windows/win32/winmsg/about-hooks?redirectedfrom=MSDN#hook-procedures
 
 <a name="2">[2]</a> https://blog.malwarebytes.com/cybercrime/2017/08/inside-kronos-malware/
 
-<a name="3">[3]</a> https://docs.microsoft.com/en-us/windows/win32/winmsg/about-hooks?redirectedfrom=MSDN#hook-procedures
+

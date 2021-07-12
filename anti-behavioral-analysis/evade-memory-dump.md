@@ -22,6 +22,8 @@ Methods
 |**On-the-Fly APIs**|B0006.007|Resolve API addresses before each use to prevent complete dumping.|
 |**SizeOfImage**|B0006.004|Set the SizeOfImage field of PEB.LoaderData to be huge.|
 |**Tampering**|B0006.005|Erase or corrupt specific file parts to prevent rebuilding (header, packer stub, etc.).|
+|**Hook memory mapping APIs**|B0006.010|Hooking prevents memory dumps by preventing mapping of memory into the kernel's virtual address space. [[1]](#1)|
+|**Patch MmGetPhysicalMemoryRanges**|B0006.011|Patching this function to always return NULL prevents drivers from getting information about the physical address space layout, preventing memory dumps. [[1]](#1)|
 
 Malware Examples
 ----------------
