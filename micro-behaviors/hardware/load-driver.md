@@ -7,4 +7,10 @@
 
 Load Driver
 ===========
-Malware loads a device driver.
+Malware loads a device driver or minifilter.
+
+Methods
+-------
+|Name|ID|Description|
+|---|---|---|
+|**Minifilter**|C0023.001|Malware starts a minifilter.|

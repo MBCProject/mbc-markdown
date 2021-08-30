@@ -7,4 +7,10 @@
 
 Install Driver
 ==============
-Malware installs a driver.
+Malware installs a driver or minifilter.
+
+Methods
+-------
+|Name|ID|Description|
+|---|---|---|
+|**Minifilter**|C0037.001|Malware registers a minifilter.|

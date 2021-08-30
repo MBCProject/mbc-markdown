@@ -14,3 +14,4 @@ Methods
 |Name|ID|Description|
 |---|---|---|
 |**Set Variable**|C0034.001|Malware sets an environment variable.|
+|**Get Variable**|C0034.002|Malware gets an environment variable.|
