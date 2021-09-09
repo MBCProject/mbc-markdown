@@ -13,6 +13,7 @@ Micro-behaviors related to file manipulation.
 * **Delete Directory** [C0048](../file-system/delete-dir.md)
 * **Delete File** [C0047](../file-system/delete-file.md)
 * **Get File Attributes** [C0049](../file-system/get-file-attr.md)
+* **Move File** [C0063](../file-system/move-file.md)
 * **Read File** [C0051](../file-system/read-file.md)
 * **Read Virtual Disk** [C0056](../file-system/read-virtual-disk.md)
 * **Set File Attributes** [C0050](../file-system/set-file-attr.md)
