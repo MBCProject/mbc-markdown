@@ -12,3 +12,4 @@ Micro-behaviors that enable malware to use crypto.
 * **Generate Pseudo-random Sequence** [C0021](../cryptography/gen-random.md)
 * **Cryptography Hash** [C0029](../cryptography/crypto-hash.md)
 * **Encryption Key** [C0028](../cryptography/key.md)
+* **Hashed Message Authentication Code** [C0061](../cryptography/hmac.md)

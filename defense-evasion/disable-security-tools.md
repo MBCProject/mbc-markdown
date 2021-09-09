@@ -25,6 +25,7 @@ Methods
 |**Modify Policy**|F0004.005|Malware may modify policies to make software less effective.|
 |**Unhook APIs**|F0004.003|Security products may hook APIs to monitor the behavior of malware. To avoid being found, malware may load DLLs in memory and overwrite their bytes.|
 |**Bypass Windows File Protection**|F0004.007|Malware bypasses Windows file protection.|
+|**Disable Code Integrity**|F0004.009|Malware disables Code Integrity driver.|
 
 Malware Examples
 ----------------

@@ -29,6 +29,7 @@ Methods
 |**Hook Injection via SetWindowsHooksEx**|E1055.m01|Malware can leverage hooking functionality to have its malicious DLL loaded upon an event getting triggered in a specific thread, which is usually done by calling SetWindowsHookEx to install a hook routine into the hook chain. [[1]](#1)|
 |**Injection and Persistence via Registry Modification**|E1055.m02|Malware may insert the location of its malicious library under a registry key (e.g., Appinit_DLL, AppCertDlls, IFEO) to have another process load its library. [[1]](#1)|
 |**Injection using Shims**|E1055.m03|Malware may use shims to target an executable (shims are a way of hooking into APIs and targeting specific executables and are provided by Microsoft for backward compatibility, allowing developers to apply program fixes without rewriting code). [[1]](#1)|
+|**Patch Process Command Line**|E1055.m04|Malware patches the PEB of a process to spoof the arguments|
 
 Malware Examples
 ----------------

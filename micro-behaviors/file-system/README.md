@@ -17,3 +17,4 @@ Micro-behaviors related to file manipulation.
 * **Read Virtual Disk** [C0056](../file-system/read-virtual-disk.md)
 * **Set File Attributes** [C0050](../file-system/set-file-attr.md)
 * **Write File** [C0052](../file-system/write-file.md)
+* **Move File** [C0063](../file-system/move-file.md)
