@@ -34,7 +34,7 @@ Methods
 
 Code Snippets
 -------------
-**C2 Communication::Recieve Data** (B0030.02)
+**C2 Communication::Receive Data** (B0030.02)
  <br/>MD5: b6e1a2048ea6bd6a941a72300b2d41ce
 ```asm
 loc_401981
