@@ -6,5 +6,5 @@
 
 
 Hashed Message Authentication Code
-==============
+==================================
 Malware uses an HMAC schema.
