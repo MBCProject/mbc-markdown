@@ -9,7 +9,7 @@ Process Injection
 =================
 Malware may execute code in the address space of a separate process. 
 
-See ATT&CK: [**Process Injection**](https://attack.mitre.org/techniques/T1055). Notes on sub-techniques in the context of [[1]](#1) are in as follows:
+See ATT&CK: [**Process Injection**](https://attack.mitre.org/techniques/T1055). Notes on ATT&CK's sub-techniques in the context of [[1]](#1) are as follows:
 
 |ID|ATT&CK Sub-Technique|Notes|
 |---|---|---|
