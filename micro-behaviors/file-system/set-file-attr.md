@@ -7,4 +7,4 @@
 
 Set File Attributes
 ===================
-Malware sets the attributes of a file.
+Malware sets or modifies the attributes of a file.
