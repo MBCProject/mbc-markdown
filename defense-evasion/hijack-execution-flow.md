@@ -15,8 +15,7 @@ Methods
 -------
 |Name|ID|Description|
 |---|---|---|
-|**Abuse ConvertThreadToFiber**|F0015.007|Malware executes shellcode in a local process by abusing ConvertThreadToFiber API function. [[5]](#5)|
-|**Abuse EnumResourceTypesA**|F0015.006|Malware executes shellcode by abusing EnumResourceTypesA API function. [[4]](#4)|
+|**Abuse Windows Function Calls**|F0015.006|Malware abuses native Windows function calls to transfer execution to shellcode that it loads into memory. A pointer to the callback function is used to supply the memory address of the shellcode. Functions that can be abused include EnumResourceTypesA and EnumUILanguagesW. [[4]](#4)|
 |**Export Address Table (EAT) Hooking**|F0015.001|Malware (e.g. rootkit) hooks the export address table (EAT).|
 |**Import Address Table (IAT) Hooking**|F0015.003|Malware (e.g. rootkit) modifies a process's import address table (IAT), which stores pointers to imported API functions.[[1]](#1)|
 |**Inline Patching**|F0015.002|Inline patching (inline hooking) is done by modifying the beginning of a function in order to redirect the execution flow to custom code (i.e. redirecting code flow) before jumping back to the original function.[[2]](#2)|
@@ -33,4 +32,3 @@ References
 
 <a name="4">[4]</a> http://ropgadget.com/posts/abusing_win_functions.html
 
-<a name="5">[5]</a> https://www.ired.team/offensive-security/code-injection-process-injection/executing-shellcode-with-createfiber
