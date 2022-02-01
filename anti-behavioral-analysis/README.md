@@ -6,8 +6,6 @@
 # Anti-Behavioral Analysis
 Behaviors that prevent, obstruct, or evade behavioral analysis (sandbox, debugger, etc). Because the underlying methods differ, separate "detection" and "evasion" behaviors are defined for some anti-behavioral analysis areas (e.g., anti-debugger). 
 
-Two primary resources for anti-behavioral analysis behaviors are [[1]](#1) and [[2]](#2).
-
 * **Capture Evasion** [B0036](../anti-behavioral-analysis/evade-capture.md)
 * **Conditional Execution** [B0025](../execution/conditional-execute.md)
 * **Debugger Detection** [B0001](../anti-behavioral-analysis/detect-debugger.md)
