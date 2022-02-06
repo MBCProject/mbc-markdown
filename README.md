@@ -63,7 +63,7 @@ The MBC also contains a collection of [example malware](./xample-malware/README.
 ## Malware Objective Descriptions ##
 Malware objectives are defined in the table below. Follow the links to view associated behaviors. A visual representation of the MBC Matrix is also available (opens in a new window). There is another version under [FAQ](./yfaq/) with behavior ids.
 
-<img src="https://raw.githubusercontent.com/MBCProject/mbc-markdown/master/yfaq/mbc_matrix_without_ids.svg" alt="mbc matrix without ids">
+<img src="https://raw.githubusercontent.com/MBCProject/mbc-markdown/v2.2/yfaq/mbc_matrix_without_ids.svg" alt="mbc matrix without ids">
 
 |**Objective**|**Description**|
 |---|---|
