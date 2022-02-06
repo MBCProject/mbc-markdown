@@ -20,8 +20,9 @@
 * **Micro-behaviors** - Low-level malware behaviors that support other objectives and behaviors are captured as micro-behaviors in MBC 2.x.
 
 * **Version Control** - MBC v1.0 was released at the end of January 2020. Further changes are being tracked and releases will happen on an as-needed basis: 
-	- MBC v2.0 was released in September 2020 and includes micro-behaviors and changes associated with [ATT&CK sub-techniques](https://attack.mitre.org/resources/updates/updates-july-2020/index.html).
-	- MBC v2.1 was released in February 2021 and includes additional micro-behaviors and behavior methods.
+    - MBC v2.0 was released in September 2020 and includes micro-behaviors and changes associated with [ATT&CK sub-techniques](https://attack.mitre.org/resources/updates/updates-july-2020/index.html).
+    - MBC v2.1 was released in February 2021 and includes additional micro-behaviors and behavior methods.
+    - MBC v2.2 was released in February 2022 and includes additional micro-behaviors and behavior methods. Added code snippets to certain methods.
 
 * **MBC Website** - An MBC website will replace markdown documents by mid-2021.
 
