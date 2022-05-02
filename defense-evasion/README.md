@@ -15,7 +15,7 @@ Behaviors that evade detection or avoid other defenses.
 * **Disable or Evade Security Tools** [F0004](../defense-evasion/disable-security-tools.md)
 * **Hide Artifacts** [E1564](../defense-evasion/hide-artifacts.md)
 * **Hidden Files and Directories** [F0005](../defense-evasion/hidden-files.md)
-* **Hijack Execution Flow** [E1574](../defense-evasion/hijack-execution-flow.md)
+* **Hijack Execution Flow** [F0015](../defense-evasion/hijack-execution-flow.md)
 * **Hooking** [F0003](../credential-access/hooking.md)
 * **Indicator Blocking** [F0006](../defense-evasion/indicator-blocking.md)
 * **Install Insecure or Malicious Configuration** [E1478](../defense-evasion/config-mod.md)
