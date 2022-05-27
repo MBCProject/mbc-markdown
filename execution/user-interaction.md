@@ -5,9 +5,9 @@
 |**Related ATT&CK Technique**|[User Execution](https://attack.mitre.org/techniques/T1204)|
 
 
-User Interaction
-================
-Malware may include code that relies on specific actions by a user to execute. Note that this MBC behavior differs from [User Execution](https://attack.mitre.org/techniques/T1204) in that it does do not include direct code execution (user action for *initial* execution) - MBE does not encompass ATT&CK's Initial Access Tactic.  
+User Execution
+==============
+Malware may include code that relies on specific actions by a user to execute. Note that this MBC behavior differs from [User Execution](https://attack.mitre.org/techniques/T1204) in that it does do not include direct code execution (user action for *initial* execution) - MBC does not encompass ATT&CK's Initial Access Tactic.  
 
 **See ATT&CK Technique:** [**User Execution**](https://attack.mitre.org/techniques/T1204).
 
