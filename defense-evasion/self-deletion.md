@@ -2,7 +2,7 @@
 |---|---|
 |**ID**|**F0007**|
 |**Objective(s)**|[Defense Evasion](../defense-evasion)|
-|**Related ATT&CK Sub-Technique**|[Indicator Removal on Host: Uninstall Malicious Application](https://attack.mitre.org/techniques/T1630/001/),[Indicator Removal on Host: File Deletion](https://attack.mitre.org/techniques/T1070/004/)|
+|**Related ATT&CK Sub-Technique**|[Indicator Removal on Host: Uninstall Malicious Application](https://attack.mitre.org/techniques/T1630/001/), [Indicator Removal on Host: File Deletion](https://attack.mitre.org/techniques/T1070/004/)|
 
 
 Self Deletion
