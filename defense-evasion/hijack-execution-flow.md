@@ -48,4 +48,4 @@ References
 
 <a name="5">[5]</a> https://docs.microsoft.com/en-us/windows/win32/winmsg/about-hooks?redirectedfrom=MSDN#hook-procedures
 
-<a name="6">[]</a> https://blog.malwarebytes.com/cybercrime/2017/08/inside-kronos-malware/
+<a name="6">[6]</a> https://blog.malwarebytes.com/cybercrime/2017/08/inside-kronos-malware/
