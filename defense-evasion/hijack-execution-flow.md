@@ -11,7 +11,7 @@ Malware may execute by hijacking the way operating systems run programs. Malware
 
 Note that in MBC, Hooking is also associated with the [Defense Evasion](../defense-evasion), [Persistence](../persistence), [Privilege Escalation](../privilege-escalation), and [Anti-Behavioral Analysis](../anti-behavioral-analysis) objectives.
 
-For discussion related to the Credential Access and Collection objectives, see ATT&CK: [**Input Capture: Credential API Hooking**](https://attack.mitre.org/techniques/T1056/004/).
+For discussion related to the Credential Access and Collection objectives, see [Input Capture: Credential API Hooking](https://attack.mitre.org/techniques/T1056/004/).
 
 For hooking related to memory dump evasion, see [Memory Dump Evasion](../anti-behavioral-analysis/evade-memory-dump.md).
 
