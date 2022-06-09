@@ -7,7 +7,7 @@
 
 Component Firmware
 ==================
-Malware may overwrite the flash memory contents of system BIOS or other firmware. [[1]](#1). Methods related to malware (extending ATT&CK's definitions) are below. 
+Malware may overwrite the flash memory of firmware outside of the main system firmware or BIOS. [[1]](#1). Methods related to malware (extending ATT&CK's definitions) are below. 
 
 see ATT&CK: [**Pre-OS Boot: Component Firmware**](https://attack.mitre.org/techniques/T1542/002/).
 

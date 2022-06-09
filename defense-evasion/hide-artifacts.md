@@ -5,7 +5,7 @@
 |**Related ATT&CK Technique**|[Hide Artifacts](https://attack.mitre.org/techniques/T1564)|
 
 
-Hidden Artifacts
+Hide Artifacts
 ================
 Malware may hide artifacts to evade detection and/or to persist on the system. See potential methods related to malware below. 
 
