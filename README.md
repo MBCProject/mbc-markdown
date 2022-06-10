@@ -45,7 +45,7 @@ Two letters of an identifier relay information about an objective.
 |**OB**|*OB0001*|An MBC objective.|
 |**OC**|*OC0003*|An MBC micro-objective.|
 
-Identifiers of methods are formatted in the same say as ATT&CK sub-techniques. If MBC defines a new method for an existing ATT&CK technique, the identifier is changed from "T" to "E" and an "m" identifier is added (e.g., a method added to T1234 would be denoted *E1234.m01* and is different than *T1234.001*, although both refer to the T1234 ATT&CK technique). Method identifiers of "B", "C", and "F" behaviors are defined without the "m" (e.g., *B0008.009*; *C0005.002*; *F0001.005*).
+Identifiers of methods are formatted in the same way as ATT&CK sub-techniques. If MBC defines a new method for an existing ATT&CK technique, the identifier is changed from "T" to "E" and an "m" identifier is added (e.g., a method added to T1234 would be denoted *E1234.m01* and is different than *T1234.001*, although both refer to the T1234 ATT&CK technique). Method identifiers of "B", "C", and "F" behaviors are defined without the "m" (e.g., *B0008.009*; *C0005.002*; *F0001.005*).
 
 When two or more MBC behaviors refine the same ATT&CK technique, each is given an MBC identifier and each references the ATT&CK identifier. When a new ATT&CK technique is defined *after* an MBC behavior has been defined, the preexisting MBC identifier is preserved and the new ATT&CK identifier is referenced.
 
