@@ -2,7 +2,7 @@
 |---|---|
 |**ID**|**E1485**|
 |**Objective(s)**|[Impact](../impact)|
-|**Related ATT&CK Technique**|[Data Destruction](https://attack.mitre.org/techniques/T1485/), [Delete Device Data](https://attack.mitre.org/techniques/T1447/)|
+|**Related ATT&CK Technique**|[Data Destruction](https://attack.mitre.org/techniques/T1485/)|
 
 
 Data Destruction

@@ -1,15 +1,13 @@
 |||
 |---|---|
-|**ID**|**E1472**|
+|**ID**|**E1643**|
 |**Objective(s)**|[Impact](../impact)|
-|**Related ATT&CK Technique**|[Generate Fraudulent Advertising Revenue](https://attack.mitre.org/techniques/T1472/)|
+|**Related ATT&CK Technique**|[Generate Traffic from Victim](https://attack.mitre.org/techniques/T1643/)|
 
 
-Generate Fraudulent Advertising Revenue
+Generate Traffic from Victim
 =======================================
-Malware may generate advertising revenue by generating clicks of advertising links. The ATT&CK technique, [Generate Fraudulent Advertising Revenue](https://attack.mitre.org/techniques/T1472/), pertains only to mobile platform, but the behavior is applicable to other platforms as well. 
-
-See ATT&CK: [**Generate Fraudulent Advertising Revenue**](https://attack.mitre.org/techniques/T1472/).
+Malware may generate traffic from the victim system such as clicks of advertising links that generate fraudulent ad revenue. The ATT&CK technique, [Generate Traffic from Victim](https://attack.mitre.org/techniques/T1643/), pertains only to mobile platform, but the behavior is applicable to other platforms as well.
 
 Methods
 -------

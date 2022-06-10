@@ -5,9 +5,9 @@
 |**Related ATT&CK Technique**|[Ingress Tool Transfer](https://attack.mitre.org/techniques/T1105/)|
 
 
-Remote File Copy
+Ingress Tool Transfer
 ================
-Malware may copy files from one system to another. 
+Malware may copy files from an external system to a system on a compromised network. 
 
 Note that this behavior is separate from possible execution (installation) of the file, which is covered by the [Install Additional Program](../execution/install-prog.md) behavior. 
 
