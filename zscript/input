@@ -1,0 +1,15 @@
+Conficker X0003
+Reference [1] https://en.wikipedia.org/wiki/Conficker
+Reference [2] http://www.csl.sri.com/users/vinod/papers/Conficker/
+
+
+
+Command and Control::Domain Name Generation (B0031) [1]	Uses a domain name generator seeded by the current date to ensure that every copy of the virus generates the same names on their respective days
+Execution::Conditional Execution (B0025) [1]	Conficker A has routine that causes the process to suicide exit if the keyboard language layout is set to Ukranian 
+Persistence::Registy Run Keys / Startup folder (F0012) [1]	To start itself at system boot, the virus saces a copy of its DLL form to a random filename in the Windows system folder, then adds registry keys to have svchost.exe invoke that DLL as an invisible network service 
+Persistence::Modify Existing Service (F0011) [1]	Copies itself into the $systemroot%\system32 directory and registers as a service 
+Defense Evasion::Indicator Blocking (F0006) [1]	Terminates various services related to system security and Windows and prevents network access to various websites related to antivirus software 
+Micro-Behavior::Memory::Overflow Buffer (C0010) [1]	Variants A, B, C, and E exploit a vulnerability in the Server Service on Windows computers in which an already compromised computer sends a specially-crafted RPC request to force a buffer overflow and execute shellcode on the target computer 
+Impact::Data Destruction (E1485) [1]	resets system restore points and deletes backup files
+Anti-Static Analysis::Software Packing::UPX (F0001.008) [2]	Conficker is propagated as a DLL which has been backed using the UPX packer
+Execution::Conditional Execution::Suicide Exit (B0025.001) [2]	Conficker B has significatnly more suicide logic embedded in its code and employs anti-debugging features to avoid reverse engineering attempts

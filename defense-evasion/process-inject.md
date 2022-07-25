@@ -40,6 +40,9 @@ Malware Examples
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|Injects minor code into a running process.|
+|[**CryptoWall**](../defense-evasion/process-inject.md)|2014| [[6]](#6)|
+|[**Hupigon**](../defense-evasion/process-inject.md)|2013|The malware injects itself into processes such as cmd.exe, notepad.exe [[7]](#7)|
+|[**BlackEnergy**](../defense-evasion/process-inject.md)|2007|Bypasses UAC using a Shim Database instructing SndVol.exe to execute cmd.exe instead, allowing for elevated execution  [[8]](#8)|
 
 References
 ----------
@@ -52,3 +55,9 @@ References
 <a name="4">[4]</a> https://citizenlab.ca/2016/04/between-hong-kong-and-burma/
 
 <a name="5">[5]</a> https://www.ired.team/offensive-security/code-injection-process-injection/executing-shellcode-with-createfiber
+
+<a name="6">[6]</a> https://news.sophos.com/en-us/2015/12/17/the-current-state-of-ransomware-cryptowall/
+
+<a name="7">[7]</a> https://www.f-secure.com/v-descs/backdoor_w32_hupigon.shtml
+
+<a name="8">[8]</a> https://blog-assets.f-secure.com/wp-content/uploads/2019/10/15163408/BlackEnergy_Quedagh.pdf

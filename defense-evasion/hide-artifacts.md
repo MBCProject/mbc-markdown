@@ -21,3 +21,14 @@ Methods
 |**Hidden Processes**|E1564.m03|Hides processes used by the adversary or malware instance. This can involve techniques such as process list unlinking.|
 |**Hidden Services**|E1564.m04|Hides any system services that the malware instance creates or injects itself into. Services can be hidden by hiding associated registry keys.|
 
+
+Malware Examples
+----------------
+|Name|Date|Description|
+|---|---|---|
+|[**YiSpecter**](../defense-evasion/hide-artifacts.md)|2015|Hides icons from iOS's SpringBoard as well as use the same name and logos of system apps to trick iOS power users [[1]](#1)|
+
+
+References
+----------
+<a name="1">[1]</a> http://researchcenter.paloaltonetworks.com/2015/10/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/

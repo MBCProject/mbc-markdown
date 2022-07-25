@@ -16,6 +16,7 @@ Methods
 |Name|ID|Description|
 |---|---|---|
 |**Alternative ntdll.dll**|B0003.001|A copy of ntdll.dll is dropped to the filesystem and then loaded. This alternative DLL is used to execute function calls to evade sandboxes which use hooking in the operating system's ntdll.dll.|
+|**Code Integrity Check**|B0003.011|Compares memory-based and disk-based versions of itself. If differences are detected, the malware alters its execution, possibly acting destructively.|
 |**Data Flood**|B0003.002|Overloads a sandbox by generating a flood of meaningless behavioral data. [[1]](#1)|
 |**Delayed Execution**|B0003.003|Stalling code is typically executed before any malicious behavior. The malware's aim is to delay the execution of the malicious activity long enough so that an automated dynamic analysis system fails to extract the interesting malicious behavior. This method is very similar to ATT&CK's [Virtualization/Sandbox Evasion: Time Based Evasion](https://attack.mitre.org/techniques/T1497/003/) sub-technique.|
 |**Demo Mode**|B0003.004|Inclusion of a demo binary/mode that is executed when token is absent or not privileged enough.|
@@ -36,6 +37,7 @@ Malware Examples
 |**Nap**|2013|Trojan Nap (tied to the Kelihos Botnet) uses extended sleep calls to evade sandbox analysis. [[3]](#3)|
 |**Smokeloader**|2019|Smokeloader drops a copy of ntdll.dll to %APPDATA%\Local\Temp\ [[4]](#4)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|Evades dynamic analysis.)|
+|[**Rombertik**](../anti-behavioral-analysis/evade-dynamic-analysis.md)|2015|The malware stalls by writing a byte of random data to memory 960 million times which complicates analysis. It also calls specific Windows API functions [[5]](#5)|
 
 References
 ----------
@@ -46,3 +48,5 @@ References
 <a name="3">[3]</a> https://www.fireeye.com/content/dam/fireeye-www/current-threats/pdfs/pf/file/fireeye-hot-knives-through-butter.pdf
 
 <a name="4">[4]</a> https://research.checkpoint.com/2019-resurgence-of-smokeloader/
+
+<a name="5">[5]</a> https://blogs.cisco.com/security/talos/rombertik

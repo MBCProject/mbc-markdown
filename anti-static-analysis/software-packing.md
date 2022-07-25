@@ -33,6 +33,8 @@ Malware Examples
 |Name|Date|Description|
 |---|---|---|
 |[**Redhip**](../xample-malware/redhip.md)|2011|Redhip samples are packed with different custom packers. [[3]](#3)|
+|[**Kovter**](../anti-static-analysis/software-packing.md)|2016|The malware comes packed by a crypter/FUD [[4]](#4)|
+|[**Conficker**](../anti-static-analysis/software-packing.md)|2008|Conficker is propagated as a DLL which has been backed using the UPX packer [[5]](#5)|
 
 References
 ----------
@@ -41,3 +43,7 @@ References
 <a name="2">[2]</a> Jiang Ming et al, Towards Paving the Way for Large-Scale Windows Malware Analysis: Generic Binary Unpacking with Orders-of-Magnitude Performance Boost, October 2018, https://dl.acm.org/citation.cfm?id=3243771.
 
 <a name="3">[3]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
+
+<a name="4">[4]</a> https://www.bleepingcomputer.com/virus-removal/remove-kovter-trojan
+
+<a name="5">[5]</a> http://www.csl.sri.com/users/vinod/papers/Conficker/

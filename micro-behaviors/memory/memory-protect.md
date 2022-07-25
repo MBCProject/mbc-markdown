@@ -15,3 +15,15 @@ Methods
 |---|---|---|
 |**Executable Heap**|C0008.002|The heap is made executable.|
 |**Executable Stack**|C0008.001|The stack is made executable.|
+
+
+Malware Examples
+----------------
+|Name|Date|Description|
+|---|---|---|
+|[**Ursnif**](../micro-behaviors/memory/memory-protect.md)|2016|Changes the PE header of the child process to enable write access to that page, writes 18 bytes of buffer at offset 0x40 from the start of svchost.exe process executable in the target child process. Then changes the region protection back to "read only" to avoid suspicion  [[1]](#1)|
+
+
+References
+----------
+<a name="1">[1]</a> https://www.fireeye.com/blog/threat-research/2017/11/ursnif-variant-malicious-tls-callback-technique.html

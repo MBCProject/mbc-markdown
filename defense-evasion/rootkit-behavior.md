@@ -35,9 +35,12 @@ Detection
 Rootkits can be detected by detecting primary rootkit behaviors: Hide Artifacts, Impair Defenses, Highjack Execution Flow. Hidden artifacts include kernel modules (hides use of kernel modules used by the malware instance), services (hides any system services that the malware instance creates or injects itself into), threads (hides one or more threads that belong to the malware instance), userspace libraries (hides use of userspace libraries used by the malware instance). 
 
 Rootkits can also be detected via memory dump analysis or virtual machine introspection.
+|[**Hupigon**](../defense-evasion/rootkit-behavior.md)|2013| Certain variants of the malware may have rootkit functionality [[3]](#3)|
 
 References
 ----------
 <a name="1">[1]</a> https://en.wikipedia.org/wiki/Rootkit
 
 <a name="2">[2]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
+
+<a name="3">[3]</a> https://www.f-secure.com/v-descs/backdoor_w32_hupigon.shtml

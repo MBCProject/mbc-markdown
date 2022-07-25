@@ -17,6 +17,8 @@ Malware Examples
 |---|---|---|
 |[**Kraken**](../xample-malware/kraken.md)|April 2008|Kraken uses a domain generating algorithm to provide new domains. [[2]](#2)|
 |[**Conficker**](../xample-malware/conficker.md)|November 2008|Conficker uses a domain name generator. [[3]](#3)|
+|[**CryptoLocker**](../command-and-control/domain-name-generate.md)|2013|The malware sends a hash value generated from system information [[4]](#4|
+|[**Ursnif**](../command-and-control/domain-name-generate.md)|2016|Ursnif has used a Domain name generation algorithm in the past [[5]](#5)|
 
 References
 ----------
@@ -25,3 +27,7 @@ References
 <a name="2">[2]</a> http://blog.threatexpert.com/2008/04/kraken-changes-tactics.html
 
 <a name="3">[3]</a> https://en.wikipedia.org/wiki/Conficker
+
+<a name="4">[4]</a> https://www.secureworks.com/research/cryptolocker-ransomware
+
+<a name="5">[5]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-variant-dreambot-adds-tor-functionality

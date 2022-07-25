@@ -18,11 +18,11 @@ Methods
 |**API Hook Detection**|B0001.001|Module bounds based [[7]](#7).|
 |**Anti-debugging Instructions**|B0001.034|Malware code contains mnemonics related to anti-debugging (e.g., rdtsc, icebp).|
 |**CheckRemoteDebuggerPresent**|B0001.002|The kernel32!CheckRemoteDebuggerPresent function calls NtQueryInformationProcess with ProcessInformationClass parameter set to 7 (ProcessDebugPort constant).|
+|**Check Processes**|B0001.038|The malware may check running processes for specific strings such as "malw" to detect a analysis environment.|
 |**CloseHandle**|B0001.003|(NtClose); If an invalid handle is passed to the CloseHandle function and a debugger is present, then an EXCEPTION_INVALID_HANDLE (0xC0000008) exception will be raised. [[7]](#7)|
 |**Debugger Artifacts**|B0001.004|Malware may detect a debugger by its artifact (window title, device driver, exports, etc.).|
 |**Hardware Breakpoints**|B0001.005|(SEH/GetThreadContext); Debug registers will indicate the presence of a debugger. See [[7]](#7) for details.|
-|**Interrupt 0x2d**|B0001.006|If int 0x2d is mishandled by the debugger, it can cause a single-byte instruction to be inadvertently skipped, which can be detected by malware.|
-|**Interrupt 1**|B0001.007|[[7]](#7)|
+|**Interruption**|B0001.006|If an interruption is mishandled by the debugger, it can cause a single-byte instruction to be inadvertently skipped, which can be detected by malware.|
 |**IsDebuggerPresent**|B0001.008|The kernel32!IsDebuggerPresent API function call checks the PEB BeingDebugged flag to see if the calling process is being debugged. It returns 1 if the process is being debugged, 0 otherwise. This is one of the most common ways of debugger detection.|
 |**Memory Breakpoints**|B0001.009|(PAGE_GUARD); Guard pages trigger an exception the first time they are accessed and can be used to detect a debugger. See [[7]](#7) for details.|
 |**Memory Write Watching**|B0001.010|[[7]](#7)|
@@ -58,6 +58,9 @@ Malware Examples
 |Name|Date|Description|
 |---|---|---|
 |[**Redhip**](../xample-malware/redhip.md)|January 2011|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[4]](#4)|
+|[**Gamut**](../anti-behavioral-analysis/detect-vm.md)|2014|The malware detects debuggers using an INT 03h trap and IsDebuggerPresent[[8]](#8)|
+|[**Rombertik**](../anti-behavioral-analysis/detect-vm.md)|2015|an anti-analysis function within the packer is called to check the username and filename of the executing process for strings like “malwar”, “sampl”, “viru”, and “sandb”. [[6]](#6)|
+
 
 References
 ----------
@@ -74,3 +77,7 @@ References
 <a name="6">[6]</a> Nicolas Falliere, Symantec, "Windows Anti-Debug Reference," 11 September 2007. https://www.symantec.com/connect/articles/windows-anti-debug-reference.
 
 <a name="7">[7]</a> Anti Debugging Tricks, Al-Khaser. https://github.com/LordNoteworthy/al-khaser/wiki/Anti-Debugging-Tricks
+
+<a name="8">[8]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/
+
+<a name="9">[9]</a> https://blogs.cisco.com/security/talos/rombertik

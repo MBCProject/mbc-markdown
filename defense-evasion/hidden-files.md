@@ -20,3 +20,14 @@ Methods
 |**Location**|F0005.002|Malware may change or choose the location of itself, another file, or a directory to prevent detection.|
 |**Timestamp**|F0005.004|Malware may change the timestamp on a file to prevent detection.|
 
+
+Malware Examples
+----------------
+|Name|Date|Description|
+|---|---|---|
+|[**GotBotKR**](../defense-evasion/hidden-files.md)|2019| GoBotKR stores itself in a file with Hidden and System attributes. [[1]](#1)|
+
+
+References
+----------
+<a name="1">[1]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/

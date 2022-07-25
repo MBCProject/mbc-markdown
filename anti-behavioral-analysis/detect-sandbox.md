@@ -24,15 +24,8 @@ Methods
 |**Self Check**|B0007.007|Malware may check its own characteristics to determine whether it's running in a sandbox. For example, a malicious Office document might check its file name or VB project name.|
 |**Timing/Date Check**|B0007.008|Calling GetSystemTime or equiv and only executing code if the current date/hour/minute/second passes some check. Often this is for running only after or only until a specific date. This behavior can be mitigated in non-automated analysis environments.|
 |**Timing/Uptime Check**|B0007.009|Comparing single GetTickCount with some value to see if system has been started at least *X* amount ago. This behavior can be mitigated in non-automated analysis environments.|
+|**Test API Routines**|B0007.010|Calls Windows API routines with invalid arguments to identify error supression.|
 
-Malware Examples
-----------------
-|Name|Date|Description|
-|---|---|---|
-|[**Redhip**](../xample-malware/redhip.md)|January 2011|Redhip detects publicly available automated analysis workbenches (e.g., Joe Box) by considering OS product keys and special DLLs. [[1]](#1)|
-|[**Rombertik**](../xample-malware/rombertik.md)|May 2015|[[2]](#2)|
-|[**Terminator**](../xample-malware/terminator.md)|May 2013|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[4]](#4)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|Ursnif uses malware macros to evade sandbox detection.|
 
 Code Snippets
 -------------
@@ -66,12 +59,27 @@ jnz     short loc_405387
 mov     bl, 1
 ```
 
+Malware Examples
+----------------
+|Name|Date|Description|
+|---|---|---|
+|[**Redhip**](../xample-malware/redhip.md)|January 2011|Redhip detects publicly available automated analysis workbenches (e.g., Joe Box) by considering OS product keys and special DLLs. [[1]](#1)|
+|[**Rombertik**](../xample-malware/rombertik.md)|May 2015|[[2]](#2)|
+|[**Terminator**](../xample-malware/terminator.md)|May 2013|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[4]](#4)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|Ursnif uses malware macros to evade sandbox detection.|
+|[**GotBotKR**](../anti-behavioral-analysis/detect-sandbox.md)|2019|GoBotKR performs several checks on the compromised machine to avoid being emulated or executed in a sandbox. [[5]](#5)|
+|[**Rombertik**](../anti-behavioral-analysis/detect-vm.md)|2015|The malware check for sandboxes that suppress errors returned from API routine calls the using ZwGetWriteWatch routine. [[6]](#6)|
+
 References
 ----------
 <a name="1">[1]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html 
  
-<a name="2">[2]</a> http://labs.lastline.com/exposing-rombertik-turning-the-tables-on-evasive-malware
+<a name="2">[2]</a> https://blogs.cisco.com/security/talos/rombertik
 
 <a name="3">[3]</a> https://github.com/LordNoteworthy/al-khaser
 
 <a name="4">[4]</a> https://www.fireeye.com/content/dam/fireeye-www/current-threats/pdfs/pf/file/fireeye-hot-knives-through-butter.pdf
+
+<a name="5">[5]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
+
+<a name="6">[6]</a> https://blogs.cisco.com/security/talos/rombertik

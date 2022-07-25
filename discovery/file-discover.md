@@ -14,3 +14,16 @@ Methods
 |Name|ID|Description|
 |---|---|---|
 |**Log File**|E1083.m01|Malware may look for system log files.|
+
+Malware Examples
+----------------
+|Name|Date|Description|
+|---|---|---|
+|[**CryptoWall**](../discovery/file-discover.md)|2014| [[1]](#1)|
+|[**CryptoLocker**](../discovery/file-discover.md)|2013|The malware searches for user files before encrypting them [[2]](#2)|
+
+References
+----------
+<a name="1">[1]</a> https://news.sophos.com/en-us/2015/12/17/the-current-state-of-ransomware-cryptowall/
+
+<a name="2">[2]</a> https://www.secureworks.com/research/cryptolocker-ransomware

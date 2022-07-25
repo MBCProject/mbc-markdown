@@ -35,6 +35,7 @@ Malware Examples
 |---|---|---|
 |**Kronos**|June 2014|Kronos hooks the API of processes to prevent detection. [[6]](#6)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**Ursnif**](../defense-evasion/hijack-execution-flow.md)|2016|Hooks various DLL exported functions when the component is loaded in their respective Browser application process is running to monitor network traffic [[7]](#7)|
 
 References
 ----------
@@ -49,3 +50,5 @@ References
 <a name="5">[5]</a> https://docs.microsoft.com/en-us/windows/win32/winmsg/about-hooks?redirectedfrom=MSDN#hook-procedures
 
 <a name="6">[6]</a> https://blog.malwarebytes.com/cybercrime/2017/08/inside-kronos-malware/
+
+<a name="7">[7]</a> https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/PE_URSNIF.A2?_ga=2.131425807.1462021705.1559742358-1202584019.1549394279

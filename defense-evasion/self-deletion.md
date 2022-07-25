@@ -16,3 +16,15 @@ Methods
 |Name|ID|Description|
 |---|---|---|
 |**COMSPEC Environment Variable**|F0007.001|Uninstalls self via COMSPEC environment variable.|
+
+
+Malware Examples
+----------------
+|Name|Date|Description|
+|---|---|---|
+|[**Terminator**](../defense-evasion/self-deletion.md)|2013|Evades sandboxes by terminating and removing itself (DW20.exe) after installation. [[1]](#1)|
+
+
+References
+----------
+<a name="1">[1]</a> https://www.mandiant.com/resources/hot-knives-through-butter-evading-file-based-sandboxes

@@ -32,6 +32,7 @@ Malware Examples
 |---|---|---|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|Drops either Cryptonight or Claymore's Zcash miner, depending on system architecture. [[1]](#1)|
 |[**Conficker**](../xample-malware/conficker.md)|2008|A routine causes the process to suicide exit if the keyboard language is set to Ukranian.|
+|[**Ursnif**](../execution/conditional-execute.md)|2016|Macros check if there are at least 50 running processes with a graphical interface, check if a list of blacklisted processes are running, and checks if the application is running in Australia and is NOT affiliated with a select group of networks (Security Research, Hospitals, Universities, Veterans, etc.) [1] [[3]](#3)|
 
 References
 ----------
@@ -39,3 +40,5 @@ References
 
 <a name="2">[2]</a> 
 https://reverseengineering.stackexchange.com/questions/2019/debugging-malware-that-will-only-run-as-a-service
+
+<a name="3">[3]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-banking-trojan-campaign-sandbox-evasion-techniques

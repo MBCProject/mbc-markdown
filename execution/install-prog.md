@@ -21,6 +21,7 @@ Malware Examples
 |[**MazarBot**](../xample-malware/mazarbot.md)|2016|Installs a backdoor.|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|A Trojan downloader.|
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|Can download and install arbitrary iOS apps.|
+|[**UP007**](../execution/install-prog.md)|2016|The malware is a dropper that creates multiple files [[4]](#4)|
 
 References
 ----------
@@ -29,3 +30,5 @@ References
 <a name="2">[2]</a> https://www.fortinet.com/blog/threat-research/deep-analysis-of-driver-based-mitm-malware-itranslator.html
 
 <a name="3">[3]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
+
+<a name="4">[4]</a> https://citizenlab.ca/2016/04/between-hong-kong-and-burma/

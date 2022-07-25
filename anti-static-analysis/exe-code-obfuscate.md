@@ -34,6 +34,7 @@ Methods
 |**Symbol Obfuscation**|B0032.018|Remove or rename symbolic information commonly inserted by compilers for debugging purposes.|
 |**Thunk Code Insertion**|B0032.006|Variation on Jump Insertion. Used by some compilers for user-generated functions.|
    
+
 Malware Examples
 ----------------
 |Name|Date|Description|
@@ -95,6 +96,8 @@ add esp, 4
 mov dword ptr [ebp+hostshort], eax
 jmp short loc_401326
 ```
+|[**Rombertik**](../anti-static-analysis/exe-code-obfuscate.md)|2015|Most of the malware file consists of unnecessary code or unnecessary data [[4]](#4)|
+|[**Ursnif**](../anti-static-analysis/exe-code-obfuscate.md)|2016|Creates an encrypted Registry key called TorClient to store its data [[5]](#5)|
 
 References
 ----------
@@ -103,3 +106,7 @@ References
 <a name="2">[2]</a> https://cofense.com/recent-geodo-malware-campaigns-feature-heavily-obfuscated-macros/
 
 <a name="3">[3]</a> Rob Simmons, "Comparing Malicious Files," BSides, 2019. http://www.irongeek.com/i.php?page=videos/bsidescharm2019/2-04-comparing-malicious-files-robert-simmons
+
+<a name="4">[4]</a> https://blogs.cisco.com/security/talos/rombertik
+
+<a name="5">[5]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-variant-dreambot-adds-tor-functionality

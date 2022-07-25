@@ -13,8 +13,8 @@ Methods
 -------
 |Name|ID|Description|
 |---|---|---|
-|**Advertisement Replacement Fraud**|E1472.m02|Malware injects ad windows onto websites the user views. [[2]](#2)|
-|**Click Hijacking**|E1472.m01|Malware alters DNS server settings to route to a rogue DNS server: when the user clicks on a search result link displayed through a search engine query, malware re-routes the user to different website. Instead of going to the requested site, the user is taken to an alternate website such that the click triggers payment to the threat actor. [[1]](#1)|
+|**Advertisement Replacement Fraud**|E1643.m02|Malware injects ad windows onto websites the user views. [[2]](#2)|
+|**Click Hijacking**|E1643.m01|Malware alters DNS server settings to route to a rogue DNS server: when the user clicks on a search result link displayed through a search engine query, malware re-routes the user to different website. Instead of going to the requested site, the user is taken to an alternate website such that the click triggers payment to the threat actor. [[1]](#1)|
 
 Malware Examples
 ----------------
