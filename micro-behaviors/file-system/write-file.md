@@ -7,4 +7,4 @@
 
 Writes File
 ===========
-Malware writes to a file. 
+Malware writes to a file.  Writing to a file may modify the file.
