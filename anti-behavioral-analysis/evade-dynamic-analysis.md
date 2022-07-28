@@ -16,6 +16,7 @@ Methods
 |Name|ID|Description|
 |---|---|---|
 |**Alternative ntdll.dll**|B0003.001|A copy of ntdll.dll is dropped to the filesystem and then loaded. This alternative DLL is used to execute function calls to evade sandboxes which use hooking in the operating system's ntdll.dll.|
+|**API Hammering**|B0003.012|Uses of a huge number of calls to Windows APIs as a form of extended sleep to evade analysis in sandbox environments.|
 |**Code Integrity Check**|B0003.011|Compares memory-based and disk-based versions of itself. If differences are detected, the malware alters its execution, possibly acting destructively.|
 |**Data Flood**|B0003.002|Overloads a sandbox by generating a flood of meaningless behavioral data. [[1]](#1)|
 |**Delayed Execution**|B0003.003|Stalling code is typically executed before any malicious behavior. The malware's aim is to delay the execution of the malicious activity long enough so that an automated dynamic analysis system fails to extract the interesting malicious behavior. This method is very similar to ATT&CK's [Virtualization/Sandbox Evasion: Time Based Evasion](https://attack.mitre.org/techniques/T1497/003/) sub-technique.|
@@ -38,6 +39,8 @@ Malware Examples
 |**Smokeloader**|2019|Smokeloader drops a copy of ntdll.dll to %APPDATA%\Local\Temp\ [[4]](#4)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|Evades dynamic analysis.)|
 |[**Rombertik**](../anti-behavioral-analysis/evade-dynamic-analysis.md)|2015|The malware stalls by writing a byte of random data to memory 960 million times which complicates analysis. It also calls specific Windows API functions [[5]](#5)|
+|[**TrickBot**](../anti-behavioral-analysis/evade-emulator.md)|2016|Uses numerous printf loops to delay the execution process and overload the sandbox with junk data (API Hammering) [[6]](#6)|
+
 
 References
 ----------
@@ -50,3 +53,5 @@ References
 <a name="4">[4]</a> https://research.checkpoint.com/2019-resurgence-of-smokeloader/
 
 <a name="5">[5]</a> https://blogs.cisco.com/security/talos/rombertik
+
+<a name="6">[6]</a> https://www.joesecurity.org/blog/498839998833561473

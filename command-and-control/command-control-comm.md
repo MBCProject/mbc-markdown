@@ -61,6 +61,7 @@ Malware Examples
 |[**UP007**](../command-and-control/command-control-comm.md)|2016|The malware receives payloads [[4]](#4)|
 |[**YiSpecter**](../command-and-control/command-control-comm.md)|2015|Connects to the command and control server using HTTP to send device information [[5]](#5)|
 |[**Ursnif**](../command-and-control/command-control-comm.md)|2016|Ursnif variant Dreambot authenticates and encrypts traffic to C2 server using TOR [[6]](#6)|
+|[**Emotet**](../command-and-control/command-control-comm.md)|2018| new email addresses are collected automatically from the victim's address books [[7]](#7)|
 
 References
 ----------
@@ -75,3 +76,5 @@ References
 <a name="5">[5]</a> http://researchcenter.paloaltonetworks.com/2015/10/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
 
 <a name="6">[6]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-variant-dreambot-adds-tor-functionality
+
+<a name="7">[7]</a> https://securelist.com/the-banking-trojan-emotet-detailed-analysis/69560/

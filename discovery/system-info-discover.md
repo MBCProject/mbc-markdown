@@ -25,9 +25,18 @@ Malware Examples
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|Learns about the system so it can drop compatible miner software.|
 |[**Ursnif**](../discovery/system-info-discover.md)|2016|Uses windows command prompt commands to gather system info, task list, installed drivers, and installed programs  [[1]](#1)|
 |[**BlackEnergy**](../discovery/system-info-discover.md)|2007|uses Systeminfo to gather OS version, system configuration, BIOS, the motherboard, and processor [ [[2]](#2)|
+|[**DarkComet**](../discovery/system-info-discover.md)|2008|Can collect information about the compter, resources, and operating system version  [[3]](#3)|
+|[**Emotet**](../discovery/system-info-discover.md)|2018|collects information related to OS, processes, and sometimes mail client information and sends it to c2 [[4]](#4)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Gathers information (OS version, workgroup status, computer name, domain/workgroup name, file name of infected project file) about each computer in the net to spread itself  [[5]](#5)|
 
 References
 ----------
 <a name="1">[1]</a> https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/PE_URSNIF.A2?_ga=2.131425807.1462021705.1559742358-1202584019.1549394279
 
 <a name="2">[2]</a> https://blog-assets.f-secure.com/wp-content/uploads/2019/10/15163408/BlackEnergy_Quedagh.pdf
+
+<a name="3">[3]</a> https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/
+
+<a name="4">[4]</a> https://documents.trendmicro.com/assets/white_papers/ExploringEmotetsActivities_Final.pdf
+
+<a name="5">[5]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en

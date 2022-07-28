@@ -17,7 +17,16 @@ Methods
 |**Check for Emulator-related Files**|B0004.001|Checks whether particular files (e.g., QEMU files) exist.|
 |**Check for WINE Version**|B0004.002|Checks for WINE via the `get_wine_version` function from WINE's `ntdll.dll`.|
 |**Failed Network Connections**|B0004.004|Some emulated systems fail to handle some network communications; such failures will indicate the emulated environment.|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Stuxnet checks for specific operating systems on 32-bit machines, registry keys, and dates to profile a potential target machine before execution. If the conditions are not met to be considered a viable target, it will exit execution  [[2]](#2)|
+
+
+Malware Examples
+----------------
+|Name|Date|Description|
+|---|---|---|
 
 References
 ----------
 <a name="1">[1]</a> https://search.unprotect.it/map/sandbox-evasion/
+
+<a name="2">[2]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en

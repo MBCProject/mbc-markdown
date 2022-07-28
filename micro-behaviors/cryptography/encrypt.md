@@ -83,3 +83,23 @@ pop     esi
 pop     ebx
 retn
 ```
+
+Malware Examples
+----------------
+|Name|Date|Description|
+|---|---|---|
+|[**TrickBot**](../micro-behaviors/cryptography/encrypt.md)|2016|Uses an AES CBC (256 bits) encryption algorithm for its loader and configuration files  [[1]](#1)|
+
+|[**Emotet**](../micro-behaviors/cryptography/encrypt.md)|2018|Emotet uses RSA to encrypt network traffic to its C2 [[2]](#2)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|	GravityRat v3 supports file AES file encryption  [[3]](#3)|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Poison Ivy's custom network protocol over TCP is encrypted using Camellia cipher with a 256-bit key  [[4]](#4)|
+
+References
+----------
+<a name="1">[1]</a> https://www.securityartwork.es/wp-content/uploads/2017/07/Trickbot-report-S2-Grupo.pdf
+
+<a name="2">[2]</a> https://documents.trendmicro.com/assets/white_papers/ExploringEmotetsActivities_Final.pdf
+
+<a name="3">[3]</a> https://blog.talosintelligence.com/2018/04/gravityrat-two-year-evolution-of-apt.html
+
+<a name="4">[4]</a> https://www.cyber.nj.gov/threat-center/threat-profiles/trojan-variants/poison-ivy

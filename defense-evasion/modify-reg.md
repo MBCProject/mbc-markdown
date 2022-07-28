@@ -21,6 +21,7 @@ Malware Examples
 |[**Hupigon**](../defense-evasion/modify-reg.md)|2013|The malware adds many entries to the registry [[3]](#3)|
 |[**Gamut**](../defense-evasion/modify-reg.md)|2014|The malware adds a registry key [[4]](#4)|
 |[**Kovter**](../defense-evasion/modify-reg.md)|2016|The malware modifies the registry during execution [[5]](#5)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|Disables remote user account control by enabling the registry key LocalAccountTokenFilterPolicy  [[6]](#6)|
 
 References
 ----------
@@ -33,3 +34,5 @@ References
 <a name="4">[4]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/
 
 <a name="5">[5]</a> https://blog.malwarebytes.com/threat-analysis/2016/07/untangling-kovter/
+
+<a name="6">[6]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-returns-to-wipe-systems-in-middle-east-europe/

@@ -32,3 +32,15 @@ Methods
 |**TCP Server**|C0001.002|TCP server behavior.|
 |**TCP Client**|C0001.008|TCP client behavior.|
 |**UDP Client**|C0001.013|UDP client behavior.|
+
+
+Malware Examples
+----------------
+|Name|Date|Description|
+|---|---|---|
+|[**SYNfulKnock**](../xample-malware/synful-knock.md)|2015|To initiate communication with the C2 server, a uniquely crafted TCP SYN packet is sent to port 80 of the "implanted" router  [[1]](#1)|
+
+
+References
+----------
+<a name="1">[1]</a> https://www.mandiant.com/resources/synful-knock-acis

@@ -9,3 +9,15 @@ Behaviors malware may use to communicate with systems under its control within a
 * **Command and Control Communication** [B0030](../command-and-control/command-control-comm.md)
 * **Domain Name Generation** [B0031](../command-and-control/domain-name-generate.md)
 * **Remote File Copy** [E1105](../command-and-control/remote-file-copy.md)
+
+
+Malware Examples
+----------------
+|Name|Date|Description|
+|---|---|---|
+|[**TrickBot**](../command-and-control/README.md)|2016| new email addresses are collected automatically from the victim's address books [[1]](#1)|
+
+
+References
+----------
+<a name="1">[1]</a> https://www.bitdefender.com/blog/labs/trickbot-is-dead-long-live-trickbot/

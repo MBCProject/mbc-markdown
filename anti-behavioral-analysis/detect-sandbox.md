@@ -69,7 +69,6 @@ Malware Examples
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|Ursnif uses malware macros to evade sandbox detection.|
 |[**GotBotKR**](../anti-behavioral-analysis/detect-sandbox.md)|2019|GoBotKR performs several checks on the compromised machine to avoid being emulated or executed in a sandbox. [[5]](#5)|
 |[**Rombertik**](../anti-behavioral-analysis/detect-vm.md)|2015|The malware check for sandboxes that suppress errors returned from API routine calls the using ZwGetWriteWatch routine. [[6]](#6)|
-
 References
 ----------
 <a name="1">[1]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html 

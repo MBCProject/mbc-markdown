@@ -21,7 +21,10 @@ Malware Examples
 |Name|Date|Description|
 |---|---|---|
 |[**Kovter**](../xample-malware/kovter.md)|2016|Stores malware files in the Registry instead of the hard drive. [[1]](#1)|
+|[**SYNfulKnock**](../xample-malware/synful-knock.md)|2015|100 memory-resident modules can be installed  [[2]](#2)|
 
 References
 ----------
 <a name="1">[1]</a> https://www.bleepingcomputer.com/virus-removal/remove-kovter-trojan
+
+<a name="2">[2]</a> https://www.mandiant.com/resources/synful-knock-acis

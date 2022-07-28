@@ -25,9 +25,15 @@ Malware Examples
 |[**BlackEnergy**](../defense-evasion/indicator-blocking.md)|2007|Clears windows event logs and removes the watermark associated with enabling the TESTSIGNING boot configuration option by removing the relevent strings in the user32.dll.mui of the system  [[1]](#1)|
 
 |[**Conficker**](../defense-evasion/indicator-blocking.md)|2008|Terminates various services related to system security and Windows and prevents network access to various websites related to antivirus software  [[2]](#2)|
+|[**DarkComet**](../defense-evasion/indicator-blocking.md)|2008|Can disable security center functions like anti-virus and firewall [[3]](#3)|
+|[**TrickBot**](../defense-evasion/indicator-blocking.md)|2016|Terminates the following anti-malware services: Window Defender, MBamService (Malwarebytes), SAVService (Sophos AV) [[4]](#4)|
 
 References
 ----------
 <a name="1">[1]</a> https://blog-assets.f-secure.com/wp-content/uploads/2019/10/15163408/BlackEnergy_Quedagh.pdf
 
 <a name="2">[2]</a> https://en.wikipedia.org/wiki/Conficker
+
+<a name="3">[3]</a> https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/
+
+<a name="4">[4]</a> https://www.trendmicro.com/en_us/research/18/k/trickbot-shows-off-new-trick-password-grabber-module.html

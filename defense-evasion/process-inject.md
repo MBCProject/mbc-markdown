@@ -43,6 +43,7 @@ Malware Examples
 |[**CryptoWall**](../defense-evasion/process-inject.md)|2014| [[6]](#6)|
 |[**Hupigon**](../defense-evasion/process-inject.md)|2013|The malware injects itself into processes such as cmd.exe, notepad.exe [[7]](#7)|
 |[**BlackEnergy**](../defense-evasion/process-inject.md)|2007|Bypasses UAC using a Shim Database instructing SndVol.exe to execute cmd.exe instead, allowing for elevated execution  [[8]](#8)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Stuxnet injects the entire DLL into another process and then just calls the particular export  [[9]](#9)|
 
 References
 ----------
@@ -61,3 +62,5 @@ References
 <a name="7">[7]</a> https://www.f-secure.com/v-descs/backdoor_w32_hupigon.shtml
 
 <a name="8">[8]</a> https://blog-assets.f-secure.com/wp-content/uploads/2019/10/15163408/BlackEnergy_Quedagh.pdf
+
+<a name="9">[9]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en

@@ -59,7 +59,8 @@ Malware Examples
 |---|---|---|
 |[**Redhip**](../xample-malware/redhip.md)|January 2011|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[4]](#4)|
 |[**Gamut**](../anti-behavioral-analysis/detect-vm.md)|2014|The malware detects debuggers using an INT 03h trap and IsDebuggerPresent[[8]](#8)|
-|[**Rombertik**](../anti-behavioral-analysis/detect-vm.md)|2015|an anti-analysis function within the packer is called to check the username and filename of the executing process for strings like “malwar”, “sampl”, “viru”, and “sandb”. [[6]](#6)|
+|[**Rombertik**](../anti-behavioral-analysis/detect-vm.md)|2015|an anti-analysis function within the packer is called to check the username and filename of the executing process for strings like “malwar”, “sampl”, “viru”, and “sandb”. [[9]](#9)|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Poison Ivy Variant checks for breakpoints and exits immediately if found [[10]](#10)|
 
 
 References
@@ -81,3 +82,5 @@ References
 <a name="8">[8]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/
 
 <a name="9">[9]</a> https://blogs.cisco.com/security/talos/rombertik
+
+<a name="10">[10]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf

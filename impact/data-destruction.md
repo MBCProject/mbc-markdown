@@ -27,6 +27,7 @@ Malware Examples
 |[**Rombertik**](../impact/data-destruction.md)|2015|If a specific anti-analysis check fails, the malware will overwrite the Master Boot Record or the User's home folder [[2]](#2)|
 |[**BlackEnergy**](../impact/data-destruction.md)|2007|BlackEnergy 2 variant contains a Destroy plugin that destroys data stored on victim hard drives by overwriting file contents  [[3]](#3)|
 |[**Conficker**](../impact/data-destruction.md)|2008|resets system restore points and deletes backup files [[4]](#4)|
+|[**MazarBot**](../xample-malware/mazarbot.md)|2016|Can erase phone data  [[5]](#5)|
 
 References
 ----------
@@ -37,3 +38,5 @@ References
 <a name="3">[3]</a> https://securelist.com/be2-extraordinary-plugins-siemens-targeting-dev-fails/68838/
 
 <a name="4">[4]</a> https://en.wikipedia.org/wiki/Conficker
+
+<a name="5">[5]</a> https://heimdalsecurity.com/blog/security-alert-mazar-bot-active-attacks-android-malware/

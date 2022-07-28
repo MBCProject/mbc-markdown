@@ -98,6 +98,9 @@ jmp short loc_401326
 ```
 |[**Rombertik**](../anti-static-analysis/exe-code-obfuscate.md)|2015|Most of the malware file consists of unnecessary code or unnecessary data [[4]](#4)|
 |[**Ursnif**](../anti-static-analysis/exe-code-obfuscate.md)|2016|Creates an encrypted Registry key called TorClient to store its data [[5]](#5)|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Poison Ivy variant encrypts all its strings [[6]](#6)|
+|[**SamSam**](../xample-malware/samsam.md)|2015|SamSam obfuscates functions, class names and strings, including the list of targeted file extensions, the help file contents and environment variables using DES encryption with a fixed hard-coded key and the IV  [[7]](#7)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|The configuration data block is encoded with a NOT XOR 0xFF operation  [[8]](#8)|
 
 References
 ----------
@@ -110,3 +113,9 @@ References
 <a name="4">[4]</a> https://blogs.cisco.com/security/talos/rombertik
 
 <a name="5">[5]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-variant-dreambot-adds-tor-functionality
+
+<a name="6">[6]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf
+
+<a name="7">[7]</a> https://blog.talosintelligence.com/2018/01/samsam-evolution-continues-netting-over.html
+
+<a name="8">[8]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en

@@ -19,6 +19,7 @@ Malware Examples
 |[**YiSpecter**](../persistence/modify-service.md)|2015|Hijacks other installed applications' launch routines to use "ADPage" (an installed malicious app) to display advertisements  [[2]](#2)|
 |[**BlackEnergy**](../persistence/modify-service.md)|2007|Locates an inactive driver service to Hijack and set it to start automatically [[3]](#3)|
 |[**Conficker**](../persistence/modify-service.md)|2008|Copies itself into the $systemroot%\system32 directory and registers as a service  [[4]](#4)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|Shamoon enables the RemoteRegistry service to allow remote registry modification [2] [[5]](#5)|
 
 References
 ----------
@@ -29,3 +30,5 @@ References
 <a name="3">[3]</a> https://blog-assets.f-secure.com/wp-content/uploads/2019/10/15163408/BlackEnergy_Quedagh.pdf
 
 <a name="4">[4]</a> https://en.wikipedia.org/wiki/Conficker
+
+<a name="5">[5]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-returns-to-wipe-systems-in-middle-east-europe/

@@ -40,7 +40,7 @@ def fuzzy_file_directory_search(files, string): # Searches file directories for 
     return f
 
 
-def populate_behavior(name, date, reference, path, description):
+def populate_behavior(name, date, reference, path, description, orig_file):
     # if len(sys.argv) != 4:
     #     print("This script needs three command-line parameters: the malware name, date, and reference link. Additionally, paste the markdown into the input file")
     #     return 
@@ -95,7 +95,7 @@ def populate_behavior(name, date, reference, path, description):
     reference_num = len(re.findall(reference_regex, mbcFile)) + 1
 
     # Building the text
-    malware_example_text = "|[**{}**]({})|{}|{} [[{}]](#{})|\n".format(name, path, date, description, reference_num, reference_num)
+    malware_example_text = "|[**{}**]({})|{}|{} [[{}]](#{})|\n".format(name, orig_file, date, description, reference_num, reference_num)
     reference_text = '\n<a name="{}">[{}]</a> {}\n'.format(reference_num, reference_num, reference)
     
     # Insert malware notation in the line above the Reference line (which should be the bottom of malware examples)
@@ -247,7 +247,7 @@ def populate_malware_example(input_file):
                 xample_file_lines.insert(references_line, behavior_text)
 
                 # Add malware entry into the behavior file itself
-                populate_behavior(name_line[0], date, reference_link, mbc_file, description)
+                populate_behavior(name_line[0], date, reference_link, mbc_file, description, modified_xample_file)
 
     # Fix some spacing issues between sections if present
     behaviors_line = file_search(xample_file_lines, 'Behaviors')

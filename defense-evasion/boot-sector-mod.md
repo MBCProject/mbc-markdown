@@ -16,7 +16,10 @@ Malware Examples
 |Name|Date|Description|
 |---|---|---|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|An MBR bootkit and a BIOS bootkit targeting Award BIOS. [[1]](#1)|
+|[**TrickBot**](../defense-evasion/rootkit-behavior.md)|2016|Can implement malicious code into firmware, allowing read, write, and/or erasure of the UEFI/BIOS firmware  [[2]](#24)|
 
 References
 ----------
 <a name="1">[1]</a> https://www.webroot.com/blog/2011/09/13/mebromi-the-first-bios-rootkit-in-the-wild/
+
+<a name="2">[2]</a> https://eclypsium.com/wp-content/uploads/2020/12/TrickBot-Now-Offers-TrickBoot-Persist-Brick-Profit.pdf

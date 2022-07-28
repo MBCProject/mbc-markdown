@@ -26,6 +26,8 @@ Malware Examples
 |[**Hupigon**](../collection/keylogging.md)|2013|Certain variants of the malware may have keylogging functionality [[1]](#1)|
 |[**UP007**](../collection/keylogging.md)|2016|The malware logs keystrokes to a file  [[2]](#2)|
 |[**BlackEnergy**](../collection/keylogging.md)|2007|Keylogger plugin allows for collection of keystrokes [[3]](#3)|
+|[**DarkComet**](../collection/keylogging.md)|2008|DarkComet can capture keystrokes [[4]](#4)|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Can capture keystrokes  [[5]](#5)|
 
 References
 ----------
@@ -34,3 +36,7 @@ References
 <a name="2">[2]</a> https://citizenlab.ca/2016/04/between-hong-kong-and-burma/
 
 <a name="3">[3]</a> https://securelist.com/be2-custom-plugins-router-abuse-and-target-profiles/67353/
+
+<a name="4">[4]</a> https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/
+
+<a name="5">[5]</a> https://www.cyber.nj.gov/threat-center/threat-profiles/trojan-variants/poison-ivy

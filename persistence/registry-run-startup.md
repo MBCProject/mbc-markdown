@@ -26,6 +26,9 @@ Malware Examples
 |[**Ursnif**](../persistence/registry-run-startup.md)|2016|Adds registry entries to ensure automatic execution at every system startup  [[9]](#9)|
 |[**BlackEnergy**](../persistence/registry-run-startup.md)|2007|BlackEnergy 3 variant drops its main DLL component and then creates a .lnk shortcut to that file in the startup folder  [[10]](#10)|
 |[**Conficker**](../persistence/registry-run-startup.md)|2008|To start itself at system boot, the virus saces a copy of its DLL form to a random filename in the Windows system folder, then adds registry keys to have svchost.exe invoke that DLL as an invisible network service  [[11]](#11)|
+|[**DarkComet**](../persistence/registry-run-startup.md)|2008|adds several registry entries to enable automatic execution at startup  [[12]](#12)|
+|[**Emotet**](../persistence/registry-run-startup.md)|2018|To start itself at system boot, Emotet adds the downloaded payload to the registry to maintain persistence [[13]](#13)|
+|[**Bagle**](../xample-malware/bagle.md)|2004|Adds registry keys to enable its automatic execution at every system startup  [[14]](#14)|
 
 References
 ----------
@@ -50,3 +53,9 @@ References
 <a name="10">[10]</a> https://blog-assets.f-secure.com/wp-content/uploads/2019/10/15163408/BlackEnergy_Quedagh.pdf
 
 <a name="11">[11]</a> https://en.wikipedia.org/wiki/Conficker
+
+<a name="12">[12]</a> https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/
+
+<a name="13">[13]</a> https://cofense.com/recent-geodo-malware-campaigns-feature-heavily-obfuscated-macros/
+
+<a name="14">[14]</a> https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/WORM_BAGLE.U/

@@ -98,6 +98,7 @@ Malware Examples
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|May 2018|GravityRAT checks system temperature by recording thermal readings for detecting VMs. Heat levels indicate whether the system is a VM. [[3]](#3)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|WebCobra injects malicious code to svchost.exe and uses an infinite loop to check all open windows and to compare each window’s title bar text with a set of strings to determine whether it is running in an isolated, malware analysis environment [[4]](#4)|
 |[**Redhip**](../xample-malware/redhip.md)|2011|Redhip detects VMWare, Virtual PC and Virtual Box. It also detects VM environments in general by considering timing lapses. [[6]](#6)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|Emotet checks for various processes that are associated with various virtual machines by comparing hash values of the process names with the hash values of the list of running process names [[7]](#7)|
 
 References
 ----------
@@ -112,3 +113,5 @@ References
 <a name="5">[5]</a> https://github.com/LordNoteworthy/al-khaser
 
 <a name="6">[6]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
+
+<a name="7">[7]</a> https://securelist.com/the-banking-trojan-emotet-detailed-analysis/69560/

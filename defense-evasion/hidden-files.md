@@ -27,7 +27,10 @@ Malware Examples
 |---|---|---|
 |[**GotBotKR**](../defense-evasion/hidden-files.md)|2019| GoBotKR stores itself in a file with Hidden and System attributes. [[1]](#1)|
 
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|Modifies target files' time to August 2012 as an antiforensic trick  [[2]](#2)|
 
 References
 ----------
 <a name="1">[1]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
+
+<a name="2">[2]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-returns-to-wipe-systems-in-middle-east-europe/
