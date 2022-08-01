@@ -2,7 +2,7 @@
 |---|---|
 |**ID**|**F0004**|
 |**Objective(s)**|[Defense Evasion](../defense-evasion)|
-|**Related ATT&CK Sub-Techniques**|Impair Defenses: Disable or Modify Tools ([T1562.001](https://attack.mitre.org/techniques/T1562/001), [T1629.003] (https://attack.mitre.org/techniques/T1629/003/))|
+|**Related ATT&CK Sub-Techniques**|Impair Defenses: Disable or Modify Tools ([T1562.001](https://attack.mitre.org/techniques/T1562/001), [T1629.003](https://attack.mitre.org/techniques/T1629/003/))|
 
 
 Disable or Evade Security Tools
@@ -11,7 +11,7 @@ Malware may disable or evade security tools to avoid detection. Security tools i
 
 Malware-related methods extending ATT&CK's definition are below. 
 
-See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://attack.mitre.org/techniques/T1562/001), [T1629.003] (https://attack.mitre.org/techniques/T1629/003/))**.
+See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://attack.mitre.org/techniques/T1562/001), [T1629.003](https://attack.mitre.org/techniques/T1629/003/))**.
 
 Methods
 -------
