@@ -2,13 +2,13 @@
 |---|---|
 |**ID**|**F0001**|
 |**Objective(s)**|[Anti-Behavioral Analysis](../anti-behavioral-analysis), [Anti-Static Analysis](../anti-static-analysis), [Defense Evasion](../defense-evasion)|
-|**Related ATT&CK Sub-Technique**|[Obfuscated Files or Information: Software Packing](https://attack.mitre.org/techniques/T1027/002)|
+|**Related ATT&CK Sub-Technique**|Obfuscated Files or Information: Software Packing ([T1027.002](https://attack.mitre.org/techniques/T1027/002/), [T1406.002](https://attack.mitre.org/techniques/T1406/002/))|
 
 Software Packing
 ================
 This code characteristic - Software Packing - can make static and behavioral analysis difficult and includes packing with software protectors, such as Themida and Armadillo [[1]](#1). Methods related to anti-analysis are below. This behavior covers both characteristics of the malware (i.e., how it is packed) as well as behaviors of the malware (e.g., the malware packs another executable file).
 
-This description refines the ATT&CK [**Obfuscated Files or Information: Software Packing**](https://attack.mitre.org/techniques/T1027/002) sub-technique.
+This description refines the ATT&CK **Obfuscated Files or Information: Software Packing ([T1027.002](https://attack.mitre.org/techniques/T1027/002/), [T1406.002](https://attack.mitre.org/techniques/T1406/002/))** techniques.
 
 Methods
 -------
