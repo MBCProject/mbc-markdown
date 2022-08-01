@@ -2,14 +2,14 @@
 |---|---|
 |**ID**|**E1059**|
 |**Objective(s)**|[Execution](../execution)|
-|**Related ATT&CK Technique**|Command and Scripting Interpreter [(T1059](https://attack.mitre.org/techniques/T1059), [T1623)](https://attack.mitre.org/techniques/T1623)|
+|**Related ATT&CK Technique**|Command and Scripting Interpreter ([T1059](https://attack.mitre.org/techniques/T1059), [T1623](https://attack.mitre.org/techniques/T1623))|
 
 
 Command and Scripting Interpreter
 =================================
 Malware may abuse command and script interpreters to execute commands, scripts, or binaries.
 
-**See ATT&CK Technique:** **Command and Scripting Interpreter [(T1059](https://attack.mitre.org/techniques/T1059), [T1623)](https://attack.mitre.org/techniques/T1623)**.
+**See ATT&CK Technique:** **Command and Scripting Interpreter ([T1059](https://attack.mitre.org/techniques/T1059), [T1623](https://attack.mitre.org/techniques/T1623))**.
 
 Malware Examples
 ----------------

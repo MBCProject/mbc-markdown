@@ -2,7 +2,7 @@
 |---|---|
 |**ID**|**E1027**|
 |**Objective(s)**|[Anti-Static Analysis](../anti-static-analysis), [Defense Evasion](../defense-evasion)|
-|**Related ATT&CK Technique**|[Obfuscated Files or Information](https://attack.mitre.org/techniques/T1027)|
+|**Related ATT&CK Technique**|Obfuscated Files or Information ([T1027](https://attack.mitre.org/techniques/T1027/)), Obfuscated Files or Information: Steganography ([T1406.001](https://attack.mitre.org/techniques/T1406/001/))|
 
 
 Obfuscated Files or Information
@@ -13,7 +13,7 @@ A related MBC behavior (code characteristic), associated explicitly with executa
 
 Another related MBC behavior (code characteristic), is [Software Packing](../anti-static-analysis/software-packing.md) which has methods capturing specific packers and types of compression.
 
-See ATT&CK: [**Obfuscated Files or Information**](https://attack.mitre.org/techniques/T1027/).
+See ATT&CK: **Obfuscated Files or Information ([T1027](https://attack.mitre.org/techniques/T1027/)), Obfuscated Files or Information: Steganography ([T1406.001](https://attack.mitre.org/techniques/T1406/001/))**.
 
 Instead of being listed alphabetically, methods have been grouped to better faciliate labeling and mapping.
 

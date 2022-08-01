@@ -16,7 +16,7 @@ Behaviors that enable malware to achieve its mission of manipulating, interrupti
 * **Disk Wipe** [F0014](../impact/disk-wipe.md)
 * **Exploit Kit Behavior** [E1190](../impact/exploit-kit-behavior.md)
 * **Exploitation for Client Execution** [E1203](../execution/exploit-software.md)
-* **Generate Network Traffic from Victim** [E1643](../impact/generate-traffic-from-victim.md)
+* **Generate Traffic from Victim** [E1643](../impact/generate-traffic-from-victim.md)
 * **Manipulate Network Traffic** [B0019](../impact/manipulate-network-traffic.md)
 * **Modify Hardware** [B0042](../impact/modify-hardware.md)	
 * **Remote Access** [B0022](../impact/remote-access.md)

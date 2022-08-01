@@ -2,7 +2,7 @@
 |---|---|
 |**ID**|**F0004**|
 |**Objective(s)**|[Defense Evasion](../defense-evasion)|
-|**Related ATT&CK Sub-Technique**|[Impair Defenses: Disable or Modify Tools](https://attack.mitre.org/techniques/T1562/001/)|
+|**Related ATT&CK Sub-Techniques**|Impair Defenses: Disable or Modify Tools ([T1562.001](https://attack.mitre.org/techniques/T1562/001), [T1629.003] (https://attack.mitre.org/techniques/T1629/003/))|
 
 
 Disable or Evade Security Tools
@@ -11,7 +11,7 @@ Malware may disable or evade security tools to avoid detection. Security tools i
 
 Malware-related methods extending ATT&CK's definition are below. 
 
-See ATT&CK: [**Impair Defenses: Disable or Modify Tools**](https://attack.mitre.org/techniques/T1562/001).
+See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://attack.mitre.org/techniques/T1562/001), [T1629.003] (https://attack.mitre.org/techniques/T1629/003/))**.
 
 Methods
 -------
@@ -22,7 +22,7 @@ Methods
 |**Disable System File Overwrite Protection**|F0004.002|Disables system file overwrite protection mechanisms such as Windows file protection, thereby enabling system files to be modified or replaced.|
 |**Force Lazy Writing**|F0004.006|Some operating systems will sometimes use a form of "lazy writing" for disk I/O, which may obscure the true provenance of the write operation. This method occurs when code intentionally forces the operating system to perform a lazy writing operation. For example, in Windows, a file may be opened, memory mapped, and closed, but the memory map will still exist and can be written to, which will cause a lazy write that looks like it is coming from the System process. [[3]](#3)|
 |**Heavens Gate**|F0004.008|Malware evades endpoint security products by invoking 64-bit code in 32-bit processes, effectively bypassing user-mode hooks. [[4]](#4)|
-|**Modify Policy**|F0004.005|Malware may modify policies to make software less effective.|
+|**Modify Policy**|F0004.005|Malware may modify policies to make software less effective. This is similar to ATT&CK's Subvert Trust Controls: Code Signing Policy Modification ([T1553.006](https://attack.mitre.org/techniques/T1553/006/), [T1632.001](https://attack.mitre.org/techniques/T1632/001/))|
 |**Unhook APIs**|F0004.003|Security products may hook APIs to monitor the behavior of malware. To avoid being found, malware may load DLLs in memory and overwrite their bytes.|
 |**Bypass Windows File Protection**|F0004.007|Malware bypasses Windows file protection.|
 |**Disable Code Integrity**|F0004.009|Malware disables Code Integrity driver.|

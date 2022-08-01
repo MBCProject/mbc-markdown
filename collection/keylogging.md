@@ -2,14 +2,14 @@
 |---|---|
 |**ID**|**F0002**|
 |**Objective(s)**|[Collection](../collection), [Credential Access](../credential-access)|
-|**Related ATT&CK Sub-Technique**|[Input Capture: Keylogging](https://attack.mitre.org/techniques/T1056/001)|
+|**Related ATT&CK Sub-Technique**|Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/techniques/T1056/001), [T1417.001](https://attack.mitre.org/techniques/T1417/001/))|
 
 
 Keylogging
 ==========
 Malware captures user keyboard input.
 
-**See ATT&CK:** [**Input Capture: Keylogging**](https://attack.mitre.org/techniques/T1056/001).
+**See ATT&CK:** **Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/techniques/T1056/001), [T1417.001](https://attack.mitre.org/techniques/T1417/001/))**
 
 Methods
 -------
