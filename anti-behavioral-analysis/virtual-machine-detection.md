@@ -2,14 +2,14 @@
 |---|---|
 |**ID**|**B0009**|
 |**Objective(s)**|[Anti-Behavioral Analysis](../anti-behavioral-analysis)|
-|**Related ATT&CK Technique**|[Virtualization/Sandbox Evasion](https://attack.mitre.org/techniques/T1497/)|
+|**Related ATT&CK Technique**|Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/))|
 
 
 Virtual Machine Detection
 =========================
 Detects whether the malware instance is being executed in a virtual machine (VM), such as VMWare. If so, conditional execution selects a benign execution path. [[1]](#1)
 
-The Virtual Machine Detection behavior relates to anti-analysis, whereas a related ATT&CK technique relates to [Defense Evasion](../defense-evasion): for details, see the ATT&CK [**Virtualization/Sandbox Evasion**](https://attack.mitre.org/techniques/T1497/) technique and its sub-techniques.
+The Virtual Machine Detection behavior relates to anti-analysis, whereas a related ATT&CK technique relates to [Defense Evasion](../defense-evasion): for details, see the ATT&CK **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/))** techniques and their sub-techniques.
 
 Methods
 -------

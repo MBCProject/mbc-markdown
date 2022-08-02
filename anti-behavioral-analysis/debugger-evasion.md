@@ -2,7 +2,7 @@
 |---|---|
 |**ID**|**B0002**|
 |**Objective(s)**|[Anti-Behavioral Analysis](../anti-behavioral-analysis)|
-|**Related ATT&CK Technique**|None|
+|**Related ATT&CK Technique**|[Debugger Evasion](https://attack.mitre.org/techniques/T1622/)|
 
 
 Debugger Evasion
@@ -10,6 +10,8 @@ Debugger Evasion
 Behaviors that make debugging difficult.
 
 A thorough reference for anti-debugging, both detection and evasion, is given in [[1]](#1).
+
+The subsequently defined ATT&CK technique [Debugger Evasion](https://attack.mitre.org/techniques/T1622/) is related to this MBC behavior.
 
 Methods
 -------
