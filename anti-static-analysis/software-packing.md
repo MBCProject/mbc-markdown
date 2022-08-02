@@ -33,6 +33,11 @@ Malware Examples
 |Name|Date|Description|
 |---|---|---|
 |[**Redhip**](../xample-malware/redhip.md)|2011|Redhip samples are packed with different custom packers. [[3]](#3)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|The malware comes packed by a crypter/FUD [[4]](#4)|
+|[**Conficker**](../xample-malware/conficker.md)|2008|Conficker is propagated as a DLL which has been backed using the UPX packer [[5]](#5)|
+|[**DarkComet**](../xample-malware/dark-comet.md)|2008|Has the option to compress its payload using UPX or MPRESS  [[6]](#6)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|Has a custom packer to obfuscate itself  [[7]](#7)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|Emotet uses custom packers which first decrypt the loaders and the loaders decrypt and load Emotet's main payloads [[8]](#8)|
 
 References
 ----------
@@ -41,3 +46,13 @@ References
 <a name="2">[2]</a> Jiang Ming et al, Towards Paving the Way for Large-Scale Windows Malware Analysis: Generic Binary Unpacking with Orders-of-Magnitude Performance Boost, October 2018, https://dl.acm.org/citation.cfm?id=3243771.
 
 <a name="3">[3]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
+
+<a name="4">[4]</a> https://www.bleepingcomputer.com/virus-removal/remove-kovter-trojan
+
+<a name="5">[5]</a> http://www.csl.sri.com/users/vinod/papers/Conficker/
+
+<a name="6">[6]</a> https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/
+
+<a name="7">[7]</a> https://www.securityartwork.es/wp-content/uploads/2017/07/Trickbot-report-S2-Grupo.pdf
+
+<a name="8">[8]</a> https://documents.trendmicro.com/assets/white_papers/ExploringEmotetsActivities_Final.pdf
