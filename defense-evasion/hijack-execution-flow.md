@@ -2,7 +2,7 @@
 |---|---|
 |**ID**|**F0015**|
 |**Objective(s)**|[Anti-Behavioral Analysis](../anti-behavioral-analysis), [Collection](../collection), [Credential Access](../credential-access), [Defense Evasion](../defense-evasion), [Persistence](../persistence), [Privilege Escalation](../privilege-escalation)|
-|**Related ATT&CK Technique**|[Hijack Execution Flow](https://attack.mitre.org/techniques/T1574/)|
+|**Related ATT&CK Technique**|Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques/T1574), [T1625](https://attack.mitre.org/techniques/T1625))|
 
 
 Hijack Execution Flow
@@ -15,7 +15,7 @@ For discussion related to the Credential Access and Collection objectives, see [
 
 For hooking related to memory dump evasion, see [Memory Dump Evasion](../anti-behavioral-analysis/memory-dump-evasion.md).
 
-See ATT&CK: [**Hijack Execution Flow**](https://attack.mitre.org/techniques/T1574/).
+See ATT&CK: **Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques/T1574), [T1625](https://attack.mitre.org/techniques/T1625))**.
 
 Methods
 -------

@@ -2,12 +2,12 @@
 |---|---|
 |**ID**|**E1195**|
 |**Objective(s)**|[Lateral Movement](../lateral-movement)|
-|**Related ATT&CK Technique**|[Supply Chain Compromise](https://attack.mitre.org/techniques/T1195/)|
+|**Related ATT&CK Technique**|Supply Chain Compromise ([T1195](https://attack.mitre.org/techniques/T1195/), [T1474](https://attack.mitre.org/techniques/T1474/))|
 
 
 Supply Chain Compromise
 =======================
-The supply chain may be compromised to enable initial malware infection. Malware-related methods are listed below to supplement the information available defined in ATT&CK: [**Supply Chain Compromise**](https://attack.mitre.org/techniques/T1195/).  
+The supply chain may be compromised to enable initial malware infection. MBC objectives don't encompass initial infection, but the malware-related methods are listed below supplement the information available defined in ATT&CK and allow for lateral movement: **Supply Chain Compromise ([T1195](https://attack.mitre.org/techniques/T1195/), [T1474](https://attack.mitre.org/techniques/T1474/))**.  
 
 Methods
 -------

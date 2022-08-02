@@ -2,14 +2,14 @@
 |---|---|
 |**ID**|**E1564**|
 |**Objective(s)**|[Defense Evasion](../defense-evasion), [Persistence](../persistence)|
-|**Related ATT&CK Technique**|[Hide Artifacts](https://attack.mitre.org/techniques/T1564)|
+|**Related ATT&CK Technique**|Hide Artifacts ([T1564](https://attack.mitre.org/techniques/T1564/), [T1628](https://attack.mitre.org/techniques/T1628/))|
 
 
 Hide Artifacts
-================
+==============
 Malware may hide artifacts to evade detection and/or to persist on the system. See potential methods related to malware below. 
 
-See ATT&CK: [**Hide Artifacts**](https://attack.mitre.org/techniques/T1564/).
+See ATT&CK: **Hide Artifacts ([T1564](https://attack.mitre.org/techniques/T1564/), [T1628](https://attack.mitre.org/techniques/T1628/))**.
 
 Methods
 -------

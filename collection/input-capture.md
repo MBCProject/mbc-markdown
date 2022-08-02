@@ -2,14 +2,14 @@
 |---|---|
 |**ID**|**E1056**|
 |**Objective(s)**|[Collection](../collection), [Credential Access](../credential-access)|
-|**Related ATT&CK Technique**|[Input Capture](https://attack.mitre.org/techniques/T1056)|
+|**Related ATT&CK Technique**|Input Capture ([T1056](https://attack.mitre.org/techniques/T1056), [T1417](https://attack.mitre.org/techniques/T1417/))|
 
 
 Input Capture
 =============
 Malware captures user input.
 
-**See ATT&CK:** [**Input Capture**](https://attack.mitre.org/techniques/T1056).
+**See ATT&CK:** **Input Capture ([T1056](https://attack.mitre.org/techniques/T1056), [T1417](https://attack.mitre.org/techniques/T1417/))**.
 
 Methods
 -------
