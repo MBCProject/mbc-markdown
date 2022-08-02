@@ -1,9 +1,0 @@
-Mebromi X0013
-Reference [1] https://www.webroot.com/blog/2011/09/13/mebromi-the-first-bios-rootkit-in-the-wild/
-
-
-
-Defense Evasion::boot-sector-mod (F0013) [1] An MBR bootkit and a BIOS bootkit targeting Award BIOS.
-Defense Evasion::Pre-OS Boot::System Firmware (T1542.001) [1] Malware performs BIOS modification and can download and execute a file as well as protect itself from removal
-Execution::Conditional Execution (B0025) [1] Malware only proceeds if it detects the BIOS ROM is Award BIOS
-Execution::Install Additional Program (B0023) [1] Malware contains a dropper that installs additional programs like Cbrom.exe

@@ -33,11 +33,11 @@ Malware Examples
 |Name|Date|Description|
 |---|---|---|
 |[**Redhip**](../xample-malware/redhip.md)|2011|Redhip samples are packed with different custom packers. [[3]](#3)|
-|[**Kovter**](../anti-static-analysis/software-packing.md)|2016|The malware comes packed by a crypter/FUD [[4]](#4)|
-|[**Conficker**](../anti-static-analysis/software-packing.md)|2008|Conficker is propagated as a DLL which has been backed using the UPX packer [[5]](#5)|
-|[**DarkComet**](../anti-static-analysis/software-packing.md)|2008|Has the option to compress its payload using UPX or MPRESS  [[6]](#6)|
-|[**TrickBot**](../anti-static-analysis/software-packing.md)|2016|Has a custom packer to obfuscate itself  [[7]](#7)|
-|[**Emotet**](../anti-static-analysis/software-packing.md)|2018|Emotet uses custom packers which first decrypt the loaders and the loaders decrypt and load Emotet's main payloads [[8]](#8)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|The malware comes packed by a crypter/FUD [[4]](#4)|
+|[**Conficker**](../xample-malware/conficker.md)|2008|Conficker is propagated as a DLL which has been backed using the UPX packer [[5]](#5)|
+|[**DarkComet**](../xample-malware/dark-comet.md)|2008|Has the option to compress its payload using UPX or MPRESS  [[6]](#6)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|Has a custom packer to obfuscate itself  [[7]](#7)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|Emotet uses custom packers which first decrypt the loaders and the loaders decrypt and load Emotet's main payloads [[8]](#8)|
 
 References
 ----------

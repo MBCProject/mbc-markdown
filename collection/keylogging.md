@@ -23,10 +23,10 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |---|---|---|
-|[**Hupigon**](../collection/keylogging.md)|2013|Certain variants of the malware may have keylogging functionality [[1]](#1)|
-|[**UP007**](../collection/keylogging.md)|2016|The malware logs keystrokes to a file  [[2]](#2)|
-|[**BlackEnergy**](../collection/keylogging.md)|2007|Keylogger plugin allows for collection of keystrokes [[3]](#3)|
-|[**DarkComet**](../collection/keylogging.md)|2008|DarkComet can capture keystrokes [[4]](#4)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|Certain variants of the malware may have keylogging functionality [[1]](#1)|
+|[**UP007**](../xample-malware/up007.md)|2016|The malware logs keystrokes to a file  [[2]](#2)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|Keylogger plugin allows for collection of keystrokes [[3]](#3)|
+|[**DarkComet**](../xample-malware/dark-comet.md)|2008|DarkComet can capture keystrokes [[4]](#4)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Can capture keystrokes  [[5]](#5)|
 
 References

@@ -22,7 +22,7 @@ Malware Examples
 |Name|Date|Description|
 |---|---|---|
 |[**SYNful Knock**](../xample-malware/synful-knock.md)|2015|SYNful Knock is a stealthy modification of the router's firmware image that can be used to maintain persistence within a victim's network. [[2]](#2)|
-|[**YiSpecter**](../persistence/component-firmware.md)|2015|Displays brief advertisements whenever the user opens applications on their phone [[3]](#3)|
+|[**YiSpecter**](../xample-malware/yispecter.md)|2015|Displays brief advertisements whenever the user opens applications on their phone [[3]](#3)|
 |[**SYNfulKnock**](../xample-malware/synful-knock.md)|2015|Modification of the router's firmware image that can be used to maintain persistence within a victim's network [[4]](#4)|
 
 References

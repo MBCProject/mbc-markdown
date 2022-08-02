@@ -21,11 +21,9 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |---|---|---|
-|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|Captures input.|
-|[**Rombertik**](../collection/input-capture.md)|2015|The malware injects itself into a browser and captures user input data [[1]](#1)|
-
-|[**Ursnif**](../collection/input-capture.md)|2016|Injects HTML into browser session to collect sensitive online banking information when the victim performs their online banking  [[2]](#2)|
-|[**DarkComet**](../collection/input-capture.md)|2008|Can capture audio and video [[3]](#3)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|The malware injects itself into a browser and captures user input data [[1]](#1)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|Injects HTML into browser session to collect sensitive online banking information when the victim performs their online banking  [[2]](#2)|
+|[**DarkComet**](../xample-malware/dark-comet.md)|2008|Can capture audio and video [[3]](#3)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Can capture audio and video  [[4]](#4)|
 
 References

@@ -26,7 +26,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |---|---|---|
-|[**YiSpecter**](../defense-evasion/hide-artifacts.md)|2015|Hides icons from iOS's SpringBoard as well as use the same name and logos of system apps to trick iOS power users [[1]](#1)|
+|[**YiSpecter**](../xample-malware/yispecter.md)|2015|Hides icons from iOS's SpringBoard as well as use the same name and logos of system apps to trick iOS power users [[1]](#1)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Stuxnet intercepts IRP requests (reads, writes) to devices (NFTS, FAT, CD-ROM). It monitors directory control IRPs, in particular directory query notifications such that when an application requests the list of files, it returns a Stuxnet-specified subset of the true items. These filters hide the files used by Stuxnet to spread through removalbe drives  [[2]](#2)|
 
 References

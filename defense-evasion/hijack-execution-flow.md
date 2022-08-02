@@ -13,7 +13,7 @@ Note that in MBC, Hooking is also associated with the [Defense Evasion](../defen
 
 For discussion related to the Credential Access and Collection objectives, see [Input Capture: Credential API Hooking](https://attack.mitre.org/techniques/T1056/004/).
 
-For hooking related to memory dump evasion, see [Memory Dump Evasion](../anti-behavioral-analysis/evade-memory-dump.md).
+For hooking related to memory dump evasion, see [Memory Dump Evasion](../anti-behavioral-analysis/memory-dump-evasion.md).
 
 See ATT&CK: [**Hijack Execution Flow**](https://attack.mitre.org/techniques/T1574/).
 
@@ -35,7 +35,7 @@ Malware Examples
 |---|---|---|
 |**Kronos**|June 2014|Kronos hooks the API of processes to prevent detection. [[6]](#6)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
-|[**Ursnif**](../defense-evasion/hijack-execution-flow.md)|2016|Hooks various DLL exported functions when the component is loaded in their respective Browser application process is running to monitor network traffic [[7]](#7)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|Hooks various DLL exported functions when the component is loaded in their respective Browser application process is running to monitor network traffic [[7]](#7)|
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|	Abuses Microsoft's Dynamic Data Exchange (DDE) protocol  [[8]](#8)|
 |[**SYNfulKnock**](../xample-malware/synful-knock.md)|2015|Hooks IOS functions to call and initialize the malware  [[9]](#9)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|Escalates privilege by impersonating the token. First uses LogonUser and ImpersonateLoggedOnUser, then ImpersonateNamedPipeClient. [[10]](#10)|

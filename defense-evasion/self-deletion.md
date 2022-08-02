@@ -22,7 +22,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |---|---|---|
-|[**Terminator**](../defense-evasion/self-deletion.md)|2013|Evades sandboxes by terminating and removing itself (DW20.exe) after installation. [[1]](#1)|
+|[**Terminator**](../xample-malware/terminator.md)|2013|Evades sandboxes by terminating and removing itself (DW20.exe) after installation. [[1]](#1)|
 
 
 References

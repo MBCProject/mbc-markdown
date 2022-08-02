@@ -24,9 +24,9 @@ Malware Examples
 |Name|Date|Description|
 |---|---|---|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|A 2018 variant includes a component that erases files and then wipes the master boot record, preventing file recovery.[[1]](#1)|
-|[**Rombertik**](../impact/data-destruction.md)|2015|If a specific anti-analysis check fails, the malware will overwrite the Master Boot Record or the User's home folder [[2]](#2)|
-|[**BlackEnergy**](../impact/data-destruction.md)|2007|BlackEnergy 2 variant contains a Destroy plugin that destroys data stored on victim hard drives by overwriting file contents  [[3]](#3)|
-|[**Conficker**](../impact/data-destruction.md)|2008|resets system restore points and deletes backup files [[4]](#4)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|If a specific anti-analysis check fails, the malware will overwrite the Master Boot Record or the User's home folder [[2]](#2)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|BlackEnergy 2 variant contains a Destroy plugin that destroys data stored on victim hard drives by overwriting file contents  [[3]](#3)|
+|[**Conficker**](../xample-malware/conficker.md)|2008|resets system restore points and deletes backup files [[4]](#4)|
 |[**MazarBot**](../xample-malware/mazarbot.md)|2016|Can erase phone data  [[5]](#5)|
 
 References
