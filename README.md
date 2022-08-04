@@ -67,20 +67,20 @@ Malware objectives are defined in the table below. Follow the links to view asso
 
 |**Objective**|**Description**|
 |---|---|
-|[**Anti-Behavioral Analysis**](./anti-behavioral-analysis/README.md)|Malware aims to prevent, obstruct, or evade behavioral analysis done in a sandbox, debugger, etc.|
-|[**Anti-Static Analysis**](./anti-static-analysis/README.md)|Malware aims to prevent static analysis or make it more difficult. Simpler static analysis identifies features such as embedded strings, executable header information, hash values, and file metadata. More involved static analysis involves the disassembly of the binary code.|
-|[**Collection**](./collection/README.md)|Malware aims to identify and gather information, such as sensitive files, from a target network prior to exfiltration. This objective includes locations on a system or network where the malware may look for information to exfiltrate.|
-|[**Command and Control**](./command-and-control/README.md)|Malware aims to communicate (receive and/or execute remotely submitted commands) with controlling or controlled systems within a target network (C2 servers, bots, etc.).|
-|[**Credential Access**](./credential-access/README.md)|Malware aims to obtain credential access, allowing it or its underlying threat actor to assume control of an account, with the associated system and network permissions.|
-|[**Defense Evasion**](./defense-evasion/README.md)|Malware aims to evade detection or avoid other cybersecurity defenses.|
-|[**Discovery**](./discovery/README.md)|Malware aims to gain knowledge about the system and internal network.|
-|[**Execution**](./execution/README.md)|Malware aims to execute its code on a system to achieve a variety of goals.|
-|[**Exfiltration**](./exfiltration/README.md)|Malware aims to steal data from the system on which it executes. This includes stored data (e.g., files) as well as data input into applications (e.g., web browser).|
-|[**Impact**](./impact/README.md)|Malware aims to achieve its mission of manipulating, interrupting, or destroying systems and data.|
-|[**Lateral Movement**](./lateral-movement/README.md)|Malware aims to propagate through the infection of a system or is able to infect a file after executing on a system. The malware may infect actively (e.g., gain access to a machine directly) or passively (e.g., send malicious email).|
-|[**Persistence**](./persistence/README.md)|Malware aims to remain on a system regardless of system events.|
-|[**Privilege Escalation**](./privilege-escalation/README.md)|Malware aims to obtain a higher level of privilege for execution.|
+|[**Anti-Behavioral Analysis**](./anti-behavioral-analysis/README.md)|Malware aims to prevent, obstruct, or evade behavioral analysis, such as analysis done using a sandbox or debugger.|
+|[**Anti-Static Analysis**](./anti-static-analysis/README.md)|Malware aims to prevent static analysis or make it more difficult.|
+|[**Collection**](./collection/README.md)|Malware aims to identify and gather information from a machine or network.|
+|[**Command and Control**](./command-and-control/README.md)|Malware aims to communicate with compromised systems to control them.|
+|[**Credential Access**](./credential-access/README.md)|Malware aims to steal account names and passwords.|
+|[**Defense Evasion**](./defense-evasion/README.md)|Malware aims to evade detection.|
+|[**Discovery**](./discovery/README.md)|Malware aims to gain knowledge about the environment.|
+|[**Execution**](./execution/README.md)|Malware aims to execute code on a system.|
+|[**Exfiltration**](./exfiltration/README.md)|Malware aims to steal data.|
+|[**Impact**](./impact/README.md)|Malware aims to manipulate, interrupt, or destroy systems or data.|
+|[**Lateral Movement**](./lateral-movement/README.md)|Malware aims to propagate or otherwise move through an environment. Lateral movement may be active, happening via direct machine access, or may be passive (for example, done via malicious email).|
+|[**Persistence**](./persistence/README.md)|Malware aims to remain on a system.|
+|[**Privilege Escalation**](./privilege-escalation/README.md)|Malware aims to obtain higher level permissions.|
 
 
-**Copyright 2021 The MITRE Corporation. [Terms of Use](./tou.md)**
+**Copyright 2022 The MITRE Corporation. [Terms of Use](./tou.md)**
 
