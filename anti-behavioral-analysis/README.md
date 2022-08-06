@@ -14,7 +14,6 @@ Behaviors that prevent, obstruct, or evade behavioral analysis of malware--for e
 * **Emulator Detection** [B0004](../anti-behavioral-analysis/detect-emulator.md)
 * **Emulator Evasion** [B0005](../anti-behavioral-analysis/evade-emulator.md)
 * **Executable Code Virtualization** [B0008](../anti-static-analysis/exe-code-virtualize.md)
-* **Hooking** [F0003](../credential-access/hooking.md)
 * **Memory Dump Evasion** [B0006](../anti-behavioral-analysis/evade-memory-dump.md)
 * **Sandbox Detection** [B0007](../anti-behavioral-analysis/detect-sandbox.md)
 * **Software Packing** [F0001](../anti-static-analysis/software-packing.md)
