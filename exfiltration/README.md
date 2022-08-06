@@ -4,7 +4,7 @@
 
 
 # Exfiltration #
-Behaviors that steal data from the system on which it executes. This includes stored data (e.g., files) as well as data input into applications (e.g., web browser).
+Behaviors that enable malware to steal data from a system. This includes stored data, such as files, as well as data input into applications, such as web browsers.
 
 * **Automated Exfiltration** [E1020](../exfiltration/auto-exfiltrate.md)
 * **Archive Collected Data** [E1560](../exfiltration/data-encrypted.md)
