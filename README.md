@@ -82,5 +82,6 @@ Malware objectives are defined in the table below. Follow the links to view asso
 |[**Privilege Escalation**](./privilege-escalation/README.md)|Malware aims to obtain higher level permissions.|
 
 
-**Copyright 2022 The MITRE Corporation. [Terms of Use](./tou.md)**
+**Copyright 2022 The MITRE Corporation. 
+[Terms of Use](./tou.md)**
 
