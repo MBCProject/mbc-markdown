@@ -83,5 +83,6 @@ Malware objectives are defined in the table below. Follow the links to view asso
 
 
 **Copyright 2022 The MITRE Corporation. 
+
 [Terms of Use](./tou.md)**
 
