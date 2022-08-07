@@ -11,7 +11,7 @@ Behaviors that enable malware to remain on a system regardless of system events,
 * **Hide Artifacts** [E1564](../defense-evasion/hide-artifacts.md)
 * **Hidden Files and Directories** [F0005](../defense-evasion/hidden-files.md)
 * **Hijack Execution Flow** [E1574](../defense-evasion/hijack-execution-flow.md)
-* **Install Insecure or Malicious Configuration** [E1478](../defense-evasion/config-mod.md)
+* **Install Insecure or Malicious Configuration** [B0047](../defense-evasion/config-mod.md)
 * **Kernel Modules and Extensions** [F0010](../persistence/kernel-modules-ext.md)
 * **Malicious Network Driver** [B0026](../persistence/malicious-network-drv.md)
 * **Modify Existing Service** [F0011](../persistence/modify-service.md)
