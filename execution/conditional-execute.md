@@ -11,7 +11,7 @@ Malware checks system environment conditions or characteristics to determine exe
 
 This behavior is related to the [Evade Dynamic Analysis](../anti-behavioral-analysis/evade-dynamic-analysis.md) behavior that obstructs dynamic analysis in a sandbox, emulator, or virtual machine.
 
-Some aspects of conditional execution are related to the ATT&CK [Execution Guardrails (T1480)](https://attack.mitre.org/techniques/T1480) technique; however the ATT&CK technique is not focused on anti-behavioral analysis behaviors.
+Some aspects of this Conditional Execution behavior are related to the ATT&CK [Execution Guardrails (T1480)](https://attack.mitre.org/techniques/T1480) technique; however the ATT&CK technique is not focused on anti-behavioral analysis behaviors.
 
 Methods
 -------
