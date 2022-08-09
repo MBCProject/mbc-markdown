@@ -2,14 +2,14 @@
 |---|---|
 |**ID**|**B0018**|
 |**Objective(s)**|[Impact](../impact)|
-|**Related ATT&CK Technique**|[Resource Hijacking](https://attack.mitre.org/techniques/T1496/)|
+|**Related ATT&CK Technique**|[Resource Hijacking (T1496)](https://attack.mitre.org/techniques/T1496/)|
 
 
 Resource Hijacking
 ==================
 Uses system resources for other purposes; as a result, the system may not be available for intended uses.
 
-The related [Resource Hijacking](https://attack.mitre.org/techniques/T1496/) ATT&CK technique was defined subsequent to this MBC behavior.
+The related [Resource Hijacking (T1496)](https://attack.mitre.org/techniques/T1496/) ATT&CK technique was defined subsequent to this MBC behavior.
 
 Methods
 -------

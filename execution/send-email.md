@@ -2,7 +2,7 @@
 |---|---|
 |**ID**|**B0020**|
 |**Objective(s)**|[Execution](../execution), [Lateral Movement](../lateral-movement)|
-|**Related ATT&CK Technique**|[Phishing](https://attack.mitre.org/techniques/T1566/)|
+|**Related ATT&CK Technique**|[Phishing (T1566)](https://attack.mitre.org/techniques/T1566/)|
 
 
 Send Email

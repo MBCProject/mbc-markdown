@@ -11,7 +11,7 @@ Malware may obstruct dynamic analysis in a sandbox, emulator, or virtual machine
 
 See [Emulator Evasion](../anti-behavioral-analysis/evade-emulator.md) for an  emulator-specific evasion behavior, and see [Conditional Execution](../anti-behavioral-analysis/conditional-execute.md) for a behavior that constrains dynamic execution based on environmental conditions. 
 
-The related Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/)) ATT&CK technique was defined subsequent to this MBC behavior.
+The related Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/)) ATT&CK techniques were defined subsequent to this MBC behavior.
 
 Methods
 -------

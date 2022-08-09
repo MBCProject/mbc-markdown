@@ -2,7 +2,7 @@
 |---|---|
 |**ID**|**B0033**|
 |**Objective(s)**|[Impact](../impact)|
-|**Related ATT&CK Technique**|[Network Denial of Service](https://attack.mitre.org/techniques/T1498/)|
+|**Related ATT&CK Technique**|[Network Denial of Service (T1498)](https://attack.mitre.org/techniques/T1498/)|
 
 
 Denial of Service
@@ -11,7 +11,7 @@ Malware may make a network unavailable, for example, by launching a network-base
 
 Endpoint denial of service behaviors are captured by the [Endpoint Denial of Service](https://attack.mitre.org/techniques/T1499/) technique.
 
-The related [Network Denial of Service](https://attack.mitre.org/techniques/T1498/) ATT&CK technique was defined subsequent to this MBC behavior.
+The related [Network Denial of Service (T1498)](https://attack.mitre.org/techniques/T1498/) ATT&CK technique was defined subsequent to this MBC behavior.
 
 Malware Examples
 ----------------
