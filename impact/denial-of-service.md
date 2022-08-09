@@ -11,7 +11,7 @@ Malware may make a network unavailable, for example, by launching a network-base
 
 Endpoint denial of service behaviors are captured by the [Endpoint Denial of Service](https://attack.mitre.org/techniques/T1499/) technique.
 
-The subsequently defined ATT&CK technique [Network Denial of Service](https://attack.mitre.org/techniques/T1498/) is related to this MBC behavior.
+The related [Network Denial of Service](https://attack.mitre.org/techniques/T1498/) ATT&CK technique was defined subsequent to this MBC behavior.
 
 Malware Examples
 ----------------

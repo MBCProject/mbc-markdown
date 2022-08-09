@@ -9,7 +9,7 @@ Resource Hijacking
 ==================
 Uses system resources for other purposes; as a result, the system may not be available for intended uses.
 
-The subsequently defined ATT&CK technique [Resource Hijacking](https://attack.mitre.org/techniques/T1496/) is related to this MBC behavior.
+The related [Resource Hijacking](https://attack.mitre.org/techniques/T1496/) ATT&CK technique was defined subsequent to this MBC behavior.
 
 Methods
 -------

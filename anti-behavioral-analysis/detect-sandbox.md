@@ -9,8 +9,8 @@ Sandbox Detection
 =================
 Detects whether the malware instance is being executed inside an instrumented sandbox environment (e.g., Cuckoo Sandbox). If so, conditional execution selects a benign execution path.
 
-The Sandbox Detection behavior relates to anti-analysis, whereas a related ATT&CK technique relates to [Defense Evasion](../defense-evasion): for details, see the ATT&CK **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/))** techniques and their sub-techniques.
-
+The related Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/)) ATT&CK technique was defined subsequent to this MBC behavior.
+ 
 Methods
 -------
 |Name|ID|Description|

@@ -9,7 +9,7 @@ Manipulate Network Traffic
 ==========================
 Malware intercepts and manipulates network traffic, typically accessing or modifying data, going to or originating from the system on which the malware instance is executing. Also known as a Man-in-the-Middle attack.
 
-The subsequently defined ATT&CK sub-technique [Data Manipulation: Transmitted Data Manipulation](https://attack.mitre.org/techniques/T1565/002/) is related to this MBC behavior.
+The related [Data Manipulation: Transmitted Data Manipulation](https://attack.mitre.org/techniques/T1565/002/) ATT&CK sub-technique was defined subsequent to this MBC behavior.
 
 Malware Examples
 ----------------
