@@ -87,11 +87,20 @@ This visual representation of the MBC Matrix is based on the ATT&CK Navigator (o
 ## MBC Behaviors vis-a-vis ATT&CK ##
 The table below lists MBC behaviors and related ATT&CK techniques. In most cases, related ATT&CK techniques were defined after the MBC behavior was defined.
 
+|**ID**|**Objective**|**Behavior**|**Related ATT&CK Technique**|
+|---|---|---|---|
+|**B0001**|ANTI-BEHAVIORAL ANALYSIS|Debugger Detection|*none*|
+|**B0002**|ANTI-BEHAVIORAL ANALYSIS|Debugger Evasion|Debugger Evasion ([T1622]())|
+|**B0003**|ANTI-BEHAVIORAL ANALYSIS|Dynamic Analysis Evasion|Virtualization/Sandbox Evasion ([T1497](),[T1633]())|
+|**B0004**|ANTI-BEHAVIORAL|Emulator Detection|*none*|
+|**B0005**|ANTI-BEHAVIORAL|Emulator Evasion|*none*|
+
+
 |**ID**|**Behavior Name**|**Related ATT&CK Technique**|
 |---|---|---|
-|**B0001**|ANTI-BEHAVIORAL ANALYSIS::**Debugger Detection**|*none*|
-|**B0002**|ANTI-BEHAVIORAL ANALYSIS::**Debugger Evasion**|Debugger Evasion ([T1622]())|
-|**B0003**|ANTI-BEHAVIORAL ANALYSIS::**Dynamic Analysis Evasion**|Virtualization/Sandbox Evasion ([T1497](),[T1633]())|
+|**B0001**|ANTI-BEHAVIORAL ANALYSIS::Debugger Detection|*none*|
+|**B0002**|ANTI-BEHAVIORAL ANALYSIS::Debugger Evasion|Debugger Evasion ([T1622]())|
+|**B0003**|ANTI-BEHAVIORAL ANALYSIS::Dynamic Analysis Evasion|Virtualization/Sandbox Evasion ([T1497](),[T1633]())|
 |**B0004**|ANTI-BEHAVIORAL::Emulator Detection|*none*|
 |**B0005**|ANTI-BEHAVIORAL::Emulator Evasion|*none*|
 |**B0006**|ANTI-BEHAVIORAL::Memory Dump Evasion|*none*|
