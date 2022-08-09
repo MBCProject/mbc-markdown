@@ -89,10 +89,10 @@ The table below lists MBC behaviors and related ATT&CK techniques. In most cases
 
 |**ID**|**Objective(s)**|**Behavior**|**Related ATT&CK Technique**|
 |---|---|---|---|
-|**B0001**|ANTI-BEHAVIORAL ANALYSIS|Debugger Detection|*none*|
-|**B0002**|ANTI-BEHAVIORAL ANALYSIS|Debugger Evasion|Debugger Evasion ([T1622]())|
-|**B0003**|ANTI-BEHAVIORAL ANALYSIS|Dynamic Analysis Evasion|Virtualization/Sandbox Evasion ([T1497](),[T1633]())|
-|**B0004**|ANTI-BEHAVIORAL|Emulator Detection|*none*|
+|**B0001**|ANTI-BEHAVIORAL ANALYSIS|**Debugger Detection**|*none*|
+|**B0002**|ANTI-BEHAVIORAL ANALYSIS|**Debugger Evasion**|Debugger Evasion ([T1622]())|
+|**B0003**|ANTI-BEHAVIORAL ANALYSIS|**Dynamic Analysis Evasion**|Virtualization/Sandbox Evasion ([T1497](),[T1633]())|
+|**B0004**|ANTI-BEHAVIORAL|**Emulator Detection**|*none*|
 |**B0005**|ANTI-BEHAVIORAL|Emulator Evasion|*none*|
 |**B0006**|ANTI-BEHAVIORAL|Memory Dump Evasion|*none*|
 |**B0007**|ANTI-BEHAVIORAL|Sandbox Detection|Virtualization/Sandbox Evasion: System Checks ([T1497.001](),[T1633.001]()); Virtualization/Sandbox Evasion: User Activity Based Checks ([T1497.002]())|
@@ -103,7 +103,7 @@ The table below lists MBC behaviors and related ATT&CK techniques. In most cases
 |**B0012**|ANTI-STATIC ANALYSIS|Disassembler Evasion|*none*|
 |**B0013**|DISCOVERY|Analysis Tool Discovery|*none*|
 |**B0014**|DISCOVERY|SMTP Connection Discovery|*none*|
-|**B0015**|*not defined*||
+|**B0015**|*not defined*|---|
 |**B0016**|IMPACT|Compromise Data Integrity|Data Manipulation: Stored Data Manipulation ([T1565.001]())|
 |**B0017**|IMPACT|Destroy Hardware|*none*|
 |**B0018**|IMPACT|Resource Hijacking|Resource Hijacking ([T1496]())|
@@ -118,18 +118,18 @@ The table below lists MBC behaviors and related ATT&CK techniques. In most cases
 |**B0027**|DEFENSE EVASION|Alternative Installation Location|*none*|
 |**B0028**|CREDENTIAL ACCESS|Cryptocurrency|*none*|
 |**B0029**|DEFENSE EVASION|Polymorphic Code|*none*|
-|**B0030**|C2|Command and Control Communication|*none*|
-|**B0031**|C2|Domain Name Generation|Dynamic Resolution: Domain Name Generation ([T1568.002]())|
+|**B0030**|COMMAND AND CONTROL|Command and Control Communication|*none*|
+|**B0031**|COMMAND AND CONTROL|Domain Name Generation|Dynamic Resolution: Domain Name Generation ([T1568.002]())|
 |**B0032**|ANTI-STATIC ANALYSIS|Executable Code Obfuscation|*none*|
 |**B0033**|IMPACT|Denial of Service|Network Denial of Service (T1498)|
 |**B0034**|ANTI-STATIC ANALYSIS|Executable Code Obfuscation|*none*|
 |**B0035**|PERSISTENCE|Shutdown Event|*none*|
 |**B0036**|ANTI-BEHAVIORAL ANALYSIS|Capture Evasion|*none*|
 |**B0037**|DEFENSE EVASION|Bypass Data Execution Prevention|*none*|
-|**B0038**|DISCOVERY|Self Discovery|*none*|
-|**B0039**|IMPACT|Spamming|*none*|
-|**B0040**|DEFENSE EVASION|Covert Location|*none*|
-|**B0041**|*not defined*||
+|**B0038**|DISCOVERY|**Self Discovery**|*none*|
+|**B0039**|IMPACT|**Spamming**|*none*|
+|**B0040**|DEFENSE EVASION|**Covert Location**|*none*|
+|**B0041**|*not defined*|-|
 |**B0042**|IMPACT|Modify Hardware|*none*|
 |**B0043**|DISCOVERY|Taskbar Discovery|*none*|
 |**B0044**|EXECUTION|Execution Dependency|*none*|
