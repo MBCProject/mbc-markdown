@@ -90,52 +90,52 @@ The table below lists MBC behaviors and related ATT&CK techniques. In most cases
 |**ID**|**Objective(s)**|**Behavior**|**Related ATT&CK Technique**|
 |---|---|---|---|
 |**B0001**|ANTI-BEHAVIORAL ANALYSIS|**Debugger Detection**|*none*|
-|**B0002**|ANTI-BEHAVIORAL ANALYSIS|**Debugger Evasion**|Debugger Evasion ([T1622]())|
-|**B0003**|ANTI-BEHAVIORAL ANALYSIS|**Dynamic Analysis Evasion**|Virtualization/Sandbox Evasion ([T1497](),[T1633]())|
+|**B0002**|ANTI-BEHAVIORAL ANALYSIS|**Debugger Evasion**|Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T1622))|
+|**B0003**|ANTI-BEHAVIORAL ANALYSIS|**Dynamic Analysis Evasion**|Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497),[T1633](https://attack.mitre.org/techniques/T1633))|
 |**B0004**|ANTI-BEHAVIORAL|**Emulator Detection**|*none*|
-|**B0005**|ANTI-BEHAVIORAL|Emulator Evasion|*none*|
-|**B0006**|ANTI-BEHAVIORAL|Memory Dump Evasion|*none*|
-|**B0007**|ANTI-BEHAVIORAL|Sandbox Detection|Virtualization/Sandbox Evasion: System Checks ([T1497.001](),[T1633.001]()); Virtualization/Sandbox Evasion: User Activity Based Checks ([T1497.002]())|
-|**B0008**|ANTI-BEHAVIORAL ANALYSIS, ANTI-STATIC ANALYSIS|Executable Code Virtualization|*none*|
-|**B0009**|ANTI-BEHAVIORAL ANALYSIS|Virtual Machine Detection|Virtualization/Sandbox Evasion ([T1497](),[T1633]())|
-|**B0010**|ANTI-STATIC ANALYSIS|Call Graph Generation Evasion|*none*|
-|**B0011**|EXECUTION|Remote Commands|Virtualization/Sandbox Evasion ([T1497](),[T1633]())|
-|**B0012**|ANTI-STATIC ANALYSIS|Disassembler Evasion|*none*|
+|**B0005**|ANTI-BEHAVIORAL|**Emulator Evasion**|*none*|
+|**B0006**|ANTI-BEHAVIORAL|**Memory Dump Evasion**|*none*|
+|**B0007**|ANTI-BEHAVIORAL|**Sandbox Detection**|Virtualization/Sandbox Evasion: System Checks ([T1497.001](https://attack.mitre.org/techniques/T1497/001),[T1633.001](https://attack.mitre.org/techniques/T1633/001)); Virtualization/Sandbox Evasion: User Activity Based Checks ([T1497.002](https://attack.mitre.org/techniques/T1497/002))|
+|**B0008**|ANTI-BEHAVIORAL ANALYSIS, ANTI-STATIC ANALYSIS|**Executable Code Virtualization**|*none*|
+|**B0009**|ANTI-BEHAVIORAL ANALYSIS|**Virtual Machine Detection**|Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497),[T1633](https://attack.mitre.org/techniques/T1633))|
+|**B0010**|ANTI-STATIC ANALYSIS|**Call Graph Generation Evasion**|*none*|
+|**B0011**|EXECUTION|**Remote Commands**|Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497),[T1633](https://attack.mitre.org/techniques/T1633))|
+|**B0012**|ANTI-STATIC ANALYSIS|**Disassembler Evasion**|*none*|
 |**B0013**|DISCOVERY|Analysis Tool Discovery|*none*|
 |**B0014**|DISCOVERY|SMTP Connection Discovery|*none*|
-|**B0015**|*not defined*|---|
-|**B0016**|IMPACT|Compromise Data Integrity|Data Manipulation: Stored Data Manipulation ([T1565.001]())|
+|**B0015**|*not defined*|---|---|
+|**B0016**|IMPACT|Compromise Data Integrity|Data Manipulation: Stored Data Manipulation ([T1565.001](https://attack.mitre.org/techniques/T1565/001))|
 |**B0017**|IMPACT|Destroy Hardware|*none*|
-|**B0018**|IMPACT|Resource Hijacking|Resource Hijacking ([T1496]())|
-|**B0019**|IMPACT|Manipulate Network Traffic|Data Manipulation: Transmitted Data Manipulation ([T1565.002]())|
-|**B0020**|EXECUTION, LATERAL MOVEMENT|Send Email|Phishing ([T1566]())|
+|**B0018**|IMPACT|Resource Hijacking|Resource Hijacking ([T1496](https://attack.mitre.org/techniques/T1496))|
+|**B0019**|IMPACT|Manipulate Network Traffic|Data Manipulation: Transmitted Data Manipulation ([T1565.002](https://attack.mitre.org/techniques/T1565/002))|
+|**B0020**|EXECUTION, LATERAL MOVEMENT|Send Email|Phishing ([T1566](https://attack.mitre.org/techniques/T1566))|
 |**B0021**|EXECUTION, LATERAL MOVEMENT|Send Poisoned Email|*none*|
 |**B0022**|IMPACT, PERSISTENCE|Remote Access|*none*|
 |**B0023**|EXECUTION|Install Additional Program|*none*|
 |**B0024**|EXECUTION|Prevent Concurrent Execution|*none*|
-|**B0025**|ANTI-BEHAVIORAL ANALYSIS//EXECUTION|Conditional Execution|Execution Guardrails ([T1480]())|
+|**B0025**|ANTI-BEHAVIORAL ANALYSIS//EXECUTION|Conditional Execution|Execution Guardrails ([T1480](https://attack.mitre.org/techniques/T1480))|
 |**B0026**|LATERAL MOVEMENT, PERSISTENCE|Malicious Network Driver|*none*|
 |**B0027**|DEFENSE EVASION|Alternative Installation Location|*none*|
 |**B0028**|CREDENTIAL ACCESS|Cryptocurrency|*none*|
 |**B0029**|DEFENSE EVASION|Polymorphic Code|*none*|
 |**B0030**|COMMAND AND CONTROL|Command and Control Communication|*none*|
-|**B0031**|COMMAND AND CONTROL|Domain Name Generation|Dynamic Resolution: Domain Name Generation ([T1568.002]())|
+|**B0031**|COMMAND AND CONTROL|Domain Name Generation|Dynamic Resolution: Domain Name Generation ([T1568.002](https://attack.mitre.org/techniques/T1568/002))|
 |**B0032**|ANTI-STATIC ANALYSIS|Executable Code Obfuscation|*none*|
-|**B0033**|IMPACT|Denial of Service|Network Denial of Service (T1498)|
-|**B0034**|ANTI-STATIC ANALYSIS|Executable Code Obfuscation|*none*|
-|**B0035**|PERSISTENCE|Shutdown Event|*none*|
-|**B0036**|ANTI-BEHAVIORAL ANALYSIS|Capture Evasion|*none*|
-|**B0037**|DEFENSE EVASION|Bypass Data Execution Prevention|*none*|
+|**B0033**|IMPACT|**Denial of Service**|Network Denial of Service ([T1498](https://attack.mitre.org/techniques/T1498))|
+|**B0034**|ANTI-STATIC ANALYSIS|**Executable Code Obfuscation**|*none*|
+|**B0035**|PERSISTENCE|**Shutdown Event**|*none*|
+|**B0036**|ANTI-BEHAVIORAL ANALYSIS|**Capture Evasion**|*none*|
+|**B0037**|DEFENSE EVASION|**Bypass Data Execution Prevention**|*none*|
 |**B0038**|DISCOVERY|**Self Discovery**|*none*|
 |**B0039**|IMPACT|**Spamming**|*none*|
 |**B0040**|DEFENSE EVASION|**Covert Location**|*none*|
-|**B0041**|*not defined*|-|
-|**B0042**|IMPACT|Modify Hardware|*none*|
-|**B0043**|DISCOVERY|Taskbar Discovery|*none*|
-|**B0044**|EXECUTION|Execution Dependency|*none*|
-|**B0045**|ANTI-STATIC ANALYSIS|Data Flow Analysis Evasion|*none*|
-|**B0046**|DISCOVERY|Code Discovery|*none*|
-|**B0047**|DEFENSE EVASION, PERSISTENCE|Install Insecure or Malicious Code|*none*|
+|**B0041**|*not defined*|---|---|
+|**B0042**|IMPACT|**Modify Hardware**|*none*|
+|**B0043**|DISCOVERY|**Taskbar Discovery**|*none*|
+|**B0044**|EXECUTION|**Execution Dependency**|*none*|
+|**B0045**|ANTI-STATIC ANALYSIS|**Data Flow Analysis Evasion**|*none*|
+|**B0046**|DISCOVERY|**Code Discovery**|*none*|
+|**B0047**|DEFENSE EVASION, PERSISTENCE|**Install Insecure or Malicious Code**|*none*|
 
 **Copyright 2022 The MITRE Corporation.  [Terms of Use.](./tou.md)**
 
