@@ -47,7 +47,7 @@ Malware Examples
 
 References
 ----------
-<a name="1">[1]</a> Ashkan Hosseini, *Ten Process Injection Techniques: A Technical Survey of Common and Trending Process Injection Techniques*, July 2017. https://www.elastic.co/blog/ten-process-injectionion-techniques-technical-survey-common-and-trending-process
+<a name="1">[1]</a> Ashkan Hosseini, *Ten Process Injection Techniques: A Technical Survey of Common and Trending Process Injection Techniques*, July 2017. https://www.elastic.co/blog/ten-process-injection-techniques-technical-survey-common-and-trending-process
 
 <a name="2">[2]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
 
@@ -55,7 +55,7 @@ References
 
 <a name="4">[4]</a> https://citizenlab.ca/2016/04/between-hong-kong-and-burma/
 
-<a name="5">[5]</a> https://www.ired.team/offensive-security/code-injection-process-injectionion/executing-shellcode-with-createfiber
+<a name="5">[5]</a> https://www.ired.team/offensive-security/code-injection-process-injection/executing-shellcode-with-createfiber
 
 <a name="6">[6]</a> https://news.sophos.com/en-us/2015/12/17/the-current-state-of-ransomware-cryptowall/
 

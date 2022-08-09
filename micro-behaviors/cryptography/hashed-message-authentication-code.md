@@ -7,4 +7,4 @@
 
 Hashed Message Authentication Code
 ==================================
-Malware uses an hashed-message-authentication-code schema.
+Malware uses a hashed message authentication code (HMAC) schema.

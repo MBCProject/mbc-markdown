@@ -22,7 +22,7 @@ Methods
 |**CloseHandle**|B0001.003|(NtClose); If an invalid handle is passed to the CloseHandle function and a debugger is present, then an EXCEPTION_INVALID_HANDLE (0xC0000008) exception will be raised. [[7]](#7)|
 |**Debugger Artifacts**|B0001.004|Malware may detect a debugger by its artifact (window title, device driver, exports, etc.).|
 |**Hardware Breakpoints**|B0001.005|(SEH/GetThreadContext); Debug registers will indicate the presence of a debugger. See [[7]](#7) for details.|
-|**Interruption**|B0001.006|If an interruption is mishandled by the debugger, it can cause a single-byte instruction to be inadvertently skipped, which can be detected by malware.|
+|**Interruption**|B0001.006|If an interruption is mishandled by the debugger, it can cause a single-byte instruction to be inadvertently skipped, which can be detected by malware. Examples include Interrupt 0x2d and Interrupt 1 [7].|
 |**IsDebuggerPresent**|B0001.008|The kernel32!IsDebuggerPresent API function call checks the PEB BeingDebugged flag to see if the calling process is being debugged. It returns 1 if the process is being debugged, 0 otherwise. This is one of the most common ways of debugger detection.|
 |**Memory Breakpoints**|B0001.009|(PAGE_GUARD); Guard pages trigger an exception the first time they are accessed and can be used to detect a debugger. See [[7]](#7) for details.|
 |**Memory Write Watching**|B0001.010|[[7]](#7)|
