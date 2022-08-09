@@ -24,7 +24,7 @@
     - MBC v2.1 was released in February 2021 and includes additional micro-behaviors and behavior methods.
     - MBC v2.2 was released in February 2022 and includes additional micro-behaviors and behavior methods. Added code snippets to certain methods.
 
-* **MBC Website** - An MBC website will replace markdown documents by mid-2021.
+* **MBC Website** - An MBC website will eventually replace markdown documents.
 
 * **Code Snippets** - In addition to associating malware samples to behaviors, we plan to capture code snippets that illustrate behavior implementation.
 
