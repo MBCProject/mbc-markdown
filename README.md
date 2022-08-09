@@ -85,13 +85,13 @@ This visual representation of the MBC Matrix is based on the ATT&CK Navigator (o
 <img src="https://raw.githubusercontent.com/MBCProject/mbc-markdown/v2.2/yfaq/mbc_matrix_without_ids.svg" alt="mbc matrix without ids">
 
 ## MBC Behaviors vis-a-vis ATT&CK ##
-The table below shows the behaviors defined in MBC and whether there is a corresponding ATT&CK technique or sub-technique. In most cases, related ATT&CK techniques were defined after the MBC behavior was defined.
+The table below lists MBC behaviors and related ATT&CK techniques. In most cases, related ATT&CK techniques were defined after the MBC behavior was defined.
 
 |**ID**|**Behavior Name**|**Related ATT&CK Technique**|
 |---|---|---|
-|**B0001**|ANTI-BEHAVIORAL ANALYSIS::Debugger Detection|*none*|
-|**B0002**|ANTI-BEHAVIORAL ANALYSIS::Debugger Evasion|Debugger Evasion ([T1622]())|
-|**B0003**|ANTI-BEHAVIORAL ANALYSIS::Dynamic Analysis Evasion|Virtualization/Sandbox Evasion ([T1497](),[T1633]())|
+|**B0001**|ANTI-BEHAVIORAL ANALYSIS::**Debugger Detection**|*none*|
+|**B0002**|ANTI-BEHAVIORAL ANALYSIS::**Debugger Evasion**|Debugger Evasion ([T1622]())|
+|**B0003**|ANTI-BEHAVIORAL ANALYSIS::**Dynamic Analysis Evasion**|Virtualization/Sandbox Evasion ([T1497](),[T1633]())|
 |**B0004**|ANTI-BEHAVIORAL::Emulator Detection|*none*|
 |**B0005**|ANTI-BEHAVIORAL::Emulator Evasion|*none*|
 |**B0006**|ANTI-BEHAVIORAL::Memory Dump Evasion|*none*|
@@ -116,6 +116,26 @@ The table below shows the behaviors defined in MBC and whether there is a corres
 |**B0025**|ANTI-BEHAVIORAL ANALYSIS//EXECUTION::Conditional Execution|Execution Guardrails ([T1480]())|
 |**B0026**|LATERAL MOVEMENT//PERSISTENCE::Malicious Network Driver|*none*|
 |**B0027**|DEFENSE EVASION::Alternative Installation Location|*none*|
+|**B0028**|CREDENTIAL ACCESS::Cryptocurrency|*none*|
+|**B0029**|DEFENSE EVASION::Polymorphic Code|*none*|
+|**B0030**|C2::Command and Control Communication|*none*|
+|**B0031**|C2::Domain Name Generation|Dynamic Resolution: Domain Name Generation ([T1568.002]())|
+|**B0032**|ANTI-STATIC ANALYSIS::Executable Code Obfuscation|*none*|
+|**B0033**|IMPACT::Denial of Service|Network Denial of Service (T1498)|
+|**B0034**|ANTI-STATIC ANALYSIS::Executable Code Obfuscation|*none*|
+|**B0035**|PERSISTENCE::Shutdown Event|*none*|
+|**B0036**|ANTI-BEHAVIORAL ANALYSIS::Capture Evasion|*none*|
+|**B0037**|DEFENSE EVASION::Bypass Data Execution Prevention|*none*|
+|**B0038**|DISCOVERY::Self Discovery|*none*|
+|**B0039**|IMPACT::Spamming|*none*|
+|**B0040**|DEFENSE EVASION::Covert Location|*none*|
+|**B0041**|*not defined*||
+|**B0042**|IMPACT::Modify Hardware|*none*|
+|**B0043**|DISCOVERY::Taskbar Discovery|*none*|
+|**B0044**|EXECUTION::Execution Dependency|*none*|
+|**B0045**|ANTI-STATIC ANALYSIS::Data Flow Analysis Evasion|*none*|
+|**B0046**|DISCOVERY::Code Discovery|*none*|
+|**B0047**|DEFENSE EVASION//PERSISTENCE::Install Insecure or Malicious Code|*none*|
 
 **Copyright 2022 The MITRE Corporation.  [Terms of Use.](./tou.md)**
 
