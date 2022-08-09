@@ -3,7 +3,7 @@
 |**ID**|**OB0009**|
 
 # Execution #
-Behaviors that execute code on a system to achieve a variety of goals.
+Behaviors that enable malware to execute code on a system to achieve a variety of goals.
 
 * **Command and Scripting Interpreter** [E1059](../execution/command-and-scripting-interpreter.md)
 * **Conditional Execution** [B0025](../execution/conditional-execution.md)

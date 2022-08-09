@@ -11,6 +11,8 @@ All command and control malware use implant/controller communication. The method
 
 Command and Control Communication relates to *autonomous* communications, not explicit, on-demand commands that malware provides to an adversary (such commands should be captured with [Remote Commands](../execution/remote-commands.md) under the Execution objective).
 
+As "server" and "client" are confusing terminology, we use the terms "controller" and "implant". The controller is the software running on adversary-controlled infrastructure and used to send commands to the implant. The implant is the software running on victim-controlled infrastructure that receives commands from the adversary, executes those commands on the victim, and optionally sends the results back to the adversary.
+
 Methods
 -------
 |Name|ID|Description|

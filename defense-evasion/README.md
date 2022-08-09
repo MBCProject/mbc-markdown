@@ -4,7 +4,7 @@
 
 
 # Defense Evasion #
-Behaviors that evade detection or avoid other defenses.
+Behaviors that enable malware to evade detection.
 
 * **Alternative Installation Location** [B0027](../defense-evasion/alternative-installation-location.md)
 * **Bootkit** [F0013](../defense-evasion/bootkit.md)
@@ -17,7 +17,7 @@ Behaviors that evade detection or avoid other defenses.
 * **Hidden Files and Directories** [F0005](../defense-evasion/hidden-files-and-directories.md)
 * **Hijack Execution Flow** [F0015](../defense-evasion/hijack-execution-flow.md)
 * **Indicator Blocking** [F0006](../defense-evasion/indicator-blocking.md)
-* **Install Insecure or Malicious Configuration** [E1478](../defense-evasion/install-insecure-or-malicious-configuration.md)
+* **Install Insecure or Malicious Configuration** [B0047](../defense-evasion/install-insecure-or-malicious-configuration.md)
 * **Modify Registry** [E1112](../defense-evasion/modify-registry.md)
 * **Obfuscated Files or Information** [E1027](../defense-evasion/obfuscated-files-or-information.md)
 * **Polymorphic Code** [B0029](../defense-evasion/polymorphic-code.md)

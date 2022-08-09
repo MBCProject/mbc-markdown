@@ -2,14 +2,14 @@
 |---|---|
 |**ID**|**B0020**|
 |**Objective(s)**|[Execution](../execution), [Lateral Movement](../lateral-movement)|
-|**Related ATT&CK Technique**|[Phishing](https://attack.mitre.org/techniques/T1566/)|
+|**Related ATT&CK Technique**|[Phishing (T1566)](https://attack.mitre.org/techniques/T1566/)|
 
 
 Send Email
 ==========
 Sends an email message from the system on which the malware is executing to one or more recipients, mostly commonly for the purpose of spamming or for distributing a malicious attachment or URL (malspamming).
 
-**See related ATT&CK Techniques:** [**Phishing**](https://attack.mitre.org/techniques/T1566/). This technique is defined in PRE-ATT&CK, which being related to initial access, is not included in MBC.
+This behavior is related to the [Phishing (T1566)](https://attack.mitre.org/techniques/T1566/) ATT&CK technique defined under ATT&CK's Initial Access tactic.
 
 Malware Examples
 ----------------

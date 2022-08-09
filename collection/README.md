@@ -4,7 +4,7 @@
 
 
 # Collection #
-Behaviors that identify and gather information, such as sensitive files, from a target network prior to exfiltration. This objective includes locations on a system or network where the malware may look for information to exfiltrate.
+Behaviors that enable malware to identify and gather information, such as sensitive files, from a machine or network. Sources often targeted include drives, browsers, audio/video, and email. Often the malware's next objective is to exfiltrate the information gathered.
 
 * **Cryptocurrency** [B0028](../collection/cryptocurrency.md)
 * **Hijack Execution Flow** [F0015](../defense-evasion/hijack-execution-flow.md)

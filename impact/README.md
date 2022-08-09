@@ -4,7 +4,7 @@
 
 
 # Impact #
-Behaviors that enable malware to achieve its mission of manipulating, interrupting, or destroying systems and/or data.
+Behaviors that enable malware to manipulate, interrupt, or destroy systems and data. 
 
 * **Clipboard Modification** [E1510](../impact/clipboard-modification.md)
 * **Component Firmware** [F0009](../persistence/component-firmware.md)
