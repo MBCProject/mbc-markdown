@@ -6,18 +6,19 @@
 # Anti-Behavioral Analysis
 Behaviors that prevent, obstruct, or evade behavioral analysis of malware--for example, analysis done using a sandbox or debugger. Because the underlying methods differ, separate "detection" and "evasion" behaviors are defined for some anti-behavioral analysis areas.
 
-* **Capture Evasion** [B0036](../anti-behavioral-analysis/evade-capture.md)
-* **Conditional Execution** [B0025](../execution/conditional-execute.md)
-* **Debugger Detection** [B0001](../anti-behavioral-analysis/detect-debugger.md)
-* **Debugger Evasion** [B0002](../anti-behavioral-analysis/evade-debugger.md)
-* **Dynamic Analysis Evasion** [B0003](../anti-behavioral-analysis/evade-dynamic-analysis.md)
-* **Emulator Detection** [B0004](../anti-behavioral-analysis/detect-emulator.md)
-* **Emulator Evasion** [B0005](../anti-behavioral-analysis/evade-emulator.md)
-* **Executable Code Virtualization** [B0008](../anti-static-analysis/exe-code-virtualize.md)
-* **Memory Dump Evasion** [B0006](../anti-behavioral-analysis/evade-memory-dump.md)
-* **Sandbox Detection** [B0007](../anti-behavioral-analysis/detect-sandbox.md)
+* **Capture Evasion** [B0036](../anti-behavioral-analysis/capture-evasion.md)
+* **Conditional Execution** [B0025](../execution/conditional-execution.md)
+* **Debugger Detection** [B0001](../anti-behavioral-analysis/debugger-detection.md)
+* **Debugger Evasion** [B0002](../anti-behavioral-analysis/debugger-evasion.md)
+* **Dynamic Analysis Evasion** [B0003](../anti-behavioral-analysis/dynamic-analysis-evasion.md)
+* **Emulator Detection** [B0004](../anti-behavioral-analysis/emulator-detection.md)
+* **Emulator Evasion** [B0005](../anti-behavioral-analysis/emulator-evasion.md)
+* **Executable Code Virtualization** [B0008](../anti-static-analysis/executable-code-virtualization.md)
+* **Hijack Execution Flow** [F0015](../defense-evasion/hijack-execution-flow.md)
+* **Memory Dump Evasion** [B0006](../anti-behavioral-analysis/memory-dump-evasion.md)
+* **Sandbox Detection** [B0007](../anti-behavioral-analysis/sandbox-detection.md)
 * **Software Packing** [F0001](../anti-static-analysis/software-packing.md)
-* **Virtual Machine Detection** [B0009](../anti-behavioral-analysis/detect-vm.md)
+* **Virtual Machine Detection** [B0009](../anti-behavioral-analysis/virtual-machine-detection.md)
 
 References
 ----------

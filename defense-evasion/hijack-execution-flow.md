@@ -13,7 +13,7 @@ Note that in MBC, Hooking is also associated with the [Defense Evasion](../defen
 
 For discussion related to the Credential Access and Collection objectives, see [Input Capture: Credential API Hooking](https://attack.mitre.org/techniques/T1056/004/).
 
-For hooking related to memory dump evasion, see [Memory Dump Evasion](../anti-behavioral-analysis/evade-memory-dump.md).
+For hooking related to memory dump evasion, see [Memory Dump Evasion](../anti-behavioral-analysis/memory-dump-evasion.md).
 
 See ATT&CK: **Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques/T1574), [T1625](https://attack.mitre.org/techniques/T1625))**.
 
@@ -35,6 +35,11 @@ Malware Examples
 |---|---|---|
 |**Kronos**|June 2014|Kronos hooks the API of processes to prevent detection. [[6]](#6)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|Hooks various DLL exported functions when the component is loaded in their respective Browser application process is running to monitor network traffic [[7]](#7)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|	Abuses Microsoft's Dynamic Data Exchange (DDE) protocol  [[8]](#8)|
+|[**SYNfulKnock**](../xample-malware/synful-knock.md)|2015|Hooks IOS functions to call and initialize the malware  [[9]](#9)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|Escalates privilege by impersonating the token. First uses LogonUser and ImpersonateLoggedOnUser, then ImpersonateNamedPipeClient. [[10]](#10)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Stuxnet hooks ntdll.dll to monitor for requests to load specially crafted file names which are mapped to a location specified by Stuxnet.  [[11]](#11)|
 
 References
 ----------
@@ -49,3 +54,13 @@ References
 <a name="5">[5]</a> https://docs.microsoft.com/en-us/windows/win32/winmsg/about-hooks?redirectedfrom=MSDN#hook-procedures
 
 <a name="6">[6]</a> https://blog.malwarebytes.com/cybercrime/2017/08/inside-kronos-malware/
+
+<a name="7">[7]</a> https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/PE_URSNIF.A2?_ga=2.131425807.1462021705.1559742358-1202584019.1549394279
+
+<a name="8">[8]</a> https://blog.talosintelligence.com/2018/04/gravityrat-two-year-evolution-of-apt.html
+
+<a name="9">[9]</a> https://www.mandiant.com/resources/synful-knock-acis
+
+<a name="10">[10]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-returns-to-wipe-systems-in-middle-east-europe/
+
+<a name="11">[11]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
