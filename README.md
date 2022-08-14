@@ -55,7 +55,7 @@ The canonical representation for MBC content is **OBJECTIVE::Behavior::Method**.
 Objectives and behaviors can be used alone, but a method *must* be associated with a behavior.
 
 ### Malware Corpus ###
-The MBC contains a [malware corpus](./xample-malware/README.md) where each malware entry is decomposed into behaviors that are mapped to ATT&CK and MBC. 
+The MBC contains a [malware corpus](./xample-malware/README.md) where each malware entry is decomposed into behaviors that are mapped to ATT&CK and MBC. The mappings are based on open source malware analysis reports.
 
 ## Micro-behavior Objectives ##
 [Micro-behaviors](./micro-behaviors/README.md) and their associated objectives are under development.
