@@ -5,7 +5,6 @@
 
 ### Collection: ###
   num: 7
-   
   - Archive Collected Data::Archive via Library [T1560.002]
   - Clipboard Data [T1115]
   - Video Capture [T1125]
@@ -16,12 +15,10 @@
   
 ### Command and Control: ###
   num: 1
-   
   - Ingress Tool Transfer [T1105]
   
 ### Credential Access: ###
   num: 4
-   
   - Credentials from Password Stores::Windows Credential Manager [T1555.004]
   - Credentials from Password Stores::Password Managers [T1555.005]
   - Credentials from Password Stores [T1555]
@@ -29,7 +26,6 @@
   
 ### Defense Evasion: ###
   num: 32
-   
   - Obfuscated Files or Information::Software Packing [T1027.002]
   - Virtualization/Sandbox Evasion::System Checks [T1497.001]
   - Impair Defenses::Disable or Modify Tools [T1562.001]
