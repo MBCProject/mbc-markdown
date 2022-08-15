@@ -9,7 +9,7 @@ Check out the MBC presentations:
 We've also mapped MBC (and ATT&CK) to two open-source malware analysis tools:
 
 * [Cuckoo community signatures](https://github.com/MBCProject/community)
-* [capa rules](https://github.com/fireeye/capa-rules)
+* [capa rules](https://github.com/fireeye/capa-rules) - see the [mapping distribution](./capa.md)
 
 To join the **MBC mailing list**, please send a request to mbc@mitre.org.
 
