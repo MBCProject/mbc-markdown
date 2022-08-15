@@ -1,8 +1,9 @@
-# capa Rule Distribution (15 August 2022)#
+# capa Rule Distribution #
+15 August 2022
 
 ## ATT&CK MAPPINGS ##
 
-###Collection:###
+### Collection: ###
   num: 7
   rule:
   - Archive Collected Data::Archive via Library [T1560.002]
@@ -12,18 +13,21 @@
   - Data from Information Repositories [T1213]
   - Audio Capture [T1123]
   - Screen Capture [T1113]
-###Command and Control:###
+  
+### Command and Control: ###
   num: 1
   rule:
   - Ingress Tool Transfer [T1105]
-###Credential Access:###
+  
+### Credential Access: ###
   num: 4
   rule:
   - Credentials from Password Stores::Windows Credential Manager [T1555.004]
   - Credentials from Password Stores::Password Managers [T1555.005]
   - Credentials from Password Stores [T1555]
   - Credentials from Password Stores::Credentials from Web Browsers [T1555.003]
-###Defense Evasion:###
+  
+### Defense Evasion: ###
   num: 32
   rule:
   - Obfuscated Files or Information::Software Packing [T1027.002]
@@ -58,7 +62,8 @@
   - Abuse Elevation Control Mechanism::Bypass User Account Control [T1548.002]
   - Hijack Execution Flow [T1574]
   - BITS Jobs [T1197]
-###Discovery:###
+  
+### Discovery: ###
   num: 17
   rule:
   - File and Directory Discovery [T1083]
@@ -78,7 +83,8 @@
   - System Location Discovery [T1614]
   - Group Policy Discovery [T1615]
   - Domain Trust Discovery [T1482]
-###Execution:###
+  
+### Execution: ###
   num: 8
   rule:
   - Command and Scripting Interpreter [T1059]
@@ -89,10 +95,12 @@
   - Command and Scripting Interpreter::Python [T1059.006]
   - Command and Scripting Interpreter::Unix Shell [T1059.004]
   - Command and Scripting Interpreter::Windows Command Shell [T1059.003]
-###Exfiltration:###
+  
+### Exfiltration: ###
   num: 0
   rule: []
-###Impact:###
+  
+### Impact: ###
   num: 5
   rule:
   - Endpoint Denial of Service [T1499]
@@ -100,13 +108,16 @@
   - Data Manipulation::Transmitted Data Manipulation [T1565.002]
   - Inhibit System Recovery [T1490]
   - Disk Wipe::Disk Structure Wipe [T1561.002]
-###Initial Access:###
+  
+### Initial Access: ###
   num: 0
   rule: []
-###Lateral Movement:###
+  
+### Lateral Movement: ###
   num: 0
   rule: []
-###Persistence:###
+  
+### Persistence: ###
   num: 13
   rule:
   - Create or Modify System Process::Windows Service [T1543.003]
@@ -122,18 +133,21 @@
   - Event Triggered Execution [T1546]
   - Boot or Logon Autostart Execution::Winlogon Helper DLL [T1547.004]
   - Boot or Logon Autostart Execution::Registry Run Keys / Startup Folder [T1547.001]
-###Privilege Escalation:###
+  
+### Privilege Escalation: ###
   num: 1
   rule:
   - Access Token Manipulation [T1134]
-###Reconnaissance:###
-  num: 0
-  rule: []
-###Resource Development:###
+  
+### Reconnaissance: ###
   num: 0
   rule: []
   
-  ##ATT&CK MAPPING HISTOGRAM##
+### Resource Development: ###
+  num: 0
+  rule: []
+  
+## ATT&CK MAPPING HISTOGRAM ##
 Reconnaissance        [ 0]
 Resource Development  [ 0]
 Initial Access        [ 0]
@@ -150,7 +164,8 @@ Exfiltration          [ 0]
 Impact                [ 5]  *******
 
 ## MBC MAPPINGS ##
-###Anti-Behavioral Analysis:###
+
+### Anti-Behavioral Analysis: ###
   num: 20
   rule:
   - Emulator Detection [B0004]
@@ -173,7 +188,8 @@ Impact                [ 5]  *******
   - Conditional Execution::Runs as Service [B0025.007]
   - Debugger Detection::Process Environment Block [B0001.019]
   - Dynamic Analysis Evasion::Delayed Execution [B0003.003]
-###Anti-Static Analysis:###
+  
+### Anti-Static Analysis: ###
   num: 9
   rule:
   - Disassembler Evasion [B0012]
@@ -185,23 +201,27 @@ Impact                [ 5]  *******
   - Software Packing::UPX [F0001.008]
   - Executable Code Obfuscation [B0032]
   - Disassembler Evasion::Argument Obfuscation [B0012.001]
-###Collection:###
+  
+### Collection: ###
   num: 4
   rule:
   - Keylogging::Polling [F0002.002]
   - Keylogging::Application Hook [F0002.001]
   - Screen Capture::WinAPI [E1113.m01]
   - Screen Capture [E1113]
-###Command and Control:###
+  
+### Command and Control: ###
   num: 3
   rule:
   - C2 Communication::Send Data [B0030.001]
   - C2 Communication::Receive Data [B0030.002]
   - C2 Communication::Server to Client File Transfer [B0030.003]
-###Credential Access:###
+  
+### Credential Access: ###
   num: 0
   rule: []
-###Defense Evasion:###
+  
+### Defense Evasion: ###
   num: 13
   rule:
   - Disable or Evade Security Tools::Heavens Gate [F0004.008]
@@ -217,7 +237,8 @@ Impact                [ 5]  *******
   - Hijack Execution Flow::Abuse Windows Function Calls [F0015.006]
   - Process Injection::Injection via Windows Fibers [E1055.m05]
   - Hijack Execution Flow::Import Address Table (IAT) Hooking [F0015.003]
-###Discovery:###
+  
+### Discovery: ###
   num: 6
   rule:
   - Analysis Tool Discovery::Process detection [B0013.001]
@@ -226,14 +247,17 @@ Impact                [ 5]  *******
   - File and Directory Discovery::Log File [E1083.m01]
   - Code Discovery::Enumerate PE Sections [B0046.001]
   - Code Discovery::Inspect Section Memory Permissions [B0046.002]
-###Execution:###
+  
+### Execution: ###
   num: 1
   rule:
   - Install Additional Program [B0023]
-###Exfiltration:###
+  
+### Exfiltration: ###
   num: 0
   rule: []
-###Impact:###
+  
+### Impact: ###
   num: 5
   rule:
   - Modify Hardware::Mouse [B0042.002]
@@ -241,17 +265,20 @@ Impact                [ 5]  *******
   - Clipboard Modification [E1510]
   - Data Destruction::Delete Shadow Copies [E1485.m04]
   - Remote Access::Reverse Shell [B0022.001]
-###Lateral Movement:###
-  num: 0
-  rule: []
-###Persistence:###
-  num: 0
-  rule: []
-###Privilege Escalation:###
+  
+### Lateral Movement: ###
   num: 0
   rule: []
   
-##MBC MAPPING HISTOGRAM##
+### Persistence: ###
+  num: 0
+  rule: []
+  
+### Privilege Escalation: ###
+  num: 0
+  rule: []
+  
+## MBC MAPPING HISTOGRAM ##
 Anti-Behavioral Analysis  [20]  ****************************************
 Anti-Static Analysis      [ 9]  ******************
 Collection                [ 4]  ********
@@ -266,8 +293,9 @@ Lateral Movement          [ 0]
 Persistence               [ 0]
 Privilege Escalation      [ 0]
 
-##MBC MICRO-BEHAVIOR MAPPINGS##
-###Communication:###
+## MBC MICRO-BEHAVIOR MAPPING S##
+
+### Communication: ###
   num: 34
   rule:
   - DNS Communication::Resolve [C0011.001]
@@ -304,7 +332,8 @@ Privilege Escalation      [ 0]
   - Socket Communication::Send Data [C0001.007]
   - Socket Communication::Receive Data [C0001.006]
   - ICMP Communication::Echo Request [C0014.002]
-###Cryptography:###
+
+### Cryptography: ###
   num: 16
   rule:
   - Encryption Key::Import Public Key [C0028.001]
@@ -323,7 +352,8 @@ Privilege Escalation      [ 0]
   - Generate Pseudo-random Sequence::Use API [C0021.003]
   - Generate Pseudo-random Sequence::Mersenne Twister [C0021.005]
   - Crypto Library [C0059]
-###Data:###
+
+### Data: ###
   num: 15
   rule:
   - Checksum::CRC32 [C0032.001]
@@ -341,7 +371,8 @@ Privilege Escalation      [ 0]
   - Check String [C0019]
   - Modulo [C0058]
   - Compression Library [C0060]
-###File System:###
+  
+### File System: ###
   num: 11
   rule:
   - Set File Attributes [C0050]
@@ -355,19 +386,22 @@ Privilege Escalation      [ 0]
   - Read File [C0051]
   - Read Virtual Disk [C0056]
   - Create File [C0016]
-###Hardware:###
+
+### Hardware: ###
   num: 4
   rule:
   - Simulate Hardware::Ctrl-Alt-Del [C0057.001]
   - Install Driver [C0037]
   - Install Driver::Minifilter [C0037.001]
   - Load Driver::Minifilter [C0023.001]
-###Memory:###
+
+### Memory: ###
   num: 2
   rule:
   - Free Memory [C0044]
   - Allocate Memory [C0007]
-###Operating System:###
+
+### Operating System: ###
   num: 11
   rule:
   - Environment Variable::Set Variable [C0034.001]
@@ -381,7 +415,8 @@ Privilege Escalation      [ 0]
   - Registry::Query Registry Value [C0036.006]
   - Registry::Delete Registry Key [C0036.002]
   - Registry::Delete Registry Value [C0036.007]
-###Process:###
+  
+### Process: ###
   num: 14
   rule:
   - Create Thread [C0038]
@@ -399,7 +434,7 @@ Privilege Escalation      [ 0]
   - Open Process [C0065]
   - Open Thread [C0066]
   
-##MBC MICRO-BEHAVIOR MAPPING HISTOGRAM##
+## MBC MICRO-BEHAVIOR MAPPING HISTOGRAM ##
 Communication     [34]  ****************************************
 Cryptography      [16]  *******************
 Data              [15]  ******************
