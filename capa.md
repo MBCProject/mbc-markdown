@@ -144,6 +144,7 @@
   
 ## ATT&CK MAPPING HISTOGRAM ##
 
+|  |  |  |
 |-----|-----|-----|
 |Reconnaissance |[0]| |
 |Resource Development|[0]| |
