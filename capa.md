@@ -6,53 +6,53 @@ Histograms showing the number of capa rules mapped into each ATT&CK tactic, MBC 
 
 ### ATT&CK Mapping Histogram ###
 
-|  |  |  |
+| **TACTIC** | **Number**  |  |
 |-----|-----|-----|
-|Reconnaissance |[0]| |
-|Resource Development|[0]| |
-|Initial Access |[0]| |
-|**Execution**|[8]| **XXXXXXXX** |
-|**Persistence**|[13]| **XXXXXXXXXXXXX** |
-|**Privilege Escalation**|[1] | **X** |
-|**Defense Evasion**|[32]| **XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX** |
-|**Credential Access**|[4]| **XXXX** |
-|**Discovery**|[17]| **XXXXXXXXXXXXXXXXX** |
-|Lateral Movement|[0]| |
-|**Collection**|[7]| **XXXXXXX** |
-|**Command and Control**|[1]| **X** |
-|Exfiltration|[0]| |
-|**Impact**|[5]| **XXXXX** |
+|Reconnaissance |0| |
+|Resource Development|0| |
+|Initial Access |0| |
+|**Execution**|8| **XXXXXXXX** |
+|**Persistence**|13| **XXXXXXXXXXXXX** |
+|**Privilege Escalation**|1 | **X** |
+|**Defense Evasion**|32| **XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX** |
+|**Credential Access**|4| **XXXX** |
+|**Discovery**|17| **XXXXXXXXXXXXXXXXX** |
+|Lateral Movement|0| |
+|**Collection**|7| **XXXXXXX** |
+|**Command and Control**|1| **X** |
+|Exfiltration|0| |
+|**Impact**|5| **XXXXX** |
 
 ### MBC Mapping Histogram (Objectives) ###
 
-|  |  |  |
+| **OBJECTIVE** | **Number** |  |
 |-----|-----|-----|
-|**Anti-Behavioral Analysis** |[20]| **XXXXXXXXXXXXXXXXXXXX**|
-|**Anti-Static Analysis**|[9]| **XXXXXXXXX** |
-|**Collection**|[4]| **XXXX** |
-|**Command and Control**|[3]| **XXX** |
-|Credential Access|[0]| |
-|**Defense Evasion**|[13]| **XXXXXXXXXXXXX** |
-|**Discovery**|[6]| **XXXXXX** |
-|**Execution**|[1]| **X** |
-|Exfiltration|[0]| |
-|**Impact**|[5]| **XXXXX** |
-|Lateral Movement|[0]| |
-|Persistence|[0]| |
-|Privilege Escalation|[0] | |
+|**Anti-Behavioral Analysis** |20| **XXXXXXXXXXXXXXXXXXXX**|
+|**Anti-Static Analysis**|9| **XXXXXXXXX** |
+|**Collection**|4| **XXXX** |
+|**Command and Control**|3| **XXX** |
+|Credential Access|0| |
+|**Defense Evasion**|13| **XXXXXXXXXXXXX** |
+|**Discovery**|6| **XXXXXX** |
+|**Execution**|1| **X** |
+|Exfiltration|0| |
+|**Impact**|5| **XXXXX** |
+|Lateral Movement|0| |
+|Persistence|0| |
+|Privilege Escalation|0 | |
 
 ### MBC Mapping Histogram (Micro-Objectives) ###
 
-|  |  |  |
+| **MICRO-OBJECTIVE** | **Number**  |  |
 |-----|-----|-----|
-|**Communication** |[34]| **XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX**|
-|**Cryptography**|[16]| **XXXXXXXXXXXXXXXX** |
-|**Data**|[15]| **XXXXXXXXXXXXXXX** |
-|**File System**|[11]| **XXXXXXXXXXX** |
-|**Hardware**|[4]| **XXXX** |
-|**Memory**|[2]| **XX** |
-|**Operating System**|[11]| **XXXXXXXXXXX** |
-|**Process**|[14]| **XXXXXXXXXXXXXX** |
+|**Communication** |34| **XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX**|
+|**Cryptography**|16| **XXXXXXXXXXXXXXXX** |
+|**Data**|15| **XXXXXXXXXXXXXXX** |
+|**File System**|11| **XXXXXXXXXXX** |
+|**Hardware**|4| **XXXX** |
+|**Memory**|2| **XX** |
+|**Operating System**|11| **XXXXXXXXXXX** |
+|**Process**|14| **XXXXXXXXXXXXXX** |
 
 
 ## ATT&CK MAPPINGS ##
