@@ -149,17 +149,17 @@
 |Reconnaissance |[0]| |
 |Resource Development|[0]| |
 |Initial Access |[0]| |
-|Execution|[8]| AAAAAAAA |
-|Persistence|[13]| AAAAAAAAAAAAA |
-|Privilege Escalation|[1] | A |
-|Defense Evasion|[32]| AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA |
-|Credential Access|[4]| AAAA |
-|Discovery|[17]| AAAAAAAAAAAAAAAAA |
+|**Execution**|[8]| **XXXXXXXX** |
+|**Persistence**|[13]| **XXXXXXXXXXXXX** |
+|**Privilege Escalation**|[1] | X |
+|**Defense Evasion**|[32]| XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX |
+|**Credential Access**|[4]| XXXX |
+|**Discovery**|[17]| XXXXXXXXXXXXXXXXX |
 |Lateral Movement|[0]| |
-|Collection|[7]| AAAAAAA |
-|Command and Control|[1]| A |
+|**Collection**|[7]| XXXXXXX |
+|**Command and Control**|[1]| X |
 |Exfiltration|[0]| |
-|Impact|[5]| AAAAA |
+|**Impact**|[5]| XXXXX |
 
 ## MBC MAPPINGS ##
 
