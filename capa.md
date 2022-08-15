@@ -144,33 +144,21 @@
   
 ## ATT&CK MAPPING HISTOGRAM ##
 
-Reconnaissance        [ 0]
-
-Resource Development  [ 0]
-
-Initial Access        [ 0]
-
-Execution             [ 8]  **********
-
-Persistence           [13]  *****************
-
-Privilege Escalation  [ 1]  **
-
-Defense Evasion       [32]  ****************************************
-
-Credential Access     [ 4]  *****
-
-Discovery             [17]  **********************
-
-Lateral Movement      [ 0]
-
-Collection            [ 7]  *********
-
-Command and Control   [ 1]  **
-
-Exfiltration          [ 0]
-
-Impact                [ 5]  *******
+|---|---|---|
+|Reconnaissance |[0]| |
+|Resource Development|[0]| |
+|Initial Access |[0]| |
+|Execution|[8]| AAAAAAAA |
+|Persistence|[13]| AAAAAAAAAAAAA |
+|Privilege Escalation|[1] | A |
+|Defense Evasion|[32]| AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA |
+|Credential Access|[4]| AAAA |
+|Discovery|[17]| AAAAAAAAAAAAAAAAA |
+|Lateral Movement|[0]| |
+|Collection|[7]| AAAAAAA |
+|Command and Control|[1]| A |
+|Exfiltration|[0]| |
+|Impact|[5]| AAAAA |
 
 ## MBC MAPPINGS ##
 
@@ -284,31 +272,31 @@ Impact                [ 5]  *******
   
 ## MBC MAPPING HISTOGRAM ##
 
-Anti-Behavioral Analysis  [20]  ****************************************
+Anti-Behavioral Analysis  [20] ****************************************
 
-Anti-Static Analysis      [ 9]  ******************
+Anti-Static Analysis      [9]  ******************
 
-Collection                [ 4]  ********
+Collection                [4]  ********
 
-Command and Control       [ 3]  ******
+Command and Control       [3]  ******
 
-Credential Access         [ 0]
+Credential Access         [0]
 
 Defense Evasion           [13]  **************************
 
-Discovery                 [ 6]  ************
+Discovery                 [6]  ************
 
-Execution                 [ 1]  **
+Execution                 [1]  **
 
-Exfiltration              [ 0]
+Exfiltration              [0]
 
-Impact                    [ 5]  **********
+Impact                    [5]  **********
 
-Lateral Movement          [ 0]
+Lateral Movement          [0]
 
-Persistence               [ 0]
+Persistence               [0]
 
-Privilege Escalation      [ 0]
+Privilege Escalation      [0]
 
 ## MBC MICRO-BEHAVIOR MAPPING S##
 
@@ -461,9 +449,9 @@ Data              [15]  ******************
 
 File System       [11]  *************
 
-Hardware          [ 4]  *****
+Hardware          [4]  *****
 
-Memory            [ 2]  ***
+Memory            [2]  ***
 
 Operating System  [11]  *************
 
