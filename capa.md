@@ -1,6 +1,58 @@
 # capa Rule Distribution #
 15 August 2022
 
+## Histograms ##
+
+### ATT&CK Mapping Histogram ###
+
+|  |  |  |
+|-----|-----|-----|
+|Reconnaissance |[0]| |
+|Resource Development|[0]| |
+|Initial Access |[0]| |
+|**Execution**|[8]| **XXXXXXXX** |
+|**Persistence**|[13]| **XXXXXXXXXXXXX** |
+|**Privilege Escalation**|[1] | **X** |
+|**Defense Evasion**|[32]| **XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX** |
+|**Credential Access**|[4]| **XXXX** |
+|**Discovery**|[17]| **XXXXXXXXXXXXXXXXX** |
+|Lateral Movement|[0]| |
+|**Collection**|[7]| **XXXXXXX** |
+|**Command and Control**|[1]| **X** |
+|Exfiltration|[0]| |
+|**Impact**|[5]| **XXXXX** |
+
+### MBC Mapping Histogram ###
+
+|  |  |  |
+|-----|-----|-----|
+|**Anti-Behavioral Analysis** |[20]| **XXXXXXXXXXXXXXXXXXXX**|
+|**Anti-Static Analysis**|[9]| **XXXXXXXXX** |
+|**Collection**|[4]| **XXXX** |
+|**Command and Control**|[3]| **XXX** |
+|Credential Access|[0]| |
+|**Defense Evasion**|[13]| **XXXXXXXXXXXXX** |
+|**Discovery**|[6]| **XXXXXX** |
+|**Execution**|[1]| **X** |
+|Exfiltration|[0]| |
+|**Impact**|[5]| **XXXXX** |
+|Lateral Movement|[0]| |
+|Persistence|[0]| |
+|Privilege Escalation|[0] | |
+
+### MBC Micro-behavior Mapping Histogram ###
+
+|  |  |  |
+|-----|-----|-----|
+|**Communication** |[34]| **XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX**|
+|**Cryptography**|[16]| **XXXXXXXXXXXXXXXX** |
+|**Data**|[15]| **XXXXXXXXXXXXXXX** |
+|**File System**|[11]| **XXXXXXXXXXX** |
+|**Hardware**|[4]| **XXXX** |
+|**Memory**|[2]| **XX** |
+|**Operating System**|[11]| **XXXXXXXXXXX** |
+|**Process**|[14]| **XXXXXXXXXXXXXX** |
+
 ## ATT&CK MAPPINGS ##
 
 ### Collection: ###
@@ -138,24 +190,7 @@
 ### Resource Development: ###
   num: 0
   
-## ATT&CK MAPPING HISTOGRAM ##
 
-|  |  |  |
-|-----|-----|-----|
-|Reconnaissance |[0]| |
-|Resource Development|[0]| |
-|Initial Access |[0]| |
-|**Execution**|[8]| **XXXXXXXX** |
-|**Persistence**|[13]| **XXXXXXXXXXXXX** |
-|**Privilege Escalation**|[1] | **X** |
-|**Defense Evasion**|[32]| **XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX** |
-|**Credential Access**|[4]| **XXXX** |
-|**Discovery**|[17]| **XXXXXXXXXXXXXXXXX** |
-|Lateral Movement|[0]| |
-|**Collection**|[7]| **XXXXXXX** |
-|**Command and Control**|[1]| **X** |
-|Exfiltration|[0]| |
-|**Impact**|[5]| **XXXXX** |
 
 ## MBC MAPPINGS ##
 
@@ -267,23 +302,7 @@
 ### Privilege Escalation: ###
   num: 0
   
-## MBC MAPPING HISTOGRAM ##
 
-|  |  |  |
-|-----|-----|-----|
-|**Anti-Behavioral Analysis** |[20]| **XXXXXXXXXXXXXXXXXXXX**|
-|**Anti-Static Analysis**|[9]| **XXXXXXXXX** |
-|**Collection**|[4]| **XXXX** |
-|**Command and Control**|[3]| **XXX** |
-|Credential Access|[0]| |
-|**Defense Evasion**|[13]| **XXXXXXXXXXXXX** |
-|**Discovery**|[6]| **XXXXXX** |
-|**Execution**|[1]| **X** |
-|Exfiltration|[0]| |
-|**Impact**|[5]| **XXXXX** |
-|Lateral Movement|[0]| |
-|Persistence|[0]| |
-|Privilege Escalation|[0] | |
 
 ## MBC MICRO-BEHAVIOR MAPPING S##
 
@@ -426,15 +445,3 @@
   - Open Process [C0065]
   - Open Thread [C0066]
   
-## MBC MICRO-BEHAVIOR MAPPING HISTOGRAM ##
-
-|  |  |  |
-|-----|-----|-----|
-|**Communication** |[34]| **XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX**|
-|**Cryptography**|[16]| **XXXXXXXXXXXXXXXX** |
-|**Data**|[15]| **XXXXXXXXXXXXXXX** |
-|**File System**|[11]| **XXXXXXXXXXX** |
-|**Hardware**|[4]| **XXXX** |
-|**Memory**|[2]| **XX** |
-|**Operating System**|[11]| **XXXXXXXXXXX** |
-|**Process**|[14]| **XXXXXXXXXXXXXX** |
