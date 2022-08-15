@@ -5,7 +5,7 @@
 
 ### Collection: ###
   num: 7
-  rule:
+   
   - Archive Collected Data::Archive via Library [T1560.002]
   - Clipboard Data [T1115]
   - Video Capture [T1125]
@@ -16,12 +16,12 @@
   
 ### Command and Control: ###
   num: 1
-  rule:
+   
   - Ingress Tool Transfer [T1105]
   
 ### Credential Access: ###
   num: 4
-  rule:
+   
   - Credentials from Password Stores::Windows Credential Manager [T1555.004]
   - Credentials from Password Stores::Password Managers [T1555.005]
   - Credentials from Password Stores [T1555]
@@ -29,7 +29,7 @@
   
 ### Defense Evasion: ###
   num: 32
-  rule:
+   
   - Obfuscated Files or Information::Software Packing [T1027.002]
   - Virtualization/Sandbox Evasion::System Checks [T1497.001]
   - Impair Defenses::Disable or Modify Tools [T1562.001]
@@ -65,7 +65,7 @@
   
 ### Discovery: ###
   num: 17
-  rule:
+   
   - File and Directory Discovery [T1083]
   - System Information Discovery [T1082]
   - Process Discovery [T1057]
@@ -86,7 +86,7 @@
   
 ### Execution: ###
   num: 8
-  rule:
+   
   - Command and Scripting Interpreter [T1059]
   - Windows Management Instrumentation [T1047]
   - System Services::Service Execution [T1569.002]
@@ -98,11 +98,10 @@
   
 ### Exfiltration: ###
   num: 0
-  rule: []
   
 ### Impact: ###
   num: 5
-  rule:
+   
   - Endpoint Denial of Service [T1499]
   - System Shutdown/Reboot [T1529]
   - Data Manipulation::Transmitted Data Manipulation [T1565.002]
@@ -111,15 +110,13 @@
   
 ### Initial Access: ###
   num: 0
-  rule: []
   
 ### Lateral Movement: ###
   num: 0
-  rule: []
   
 ### Persistence: ###
   num: 13
-  rule:
+   
   - Create or Modify System Process::Windows Service [T1543.003]
   - Event Triggered Execution::Unix Shell Configuration Modification [T1546.004]
   - Boot or Logon Autostart Execution::XDG Autostart Entries [T1547.013]
@@ -136,38 +133,50 @@
   
 ### Privilege Escalation: ###
   num: 1
-  rule:
+   
   - Access Token Manipulation [T1134]
   
 ### Reconnaissance: ###
   num: 0
-  rule: []
   
 ### Resource Development: ###
   num: 0
-  rule: []
   
 ## ATT&CK MAPPING HISTOGRAM ##
+
 Reconnaissance        [ 0]
+
 Resource Development  [ 0]
+
 Initial Access        [ 0]
+
 Execution             [ 8]  **********
+
 Persistence           [13]  *****************
+
 Privilege Escalation  [ 1]  **
+
 Defense Evasion       [32]  ****************************************
+
 Credential Access     [ 4]  *****
+
 Discovery             [17]  **********************
+
 Lateral Movement      [ 0]
+
 Collection            [ 7]  *********
+
 Command and Control   [ 1]  **
+
 Exfiltration          [ 0]
+
 Impact                [ 5]  *******
 
 ## MBC MAPPINGS ##
 
 ### Anti-Behavioral Analysis: ###
   num: 20
-  rule:
+   
   - Emulator Detection [B0004]
   - Virtual Machine Detection [B0009]
   - Virtual Machine Detection::Human User Check [B0009.012]
@@ -191,7 +200,7 @@ Impact                [ 5]  *******
   
 ### Anti-Static Analysis: ###
   num: 9
-  rule:
+   
   - Disassembler Evasion [B0012]
   - Software Packing [F0001]
   - Software Packing::Themida [F0001.011]
@@ -204,7 +213,7 @@ Impact                [ 5]  *******
   
 ### Collection: ###
   num: 4
-  rule:
+   
   - Keylogging::Polling [F0002.002]
   - Keylogging::Application Hook [F0002.001]
   - Screen Capture::WinAPI [E1113.m01]
@@ -212,18 +221,17 @@ Impact                [ 5]  *******
   
 ### Command and Control: ###
   num: 3
-  rule:
+   
   - C2 Communication::Send Data [B0030.001]
   - C2 Communication::Receive Data [B0030.002]
   - C2 Communication::Server to Client File Transfer [B0030.003]
   
 ### Credential Access: ###
   num: 0
-  rule: []
   
 ### Defense Evasion: ###
   num: 13
-  rule:
+   
   - Disable or Evade Security Tools::Heavens Gate [F0004.008]
   - Disable or Evade Security Tools::Modify Policy [F0004.005]
   - Process Injection::Patch Process Command Line [E1055.m04]
@@ -240,7 +248,7 @@ Impact                [ 5]  *******
   
 ### Discovery: ###
   num: 6
-  rule:
+   
   - Analysis Tool Discovery::Process detection [B0013.001]
   - Application Window Discovery::Window Text [E1010.m01]
   - Taskbar Discovery [B0043]
@@ -250,16 +258,15 @@ Impact                [ 5]  *******
   
 ### Execution: ###
   num: 1
-  rule:
+   
   - Install Additional Program [B0023]
   
 ### Exfiltration: ###
   num: 0
-  rule: []
   
 ### Impact: ###
   num: 5
-  rule:
+   
   - Modify Hardware::Mouse [B0042.002]
   - Modify Hardware::CDROM [B0042.001]
   - Clipboard Modification [E1510]
@@ -268,36 +275,46 @@ Impact                [ 5]  *******
   
 ### Lateral Movement: ###
   num: 0
-  rule: []
   
 ### Persistence: ###
   num: 0
-  rule: []
   
 ### Privilege Escalation: ###
   num: 0
-  rule: []
   
 ## MBC MAPPING HISTOGRAM ##
+
 Anti-Behavioral Analysis  [20]  ****************************************
+
 Anti-Static Analysis      [ 9]  ******************
+
 Collection                [ 4]  ********
+
 Command and Control       [ 3]  ******
+
 Credential Access         [ 0]
+
 Defense Evasion           [13]  **************************
+
 Discovery                 [ 6]  ************
+
 Execution                 [ 1]  **
+
 Exfiltration              [ 0]
+
 Impact                    [ 5]  **********
+
 Lateral Movement          [ 0]
+
 Persistence               [ 0]
+
 Privilege Escalation      [ 0]
 
 ## MBC MICRO-BEHAVIOR MAPPING S##
 
 ### Communication: ###
   num: 34
-  rule:
+   
   - DNS Communication::Resolve [C0011.001]
   - HTTP Communication::Read Header [C0002.014]
   - HTTP Communication::WinHTTP [C0002.008]
@@ -335,7 +352,7 @@ Privilege Escalation      [ 0]
 
 ### Cryptography: ###
   num: 16
-  rule:
+   
   - Encryption Key::Import Public Key [C0028.001]
   - Decrypt Data [C0031]
   - Encryption Key [C0028]
@@ -355,7 +372,7 @@ Privilege Escalation      [ 0]
 
 ### Data: ###
   num: 15
-  rule:
+   
   - Checksum::CRC32 [C0032.001]
   - Checksum::Luhn [C0032.002]
   - Checksum::Adler [C0032.005]
@@ -374,7 +391,7 @@ Privilege Escalation      [ 0]
   
 ### File System: ###
   num: 11
-  rule:
+   
   - Set File Attributes [C0050]
   - Create Directory [C0046]
   - Delete File [C0047]
@@ -389,7 +406,7 @@ Privilege Escalation      [ 0]
 
 ### Hardware: ###
   num: 4
-  rule:
+   
   - Simulate Hardware::Ctrl-Alt-Del [C0057.001]
   - Install Driver [C0037]
   - Install Driver::Minifilter [C0037.001]
@@ -397,13 +414,13 @@ Privilege Escalation      [ 0]
 
 ### Memory: ###
   num: 2
-  rule:
+   
   - Free Memory [C0044]
   - Allocate Memory [C0007]
 
 ### Operating System: ###
   num: 11
-  rule:
+   
   - Environment Variable::Set Variable [C0034.001]
   - Environment Variable::Get Variable [C0034.002]
   - Wallpaper [C0035]
@@ -418,7 +435,7 @@ Privilege Escalation      [ 0]
   
 ### Process: ###
   num: 14
-  rule:
+   
   - Create Thread [C0038]
   - Suspend Thread [C0055]
   - Terminate Thread [C0039]
@@ -435,11 +452,19 @@ Privilege Escalation      [ 0]
   - Open Thread [C0066]
   
 ## MBC MICRO-BEHAVIOR MAPPING HISTOGRAM ##
+
 Communication     [34]  ****************************************
+
 Cryptography      [16]  *******************
+
 Data              [15]  ******************
+
 File System       [11]  *************
+
 Hardware          [ 4]  *****
+
 Memory            [ 2]  ***
+
 Operating System  [11]  *************
+
 Process           [14]  *****************
