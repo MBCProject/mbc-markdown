@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**E1608**|
-|**Objective(s)**|[Privilege Escalation](../privilege-escalation)|
-|**Related ATT&CK Technique**|[Stage Capabilities: Install Digital Certificate](https://attack.mitre.org/techniques/T1608/003/)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1608</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../privilege-escalation">Privilege Escalation</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1608/003/">Stage Capabilities: Install Digital Certificate</a></b></td>
+</tr>
+</table>
 
 
 Install Certificate

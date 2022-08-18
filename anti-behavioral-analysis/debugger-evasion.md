@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**B0002**|
-|**Objective(s)**|[Anti-Behavioral Analysis](../anti-behavioral-analysis)|
-|**Related ATT&CK Technique**|[Debugger Evasion (T1622)](https://attack.mitre.org/techniques/T1622/)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>B0002</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../anti-behavioral-analysis">Anti-Behavioral Analysis</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1622/">Debugger Evasion (T1622)</a></b></td>
+</tr>
+</table>
 
 
 Debugger Evasion

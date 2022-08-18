@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**F0015**|
-|**Objective(s)**|[Anti-Behavioral Analysis](../anti-behavioral-analysis), [Collection](../collection), [Credential Access](../credential-access), [Defense Evasion](../defense-evasion), [Persistence](../persistence), [Privilege Escalation](../privilege-escalation)|
-|**Related ATT&CK Technique**|Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques/T1574), [T1625](https://attack.mitre.org/techniques/T1625))|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>F0015</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../anti-behavioral-analysis">Anti-Behavioral Analysis</a>, <a href="../collection">Collection</a>, <a href="../credential-access">Credential Access</a>, <a href="../defense-evasion">Defense Evasion</a>, <a href="../persistence">Persistence</a>, <a href="../privilege-escalation">Privilege Escalation</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1574">T1574</a>, <a href="https://attack.mitre.org/techniques/T1625">T1625</a></b></td>
+</tr>
+</table>
 
 
 Hijack Execution Flow

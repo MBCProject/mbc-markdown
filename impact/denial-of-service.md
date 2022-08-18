@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**B0033**|
-|**Objective(s)**|[Impact](../impact)|
-|**Related ATT&CK Technique**|[Network Denial of Service (T1498)](https://attack.mitre.org/techniques/T1498/)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>B0033</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../impact">Impact</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1498/">Network Denial of Service (T1498)</a></b></td>
+</tr>
+</table>
 
 
 Denial of Service

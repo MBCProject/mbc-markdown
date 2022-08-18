@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**B0028**|
-|**Objective(s)**|[Collection](../collection), [Credential Access](../credential-access)|
-|**Related ATT&CK Technique**|None|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>B0028</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../collection">Collection</a>, <a href="../credential-access">Credential Access</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b>None</b></td>
+</tr>
+</table>
 
 
 Cryptocurrency

@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**E1020**|
-|**Objective(s)**|[Exfiltration](../exfiltration)|
-|**Related ATT&CK Technique**|[Automated Exfiltration](https://attack.mitre.org/techniques/T1020/)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1020</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../exfiltration">Exfiltration</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1020/">Automated Exfiltration</a></b></td>
+</tr>
+</table>
 
 
 Automated Exfiltration

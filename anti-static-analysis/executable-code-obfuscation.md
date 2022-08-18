@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**B0032**|
-|**Objective(s)**|[Anti-Static Analysis](../anti-static-analysis)|
-|**Related ATT&CK Technique**|None|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>B0032</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../anti-static-analysis">Anti-Static Analysis</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b>None</b></td>
+</tr>
+</table>
 
 
 Executable Code Obfuscation

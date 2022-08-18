@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**B0047**|
-|**Objective(s)**|[Defense Evasion](../defense-evasion), [Persistence](../persistence)|
-|**Related ATT&CK Technique**|None|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>B0047</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../defense-evasion">Defense Evasion</a>, <a href="../persistence">Persistence</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b>None</b></td>
+</tr>
+</table>
 
 
 Install Insecure or Malicious Configuration

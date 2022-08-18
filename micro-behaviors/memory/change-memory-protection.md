@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**C0008**|
-|**Objective(s)**|[Memory](../memory)|
-|**Related ATT&CK Technique**|None|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>C0008</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../memory">Memory</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b>None</b></td>
+</tr>
+</table>
 
 
 Change Memory Protection

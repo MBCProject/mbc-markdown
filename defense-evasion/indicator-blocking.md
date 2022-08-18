@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**F0006**|
-|**Objective(s)**|[Defense Evasion](../defense-evasion)|
-|**Related ATT&CK Sub-Technique**|[Impair Defenses: Indicator Blocking](https://attack.mitre.org/techniques/T1562/006/)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>F0006</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../defense-evasion">Defense Evasion</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1562/006/">Impair Defenses: Indicator Blocking</a></b></td>
+</tr>
+</table>
 
 
 Indicator Blocking

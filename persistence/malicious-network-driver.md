@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**B0026**|
-|**Objective(s)**|[Lateral Movement](../lateral-movement), [Persistence](../persistence)|
-|**Related ATT&CK Technique**|None|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>B0026</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../lateral-movement">Lateral Movement</a>, <a href="../persistence">Persistence</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b>None</b></td>
+</tr>
+</table>
 
 
 Malicious Network Driver

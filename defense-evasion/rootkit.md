@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**E1014**|
-|**Objective(s)**|[Defense Evasion](../defense-evasion)|
-|**Related ATT&CK Technique**|[Rootkit](https://attack.mitre.org/techniques/T1014)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1014</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../defense-evasion">Defense Evasion</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1014">Rootkit</a></b></td>
+</tr>
+</table>
 
 
 Rootkit

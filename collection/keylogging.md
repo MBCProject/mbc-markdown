@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**F0002**|
-|**Objective(s)**|[Collection](../collection), [Credential Access](../credential-access)|
-|**Related ATT&CK Sub-Technique**|Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/techniques/T1056/001), [T1417.001](https://attack.mitre.org/techniques/T1417/001/))|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>F0002</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../collection">Collection</a>, <a href="../credential-access">Credential Access</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1056/001">T1056.001</a>, <a href="https://attack.mitre.org/techniques/T1417/001/">T1417.001</a></b></td>
+</tr>
+</table>
 
 
 Keylogging

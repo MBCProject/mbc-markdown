@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**B0018**|
-|**Objective(s)**|[Impact](../impact)|
-|**Related ATT&CK Technique**|[Resource Hijacking (T1496)](https://attack.mitre.org/techniques/T1496/)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>B0018</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../impact">Impact</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1496/">Resource Hijacking (T1496)</a></b></td>
+</tr>
+</table>
 
 
 Resource Hijacking

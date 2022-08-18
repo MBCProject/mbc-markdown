@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**E1564**|
-|**Objective(s)**|[Defense Evasion](../defense-evasion), [Persistence](../persistence)|
-|**Related ATT&CK Technique**|Hide Artifacts ([T1564](https://attack.mitre.org/techniques/T1564/), [T1628](https://attack.mitre.org/techniques/T1628/))|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1564</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../defense-evasion">Defense Evasion</a>, <a href="../persistence">Persistence</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1564/">T1564</a>, <a href="https://attack.mitre.org/techniques/T1628/">T1628</a></b></td>
+</tr>
+</table>
 
 
 Hide Artifacts

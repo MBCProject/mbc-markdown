@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**E1055**|
-|**Objective(s)**|[Defense Evasion](../defense-evasion), [Privilege Escalation](../privilege-escalation)|
-|**Related ATT&CK Technique**|Process Injection ([T1055](https://attack.mitre.org/techniques/T1055), [T1631](https://attack.mitre.org/techniques/T1631/))|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1055</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../defense-evasion">Defense Evasion</a>, <a href="../privilege-escalation">Privilege Escalation</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1055">T1055</a>, <a href="https://attack.mitre.org/techniques/T1631/">T1631</a></b></td>
+</tr>
+</table>
 
 
 Process Injection

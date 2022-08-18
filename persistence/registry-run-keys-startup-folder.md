@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**F0012**|
-|**Objective(s)**|[Persistence](../persistence)|
-|**Related ATT&CK Sub-Technique**|[Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder](https://attack.mitre.org/techniques/T1547/001/)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>F0012</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../persistence">Persistence</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1547/001/">Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder</a></b></td>
+</tr>
+</table>
 
 
 Registry Run Keys / Startup Folder

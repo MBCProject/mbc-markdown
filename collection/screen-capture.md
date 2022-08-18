@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**E1113**|
-|**Objective(s)**|[Collection](../collection), [Credential Access](../credential-access)|
-|**Related ATT&CK Technique**|[Screen Capture](https://attack.mitre.org/techniques/T1113/)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1113</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../collection">Collection</a>, <a href="../credential-access">Credential Access</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1113/">Screen Capture</a></b></td>
+</tr>
+</table>
 
 
 Screen Capture

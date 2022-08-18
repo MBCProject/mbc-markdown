@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**E1560**|
-|**Objective(s)**|[Exfiltration](../exfiltration)|
-|**Related ATT&CK Technique**|[Archive Collected Data](https://attack.mitre.org/techniques/T1560/)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1560</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../exfiltration">Exfiltration</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1560/">Archive Collected Data</a></b></td>
+</tr>
+</table>
 
 
 Archive Collected Data
