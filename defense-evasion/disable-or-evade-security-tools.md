@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**F0004**|
-|**Objective(s)**|[Defense Evasion](../defense-evasion)|
-|**Related ATT&CK Sub-Techniques**|Impair Defenses: Disable or Modify Tools ([T1562.001](https://attack.mitre.org/techniques/T1562/001), [T1629.003](https://attack.mitre.org/techniques/T1629/003/))|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>F0004</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../defense-evasion">Defense Evasion</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1562/001">T1562.001</a>, <a href="https://attack.mitre.org/techniques/T1629/003/">T1629.003</a></b></td>
+</tr>
+</table>
 
 
 Disable or Evade Security Tools

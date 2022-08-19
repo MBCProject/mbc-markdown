@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**E1056**|
-|**Objective(s)**|[Collection](../collection), [Credential Access](../credential-access)|
-|**Related ATT&CK Technique**|Input Capture ([T1056](https://attack.mitre.org/techniques/T1056), [T1417](https://attack.mitre.org/techniques/T1417/))|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1056</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../collection">Collection</a>, <a href="../credential-access">Credential Access</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1056">T1056</a>, <a href="https://attack.mitre.org/techniques/T1417/">T1417</a></b></td>
+</tr>
+</table>
 
 
 Input Capture

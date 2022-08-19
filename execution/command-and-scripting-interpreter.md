@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**E1059**|
-|**Objective(s)**|[Execution](../execution)|
-|**Related ATT&CK Technique**|Command and Scripting Interpreter ([T1059](https://attack.mitre.org/techniques/T1059), [T1623](https://attack.mitre.org/techniques/T1623))|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1059</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../execution">Execution</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1059">T1059</a>, <a href="https://attack.mitre.org/techniques/T1623">T1623</a></b></td>
+</tr>
+</table>
 
 
 Command and Scripting Interpreter

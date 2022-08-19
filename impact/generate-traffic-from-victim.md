@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**E1643**|
-|**Objective(s)**|[Impact](../impact)|
-|**Related ATT&CK Technique**|[Generate Traffic from Victim](https://attack.mitre.org/techniques/T1643/)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1643</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../impact">Impact</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1643/">Generate Traffic from Victim</a></b></td>
+</tr>
+</table>
 
 
 Generate Traffic from Victim

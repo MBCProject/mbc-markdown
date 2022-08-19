@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**B0019**|
-|**Objective(s)**|[Impact](../impact)|
-|**Related ATT&CK Sub-Technique**|[Data Manipulation: Transmitted Data Manipulation (T1565.002)](https://attack.mitre.org/techniques/T1565/002/)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>B0019</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../impact">Impact</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1565/002/">Data Manipulation: Transmitted Data Manipulation (T1565.002)</a></b></td>
+</tr>
+</table>
 
 
 Manipulate Network Traffic

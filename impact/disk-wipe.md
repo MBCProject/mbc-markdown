@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**F0014**|
-|**Objective(s)**|[Impact](../impact)|
-|**Related ATT&CK Sub-Technique**|[Disk Wipe](https://attack.mitre.org/techniques/T1561/)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>F0014</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../impact">Impact</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1561/">Disk Wipe</a></b></td>
+</tr>
+</table>
 
 Disk Wipe
 =========

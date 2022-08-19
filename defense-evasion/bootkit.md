@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**F0013**|
-|**Objective(s)**|[Defense Evasion](../defense-evasion), [Persistence](../persistence)|
-|**Related ATT&CK Sub-Technique**|[Pre-OS Boot: Bootkit](https://attack.mitre.org/techniques/T1542/003)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>F0013</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../defense-evasion">Defense Evasion</a>, <a href="../persistence">Persistence</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1542/003">Pre-OS Boot: Bootkit</a></b></td>
+</tr>
+</table>
 
 
 Bootkit

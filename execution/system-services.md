@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**E1569**|
-|**Objective(s)**|[Execution](../execution)|
-|**Related ATT&CK Technique**|[System Services](https://attack.mitre.org/techniques/T1569/)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1569</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../execution">Execution</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1569/">System Services</a></b></td>
+</tr>
+</table>
 
 
 System Services

@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**E1027**|
-|**Objective(s)**|[Anti-Static Analysis](../anti-static-analysis), [Defense Evasion](../defense-evasion)|
-|**Related ATT&CK Technique**|Obfuscated Files or Information ([T1027](https://attack.mitre.org/techniques/T1027/), [T1406](https://attack.mitre.org/techniques/T1406/))|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1027</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../anti-static-analysis">Anti-Static Analysis</a>, <a href="../defense-evasion">Defense Evasion</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1027/">T1027</a>, <a href="https://attack.mitre.org/techniques/T1406/">T1406</a></b></td>
+</tr>
+</table>
 
 
 Obfuscated Files or Information

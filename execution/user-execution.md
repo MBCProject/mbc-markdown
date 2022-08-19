@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**E1204**|
-|**Objective(s)**|[Execution](../execution)|
-|**Related ATT&CK Technique**|[User Execution](https://attack.mitre.org/techniques/T1204)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1204</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../execution">Execution</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1204">User Execution</a></b></td>
+</tr>
+</table>
 
 
 User Execution

@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**B0031**|
-|**Objective(s)**|[Command and Control](../command-and-control)|
-|**Related ATT&CK Sub-Technique**|[Dynamic Resolution: Domain Generation Algorithms (T1568.002)](https://attack.mitre.org/techniques/T1568/002/)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>B0031</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../command-and-control">Command and Control</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1568/002/">Dynamic Resolution: Domain Generation Algorithms (T1568.002)</a></b></td>
+</tr>
+</table>
 
 
 Domain Name Generation

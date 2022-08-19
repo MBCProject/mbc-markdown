@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**E1195**|
-|**Objective(s)**|[Lateral Movement](../lateral-movement)|
-|**Related ATT&CK Technique**|Supply Chain Compromise ([T1195](https://attack.mitre.org/techniques/T1195/), [T1474](https://attack.mitre.org/techniques/T1474/))|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1195</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../lateral-movement">Lateral Movement</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1195/">T1195</a>, <a href="https://attack.mitre.org/techniques/T1474/">T1474</a></b></td>
+</tr>
+</table>
 
 
 Supply Chain Compromise

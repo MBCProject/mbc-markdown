@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**E1082**|
-|**Objective(s)**|[Discovery](../discovery)|
-|**Related ATT&CK Technique**|[System Information Discovery](https://attack.mitre.org/techniques/T1082)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1082</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../discovery">Discovery</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1082">System Information Discovery</a></b></td>
+</tr>
+</table>
 
 
 System Information Discovery

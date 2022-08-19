@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**E1083**|
-|**Objective(s)**|[Discovery](../discovery)|
-|**Related ATT&CK Technique**|[File and Directory Discovery](https://attack.mitre.org/techniques/T1083/) |
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1083</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../discovery">Discovery</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1083/">File and Directory Discovery</a></b></td>
+</tr>
+</table>
 
 
 File and Directory Discovery

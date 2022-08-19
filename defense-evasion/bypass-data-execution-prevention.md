@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**B0037**|
-|**Objective(s)**|[Defense Evasion](../defense-evasion)|
-|**Related ATT&CK Technique**|None|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>B0037</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../defense-evasion">Defense Evasion</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b>None</b></td>
+</tr>
+</table>
 
 
 Bypass Data Execution Prevention

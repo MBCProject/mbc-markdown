@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**B0021**|
-|**Objective(s)**|[Execution](../execution), [Lateral Movement](../lateral-movement)|
-|**Related ATT&CK Technique**|None|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>B0021</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../execution">Execution</a>, <a href="../lateral-movement">Lateral Movement</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b>None</b></td>
+</tr>
+</table>
 
 
 Send Poisoned Text Message

@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**E1485**|
-|**Objective(s)**|[Impact](../impact)|
-|**Related ATT&CK Technique**|[Data Destruction](https://attack.mitre.org/techniques/T1485/)|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1485</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../impact">Impact</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b><a href="https://attack.mitre.org/techniques/T1485/">Data Destruction</a></b></td>
+</tr>
+</table>
 
 
 Data Destruction

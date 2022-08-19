@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**B0039**|
-|**Objective(s)**|[Impact](../impact)|
-|**Related ATT&CK Technique**|None|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>B0039</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../impact">Impact</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b>None</b></td>
+</tr>
+</table>
 
 
 Spamming

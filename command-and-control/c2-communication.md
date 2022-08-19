@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**B0030**|
-|**Objective(s)**|[Command and Control](../command-and-control)|
-|**Related ATT&CK Technique**|None|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>B0030</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../command-and-control">Command and Control</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b>None</b></td>
+</tr>
+</table>
 
 
 C2 Communication

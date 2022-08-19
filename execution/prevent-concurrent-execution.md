@@ -1,8 +1,18 @@
-|||
-|---|---|
-|**ID**|**B0024**|
-|**Objective(s)**|[Execution](../execution)|
-|**Related ATT&CK Technique**|None|
+
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>B0024</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../execution">Execution</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b>None</b></td>
+</tr>
+</table>
 
 
 Prevent Concurrent Execution
