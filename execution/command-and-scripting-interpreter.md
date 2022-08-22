@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1059">T1059</a>, <a href="https://attack.mitre.org/techniques/T1623">T1623</a></b></td>
+<td><b>Command and Scripting Interpreter (<a href="https://attack.mitre.org/techniques/T1059">T1059</a>, <a href="https://attack.mitre.org/techniques/T1623">T1623</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ Command and Scripting Interpreter
 =================================
 Malware may abuse command and script interpreters to execute commands, scripts, or binaries.
 
-**See ATT&CK Technique:** **Command and Scripting Interpreter ([T1059](https://attack.mitre.org/techniques/T1059), [T1623](https://attack.mitre.org/techniques/T1623))**.
+See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.org/techniques/T1059), [T1623](https://attack.mitre.org/techniques/T1623))**.
 
 Malware Examples
 ----------------

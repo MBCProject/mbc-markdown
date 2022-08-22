@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1055">T1055</a>, <a href="https://attack.mitre.org/techniques/T1631/">T1631</a></b></td>
+<td><b>Process Injection (<a href="https://attack.mitre.org/techniques/T1055">T1055</a>, <a href="https://attack.mitre.org/techniques/T1631/">T1631</a>)</b></td>
 </tr>
 </table>
 

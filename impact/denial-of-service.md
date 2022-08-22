@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1498/">Network Denial of Service (T1498)</a></b></td>
+<td><b>Network Denial of Service (<a href="https://attack.mitre.org/techniques/T1498/">T1498</a>)</b></td>
 </tr>
 </table>
 
@@ -19,9 +19,9 @@ Denial of Service
 =================
 Malware may make a network unavailable, for example, by launching a network-based denial of service (DoS) attack. 
 
-Endpoint denial of service behaviors are captured by the [Endpoint Denial of Service](https://attack.mitre.org/techniques/T1499/) technique.
+Endpoint denial of service behaviors are captured by the **Endpoint Denial of Service ([T1499](https://attack.mitre.org/techniques/T1499/))** technique.
 
-The related [Network Denial of Service (T1498)](https://attack.mitre.org/techniques/T1498/) ATT&CK technique was defined subsequent to this MBC behavior.
+The related **Network Denial of Service ([T1498](https://attack.mitre.org/techniques/T1498/))** ATT&CK technique was defined subsequent to this MBC behavior.
 
 Malware Examples
 ----------------

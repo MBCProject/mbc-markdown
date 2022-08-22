@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1056/001">T1056.001</a>, <a href="https://attack.mitre.org/techniques/T1417/001/">T1417.001</a></b></td>
+<td><b>Input Capture: Keylogging (<a href="https://attack.mitre.org/techniques/T1056/001">T1056.001</a>, <a href="https://attack.mitre.org/techniques/T1417/001/">T1417.001</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ Keylogging
 ==========
 Malware captures user keyboard input.
 
-**See ATT&CK:** **Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/techniques/T1056/001), [T1417.001](https://attack.mitre.org/techniques/T1417/001/))**
+See ATT&CK: **Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/techniques/T1056/001), [T1417.001](https://attack.mitre.org/techniques/T1417/001/))**
 
 Methods
 -------

@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1542/002/">Pre-OS Boot: Component Firmware</a></b></td>
+<td><b>Pre-OS Boot: Component Firmware (<a href="https://attack.mitre.org/techniques/T1542/002/">1542.002</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ Component Firmware
 ==================
 Malware may overwrite the flash memory of firmware outside of the main system firmware or BIOS. [[1]](#1). Methods related to malware (extending ATT&CK's definitions) are below. 
 
-see ATT&CK: [**Pre-OS Boot: Component Firmware**](https://attack.mitre.org/techniques/T1542/002/).
+See ATT&CK: **Pre-OS Boot: Component Firmware ([T1542.002](https://attack.mitre.org/techniques/T1542/002/))**.
 
 Methods
 -------

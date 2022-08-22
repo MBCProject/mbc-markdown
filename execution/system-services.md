@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1569/">System Services</a></b></td>
+<td><b>System Services (<a href="https://attack.mitre.org/techniques/T1569/">T1569</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ System Services
 ===============
 Malware may abuse system services or daemons to execute. 
 
-**See ATT&CK:** [**System Services**](https://attack.mitre.org/techniques/T1569/).
+See ATT&CK: **System Services ([T1569](https://attack.mitre.org/techniques/T1569/))**.
 
 Methods
 -------

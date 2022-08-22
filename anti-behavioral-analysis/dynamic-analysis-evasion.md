@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1497/">T1497</a>, <a href="https://attack.mitre.org/techniques/T1633/">T1633</a></b></td>
+<td><b>Virtualization/Sandbox Evasion (<a href="https://attack.mitre.org/techniques/T1497/">T1497</a>, <a href="https://attack.mitre.org/techniques/T1633/">T1633</a>)</b></td>
 </tr>
 </table>
 
@@ -19,9 +19,9 @@ Dynamic Analysis Evasion
 ========================
 Malware may obstruct dynamic analysis in a sandbox, emulator, or virtual machine. 
 
-See [Emulator Evasion](../anti-behavioral-analysis/emulator-evasion.md) for an  emulator-specific evasion behavior, and see [Execution Guardrails](../anti-behavioral-analysis/execution-guardrails.md) for a behavior that constrains dynamic execution based on environmental conditions. 
+See **Emulator Evasion ([B0004](../anti-behavioral-analysis/emulator-evasion.md))** for an  emulator-specific evasion behavior, and see **Conditional Execution ([B0025](../anti-behavioral-analysis/execution-guardrails.md))** for a behavior that constrains dynamic execution based on environmental conditions. 
 
-The related Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/)) ATT&CK techniques were defined subsequent to this MBC behavior.
+The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/))** ATT&CK techniques were defined subsequent to this MBC behavior.
 
 Methods
 -------

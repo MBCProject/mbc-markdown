@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1510/">Clipboard Modification</a></b></td>
+<td><b>Clipboard Modification (<a href="https://attack.mitre.org/techniques/T1510/">T1510</a>)</b></td>
 </tr>
 </table>
 

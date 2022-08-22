@@ -17,7 +17,7 @@
 
 C2 Communication
 ================
-All command and control malware use implant/controller communication. The methods listed below can be used to capture explicit communication details. Remote file copy behavior is captured separately, as is done in ATT&CK - see [Remote File Copy](../command-and-control/ingress-tool-transfer.md).
+All command and control malware use implant/controller communication. The methods listed below can be used to capture explicit communication details. Remote file copy behavior is captured separately, as is done in ATT&CK - see **Ingress Tool Transfer ([E1105](../command-and-control/ingress-tool-transfer.md))**.
 
 Command and Control Communication relates to *autonomous* communications, not explicit, on-demand commands that malware provides to an adversary (such commands should be captured with [Remote Commands](../execution/remote-commands.md) under the Execution objective).
 
@@ -44,6 +44,20 @@ Methods
 |**Server to Client File Transfer**|B0030.003|File is transferred from controller to implant.|
 |**Start Interactive Shell**|B0030.016|Start an interactive shell using a built-in program (e.g. cmd.exe, PowerShell, bash). This is often implemented with polling the network connection from the controller for text commands to redirect to the shell's stdin and polling the shell's stdout and stderr to redirect over the network to the controller. This differs from Execute Shell Command because the shell process runs across multiple iterations of the recv-command(s)-send-result loop.|
 
+
+Malware Examples
+----------------
+|Name|Date|Description|
+|---|---|---|
+|[**CryptoWall**](../command-and-control/c2-communication.md)|2014|The malware sends a hash value generated from system information [[1]](#1)|
+|[**GotBotKR**](../command-and-control/c2-communication.md)|2019|GoBotKR receives data from the C2 [[2]](#2)|
+|[**Terminator**](../command-and-control/c2-communication.md)|2013|The malware sends data to C2 [[3]](#3)|
+|[**UP007**](../command-and-control/c2-communication.md)|2016|The malware receives payloads [[4]](#4)|
+|[**YiSpecter**](../command-and-control/c2-communication.md)|2015|Connects to the command and control server using HTTP to send device information [[5]](#5)|
+|[**Ursnif**](../command-and-control/c2-communication.md)|2016|Ursnif variant Dreambot authenticates and encrypts traffic to C2 server using TOR [[6]](#6)|
+|[**Emotet**](../command-and-control/c2-communication.md)|2018| new email addresses are collected automatically from the victim's address books [[7]](#7)|
+
+
 Code Snippets
 -------------
 **C2 Communication::Receive Data** (B0030.02)
@@ -62,18 +76,6 @@ call recv
 jmp short loc_4019A2
 ```
 
-
-Malware Examples
-----------------
-|Name|Date|Description|
-|---|---|---|
-|[**CryptoWall**](../command-and-control/c2-communication.md)|2014|The malware sends a hash value generated from system information [[1]](#1)|
-|[**GotBotKR**](../command-and-control/c2-communication.md)|2019|GoBotKR receives data from the C2 [[2]](#2)|
-|[**Terminator**](../command-and-control/c2-communication.md)|2013|The malware sends data to C2 [[3]](#3)|
-|[**UP007**](../command-and-control/c2-communication.md)|2016|The malware receives payloads [[4]](#4)|
-|[**YiSpecter**](../command-and-control/c2-communication.md)|2015|Connects to the command and control server using HTTP to send device information [[5]](#5)|
-|[**Ursnif**](../command-and-control/c2-communication.md)|2016|Ursnif variant Dreambot authenticates and encrypts traffic to C2 server using TOR [[6]](#6)|
-|[**Emotet**](../command-and-control/c2-communication.md)|2018| new email addresses are collected automatically from the victim's address books [[7]](#7)|
 
 References
 ----------

@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1574">T1574</a>, <a href="https://attack.mitre.org/techniques/T1625">T1625</a></b></td>
+<td><b>Hijack Execution Flow (<a href="https://attack.mitre.org/techniques/T1574">T1574</a>, <a href="https://attack.mitre.org/techniques/T1625">T1625</a>)</b></td>
 </tr>
 </table>
 
@@ -21,9 +21,9 @@ Malware may execute by hijacking the way operating systems run programs. Malware
 
 Note that in MBC, Hooking is also associated with the [Defense Evasion](../defense-evasion), [Persistence](../persistence), [Privilege Escalation](../privilege-escalation), and [Anti-Behavioral Analysis](../anti-behavioral-analysis) objectives.
 
-For discussion related to the Credential Access and Collection objectives, see [Input Capture: Credential API Hooking](https://attack.mitre.org/techniques/T1056/004/).
+For discussion related to the Credential Access and Collection objectives, see **Input Capture: Credential API Hooking ([T1056.004](https://attack.mitre.org/techniques/T1056/004/))**.
 
-For hooking related to memory dump evasion, see [Memory Dump Evasion](../anti-behavioral-analysis/memory-dump-evasion.md).
+For hooking related to memory dump evasion, see **Memory Dump Evasion ([B0006](../anti-behavioral-analysis/memory-dump-evasion.md))**.
 
 See ATT&CK: **Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques/T1574), [T1625](https://attack.mitre.org/techniques/T1625))**.
 

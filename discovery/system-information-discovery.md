@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1082">System Information Discovery</a></b></td>
+<td><b>System Information Discovery (<a href="https://attack.mitre.org/techniques/T1082">T1082</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ System Information Discovery
 ============================
 Malware may attempt to get detailed information about the system. 
 
-See ATT&CK: [**System Information Discovery**](https://attack.mitre.org/techniques/T1082).
+See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/techniques/T1082/))**.
 
 Methods
 -------

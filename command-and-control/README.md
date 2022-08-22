@@ -8,7 +8,7 @@ Behaviors that enable malware to communicate with systems such as C2 servers or 
 
 * **Command and Control Communication** [B0030](../command-and-control/c2-communication.md)
 * **Domain Name Generation** [B0031](../command-and-control/domain-name-generation.md)
-* **Remote File Copy** [E1105](../command-and-control/ingress-tool-transfer.md)
+* **Ingress Tool Transfer** [E1105](../command-and-control/ingress-tool-transfer.md)
 
 
 Malware Examples

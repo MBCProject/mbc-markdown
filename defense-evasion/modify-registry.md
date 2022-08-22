@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1112">Modify Registry</a></b></td>
+<td><b>Modify Registry<a href="https://attack.mitre.org/techniques/T1112">T1112</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,8 @@ Modify Registry
 ===============
 Malware may make changes to the Windows Registry to hide execution or to persist on the system (note that ATT&CK does not extend this behavior to the Persistence objective). 
 
-See ATT&CK: [**Modify Registry**](https://attack.mitre.org/techniques/T1112).
+
+See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112/))**.
 
 Malware Examples
 ----------------

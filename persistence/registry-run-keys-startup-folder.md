@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1547/001/">Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder</a></b></td>
+<td><b>Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder (<a href="https://attack.mitre.org/techniques/T1547/001/">T1547.001</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ Registry Run Keys / Startup Folder
 ==================================
 Malware may add an entry to the Windows Registry run keys or startup folder to enable persistence. [[1]](#1)
 
-See ATT&CK: [**Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder**](https://attack.mitre.org/techniques/T1547/001/). 
+See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder ([T1547.001](https://attack.mitre.org/techniques/T1547/001/))**. 
 
 Malware Examples
 ----------------

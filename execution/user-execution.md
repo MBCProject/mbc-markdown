@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1204">User Execution</a></b></td>
+<td><b>User Execution (<a href="https://attack.mitre.org/techniques/T1204">T1204</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ User Execution
 ==============
 Malware may include code that relies on specific actions by a user to execute. Note that this MBC behavior differs from [User Execution](https://attack.mitre.org/techniques/T1204) in that it does do not include direct code execution (user action for *initial* execution) - MBC does not encompass ATT&CK's Initial Access Tactic.  
 
-**See ATT&CK Technique:** [**User Execution**](https://attack.mitre.org/techniques/T1204).
+See ATT&CK Technique: **User Execution ([T1204](https://attack.mitre.org/techniques/T1204/))**.
 
 Malware Examples
 ----------------

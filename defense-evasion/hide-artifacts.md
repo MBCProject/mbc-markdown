@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1564/">T1564</a>, <a href="https://attack.mitre.org/techniques/T1628/">T1628</a></b></td>
+<td><b>Hide Artifacts (<a href="https://attack.mitre.org/techniques/T1564/">T1564</a>, <a href="https://attack.mitre.org/techniques/T1628/">T1628</a>)</b></td>
 </tr>
 </table>
 

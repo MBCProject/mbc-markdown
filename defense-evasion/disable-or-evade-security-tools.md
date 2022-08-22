@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1562/001">T1562.001</a>, <a href="https://attack.mitre.org/techniques/T1629/003/">T1629.003</a></b></td>
+<td><b>Impair Defenses: Disable or Modify Tools (<a href="https://attack.mitre.org/techniques/T1562/001">T1562.001</a>, <a href="https://attack.mitre.org/techniques/T1629/003/">T1629.003</a>)</b></td>
 </tr>
 </table>
 

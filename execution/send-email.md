@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1566/">Phishing (T1566)</a></b></td>
+<td><b>Phishing (<a href="https://attack.mitre.org/techniques/T1566/">T1566</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ Send Email
 ==========
 Sends an email message from the system on which the malware is executing to one or more recipients, mostly commonly for the purpose of spamming or for distributing a malicious attachment or URL (malspamming).
 
-This behavior is related to the [Phishing (T1566)](https://attack.mitre.org/techniques/T1566/) ATT&CK technique defined under ATT&CK's Initial Access tactic.
+This behavior is related to the **Phishing ([T1566](https://attack.mitre.org/techniques/T1566/))** ATT&CK technique defined under ATT&CK's Initial Access tactic.
 
 Malware Examples
 ----------------

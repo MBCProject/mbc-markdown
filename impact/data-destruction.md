@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1485/">Data Destruction</a></b></td>
+<td><b>Data Destruction (<a href="https://attack.mitre.org/techniques/T1485/">T1485</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ Data Destruction
 ================
 Data, system files, or other files are destroyed. Individual files are selected, as opposed to wiping an entire sector.
 
-see ATT&CK: [**Data Destruction**](https://attack.mitre.org/techniques/T1485/).
+See ATT&CK: **Data Destruction ([T1485](https://attack.mitre.org/techniques/T1485/))**.
 
 Methods
 -------

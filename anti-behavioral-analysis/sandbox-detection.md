@@ -1,15 +1,23 @@
-|||
-|---|---|
-|**ID**|**B0007**|
-|**Objective(s)**|[Anti-Behavioral Analysis](../anti-behavioral-analysis)|
-|**Related ATT&CK Sub-techniques**|Virtualization/Sandbox Evasion: System Checks ([T1497.001](https://attack.mitre.org/techniques/T1497/001/), [T1633.001](https://attack.mitre.org/techniques/T1633/001/)), Virtualization/Sandbox Evasion: User Activity Based Checks ([T1497.002](https://attack.mitre.org/techniques/T1497/002/))|
-
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>B0007</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../anti-behavioral-analysis">Anti-Behavioral Analysis</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b>Virtualization/Sandbox Evasion Checks (<a href="https://attack.mitre.org/techniques/T1497/001/">T1497.001</a>, <a href="https://attack.mitre.org/techniques/T1633/001/">T1633.001</a>), Virtualization/Sandbox Evasion: User Activity Based Checks (<a href="https://attack.mitre.org/techniques/T1497/002/">T1497.002</a>)</b></td>
+</tr>
+</table>
 
 Sandbox Detection
 =================
 Detects whether the malware instance is being executed inside an instrumented sandbox environment (e.g., Cuckoo Sandbox). If so, conditional execution selects a benign execution path.
 
-The related Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/)) ATT&CK techniques were defined subsequent to this MBC behavior.
+The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/))** ATT&CK techniques were defined subsequent to this MBC behavior.
  
 Methods
 -------
@@ -25,6 +33,18 @@ Methods
 |**Timing/Date Check**|B0007.008|Calling GetSystemTime or equiv and only executing code if the current date/hour/minute/second passes some check. Often this is for running only after or only until a specific date. This behavior can be mitigated in non-automated analysis environments.|
 |**Timing/Uptime Check**|B0007.009|Comparing single GetTickCount with some value to see if system has been started at least *X* amount ago. This behavior can be mitigated in non-automated analysis environments.|
 |**Test API Routines**|B0007.010|Calls Windows API routines with invalid arguments to identify error supression.|
+
+
+Malware Examples
+----------------
+|Name|Date|Description|
+|---|---|---|
+|[**Redhip**](../xample-malware/redhip.md)|January 2011|Redhip detects publicly available automated analysis workbenches (e.g., Joe Box) by considering OS product keys and special DLLs. [[1]](#1)|
+|[**Rombertik**](../xample-malware/rombertik.md)|May 2015|[[2]](#2)|
+|[**Terminator**](../xample-malware/terminator.md)|May 2013|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[4]](#4)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|Ursnif uses malware macros to evade sandbox detection.|
+|[**GotBotKR**](../xample-malware/gotbotkr.md)|2019|GoBotKR performs several checks on the compromised machine to avoid being emulated or executed in a sandbox. [[5]](#5)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|The malware check for sandboxes that suppress errors returned from API routine calls the using ZwGetWriteWatch routine. [[6]](#6)|
 
 
 Code Snippets
@@ -59,16 +79,6 @@ jnz     short loc_405387
 mov     bl, 1
 ```
 
-Malware Examples
-----------------
-|Name|Date|Description|
-|---|---|---|
-|[**Redhip**](../xample-malware/redhip.md)|January 2011|Redhip detects publicly available automated analysis workbenches (e.g., Joe Box) by considering OS product keys and special DLLs. [[1]](#1)|
-|[**Rombertik**](../xample-malware/rombertik.md)|May 2015|[[2]](#2)|
-|[**Terminator**](../xample-malware/terminator.md)|May 2013|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[4]](#4)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|Ursnif uses malware macros to evade sandbox detection.|
-|[**GotBotKR**](../xample-malware/gotbotkr.md)|2019|GoBotKR performs several checks on the compromised machine to avoid being emulated or executed in a sandbox. [[5]](#5)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|The malware check for sandboxes that suppress errors returned from API routine calls the using ZwGetWriteWatch routine. [[6]](#6)|
 References
 ----------
 <a name="1">[1]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html 

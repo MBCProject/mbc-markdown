@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1113/">Screen Capture</a></b></td>
+<td><b>Screen Capture (<a href="https://attack.mitre.org/techniques/T1113/">T1113</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ Screen Capture
 =============
 Malware takes screen captures of the desktop.
 
-**See ATT&CK:** [**Screen Capture**](https://attack.mitre.org/techniques/T1113/).
+See ATT&CK: **Screen Capture ([T1113](https://attack.mitre.org/techniques/T1113/))**.
 
 Methods
 -------
