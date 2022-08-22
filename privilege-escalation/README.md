@@ -1,6 +1,9 @@
-|||
-|---|---|
-|**ID**|**OB0013**|
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>OB0013</b></td>
+</tr>
+</table>
 
 
 # Privilege Escalation #

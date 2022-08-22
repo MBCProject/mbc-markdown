@@ -1,6 +1,9 @@
-|||
-|---|---|
-|**ID**|**OB0008**|
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>OB0008</b></td>
+</tr>
+</table>
 
 
 # Impact #

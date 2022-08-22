@@ -1,6 +1,9 @@
-|||
-|---|---|
-|**ID**|**OB0010**|
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>OB0010</b></td>
+</tr>
+</table>
 
 
 # Exfiltration #

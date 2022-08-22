@@ -1,6 +1,9 @@
-|||
-|---|---|
-|**ID**|**OB0003**|
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>OB0003</b></td>
+</tr>
+</table>
 
 
 # Collection #
