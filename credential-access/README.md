@@ -1,7 +1,9 @@
-|||
-|---|---|
-|**ID**|**OB0005**|
-
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>OB0006</b></td>
+</tr>
+</table>
 
 # Credential Access
 Behaviors to obtain credential access, allowing it or its underlying threat actor to assume control of an account with the associated system and network permissions.

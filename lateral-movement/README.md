@@ -1,6 +1,9 @@
-|||
-|---|---|
-|**ID**|**OB0011**|
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>OB0011</b></td>
+</tr>
+</table>
 
 
 # Lateral Movement

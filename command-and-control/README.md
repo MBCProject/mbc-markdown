@@ -1,7 +1,9 @@
-|||
-|---|---|
-|**ID**|**OB0004**|
-
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>OB0004</b></td>
+</tr>
+</table>
 
 # Command and Control
 Behaviors that enable malware to communicate with systems such as C2 servers or bots. Malware can establish command and control with various levels of covertness, depending on system configuration and network topology. 
