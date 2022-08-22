@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1564/001/">Hide Artifacts: Hidden Files and Directories</a></b></td>
+<td><b>Hide Artifacts: Hidden Files and Directories (<a href="https://attack.mitre.org/techniques/T1564/001/">T1564.001</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ Hidden Files and Directories
 ============================
 Malware may hide files and folders to avoid detection and/or to persist on the system. See potential methods below. 
 
-See ATT&CK: [**Hide Artifacts: Hidden Files and Directories**](https://attack.mitre.org/techniques/T1564/001/).
+See ATT&CK: **Hide Artifacts: Hidden Files and Directories ([T1564.001](https://attack.mitre.org/techniques/T1564/001/))**.
 
 Methods
 -------

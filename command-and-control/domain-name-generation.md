@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1568/002/">Dynamic Resolution: Domain Generation Algorithms (T1568.002)</a></b></td>
+<td><b>Dynamic Resolution: Domain Generation Algorithms (<a href="https://attack.mitre.org/techniques/T1568/002/">T1568.002</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ Domain Name Generation
 ======================
 Malware generates the domain name of the controller to which it connects. Access to on the fly domains enables C2 to operate as domains and IP addresses are blocked. The algorithm can be complicated in more advanced implants; understanding the details so that names can be predicted can be useful in mitigation and response. [[1]](#1)
 
-The related [Dynamic Resolution: Domain Generation Algorithms (T1568.002)](https://attack.mitre.org/techniques/T1568/002/) ATT&CK sub-technique (oriented toward an adversary perspective with examples that include malware) was defined subsequent to this MBC behavior.
+The related **Dynamic Resolution: Domain Generation Algorithms ([T1568.002](https://attack.mitre.org/techniques/T1568/002/))** ATT&CK sub-technique (oriented toward an adversary perspective with examples that include malware) was defined subsequent to this MBC behavior.
 
 Malware Examples
 ----------------

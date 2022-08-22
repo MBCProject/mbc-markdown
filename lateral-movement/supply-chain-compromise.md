@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1195/">T1195</a>, <a href="https://attack.mitre.org/techniques/T1474/">T1474</a></b></td>
+<td><b>Supply Chain Compromise (<a href="https://attack.mitre.org/techniques/T1195/">T1195</a>, <a href="https://attack.mitre.org/techniques/T1474/">T1474</a>)</b></td>
 </tr>
 </table>
 

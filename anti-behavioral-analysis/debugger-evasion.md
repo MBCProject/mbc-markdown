@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1622/">Debugger Evasion (T1622)</a></b></td>
+<td><b>Debugger Evasion (<a href="https://attack.mitre.org/techniques/T1622/">T1622</a>)</b></td>
 </tr>
 </table>
 
@@ -21,7 +21,7 @@ Behaviors that make debugging difficult.
 
 A thorough reference for anti-debugging, both detection and evasion, is given in [[1]](#1).
 
-The related [Debugger Evasion (T1622)](https://attack.mitre.org/techniques/T1622/) ATT&CK technique was defined subsequent to this MBC behavior.
+The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T1622/))** ATT&CK technique was defined subsequent to this MBC behavior.
 
 Methods
 -------

@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1562/006/">Impair Defenses: Indicator Blocking</a></b></td>
+<td><b>Impair Defenses: Indicator Blocking (<a href="https://attack.mitre.org/techniques/T1562/006/">T1562.006</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ Indicator Blocking
 ==================
 Malware blocks indicators or events that would indicate malicious activity. Methods relevant to the malware domain are below. 
 
-See ATT&CK: [**Impair Defenses: Indicator Blocking**](https://attack.mitre.org/techniques/T1562/006/).
+See ATT&CK: **Impair Defenses: Indicator Blocking ([T1562.006](https://attack.mitre.org/techniques/T1562/006/))**.
 
 Methods
 -------

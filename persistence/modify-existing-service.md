@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1543/003/">Create or Modify System Process::Windows Service</a></b></td>
+<td><b>Create or Modify System Process::Windows Service (<a href="https://attack.mitre.org/techniques/T1543/003/">T1543.003</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ Modify Existing Service
 =======================
 Malware may modify an existing service to gain persistence. Modification may include disabling a service.
 
-See ATT&CK: [**Create or Modify System Process::Windows Service**](https://attack.mitre.org/techniques/T1543/003/).
+See ATT&CK: **Create or Modify System Process::Windows Service ([T1543.003](https://attack.mitre.org/techniques/T1543/003/))**.
 
 Malware Examples
 ----------------

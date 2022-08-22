@@ -19,7 +19,7 @@ Executable Code Obfuscation
 ===========================
 Executable code can be obfuscated to hinder disassembly and static code analysis. This behavior is specific to a malware sample's executable code (data and text sections).
 
-For encryption and encoding characteristics of malware samples, as well as malware obfuscation behaviors related to non-malware-sample files and information, see [**Obfuscated Files or Information**](../defense-evasion/obfuscated-files-or-information.md).
+For encryption and encoding characteristics of malware samples, as well as malware obfuscation behaviors related to non-malware-sample files and information, see **Obfuscated Files or Information ([E1027](../defense-evasion/obfuscated-files-or-information.md))**.
 
 Methods
 -------

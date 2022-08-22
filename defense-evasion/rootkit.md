@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1014">Rootkit</a></b></td>
+<td><b>Rootkit (<a href="https://attack.mitre.org/techniques/T1014">T1014</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,8 @@ Rootkit
 =======
 Behaviors of a rootkit: "A rootkit is a collection of computer software, typically malicious, designed to enable access to a computer or areas of its software that is not otherwise allowed and often masks its existence or the existence of other software." [[1]](#1)
 
-See ATT&CK: [**Rootkit**](https://attack.mitre.org/techniques/T1014).
+
+See ATT&CK: **Rootkit ([T1014](https://attack.mitre.org/techniques/T1014/))**.
 
 Rootkits may hide artifacts (kernel modules, services, threads, userspace libraries), prevent actions (API unhooking (prevents API hooks installed by the malware instance from being removed), file access (prevents access to the file system, including specific files and/or directories associated with the malware instance), file deletion (prevents files and/or directories associated with the malware instance from being deleted), memory access (prevents access to system memory where the malware instance stores code or data), native API hooking (prevents other software from hooking native system APIs), registry access (prevents access to the Windows registry, either entire registry or particular registry keys/values), registry deletion (prevents deletion of registry keys and/or values associated with the malware instance).
 

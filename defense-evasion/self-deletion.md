@@ -10,7 +10,8 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1630/001/">T1630.001</a>, <a href="https://attack.mitre.org/techniques/T1070/004/">T1070.004</a></b></td>
+<td><b>Indicator Removal on Host: Uninstall Malicious Application (<a href="https://attack.mitre.org/techniques/T1630/001/">T1630.001</a>), Indicator Removal on Host: File Deletion
+(<a href="https://attack.mitre.org/techniques/T1070/004/">T1070.004</a>)</b></td>
 </tr>
 </table>
 

@@ -10,14 +10,14 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1542/003">Pre-OS Boot: Bootkit</a></b></td>
+<td><b>Pre-OS Boot: Bootkit (<a href="https://attack.mitre.org/techniques/T1542/003">T1542.003</a>)</b></td>
 </tr>
 </table>
 
 
 Bootkit
 =======
-The boot sectors of a hard drive are modified (e.g., Master Boot Record (MBR)). ATT&CK associates bootkits with the Persistence. See ATT&CK: [**Pre-OS Boot: Bootkit**](https://attack.mitre.org/techniques/T1067/).
+The boot sectors of a hard drive are modified (e.g., Master Boot Record (MBR)). ATT&CK associates bootkits with the Persistence. See ATT&CK: **Pre-OS Boot: Bootkit ([T1067](https://attack.mitre.org/techniques/T1067/))**.
 
 The MBC also associates the Bootkit behavior with Defense Evasion because the malware may execute before or external to the system's kernel or hypervisor (e.g., through the BIOS), making it more difficult to detect. (As of 2020, ATT&CK also associates the technique with Persistence.) 
 

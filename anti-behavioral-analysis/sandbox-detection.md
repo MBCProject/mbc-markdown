@@ -1,15 +1,23 @@
-|||
-|---|---|
-|**ID**|**B0007**|
-|**Objective(s)**|[Anti-Behavioral Analysis](../anti-behavioral-analysis)|
-|**Related ATT&CK Sub-techniques**|Virtualization/Sandbox Evasion: System Checks ([T1497.001](https://attack.mitre.org/techniques/T1497/001/), [T1633.001](https://attack.mitre.org/techniques/T1633/001/)), Virtualization/Sandbox Evasion: User Activity Based Checks ([T1497.002](https://attack.mitre.org/techniques/T1497/002/))|
-
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>B0007</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../anti-behavioral-analysis">Anti-Behavioral Analysis</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b>Virtualization/Sandbox Evasion Checks (<a href="https://attack.mitre.org/techniques/T1497/001/">T1497.001</a>, <a href="https://attack.mitre.org/techniques/T1633/001/">T1633.001</a>), Virtualization/Sandbox Evasion: User Activity Based Checks (<a href="https://attack.mitre.org/techniques/T1497/002/">T1497.002</a>)</b></td>
+</tr>
+</table>
 
 Sandbox Detection
 =================
 Detects whether the malware instance is being executed inside an instrumented sandbox environment (e.g., Cuckoo Sandbox). If so, conditional execution selects a benign execution path.
 
-The related Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/)) ATT&CK techniques were defined subsequent to this MBC behavior.
+The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/))** ATT&CK techniques were defined subsequent to this MBC behavior.
  
 Methods
 -------

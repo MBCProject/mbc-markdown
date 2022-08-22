@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1105/">Ingress Tool Transfer</a></b></td>
+<td><b>Ingress Tool Transfer (<a href="https://attack.mitre.org/techniques/T1105/">T1105</a>)</b></td>
 </tr>
 </table>
 
@@ -19,9 +19,9 @@ Ingress Tool Transfer
 ================
 Malware may copy files from an external system to a system on a compromised network. 
 
-Note that this behavior is separate from possible execution (installation) of the file, which is covered by the [Install Additional Program](../execution/install-additional-program.md) behavior. 
+Note that this behavior is separate from possible execution (installation) of the file, which is covered by the **Install Additional Program ([B0023](../execution/install-additional-program.md))** behavior. 
 
-**See ATT&CK:** [**Ingress Tool Transfer**](https://attack.mitre.org/techniques/T1105/).
+See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques/T1105/))**.
 
 Malware Examples
 ----------------

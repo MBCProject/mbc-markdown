@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1480">Execution Guardrails (T1480)</a></b></td>
+<td><b>Execution Guardrails  (<a href="https://attack.mitre.org/techniques/T1480">T1480</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ Conditional Execution
 =====================
 Malware checks system environment conditions or characteristics to determine execution path. For example, malware may not run or be dormant unless system conditions are right, or file that is dropped may vary according to execution environment. Conditional execution in malware happens autonomously, not because of an attacker's command.
 
-This behavior is related to the [Evade Dynamic Analysis](../anti-behavioral-analysis/dynamic-analysis-evasion.md) behavior that obstructs dynamic analysis in a sandbox, emulator, or virtual machine.
+This behavior is related to the **Dynamic Analysis Evasion ([B0003](../anti-behavioral-analysis/dynamic-analysis-evasion.md))** behavior that obstructs dynamic analysis in a sandbox, emulator, or virtual machine.
 
 Some aspects of this Conditional Execution behavior are related to the [Execution Guardrails (T1480)](https://attack.mitre.org/techniques/T1480) ATT&CK technique; however the ATT&CK technique is not focused on anti-behavioral analysis behaviors.
 

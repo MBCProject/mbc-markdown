@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1027/002/">T1027.002</a>, <a href="https://attack.mitre.org/techniques/T1406/002/">T1406.002</a></b></td>
+<td><b>Obfuscated Files or Information: Software Packing (<a href="https://attack.mitre.org/techniques/T1027/002/">T1027.002</a>, <a href="https://attack.mitre.org/techniques/T1406/002/">T1406.002</a>)</b></td>
 </tr>
 </table>
 

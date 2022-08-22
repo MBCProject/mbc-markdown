@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1608/003/">Stage Capabilities: Install Digital Certificate</a></b></td>
+<td><b>Stage Capabilities: Install Digital Certificate (<a href="https://attack.mitre.org/techniques/T1608/003/">T1608.003</a>)</b></td>
 </tr>
 </table>
 

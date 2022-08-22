@@ -10,15 +10,15 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1561/">Disk Wipe</a></b></td>
+<td><b>Disk Wipe (<a href="https://attack.mitre.org/techniques/T1561/">T1561</a>)</b></td>
 </tr>
 </table>
 
 Disk Wipe
 =========
-Malware may erase the content of storage devices. This behavior is different than [Data Destruction](../impact/data-destruction.md) because sections of the disk are erased rather than individual files.
+Malware may erase the content of storage devices. This behavior is different than **Data Destruction ([E1485](../impact/data-destruction.md))** because sections of the disk are erased rather than individual files.
 
-This description refines the ATT&CK [**Disk Wipe**](https://attack.mitre.org/techniques/T1561/) sub-technique.
+This description refines the ATT&CK **Disk Wipe ([T1203](https://attack.mitre.org/techniques/T1561/)**] sub-technique.
 
 Malware Examples
 ----------------

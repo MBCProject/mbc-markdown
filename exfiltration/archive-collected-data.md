@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1560/">Archive Collected Data</a></b></td>
+<td><b>Archive Collected Data (<a href="https://attack.mitre.org/techniques/T1560/">T1560</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ Archive Collected Data
 ======================
 Malware may obfuscate data via encryption or encoding before exfiltration.
 
-**See ATT&CK Technique:** [**Archive Collected Data**](https://attack.mitre.org/techniques/T1560/).
+See ATT&CK Technique: **Archive Collected Data ([T1560](https://attack.mitre.org/techniques/T1560/))**.
 
 Methods
 -------

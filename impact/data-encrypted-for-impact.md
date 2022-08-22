@@ -1,15 +1,24 @@
-|||
-|---|---|
-|**ID**|**E1486**|
-|**Objective(s)**|[Impact](../impact)|
-|**Related ATT&CK Techniques**|[Data Encrypted for Impact](https://attack.mitre.org/techniques/T1486/), [Data Encrypted for Impact (Mobile)](https://attack.mitre.org/techniques/T1471/)|
+<table>
+<tr>
+<td><b>ID</b></td>
+<td><b>E1486</b></td>
+</tr>
+<tr>
+<td><b>Objective(s)</b></td>
+<td><b><a href="../impact">Impact</a></b></td>
+</tr>
+<tr>
+<td><b>Related ATT&CK Techniques</b></td>
+<td><b>Data Encrypted for Impact (<a href="https://attack.mitre.org/techniques/T1486/">T1486</a>), Data Encrypted for Impact (Mobile) (<a href="https://attack.mitre.org/techniques/T1471/">T1471</a>) </b></td>
+</tr>
+</table>
 
 
 Data Encrypted for Impact 
 =========================
 Malware may encrypt files stored on the system to prevent user access until a ransom is paid and/or to interrupt system availability. The encryption process usually iterates over all letter drives in the system (except for CD drives) and then recursively encrypts all files with specific suffixes.
 
-See ATT&CK: [**Data Encrypted for Impact**](https://attack.mitre.org/techniques/T1486/) and [**Data Encrypted for Impact (Mobile)**](https://attack.mitre.org/techniques/T1471/). 
+See ATT&CK: **Data Encrypted for Impact ([T1486](https://attack.mitre.org/techniques/T1486/))** and **Data Encrypted for Impact (Mobile) ([T1471](https://attack.mitre.org/techniques/T1471/))**
 
 Methods
 -------

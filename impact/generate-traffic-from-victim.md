@@ -10,14 +10,14 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1643/">Generate Traffic from Victim</a></b></td>
+<td><b>Generate Traffic from Victim (<a href="https://attack.mitre.org/techniques/T1643/">T1643</a>)</b></td>
 </tr>
 </table>
 
 
 Generate Traffic from Victim
 =======================================
-Malware may generate traffic from the victim system such as clicks of advertising links that generate fraudulent ad revenue. The ATT&CK technique, [Generate Traffic from Victim](https://attack.mitre.org/techniques/T1643/), is only associated with the mobile platform, but the behavior is applicable to other platforms as well.
+Malware may generate traffic from the victim system such as clicks of advertising links that generate fraudulent ad revenue. The ATT&CK technique, **Generate Traffic from Victim ([T1643](https://attack.mitre.org/techniques/T1643/))**, is only associated with the mobile platform, but the behavior is applicable to other platforms as well.
 
 Methods
 -------

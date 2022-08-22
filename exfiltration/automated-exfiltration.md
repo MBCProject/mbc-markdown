@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1020/">Automated Exfiltration</a></b></td>
+<td><b>Automated Exfiltration (<a href="https://attack.mitre.org/techniques/T1020/">T1020</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ Automated Exfiltration
 ======================
 Malware may exfiltrate data via automated processing or scripting.
 
-**See ATT&CK Technique:** [**Automated Exfiltration**](https://attack.mitre.org/techniques/T1020/).
+See ATT&CK Technique: **Automated Exfiltration ([T1020](https://attack.mitre.org/techniques/T1020/))**.
 
 Methods
 -------

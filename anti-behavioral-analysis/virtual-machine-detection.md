@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b><a href="https://attack.mitre.org/techniques/T1497/">T1497</a>, <a href="https://attack.mitre.org/techniques/T1633/">T1633</a></b></td>
+<td><b>Virtualization/Sandbox Evasion (<a href="https://attack.mitre.org/techniques/T1497/">T1497</a>, <a href="https://attack.mitre.org/techniques/T1633/">T1633</a>)</b></td>
 </tr>
 </table>
 
@@ -19,7 +19,7 @@ Virtual Machine Detection
 =========================
 Detects whether the malware instance is being executed in a virtual machine (VM), such as VMWare. If so, conditional execution selects a benign execution path. [[1]](#1)
 
-The related Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/)) ATT&CK techniques were defined subsequent to this MBC behavior.
+The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/))** ATT&CK techniques were defined subsequent to this MBC behavior.
 
 Methods
 -------
