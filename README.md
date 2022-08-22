@@ -54,6 +54,12 @@ The canonical representation for MBC content is **OBJECTIVE::Behavior::Method**.
 
 Objectives and behaviors can be used alone, but a method *must* be associated with a behavior.
 
+## Navigator View ##
+This visual representation of the MBC Matrix is based on the ATT&CK Navigator. Two views are available: 
+
+* [Matrix with identifiers](https://raw.githubusercontent.com/MBCProject/mbc-markdown/master/yfaq/mbc_matrix_with_ids.svg)
+* [Matrix without identifiers](https://raw.githubusercontent.com/MBCProject/mbc-markdown/master/yfaq/mbc_matrix_with_ids/yfaq/mbc_matrix_without_ids.svg).
+
 ### Malware Corpus ###
 The MBC contains a [malware corpus](./xample-malware/README.md) where each malware entry is decomposed into behaviors that are mapped to ATT&CK and MBC. The mappings are based on open source malware analysis reports.
 
@@ -78,11 +84,6 @@ Malware objectives are defined in the table below. Follow the links to view asso
 |[**Lateral Movement**](./lateral-movement/README.md)|Malware aims to propagate or otherwise move through an environment. Lateral movement may be active, happening via direct machine access, or may be passive (for example, done via malicious email).|
 |[**Persistence**](./persistence/README.md)|Malware aims to remain on a system.|
 |[**Privilege Escalation**](./privilege-escalation/README.md)|Malware aims to obtain higher level permissions.|
-
-## Navigator View ##
-This visual representation of the MBC Matrix is based on the ATT&CK Navigator (opens in a new window).
-
-<img src="https://raw.githubusercontent.com/MBCProject/mbc-markdown/v2.2/yfaq/mbc_matrix_without_ids.svg" alt="mbc matrix without ids">
 
 ## MBC Behaviors ##
 The table below lists MBC behaviors and related ATT&CK techniques. In most cases, related ATT&CK techniques were defined *after* the MBC behavior was defined.
