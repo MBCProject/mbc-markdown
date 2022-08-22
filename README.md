@@ -54,11 +54,11 @@ The canonical representation for MBC content is **OBJECTIVE::Behavior::Method**.
 
 Objectives and behaviors can be used alone, but a method *must* be associated with a behavior.
 
-## Navigator View ##
+### Navigator View ###
 This visual representation of the MBC Matrix is based on the ATT&CK Navigator. Two views are available: 
 
 * [Matrix with identifiers](https://raw.githubusercontent.com/MBCProject/mbc-markdown/master/yfaq/mbc_matrix_with_ids.svg)
-* [Matrix without identifiers](https://raw.githubusercontent.com/MBCProject/mbc-markdown/master/yfaq/mbc_matrix_with_ids/yfaq/mbc_matrix_without_ids.svg).
+* [Matrix without identifiers](https://raw.githubusercontent.com/MBCProject/mbc-markdown/master/yfaq/mbc_matrix_without_ids.svg)
 
 ### Malware Corpus ###
 The MBC contains a [malware corpus](./xample-malware/README.md) where each malware entry is decomposed into behaviors that are mapped to ATT&CK and MBC. The mappings are based on open source malware analysis reports.
