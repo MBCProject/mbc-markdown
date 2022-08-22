@@ -38,6 +38,16 @@ Methods
 |**Stream Cipher**|C0027.012|Malware encrypts with a stream cipher.|
 |**Twofish**|C0027.005|Malware encrypts with the Twofish algorithm.|
 
+
+Malware Examples
+----------------
+|Name|Date|Description|
+|---|---|---|
+|[**TrickBot**](../../xample-malware/trickbot.md)|2016|Uses an AES CBC (256 bits) encryption algorithm for its loader and configuration files  [[1]](#1)|
+|[**Emotet**](../../xample-malware/emotet.md)|2018|Emotet uses RSA to encrypt network traffic to its C2 [[2]](#2)|
+|[**GravityRAT**](../../xample-malware/gravity-rat.md)|2018|	GravityRat v3 supports file AES file encryption  [[3]](#3)|
+|[**Poison-Ivy**](../../xample-malware/poison-ivy.md)|2005|Poison Ivy's custom network protocol over TCP is encrypted using Camellia cipher with a 256-bit key  [[4]](#4)|
+
 Code Snippets
 -------------
 **Encrypt Data** (C0031) - the snippet encrypts and decrypts data.
@@ -94,14 +104,6 @@ pop     ebx
 retn
 ```
 
-Malware Examples
-----------------
-|Name|Date|Description|
-|---|---|---|
-|[**TrickBot**](../../xample-malware/trickbot.md)|2016|Uses an AES CBC (256 bits) encryption algorithm for its loader and configuration files  [[1]](#1)|
-|[**Emotet**](../../xample-malware/emotet.md)|2018|Emotet uses RSA to encrypt network traffic to its C2 [[2]](#2)|
-|[**GravityRAT**](../../xample-malware/gravity-rat.md)|2018|	GravityRat v3 supports file AES file encryption  [[3]](#3)|
-|[**Poison-Ivy**](../../xample-malware/poison-ivy.md)|2005|Poison Ivy's custom network protocol over TCP is encrypted using Camellia cipher with a 256-bit key  [[4]](#4)|
 
 References
 ----------
