@@ -57,8 +57,8 @@ Objectives and behaviors can be used alone, but a method *must* be associated wi
 ### Navigator View ###
 This visual representation of the MBC Matrix is based on the ATT&CK Navigator. Two views are available: 
 
-* <a href="https://raw.githubusercontent.com/MBCProject/mbc-markdown/master/yfaq/mbc_matrix_with_ids.svg">Matrix with identifiers</a>
-* <a href="https://raw.githubusercontent.com/MBCProject/mbc-markdown/master/yfaq/mbc_matrix_without_ids.svg">Matrix without identifiers</a>
+* <a href="https://raw.githubusercontent.com/MBCProject/mbc-markdown/master/yfaq/mbc_matrix_with_ids.svg" target="_blank">Matrix with identifiers</a>
+* <a href="https://raw.githubusercontent.com/MBCProject/mbc-markdown/master/yfaq/mbc_matrix_without_ids.svg" target="_blank">Matrix without identifiers</a>
 
 ### Malware Corpus ###
 The MBC contains a [malware corpus](./xample-malware/README.md) where each malware entry is decomposed into behaviors that are mapped to ATT&CK and MBC. The mappings are based on open source malware analysis reports.
