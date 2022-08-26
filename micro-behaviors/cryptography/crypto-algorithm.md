@@ -17,4 +17,6 @@
 
 Crypto Algorithm
 ================
-A known crypto algorithm is implemented in the code. It is unknown whether it is from a public crypto library. When the library is known, **Crypto Library ([C0059](../cryptography/crypto-lib.md))** micro-behavior should be used.
+A known crypto algorithm is implemented in the code and it is unknown whether it is from a public crypto library. 
+
+When the library is known, **Crypto Library ([C0059](../cryptography/crypto-lib.md))** micro-behavior should be used.
