@@ -18,3 +18,10 @@
 Crypto Library
 ==============
 Malware uses a crypto library.
+
+Methods
+-------
+|Name|ID|Description|
+|---|---|---|
+|**API Call**|C0059.001|Malware uses crypto API calls.|
+|**Static Public Library**|C0059.002|A public crypto library is embedded in the code.|
