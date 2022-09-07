@@ -28,7 +28,7 @@ Methods
 |Name|ID|Description|
 |---|---|---|
 |**Authenticate**|B0030.011|Implant may authenticate itself to the controller, controller may authenticate itself to implant, or both. This is often at or near the start of communication. Examples include but are not limited to a simple shared secret (e.g. password), challenge-response with symmetric encryption, or challenge-response with asymmetric encryption.|
-|**Check for Payload**|B0030.005|Check for payload.|
+|**Check for Payload**|B0030.005|An implant may check with the controller for additional payloads or instructions, sometimes at a regular interval. This is also known as beaconing.|
 |**Directory Listing**|B0030.012|Controller requests a directory listing from the implant, optionally from a given path, optionally recursive.|
 |**Execute File**|B0030.013|Execute/run/open the file using default operating system functionality, optionally with provided command-and-scripting-interpreter arguments. The file may or may not already exist on the victim.|
 |**Execute Shell Command**|B0030.014|Execute/run the given command using a built-in program (e.g. cmd.exe, PowerShell, bash). This differs from Start Interactive Shell because the shell process is started only for the received command or set of commands and then exits. There is no loop looking for additional commands while the shell process is still running.|

@@ -9,6 +9,8 @@
 # Cryptography Micro-objective #
 Micro-behaviors that enable malware to use crypto.
 
+* **Crypto Algorithm** [C0068](../cryptography/crypto-algorithm.md)
+* **Crypto Constant** [C0069](../cryptography/crypto-constant.md)
 * **Crypto Library** [C0059](../cryptography/crypto-lib.md)
 * **Encrypt Data** [C0027](../cryptography/encrypt-data.md)
 * **Decrypt Data** [C0031](../cryptography/decrypt-data.md)

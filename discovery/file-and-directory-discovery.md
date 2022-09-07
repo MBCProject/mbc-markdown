@@ -24,6 +24,7 @@ Methods
 |Name|ID|Description|
 |---|---|---|
 |**Log File**|E1083.m01|Malware may look for system log files.|
+|**Filter by Extension**|E1083.m02|Malware may filter by extension (common in ransomware).|
 
 Malware Examples
 ----------------
