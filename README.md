@@ -49,7 +49,7 @@ Identifiers of methods are formatted in the same way as ATT&CK sub-techniques. I
 
 When two or more MBC behaviors refine the same ATT&CK technique, each is given an MBC identifier and each references the ATT&CK identifier. When a new ATT&CK technique is defined *after* an MBC behavior has been defined, the preexisting MBC identifier is preserved and the new ATT&CK identifier is referenced.
 
-In cases where an MBC behavior enhances a technique/sub-technique that is defined in both ATT&CK Mobile and Enterprise, the "E" identifier used in MBC corresponds to the Enterprise identifier. For example, the Obfuscated Files or Information technique has identifier <a href="https://attack.mitre.org/techniques/T1027/">T1027</a> in Enterprise, identifier <a href="https://attack.mitre.org/techniques/T1406/">T1406</a> in Mobile, and identifier E1027 in MBC.
+In cases where an MBC behavior enhances a technique/sub-technique that is defined in both ATT&CK Mobile and Enterprise, the "E" identifier used in MBC corresponds to the Enterprise identifier. For example, the Obfuscated Files or Information technique has identifier <a href="https://attack.mitre.org/techniques/T1027/">T1027</a> in Enterprise, identifier <a href="https://attack.mitre.org/techniques/T1406/">T1406</a> in Mobile, and identifier <a href="./defense-evasion/obfuscated-files-or-information.md">E1027</a> in MBC.
 
 ### Canonical Representation ###
 The canonical representation for MBC content is **OBJECTIVE::Behavior::Method**. For example, *ANTI-BEHAVIORAL ANALYSIS::Debugger Detection::Process Environment Block*. 
