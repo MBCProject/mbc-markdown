@@ -28,7 +28,7 @@ Note that a method cannot be used without a behavior.
 Some malware behaviors are low-level, support many objectives and other behaviors, and aren't necessarily malicious. For example, a TCP socket may be created, or a string may be checked for some condition. Because such behaviors are often noted in malware analysis, they are captured in MBC. See [Micro-behaviors](./micro-behaviors/README.md) for details.
 
 ### <a name="ids"></a>Identifiers ###
-As shown below, the letter of an identifier relays information about a behavior. Note that letters used in MBC 2.0 are changed from previous versions.
+As shown below, the letter of an identifier relays information about a behavior. Note that letters used in MBC v2 are changed from MBC v1.
 
 |**Letter**|**Example**|**Description**|
 |---|---|---|
@@ -48,6 +48,8 @@ Two letters of an identifier relay information about an objective.
 Identifiers of methods are formatted in the same way as ATT&CK sub-techniques. If MBC defines a new method for an existing ATT&CK technique, the identifier is changed from "T" to "E" and an "m" identifier is added (e.g., a method added to T1234 would be denoted *E1234.m01* and is different than *T1234.001*, although both refer to the T1234 ATT&CK technique). Method identifiers of "B", "C", and "F" behaviors are defined without the "m" (e.g., *B0008.009*; *C0005.002*; *F0001.005*).
 
 When two or more MBC behaviors refine the same ATT&CK technique, each is given an MBC identifier and each references the ATT&CK identifier. When a new ATT&CK technique is defined *after* an MBC behavior has been defined, the preexisting MBC identifier is preserved and the new ATT&CK identifier is referenced.
+
+In cases where an MBC behavior enhances a technique/sub-technique that is defined in both ATT&CK Mobile and Enterprise, the "E" identifier used in MBC corresponds to the Enterprise identifier. For example, the Obfuscated Files or Information technique has identifier <a href="https://attack.mitre.org/techniques/T1027/">T1027</a> in Enterprise, identifier <a href="https://attack.mitre.org/techniques/T1406/">T1406</a> in Mobile, and identifier E1027 in MBC.
 
 ### Canonical Representation ###
 The canonical representation for MBC content is **OBJECTIVE::Behavior::Method**. For example, *ANTI-BEHAVIORAL ANALYSIS::Debugger Detection::Process Environment Block*. 
