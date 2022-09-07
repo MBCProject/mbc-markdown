@@ -157,7 +157,7 @@ The cyber adversary behavior and malware analysis realms each have their own voc
 
 ### ATT&CK is organized by the Enterprise and Mobile technology domains. Why isn't MBC? ###
 
-Although both domains are included in MBC, we didn't see value in distinguishing between enterprise and mobile malware for supporting malware analysis use cases.
+ATT&CK separates the Enterprise and Mobile domains because of how ATT&CK evolved. While both domains are included in MBC to support malware analysis use cases, we didn't see value in distinguishing between enterprise and mobile malware.
 
 ### ATT&CK is a mid-level adversary model. Does MBC model malware in a similar way? ###
 
