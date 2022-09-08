@@ -49,13 +49,13 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |---|---|---|
-|[**CryptoWall**](../command-and-control/c2-communication.md)|2014|The malware sends a hash value generated from system information [[1]](#1)|
-|[**GotBotKR**](../command-and-control/c2-communication.md)|2019|GoBotKR receives data from the C2 [[2]](#2)|
-|[**Terminator**](../command-and-control/c2-communication.md)|2013|The malware sends data to C2 [[3]](#3)|
-|[**UP007**](../command-and-control/c2-communication.md)|2016|The malware receives payloads [[4]](#4)|
-|[**YiSpecter**](../command-and-control/c2-communication.md)|2015|Connects to the command and control server using HTTP to send device information [[5]](#5)|
-|[**Ursnif**](../command-and-control/c2-communication.md)|2016|Ursnif variant Dreambot authenticates and encrypts traffic to C2 server using TOR [[6]](#6)|
-|[**Emotet**](../command-and-control/c2-communication.md)|2018| new email addresses are collected automatically from the victim's address books [[7]](#7)|
+|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|The malware sends a hash value generated from system information [[1]](#1)|
+|[**GotBotKR**](../xample-malware/gotbotkr.md)|2019|GoBotKR receives data from the C2 [[2]](#2)|
+|[**Terminator**](../xample-malware/terminator.md)|2013|The malware sends data to C2 [[3]](#3)|
+|[**UP007**](../xample-malware/up007.md)|2016|The malware receives payloads [[4]](#4)|
+|[**YiSpecter**](../xample-malware/yispecter.md)|2015|Connects to the command and control server using HTTP to send device information [[5]](#5)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|Ursnif variant Dreambot authenticates and encrypts traffic to C2 server using TOR [[6]](#6)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|New email addresses are collected automatically from the victim's address books [[7]](#7)|
 
 
 Code Snippets
