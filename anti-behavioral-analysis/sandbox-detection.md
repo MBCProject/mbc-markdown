@@ -47,7 +47,7 @@ Malware Examples
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|The malware check for sandboxes that suppress errors returned from API routine calls the using ZwGetWriteWatch routine. [[6]](#6)|
 
 
-Code Snippets
+<a name="snippet"><a/>Code Snippets
 -------------
 **Sandbox Detection::Product Key/ID Testing** (B0007.005) - the value 55274-640-2673064-23950 corresponds to Joe Sandbox.
 ```asm
