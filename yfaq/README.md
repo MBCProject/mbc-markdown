@@ -1,13 +1,13 @@
 # <a name="faq"></a>Malware Behavior Catalog Frequently Asked Questions # 
 
-* [What's New?](./#next)
-* [Using MBC](./#use)
-* [MBC and STIX 2](./#stix)
-* [MBC's Relationship to ATT&CK](./#relationship)
-* [MBC Origins](./#origin)
-* [MBC Content](./#content)
+* [What's New?](#next)
+* [Using MBC](#use)
+* [MBC and STIX 2](#stix)
+* [MBC's Relationship to ATT&CK](#relationship)
+* [MBC Origins](#origin)
+* [MBC Content](#content)
 
-## <a name="next"><a/>What's New? ##
+## <a name="next"></a>What's New? ##
 
 * **MBC Mailing List** - To join the MBC mailing list, please send a request to mbc@mitre.org.
 
@@ -53,7 +53,7 @@ If lower level behaviors are not known, it may be appropriate to only reference 
 
 Because methods are specific to a behavior, they're always associated with a behavior and aren’t used on their own.
 
-### <a name="gotbotkr"><a/>Can malware behaviors identified via manual analysis map to multiple MBC behaviors, or should correspondence be one-to-one? ###
+### <a name="gotbotkr"></a>Can malware behaviors identified via manual analysis map to multiple MBC behaviors, or should correspondence be one-to-one? ###
 
 Each malware behavior identified during analysis and associated with a specific code snippet should map to a single MBC behavior. If multiple behaviors seem to apply, the reported behavior should be considered to see whether it can be broken into smaller components that lead to one-to-one mappings. 
 
@@ -98,7 +98,7 @@ The MBC will evolve to better support the malware analysis community. If you hav
 ### How are MBC behaviors captured in STIX 2? ###
 MBC content is available in STIX 2.1 format. See the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository for details. The [usage document](https://github.com/MBCProject/mbc-stix2/blob/master/USAGE.md) gives details of how behaviors are captured with STIX 2 objects.
 
-## <a name="relationship"><a/>MBC's Relationship to ATT&CK ##
+## <a name="relationship"></a>MBC's Relationship to ATT&CK ##
 
 ### We have [ATT&CK](https://attack.mitre.org), so why do we need the [Malware Behavior Catalog?](https://github.com/MBCProject/mbc-markdown) ###
 
