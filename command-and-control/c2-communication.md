@@ -50,7 +50,7 @@ Malware Examples
 |Name|Date|Description|
 |---|---|---|
 |[**CryptoWall**](../xample-malware/cryptowall.md)|2014|The malware sends a hash value generated from system information [[1]](#1)|
-|[**GotBotKR**](../xample-malware/gotbotkr.md)|2019|GoBotKR receives data from the C2 [[2]](#2)|
+|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|GoBotKR receives data from the C2 [[2]](#2)|
 |[**Terminator**](../xample-malware/terminator.md)|2013|The malware sends data to C2 [[3]](#3)|
 |[**UP007**](../xample-malware/up007.md)|2016|The malware receives payloads [[4]](#4)|
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|Connects to the command and control server using HTTP to send device information [[5]](#5)|
@@ -61,7 +61,7 @@ Malware Examples
 Code Snippets
 -------------
 **C2 Communication::Receive Data** (B0030.02)
- <br/>MD5: b6e1a2048ea6bd6a941a72300b2d41ce
+ <br/>SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
 ```asm
 loc_401981
 mov ecx, s

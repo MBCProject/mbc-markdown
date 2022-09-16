@@ -48,7 +48,7 @@ Malware Examples
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
 |[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|Obfuscates files.|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|Obfuscates files.|
-|[**GotBotKR**](../xample-malware/gotbotkr.md)|2019|GoBotKR uses base64 to obfuscate strings, commands and files. [[1]](#1)|
+|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|GoBotKR uses base64 to obfuscate strings, commands and files. [[1]](#1)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|The malware will use a key to decrypt text from a URL to create more malicious code [[2]](#2)|
 
 References

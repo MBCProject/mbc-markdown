@@ -27,7 +27,7 @@ Malware Examples
 |---|---|---|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[1]](#1)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|From the command line, drops and unzips a password-protected Cabinet archive file. [[1]](#1)|
-|[**GotBotKR**](../xample-malware/gotbotkr.md)|2019|GoBotKR uses cmd.exe to execute commands. [[2]](#2)|
+|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|GoBotKR uses cmd.exe to execute commands. [[2]](#2)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|The malware executes malicious javascript and powershell [[3]](#3)|
 |[**SamSam**](../xample-malware/samsam.md)|2015|SamSam uses a batch file for executing the malware and deleting certain components   [[4]](#4)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|The wiper component of Shamoon creates a service to run the driver with the command: sc create hdv_725x type= kernel start= demand binpath= WINDOWS\hdv_725x.sys 2>&1 >nul and sends an additional reboot command after completion [[5]](#5)|

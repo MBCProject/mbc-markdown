@@ -32,7 +32,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |---|---|---|
-|[**GotBotKR**](../xample-malware/gotbotkr.md)|2019| GoBotKR is capable of capturing screenshots. [[1]](#1)|
+|[**GotBotKR**](../xample-malware/gobotkr.md)|2019| GoBotKR is capable of capturing screenshots. [[1]](#1)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|Screenshot plugin allows for collection of screenshots  [[2]](#2)|
 |[**DarkComet**](../xample-malware/dark-comet.md)|2008|Can take screenshots of victim's computer [[3]](#3)|
 

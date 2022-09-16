@@ -35,7 +35,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |---|---|---|
-|[**GotBotKR**](../xample-malware/gotbotkr.md)|2019| GoBotKR stores itself in a file with Hidden and System attributes. [[1]](#1)|
+|[**GotBotKR**](../xample-malware/gobotkr.md)|2019| GoBotKR stores itself in a file with Hidden and System attributes. [[1]](#1)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|Modifies target files' time to August 2012 as an antiforensic trick  [[2]](#2)|
 
 References

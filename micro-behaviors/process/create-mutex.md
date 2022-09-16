@@ -24,7 +24,6 @@ Malware Examples
 |Name|Date|Description|
 |---|---|---|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Poison Ivy has a default process mutex, but can be altered at build time [2] [[1]](#1)|
-
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Creates global mutexes signal that rootkit installation has occurred successfully  [[2]](#2)|
 
 References

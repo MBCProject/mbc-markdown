@@ -27,7 +27,7 @@ Malware Examples
 |---|---|---|
 |[**WebCobra**](../xample-malware/webcobra.md)|November 2018|Drops software to mine for cryptocurrency. [[1]](#1)|
 |[**Geneio**](../xample-malware/geneio.md)|August 2015|Tricks OS X keychain to create application files.|
-|[**GotBotKR**](../xample-malware/gotbotkr.md)|July 2019|GotBotKR reinstalls its running instance if it is removed. [[3]](#3)|
+|[**GotBotKR**](../xample-malware/gobotkr.md)|July 2019|GotBotKR reinstalls its running instance if it is removed. [[3]](#3)|
 |[**MazarBot**](../xample-malware/mazarbot.md)|2016|Installs a backdoor.|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|A Trojan downloader.|
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|Can download and install arbitrary iOS apps.|

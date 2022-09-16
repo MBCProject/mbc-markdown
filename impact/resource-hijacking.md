@@ -34,7 +34,7 @@ Malware Examples
 |---|---|---|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|Drops software to mine for cryptocurrency. [[1]](#1)|
 |Adylkuzz|May 2017|Consumes system resources to mine for cryptocurrency. [[2]](#2)|
-|[**GotBotKR**](../xample-malware/gotbotkr.md)|2019|GoBotKR can use the compromised computer’s network bandwidth to seed torrents or execute DDoS. [[3]](#3)|
+|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|GoBotKR can use the compromised computer’s network bandwidth to seed torrents or execute DDoS. [[3]](#3)|
 
 References
 ----------

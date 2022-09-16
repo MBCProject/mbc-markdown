@@ -62,7 +62,7 @@ Malware Examples
 Code Snippets
 -------------
 **Obfuscated Files or Information::Encoding-Standard Algorithm** (E1027.m02)
- <br/>MD5: b6e1a2048ea6bd6a941a72300b2d41ce
+ <br/>SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
 ```asm
 jle short_40182F
 mov dl, byte ptr [ebp+eax+var_7CA8]
@@ -73,7 +73,7 @@ cmp eax, edi
 jl short loc_40181A
 ```
 **Executable Code Obfuscation::Stack Strings** (B0032.017)
- <br/>MD5: b6e1a2048ea6bd6a941a72300b2d41ce
+ <br/>SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
 ```asm
 mov cl, 65h ; 'e'
 mov al, 70h ; 'p'
