@@ -31,9 +31,8 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |---|---|---|
-|[**Ursnif**](../micro-behaviors/memory/change-memory-protection.md)|2016|Changes the PE header of the child process to enable write access to that page, writes 18 bytes of buffer at offset 0x40 from the start of svchost.exe process executable in the target child process. Then changes the region protection back to "read only" to avoid suspicion  [[1]](#1)|
-
-|[**SYNfulKnock**](../xample-malware/synful-knock.md)|2015|Modifies the translation lookaside buffer (TLB) Read/Write attributes  [[2]](#2)|
+|[**Ursnif**](../../xample-malware/ursnif.md)|2016|Changes the PE header of the child process to enable write access to that page, writes 18 bytes of buffer at offset 0x40 from the start of svchost.exe process executable in the target child process. Then changes the region protection back to "read only" to avoid suspicion  [[1]](#1)|
+|[**SYNfulKnock**](../../xample-malware/synful-knock.md)|2015|Modifies the translation lookaside buffer (TLB) Read/Write attributes  [[2]](#2)|
 
 References
 ----------

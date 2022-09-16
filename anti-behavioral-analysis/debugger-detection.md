@@ -67,7 +67,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |---|---|---|
-|[**Redhip**](../xample-malware/redhip.md)|January 2011|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[4]](#4)|
+|[**Redhip**](../xample-malware/rebhip.md)|January 2011|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[4]](#4)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|The malware detects debuggers using an INT 03h trap and IsDebuggerPresent[[8]](#8)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|an anti-analysis function within the packer is called to check the username and filename of the executing process for strings like “malwar”, “sampl”, “viru”, and “sandb”. [[9]](#9)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Poison Ivy Variant checks for breakpoints and exits immediately if found [[10]](#10)|

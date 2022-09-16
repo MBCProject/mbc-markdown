@@ -44,7 +44,7 @@ Malware Examples
 Code Snippets
 -------------
 **Memory Dump::Code Encryption in Memory** (B0006.011)
- <br/>MD5: b6e1a2048ea6bd6a941a72300b2d41ce
+ <br/>SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
 ```asm
 mov cl, 65h ; 'e'
 mov al, 70h ; 'p'

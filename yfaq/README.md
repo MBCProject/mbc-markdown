@@ -54,11 +54,11 @@ If lower level behaviors are not known, it may be appropriate to only reference 
 
 Because methods are specific to a behavior, they're always associated with a behavior and aren’t used on their own.
 
-### <a name="gotbotkr"></a>Can malware behaviors identified via manual analysis map to multiple MBC behaviors, or should correspondence be one-to-one? ###
+### <a name="gobotkr"></a>Can malware behaviors identified via manual analysis map to multiple MBC behaviors, or should correspondence be one-to-one? ###
 
 Each malware behavior identified during analysis and associated with a specific code snippet should map to a single MBC behavior. If multiple behaviors seem to apply, the reported behavior should be considered to see whether it can be broken into smaller components that lead to one-to-one mappings. 
 
-For example, a [GotBotKR](../xample-malware/gotbotkr.md) report reflecting manual analysis reads, "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2). Initially, one might think this is a single behavior, but it can be broken apart and mapped into two behaviors:
+For example, a [GotBotKR](../xample-malware/gobotkr.md) report reflecting manual analysis reads, "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2). Initially, one might think this is a single behavior, but it can be broken apart and mapped into two behaviors:
 
 * [DISCOVERY::Process Discovery](https://attack.mitre.org/techniques/T1057/) ("monitors whether the first instance is still active")
 
@@ -72,7 +72,7 @@ Behaviors identified by automated tools are often intentionally broad to give an
 
 ### How are MBC behaviors, possibly at different levels of abstraction, associated? ###
 
-MBC does not define relationships between behaviors, so association of behaviors must be done at the reporting level. The [GotBotKR](../xample-malware/gotbotkr.md) example [above](./gotbotkr) illustrates how two behaviors can be associated by the human-readable text: "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2).
+MBC does not define relationships between behaviors, so association of behaviors must be done at the reporting level. The [GotBotKR](../xample-malware/gobotkr.md) example [above](./gobotkr) illustrates how two behaviors can be associated by the human-readable text: "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2).
 
 ### How do I map an analysis product's output to MBC when I don't know the details behind the behavior indicators? ###
 

@@ -48,7 +48,7 @@ Malware Examples
 ----------------
 |Name|Date|Description|
 |---|---|---|
-|[**SYNfulKnock**](../xample-malware/synful-knock.md)|2015|To initiate communication with the C2 server, a uniquely crafted TCP SYN packet is sent to port 80 of the "implanted" router  [[1]](#1)|
+|[**SYNfulKnock**](../../xample-malware/synful-knock.md)|2015|To initiate communication with the C2 server, a uniquely crafted TCP SYN packet is sent to port 80 of the "implanted" router  [[1]](#1)|
 
 
 References
