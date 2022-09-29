@@ -58,6 +58,17 @@ Methods
 |[**GotBotKR**](../xample-malware/gobotkr.md)|2019|GoBotKR performs several checks on the compromised machine to avoid being emulated or executed in a sandbox. [[5]](#5)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|The malware check for sandboxes that suppress errors returned from API routine calls the using ZwGetWriteWatch routine. [[6]](#6)|
 
+Detection
+---------
+|capa|map|
+|---|---|
+|[check for microsoft office emulation](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-microsoft-office-emulation.yml)|[Sandbox Detection::Product Key/ID Testing (B0007.005)](./b0007.005.md)|
+|[check for sandbox and av modules](https://github.com/mandiant/capa-rules/blob/master/modules/signatures/antisandbox_cuckoo_files/anti-analysis/anti-av/check-for-sandbox-and-av-modules.yml)|Sandbox Detection (B0007)|
+
+|CAPE|map|
+|---|---|
+|[antisandbox_joe_anubis_files.py](https://github.com/kevoreilly/community/blob/master/modules/signatures/antisandbox_joe_anubis_files.py)|B0007.002|
+|[antisandbox_cuckoo_files](https://github.com/kevoreilly/community/blob/master/modules/signatures/antisandbox_cuckoo_files.py)|B0007.002|
 
 <a name="snippet"></a>Code Snippets
 -------------
