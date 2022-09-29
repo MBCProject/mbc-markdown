@@ -60,12 +60,12 @@ Methods
 
 Detection
 ---------
-|capa|map|
+|capa|Mapping|
 |---|---|
 |[check for microsoft office emulation](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-microsoft-office-emulation.yml)|[Sandbox Detection::Product Key/ID Testing (B0007.005)](./b0007.005.md)|
 |[check for sandbox and av modules](https://github.com/mandiant/capa-rules/blob/master/modules/signatures/antisandbox_cuckoo_files/anti-analysis/anti-av/check-for-sandbox-and-av-modules.yml)|Sandbox Detection (B0007)|
 
-|CAPE|map|
+|CAPE|Mapping|
 |---|---|
 |[antisandbox_joe_anubis_files.py](https://github.com/kevoreilly/community/blob/master/modules/signatures/antisandbox_joe_anubis_files.py)|B0007.002|
 |[antisandbox_cuckoo_files](https://github.com/kevoreilly/community/blob/master/modules/signatures/antisandbox_cuckoo_files.py)|B0007.002|
