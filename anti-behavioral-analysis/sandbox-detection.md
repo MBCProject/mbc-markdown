@@ -49,14 +49,14 @@ Methods
 
 <a name="examples"></a>Use in Malware
 --------------
-|Name|Date|Description|
-|---|---|---|
-|[**Redhip**](../xample-malware/rebhip.md)|January 2011|Redhip detects publicly available automated analysis workbenches (e.g., Joe Box) by considering OS product keys and special DLLs. [[1]](#1)|
-|[**Rombertik**](../xample-malware/rombertik.md)|May 2015|[[2]](#2)|
-|[**Terminator**](../xample-malware/terminator.md)|May 2013|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[4]](#4)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|Ursnif uses malware macros to evade sandbox detection.|
-|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|GoBotKR performs several checks on the compromised machine to avoid being emulated or executed in a sandbox. [[5]](#5)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|The malware check for sandboxes that suppress errors returned from API routine calls the using ZwGetWriteWatch routine. [[6]](#6)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|B0007.005|Redhip detects publicly available automated analysis workbenches (e.g., Joe Box) by considering OS product keys and special DLLs. [[1]](#1)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|[[2]](#2)|
+|[**Terminator**](../xample-malware/terminator.md)|2013|--|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[4]](#4)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Ursnif uses malware macros to evade sandbox detection.|
+|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR performs several checks on the compromised machine to avoid being emulated or executed in a sandbox. [[5]](#5)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware check for sandboxes that suppress errors returned from API routine calls the using ZwGetWriteWatch routine. [[6]](#6)|
 
 Detection
 ---------
