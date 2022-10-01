@@ -1,7 +1,7 @@
 <table>
 <tr>
 <td><b>ID</b></td>
-<td><b>OB00012</b></td>
+<td><b>OB0012</b></td>
 </tr>
 </table>
 
