@@ -15,16 +15,16 @@
 </table>
 
 
-C2 Communication
-================
+# C2 Communication
+
 All command and control malware use implant/controller communication. The methods listed below can be used to capture explicit communication details. Remote file copy behavior is captured separately, as is done in ATT&CK - see **Ingress Tool Transfer ([E1105](../command-and-control/ingress-tool-transfer.md))**.
 
 Command and Control Communication relates to *autonomous* communications, not explicit, on-demand commands that malware provides to an adversary (such commands should be captured with [Remote Commands](../execution/remote-commands.md) under the Execution objective).
 
 As "server" and "client" are confusing terminology, we use the terms "controller" and "implant". The controller is the software running on adversary-controlled infrastructure and used to send commands to the implant. The implant is the software running on victim-controlled infrastructure that receives commands from the adversary, executes those commands on the victim, and optionally sends the results back to the adversary.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Authenticate**|B0030.011|Implant may authenticate itself to the controller, controller may authenticate itself to implant, or both. This is often at or near the start of communication. Examples include but are not limited to a simple shared secret (e.g. password), challenge-response with symmetric encryption, or challenge-response with asymmetric encryption.|
@@ -34,7 +34,7 @@ Methods
 |**Execute Shell Command**|B0030.014|Execute/run the given command using a built-in program (e.g. cmd.exe, PowerShell, bash). This differs from Start Interactive Shell because the shell process is started only for the received command or set of commands and then exits. There is no loop looking for additional commands while the shell process is still running.|
 |**File search**|B0030.015|Controller requests the implant to search for a given filename pattern, often a [glob](https://en.wikipedia.org/wiki/Glob_(programming)).|
 |**Implant to Controller File Transfer**|B0030.004|File is transferred from implant to controller.|
-|**Receive Data**|B0030.002|Receive data or command from a controller.|
+|**Receive Data**|[B0030.002](#b0030002)|Receive data or command from a controller.|
 |**Request Command**|B0030.008|Implant requests a command.|
 |**Request Email Address List**|B0030.010|Request email address list.|
 |**Request Email Template**|B0030.009|Request email template.|
@@ -45,8 +45,8 @@ Methods
 |**Start Interactive Shell**|B0030.016|Start an interactive shell using a built-in program (e.g. cmd.exe, PowerShell, bash). This is often implemented with polling the network connection from the controller for text commands to redirect to the shell's stdin and polling the shell's stdout and stderr to redirect over the network to the controller. This differs from Execute Shell Command because the shell process runs across multiple iterations of the recv-command(s)-send-result loop.|
 
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**CryptoWall**](../xample-malware/cryptowall.md)|2014|The malware sends a hash value generated from system information [[1]](#1)|
@@ -58,11 +58,14 @@ Malware Examples
 |[**Emotet**](../xample-malware/emotet.md)|2018|New email addresses are collected automatically from the victim's address books [[7]](#7)|
 
 
-Code Snippets
--------------
-**C2 Communication::Receive Data** (B0030.02)
- <br/>SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
-```asm
+## Code Snippets
+
+### B0030.002
+<details>
+<summary> C2 Communication::Receive Data </summary>
+SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e0
+<pre>
+asm
 loc_401981
 mov ecx, s
 mov edx, edi
@@ -74,11 +77,12 @@ push eax ;buf
 push ecx ;s
 call recv
 jmp short loc_4019A2
-```
+</pre>
+</details>
 
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://news.sophos.com/en-us/2015/12/17/the-current-state-of-ransomware-cryptowall/
 
 <a name="2">[2]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
