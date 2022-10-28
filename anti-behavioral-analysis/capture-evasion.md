@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -11,6 +10,18 @@
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>None</b></td>
+</tr>
+<tr>
+<td><b>Version</b></td>
+<td><b>2.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>18 November 2019</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>28 October 2022</b></td>
 </tr>
 </table>
 
