@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -11,6 +10,18 @@
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>Archive Collected Data (<a href="https://attack.mitre.org/techniques/T1560/">T1560</a>)</b></td>
+</tr>
+<tr>
+<td><b>Version</b></td>
+<td><b>3.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>27 August 2019</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>31 October 2022</b></td>
 </tr>
 </table>
 

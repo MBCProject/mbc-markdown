@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -12,6 +11,20 @@
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>Indicator Removal on Host: Uninstall Malicious Application (<a href="https://attack.mitre.org/techniques/T1630/001/">T1630.001</a>), Indicator Removal on Host: File Deletion
 (<a href="https://attack.mitre.org/techniques/T1070/004/">T1070.004</a>)</b></td>
+<tr>
+<td><b>Version</b></td>
+<td><b>2.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>14 August 2020</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>31 October 2022</b></td>
+</tr>
+</table>
+
 </tr>
 </table>
 
