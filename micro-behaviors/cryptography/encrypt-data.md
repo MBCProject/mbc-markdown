@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -12,15 +11,27 @@
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>None</b></td>
 </tr>
+<tr>
+<td><b>Version</b></td>
+<td><b>2.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>13 October 2020</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>31 October 2022</b></td>
+</tr>
 </table>
 
 
-Encrypt Data
-============
+# Encrypt Data
+
 Malware may encrypt data. 
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**AES**|C0027.001|Malware encrypts with the AES algorithm.|
@@ -39,8 +50,8 @@ Methods
 |**Twofish**|C0027.005|Malware encrypts with the Twofish algorithm.|
 
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**TrickBot**](../../xample-malware/trickbot.md)|2016|Uses an AES CBC (256 bits) encryption algorithm for its loader and configuration files  [[1]](#1)|
@@ -48,13 +59,14 @@ Malware Examples
 |[**GravityRAT**](../../xample-malware/gravity-rat.md)|2018|	GravityRat v3 supports file AES file encryption  [[3]](#3)|
 |[**Poison-Ivy**](../../xample-malware/poison-ivy.md)|2005|Poison Ivy's custom network protocol over TCP is encrypted using Camellia cipher with a 256-bit key  [[4]](#4)|
 
-Code Snippets
--------------
-**Encrypt Data** (C0031) - the snippet encrypts and decrypts data.
+## Code Snippets
 
-Sample (SHA256): c86cbf5e78c9f05ecfc11e4f2c147781cef77842a457e19ba690477eb564c22b
-
-```asm
+### C0031
+<details>
+<summary> Encrypt Data </summary>
+SHA256: c86cbf5e78c9f05ecfc11e4f2c147781cef77842a457e19ba690477eb564c22b
+<pre>
+asm
 push    ebx
 mov     ebx, [esp+4+arg_4]
 push    esi
@@ -102,11 +114,12 @@ mov     eax, 1
 pop     esi
 pop     ebx
 retn
-```
+</pre>
+</details>
 
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://www.securityartwork.es/wp-content/uploads/2017/07/Trickbot-report-S2-Grupo.pdf
 
 <a name="2">[2]</a> https://documents.trendmicro.com/assets/white_papers/ExploringEmotetsActivities_Final.pdf

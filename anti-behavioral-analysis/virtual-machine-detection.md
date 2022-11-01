@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -12,17 +11,29 @@
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>Virtualization/Sandbox Evasion (<a href="https://attack.mitre.org/techniques/T1497/">T1497</a>, <a href="https://attack.mitre.org/techniques/T1633/">T1633</a>)</b></td>
 </tr>
+<tr>
+<td><b>Version</b></td>
+<td><b>2.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>1 August 2019</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>28 October 2022</b></td>
+</tr>
 </table>
 
 
-Virtual Machine Detection
-=========================
+# Virtual Machine Detection
+
 Detects whether the malware instance is being executed in a virtual machine (VM), such as VMWare. If so, conditional execution selects a benign execution path. [[1]](#1)
 
 The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/))** ATT&CK techniques were defined subsequent to this MBC behavior.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Check File and Directory Artifacts**|B0009.001|Virtual machines create files on the file system (e.g., VMware creates files in the installation directory C:\Program Files\VMware\VMware Tools). Malware can check the different folders to find virtual machine artifacts (e.g., Virtualbox has the artifact VBoxMouse.sys). [[2]](#2)|
@@ -40,7 +51,7 @@ Methods
 |**Guest Process Testing**|B0009.010|Virtual machines offer guest additions that can be installed to add functionality such as clipboard sharing. Detecting the process responsible for these tasks, via its name or other methods, is a technique employed by malware for detecting whether it is being executed in a virtual machine.|
 |**HTML5 Performance Object Check**|B0009.011|In three browser families, it is possible to extract the frequency of the Windows performance counter frequency, using standard HTML and Javascript. This value can then be used to detect whether the code is being executed in a virtual machine, by detecting two specific frequencies commonly used in virtual but not physical machines.|
 |**Human User Check**|B0009.012|Detects whether there is any "user" activity on the machine, such as the movement of the mouse cursor, non-default wallpaper, or recently opened Office files. Directories or file might be counted. If there is no human activity, the machine is suspected to be a virtualized machine and/or sandbox. Other items used to detect a user: mouse clicks (single/double), DialogBox, scrolling, color of background pixel, change in foreground window [[5]](#5). This method is very similar to ATT&CK's [Virtualization/Sandbox Evasion: User Activity Based Checks](https://attack.mitre.org/techniques/T1497/002/) sub-technique.|
-|**Instruction Testing**|B0009.029|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2)|
+|**Instruction Testing**|[B0009.029](#b0009029)|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2)|
 |**Instruction Testing - CPUID**|B0009.034|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2) Checking the CPU ID found within the registry can provide information to system type.|
 |**Instruction Testing - IN**|B0009.035|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2)|
 |**Instruction Testing - RDTSC**|B0009.036|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2)|
@@ -65,8 +76,8 @@ Methods
 |**Unique Hardware/Firmware Check - MAC Address**|B0009.028|Malware may check for hardware characteristics unique to being virtualized, allowing the malware to detect the virtual environment. VMware uses specific virtual MAC address that can be detected. The usual MAC address used started with the following numbers: "00:0C:29", "00:1C:14", "00:50:56", "00:05:69". Virtualbox uses specific virtual MAC address that can be detected by Malware. The usual MAC address used started with the following numbers: 08:00:27. [[2]](#2)|
 
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|May 2018|GravityRAT checks system temperature by recording thermal readings for detecting VMs. Heat levels indicate whether the system is a VM. [[3]](#3)|
@@ -76,11 +87,14 @@ Malware Examples
 
 
 
-Code Snippets
--------------
-**Virtual Machine Detection::Instruction Testing** (B0009.029)
- <br/>SHA256: cfaf863181e49906df33f9104795678f2fb41a007a8fd066a84fd99f613d7ef3
-```asm
+## Code Snippets
+
+### B0009.029
+<details>
+<summary> Virtual Machine Detection::Instruction Testing </summary>
+SHA256: cfaf863181e49906df33f9104795678f2fb41a007a8fd066a84fd99f613d7ef3
+<pre>
+asm
 ; ___unwind { // __except handler4
 push ebp
 mov ebp, esp
@@ -110,11 +124,12 @@ test ebx, ebx
 setz [ebp+var_19]
 pop ebx
 jmp short loc_401CBB
-```
+</pre>
+</details>
 
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
 
 <a name="2">[2]</a> https://search.unprotect.it/map/sandbox-evasion/

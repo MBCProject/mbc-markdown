@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -12,17 +11,29 @@
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>None</b></td>
 </tr>
+<tr>
+<td><b>Version</b></td>
+<td><b>2.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>1 August 2019</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>31 October 2022</b></td>
+</tr>
 </table>
 
 
-Executable Code Obfuscation
-===========================
+## Executable Code Obfuscation
+
 Executable code can be obfuscated to hinder disassembly and static code analysis. This behavior is specific to a malware sample's executable code (data and text sections).
 
 For encryption and encoding characteristics of malware samples, as well as malware obfuscation behaviors related to non-malware-sample files and information, see **Obfuscated Files or Information ([E1027](../defense-evasion/obfuscated-files-or-information.md))**.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**API Hashing**|B0032.001|Instead of storing function names in the Import Address Table (IAT) and calling GetProcAddress, a DLL is loaded and the name of each of its exports is hashed until it matches a specific hash. Manual symbol resolution is then used to access and execute the exported function. This method is often used by shellcode because it reduces the size of each import from a human-readable string to a sequence of four bytes. The Method is also known as "Imports by Hash" and "GET_APIS_WITH_CRC." [[1]](#1)|
@@ -39,14 +50,14 @@ Methods
 |**Jump Insertion**|B0032.005|Insert jumps to make analysis visually harder.|
 |**Junk Code Insertion**|B0032.007|Insert dummy code between relevant opcodes. Can make signature writing more complex.|
 |**Merged Code Sections**|B0032.015|Merge all sections resulting in just one entry in the sections table to make readability more difficult. May affect some detection signatures if written to be section dependent.|
-|**Stack Strings**|B0032.017|Build and decrypt strings on the stack at each use, then discard to avoid obvious references.|
+|**Stack Strings**|[B0032.017](#b0032017)|Build and decrypt strings on the stack at each use, then discard to avoid obvious references.|
 |**Structured Exception Handling (SEH)**|B0032.016|A portion of the code always generates an exception so that malicious code is executed with the exception handling. See  [[3]](#3).|
 |**Symbol Obfuscation**|B0032.018|Remove or rename symbolic information commonly inserted by compilers for debugging purposes.|
 |**Thunk Code Insertion**|B0032.006|Variation on Jump Insertion. Used by some compilers for user-generated functions.|
    
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**Heriplor**](../xample-malware/heriplor.md)|March 2019|The Heriplor Trojan uses API Hashing. [[1]](#1)|
@@ -59,11 +70,14 @@ Malware Examples
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|The configuration data block is encoded with a NOT XOR 0xFF operation  [[8]](#8)|
 
 
-Code Snippets
--------------
-**Obfuscated Files or Information::Encoding-Standard Algorithm** (E1027.m02)
- <br/>SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
-```asm
+## Code Snippets
+
+### E1027.M02
+<details>
+<summary> Obfuscated Files or Information::Encoding-Standard Algorithm </summary>
+SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
+<pre>
+asm
 jle short_40182F
 mov dl, byte ptr [ebp+eax+var_7CA8]
 xor dl, cl
@@ -71,10 +85,15 @@ mov byte ptr [ebp+eax+var_7CA8], dl
 inc eax
 cmp eax, edi
 jl short loc_40181A
-```
-**Executable Code Obfuscation::Stack Strings** (B0032.017)
- <br/>SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
-```asm
+</pre>
+</details>
+
+### B0032.017
+<details>
+<summary> Executable Code Obfuscation::Stack Strings </summary>
+SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
+<pre>
+asm
 mov cl, 65h ; 'e'
 mov al, 70h ; 'p'
 mov [ebp+var_23], cl
@@ -111,10 +130,11 @@ call ds:atoi
 add esp, 4
 mov dword ptr [ebp+hostshort], eax
 jmp short loc_401326
-```
+</pre>
+</details>
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://insights.sei.cmu.edu/cert/2019/03/api-hashing-tool-imagine-that.html
 
 <a name="2">[2]</a> https://cofense.com/recent-geodo-malware-campaigns-feature-heavily-obfuscated-macros/
