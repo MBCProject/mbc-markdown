@@ -12,6 +12,10 @@
 <td><b>Virtualization/Sandbox Evasion Checks (<a href="https://attack.mitre.org/techniques/T1497/001/">T1497.001</a>, <a href="https://attack.mitre.org/techniques/T1633/001/">T1633.001</a>), Virtualization/Sandbox Evasion: User Activity Based Checks (<a href="https://attack.mitre.org/techniques/T1497/002/">T1497.002</a>)</b></td>
 </tr>
 <tr>
+<td><b>Anti-Analysis Type</b></td>
+<td><b>Detection</b></td>
+</tr>
+<tr>
 <td><b>Version</b></td>
 <td><b>2.0</b></td>
 </tr>

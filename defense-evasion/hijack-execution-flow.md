@@ -12,6 +12,10 @@
 <td><b>Hijack Execution Flow (<a href="https://attack.mitre.org/techniques/T1574">T1574</a>, <a href="https://attack.mitre.org/techniques/T1625">T1625</a>)</b></td>
 </tr>
 <tr>
+<td><b>Anti-Analysis Type</b></td>
+<td><b>Evasion</b></td>
+</tr>
+<tr>
 <td><b>Version</b></td>
 <td><b>2.0</b></td>
 </tr>

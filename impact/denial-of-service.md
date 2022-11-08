@@ -12,6 +12,10 @@
 <td><b>Network Denial of Service (<a href="https://attack.mitre.org/techniques/T1498/">T1498</a>)</b></td>
 </tr>
 <tr>
+<td><b>Impact Type</b></td>
+<td><b>Availability</b></td>
+</tr>
+<tr>
 <td><b>Version</b></td>
 <td><b>2.0</b></td>
 </tr>

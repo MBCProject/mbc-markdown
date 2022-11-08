@@ -12,6 +12,10 @@
 <td><b>Obfuscated Files or Information (<a href="https://attack.mitre.org/techniques/T1027/">T1027</a>, <a href="https://attack.mitre.org/techniques/T1406/">T1406</a>)</b></td>
 </tr>
 <tr>
+<td><b>Anti-Analysis Type</b></td>
+<td><b>Evasion</b></td>
+</tr>
+<tr>
 <td><b>Version</b></td>
 <td><b>2.0</b></td>
 </tr>

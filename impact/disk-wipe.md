@@ -12,6 +12,10 @@
 <td><b>Disk Wipe (<a href="https://attack.mitre.org/techniques/T1561/">T1561</a>)</b></td>
 </tr>
 <tr>
+<td><b>Impact Type</b></td>
+<td><b>Availability</b></td>
+</tr>
+<tr>
 <td><b>Version</b></td>
 <td><b>3.0</b></td>
 </tr>

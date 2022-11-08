@@ -12,6 +12,10 @@
 <td><b>Data Manipulation: Transmitted Data Manipulation (<a href="https://attack.mitre.org/techniques/T1565/002/">T1565.002</a>)</b></td>
 </tr>
 <tr>
+<td><b>Impact Type</b></td>
+<td><b>Integrity</b></td>
+</tr>
+<tr>
 <td><b>Version</b></td>
 <td><b>2.0</b></td>
 </tr>
