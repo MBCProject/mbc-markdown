@@ -8,7 +8,8 @@ import argparse
 from fuzzywuzzy import fuzz  # pip install fuzzywuzzy python-Levenshtein
 
 objective_list = ['anti-behavioral-analysis', 'anti-static-analysis', 'collection', 'command-and-control', 'credential-access', 'defense-evasion', 'discovery', 'execution', 'exfiltration', 'impact', 'lateral-movement', 'micro-behaviors', 'persistence', 'privilege-escalation']
-
+anti_analysis_types = ['Evasion', 'Detection']
+impact_types = ['Integrity', 'Breach', 'Availability']
 
 # Checks if 'string' in 'l' at index 'line_num'. If missing, insert 'string' into 'l' at index 'line_num'
 # Return possibly modified 'l'
@@ -36,6 +37,7 @@ def main():
     parser.add_argument("-i", "--id", help = "ID (B0001)")
     parser.add_argument("-o", "--objective", nargs='+', help = "Objectives separated by spaces, replace spaces within the name with underscore (Anti-Behavioral_Analysis Anti-Static_Analysis)")
     parser.add_argument("-a", "--attack", nargs='+', help = "Related ATT&CK Techniques grouped by name and ID (Debugger_Evasion,T1622 Virtualization/Standbox_Evasion_Checks,T1497.001,T1633.001)")
+    parser.add_argument("-t", "--type", help = "Anti-Analysis or Impact Types (Evasion, Detection, Integrity, Breach, Availability)")
     parser.add_argument("-v", "--version", help="Version")
     parser.add_argument("-c", "--created", help="Method Creation Date (1_August_2019)")
     parser.add_argument("-m", "--last_modified", help="Last modified date (1_August_2019)")
@@ -48,6 +50,8 @@ def main():
     with open(file) as f:
         lines = f.readlines()
         f.close()
+
+    offset = 0  # Handles unique fields such as anti-analysis/impact type
 
     # Some files have an empty line 1, delete that
     if lines[0] == '\n':
@@ -115,34 +119,52 @@ def main():
         lines.insert(12, "</tr>\n")
         print(attack_str)
 
+    # Adding Anti-Analysis/Impact Type
+    if args.type:
+        if args.type in impact_types:
+            lines.insert(13, "<tr>\n")
+            lines = insert_if_missing(lines, 14, "<td><b>Impact Type</b></td>\n")
+
+        elif args.type in anti_analysis_types:
+            lines.insert(13, "<tr>\n")
+            lines = insert_if_missing(lines, 14, "<td><b>Anti-Analysis Type</b></td>\n")
+
+        else:
+            raise Exception("Anti-Analysis/Impact Type is not valid")
+        
+        lines.insert(15, "<td><b>{}</b></td>\n".format(args.type))
+        lines.insert(16, "</tr>\n")
+
+        offset += 4
+
     # Adding version field
     if args.version:
-        lines = insert_if_missing(lines, 13, "<tr>\n")
-        lines = insert_if_missing(lines, 14, "<td><b>Version</b></td>\n")
+        lines = insert_if_missing(lines, 13+offset, "<tr>\n")
+        lines = insert_if_missing(lines, 14+offset, "<td><b>Version</b></td>\n")
 
-        lines.insert(15, "<td><b>{}</b></td>\n".format(args.version))
-        lines.insert(16, "</tr>\n")
+        lines.insert(15+offset, "<td><b>{}</b></td>\n".format(args.version))
+        lines.insert(16+offset, "</tr>\n")
 
     # Adding Created field
     if args.created:
-        lines = insert_if_missing(lines, 17, "<tr>\n")
-        lines = insert_if_missing(lines, 18, "<td><b>Created</b></td>\n")
+        lines = insert_if_missing(lines, 17+offset, "<tr>\n")
+        lines = insert_if_missing(lines, 18+offset, "<td><b>Created</b></td>\n")
 
         created = args.created.replace('_', ' ')
-        lines.insert(19, "<td><b>{}</b></td>\n".format(created))
-        lines.insert(20, "</tr>\n")
+        lines.insert(19+offset, "<td><b>{}</b></td>\n".format(created))
+        lines.insert(20+offset, "</tr>\n")
     
     # Adding Last Modified Field
     if args.last_modified:
-        lines = insert_if_missing(lines, 21, "<tr>\n")
-        lines = insert_if_missing(lines, 22, "<td><b>Last Modified</b></td>\n")
+        lines = insert_if_missing(lines, 21+offset, "<tr>\n")
+        lines = insert_if_missing(lines, 22+offset, "<td><b>Last Modified</b></td>\n")
 
         last_modified = args.last_modified.replace('_', ' ')
-        lines.insert(23, "<td><b>{}</b></td>\n".format(last_modified))
-        lines.insert(24, "</tr>\n")
+        lines.insert(23+offset, "<td><b>{}</b></td>\n".format(last_modified))
+        lines.insert(24+offset, "</tr>\n")
 
-    lines = insert_if_missing(lines, 25, "</table>\n")
-    lines = insert_if_missing(lines, 26, "\n")
+    lines = insert_if_missing(lines, 25+offset, "</table>\n")
+    lines = insert_if_missing(lines, 26+offset, "\n")
 
     # Now that modifications are complete, write to file
     with open(file, "w") as f:

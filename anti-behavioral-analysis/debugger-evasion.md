@@ -12,6 +12,10 @@
 <td><b>Debugger Evasion (<a href="https://attack.mitre.org/techniques/T1622/">T1622</a>)</b></td>
 </tr>
 <tr>
+<td><b>Anti-Analysis Type</b></td>
+<td><b>Evasion</b></td>
+</tr>
+<tr>
 <td><b>Version</b></td>
 <td><b>2.0</b></td>
 </tr>

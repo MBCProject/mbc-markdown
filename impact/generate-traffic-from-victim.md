@@ -12,6 +12,10 @@
 <td><b>Generate Traffic from Victim (<a href="https://attack.mitre.org/techniques/T1643/">T1643</a>)</b></td>
 </tr>
 <tr>
+<td><b>Impact Type</b></td>
+<td><b>Breach</b></td>
+</tr>
+<tr>
 <td><b>Version</b></td>
 <td><b>2.0</b></td>
 </tr>
