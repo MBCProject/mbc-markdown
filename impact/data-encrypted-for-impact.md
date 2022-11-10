@@ -36,14 +36,14 @@ Malware may encrypt files stored on the system to prevent user access until a ra
 
 See ATT&CK: **Data Encrypted for Impact ([T1486](https://attack.mitre.org/techniques/T1486/))** and **Data Encrypted for Impact (Mobile) ([T1471](https://attack.mitre.org/techniques/T1471/))**
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Ransom Note**|E1486.001|Ransomware displays a ransom note. Ransom notes are sometimes used to link instances of ransomware, even when the code or anti-analysis techniques change.|
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**CryptoWall**](../xample-malware/cryptowall.md)|2014|[[1]](#1)|
@@ -51,8 +51,8 @@ Malware Examples
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|Encrypts files for ransom without any connection to the Internet.|
 |[**SamSam**](../xample-malware/samsam.md)|2015|Ransomware.|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> http://www.secureworks.com/cyber-threat-intelligence/threats/cryptowall-ransomware/
 
 <a name="2">[2]</a> http://www.secureworks.com/cyber-threat-intelligence/threats/cryptolocker-ransomware/

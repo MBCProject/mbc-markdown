@@ -30,8 +30,8 @@ Checksum
 ========
 Malware may derive a checksum from some block of data. The checksum is often used for data validation.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Adler**|C0032.005|Malware computes an Adler checksum.|

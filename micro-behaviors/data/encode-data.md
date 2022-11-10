@@ -30,8 +30,8 @@ Encode Data
 ===========
 Malware may encode data.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Base64**|C0026.001|Malware may encode data using Base64.|

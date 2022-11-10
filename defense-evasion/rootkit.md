@@ -46,8 +46,8 @@ Methods
 |**Kernel Mode Rootkit**|E1014.m16|Rootkit operates by adding or replacing code in OS, device drivers, loadable kernel modules (LKM). Related to ATT&CK: [Kernel Modules and Extensions](https://attack.mitre.org/techniques/T1547/006/)|
 |**Memory Rootkit**|E1014.m17|A memory rootkit hids in RAM. Behaviors may include methods to prevent memory access. The lifespan of a memory rootkit is short because it disappears after a system reboot.|
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
@@ -61,8 +61,8 @@ Rootkits can be detected by detecting primary rootkit behaviors: Hide Artifacts,
 
 Rootkits can also be detected via memory dump analysis or virtual machine introspection.
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://en.wikipedia.org/wiki/Rootkit
 
 <a name="2">[2]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy

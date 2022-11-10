@@ -32,8 +32,8 @@ Malware may include code that relies on specific actions by a user to execute. N
 
 See ATT&CK Technique: **User Execution ([T1204](https://attack.mitre.org/techniques/T1204/))**.
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
@@ -41,8 +41,8 @@ Malware Examples
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|The malware relies on a victim to execute itself [[2]](#2)|
 |[**Terminator**](../xample-malware/terminator.md)|2013|The malware relies on user interaction to execute [[3]](#3)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
 
 <a name="2">[2]</a> https://blogs.cisco.com/security/talos/rombertik

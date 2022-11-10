@@ -30,8 +30,8 @@ Generate Pseudo-random Sequence
 ===============================
 The Generate Pseudo-random Sequence microbehavior can be used for a number of purposes. The methods below include specific functions, as well as pseudorandom number generators (PRNG).
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**GetTickCount**|C0021.001|Malware generates a pseudo-random sequence using GetTickCount.|

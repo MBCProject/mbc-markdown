@@ -53,8 +53,8 @@ Methods
 |**Injection using Shims**|E1055.m03|Malware may use shims to target an executable (shims are a way of hooking into APIs and targeting specific executables and are provided by Microsoft for backward compatibility, allowing developers to apply program fixes without rewriting code). [[1]](#1)|
 |**Patch Process Command Line**|E1055.m04|Malware patches the PEB of a process to spoof the arguments.|
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**UP007**](../xample-malware/up007.md)|April 2016|Injects secondary payload into memory. [[4]](#4)|
@@ -66,8 +66,8 @@ Malware Examples
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|Bypasses UAC using a Shim Database instructing SndVol.exe to execute cmd.exe instead, allowing for elevated execution  [[8]](#8)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Stuxnet injects the entire DLL into another process and then just calls the particular export  [[9]](#9)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> Ashkan Hosseini, *Ten Process Injection Techniques: A Technical Survey of Common and Trending Process Injection Techniques*, July 2017. https://www.elastic.co/blog/ten-process-injection-techniques-technical-survey-common-and-trending-process
 
 <a name="2">[2]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy

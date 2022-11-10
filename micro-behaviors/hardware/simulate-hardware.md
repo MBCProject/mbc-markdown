@@ -30,8 +30,8 @@ Simulate Hardware
 =================
 Malware simulates hardware.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Ctrl-Alt-Del**|C0057.001|Malware simulates Ctrl-Alt-Del.|

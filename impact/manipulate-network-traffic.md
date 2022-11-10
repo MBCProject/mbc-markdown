@@ -36,13 +36,13 @@ Malware intercepts and manipulates network traffic, typically accessing or modif
 
 The related **Data Manipulation: Transmitted Data Manipulation ([T1565.002](https://attack.mitre.org/techniques/T1565/002/))** ATT&CK sub-technique was defined subsequent to this MBC behavior.
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|Intercepts encrypted web traffic to inject adds. [[1]](#1)|
 |[**MazarBot**](../xample-malware/mazarbot.md)|2016|Intercepts data coming into and going out of device.|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/

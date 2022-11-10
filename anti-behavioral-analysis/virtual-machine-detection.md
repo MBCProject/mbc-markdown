@@ -90,6 +90,12 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |[**Emotet**](../xample-malware/emotet.md)|2018|Emotet checks for various processes that are associated with various virtual machines by comparing hash values of the process names with the hash values of the list of running process names [[7]](#7)|
 
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[check if process is running under wine](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-emulation/wine/check-if-process-is-running-under-wine.yml)|Emulator Detection (B0007)|GetModuleHandle, GetProcAddress|
+
 
 ## Code Snippets
 

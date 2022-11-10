@@ -42,8 +42,8 @@ For hooking related to memory dump evasion, see **Memory Dump Evasion ([B0006](.
 
 See ATT&CK: **Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques/T1574), [T1625](https://attack.mitre.org/techniques/T1625))**.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Abuse Windows Function Calls**|F0015.006|Malware abuses native Windows function calls to transfer execution to shellcode that it loads into memory. A pointer to the callback function is used to supply the memory address of the shellcode. Functions that can be abused include EnumResourceTypesA and EnumUILanguagesW. [[4]](#4)|
@@ -54,8 +54,8 @@ Methods
 |**Shadow System Service Dispatch Table Hooking**|F0015.004|The Shadow System Service Dispatch Table (SSDT) can be hooked similarly to how the SSDT and IAT are hooked. The target of the hooking with the Shadow SSDT is the Windows subsystem (win32k.sys).[[3]](#3)|
 |**System Service Dispatch Table Hooking**|F0015.005|Malware (e.g. rootkit, malicious drivers) may hook the system service dispatch table (SSDT), also called the system service descriptor table. The SSDT contains information about the service tables used by the operating system for dispatching system calls. Hooking the SSDT enables malware to hide files, registry keys, and network connections.[[3]](#3)|
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |**Kronos**|June 2014|Kronos hooks the API of processes to prevent detection. [[6]](#6)|
@@ -66,8 +66,8 @@ Malware Examples
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|Escalates privilege by impersonating the token. First uses LogonUser and ImpersonateLoggedOnUser, then ImpersonateNamedPipeClient. [[10]](#10)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Stuxnet hooks ntdll.dll to monitor for requests to load specially crafted file names which are mapped to a location specified by Stuxnet.  [[11]](#11)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://www.sans.org/media/score/checklists/rootkits-investigation-procedures.pdf
 
 <a name="2">[2]</a> https://www.oreilly.com/library/view/learning-malware-analysis/9781788392501/a0a506d6-d062-48c1-a0a8-57d6acb77785.xhtml

@@ -30,8 +30,8 @@ Environment Variable
 ====================
 Malware modifies environment variables. 
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Set Variable**|C0034.001|Malware sets an environment variable.|

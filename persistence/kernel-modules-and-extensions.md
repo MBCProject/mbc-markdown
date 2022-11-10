@@ -32,8 +32,8 @@ Malware may use loadable kernel modules to persist on a system. For example, one
 
 See ATT&CK: **Boot or Logon Autostart Execution: Kernel Modules and Extensions ([T1547.006](https://attack.mitre.org/techniques/T1547/006/))**.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Device Driver**|F0010.001|Allows kernel to access hardware connected to the system.|

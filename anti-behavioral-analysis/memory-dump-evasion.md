@@ -50,6 +50,7 @@ Malware hinders retrieval and/or discovery of the contents of the physical memor
 |**Patch MmGetPhysicalMemoryRanges**|[B0006.011](#b0006011)|Patching this function to always return NULL prevents drivers from getting information about the physical address space layout, preventing memory dumps. [[1]](#1)|
 
 ## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[Kraken](../xample-malware/kraken.md)|April 2008|Dumping Kraken's c.dll module from the heap of its own process is tricky because its PE-header is erased in memory. [[2]](#2)|

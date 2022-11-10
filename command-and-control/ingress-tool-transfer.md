@@ -34,8 +34,8 @@ Note that this behavior is separate from possible execution (installation) of th
 
 See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques/T1105/))**.
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
@@ -45,8 +45,8 @@ Malware Examples
 |[**DarkComet**](../xample-malware/dark-comet.md)|2008|Can download files from remote repository upon instruction  [[4]](#4)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|Creates a folder on remote computers and then copies its executables (Shamoon and Filerase) into that directory  [[5]](#5)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
 
 <a name="2">[2]</a> https://www.secureworks.com/research/cryptolocker-ransomware

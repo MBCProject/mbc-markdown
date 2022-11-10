@@ -32,8 +32,8 @@ Malware may exfiltrate data via automated processing or scripting.
 
 See ATT&CK Technique: **Automated Exfiltration ([T1020](https://attack.mitre.org/techniques/T1020/))**.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Exfiltrate via File Hosting Service**|E1020.m01|Malware may exfiltrate files to a file hosting location.|

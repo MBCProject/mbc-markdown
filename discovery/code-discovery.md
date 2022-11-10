@@ -30,8 +30,8 @@ Code Discovery
 ==============
 Malware may inspect code or enumerate aspects.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Enumerate PE Sections**|B0046.001|Malware enumerates virtual offsets of code sections.|

@@ -30,8 +30,8 @@ Encryption Key
 ==============
 Malware may import, generate, or otherwise use an encryption key. 
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Import Public Key**|C0028.001|Malware imports a public key.|

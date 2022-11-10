@@ -32,8 +32,8 @@ The Windows Internet (WinINet) application programming interface (API) is used b
 
 The methods below are those of most interest in malware analysis. Details can be found at [[1]](#1). 
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**InternetConnect**|C0005.001|Opens an FTP or HTTP session for a given site.|
@@ -42,6 +42,6 @@ Methods
 |**InternetReadFile**|C0005.004|Reads data from an open Internet file (URL data).|
 |**InternetWriteFile**|C0005.005|Writes data to an open Internet file.|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://docs.microsoft.com/en-us/windows/win32/wininet/wininet-functions

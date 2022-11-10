@@ -32,16 +32,16 @@ Malware captures user keyboard input.
 
 See ATT&CK: **Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/techniques/T1056/001), [T1417.001](https://attack.mitre.org/techniques/T1417/001/))**
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Application Hook**|F0002.001|Keystrokes are captured with an application hook.|
 |**Polling**|F0002.002|Keystrokes are captured via polling (e.g., user32.GetAsyncKeyState, user32.GetKeyState).|
 
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|Certain variants of the malware may have keylogging functionality [[1]](#1)|
@@ -50,8 +50,8 @@ Malware Examples
 |[**DarkComet**](../xample-malware/dark-comet.md)|2008|DarkComet can capture keystrokes [[4]](#4)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Can capture keystrokes  [[5]](#5)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://www.f-secure.com/v-descs/backdoor_w32_hupigon.shtml
 
 <a name="2">[2]</a> https://citizenlab.ca/2016/04/between-hong-kong-and-burma/

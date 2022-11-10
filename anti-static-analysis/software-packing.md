@@ -35,8 +35,8 @@ This code characteristic - Software Packing - can make static and behavioral ana
 
 This description refines the ATT&CK **Obfuscated Files or Information: Software Packing ([T1027.002](https://attack.mitre.org/techniques/T1027/002/), [T1406.002](https://attack.mitre.org/techniques/T1406/002/))** techniques.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Armadillo**|F0001.012|Uses Armadillo.|
@@ -53,8 +53,8 @@ Methods
 |**UPX**|F0001.008|Uses UPX packer.|
 |**VMProtect**|F0001.010|Uses VMProtect.|
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|Redhip samples are packed with different custom packers. [[3]](#3)|
@@ -64,8 +64,8 @@ Malware Examples
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|Has a custom packer to obfuscate itself  [[7]](#7)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|Emotet uses custom packers which first decrypt the loaders and the loaders decrypt and load Emotet's main payloads [[8]](#8)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> Ange Albertini, Packers, 5 April 2010, https://gironsec.com/code/packers.pdf
 
 <a name="2">[2]</a> Jiang Ming et al, Towards Paving the Way for Large-Scale Windows Malware Analysis: Generic Binary Unpacking with Orders-of-Magnitude Performance Boost, October 2018, https://dl.acm.org/citation.cfm?id=3243771.

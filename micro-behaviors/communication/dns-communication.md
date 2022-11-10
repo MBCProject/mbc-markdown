@@ -30,8 +30,8 @@ DNS Communication
 =================
 The DNS Communication micro-behavior focuses on DNS communication. 
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**DDNS Domain Connect**|C0011.003|Connects to dynamic DNS domain.|

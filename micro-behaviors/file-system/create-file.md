@@ -30,8 +30,8 @@ Create File
 ===========
 Malware creates a file. 
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Create Office Document**|C0016.001|An Office document is created.|

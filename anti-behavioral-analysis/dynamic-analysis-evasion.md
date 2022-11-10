@@ -38,8 +38,8 @@ See **Emulator Evasion ([B0004](../anti-behavioral-analysis/emulator-evasion.md)
 
 The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/))** ATT&CK techniques were defined subsequent to this MBC behavior.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Alternative ntdll.dll**|B0003.001|A copy of ntdll.dll is dropped to the filesystem and then loaded. This alternative DLL is used to execute function calls to evade sandboxes which use hooking in the operating system's ntdll.dll.|
@@ -56,8 +56,8 @@ Methods
 |**Restart**|B0003.010|Restarts or shuts down system to bypass sandboxing.|
 
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**Ursnif**](../xample-malware/ursnif.md)|May 2016|Ursnif uses malware macros to evade sandbox detection. [[2]](#2)|
@@ -69,8 +69,8 @@ Malware Examples
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|Uses numerous printf loops to delay the execution process and overload the sandbox with junk data (API Hammering) [[6]](#6)|
 
 
-References
-----------
+## References
+
 <a name="1">[1]</a> http://joe4security.blogspot.com/2013/06/overloading-sandboxes-new-generic.html
 
 <a name="2">[2]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/ursnif

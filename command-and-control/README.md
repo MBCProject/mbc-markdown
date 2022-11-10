@@ -20,13 +20,13 @@ Behaviors that enable malware to communicate with systems such as C2 servers or 
 * **Ingress Tool Transfer** [E1105](../command-and-control/ingress-tool-transfer.md)
 
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**TrickBot**](../command-and-control/README.md)|2016| new email addresses are collected automatically from the victim's address books [[1]](#1)|
 
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://www.bitdefender.com/blog/labs/trickbot-is-dead-long-live-trickbot/

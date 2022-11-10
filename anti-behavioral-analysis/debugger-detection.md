@@ -36,8 +36,8 @@ Malware detects whether it's being executed inside a debugger. If so, conditiona
 
 Details on methods of detecting debuggers are given in the references; many are listed below.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**API Hook Detection**|B0001.001|Module bounds based [[7]](#7).|
@@ -78,8 +78,8 @@ Methods
 |**UnhandledExceptionFilter**|B0001.030|The UnhandledExceptionFilter function is called if no registered exception handlers exist, but it will not be reached if a debugger is present. See [[7]](#7) for details.|
 |**WudfIsAnyDebuggerPresent**|B0001.031|Includes use of WudfIsAnyDebuggerPresent, WudfIsKernelDebuggerPresent, WudfIsUserDebuggerPresent.|
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**Redhip**](../xample-malware/rebhip.md)|January 2011|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[4]](#4)|
@@ -88,8 +88,8 @@ Malware Examples
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Poison Ivy Variant checks for breakpoints and exits immediately if found [[10]](#10)|
 
 
-References
-----------
+## References
+
 <a name="1">[1]</a> Alexander Antukh, "Anti-debugging Techniques Cheat Sheet," 19 January 2015.  http://antukh.com/blog/2015/01/19/malware-techniques-cheat-sheet. 
 
 <a name="2">[2]</a> Joshua Cannell, Malwarebytes Labs, "Five Anti-Analysis Tricks that sometimes Fool Analysts," 31 March 2016. https://blog.malwarebytes.com/threat-analysis/2014/09/five-anti-debugging-tricks-that-sometimes-fool-analysts.

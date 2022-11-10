@@ -42,8 +42,8 @@ See ATT&CK: **Obfuscated Files or Information ([T1027](https://attack.mitre.org/
 
 Instead of being listed alphabetically, methods have been grouped to better faciliate labeling and mapping.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Encoding**|E1027.m01|A malware sample, file, or other information is encoded.|
@@ -56,8 +56,8 @@ Methods
 |**Encryption of Data**|E1027.m07|A file's data is encrypted, but not necessarily the file's code.|
 
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
@@ -66,8 +66,8 @@ Malware Examples
 |[**GotBotKR**](../xample-malware/gobotkr.md)|2019|GoBotKR uses base64 to obfuscate strings, commands and files. [[1]](#1)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|The malware will use a key to decrypt text from a URL to create more malicious code [[2]](#2)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
 
 <a name="2">[2]</a> https://www.bleepingcomputer.com/virus-removal/remove-kovter-trojan

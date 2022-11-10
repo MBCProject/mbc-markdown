@@ -34,8 +34,8 @@ Malware-related methods extending ATT&CK's definition are below.
 
 See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://attack.mitre.org/techniques/T1562/001), [T1629.003](https://attack.mitre.org/techniques/T1629/003/))**.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**AMSI Bypass**|F0004.004|Malware bypasses AMSI (Anti-malware Scan Interface).|
@@ -48,16 +48,16 @@ Methods
 |**Bypass Windows File Protection**|F0004.007|Malware bypasses Windows file protection.|
 |**Disable Code Integrity**|F0004.009|Malware disables Code Integrity driver.|
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|Loads ntdll.dll and user32.dll as data files in memory and overwrites the first 8 bytes of those functions, which unhooks the APIs. [[1]](#1)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
 |[**DNSChanger**](../xample-malware/dnschanger.md)|2011|Prevents the infected system from installing anti-virus software updates. [[2]](#2)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
 <a name="2">[2]</a> https://www.huffingtonpost.com/2011/11/09/click-hijack-hackers-online-ad-scam_n_1084497.html

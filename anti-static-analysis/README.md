@@ -25,8 +25,8 @@ Behaviors and code characteristics that prevent or hinder static analysis of the
 * **Obfuscated Files or Information** [E1027](../defense-evasion/obfuscated-files-or-information.md)
 * **Software Packing** [F0001](../anti-static-analysis/software-packing.md)
 
-References
-----------
+## References
+
 <a name="1">[1]</a> Unprotect Project, a database about malware self-defense and protection. https://search.unprotect.it/map/sandbox-evasion/
 
 <a name="2">[2]</a> InDepthUnpacking, course content for teaching malware anti-analysis techniques and mitigations, with emphasis on packers. https://github.com/knowmalware/InDepthUnpacking

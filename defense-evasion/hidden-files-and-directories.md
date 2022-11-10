@@ -32,8 +32,8 @@ Malware may hide files and folders to avoid detection and/or to persist on the s
 
 See ATT&CK: **Hide Artifacts: Hidden Files and Directories ([T1564.001](https://attack.mitre.org/techniques/T1564/001/))**.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Attribute**|F0005.003|Malware may change or choose an attribute to hide a file or directory.|
@@ -42,15 +42,15 @@ Methods
 |**Timestamp**|F0005.004|Malware may change the timestamp on a file to prevent detection.|
 
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**GotBotKR**](../xample-malware/gobotkr.md)|2019| GoBotKR stores itself in a file with Hidden and System attributes. [[1]](#1)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|Modifies target files' time to August 2012 as an antiforensic trick  [[2]](#2)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
 
 <a name="2">[2]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-returns-to-wipe-systems-in-middle-east-europe/

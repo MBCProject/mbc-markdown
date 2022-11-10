@@ -36,20 +36,20 @@ Original executable code is virtualized by translating the code into a special f
 
 Virtualized code is a software protection technique. Themida is a commercial tool; VMProtect is an open source tool. [[1]](#1) 
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Multiple VMs**|B0008.001|Multiple virtual machines with different architectures (CISC, RISC, etc.) can be used inside of a single executable in order to make reverse engineering even more difficult.|
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**Locky Bart**](../xample-malware/locky-bart.md)|January 2017|Code virtualization is added to the Locky Bart binary using WPProtect. [[2]](#2)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://github.com/xiaoweime/WProtect
 
 <a name="2">[2]</a> https://blog.malwarebytes.com/threat-analysis/2017/01/locky-bart-ransomware-and-backend-server-analysis/

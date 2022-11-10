@@ -30,8 +30,8 @@ Interprocess Communication
 ==========================
 The Interprocess Communication micro-behavior focuses on interprocess communication. 
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Connect Pipe**|C0003.002||

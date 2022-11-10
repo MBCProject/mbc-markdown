@@ -31,13 +31,13 @@ Overflow Buffer
 Malware may overflow the buffer for various purposes.
 
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**Conficker**](../../xample-malware/conficker.md)|2008|Variants A, B, C, and E exploit a vulnerability in the Server Service on Windows computers in which an already compromised computer sends a specially-crafted RPC request to force a buffer overflow and execute shellcode on the target computer  [[1]](#1)|
 
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://en.wikipedia.org/wiki/Conficker

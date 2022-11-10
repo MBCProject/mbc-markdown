@@ -30,8 +30,8 @@ Covert Location
 ===============
 Malware may hide data or binary files within other files, the registry, etc. 
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Hide Data in Registry**|B0040.001|Malware may use a registry key to store a long sequence of bytes.|
