@@ -26,8 +26,8 @@
 </table>
 
 
-Rootkit
-=======
+# Rootkit
+
 Behaviors of a rootkit: "A rootkit is a collection of computer software, typically malicious, designed to enable access to a computer or areas of its software that is not otherwise allowed and often masks its existence or the existence of other software." [[1]](#1)
 
 

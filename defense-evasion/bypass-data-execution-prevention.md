@@ -26,8 +26,8 @@
 </table>
 
 
-Bypass Data Execution Prevention
-================================
+# Bypass Data Execution Prevention
+
 Malware may bypass Data Execution Prevention (DEP).
 
 Methods

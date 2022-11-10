@@ -26,8 +26,8 @@
 </table>
 
 
-SMTP Communication
-==================
+# SMTP Communication
+
 This micro-behavior focuses on SMTP communication. 
 
 ## Methods

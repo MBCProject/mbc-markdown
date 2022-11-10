@@ -30,8 +30,8 @@
 </table>
 
 
-Denial of Service
-=================
+# Denial of Service
+
 Malware may make a network unavailable, for example, by launching a network-based denial of service (DoS) attack. 
 
 Endpoint denial of service behaviors are captured by the **Endpoint Denial of Service ([T1499](https://attack.mitre.org/techniques/T1499/))** technique.

@@ -26,8 +26,8 @@
 </table>
 
 
-Encode Data
-===========
+# Encode Data
+
 Malware may encode data.
 
 ## Methods

@@ -30,8 +30,8 @@
 </table>
 
 
-Conditional Execution
-=====================
+# Conditional Execution
+
 Malware checks system environment conditions or characteristics to determine execution path. For example, malware may not run or be dormant unless system conditions are right, or file that is dropped may vary according to execution environment. Conditional execution in malware happens autonomously, not because of an attacker's command.
 
 This behavior is related to the **Dynamic Analysis Evasion ([B0003](../anti-behavioral-analysis/dynamic-analysis-evasion.md))** behavior that obstructs dynamic analysis in a sandbox, emulator, or virtual machine.

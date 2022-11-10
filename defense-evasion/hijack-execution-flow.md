@@ -30,8 +30,8 @@
 </table>
 
 
-Hijack Execution Flow
-=====================
+# Hijack Execution Flow
+
 Malware may execute by hijacking the way operating systems run programs. Malware (e.g. rootkit) alters API behavior or redirects execution (i.e., hooking) to a malicious API version for a variety of purposes. Malware may use hooking to load and execute code within the context of another process, hiding execution and gaining elevated privileges and access to the process's memory. Different types of hooking are defined as methods below.
 
 Note that in MBC, Hooking is also associated with the [Defense Evasion](../defense-evasion), [Persistence](../persistence), [Privilege Escalation](../privilege-escalation), and [Anti-Behavioral Analysis](../anti-behavioral-analysis) objectives.

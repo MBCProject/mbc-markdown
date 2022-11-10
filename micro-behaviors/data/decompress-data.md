@@ -26,8 +26,8 @@
 </table>
 
 
-Decompress Data
-===============
+# Decompress Data
+
 Malware may decompress data.
 
 ## Methods

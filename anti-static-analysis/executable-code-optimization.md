@@ -30,8 +30,8 @@
 </table>
 
 
-Executable Code Optimization
-============================
+# Executable Code Optimization
+
 Code is optimized, making it harder to statically analyze.
 
 ## Methods

@@ -30,8 +30,8 @@
 </table>
 
 
-Disassembler Evasion
-====================
+# Disassembler Evasion
+
 Malware code evades disassembly in a recursive or linear disassembler. Some methods apply to both types of disassemblers; others apply to one type and not the other.
 
 ## Methods

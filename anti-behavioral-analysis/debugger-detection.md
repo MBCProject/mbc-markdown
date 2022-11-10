@@ -30,8 +30,8 @@
 </table>
 
 
-Debugger Detection
-==================
+# Debugger Detection
+
 Malware detects whether it's being executed inside a debugger. If so, conditional execution selects a benign execution path. [[1]](#1), [[2]](#2)
 
 Details on methods of detecting debuggers are given in the references; many are listed below.

@@ -26,6 +26,6 @@
 </table>
 
 
-Taskbar Discovery
-=================
+# Taskbar Discovery
+
 Malware may find the taskbar.

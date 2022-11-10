@@ -26,8 +26,8 @@
 </table>
 
 
-Install Certificate
-==============
+# Install Certificate
+
 Malware may install a certificate to gain access to https traffic. 
 
 ## Use in Malware

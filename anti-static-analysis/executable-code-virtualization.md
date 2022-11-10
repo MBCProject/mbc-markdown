@@ -30,8 +30,8 @@
 </table>
 
 
-Executable Code Virtualization
-==============================
+# Executable Code Virtualization
+
 Original executable code is virtualized by translating the code into a special format that only a special virtual machine (VM) can run; the VM uses a customized virtual instruction set. A "stub" function calls the VM when the code is run. Virtualized code makes static analysis and reverse engineering more difficult; dumped code won’t run without the VM.
 
 Virtualized code is a software protection technique. Themida is a commercial tool; VMProtect is an open source tool. [[1]](#1) 

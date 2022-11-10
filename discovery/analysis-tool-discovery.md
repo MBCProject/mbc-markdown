@@ -26,8 +26,8 @@
 </table>
 
 
-Analysis Tool Discovery
-=======================
+# Analysis Tool Discovery
+
 Malware can employ various means to detect whether analysis tools are present or running on the system on which it is executing. Note that analysis tools are used to *analyze* malware whereas security software (see **Software Discovery: Security Software Discovery ([T1518](https://attack.mitre.org/techniques/T1518/001/))** aims to *detect/mitigate* malware on a system or network.
 
 This behavior corresponds to simple, general discovery of analysis tools. Behaviors to find specific analysis tools (e.g., debuggers or disassemblers) are defined under the [Anti-Behavioral Analysis](../anti-behavioral-analysis) objective.

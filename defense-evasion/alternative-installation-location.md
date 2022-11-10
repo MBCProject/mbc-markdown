@@ -26,8 +26,8 @@
 </table>
 
 
-Alternative Installation Location
-=================================
+# Alternative Installation Location
+
 Malware may install itself not as a file on the hard drive. [[1]](#1)
 
 Methods

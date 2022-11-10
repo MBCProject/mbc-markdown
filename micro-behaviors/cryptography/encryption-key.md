@@ -26,8 +26,8 @@
 </table>
 
 
-Encryption Key
-==============
+# Encryption Key
+
 Malware may import, generate, or otherwise use an encryption key. 
 
 ## Methods

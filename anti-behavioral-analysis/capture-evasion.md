@@ -30,8 +30,8 @@
 </table>
 
 
-Capture Evasion
-===============
+# Capture Evasion
+
 Malware has characteristics enabling it to evade capture from the infected system.
 
 ## Methods

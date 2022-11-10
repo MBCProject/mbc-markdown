@@ -29,8 +29,8 @@
 </table>
 
 
-Self Deletion
-=============
+# Self Deletion
+
 Malware may uninstall itself to avoid detection. 
 
 See ATT&CK: **Indicator Removal on Host: Uninstall Malicious Application ([T1630.001](https://attack.mitre.org/techniques/T1630/001/)), Indicator Removal on Host: File Deletion ([T1070.004](https://attack.mitre.org/techniques/T1070/004/))**.

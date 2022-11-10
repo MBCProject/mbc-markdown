@@ -26,6 +26,6 @@
 </table>
 
 
-Open Thread
-=============
+# Open Thread
+
 Malware opens a thread. 

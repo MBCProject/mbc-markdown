@@ -26,8 +26,8 @@
 </table>
 
 
-Cryptographic Hash
-==================
+# Cryptographic Hash
+
 Malware may use a cryptographic hash. 
 
 ## Methods

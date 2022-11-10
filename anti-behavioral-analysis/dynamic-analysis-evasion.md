@@ -30,8 +30,8 @@
 </table>
 
 
-Dynamic Analysis Evasion
-========================
+# Dynamic Analysis Evasion
+
 Malware may obstruct dynamic analysis in a sandbox, emulator, or virtual machine. 
 
 See **Emulator Evasion ([B0004](../anti-behavioral-analysis/emulator-evasion.md))** for an  emulator-specific evasion behavior, and see **Conditional Execution ([B0025](../anti-behavioral-analysis/execution-guardrails.md))** for a behavior that constrains dynamic execution based on environmental conditions. 

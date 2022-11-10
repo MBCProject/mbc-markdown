@@ -26,8 +26,8 @@
 </table>
 
 
-Ingress Tool Transfer
-================
+# Ingress Tool Transfer
+
 Malware may copy files from an external system to a system on a compromised network. 
 
 Note that this behavior is separate from possible execution (installation) of the file, which is covered by the **Install Additional Program ([B0023](../execution/install-additional-program.md))** behavior. 

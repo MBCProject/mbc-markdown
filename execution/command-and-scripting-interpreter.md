@@ -26,8 +26,8 @@
 </table>
 
 
-Command and Scripting Interpreter
-=================================
+# Command and Scripting Interpreter
+
 Malware may abuse command and script interpreters to execute commands, scripts, or binaries.
 
 See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.org/techniques/T1059), [T1623](https://attack.mitre.org/techniques/T1623))**.

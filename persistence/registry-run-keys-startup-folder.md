@@ -26,8 +26,8 @@
 </table>
 
 
-Registry Run Keys / Startup Folder
-==================================
+# Registry Run Keys / Startup Folder
+
 Malware may add an entry to the Windows Registry run keys or startup folder to enable persistence. [[1]](#1)
 
 See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder ([T1547.001](https://attack.mitre.org/techniques/T1547/001/))**. 

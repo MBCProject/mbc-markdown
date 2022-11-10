@@ -26,8 +26,8 @@
 </table>
 
 
-Automated Exfiltration
-======================
+# Automated Exfiltration
+
 Malware may exfiltrate data via automated processing or scripting.
 
 See ATT&CK Technique: **Automated Exfiltration ([T1020](https://attack.mitre.org/techniques/T1020/))**.

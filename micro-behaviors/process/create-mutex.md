@@ -26,8 +26,8 @@
 </table>
 
 
-Create Mutex
-============
+# Create Mutex
+
 Malware creates a mutex. 
 
 ## Use in Malware

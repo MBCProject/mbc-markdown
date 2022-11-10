@@ -26,8 +26,8 @@
 </table>
 
 
-Environment Variable
-====================
+# Environment Variable
+
 Malware modifies environment variables. 
 
 ## Methods

@@ -26,8 +26,8 @@
 </table>
 
 
-Synchronization
-===============
+# Synchronization
+
 Malware enables two or more processes/threads to share a resource. 
 
 ## Methods

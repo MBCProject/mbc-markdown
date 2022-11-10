@@ -26,8 +26,8 @@
 </table>
 
 
-Screen Capture
-=============
+# Screen Capture
+
 Malware takes screen captures of the desktop.
 
 See ATT&CK: **Screen Capture ([T1113](https://attack.mitre.org/techniques/T1113/))**.

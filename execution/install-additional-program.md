@@ -26,8 +26,8 @@
 </table>
 
 
-Install Additional Program
-==========================
+# Install Additional Program
+
 Installs another, different program on the system. The additional program can be any secondary module; examples include backdoors, malicious drivers, kernel modules, and OS X Apps. 
 
 Malware that installs another component is called a "dropper." If the code is contained in the malware, it's a "single stage" dropper; "two stage" droppers download the code from a remote location (the associated download behavior is covered by the **Ingress Tool Transfer ([E1105](../command-and-control/ingress-tool-transfer.md))** behavior.

@@ -26,6 +26,6 @@
 </table>
 
 
-Use Constant
-============
+# Use Constant
+
 Malware may manipulate or use a constant value, for example as part of a larger string used by some function.

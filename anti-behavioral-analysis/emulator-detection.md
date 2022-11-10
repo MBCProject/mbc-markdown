@@ -30,8 +30,8 @@
 </table>
 
 
-Emulator Detection
-==================
+# Emulator Detection
+
 Detects whether the malware instance is being executed inside an emulator. If so, conditional execution selects a benign execution path.
 
 ## Methods

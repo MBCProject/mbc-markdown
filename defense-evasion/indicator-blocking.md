@@ -26,8 +26,8 @@
 </table>
 
 
-Indicator Blocking
-==================
+# Indicator Blocking
+
 Malware blocks indicators or events that would indicate malicious activity. Methods relevant to the malware domain are below. 
 
 See ATT&CK: **Impair Defenses: Indicator Blocking ([T1562.006](https://attack.mitre.org/techniques/T1562/006/))**.

@@ -26,8 +26,8 @@
 </table>
 
 
-Simulate Hardware
-=================
+# Simulate Hardware
+
 Malware simulates hardware.
 
 ## Methods

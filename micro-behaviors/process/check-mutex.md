@@ -26,8 +26,8 @@
 </table>
 
 
-Check Mutex
-===========
+# Check Mutex
+
 Malware checks a mutex. 
 
 ## Use in Malware

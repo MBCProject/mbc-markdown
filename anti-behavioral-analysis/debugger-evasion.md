@@ -30,8 +30,8 @@
 </table>
 
 
-Debugger Evasion
-================
+# Debugger Evasion
+
 Behaviors that make debugging difficult.
 
 A thorough reference for anti-debugging, both detection and evasion, is given in [[1]](#1).

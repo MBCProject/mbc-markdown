@@ -1,0 +1,3 @@
+- Update capa_analysis.py to make it look pretty and increase usability
+- update autofill.py to make it look pretty and increase usability
+- Move global variables such as objective_list into a config file to reduce editing if things are changed

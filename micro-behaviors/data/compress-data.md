@@ -26,8 +26,8 @@
 </table>
 
 
-Compress Data
-=============
+# Compress Data
+
 Malware may compress data.
 
 ## Methods

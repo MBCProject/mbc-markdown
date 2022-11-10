@@ -26,6 +26,6 @@
 </table>
 
 
-Writes File
-===========
+# Writes File
+
 Malware writes to a file.  Writing to a file enables file modification.

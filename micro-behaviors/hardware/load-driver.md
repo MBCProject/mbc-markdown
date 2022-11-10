@@ -26,8 +26,8 @@
 </table>
 
 
-Load Driver
-===========
+# Load Driver
+
 Malware loads a device driver or minifilter.
 
 ## Methods

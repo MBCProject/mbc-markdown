@@ -26,6 +26,6 @@
 </table>
 
 
-Allocate Memory
-===============
+# Allocate Memory
+
 Malware allocates memory, often to unpack itself. 

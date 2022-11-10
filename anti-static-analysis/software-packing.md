@@ -29,8 +29,8 @@
 </tr>
 </table>
 
-Software Packing
-================
+# Software Packing
+
 This code characteristic - Software Packing - can make static and behavioral analysis difficult and includes packing with software protectors, such as Themida and Armadillo [[1]](#1). Methods related to anti-analysis are below. This behavior covers both characteristics of the malware (i.e., how it is packed) as well as behaviors of the malware (e.g., the malware packs another executable file).
 
 This description refines the ATT&CK **Obfuscated Files or Information: Software Packing ([T1027.002](https://attack.mitre.org/techniques/T1027/002/), [T1406.002](https://attack.mitre.org/techniques/T1406/002/))** techniques.

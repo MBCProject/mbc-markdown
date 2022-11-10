@@ -26,8 +26,8 @@
 </table>
 
 
-Send Poisoned Text Message
-==========================
+# Send Poisoned Text Message
+
 A malicious attachment is sent via spam SMS or MMS messages. When the user clicks the link, malware is installed.
 
 ## Use in Malware

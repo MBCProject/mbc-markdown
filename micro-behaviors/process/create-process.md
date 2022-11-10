@@ -26,8 +26,8 @@
 </table>
 
 
-Create Process
-==============
+# Create Process
+
 Malware creates a process. 
 
 ## Methods

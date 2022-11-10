@@ -26,8 +26,8 @@
 </table>
 
 
-WinINet
-=======
+# WinINet
+
 The Windows Internet (WinINet) application programming interface (API) is used by malware to interact with FTP and HTTP protocols to access Internet resources.
 
 The methods below are those of most interest in malware analysis. Details can be found at [[1]](#1). 

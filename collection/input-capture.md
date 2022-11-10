@@ -26,8 +26,8 @@
 </table>
 
 
-Input Capture
-=============
+# Input Capture
+
 Malware captures user input.
 
 See ATT&CK: **Input Capture ([T1056](https://attack.mitre.org/techniques/T1056), [T1417](https://attack.mitre.org/techniques/T1417/))**.

@@ -26,8 +26,8 @@
 </table>
 
 
-System Information Discovery
-============================
+# System Information Discovery
+
 Malware may attempt to get detailed information about the system. 
 
 See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/techniques/T1082/))**.

@@ -26,6 +26,6 @@
 </table>
 
 
-Hashed Message Authentication Code
-==================================
+# Hashed Message Authentication Code
+
 Malware uses a hashed message authentication code (HMAC) schema.

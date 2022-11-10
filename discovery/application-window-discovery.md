@@ -26,8 +26,8 @@
 </table>
 
 
-Application Window Discovery
-============================
+# Application Window Discovery
+
 Malware may attempt to get a listing of open application windows.
 
 ## Methods

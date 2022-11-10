@@ -26,8 +26,8 @@
 </table>
 
 
-Registry
-========
+# Registry
+
 Malware modifies the registry. 
 
 ## Methods

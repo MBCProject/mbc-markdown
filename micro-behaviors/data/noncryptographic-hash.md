@@ -26,8 +26,8 @@
 </table>
 
 
-Non-Cryptographic Hash
-======================
+# Non-Cryptographic Hash
+
 Malware may use a non-cryptographic hash. 
 
 ## Methods

@@ -26,8 +26,8 @@
 </table>
 
 
-Modify Registry
-===============
+# Modify Registry
+
 Malware may make changes to the Windows Registry to hide execution or to persist on the system (note that ATT&CK does not extend this behavior to the Persistence objective). 
 
 

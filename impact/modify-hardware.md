@@ -30,8 +30,8 @@
 </table>
 
 
-Modify Hardware
-===============
+# Modify Hardware
+
 Malware modifies hardware.
 
 ## Methods

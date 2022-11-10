@@ -26,6 +26,6 @@
 </table>
 
 
-Delete File
-===========
+# Delete File
+
 Malware deletes a file. 

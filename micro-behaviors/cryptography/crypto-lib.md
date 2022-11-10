@@ -26,8 +26,8 @@
 </table>
 
 
-Crypto Library
-==============
+# Crypto Library
+
 Malware uses a crypto library.
 
 ## Methods

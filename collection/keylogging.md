@@ -26,8 +26,8 @@
 </table>
 
 
-Keylogging
-==========
+# Keylogging
+
 Malware captures user keyboard input.
 
 See ATT&CK: **Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/techniques/T1056/001), [T1417.001](https://attack.mitre.org/techniques/T1417/001/))**

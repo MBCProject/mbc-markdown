@@ -26,8 +26,8 @@
 </table>
 
 
-Modify Existing Service
-=======================
+# Modify Existing Service
+
 Malware may modify an existing service to gain persistence. Modification may include disabling a service.
 
 See ATT&CK: **Create or Modify System Process::Windows Service ([T1543.003](https://attack.mitre.org/techniques/T1543/003/))**.

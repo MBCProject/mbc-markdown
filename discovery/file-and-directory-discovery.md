@@ -26,8 +26,8 @@
 </table>
 
 
-File and Directory Discovery
-============================
+# File and Directory Discovery
+
 Malware may enumerate files and directories or may search for specific files or in specific locations.
 
 ## Methods

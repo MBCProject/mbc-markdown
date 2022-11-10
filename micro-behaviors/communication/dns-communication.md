@@ -26,8 +26,8 @@
 </table>
 
 
-DNS Communication
-=================
+# DNS Communication
+
 The DNS Communication micro-behavior focuses on DNS communication. 
 
 ## Methods

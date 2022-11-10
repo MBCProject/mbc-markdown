@@ -26,8 +26,8 @@
 </table>
 
 
-Archive Collected Data
-======================
+# Archive Collected Data
+
 Malware may obfuscate data via encryption or encoding before exfiltration.
 
 See ATT&CK Technique: **Archive Collected Data ([T1560](https://attack.mitre.org/techniques/T1560/))**.

@@ -30,8 +30,8 @@
 </table>
 
 
-Destroy Hardware
-================
+# Destroy Hardware
+
 Destroys a physical piece of hardware. For example, malware may cause hardware to overheat.
 
 ## Use in Malware

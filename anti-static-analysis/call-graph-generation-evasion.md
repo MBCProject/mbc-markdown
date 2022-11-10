@@ -30,8 +30,8 @@
 </table>
 
 
-Call Graph Generation Evasion
-=============================
+# Call Graph Generation Evasion
+
 Malware code evades accurate call graph generation during disassembly. Call graphs are used by malware similarity tools and algorithms ([[1]](#1), [[4]](#4)), as well as for malware detection [[2]](#2).
 
 ## Methods

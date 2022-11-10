@@ -26,8 +26,8 @@
 </table>
 
 
-Decode Data
-===========
+# Decode Data
+
 Malware may decode data.
 
 ## Methods

@@ -26,8 +26,8 @@
 </table>
 
 
-Hide Artifacts
-==============
+# Hide Artifacts
+
 Malware may hide artifacts to evade detection and/or to persist on the system. See potential methods related to malware below. 
 
 See ATT&CK: **Hide Artifacts ([T1564](https://attack.mitre.org/techniques/T1564/), [T1628](https://attack.mitre.org/techniques/T1628/))**.

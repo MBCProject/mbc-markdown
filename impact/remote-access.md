@@ -30,8 +30,8 @@
 </table>
 
 
-Remote Access
-=============
+# Remote Access
+
 Malware may provide an attacker with potentially full access to a system via a remote network connection, which may also provide persistence.
 
 A RAT (Remote Access Trojan) is an example of malware that provides a degree of remote access. If the malware provides an "execute" command, the attacker may choose to delete files or corrupt data, power-off the machine, or upload and execute other applications. The malware may also provide specific commands to the attacker (e.g., Delete File). Explicit commands provided by the malware can be captured with Methods associated with the **Execution::Remote Commands ([B0011](../execution/remote-commands.md))** behavior; examples include *Execution:Remote Commands:Execute* and *Execution:Remote Commands:Delete File*.

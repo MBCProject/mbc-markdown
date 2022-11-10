@@ -26,8 +26,8 @@
 </table>
 
 
-Remote Commands
-===============
+# Remote Commands
+
 Malware may provide an attacker with explicit commands. This behavior differs from the **Remote Access ([B0022](../impact/remote-access.md))** behavior under the [Impact](../impact) objective in that *Impact: Remote Access* is potentially much broader and may include full remote access.
 
 Given an "execute" command, the attacker may choose to delete files or corrupt data, power-off the machine, or upload and execute other applications. The malware may also provide specific commands to the attacker (e.g., "delete file"). 

@@ -26,8 +26,8 @@
 </table>
 
 
-Code Discovery
-==============
+# Code Discovery
+
 Malware may inspect code or enumerate aspects.
 
 ## Methods

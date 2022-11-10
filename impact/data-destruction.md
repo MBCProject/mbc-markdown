@@ -30,8 +30,8 @@
 </table>
 
 
-Data Destruction
-================
+# Data Destruction
+
 Data, system files, or other files are destroyed. Individual files are selected, as opposed to wiping an entire sector.
 
 See ATT&CK: **Data Destruction ([T1485](https://attack.mitre.org/techniques/T1485/))**.

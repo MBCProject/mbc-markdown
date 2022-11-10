@@ -26,8 +26,8 @@
 </table>
 
 
-Checksum
-========
+# Checksum
+
 Malware may derive a checksum from some block of data. The checksum is often used for data validation.
 
 ## Methods

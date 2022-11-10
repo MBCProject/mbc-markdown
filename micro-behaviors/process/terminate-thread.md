@@ -26,6 +26,6 @@
 </table>
 
 
-Terminate Thread
-================
+# Terminate Thread
+
 Malware terminates a thread.

@@ -30,8 +30,8 @@
 </table>
 
 
-Spamming
-========
+# Spamming
+
 Malware may use a victim machine to create and send spam. 
 
 ## Use in Malware

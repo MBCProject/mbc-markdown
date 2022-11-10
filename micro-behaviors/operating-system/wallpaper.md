@@ -26,6 +26,6 @@
 </table>
 
 
-Wallpaper
-=========
+# Wallpaper
+
 Malware modifies the wallpaper. 

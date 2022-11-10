@@ -26,8 +26,8 @@
 </table>
 
 
-Covert Location
-===============
+# Covert Location
+
 Malware may hide data or binary files within other files, the registry, etc. 
 
 ## Methods

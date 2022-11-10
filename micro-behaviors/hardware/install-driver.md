@@ -26,8 +26,8 @@
 </table>
 
 
-Install Driver
-==============
+# Install Driver
+
 Malware installs a driver or minifilter.
 
 ## Methods

@@ -26,8 +26,8 @@
 </table>
 
 
-Interprocess Communication
-==========================
+# Interprocess Communication
+
 The Interprocess Communication micro-behavior focuses on interprocess communication. 
 
 ## Methods

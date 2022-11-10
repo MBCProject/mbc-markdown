@@ -26,8 +26,8 @@
 </table>
 
 
-Emulator Evasion
-================
+# Emulator Evasion
+
 Behaviors that obstruct analysis in an emulator.
 
 ## Methods

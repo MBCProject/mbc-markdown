@@ -26,6 +26,6 @@
 </table>
 
 
-Set File Attributes
-===================
+# Set File Attributes
+
 Malware sets or modifies the attributes of a file.

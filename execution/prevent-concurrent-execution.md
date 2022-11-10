@@ -26,8 +26,8 @@
 </table>
 
 
-Prevent Concurrent Execution
-============================
+# Prevent Concurrent Execution
+
 To avoid running multiple instances of itself, malware may check a system to see if it is already running.
 
 ## Use in Malware

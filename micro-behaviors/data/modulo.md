@@ -26,6 +26,6 @@
 </table>
 
 
-Modulo
-======
+# Modulo
+
 Malware calculates a modulo value.

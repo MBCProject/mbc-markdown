@@ -26,8 +26,8 @@
 </table>
 
 
-FTP Communication
-=================
+# FTP Communication
+
 The FTP Communication micro-behavior focuses on FTP communication. 
 
 ## Methods

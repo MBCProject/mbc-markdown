@@ -26,8 +26,8 @@
 </table>
 
 
-Change Memory Protection
-========================
+# Change Memory Protection
+
 Malware may change memory protection. For example, read-write memory may be changed to read-execute. Changing memory protection may exploits (e.g., bypass Data Execution Prevention).
 
 ## Methods

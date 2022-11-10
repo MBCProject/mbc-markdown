@@ -26,8 +26,8 @@
 </table>
 
 
-ICMP Communication
-==================
+# ICMP Communication
+
 This micro-behavior is related to ICMP communication. 
 
 ## Methods

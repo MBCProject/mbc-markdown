@@ -26,8 +26,8 @@
 </table>
 
 
-Socket Communication
-====================
+# Socket Communication
+
 This micro-behavior focuses on socket (TCP, UDP) communication. 
 
 Instead of being listed alphabetically, methods have been grouped to better faciliate labeling and mapping.
