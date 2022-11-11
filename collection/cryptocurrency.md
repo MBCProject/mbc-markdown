@@ -26,12 +26,12 @@
 </table>
 
 
-Cryptocurrency
-==============
+# Cryptocurrency
+
 Malware accesses files that contain sensitive data or credentials related to Bitcoin and other cryptocurrency wallets.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Bitcoin**|B0028.001|Access Bitcoin data.|

@@ -26,6 +26,6 @@
 </table>
 
 
-Terminate Process
-=================
+# Terminate Process
+
 Malware terminates a process.

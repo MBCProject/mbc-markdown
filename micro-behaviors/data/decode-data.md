@@ -26,12 +26,12 @@
 </table>
 
 
-Decode Data
-===========
+# Decode Data
+
 Malware may decode data.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Base64**|C0053.001|Malware may decode data using Base64.|

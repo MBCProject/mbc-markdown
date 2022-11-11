@@ -30,19 +30,19 @@
 </table>
 
 
-Spamming
-========
+# Spamming
+
 Malware may use a victim machine to create and send spam. 
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**TrickBot**](../xample-malware/trickbot.md)|July 2019|In July 2019, TrickBot was observed infecting computers to steal email passwords and address books to spread malicious emails. [[1]](#1)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|If port 25 is open, the bot uses a spam template and email list to send spam. [[2]](#2)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://techcrunch.com/2019/07/12/trickbot-spam-millions-emails/
 
 <a name="2">[2]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/

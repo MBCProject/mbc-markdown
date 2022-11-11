@@ -26,6 +26,6 @@
 </table>
 
 
-Console
-=======
+# Console
+
 Malware modifies the console. 

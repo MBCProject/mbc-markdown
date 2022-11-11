@@ -26,6 +26,6 @@
 </table>
 
 
-Delete Directory
-================
+# Delete Directory
+
 Malware deletes a directory. 

@@ -26,12 +26,12 @@
 </table>
 
 
-Registry
-========
+# Registry
+
 Malware modifies the registry. 
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Create Registry Key**|C0036.004|Malware creates a registry key.|

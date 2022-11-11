@@ -26,14 +26,14 @@
 </table>
 
 
-HTTP Communication
-==================
+# HTTP Communication
+
 This micro-behavior is related to HTTP communication. 
 
 Instead of being listed alphabetically, methods have been grouped to better faciliate labeling and mapping.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Server**|C0002.001|General HTTP server behavior.|

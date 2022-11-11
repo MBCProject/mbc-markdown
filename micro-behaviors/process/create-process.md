@@ -26,12 +26,12 @@
 </table>
 
 
-Create Process
-==============
+# Create Process
+
 Malware creates a process. 
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Create Process via Shellcode**|C0017.001|Malware uses shellcode to create a process.|
@@ -39,13 +39,13 @@ Methods
 |**Create Suspended Process**|C0017.003|Malware created a suspended process.|
 
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Stuxnet will use WMI operations with the explorere.exe token in order to copy itself and exscute on the remote share  [[1]](#1)|
 
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en

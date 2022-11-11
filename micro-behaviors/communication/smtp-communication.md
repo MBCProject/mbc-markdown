@@ -26,12 +26,12 @@
 </table>
 
 
-SMTP Communication
-==================
+# SMTP Communication
+
 This micro-behavior focuses on SMTP communication. 
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Request**|C0012.002|Makes SMTP request.|

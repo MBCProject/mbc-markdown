@@ -30,16 +30,16 @@
 </table>
 
 
-Debugger Evasion
-================
+# Debugger Evasion
+
 Behaviors that make debugging difficult.
 
 A thorough reference for anti-debugging, both detection and evasion, is given in [[1]](#1).
 
 The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T1622/))** ATT&CK technique was defined subsequent to this MBC behavior.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Block Interrupts**|B0002.001|Block interrupt (via hooking) 1 and/or 3 to prevent debuggers from working.|
@@ -73,16 +73,16 @@ Methods
 |**Thread Timeout**|B0002.029|Setting dwMilliseconds in WaitForSingleObject to a small number will timeout the thread before the analyst can step through and analyze the code executing in the thread. Modifying this via patch, register, or stack to the value `0xFFFFFFFF`, the **INFINITE** constant circumvents this anti-debugging technique.|
 |**Use Interrupts**|B0002.030|The unpacking code relies on use of int 1 or int 3, or it uses the interrupt vector table as part of the decryption "key".|
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |**Fake Adobe Flash Update OS X**|February 2016|[[2]](#2)|
 |**Dridex**|March 2015|[[3]](#3)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFICE. [[6]](#6)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://anti-reversing.com/Downloads/Anti-Reversing/The_Ultimate_Anti-Reversing_Reference.pdf
 
 <a name="2">[2]</a> https://www.synack.com/2016/02/17/analyzing-the-anti-analysis-logic-of-an-adware-installer/

@@ -26,12 +26,12 @@
 </table>
 
 
-Decompress Data
-===============
+# Decompress Data
+
 Malware may decompress data.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**aPLib**|C0025.003|Malware decompresses data using aPLib.|

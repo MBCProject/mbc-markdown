@@ -26,12 +26,12 @@
 </table>
 
 
-Emulator Evasion
-================
+# Emulator Evasion
+
 Behaviors that obstruct analysis in an emulator.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Different Opcode Sets**|B0005.001|Use different opcodes sets (ex: FPU, MMX, SSE) to block emulators.|
@@ -39,8 +39,8 @@ Methods
 |**Undocumented Opcodes**|B0005.002|Use rare or undocumented opcodes to block non-exhaustive emulators.|
 |**Unusual/Undocumented API Calls**|B0005.003|Call unusual APIs to block non-exhaustive emulators (particularly anti-virus).|
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|Evades emulator-based analysis.)|

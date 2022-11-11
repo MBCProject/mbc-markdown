@@ -30,12 +30,12 @@
 </table>
 
 
-Disassembler Evasion
-====================
+# Disassembler Evasion
+
 Malware code evades disassembly in a recursive or linear disassembler. Some methods apply to both types of disassemblers; others apply to one type and not the other.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Argument Obfuscation**|B0012.001|Simple number or string arguments to API calls are calculated at runtime, making linear disassembly more difficult.|
@@ -44,8 +44,8 @@ Methods
 |**Value Dependent Jumps**|B0012.003|Explicit use of computed values for control flow, often many times in the same basic block or function.|
 |**Variable Recomposition**|B0012.004|Variables, often strings, are broken into multiple parts and store out of order, in different memory ranges, or both. They must then be recomposed before use.|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> http://staff.ustc.edu.cn/~bjhua/courses/security/2014/readings/anti-disas.pdf
 
 <a name="2">[2]</a> http://www.kernelhacking.com/rodrigo/docs/blackhat2012-paper.pdf

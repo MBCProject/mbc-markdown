@@ -26,6 +26,6 @@
 </table>
 
 
-Create Thread
-=============
+# Create Thread
+
 Malware creates a thread. 

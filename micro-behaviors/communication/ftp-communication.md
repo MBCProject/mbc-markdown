@@ -26,12 +26,12 @@
 </table>
 
 
-FTP Communication
-=================
+# FTP Communication
+
 The FTP Communication micro-behavior focuses on FTP communication. 
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Send File**|C0004.001|Send FTP file.|

@@ -30,12 +30,12 @@
 </table>
 
 
-Modify Hardware
-===============
+# Modify Hardware
+
 Malware modifies hardware.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**CDROM**|B0042.001|The CD-ROM is modified.|

@@ -26,12 +26,12 @@
 </table>
 
 
-Crypto Library
-==============
+# Crypto Library
+
 Malware uses a crypto library.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**API Call**|C0059.001|Malware uses crypto API calls.|

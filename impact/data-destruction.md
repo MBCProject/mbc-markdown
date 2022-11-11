@@ -30,22 +30,22 @@
 </table>
 
 
-Data Destruction
-================
+# Data Destruction
+
 Data, system files, or other files are destroyed. Individual files are selected, as opposed to wiping an entire sector.
 
 See ATT&CK: **Data Destruction ([T1485](https://attack.mitre.org/techniques/T1485/))**.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Delete Application/Software**|E1485.m03|An application or software is deleted.|
 |**Delete Shadow Copies**|E1485.m04|Deletes shadow drive data, which is related to ransomware.|
 |**Empty Recycle Bin**|E1485.m02|Empties the recycle bin, which can be related to ransomware.|
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|A 2018 variant includes a component that erases files and then wipes the master boot record, preventing file recovery.[[1]](#1)|
@@ -54,8 +54,8 @@ Malware Examples
 |[**Conficker**](../xample-malware/conficker.md)|2008|resets system restore points and deletes backup files [[4]](#4)|
 |[**MazarBot**](../xample-malware/mazarbot.md)|2016|Can erase phone data  [[5]](#5)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> http://www.darkreading.com/attacks-breaches/disk-wiping-shamoon-malware-resurfaces-with-file-erasing-malware-in-tow/d/d-id/1333509
 
 <a name="2">[2]</a> https://blogs.cisco.com/security/talos/rombertik

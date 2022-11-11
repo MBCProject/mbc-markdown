@@ -26,6 +26,6 @@
 </table>
 
 
-Open Process
-=============
+# Open Process
+
 Malware opens a process. 

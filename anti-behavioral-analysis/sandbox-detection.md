@@ -66,7 +66,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[check for microsoft office emulation](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-microsoft-office-emulation.yml)|[Sandbox Detection::Product Key/ID Testing (B0007.005)](./b0007.005.md)|CreateFile|
+|[check for microsoft office emulation](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-microsoft-office-emulation.yml)|[Sandbox Detection::Product Key/ID Testing (B0007.005)|CreateFile|
 |[check for sandbox and av modules](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-av/check-for-sandbox-and-av-modules.yml)|Sandbox Detection (B0007)|GetModuleHandle|
 
 |Tool: CAPE|Mapping|APIs|

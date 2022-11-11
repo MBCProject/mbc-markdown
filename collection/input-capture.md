@@ -26,20 +26,20 @@
 </table>
 
 
-Input Capture
-=============
+# Input Capture
+
 Malware captures user input.
 
 See ATT&CK: **Input Capture ([T1056](https://attack.mitre.org/techniques/T1056), [T1417](https://attack.mitre.org/techniques/T1417/))**.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Mouse Events**|E1056.m01|Mouse events are captured.|
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|The malware injects itself into a browser and captures user input data [[1]](#1)|
@@ -47,8 +47,8 @@ Malware Examples
 |[**DarkComet**](../xample-malware/dark-comet.md)|2008|Can capture audio and video [[3]](#3)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Can capture audio and video  [[4]](#4)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://blogs.cisco.com/security/talos/rombertik
 
 <a name="2">[2]</a> https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/BKDR_URSNIF.SM?_ga=2.129468940.1462021705.1559742358-1202584019.1549394279

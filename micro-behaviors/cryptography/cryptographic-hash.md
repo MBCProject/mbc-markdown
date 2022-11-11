@@ -26,12 +26,12 @@
 </table>
 
 
-Cryptographic Hash
-==================
+# Cryptographic Hash
+
 Malware may use a cryptographic hash. 
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**MD5**|C0029.001|Malware uses an MD5 hash.|

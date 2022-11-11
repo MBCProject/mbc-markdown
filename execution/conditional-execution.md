@@ -30,16 +30,16 @@
 </table>
 
 
-Conditional Execution
-=====================
+# Conditional Execution
+
 Malware checks system environment conditions or characteristics to determine execution path. For example, malware may not run or be dormant unless system conditions are right, or file that is dropped may vary according to execution environment. Conditional execution in malware happens autonomously, not because of an attacker's command.
 
 This behavior is related to the **Dynamic Analysis Evasion ([B0003](../anti-behavioral-analysis/dynamic-analysis-evasion.md))** behavior that obstructs dynamic analysis in a sandbox, emulator, or virtual machine.
 
 Some aspects of this Conditional Execution behavior are related to the [Execution Guardrails (T1480)](https://attack.mitre.org/techniques/T1480) ATT&CK technique; however the ATT&CK technique is not focused on anti-behavioral analysis behaviors.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Deposited Keys**|B0025.008|Parts of the code and/or data is encrypted or otherwise relies on data external to the file itself. For example, malware that contains code that is encrypted with a key that is downloaded from a server; malware that only runs if certain other software is installed on the system. Also see Environmental Keys Method.|
@@ -51,8 +51,8 @@ Methods
 |**Suicide Exit**|B0025.001|Malware terminates its execution based on a trigger condition or value (or because it has completed).|
 |**Token Check**|B0025.006|Presence check to allow the program to run (ex: dongle, CD/DVD, key, file, network, etc.). If the token is specific to a hardware element (ex: disk, OS, CPU, NIC MAC, etc.), it is considered fingerprinting.|
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|Drops either Cryptonight or Claymore's Zcash miner, depending on system architecture. [[1]](#1)|
@@ -60,8 +60,8 @@ Malware Examples
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|Macros check if there are at least 50 running processes with a graphical interface, check if a list of blacklisted processes are running, and checks if the application is running in Australia and is NOT affiliated with a select group of networks (Security Research, Hospitals, Universities, Veterans, etc.) [1] [[3]](#3)|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|Malware only proceeds if it detects the BIOS ROM is Award BIOS [[4]](#4)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
 <a name="2">[2]</a> 

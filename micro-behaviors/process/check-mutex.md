@@ -26,17 +26,17 @@
 </table>
 
 
-Check Mutex
-===========
+# Check Mutex
+
 Malware checks a mutex. 
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Poison Ivy variant checks if the wireshark-is-running{} named mutex object exists [[1]](#1)|
 
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf

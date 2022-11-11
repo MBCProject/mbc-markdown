@@ -26,6 +26,6 @@
 </table>
 
 
-SMTP Connection Discovery
-=========================
+# SMTP Connection Discovery
+
 Malware may test whether an outgoing SMTP connection can be made from the system on which the malware instance is executing to some SMTP server, by sending a test SMTP transaction. 

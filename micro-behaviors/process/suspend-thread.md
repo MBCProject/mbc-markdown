@@ -26,6 +26,6 @@
 </table>
 
 
-Suspend Thread
-==============
+# Suspend Thread
+
 Malware may suspend a thread.

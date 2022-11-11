@@ -26,12 +26,12 @@
 </table>
 
 
-Compress Data
-=============
+# Compress Data
+
 Malware may compress data.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**IEncodingFilterFactory**|C0024.002|Malware compresses data using IEncodingFilterFactory.|

@@ -26,15 +26,15 @@
 </table>
 
 
-Modify Registry
-===============
+# Modify Registry
+
 Malware may make changes to the Windows Registry to hide execution or to persist on the system (note that ATT&CK does not extend this behavior to the Persistence objective). 
 
 
 See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112/))**.
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
@@ -45,8 +45,8 @@ Malware Examples
 |[**Kovter**](../xample-malware/kovter.md)|2016|The malware modifies the registry during execution [[5]](#5)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|Disables remote user account control by enabling the registry key LocalAccountTokenFilterPolicy  [[6]](#6)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
 
 <a name="2">[2]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/

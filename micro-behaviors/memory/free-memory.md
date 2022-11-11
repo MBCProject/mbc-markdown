@@ -26,6 +26,6 @@
 </table>
 
 
-Free Memory
-===========
+# Free Memory
+
 Malware may free memory.

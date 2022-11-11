@@ -26,14 +26,14 @@
 </table>
 
 
-Domain Name Generation
-======================
+# Domain Name Generation
+
 Malware generates the domain name of the controller to which it connects. Access to on the fly domains enables C2 to operate as domains and IP addresses are blocked. The algorithm can be complicated in more advanced implants; understanding the details so that names can be predicted can be useful in mitigation and response. [[1]](#1)
 
 The related **Dynamic Resolution: Domain Generation Algorithms ([T1568.002](https://attack.mitre.org/techniques/T1568/002/))** ATT&CK sub-technique (oriented toward an adversary perspective with examples that include malware) was defined subsequent to this MBC behavior.
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**Kraken**](../xample-malware/kraken.md)|April 2008|Kraken uses a domain generating algorithm to provide new domains. [[2]](#2)|
@@ -41,8 +41,8 @@ Malware Examples
 |[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|The malware sends a hash value generated from system information [[4]](#4|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|Ursnif has used a Domain name generation algorithm in the past [[5]](#5)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://blog.malwarebytes.com/security-world/2016/12/explained-domain-generating-algorithm/
 
 <a name="2">[2]</a> http://blog.threatexpert.com/2008/04/kraken-changes-tactics.html

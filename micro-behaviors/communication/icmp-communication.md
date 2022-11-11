@@ -26,12 +26,12 @@
 </table>
 
 
-ICMP Communication
-==================
+# ICMP Communication
+
 This micro-behavior is related to ICMP communication. 
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Echo Request**|C0014.002|Send ICMP echo request.|

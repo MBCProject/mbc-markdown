@@ -30,12 +30,12 @@
 </table>
 
 
-Capture Evasion
-===============
+# Capture Evasion
+
 Malware has characteristics enabling it to evade capture from the infected system.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Encrypted Payloads**|B0036.002|Decryption key is stored external to the executable or never touches the disk.|

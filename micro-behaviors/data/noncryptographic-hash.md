@@ -26,12 +26,12 @@
 </table>
 
 
-Non-Cryptographic Hash
-======================
+# Non-Cryptographic Hash
+
 Malware may use a non-cryptographic hash. 
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**dhash**|C0030.004|Malware uses the dhash hash function.|

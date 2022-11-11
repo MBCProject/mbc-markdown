@@ -26,14 +26,14 @@
 </table>
 
 
-Command and Scripting Interpreter
-=================================
+# Command and Scripting Interpreter
+
 Malware may abuse command and script interpreters to execute commands, scripts, or binaries.
 
 See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.org/techniques/T1059), [T1623](https://attack.mitre.org/techniques/T1623))**.
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[1]](#1)|
@@ -44,8 +44,8 @@ Malware Examples
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|The wiper component of Shamoon creates a service to run the driver with the command: sc create hdv_725x type= kernel start= demand binpath= WINDOWS\hdv_725x.sys 2>&1 >nul and sends an additional reboot command after completion [[5]](#5)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Stuxnet will store and execute SQL code that will extract and execute Stuxnet from the saved CAB file using xp_cmdshell  [[6]](#6)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
 
 <a name="2">[2]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/

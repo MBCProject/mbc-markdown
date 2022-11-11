@@ -26,6 +26,6 @@
 </table>
 
 
-Self Discovery
-==============
+# Self Discovery
+
 Malware may gather information about itself, such as its filename or size on disk. 

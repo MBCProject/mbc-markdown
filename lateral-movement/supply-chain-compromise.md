@@ -26,23 +26,23 @@
 </table>
 
 
-Supply Chain Compromise
-=======================
+# Supply Chain Compromise
+
 The supply chain may be compromised to enable initial malware infection. MBC objectives don't encompass initial infection, but the malware-related methods are listed below supplement the information available defined in ATT&CK and allow for lateral movement: **Supply Chain Compromise ([T1195](https://attack.mitre.org/techniques/T1195/), [T1474](https://attack.mitre.org/techniques/T1474/))**.  
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Abuse Enterprise Certificates**|E1195.m01|Abusing enterprise certificates enables malware to exploit private APIs and infect a wide range of users (see *Exploit Private APIs* below).|
 |**Exploit Private APIs**|E1195.m02|Malware can exploit private APIs to infect jailbroken and non-jailbroken iOS devices. Research shows that over 100 apps in the App Store have abused private APIs and bypassed Apple’s strict code review.|
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**YiSpecter**](../xample-malware/yispecter.md)|October 2015|Attacks both jailbroken and non-jailbroken iOS devices by exploiting private APIs. [[1]](#1)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> http://researchcenter.paloaltonetworks.com/2015/10/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/

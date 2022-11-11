@@ -26,6 +26,6 @@
 </table>
 
 
-Compression Library
-===================
+# Compression Library
+
 Malware uses a compression library.

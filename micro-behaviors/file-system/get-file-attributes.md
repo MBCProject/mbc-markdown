@@ -26,6 +26,6 @@
 </table>
 
 
-Get File Attributes
-===================
+# Get File Attributes
+
 Malware gets the attributes of a file. 

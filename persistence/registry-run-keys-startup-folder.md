@@ -26,14 +26,14 @@
 </table>
 
 
-Registry Run Keys / Startup Folder
-==================================
+# Registry Run Keys / Startup Folder
+
 Malware may add an entry to the Windows Registry run keys or startup folder to enable persistence. [[1]](#1)
 
 See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder ([T1547.001](https://attack.mitre.org/techniques/T1547/001/))**. 
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
@@ -51,8 +51,8 @@ Malware Examples
 |[**Emotet**](../xample-malware/emotet.md)|2018|To start itself at system boot, Emotet adds the downloaded payload to the registry to maintain persistence [[13]](#13)|
 |[**Bagle**](../xample-malware/bagle.md)|2004|Adds registry keys to enable its automatic execution at every system startup  [[14]](#14)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://threatvector.cylance.com/en_us/home/windows-registry-persistence-part-2-the-run-keys-and-search-order.html
 
 <a name="2">[2]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy

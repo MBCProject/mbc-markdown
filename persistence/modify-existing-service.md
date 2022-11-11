@@ -26,14 +26,14 @@
 </table>
 
 
-Modify Existing Service
-=======================
+# Modify Existing Service
+
 Malware may modify an existing service to gain persistence. Modification may include disabling a service.
 
 See ATT&CK: **Create or Modify System Process::Windows Service ([T1543.003](https://attack.mitre.org/techniques/T1543/003/))**.
 
-Malware Examples
-----------------
+## Use in Malware
+
 |Name|Date|Description|
 |---|---|---|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[1]](#1)|
@@ -42,8 +42,8 @@ Malware Examples
 |[**Conficker**](../xample-malware/conficker.md)|2008|Copies itself into the $systemroot%\system32 directory and registers as a service  [[4]](#4)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|Shamoon enables the RemoteRegistry service to allow remote registry modification [[5]](#5)|
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
 
 <a name="2">[2]</a> http://researchcenter.paloaltonetworks.com/2015/10/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/

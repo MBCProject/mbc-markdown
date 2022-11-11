@@ -26,6 +26,6 @@
 </table>
 
 
-Enumerate Threads
-=================
+# Enumerate Threads
+
 Malware enumerates threads. 

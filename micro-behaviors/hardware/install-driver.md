@@ -26,12 +26,12 @@
 </table>
 
 
-Install Driver
-==============
+# Install Driver
+
 Malware installs a driver or minifilter.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Minifilter**|C0037.001|Malware registers a minifilter.|

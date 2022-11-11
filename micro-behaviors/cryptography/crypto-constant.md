@@ -26,6 +26,6 @@
 </table>
 
 
-Crypto Constant
-================
+# Crypto Constant
+
 The malware contains a known crypto constant.
