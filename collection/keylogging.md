@@ -49,6 +49,7 @@ See ATT&CK: **Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/te
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|Keylogger plugin allows for collection of keystrokes [[3]](#3)|
 |[**DarkComet**](../xample-malware/dark-comet.md)|2008|DarkComet can capture keystrokes [[4]](#4)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Can capture keystrokes  [[5]](#5)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|CHOPSTICK collects user keystrokes [[6]](#6)|
 
 ## References
 
@@ -61,3 +62,5 @@ See ATT&CK: **Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/te
 <a name="4">[4]</a> https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/
 
 <a name="5">[5]</a> https://www.cyber.nj.gov/threat-center/threat-profiles/trojan-variants/poison-ivy
+
+<a name="6">[6]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf

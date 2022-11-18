@@ -33,3 +33,13 @@
 # Clipboard Modification
 
 ATT&CK defines Clipboard Modification as a Mobile technique (Android platform). MBC extends it to the Windows platform. 
+
+## Use in Malware
+
+|Name|Date|Description|
+|---|---|---|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|Clipminer monitors the clipboard for cryptocurrency addresses and replaces them with ones controlled by the adversary [[1]](#1)|
+
+
+## References
+<a name="1">[1]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking

@@ -43,6 +43,8 @@ See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.or
 |[**SamSam**](../xample-malware/samsam.md)|2015|SamSam uses a batch file for executing the malware and deleting certain components   [[4]](#4)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|The wiper component of Shamoon creates a service to run the driver with the command: sc create hdv_725x type= kernel start= demand binpath= WINDOWS\hdv_725x.sys 2>&1 >nul and sends an additional reboot command after completion [[5]](#5)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Stuxnet will store and execute SQL code that will extract and execute Stuxnet from the saved CAB file using xp_cmdshell  [[6]](#6)|
+|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|EvilBunny executes Lua scripts [[7]](#7)|
+|[**Netwalker**](../xample-malware/netwalker.md)|2020|Netwalker is written and executed in Powershell [[8]](#8)|
 
 ## References
 
@@ -57,3 +59,7 @@ See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.or
 <a name="5">[5]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-returns-to-wipe-systems-in-middle-east-europe/
 
 <a name="6">[6]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
+
+<a name="7">[7]</a> https://web.archive.org/web/20150311013500/http://www.cyphort.com/evilbunny-malware-instrumented-lua/
+
+<a name="8">[8]</a> https://www.trendmicro.com/en_us/research/20/e/netwalker-fileless-ransomware-injected-via-reflective-loading.html

@@ -46,6 +46,8 @@ See ATT&CK: **Input Capture ([T1056](https://attack.mitre.org/techniques/T1056),
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|Injects HTML into browser session to collect sensitive online banking information when the victim performs their online banking  [[2]](#2)|
 |[**DarkComet**](../xample-malware/dark-comet.md)|2008|Can capture audio and video [[3]](#3)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Can capture audio and video  [[4]](#4)|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|Clipminer monitors keyboard and mouse activity to determine if the machine is in use [[5]](#5)|
+
 
 ## References
 
@@ -56,3 +58,5 @@ See ATT&CK: **Input Capture ([T1056](https://attack.mitre.org/techniques/T1056),
 <a name="3">[3]</a> https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/
 
 <a name="4">[4]</a> https://www.cyber.nj.gov/threat-center/threat-profiles/trojan-variants/poison-ivy
+
+<a name="5">[5]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking
