@@ -44,6 +44,8 @@ See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112
 |[**Gamut**](../xample-malware/gamut.md)|2014|The malware adds a registry key [[4]](#4)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|The malware modifies the registry during execution [[5]](#5)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|Disables remote user account control by enabling the registry key LocalAccountTokenFilterPolicy  [[6]](#6)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|CHOPSTICK may encrypt and store configuration data inside a registry key [[7]](#7)|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|Clipminer edits the registry [[8]](#8)|
 
 ## References
 
@@ -58,3 +60,7 @@ See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112
 <a name="5">[5]</a> https://blog.malwarebytes.com/threat-analysis/2016/07/untangling-kovter/
 
 <a name="6">[6]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-returns-to-wipe-systems-in-middle-east-europe/
+
+<a name="7">[7]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
+
+<a name="8">[8]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking

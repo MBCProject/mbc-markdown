@@ -43,6 +43,8 @@ Malware that installs another component is called a "dropper." If the code is co
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|A Trojan downloader.|
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|Can download and install arbitrary iOS apps.|
 |[**UP007**](../xample-malware/up007.md)|2016|The malware is a dropper that creates multiple files [[4]](#4)|
+|[**CozyCar**](../xample-malware/cozycar.md)|2010|Upon execution, CozyCar drops a decoy file and a secondary dropper [[5]](#5)|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|Clipminer iniital drops a file masquerading as a Control Panel (CPL) file [[6]](#6)
 
 ## References
 
@@ -53,3 +55,7 @@ Malware that installs another component is called a "dropper." If the code is co
 <a name="3">[3]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
 
 <a name="4">[4]</a> https://citizenlab.ca/2016/04/between-hong-kong-and-burma/
+
+<a name="5">[5]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke
+
+<a name="6">[6]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking

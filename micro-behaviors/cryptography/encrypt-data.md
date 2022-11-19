@@ -58,6 +58,7 @@ Malware may encrypt data.
 |[**Emotet**](../../xample-malware/emotet.md)|2018|Emotet uses RSA to encrypt network traffic to its C2 [[2]](#2)|
 |[**GravityRAT**](../../xample-malware/gravity-rat.md)|2018|	GravityRat v3 supports file AES file encryption  [[3]](#3)|
 |[**Poison-Ivy**](../../xample-malware/poison-ivy.md)|2005|Poison Ivy's custom network protocol over TCP is encrypted using Camellia cipher with a 256-bit key  [[4]](#4)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|CHOPSTICK encrypts the configuration block using RC4 encryption [[5]](#5)|
 
 ## Code Snippets
 
@@ -127,3 +128,6 @@ retn
 <a name="3">[3]</a> https://blog.talosintelligence.com/2018/04/gravityrat-two-year-evolution-of-apt.html
 
 <a name="4">[4]</a> https://www.cyber.nj.gov/threat-center/threat-profiles/trojan-variants/poison-ivy
+
+<a name="5">[5]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
+

@@ -44,6 +44,8 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 |[**Gamut**](../xample-malware/gamut.md)|2014|The malware receives data from C2 [[3]](#3)|
 |[**DarkComet**](../xample-malware/dark-comet.md)|2008|Can download files from remote repository upon instruction  [[4]](#4)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|Creates a folder on remote computers and then copies its executables (Shamoon and Filerase) into that directory  [[5]](#5)|
+|[**CozyCar**](../xample-malware/cozycar.md)|2010|CozyCar requests a file using SSL to a C2 domain [[6]](#6)|
+
 
 ## References
 
@@ -56,3 +58,5 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 <a name="4">[4]</a> https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/
 
 <a name="5">[5]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-attackers-employ-new-tool-kit-to-wipe-infected-systems/
+
+<a name="6">[6]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke

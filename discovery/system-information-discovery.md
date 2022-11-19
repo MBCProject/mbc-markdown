@@ -49,6 +49,7 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 |[**DarkComet**](../xample-malware/darkcomet.md)|2008|Can collect information about the compter, resources, and operating system version  [[3]](#3)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|Collects information related to OS, processes, and sometimes mail client information and sends it to c2 [[4]](#4)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Gathers information (OS version, workgroup status, computer name, domain/workgroup name, file name of infected project file) about each computer in the net to spread itself  [[5]](#5)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|CHOPSTICK collects information from the host including Windows version, CPU architecture, and UAC settings [[6]](#6)|
 
 ## References
 
@@ -61,3 +62,5 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 <a name="4">[4]</a> https://documents.trendmicro.com/assets/white_papers/ExploringEmotetsActivities_Final.pdf
 
 <a name="5">[5]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
+
+<a name="6">[6]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf

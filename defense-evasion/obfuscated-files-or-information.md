@@ -65,9 +65,12 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|Obfuscates files.|
 |[**GotBotKR**](../xample-malware/gobotkr.md)|2019|GoBotKR uses base64 to obfuscate strings, commands and files. [[1]](#1)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|The malware will use a key to decrypt text from a URL to create more malicious code [[2]](#2)|
+|[**Netwalker**](../xample-malware/netwalker.md)|2020|Netwalker is obfuscated with several layers of encoding, obfuscation, and encryption techniques such as base64, hexademcimal, and XOR [[3]](#3)|
 
 ## References
 
 <a name="1">[1]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
 
 <a name="2">[2]</a> https://www.bleepingcomputer.com/virus-removal/remove-kovter-trojan
+
+<a name="3">[3]</a> https://www.trendmicro.com/en_us/research/20/e/netwalker-fileless-ransomware-injected-via-reflective-loading.html

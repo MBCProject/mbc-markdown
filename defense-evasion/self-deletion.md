@@ -47,8 +47,11 @@ See ATT&CK: **Indicator Removal on Host: Uninstall Malicious Application ([T1630
 |Name|Date|Description|
 |---|---|---|
 |[**Terminator**](../xample-malware/terminator.md)|2013|Evades sandboxes by terminating and removing itself (DW20.exe) after installation. [[1]](#1)|
+|[**CozyCar**](../xample-malware/cozycar.md)|2010|CozyCar has a dll file that serves as a cleanup mechanism for its dropped binary [[2]]](#2)|
 
 
 ## References
 
 <a name="1">[1]</a> https://www.mandiant.com/resources/hot-knives-through-butter-evading-file-based-sandboxes
+
+<a name="2">[2]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke

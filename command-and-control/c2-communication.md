@@ -67,7 +67,10 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|Connects to the command and control server using HTTP to send device information [[5]](#5)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|Ursnif variant Dreambot authenticates and encrypts traffic to C2 server using TOR [[6]](#6)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|New email addresses are collected automatically from the victim's address books [[7]](#7)|
-
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|CHOPSTICK sends data to the C2 server using HTTP POST requests [[8]](#8)|
+|[**CozyCar**](../xample-malware/cozycar.md)|2010|CozyCar communicates with a C2 server [[9]](#9)|
+|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|EvilBunny communicates C2 via HTTP [[10]](#10)|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|Clipminer communicates to a Tor Onion Service via HTTP [[11]](#11)|
 
 ## Code Snippets
 
@@ -107,3 +110,11 @@ jmp short loc_4019A2
 <a name="6">[6]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-variant-dreambot-adds-tor-functionality
 
 <a name="7">[7]</a> https://securelist.com/the-banking-trojan-emotet-detailed-analysis/69560/
+
+<a name="8">[8]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
+
+<a name="9">[9]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke
+
+<a name="10">[10]</a> https://web.archive.org/web/20150311013500/http://www.cyphort.com/evilbunny-malware-instrumented-lua/
+
+<a name="11">[11]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking

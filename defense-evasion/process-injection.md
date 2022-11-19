@@ -65,6 +65,7 @@ Methods
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|The malware injects itself into processes such as cmd.exe, notepad.exe [[7]](#7)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|Bypasses UAC using a Shim Database instructing SndVol.exe to execute cmd.exe instead, allowing for elevated execution  [[8]](#8)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Stuxnet injects the entire DLL into another process and then just calls the particular export  [[9]](#9)|
+|[**Netwalker**](../xample-malware/netwalker.md)|2020|Netwalker uses reflective DLL loading to inject from memory [[10]](#10)|
 
 ## References
 
@@ -85,3 +86,5 @@ Methods
 <a name="8">[8]</a> https://blog-assets.f-secure.com/wp-content/uploads/2019/10/15163408/BlackEnergy_Quedagh.pdf
 
 <a name="9">[9]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
+
+<a name="10">[10]</a> https://www.trendmicro.com/en_us/research/20/e/netwalker-fileless-ransomware-injected-via-reflective-loading.html
