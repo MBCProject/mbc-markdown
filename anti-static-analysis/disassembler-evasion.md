@@ -30,7 +30,7 @@ Methods
 |**Desynchronizing Opaque Predicates**|B0012.005|Opaque predicates inject superfluous branches into the disassembly, resulting in disassembly desynchronization, as well as code bloat. The junk bytes introduced damage the disassembly process when the bytes are treated as code. [[5]](#5)|
 |**VBA Stomping**|B0012.005|Typically, VBA source code is compiled into p-code, which is stored with compressed sourced code in the OLE file with VBA macros. VBA Stomping - when the VBA source code is removed and only the p-code remains - makes analysis much harder. See [[3]](#3) for an analysis of a VBA-Stomped malicious VBA Office document. See [[4]](#4) for information on Evil Clippy, a tool that creates malicious MS Office documents.|
 |**Value Dependent Jumps**|B0012.003|Explicit use of computed values for control flow, often many times in the same basic block or function.|
-|**Variable Recomposition**|B0012.004|Variables, often strings, are broken into multiple parts and store out of order, in different memory ranges, or both. They must then be recomposed before use, which can cause problems for linear disassemblers.|
+|**Variable Recomposition**|B0012.004|Variables, often strings, are broken into multiple parts and stored out of order, in different memory ranges, or both. They must then be recomposed before use, which can cause problems for linear disassemblers.|
 
 References
 ----------
