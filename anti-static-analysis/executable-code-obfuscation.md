@@ -17,7 +17,7 @@
 
 Executable Code Obfuscation
 ===========================
-Executable code can be obfuscated to hinder disassembly and static code analysis. This behavior is specific to a malware sample's executable code (data and text sections).
+Executable code can be obfuscated to hinder static code analysis. This behavior is specific to a malware sample's executable code (data and text sections). While the Executable Code Obfuscation behavior makes the analysis process more difficult, it does not does cause incorrect disassembly, which is how it differs from the Disassembler Evasion behavior.
 
 For encryption and encoding characteristics of malware samples, as well as malware obfuscation behaviors related to non-malware-sample files and information, see **Obfuscated Files or Information ([E1027](../defense-evasion/obfuscated-files-or-information.md))**.
 
@@ -26,9 +26,9 @@ Methods
 |Name|ID|Description|
 |---|---|---|
 |**API Hashing**|B0032.001|Instead of storing function names in the Import Address Table (IAT) and calling GetProcAddress, a DLL is loaded and the name of each of its exports is hashed until it matches a specific hash. Manual symbol resolution is then used to access and execute the exported function. This method is often used by shellcode because it reduces the size of each import from a human-readable string to a sequence of four bytes. The Method is also known as "Imports by Hash" and "GET_APIS_WITH_CRC." [[1]](#1)|
-|**Code Insertion**|B0032.002|Insert code to impede disassembly.|
+|**Code Insertion**|B0032.002|Insert code to impede disassembly and make analysis more difficult.|
 |**Data Value Obfuscation**|B0032.008|Obfuscate data values through indirection of local or global variables. For example, the instruction *if (a == 0) do x* can be obfuscated by setting a global variable, *Z*, to zero and using it in the instruction: *if (a==Z) do x*.  [NEEDS REVIEW]|
-|**Dead Code Insertion**|B0032.003|Include "dead" code with no real functionality.|
+|**Dead Code Insertion**|B0032.003|Include "dead" code with no real functionality. When executing, malware may skip over such code via an opaque predicate.|
 |**Entry Point Obfuscation**|B0032.009|Obfuscate the entry point of the malware executable.|
 |**Fake Code Insertion**|B0032.004|Add fake code similar to known packers or known goods to fool identification. Can confuse some automated unpackers.|
 |**Guard Pages**|B0032.010|Encrypt blocks of code individually and decrypt temporarily only upon execution.|
@@ -39,8 +39,9 @@ Methods
 |**Jump Insertion**|B0032.005|Insert jumps to make analysis visually harder.|
 |**Junk Code Insertion**|B0032.007|Insert dummy code between relevant opcodes. Can make signature writing more complex.|
 |**Merged Code Sections**|B0032.015|Merge all sections resulting in just one entry in the sections table to make readability more difficult. May affect some detection signatures if written to be section dependent.|
+|**Opaque Predicate**|B0032.019|An opaque predicate either always jumps (jumping over dead or junk code) or never jumps (executing essential code).|
 |**Stack Strings**|B0032.017|Build and decrypt strings on the stack at each use, then discard to avoid obvious references.|
-|**Structured Exception Handling (SEH)**|B0032.016|A portion of the code always generates an exception so that malicious code is executed with the exception handling. See  [[3]](#3).|
+|**Structured Exception Handling (SEH)**|B0032.016|A portion of the code always generates an exception so that malicious code is executed with the exception handling. See [[3]](#3).|
 |**Symbol Obfuscation**|B0032.018|Remove or rename symbolic information commonly inserted by compilers for debugging purposes.|
 |**Thunk Code Insertion**|B0032.006|Variation on Jump Insertion. Used by some compilers for user-generated functions.|
    
