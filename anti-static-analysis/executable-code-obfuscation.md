@@ -35,7 +35,7 @@ Methods
 |**Import Address Table Obfuscation**|B0032.011|Obfuscate the import address table.|
 |**Import Compression**|B0032.012|Store and load imports with a compact import table format. Each DLL needed by the executable is mentioned in the IAT, but only one function from each/most is imported; the rest are imported via GetProcAddress calls.|
 |**Instruction Overlap**|B0032.013|Jump after the first byte of an instruction to confuse disassembler.|
-|**Interleaving Code**|B0032.014|Split code into sections that may be rearranged and are connected by unconditional jumps.|
+|**Interleaving Code**|B0032.014|Split code into sections that may be rearranged and may be connected by unconditional jumps. When instructions are out of order, writing a function signature is more difficult.|
 |**Jump Insertion**|B0032.005|Insert jumps to make analysis visually harder.|
 |**Junk Code Insertion**|B0032.007|Insert dummy code between relevant opcodes. Can make signature writing more complex.|
 |**Merged Code Sections**|B0032.015|Merge all sections resulting in just one entry in the sections table to make readability more difficult. May affect some detection signatures if written to be section dependent.|
