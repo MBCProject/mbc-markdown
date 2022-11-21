@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -58,19 +58,19 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|The malware sends a hash value generated from system information [[1]](#1)|
-|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|GoBotKR receives data from the C2 [[2]](#2)|
-|[**Terminator**](../xample-malware/terminator.md)|2013|The malware sends data to C2 [[3]](#3)|
-|[**UP007**](../xample-malware/up007.md)|2016|The malware receives payloads [[4]](#4)|
-|[**YiSpecter**](../xample-malware/yispecter.md)|2015|Connects to the command and control server using HTTP to send device information [[5]](#5)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|Ursnif variant Dreambot authenticates and encrypts traffic to C2 server using TOR [[6]](#6)|
-|[**Emotet**](../xample-malware/emotet.md)|2018|New email addresses are collected automatically from the victim's address books [[7]](#7)|
-|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|CHOPSTICK sends data to the C2 server using HTTP POST requests [[8]](#8)|
-|[**CozyCar**](../xample-malware/cozycar.md)|2010|CozyCar communicates with a C2 server [[9]](#9)|
-|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|EvilBunny communicates C2 via HTTP [[10]](#10)|
-|[**Clipminer**](../xample-malware/clipminer.md)|2011|Clipminer communicates to a Tor Onion Service via HTTP [[11]](#11)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--|The malware sends a hash value generated from system information [[1]](#1)|
+|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR receives data from the C2 [[2]](#2)|
+|[**Terminator**](../xample-malware/terminator.md)|2013|--|The malware sends data to C2 [[3]](#3)|
+|[**UP007**](../xample-malware/up007.md)|2016|--|The malware receives payloads [[4]](#4)|
+|[**YiSpecter**](../xample-malware/yispecter.md)|2015|--|Connects to the command and control server using HTTP to send device information [[5]](#5)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Ursnif variant Dreambot authenticates and encrypts traffic to C2 server using TOR [[6]](#6)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|--|New email addresses are collected automatically from the victim's address books [[7]](#7)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK sends data to the C2 server using HTTP POST requests [[8]](#8)|
+|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar communicates with a C2 server [[9]](#9)|
+|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny communicates C2 via HTTP [[10]](#10)|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer communicates to a Tor Onion Service via HTTP [[11]](#11)|
 
 ## Code Snippets
 

@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -32,9 +32,9 @@ A malicious attachment is sent via spam SMS or MMS messages. When the user click
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**MazarBot**](../xample-malware/mazarbot.md)||MazarBot is delivered via a poisoned SMS message. [[1]](#1)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**MazarBot**](../xample-malware/mazarbot.md)||--|MazarBot is delivered via a poisoned SMS message. [[1]](#1)|
 
 ## References
 

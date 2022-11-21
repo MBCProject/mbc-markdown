@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -55,17 +55,17 @@ Methods
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**UP007**](../xample-malware/up007.md)|April 2016|Injects secondary payload into memory. [[4]](#4)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|Injects minor code into a running process.|
-|[**CryptoWall**](../xample-malware/cryptowall.md)|2014| [[6]](#6)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|The malware injects itself into processes such as cmd.exe, notepad.exe [[7]](#7)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|Bypasses UAC using a Shim Database instructing SndVol.exe to execute cmd.exe instead, allowing for elevated execution  [[8]](#8)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Stuxnet injects the entire DLL into another process and then just calls the particular export  [[9]](#9)|
-|[**Netwalker**](../xample-malware/netwalker.md)|2020|Netwalker uses reflective DLL loading to inject from memory [[10]](#10)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**UP007**](../xample-malware/up007.md)|April 2016|--|Injects secondary payload into memory. [[4]](#4)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Injects minor code into a running process.|
+|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--| [[6]](#6)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|The malware injects itself into processes such as cmd.exe, notepad.exe [[7]](#7)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Bypasses UAC using a Shim Database instructing SndVol.exe to execute cmd.exe instead, allowing for elevated execution  [[8]](#8)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet injects the entire DLL into another process and then just calls the particular export  [[9]](#9)|
+|[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker uses reflective DLL loading to inject from memory [[10]](#10)|
 
 ## References
 

@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -39,9 +39,9 @@ The supply chain may be compromised to enable initial malware infection. MBC obj
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**YiSpecter**](../xample-malware/yispecter.md)|October 2015|Attacks both jailbroken and non-jailbroken iOS devices by exploiting private APIs. [[1]](#1)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**YiSpecter**](../xample-malware/yispecter.md)|October 2015|--|Attacks both jailbroken and non-jailbroken iOS devices by exploiting private APIs. [[1]](#1)|
 
 ## References
 

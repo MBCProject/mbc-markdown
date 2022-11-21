@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -58,14 +58,14 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
-|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|Obfuscates files.|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|Obfuscates files.|
-|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|GoBotKR uses base64 to obfuscate strings, commands and files. [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|The malware will use a key to decrypt text from a URL to create more malicious code [[2]](#2)|
-|[**Netwalker**](../xample-malware/netwalker.md)|2020|Netwalker is obfuscated with several layers of encoding, obfuscation, and encryption techniques such as base64, hexademcimal, and XOR [[3]](#3)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|Obfuscates files.|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Obfuscates files.|
+|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR uses base64 to obfuscate strings, commands and files. [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|The malware will use a key to decrypt text from a URL to create more malicious code [[2]](#2)|
+|[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker is obfuscated with several layers of encoding, obfuscation, and encryption techniques such as base64, hexademcimal, and XOR [[3]](#3)|
 
 ## References
 

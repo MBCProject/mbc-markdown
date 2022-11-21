@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -41,12 +41,12 @@ See ATT&CK: **Impair Defenses: Indicator Blocking ([T1562.006](https://attack.mi
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|Clears windows event logs and removes the watermark associated with enabling the TESTSIGNING boot configuration option by removing the relevent strings in the user32.dll.mui of the system  [[1]](#1)|
-|[**Conficker**](../xample-malware/conficker.md)|2008|Terminates various services related to system security and Windows and prevents network access to various websites related to antivirus software  [[2]](#2)|
-|[**DarkComet**](../xample-malware/dark-comet.md)|2008|Can disable security center functions like anti-virus and firewall [[3]](#3)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|Terminates the following anti-malware services: Window Defender, MBamService (Malwarebytes), SAVService (Sophos AV) [[4]](#4)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Clears windows event logs and removes the watermark associated with enabling the TESTSIGNING boot configuration option by removing the relevent strings in the user32.dll.mui of the system  [[1]](#1)|
+|[**Conficker**](../xample-malware/conficker.md)|2008|--|Terminates various services related to system security and Windows and prevents network access to various websites related to antivirus software  [[2]](#2)|
+|[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|Can disable security center functions like anti-virus and firewall [[3]](#3)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Terminates the following anti-malware services: Window Defender, MBamService (Malwarebytes), SAVService (Sophos AV) [[4]](#4)|
 
 ## References
 

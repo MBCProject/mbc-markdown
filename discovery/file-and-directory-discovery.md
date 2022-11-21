@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -39,11 +39,11 @@ Malware may enumerate files and directories or may search for specific files or 
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**CryptoWall**](../xample-malware/cryptowall.md)|2014| [[1]](#1)|
-|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|The malware searches for user files before encrypting them [[2]](#2)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|Collects local files with specified file extensions and information from the victim's machine [[3]](#3)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--| [[1]](#1)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware searches for user files before encrypting them [[2]](#2)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Collects local files with specified file extensions and information from the victim's machine [[3]](#3)|
 
 ## References
 

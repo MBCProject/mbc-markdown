@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -46,13 +46,13 @@ See ATT&CK: **Data Destruction ([T1485](https://attack.mitre.org/techniques/T148
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|A 2018 variant includes a component that erases files and then wipes the master boot record, preventing file recovery.[[1]](#1)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|If a specific anti-analysis check fails, the malware will overwrite the Master Boot Record or the User's home folder [[2]](#2)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|BlackEnergy 2 variant contains a Destroy plugin that destroys data stored on victim hard drives by overwriting file contents  [[3]](#3)|
-|[**Conficker**](../xample-malware/conficker.md)|2008|resets system restore points and deletes backup files [[4]](#4)|
-|[**MazarBot**](../xample-malware/mazarbot.md)|2016|Can erase phone data  [[5]](#5)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|A 2018 variant includes a component that erases files and then wipes the master boot record, preventing file recovery.[[1]](#1)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|If a specific anti-analysis check fails, the malware will overwrite the Master Boot Record or the User's home folder [[2]](#2)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy 2 variant contains a Destroy plugin that destroys data stored on victim hard drives by overwriting file contents  [[3]](#3)|
+|[**Conficker**](../xample-malware/conficker.md)|2008|--|resets system restore points and deletes backup files [[4]](#4)|
+|[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|Can erase phone data  [[5]](#5)|
 
 ## References
 

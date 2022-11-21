@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -39,10 +39,10 @@ Methods
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**Kovter**](../xample-malware/kovter.md)|2016|Stores malware files in the Registry instead of the hard drive. [[1]](#1)|
-|[**SYNfulKnock**](../xample-malware/synful-knock.md)|2015|100 memory-resident modules can be installed  [[2]](#2)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Stores malware files in the Registry instead of the hard drive. [[1]](#1)|
+|[**SYNfulKnock**](../xample-malware/synful-knock.md)|2015|--|100 memory-resident modules can be installed  [[2]](#2)|
 
 ## References
 

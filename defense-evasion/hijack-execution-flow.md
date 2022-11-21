@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -56,15 +56,15 @@ See ATT&CK: **Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|**Kronos**|June 2014|Kronos hooks the API of processes to prevent detection. [[6]](#6)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|Hooks various DLL exported functions when the component is loaded in their respective Browser application process is running to monitor network traffic [[7]](#7)|
-|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|	Abuses Microsoft's Dynamic Data Exchange (DDE) protocol  [[8]](#8)|
-|[**SYNfulKnock**](../xample-malware/synful-knock.md)|2015|Hooks IOS functions to call and initialize the malware  [[9]](#9)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|Escalates privilege by impersonating the token. First uses LogonUser and ImpersonateLoggedOnUser, then ImpersonateNamedPipeClient. [[10]](#10)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Stuxnet hooks ntdll.dll to monitor for requests to load specially crafted file names which are mapped to a location specified by Stuxnet.  [[11]](#11)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|**Kronos**|June 2014|--|Kronos hooks the API of processes to prevent detection. [[6]](#6)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Hooks various DLL exported functions when the component is loaded in their respective Browser application process is running to monitor network traffic [[7]](#7)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|	Abuses Microsoft's Dynamic Data Exchange (DDE) protocol  [[8]](#8)|
+|[**SYNfulKnock**](../xample-malware/synful-knock.md)|2015|--|Hooks IOS functions to call and initialize the malware  [[9]](#9)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Escalates privilege by impersonating the token. First uses LogonUser and ImpersonateLoggedOnUser, then ImpersonateNamedPipeClient. [[10]](#10)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet hooks ntdll.dll to monitor for requests to load specially crafted file names which are mapped to a location specified by Stuxnet.  [[11]](#11)|
 
 ## References
 

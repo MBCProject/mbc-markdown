@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -36,15 +36,15 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|After the Poison-Ivy implant is running on the target machine, the attacker can use a Windows GUI controller to control the target computer. [[1]](#1)|
-|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|The malware receives a public key from the C2 [[2]](#2)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|The malware receives data from C2 [[3]](#3)|
-|[**DarkComet**](../xample-malware/dark-comet.md)|2008|Can download files from remote repository upon instruction  [[4]](#4)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|Creates a folder on remote computers and then copies its executables (Shamoon and Filerase) into that directory  [[5]](#5)|
-|[**CozyCar**](../xample-malware/cozycar.md)|2010|CozyCar requests a file using SSL to a C2 domain [[6]](#6)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy implant is running on the target machine, the attacker can use a Windows GUI controller to control the target computer. [[1]](#1)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware receives a public key from the C2 [[2]](#2)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|The malware receives data from C2 [[3]](#3)|
+|[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|Can download files from remote repository upon instruction  [[4]](#4)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Creates a folder on remote computers and then copies its executables (Shamoon and Filerase) into that directory  [[5]](#5)|
+|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar requests a file using SSL to a C2 domain [[6]](#6)|
 
 
 ## References

@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -43,10 +43,10 @@ Malware may generate traffic from the victim system such as clicks of advertisin
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**DNSChanger**](../xample-malware/dnschanger.md)|November 2011|Alters DNS server settings to route to a rogue DNS server for the purpose of click hijacking. [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|Performs click-fraud. [[4]](#4)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**DNSChanger**](../xample-malware/dnschanger.md)|November 2011|--|Alters DNS server settings to route to a rogue DNS server for the purpose of click hijacking. [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Performs click-fraud. [[4]](#4)|
 
 ## References
 

@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -32,9 +32,9 @@ Malware may install a certificate to gain access to https traffic.
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**SearchAwesome**](../xample-malware/searchawesome.md)|2015|The malware installs a certificate. [[1]](#1)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**SearchAwesome**](../xample-malware/searchawesome.md)|2015|--|The malware installs a certificate. [[1]](#1)|
 
 
 ## References

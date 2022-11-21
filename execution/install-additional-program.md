@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -34,17 +34,17 @@ Malware that installs another component is called a "dropper." If the code is co
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**WebCobra**](../xample-malware/webcobra.md)|November 2018|Drops software to mine for cryptocurrency. [[1]](#1)|
-|[**Geneio**](../xample-malware/geneio.md)|August 2015|Tricks OS X keychain to create application files.|
-|[**GotBotKR**](../xample-malware/gobotkr.md)|July 2019|GotBotKR reinstalls its running instance if it is removed. [[3]](#3)|
-|[**MazarBot**](../xample-malware/mazarbot.md)|2016|Installs a backdoor.|
-|[**Mebromi**](../xample-malware/mebromi.md)|2011|A Trojan downloader.|
-|[**YiSpecter**](../xample-malware/yispecter.md)|2015|Can download and install arbitrary iOS apps.|
-|[**UP007**](../xample-malware/up007.md)|2016|The malware is a dropper that creates multiple files [[4]](#4)|
-|[**CozyCar**](../xample-malware/cozycar.md)|2010|Upon execution, CozyCar drops a decoy file and a secondary dropper [[5]](#5)|
-|[**Clipminer**](../xample-malware/clipminer.md)|2011|Clipminer iniital drops a file masquerading as a Control Panel (CPL) file [[6]](#6)
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**WebCobra**](../xample-malware/webcobra.md)|November 2018|--|Drops software to mine for cryptocurrency. [[1]](#1)|
+|[**Geneio**](../xample-malware/geneio.md)|August 2015|--|Tricks OS X keychain to create application files.|
+|[**GotBotKR**](../xample-malware/gobotkr.md)|July 2019|--|GotBotKR reinstalls its running instance if it is removed. [[3]](#3)|
+|[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|Installs a backdoor.|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|A Trojan downloader.|
+|[**YiSpecter**](../xample-malware/yispecter.md)|2015|--|Can download and install arbitrary iOS apps.|
+|[**UP007**](../xample-malware/up007.md)|2016|--|The malware is a dropper that creates multiple files [[4]](#4)|
+|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|Upon execution, CozyCar drops a decoy file and a secondary dropper [[5]](#5)|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer drops a file masquerading as a Control Panel (CPL) file [[6]](#6)|
 
 ## References
 

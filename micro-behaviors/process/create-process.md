@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -41,9 +41,9 @@ Malware creates a process.
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Stuxnet will use WMI operations with the explorere.exe token in order to copy itself and exscute on the remote share  [[1]](#1)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet will use WMI operations with the explorere.exe token in order to copy itself and exscute on the remote share  [[1]](#1)|
 
 
 ## References

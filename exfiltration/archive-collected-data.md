@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -46,10 +46,10 @@ See ATT&CK Technique: **Archive Collected Data ([T1560](https://attack.mitre.org
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|Uses a custom crypter leveraging Microsoft's CryptoAPI to encrypt C2 traffic. C2 update responses seem to have been digitally signed using bcrypt  [[1]](#1)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Exfiltrated payloads are XORed with a static 31-byte long byte string found inside Stuxnet and hexified in order to be passed on as an ASCII data parameter in an HTTP request to the C2 servers  [[2]](#2)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Uses a custom crypter leveraging Microsoft's CryptoAPI to encrypt C2 traffic. C2 update responses seem to have been digitally signed using bcrypt  [[1]](#1)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Exfiltrated payloads are XORed with a static 31-byte long byte string found inside Stuxnet and hexified in order to be passed on as an ASCII data parameter in an HTTP request to the C2 servers  [[2]](#2)|
 
 
 ## References

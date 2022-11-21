@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -40,13 +40,13 @@ See ATT&CK: **Input Capture ([T1056](https://attack.mitre.org/techniques/T1056),
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|The malware injects itself into a browser and captures user input data [[1]](#1)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|Injects HTML into browser session to collect sensitive online banking information when the victim performs their online banking  [[2]](#2)|
-|[**DarkComet**](../xample-malware/dark-comet.md)|2008|Can capture audio and video [[3]](#3)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Can capture audio and video  [[4]](#4)|
-|[**Clipminer**](../xample-malware/clipminer.md)|2011|Clipminer monitors keyboard and mouse activity to determine if the machine is in use [[5]](#5)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware injects itself into a browser and captures user input data [[1]](#1)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Injects HTML into browser session to collect sensitive online banking information when the victim performs their online banking  [[2]](#2)|
+|[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|Can capture audio and video [[3]](#3)|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Can capture audio and video  [[4]](#4)|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer monitors keyboard and mouse activity to determine if the machine is in use [[5]](#5)|
 
 
 ## References
