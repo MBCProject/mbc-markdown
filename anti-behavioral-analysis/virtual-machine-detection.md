@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>28 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -82,12 +82,12 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**GravityRAT**](../xample-malware/gravity-rat.md)|May 2018|GravityRAT checks system temperature by recording thermal readings for detecting VMs. Heat levels indicate whether the system is a VM. [[3]](#3)|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|WebCobra injects malicious code to svchost.exe and uses an infinite loop to check all open windows and to compare each window’s title bar text with a set of strings to determine whether it is running in an isolated, malware analysis environment [[4]](#4)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|Redhip detects VMWare, Virtual PC and Virtual Box. It also detects VM environments in general by considering timing lapses. [[6]](#6)|
-|[**Emotet**](../xample-malware/emotet.md)|2018|Emotet checks for various processes that are associated with various virtual machines by comparing hash values of the process names with the hash values of the list of running process names [[7]](#7)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|May 2018|--|GravityRAT checks system temperature by recording thermal readings for detecting VMs. Heat levels indicate whether the system is a VM. [[3]](#3)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|WebCobra injects malicious code to svchost.exe and uses an infinite loop to check all open windows and to compare each window’s title bar text with a set of strings to determine whether it is running in an isolated, malware analysis environment [[4]](#4)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip detects VMWare, Virtual PC and Virtual Box. It also detects VM environments in general by considering timing lapses. [[6]](#6)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|--|Emotet checks for various processes that are associated with various virtual machines by comparing hash values of the process names with the hash values of the list of running process names [[7]](#7)|
 
 
 ## Detection

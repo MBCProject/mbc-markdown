@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -41,12 +41,12 @@ See ATT&CK: **Screen Capture ([T1113](https://attack.mitre.org/techniques/T1113/
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**GotBotKR**](../xample-malware/gobotkr.md)|2019| GoBotKR is capable of capturing screenshots. [[1]](#1)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|Screenshot plugin allows for collection of screenshots  [[2]](#2)|
-|[**DarkComet**](../xample-malware/dark-comet.md)|2008|Can take screenshots of victim's computer [[3]](#3)|
-|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|CHOPSTICK takes snapshots of deskop and window contents [[4]](#4)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|--| GoBotKR is capable of capturing screenshots. [[1]](#1)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Screenshot plugin allows for collection of screenshots  [[2]](#2)|
+|[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|Can take screenshots of victim's computer [[3]](#3)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK takes snapshots of deskop and window contents [[4]](#4)|
 
 ## References
 

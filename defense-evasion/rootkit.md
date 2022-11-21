@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -48,11 +48,11 @@ Methods
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013| Certain variants of the malware may have rootkit functionality [[3]](#3)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Stuxnet registers custom resource drives signed with a legitimate Realtek digital certificate  [[4]](#4)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--| Certain variants of the malware may have rootkit functionality [[3]](#3)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet registers custom resource drives signed with a legitimate Realtek digital certificate  [[4]](#4)|
 
 
 Detection

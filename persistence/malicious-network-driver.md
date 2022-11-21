@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -34,9 +34,9 @@ A malicious network driver can tunnel outside traffic into the network, allowing
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|Malicious NDISProxy drivers|June 2018|The LuckyMouse APT (aka APT27) spreads Trojans via malicious NDISProxy drivers. [[1]](#1)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|Malicious NDISProxy drivers|June 2018|--|The LuckyMouse APT (aka APT27) spreads Trojans via malicious NDISProxy drivers. [[1]](#1)|
 
 ## References
 

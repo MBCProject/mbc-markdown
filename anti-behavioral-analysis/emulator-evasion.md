@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>28 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -41,6 +41,10 @@ Behaviors that obstruct analysis in an emulator.
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|Evades emulator-based analysis.)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Evades emulator-based analysis. [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/

@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -37,9 +37,9 @@ This description refines the ATT&CK **Disk Wipe ([T1203](https://attack.mitre.or
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|An overwrite component will overwrite the MBR so that the compromised computer can no longer start  [[1]](#1)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|An overwrite component will overwrite the MBR so that the compromised computer can no longer start  [[1]](#1)|
 
 
 ## References

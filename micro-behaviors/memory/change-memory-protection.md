@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -40,10 +40,10 @@ Malware may change memory protection. For example, read-write memory may be chan
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**Ursnif**](../../xample-malware/ursnif.md)|2016|Changes the PE header of the child process to enable write access to that page, writes 18 bytes of buffer at offset 0x40 from the start of svchost.exe process executable in the target child process. Then changes the region protection back to "read only" to avoid suspicion  [[1]](#1)|
-|[**SYNfulKnock**](../../xample-malware/synful-knock.md)|2015|Modifies the translation lookaside buffer (TLB) Read/Write attributes  [[2]](#2)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Ursnif**](../../xample-malware/ursnif.md)|2016|--|Changes the PE header of the child process to enable write access to that page, writes 18 bytes of buffer at offset 0x40 from the start of svchost.exe process executable in the target child process. Then changes the region protection back to "read only" to avoid suspicion  [[1]](#1)|
+|[**SYNfulKnock**](../../xample-malware/synful-knock.md)|2015|--|Modifies the translation lookaside buffer (TLB) Read/Write attributes  [[2]](#2)|
 
 ## References
 

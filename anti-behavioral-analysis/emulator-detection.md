@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>28 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -50,9 +50,9 @@ Detects whether the malware instance is being executed inside an emulator. If so
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Stuxnet checks for specific operating systems on 32-bit machines, registry keys, and dates to profile a potential target machine before execution. If the conditions are not met to be considered a viable target, it will exit execution  [[2]](#2)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet checks for specific operating systems on 32-bit machines, registry keys, and dates to profile a potential target machine before execution. If the conditions are not met to be considered a viable target, it will exit execution  [[2]](#2)|
 
 ## References
 

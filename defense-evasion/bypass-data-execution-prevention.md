@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -38,9 +38,9 @@ Methods
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|TrickBot has come with a signed downloader component  [[2]](#2)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|TrickBot has come with a signed downloader component  [[2]](#2)|
 
 ## References
 

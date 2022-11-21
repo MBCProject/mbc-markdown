@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>28 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -75,11 +75,11 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|**Fake Adobe Flash Update OS X**|February 2016|[[2]](#2)|
-|**Dridex**|March 2015|[[3]](#3)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFICE. [[6]](#6)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|**Fake Adobe Flash Update OS X**|February 2016|--|[[2]](#2)|
+|**Dridex**|March 2015|--|[[3]](#3)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFICE. [[6]](#6)|
 
 ## References
 

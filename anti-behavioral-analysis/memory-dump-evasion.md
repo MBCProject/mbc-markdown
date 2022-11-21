@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>28 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -51,9 +51,9 @@ Malware hinders retrieval and/or discovery of the contents of the physical memor
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[Kraken](../xample-malware/kraken.md)|April 2008|Dumping Kraken's c.dll module from the heap of its own process is tricky because its PE-header is erased in memory. [[2]](#2)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[Kraken](../xample-malware/kraken.md)|April 2008|--|Dumping Kraken's c.dll module from the heap of its own process is tricky because its PE-header is erased in memory. [[2]](#2)|
 
 ## Code Snippets
 

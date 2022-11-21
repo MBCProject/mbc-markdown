@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -34,12 +34,12 @@ See ATT&CK Technique: **User Execution ([T1204](https://attack.mitre.org/techniq
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
-|[**GotBotKR**](../xample-malware/gobotkr.md)|2019| GoBotKR makes their malware look like the torrent content that the user intended to download, in order to entice a user to click on it. [[1]](#1)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|The malware relies on a victim to execute itself [[2]](#2)|
-|[**Terminator**](../xample-malware/terminator.md)|2013|The malware relies on user interaction to execute [[3]](#3)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|--| GoBotKR makes their malware look like the torrent content that the user intended to download, in order to entice a user to click on it. [[1]](#1)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware relies on a victim to execute itself [[2]](#2)|
+|[**Terminator**](../xample-malware/terminator.md)|2013|--|The malware relies on user interaction to execute [[3]](#3)|
 
 ## References
 

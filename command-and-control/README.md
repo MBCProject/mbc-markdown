@@ -8,7 +8,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -22,9 +22,9 @@ Behaviors that enable malware to communicate with systems such as C2 servers or 
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**TrickBot**](../command-and-control/README.md)|2016| new email addresses are collected automatically from the victim's address books [[1]](#1)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**TrickBot**](../command-and-control/README.md)|2016|--| new email addresses are collected automatically from the victim's address books [[1]](#1)|
 
 
 ## References

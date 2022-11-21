@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -36,9 +36,9 @@ ATT&CK defines Clipboard Modification as a Mobile technique (Android platform). 
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**Clipminer**](../xample-malware/clipminer.md)|2011|Clipminer monitors the clipboard for cryptocurrency addresses and replaces them with ones controlled by the adversary [[1]](#1)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer monitors the clipboard for cryptocurrency addresses and replaces them with ones controlled by the adversary [[1]](#1)|
 
 
 ## References

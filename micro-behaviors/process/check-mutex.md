@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -32,9 +32,9 @@ Malware checks a mutex.
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Poison Ivy variant checks if the wireshark-is-running{} named mutex object exists [[1]](#1)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy variant checks if the wireshark-is-running{} named mutex object exists [[1]](#1)|
 
 
 ## References

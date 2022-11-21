@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -32,10 +32,10 @@ Malware creates a mutex.
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Poison Ivy has a default process mutex, but can be altered at build time [2] [[1]](#1)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Creates global mutexes signal that rootkit installation has occurred successfully  [[2]](#2)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy has a default process mutex, but can be altered at build time [2] [[1]](#1)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Creates global mutexes signal that rootkit installation has occurred successfully  [[2]](#2)|
 
 ## References
 

@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -57,9 +57,9 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**SYNfulKnock**](../../xample-malware/synful-knock.md)|2015|To initiate communication with the C2 server, a uniquely crafted TCP SYN packet is sent to port 80 of the "implanted" router  [[1]](#1)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**SYNfulKnock**](../../xample-malware/synful-knock.md)|2015|--|To initiate communication with the C2 server, a uniquely crafted TCP SYN packet is sent to port 80 of the "implanted" router  [[1]](#1)|
 
 
 ## References

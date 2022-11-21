@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -44,10 +44,10 @@ See ATT&CK: **Indicator Removal on Host: Uninstall Malicious Application ([T1630
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**Terminator**](../xample-malware/terminator.md)|2013|Evades sandboxes by terminating and removing itself (DW20.exe) after installation. [[1]](#1)|
-|[**CozyCar**](../xample-malware/cozycar.md)|2010|CozyCar has a dll file that serves as a cleanup mechanism for its dropped binary [[2]]](#2)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Terminator**](../xample-malware/terminator.md)|2013|--|Evades sandboxes by terminating and removing itself (DW20.exe) after installation. [[1]](#1)|
+|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar has a dll file that serves as a cleanup mechanism for its dropped binary [[2]]](#2)|
 
 
 ## References

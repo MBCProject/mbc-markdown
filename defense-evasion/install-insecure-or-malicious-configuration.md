@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -32,9 +32,9 @@ Malware may install malicious configuration settings or may modify existing conf
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**Black Energy**](../xample-malware/blackenergy.md)|2007|Configures the system to the TESTSIGNING boot configuration option to load its unsigned driver component [[1]](#1)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Black Energy**](../xample-malware/blackenergy.md)|2007|--|Configures the system to the TESTSIGNING boot configuration option to load its unsigned driver component [[1]](#1)|
 
 ## References
 

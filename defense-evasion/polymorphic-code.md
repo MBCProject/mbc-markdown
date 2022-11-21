@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -42,7 +42,7 @@ Polymorphic code, a file with the same functionality but different execution, is
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|EvilBunny utilizes Lua scripts to exhibit polymorphism [[2]](#2)|
+|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny utilizes Lua scripts to exhibit polymorphism [[2]](#2)|
 
 ## References
 

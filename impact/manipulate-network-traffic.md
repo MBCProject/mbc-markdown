@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -38,10 +38,10 @@ The related **Data Manipulation: Transmitted Data Manipulation ([T1565.002](http
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|Intercepts encrypted web traffic to inject adds. [[1]](#1)|
-|[**MazarBot**](../xample-malware/mazarbot.md)|2016|Intercepts data coming into and going out of device.|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|Intercepts encrypted web traffic to inject adds. [[1]](#1)|
+|[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|Intercepts data coming into and going out of device.|
 
 ## References
 

@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -34,10 +34,10 @@ The MBC also associates the Bootkit behavior with Defense Evasion because the ma
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**Mebromi**](../xample-malware/mebromi.md)|2011|An MBR bootkit and a BIOS bootkit targeting Award BIOS. [[1]](#1)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|Can implement malicious code into firmware, allowing read, write, and/or erasure of the UEFI/BIOS firmware  [[2]](#24)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|An MBR bootkit and a BIOS bootkit targeting Award BIOS. [[1]](#1)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Can implement malicious code into firmware, allowing read, write, and/or erasure of the UEFI/BIOS firmware  [[2]](#24)|
 
 ## References
 

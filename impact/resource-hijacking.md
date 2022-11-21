@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>21 November 2022</b></td>
 </tr>
 </table>
 
@@ -45,12 +45,12 @@ The related **Resource Hijacking ([T1496](https://attack.mitre.org/techniques/T1
 
 ## Use in Malware
 
-|Name|Date|Description|
-|---|---|---|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|Drops software to mine for cryptocurrency. [[1]](#1)|
-|Adylkuzz|May 2017|Consumes system resources to mine for cryptocurrency. [[2]](#2)|
-|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|GoBotKR can use the compromised computer’s network bandwidth to seed torrents or execute DDoS. [[3]](#3)|
-|[**Clipminer**](../xample-malware/clipminer.md)|2011|Clipminer uses sytem resources to mine for cryptocurrency [[4]](#4)|
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Drops software to mine for cryptocurrency. [[1]](#1)|
+|Adylkuzz|May 2017|--|Consumes system resources to mine for cryptocurrency. [[2]](#2)|
+|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR can use the compromised computer’s network bandwidth to seed torrents or execute DDoS. [[3]](#3)|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer uses sytem resources to mine for cryptocurrency [[4]](#4)|
 
 ## References
 
