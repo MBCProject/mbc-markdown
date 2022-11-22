@@ -17,7 +17,7 @@
 
 Executable Code Obfuscation
 ===========================
-Executable code can be obfuscated to hinder static code analysis. This behavior is specific to a malware sample's executable code (data and text sections). While the Executable Code Obfuscation behavior makes the analysis process more difficult, it does not does cause incorrect or incomplete disassembly, which is how it differs from the Disassembler Evasion behavior.
+Executable code is obfuscated to hinder static code analysis. This behavior is specific to a malware sample's executable code (data and text sections). While the Executable Code Obfuscation behavior makes the analysis process more difficult, it does not cause incorrect or incomplete disassembly, which is how this behavior differs from the Disassembler Evasion behavior.
 
 For encryption and encoding characteristics of malware samples, as well as malware obfuscation behaviors related to non-malware-sample files and information, see **Obfuscated Files or Information ([E1027](../defense-evasion/obfuscated-files-or-information.md))**.
 
@@ -25,6 +25,7 @@ Methods
 -------
 |Name|ID|Description|
 |---|---|---|
+|**Argument Obfuscation**|B0032.020|Simple number or string arguments to API calls are calculated at runtime, making analysis more difficult.|
 |**API Hashing**|B0032.001|Instead of storing function names in the Import Address Table (IAT) and calling GetProcAddress, a DLL is loaded and the name of each of its exports is hashed until it matches a specific hash. Manual symbol resolution is then used to access and execute the exported function. This method is often used by shellcode because it reduces the size of each import from a human-readable string to a sequence of four bytes. The Method is also known as "Imports by Hash" and "GET_APIS_WITH_CRC." [[1]](#1)|
 |**Code Insertion**|B0032.002|Insert code to impede disassembly and make analysis more difficult.|
 |**Data Value Obfuscation**|B0032.008|Obfuscate data values through indirection of local or global variables. For example, the instruction *if (a == 0) do x* can be obfuscated by setting a global variable, *Z*, to zero and using it in the instruction: *if (a==Z) do x*.  [NEEDS REVIEW]|
@@ -44,7 +45,7 @@ Methods
 |**Structured Exception Handling (SEH)**|B0032.016|A portion of the code always generates an exception so that malicious code is executed with the exception handling. See [[3]](#3).|
 |**Symbol Obfuscation**|B0032.018|Remove or rename symbolic information commonly inserted by compilers for debugging purposes.|
 |**Thunk Code Insertion**|B0032.006|Variation on Jump Insertion. Used by some compilers for user-generated functions.|
-   
+|**Variable Recomposition**|B0032.021|Variables, often strings, are broken into multiple parts and stored out of order, in different memory ranges, or both. They must then be recomposed before use, making analysis difficult.|
 
 Malware Examples
 ----------------
