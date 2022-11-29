@@ -13,7 +13,8 @@
 </table>
 
 
-# Operating System Micro-objective #
+# Operating System Micro-objective
+
 Micro-behaviors related to operating systems.
 
 * **Console** [C0033](../operating-system/console.md)

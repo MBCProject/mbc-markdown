@@ -14,6 +14,7 @@
 
 
 # Defense Evasion #
+
 Behaviors that enable malware to evade detection.
 
 * **Alternative Installation Location** [B0027](../defense-evasion/alternative-installation-location.md)

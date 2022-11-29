@@ -13,7 +13,8 @@
 </table>
 
 
-# Data Micro-objective #
+# Data Micro-objective
+
 Micro-behaviors related to malware manipulating data.
 
 * **Check String** [C0019](../data/check-string.md)

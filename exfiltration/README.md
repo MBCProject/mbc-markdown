@@ -13,7 +13,8 @@
 </table>
 
 
-# Exfiltration #
+# Exfiltration
+
 Behaviors that enable malware to steal data from a system. This includes stored data, such as files, as well as data input into applications, such as web browsers.
 
 * **Automated Exfiltration** [E1020](../exfiltration/automated-exfiltration.md)

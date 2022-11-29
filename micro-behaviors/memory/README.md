@@ -13,7 +13,8 @@
 </table>
 
 
-# Memory Micro-objective #
+# Memory Micro-objective
+
 Micro-behaviors related to malware manipulating machine memory.
 
 * **Allocate Memory** [C0007](../memory/allocate-memory.md)

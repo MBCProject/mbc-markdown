@@ -30,8 +30,8 @@
 
 Malware may bypass Data Execution Prevention (DEP).
 
-Methods
-------- 
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**ROP Chains**|B0037.001|Return-Oriented Programming can be used to bypass DEP. It can also be used to bypass code signing. [[1]](#1)|

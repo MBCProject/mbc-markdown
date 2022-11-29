@@ -13,7 +13,8 @@
 </table>
 
 
-# Process Micro-objective #
+# Process Micro-objective
+
 Micro-behaviors related to processes.
 
 * **Allocate Thread Local Storage** [C0040](../process/allocate-thread-local-storage.md)

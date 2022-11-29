@@ -14,6 +14,7 @@
 
 
 # Lateral Movement
+
 Behaviors that enable malware to propagate or otherwise move through an environment. Lateral movement may be active, happening via direct machine access, or may be passive (for example, done via malicious email).
 
 * **Malicious Network Driver** [B0026](../persistence/malicious-network-driver.md)

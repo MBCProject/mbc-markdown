@@ -14,6 +14,7 @@
 
 
 # Impact #
+
 Behaviors that enable malware to manipulate, interrupt, or destroy systems and data. 
 
 * **Clipboard Modification** [E1510](../impact/clipboard-modification.md)

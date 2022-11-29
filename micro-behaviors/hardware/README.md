@@ -13,7 +13,8 @@
 </table>
 
 
-# Hardware Micro-objective #
+# Hardware Micro-objective
+
 Micro-behaviors related to hardware.
 
 * **Install Driver** [C0037](../hardware/install-driver.md)
