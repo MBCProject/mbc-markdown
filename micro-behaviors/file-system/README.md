@@ -13,7 +13,8 @@
 </table>
 
 
-# File System Micro-objective #
+# File System Micro-objective
+
 Micro-behaviors related to file manipulation.
 
 * **Alter File Extension** [C0015](../file-system/alter-file-extension.md)

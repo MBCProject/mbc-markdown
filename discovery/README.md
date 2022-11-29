@@ -13,7 +13,8 @@
 </table>
 
 
-# Discovery #
+# Discovery
+
 Behaviors that enable malware to gain knowledge about the system and network.
 
 * **Analysis Tool Discovery** [B0013](../discovery/anlaysis-tool-discovery.md)

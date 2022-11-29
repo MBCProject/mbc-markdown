@@ -35,8 +35,8 @@ See ATT&CK: **Rootkit ([T1014](https://attack.mitre.org/techniques/T1014/))**.
 
 Rootkits may hide artifacts (kernel modules, services, threads, userspace libraries), prevent actions (API unhooking (prevents API hooks installed by the malware instance from being removed), file access (prevents access to the file system, including specific files and/or directories associated with the malware instance), file deletion (prevents files and/or directories associated with the malware instance from being deleted), memory access (prevents access to system memory where the malware instance stores code or data), native API hooking (prevents other software from hooking native system APIs), registry access (prevents access to the Windows registry, either entire registry or particular registry keys/values), registry deletion (prevents deletion of registry keys and/or values associated with the malware instance).
 
-Methods
-------- 
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Application Rootkit**|E1014.m12|Application rootkits operate by exchanging standard application files with rootkit files, or changing applications by injecting code or patching.|
@@ -55,8 +55,8 @@ Methods
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet registers custom resource drives signed with a legitimate Realtek digital certificate  [[4]](#4)|
 
 
-Detection
----------
+## Detection
+
 Rootkits can be detected by detecting primary rootkit behaviors: Hide Artifacts, Impair Defenses, Highjack Execution Flow. Hidden artifacts include kernel modules (hides use of kernel modules used by the malware instance), services (hides any system services that the malware instance creates or injects itself into), threads (hides one or more threads that belong to the malware instance), userspace libraries (hides use of userspace libraries used by the malware instance). 
 
 Rootkits can also be detected via memory dump analysis or virtual machine introspection.

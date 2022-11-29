@@ -13,7 +13,8 @@
 </table>
 
 
-# Persistence #
+# Persistence
+
 Behaviors that enable malware to remain on a system regardless of system events, such as reboots.
 
 * **Bootkit** [F0013](../defense-evasion/bootkit.md)

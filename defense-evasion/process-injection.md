@@ -43,8 +43,8 @@ See ATT&CK: **Process Injection ([T1055](https://attack.mitre.org/techniques/T10
 
 Methods not captured by ATT&CK Process Injection sub-techniques are listed below. Note that IAT hooking and inline hooking (aka userland rootkits) are defined as methods under the [Hooking](../credential-access/hooking.md) behavior.
 
-Methods
-------- 
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Hook Injection via SetWindowsHooksEx**|E1055.m01|Malware can leverage hooking functionality to have its malicious DLL loaded upon an event getting triggered in a specific thread, which is usually done by calling SetWindowsHookEx to install a hook routine into the hook chain. [[1]](#1)|

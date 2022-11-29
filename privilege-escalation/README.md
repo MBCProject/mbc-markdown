@@ -13,7 +13,8 @@
 </table>
 
 
-# Privilege Escalation #
+# Privilege Escalation
+
 Behaviors that enable malware to obtain higher level permissions. These behaviors often overlap with Persistence behaviors.
 
 * **Hijack Execution Flow** [E1574](../defense-evasion/hijack-execution-flow.md)

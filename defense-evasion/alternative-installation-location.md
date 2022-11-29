@@ -30,8 +30,8 @@
 
 Malware may install itself not as a file on the hard drive. [[1]](#1)
 
-Methods
-------- 
+## Methods
+ 
 |Name|ID|Description|
 |---|---|---|
 |**Fileless Malware**|B0027.001|Stores itself in memory.|

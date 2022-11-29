@@ -13,6 +13,7 @@
 </table>
 
 # Credential Access
+
 Behaviors to obtain credential access, allowing it or its underlying threat actor to assume control of an account with the associated system and network permissions.
 
 * **Cryptocurrency** [B0028](../collection/cryptocurrency.md)

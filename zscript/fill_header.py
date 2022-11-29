@@ -1,8 +1,5 @@
 #!/usr/bin/python
 
-import sys
-import re
-import glob
 import argparse
 
 from fuzzywuzzy import fuzz  # pip install fuzzywuzzy python-Levenshtein

@@ -14,6 +14,7 @@
 
 
 # Anti-Static Analysis
+
 Behaviors and code characteristics that prevent or hinder static analysis of the malware. Simple static analysis identifies features such as embedded strings, header information, or file metadata. More involved static analysis involves the disassembly of the binary code.
 
 * **Call Graph Generation Evasion** [B0010](../anti-static-analysis/call-graph-generation-evasion.md)
