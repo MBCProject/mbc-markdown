@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -12,15 +11,27 @@
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>None</b></td>
 </tr>
+<tr>
+<td><b>Version</b></td>
+<td><b>2.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>13 October 2020</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>31 October 2022</b></td>
+</tr>
 </table>
 
 
-Decrypt Data
-============
+# Decrypt Data
+
 Malware may decrypt data. 
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**AES**|C0031.001|Malware decrypts data encrypted with the AES algorithm.|
@@ -38,13 +49,14 @@ Methods
 |**Stream Cipher**|C0031.013|Malware decrypts data encrypted with a stream cipher.|
 |**Twofish**|C0031.014|Malware decrypts data encrypted with the Twofish algorithm.|
 
-Code Snippets
--------------
-**Decrypt Data** (C0031) - the snippet encrypts and decrypts data.
+## Code Snippets
 
-Sample (SHA256): c86cbf5e78c9f05ecfc11e4f2c147781cef77842a457e19ba690477eb564c22b
-
-```asm
+### C0031
+<details>
+<summary> Decrypt Data </summary>
+SHA256: c86cbf5e78c9f05ecfc11e4f2c147781cef77842a457e19ba690477eb564c22b
+<pre>
+asm
 push    ebx
 mov     ebx, [esp+4+arg_4]
 push    esi
@@ -92,4 +104,6 @@ mov     eax, 1
 pop     esi
 pop     ebx
 retn
-```
+
+</pre>
+</details>

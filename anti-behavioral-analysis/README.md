@@ -3,9 +3,17 @@
 <td><b>ID</b></td>
 <td><b>OB0001</b></td>
 </tr>
+<td><b>Created</b></td>
+<td><b>1 August 2019</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>31 October 2022</b></td>
+</tr>
 </table>
 
 # Anti-Behavioral Analysis
+
 Behaviors that prevent, obstruct, or evade behavioral analysis of malware--for example, analysis done using a sandbox or debugger. Because the underlying methods differ, separate "detection" and "evasion" behaviors are defined for some anti-behavioral analysis areas.
 
 * **Capture Evasion** [B0036](../anti-behavioral-analysis/capture-evasion.md)
@@ -22,8 +30,8 @@ Behaviors that prevent, obstruct, or evade behavioral analysis of malware--for e
 * **Software Packing** [F0001](../anti-static-analysis/software-packing.md)
 * **Virtual Machine Detection** [B0009](../anti-behavioral-analysis/virtual-machine-detection.md)
 
-References
-----------
+## References
+
 <a name="1">[1]</a> Unprotect Project, a database about malware self-defense and protection. https://search.unprotect.it/map
 
 <a name="2">[2]</a> InDepthUnpacking, course content for teaching malware anti-analysis techniques and mitigations, with emphasis on packers. https://github.com/knowmalware/InDepthUnpacking

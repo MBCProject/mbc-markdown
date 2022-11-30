@@ -3,10 +3,18 @@
 <td><b>ID</b></td>
 <td><b>OB0008</b></td>
 </tr>
+<td><b>Created</b></td>
+<td><b>1 August 2019</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>31 October 2022</b></td>
+</tr>
 </table>
 
 
 # Impact #
+
 Behaviors that enable malware to manipulate, interrupt, or destroy systems and data. 
 
 * **Clipboard Modification** [E1510](../impact/clipboard-modification.md)

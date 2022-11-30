@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -12,17 +11,33 @@
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>None</b></td>
 </tr>
+<tr>
+<td><b>Anti-Analysis Type</b></td>
+<td><b>Detection</b></td>
+</tr>
+<tr>
+<td><b>Version</b></td>
+<td><b>2.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>1 August 2019</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>21 November 2022</b></td>
+</tr>
 </table>
 
 
-Debugger Detection
-==================
+# Debugger Detection
+
 Malware detects whether it's being executed inside a debugger. If so, conditional execution selects a benign execution path. [[1]](#1), [[2]](#2)
 
 Details on methods of detecting debuggers are given in the references; many are listed below.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**API Hook Detection**|B0001.001|Module bounds based [[7]](#7).|
@@ -63,18 +78,18 @@ Methods
 |**UnhandledExceptionFilter**|B0001.030|The UnhandledExceptionFilter function is called if no registered exception handlers exist, but it will not be reached if a debugger is present. See [[7]](#7) for details.|
 |**WudfIsAnyDebuggerPresent**|B0001.031|Includes use of WudfIsAnyDebuggerPresent, WudfIsKernelDebuggerPresent, WudfIsUserDebuggerPresent.|
 
-Malware Examples
-----------------
-|Name|Date|Description|
-|---|---|---|
-|[**Redhip**](../xample-malware/rebhip.md)|January 2011|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[4]](#4)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|The malware detects debuggers using an INT 03h trap and IsDebuggerPresent[[8]](#8)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|an anti-analysis function within the packer is called to check the username and filename of the executing process for strings like “malwar”, “sampl”, “viru”, and “sandb”. [[9]](#9)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Poison Ivy Variant checks for breakpoints and exits immediately if found [[10]](#10)|
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Redhip**](../xample-malware/rebhip.md)|January 2011|--|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[4]](#4)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|The malware detects debuggers using an INT 03h trap and IsDebuggerPresent[[8]](#8)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|an anti-analysis function within the packer is called to check the username and filename of the executing process for strings like “malwar”, “sampl”, “viru”, and “sandb”. [[9]](#9)|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy Variant checks for breakpoints and exits immediately if found [[10]](#10)|
 
 
-References
-----------
+## References
+
 <a name="1">[1]</a> Alexander Antukh, "Anti-debugging Techniques Cheat Sheet," 19 January 2015.  http://antukh.com/blog/2015/01/19/malware-techniques-cheat-sheet. 
 
 <a name="2">[2]</a> Joshua Cannell, Malwarebytes Labs, "Five Anti-Analysis Tricks that sometimes Fool Analysts," 31 March 2016. https://blog.malwarebytes.com/threat-analysis/2014/09/five-anti-debugging-tricks-that-sometimes-fool-analysts.

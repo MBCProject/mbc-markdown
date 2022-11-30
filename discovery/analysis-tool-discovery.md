@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -12,17 +11,29 @@
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>None</b></td>
 </tr>
+<tr>
+<td><b>Version</b></td>
+<td><b>2.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>1 August 2019</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>21 November 2022</b></td>
+</tr>
 </table>
 
 
-Analysis Tool Discovery
-=======================
+# Analysis Tool Discovery
+
 Malware can employ various means to detect whether analysis tools are present or running on the system on which it is executing. Note that analysis tools are used to *analyze* malware whereas security software (see **Software Discovery: Security Software Discovery ([T1518](https://attack.mitre.org/techniques/T1518/001/))** aims to *detect/mitigate* malware on a system or network.
 
 This behavior corresponds to simple, general discovery of analysis tools. Behaviors to find specific analysis tools (e.g., debuggers or disassemblers) are defined under the [Anti-Behavioral Analysis](../anti-behavioral-analysis) objective.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Known File Location**|B0013.008|Malware may detect an analysis tool by the presence of a file in a known location.|
@@ -36,15 +47,15 @@ Methods
 |**Process detection - Sandboxes**|B0013.007|Malware can scan for the process name associated with common analysis tools. Joe Sandbox, etc.|
 |**Process detection - SysInternals Suite Tools**|B0013.003|Malware can scan for the process name associated with common analysis tools. Process Explorer / Process Monitor / Regmon / Filemon, TCPView, Autoruns|
 
-Malware Examples
-----------------
-|Name|Date|Description|
-|---|---|---|
-|[**Emotet**](../xample-malware/emotet.md)|2018|If it recieves a response from the c2 server stating a debugging-related tool is in the list of running processes, it recieves an "upgrade" command which calls the ShellExecuteW function and exits [[1]](#1)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Poison Ivy Variant runs a threat to check if any analysis tools are running by creating specially named pipes that are created by various analysis tools. If one of the named pipes cannot be created, it means one fo the analysis tools is running.  [[2]](#2)|
+## Use in Malware
 
-References
-----------
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Emotet**](../xample-malware/emotet.md)|2018|--|If it recieves a response from the c2 server stating a debugging-related tool is in the list of running processes, it recieves an "upgrade" command which calls the ShellExecuteW function and exits [[1]](#1)|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy Variant runs a threat to check if any analysis tools are running by creating specially named pipes that are created by various analysis tools. If one of the named pipes cannot be created, it means one fo the analysis tools is running.  [[2]](#2)|
+
+## References
+
 <a name="1">[1]</a> https://www.fortinet.com/blog/threat-research/deep-analysis-of-new-emotet-variant-part-1
 
 <a name="2">[2]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf

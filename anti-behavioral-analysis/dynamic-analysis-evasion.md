@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -12,19 +11,35 @@
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>Virtualization/Sandbox Evasion (<a href="https://attack.mitre.org/techniques/T1497/">T1497</a>, <a href="https://attack.mitre.org/techniques/T1633/">T1633</a>)</b></td>
 </tr>
+<tr>
+<td><b>Anti-Analysis Type</b></td>
+<td><b>Evasion</b></td>
+</tr>
+<tr>
+<td><b>Version</b></td>
+<td><b>2.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>1 August 2019</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>21 November 2022</b></td>
+</tr>
 </table>
 
 
-Dynamic Analysis Evasion
-========================
+# Dynamic Analysis Evasion
+
 Malware may obstruct dynamic analysis in a sandbox, emulator, or virtual machine. 
 
 See **Emulator Evasion ([B0004](../anti-behavioral-analysis/emulator-evasion.md))** for an  emulator-specific evasion behavior, and see **Conditional Execution ([B0025](../anti-behavioral-analysis/execution-guardrails.md))** for a behavior that constrains dynamic execution based on environmental conditions. 
 
 The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/))** ATT&CK techniques were defined subsequent to this MBC behavior.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Alternative ntdll.dll**|B0003.001|A copy of ntdll.dll is dropped to the filesystem and then loaded. This alternative DLL is used to execute function calls to evade sandboxes which use hooking in the operating system's ntdll.dll.|
@@ -41,21 +56,21 @@ Methods
 |**Restart**|B0003.010|Restarts or shuts down system to bypass sandboxing.|
 
 
-Malware Examples
-----------------
-|Name|Date|Description|
-|---|---|---|
-|[**Ursnif**](../xample-malware/ursnif.md)|May 2016|Ursnif uses malware macros to evade sandbox detection. [[2]](#2)|
-|[**Terminator**](../xample-malware/terminator.md)|October 2013|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[3]](#3)|
-|**Nap**|2013|Trojan Nap (tied to the Kelihos Botnet) uses extended sleep calls to evade sandbox analysis. [[3]](#3)|
-|**Smokeloader**|2019|Smokeloader drops a copy of ntdll.dll to %APPDATA%\Local\Temp\ [[4]](#4)|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|Evades dynamic analysis.)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|The malware stalls by writing a byte of random data to memory 960 million times which complicates analysis. It also calls specific Windows API functions [[5]](#5)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|Uses numerous printf loops to delay the execution process and overload the sandbox with junk data (API Hammering) [[6]](#6)|
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Ursnif**](../xample-malware/ursnif.md)|May 2016|--|Ursnif uses malware macros to evade sandbox detection. [[2]](#2)|
+|[**Terminator**](../xample-malware/terminator.md)|October 2013|--|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[3]](#3)|
+|**Nap**|2013|--|Trojan Nap (tied to the Kelihos Botnet) uses extended sleep calls to evade sandbox analysis. [[3]](#3)|
+|**Smokeloader**|2019|--|Smokeloader drops a copy of ntdll.dll to %APPDATA%\Local\Temp\ [[4]](#4)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Evades dynamic analysis.)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware stalls by writing a byte of random data to memory 960 million times which complicates analysis. It also calls specific Windows API functions [[5]](#5)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Uses numerous printf loops to delay the execution process and overload the sandbox with junk data (API Hammering) [[6]](#6)|
 
 
-References
-----------
+## References
+
 <a name="1">[1]</a> http://joe4security.blogspot.com/2013/06/overloading-sandboxes-new-generic.html
 
 <a name="2">[2]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/ursnif

@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -12,16 +11,32 @@
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>Obfuscated Files or Information: Software Packing (<a href="https://attack.mitre.org/techniques/T1027/002/">T1027.002</a>, <a href="https://attack.mitre.org/techniques/T1406/002/">T1406.002</a>)</b></td>
 </tr>
+<tr>
+<td><b>Anti-Analysis Type</b></td>
+<td><b>Evasion</b></td>
+</tr>
+<tr>
+<td><b>Version</b></td>
+<td><b>2.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>1 August 2019</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>21 November 2022</b></td>
+</tr>
 </table>
 
-Software Packing
-================
+# Software Packing
+
 This code characteristic - Software Packing - can make static and behavioral analysis difficult and includes packing with software protectors, such as Themida and Armadillo [[1]](#1). Methods related to anti-analysis are below. This behavior covers both characteristics of the malware (i.e., how it is packed) as well as behaviors of the malware (e.g., the malware packs another executable file).
 
 This description refines the ATT&CK **Obfuscated Files or Information: Software Packing ([T1027.002](https://attack.mitre.org/techniques/T1027/002/), [T1406.002](https://attack.mitre.org/techniques/T1406/002/))** techniques.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Armadillo**|F0001.012|Uses Armadillo.|
@@ -38,19 +53,19 @@ Methods
 |**UPX**|F0001.008|Uses UPX packer.|
 |**VMProtect**|F0001.010|Uses VMProtect.|
 
-Malware Examples
-----------------
-|Name|Date|Description|
-|---|---|---|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|Redhip samples are packed with different custom packers. [[3]](#3)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|The malware comes packed by a crypter/FUD [[4]](#4)|
-|[**Conficker**](../xample-malware/conficker.md)|2008|Conficker is propagated as a DLL which has been backed using the UPX packer [[5]](#5)|
-|[**DarkComet**](../xample-malware/dark-comet.md)|2008|Has the option to compress its payload using UPX or MPRESS  [[6]](#6)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|Has a custom packer to obfuscate itself  [[7]](#7)|
-|[**Emotet**](../xample-malware/emotet.md)|2018|Emotet uses custom packers which first decrypt the loaders and the loaders decrypt and load Emotet's main payloads [[8]](#8)|
+## Use in Malware
 
-References
-----------
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip samples are packed with different custom packers. [[3]](#3)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|The malware comes packed by a crypter/FUD [[4]](#4)|
+|[**Conficker**](../xample-malware/conficker.md)|2008|--|Conficker is propagated as a DLL which has been backed using the UPX packer [[5]](#5)|
+|[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|Has the option to compress its payload using UPX or MPRESS  [[6]](#6)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Has a custom packer to obfuscate itself  [[7]](#7)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|--|Emotet uses custom packers which first decrypt the loaders and the loaders decrypt and load Emotet's main payloads [[8]](#8)|
+
+## References
+
 <a name="1">[1]</a> Ange Albertini, Packers, 5 April 2010, https://gironsec.com/code/packers.pdf
 
 <a name="2">[2]</a> Jiang Ming et al, Towards Paving the Way for Large-Scale Windows Malware Analysis: Generic Binary Unpacking with Orders-of-Magnitude Performance Boost, October 2018, https://dl.acm.org/citation.cfm?id=3243771.

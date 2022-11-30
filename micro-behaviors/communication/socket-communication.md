@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -12,17 +11,29 @@
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>None</b></td>
 </tr>
+<tr>
+<td><b>Version</b></td>
+<td><b>3.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>25 September 2020</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>21 November 2022</b></td>
+</tr>
 </table>
 
 
-Socket Communication
-====================
+# Socket Communication
+
 This micro-behavior focuses on socket (TCP, UDP) communication. 
 
 Instead of being listed alphabetically, methods have been grouped to better faciliate labeling and mapping.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Set Socket Config**|C0001.001|Configure socket.|
@@ -44,13 +55,13 @@ Methods
 |**UDP Client**|C0001.013|UDP client behavior.|
 
 
-Malware Examples
-----------------
-|Name|Date|Description|
-|---|---|---|
-|[**SYNfulKnock**](../../xample-malware/synful-knock.md)|2015|To initiate communication with the C2 server, a uniquely crafted TCP SYN packet is sent to port 80 of the "implanted" router  [[1]](#1)|
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**SYNfulKnock**](../../xample-malware/synful-knock.md)|2015|--|To initiate communication with the C2 server, a uniquely crafted TCP SYN packet is sent to port 80 of the "implanted" router  [[1]](#1)|
 
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://www.mandiant.com/resources/synful-knock-acis

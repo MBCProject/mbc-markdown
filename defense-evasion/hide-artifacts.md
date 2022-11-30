@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -12,17 +11,29 @@
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>Hide Artifacts (<a href="https://attack.mitre.org/techniques/T1564/">T1564</a>, <a href="https://attack.mitre.org/techniques/T1628/">T1628</a>)</b></td>
 </tr>
+<tr>
+<td><b>Version</b></td>
+<td><b>2.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>8 November 2021</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>21 November 2022</b></td>
+</tr>
 </table>
 
 
-Hide Artifacts
-==============
+# Hide Artifacts
+
 Malware may hide artifacts to evade detection and/or to persist on the system. See potential methods related to malware below. 
 
 See ATT&CK: **Hide Artifacts ([T1564](https://attack.mitre.org/techniques/T1564/), [T1628](https://attack.mitre.org/techniques/T1628/))**.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Hidden Userspace Libraries**|E1564.m01|Hides userspace libraries used by the malware instance. Technique refers to hiding libraries loaded in memory (not disk). For example, a userspace library may be injected into a system process such that memory scanning tools may be prevented from finding them. This technique is different than DLL injection, in which the DLL will continue to show up in process metadata that tracks what is stored in memory. This technique involves clearing that metadata or making it inaccessible to security and inspection tools.|
@@ -32,15 +43,15 @@ Methods
 |**Hidden Services**|E1564.m04|Hides any system services that the malware instance creates or injects itself into. Services can be hidden by hiding associated registry keys.|
 
 
-Malware Examples
-----------------
-|Name|Date|Description|
-|---|---|---|
-|[**YiSpecter**](../xample-malware/yispecter.md)|2015|Hides icons from iOS's SpringBoard as well as use the same name and logos of system apps to trick iOS power users [[1]](#1)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|Stuxnet intercepts IRP requests (reads, writes) to devices (NFTS, FAT, CD-ROM). It monitors directory control IRPs, in particular directory query notifications such that when an application requests the list of files, it returns a Stuxnet-specified subset of the true items. These filters hide the files used by Stuxnet to spread through removalbe drives  [[2]](#2)|
+## Use in Malware
 
-References
-----------
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**YiSpecter**](../xample-malware/yispecter.md)|2015|--|Hides icons from iOS's SpringBoard as well as use the same name and logos of system apps to trick iOS power users [[1]](#1)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet intercepts IRP requests (reads, writes) to devices (NFTS, FAT, CD-ROM). It monitors directory control IRPs, in particular directory query notifications such that when an application requests the list of files, it returns a Stuxnet-specified subset of the true items. These filters hide the files used by Stuxnet to spread through removalbe drives  [[2]](#2)|
+
+## References
+
 <a name="1">[1]</a> http://researchcenter.paloaltonetworks.com/2015/10/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
 
 <a name="2">[2]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en

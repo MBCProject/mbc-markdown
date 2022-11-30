@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -12,30 +11,42 @@
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>None</b></td>
 </tr>
+<tr>
+<td><b>Version</b></td>
+<td><b>2.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>2 August 2022</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>21 November 2022</b></td>
+</tr>
 </table>
 
 
-Change Memory Protection
-========================
+# Change Memory Protection
+
 Malware may change memory protection. For example, read-write memory may be changed to read-execute. Changing memory protection may exploits (e.g., bypass Data Execution Prevention).
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Executable Heap**|C0008.002|The heap is made executable.|
 |**Executable Stack**|C0008.001|The stack is made executable.|
 
 
-Malware Examples
-----------------
-|Name|Date|Description|
-|---|---|---|
-|[**Ursnif**](../../xample-malware/ursnif.md)|2016|Changes the PE header of the child process to enable write access to that page, writes 18 bytes of buffer at offset 0x40 from the start of svchost.exe process executable in the target child process. Then changes the region protection back to "read only" to avoid suspicion  [[1]](#1)|
-|[**SYNfulKnock**](../../xample-malware/synful-knock.md)|2015|Modifies the translation lookaside buffer (TLB) Read/Write attributes  [[2]](#2)|
+## Use in Malware
 
-References
-----------
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Ursnif**](../../xample-malware/ursnif.md)|2016|--|Changes the PE header of the child process to enable write access to that page, writes 18 bytes of buffer at offset 0x40 from the start of svchost.exe process executable in the target child process. Then changes the region protection back to "read only" to avoid suspicion  [[1]](#1)|
+|[**SYNfulKnock**](../../xample-malware/synful-knock.md)|2015|--|Modifies the translation lookaside buffer (TLB) Read/Write attributes  [[2]](#2)|
+
+## References
+
 <a name="1">[1]</a> https://www.fireeye.com/blog/threat-research/2017/11/ursnif-variant-malicious-tls-callback-technique.html
 
 <a name="2">[2]</a> https://www.mandiant.com/resources/synful-knock-acis

@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -12,15 +11,30 @@
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>None</b></td>
 </tr>
+<tr>
+<td><b>Anti-Analysis Type</b></td>
+<td><b>Evasion</b></td>
+</tr>
+<tr>
+<td><b>Version</b></td>
+<td><b>2.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>1 August 2019</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>21 November 2022</b></td>
+</tr>
 </table>
 
+# Memory Dump Evasion
 
-Memory Dump Evasion
-===================
 Malware hinders retrieval and/or discovery of the contents of the physical memory of the system on which the malware instance is executing [[1]](#1).
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Code Encryption in Memory**|B0006.001|Encrypt the executing malware instance code in memory.|
@@ -33,19 +47,22 @@ Methods
 |**SizeOfImage**|B0006.004|Set the SizeOfImage field of PEB.LoaderData to be huge.|
 |**Tampering**|B0006.005|Erase or corrupt specific file parts to prevent rebuilding (header, packer stub, etc.).|
 |**Hook memory mapping APIs**|B0006.010|Hooking prevents memory dumps by preventing mapping of memory into the kernel's virtual address space. [[1]](#1)|
-|**Patch MmGetPhysicalMemoryRanges**|B0006.011|Patching this function to always return NULL prevents drivers from getting information about the physical address space layout, preventing memory dumps. [[1]](#1)|
+|**Patch MmGetPhysicalMemoryRanges**|[B0006.011](#b0006011)|Patching this function to always return NULL prevents drivers from getting information about the physical address space layout, preventing memory dumps. [[1]](#1)|
 
-Malware Examples
-----------------
-|Name|Date|Description|
-|---|---|---|
-|[Kraken](../xample-malware/kraken.md)|April 2008|Dumping Kraken's c.dll module from the heap of its own process is tricky because its PE-header is erased in memory. [[2]](#2)|
+## Use in Malware
 
-Code Snippets
--------------
-**Memory Dump::Code Encryption in Memory** (B0006.011)
- <br/>SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
-```asm
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[Kraken](../xample-malware/kraken.md)|April 2008|--|Dumping Kraken's c.dll module from the heap of its own process is tricky because its PE-header is erased in memory. [[2]](#2)|
+
+## Code Snippets
+
+### B0006.011
+<details>
+<summary> Memory Dump::Code Encryption in Memory </summary>
+SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
+<pre>
+asm
 mov cl, 65h ; 'e'
 mov al, 70h ; 'p'
 mov [ebp+var_23], cl
@@ -81,10 +98,11 @@ call ds:atoi
 add esp, 4
 mov dword ptr [ebp+hostshort], eax
 jmp short loc_401326
-```
+</pre>
+</details>
 
-References
-----------
+## References
+
 <a name="1">[1]</a> J. Stuttgen, M. Cohen, Anti-forensic resilient memory acquisition, https://www.dfrws.org/sites/default/files/session-files/paper-anti-forensic_resilient_memory_acquisition.pdf
 
 <a name="2">[2]</a> http://blog.threatexpert.com/2008/04/kraken-changes-tactics.html

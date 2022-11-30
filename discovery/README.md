@@ -3,10 +3,18 @@
 <td><b>ID</b></td>
 <td><b>OB0007</b></td>
 </tr>
+<td><b>Created</b></td>
+<td><b>1 August 2019</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>31 October 2022</b></td>
+</tr>
 </table>
 
 
-# Discovery #
+# Discovery
+
 Behaviors that enable malware to gain knowledge about the system and network.
 
 * **Analysis Tool Discovery** [B0013](../discovery/anlaysis-tool-discovery.md)

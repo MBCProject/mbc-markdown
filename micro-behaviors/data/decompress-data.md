@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -12,15 +11,27 @@
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>None</b></td>
 </tr>
+<tr>
+<td><b>Version</b></td>
+<td><b>2.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>13 October 2020</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>31 October 2022</b></td>
+</tr>
 </table>
 
 
-Decompress Data
-===============
+# Decompress Data
+
 Malware may decompress data.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**aPLib**|C0025.003|Malware decompresses data using aPLib.|

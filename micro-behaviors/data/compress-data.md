@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -12,15 +11,27 @@
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>None</b></td>
 </tr>
+<tr>
+<td><b>Version</b></td>
+<td><b>2.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>13 October 2020</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>31 October 2022</b></td>
+</tr>
 </table>
 
 
-Compress Data
-=============
+# Compress Data
+
 Malware may compress data.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**IEncodingFilterFactory**|C0024.002|Malware compresses data using IEncodingFilterFactory.|

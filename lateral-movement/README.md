@@ -3,10 +3,18 @@
 <td><b>ID</b></td>
 <td><b>OB0011</b></td>
 </tr>
+<td><b>Created</b></td>
+<td><b>1 August 2019</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>31 October 2022</b></td>
+</tr>
 </table>
 
 
 # Lateral Movement
+
 Behaviors that enable malware to propagate or otherwise move through an environment. Lateral movement may be active, happening via direct machine access, or may be passive (for example, done via malicious email).
 
 * **Malicious Network Driver** [B0026](../persistence/malicious-network-driver.md)

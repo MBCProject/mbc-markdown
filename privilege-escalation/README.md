@@ -3,10 +3,18 @@
 <td><b>ID</b></td>
 <td><b>OB0013</b></td>
 </tr>
+<td><b>Created</b></td>
+<td><b>1 August 2019</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>31 October 2022</b></td>
+</tr>
 </table>
 
 
-# Privilege Escalation #
+# Privilege Escalation
+
 Behaviors that enable malware to obtain higher level permissions. These behaviors often overlap with Persistence behaviors.
 
 * **Hijack Execution Flow** [E1574](../defense-evasion/hijack-execution-flow.md)

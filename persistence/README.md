@@ -3,10 +3,18 @@
 <td><b>ID</b></td>
 <td><b>OB0012</b></td>
 </tr>
+<td><b>Created</b></td>
+<td><b>1 August 2019</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>31 October 2022</b></td>
+</tr>
 </table>
 
 
-# Persistence #
+# Persistence
+
 Behaviors that enable malware to remain on a system regardless of system events, such as reboots.
 
 * **Bootkit** [F0013](../defense-evasion/bootkit.md)

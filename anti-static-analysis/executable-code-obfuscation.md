@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td><b>ID</b></td>
@@ -12,17 +11,32 @@
 <td><b>Related ATT&CK Techniques</b></td>
 <td><b>None</b></td>
 </tr>
+<tr>
+<td><b>Anti-Analysis Type</b></td>
+<td><b>Evasion</b></td>
+</tr>
+<tr>
+<td><b>Version</b></td>
+<td><b>2.0</b></td>
+</tr>
+<tr>
+<td><b>Created</b></td>
+<td><b>1 August 2019</b></td>
+</tr>
+<tr>
+<td><b>Last Modified</b></td>
+<td><b>21 November 2022</b></td>
+</tr>
 </table>
 
+# Executable Code Obfuscation
 
-Executable Code Obfuscation
-===========================
 Executable code is obfuscated to hinder static code analysis. This behavior is specific to a malware sample's executable code (data and text sections). While the Executable Code Obfuscation behavior makes the analysis process more difficult, it does not cause incorrect or incomplete disassembly, which is how this behavior differs from the Disassembler Evasion behavior.
 
 For encryption and encoding characteristics of malware samples, as well as malware obfuscation behaviors related to non-malware-sample files and information, see **Obfuscated Files or Information ([E1027](../defense-evasion/obfuscated-files-or-information.md))**.
 
-Methods
--------
+## Methods
+
 |Name|ID|Description|
 |---|---|---|
 |**Argument Obfuscation**|B0032.020|Simple number or string arguments to API calls are calculated at runtime, making analysis more difficult.|
@@ -47,25 +61,28 @@ Methods
 |**Thunk Code Insertion**|B0032.006|Variation on Jump Insertion. Used by some compilers for user-generated functions.|
 |**Variable Recomposition**|B0032.021|Variables, often strings, are broken into multiple parts and stored out of order, in different memory ranges, or both. They must then be recomposed before use, making analysis difficult.|
 
-Malware Examples
-----------------
-|Name|Date|Description|
-|---|---|---|
-|[**Heriplor**](../xample-malware/heriplor.md)|March 2019|The Heriplor Trojan uses API Hashing. [[1]](#1)|
-|[**Emotet**](../xample-malware/emotet.md)|2018|Emotet macros are heavily obfuscated with junk functions and string substitutions. [[2]](#2)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|Trojan spyware program that has mainly been used for targeting banking sites.|
-|[**Rombertik**](../anti-static-analysis/executable-code-obfuscation.md)|2015|Most of the malware file consists of unnecessary code or unnecessary data [[4]](#4)|
-|[**Ursnif**](../anti-static-analysis/executable-code-obfuscation.md)|2016|Creates an encrypted Registry key called TorClient to store its data [[5]](#5)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|Poison Ivy variant encrypts all its strings [[6]](#6)|
-|[**SamSam**](../xample-malware/samsam.md)|2015|SamSam obfuscates functions, class names and strings, including the list of targeted file extensions, the help file contents and environment variables using DES encryption with a fixed hard-coded key and the IV  [[7]](#7)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|The configuration data block is encoded with a NOT XOR 0xFF operation  [[8]](#8)|
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Heriplor**](../xample-malware/heriplor.md)|March 2019|--|The Heriplor Trojan uses API Hashing. [[1]](#1)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|--|Emotet macros are heavily obfuscated with junk functions and string substitutions. [[2]](#2)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**Rombertik**](../anti-static-analysis/executable-code-obfuscation.md)|2015|--|Most of the malware file consists of unnecessary code or unnecessary data [[4]](#4)|
+|[**Ursnif**](../anti-static-analysis/executable-code-obfuscation.md)|2016|--|Creates an encrypted Registry key called TorClient to store its data [[5]](#5)|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy variant encrypts all its strings [[6]](#6)|
+|[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam obfuscates functions, class names and strings, including the list of targeted file extensions, the help file contents and environment variables using DES encryption with a fixed hard-coded key and the IV  [[7]](#7)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|The configuration data block is encoded with a NOT XOR 0xFF operation  [[8]](#8)|
 
 
-Code Snippets
--------------
-**Obfuscated Files or Information::Encoding-Standard Algorithm** (E1027.m02)
- <br/>SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
-```asm
+## Code Snippets
+
+### E1027.M02
+<details>
+<summary> Obfuscated Files or Information::Encoding-Standard Algorithm </summary>
+SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
+<pre>
+asm
 jle short_40182F
 mov dl, byte ptr [ebp+eax+var_7CA8]
 xor dl, cl
@@ -73,10 +90,15 @@ mov byte ptr [ebp+eax+var_7CA8], dl
 inc eax
 cmp eax, edi
 jl short loc_40181A
-```
-**Executable Code Obfuscation::Stack Strings** (B0032.017)
- <br/>SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
-```asm
+</pre>
+</details>
+
+### B0032.017
+<details>
+<summary> Executable Code Obfuscation::Stack Strings </summary>
+SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
+<pre>
+asm
 mov cl, 65h ; 'e'
 mov al, 70h ; 'p'
 mov [ebp+var_23], cl
@@ -113,10 +135,11 @@ call ds:atoi
 add esp, 4
 mov dword ptr [ebp+hostshort], eax
 jmp short loc_401326
-```
+</pre>
+</details>
 
-References
-----------
+## References
+
 <a name="1">[1]</a> https://insights.sei.cmu.edu/cert/2019/03/api-hashing-tool-imagine-that.html
 
 <a name="2">[2]</a> https://cofense.com/recent-geodo-malware-campaigns-feature-heavily-obfuscated-macros/
