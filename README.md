@@ -8,8 +8,8 @@ Check out the MBC presentations:
 
 Two open-source malware analysis tools map to MBC and ATT&CK:
 
-* [capa rules](https://github.com/fireeye/capa-rules) - see the [capa mapping distribution](./capa.md)
-* [CAPE signatures](https://github.com/kevoreilly/community/tree/master/modules/signatures) - see the [CAPE mapping distribution](./cape.md)
+* [capa](https://github.com/fireeye/capa-rules) - see the [capa rule mapping distribution](./capa.md)
+* [CAPE](https://github.com/kevoreilly/community/tree/master/modules/signatures) - see the [CAPE signature mapping distribution](./cape.md)
 
 To join the **MBC mailing list**, please send a request to mbc@mitre.org.
 
