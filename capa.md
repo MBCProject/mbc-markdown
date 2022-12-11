@@ -2,7 +2,7 @@
 15 August 2022
 
 ## Histograms ##
-Histograms showing the number of capa rules mapped into each ATT&CK tactic, MBC objective, and MBC micro-objective are shown below. Details of the tactics and objectives follow.
+Histograms showing the number of capa rules mapped into each ATT&CK tactic, MBC objective, and MBC micro-objective are below. Details of the tactics and objectives follow.
 
 ### ATT&CK Mapping Histogram ###
 

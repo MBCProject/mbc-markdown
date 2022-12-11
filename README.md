@@ -1,15 +1,15 @@
 # <a name="mbc"></a>Malware Behavior Catalog v2.3 #
 The Malware Behavior Catalog (MBC) is a catalog of malware objectives and behaviors, created to support malware analysis-oriented use cases, such as labeling, similarity analysis, and standardized reporting. Please see the [FAQ](./yfaq/README.md) page for answers to common questions, and read the [newsletters](./ynewsletters/README.md) for information on the most recent MBC updates and activity.
 
+Two open-source malware analysis tools map their output to MBC and ATT&CK:
+
+* [capa](https://github.com/fireeye/capa-rules) - see the [capa rule mapping distribution](./capa.md)
+* [CAPE](https://github.com/kevoreilly/community/tree/master/modules/signatures) - see the [CAPE signature mapping distribution](./cape.md)
+
 Check out the MBC presentations:
 
 * [Standardized Reporting with the Malware Behavior Catalog](https://youtu.be/qZef-SoREdY), VB2020 localhost (October 2020)
 * [Malware Behavior Catalog](https://youtu.be/KY8Ty-0sdVU), BSides DC (October 2019)
-
-Two open-source malware analysis tools map to MBC and ATT&CK:
-
-* [capa](https://github.com/fireeye/capa-rules) - see the [capa rule mapping distribution](./capa.md)
-* [CAPE](https://github.com/kevoreilly/community/tree/master/modules/signatures) - see the [CAPE signature mapping distribution](./cape.md)
 
 To join the **MBC mailing list**, please send a request to mbc@mitre.org.
 
