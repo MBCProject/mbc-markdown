@@ -2,4 +2,4 @@
 
 <a href="./09092022.md">September 2022</a>
 
-<a href="./12152022.mb">December 2022</a>
+<a href="./12152022.md">December 2022</a>
