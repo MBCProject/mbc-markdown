@@ -88,7 +88,7 @@ Malware objectives are defined in the table below. Follow the links to view asso
 |[**Privilege Escalation**](./privilege-escalation/README.md)|Malware aims to obtain higher level permissions.|
 
 ## MBC Behaviors ##
-The table below lists MBC behaviors and related ATT&CK techniques. In most cases, related ATT&CK techniques were defined *after* the MBC behavior was defined.
+The table below lists MBC behaviors and related ATT&CK techniques. In most cases, related ATT&CK techniques were defined *after* the MBC behavior was defined. Please see the [MBC Summary](./mbc_summary.md) for a listing of all MBC content.
 
 |**ID**|**Objective(s)**|**Behavior**|**Related ATT&CK Technique**|
 |---|---|---|---|
