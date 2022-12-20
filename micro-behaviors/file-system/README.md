@@ -28,4 +28,4 @@ Micro-behaviors related to file manipulation.
 * **Read File** [C0051](../file-system/read-file.md)
 * **Read Virtual Disk** [C0056](../file-system/read-virtual-disk.md)
 * **Set File Attributes** [C0050](../file-system/set-file-attributes.md)
-* **Write File** [C0052](../file-system/write-file.md)
+* **Writes File** [C0052](../file-system/writes-file.md)
