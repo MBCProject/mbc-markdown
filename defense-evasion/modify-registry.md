@@ -9,7 +9,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b>Modify Registry<a href="https://attack.mitre.org/techniques/T1112">T1112</a>)</b></td>
+<td><b>Modify Registry (<a href="https://attack.mitre.org/techniques/T1112">T1112</a>)</b></td>
 </tr>
 <tr>
 <td><b>Version</b></td>
