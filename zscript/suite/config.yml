@@ -1,0 +1,72 @@
+MBCdir:
+  MBCPath: '/home/ryan/MBC/mbc-markdown'
+  ignorelist: ["yfaq", 'ynewsletters', 'zscript', 'README.md', 'capa.md', '.git', 'tou.md']
+  objectives: ['anti-behavioral-analysis', 'anti-static-analysis', 'collection', 'command-and-control', 'credential-access', 'defense-evasion', 'discovery', 'execution', 'exfiltration', 'impact', 'lateral-movement', 'micro-behaviors', 'persistence', 'privilege-escalation']
+  micro-behaviors: ['communication', 'cryptography', 'data', 'file-system', 'hardware', 'memory', 'operating-system', 'process']
+
+
+Malware:
+  HeaderRegex: '{}<\/b><\/td>\n<td><b>(.*?)<' # Needs to include a .format("{}") ID/Aliases/Platforms/Year/Associated ATT&CK Software
+  AssociatedSoftwareRegex1: 'Associated ATT&CK Software<\/b><\/td>\n<td><b>(.*?)<\/b>'  # Because this section may sometimes include links, the regex is different than the other headesr
+  AssociatedSoftwareRegex2: '">(.*?)<\/a>'
+  TitleRegex: '^# (.*)'
+  AttackRegex: '## ATT&CK Techniques'
+  EnAttackRegex: '## Enhanced ATT&CK Techniques'
+  BehaviorRegex: '## MBC Behaviors'
+  IoCRegex: '## Indicators of Compromise'
+  ReferencesRegex: '## References'
+
+  # Given this example: |[Execution::Install Additional Program (B0023)](../execution/install-additional-program.md)|The malware installs an open-source program called mitmproxy. [[1]](#1) Additionally it also does .... [[2]](#2)|
+  # The BehavRegex will have the following matched groups
+  # Group 1: Execution::Install Additional Program
+  # Group 2: B0023
+  # Group 3: ../execution/install-additional-program.md
+  # Group 4: The malware installs an open-source program called mitmproxy. [[1]](#1) Additionally it also does .... [[2]](#2)
+  BehavRegex: '\|\[(.*?) \((.*?)\)\]\((.*?)\)\|(.*?)\|'
+  
+  # This regex will take Group 4 of the previous regex ("The malware installs an open-source program called mitmproxy. [[1]](#1) Additionally it also does .... [[2]](#2)") and split it into two matches and two groups
+  # Match 1: ["The malware installs an open-source program called mitmproxy.", "1"]
+  # Match 2: ["Additionally it also does ....", "2"]
+  DescRegex: '(.+?) \[\[(\d+)\]\]\(#\d+\) {0,}'
+
+  # Given this example: <a name="1">[1]</a> https://www.cisa.gov/uscert/ncas/alerts/AA18-337A
+  # The ReferenceRegex will have the following matched group
+  # Group 1: https://www.cisa.gov/uscert/ncas/alerts/AA18-337A
+  ReferenceRegex: '<a name="\d+">\[\d+\]<\/a> (.*)'
+
+  HeaderStr: |
+    <table>
+    <tr>
+    <td><b>ID</b></td>
+    <td><b>{}</b></td>
+    </tr>
+    <tr>
+    <td><b>Aliases</b></td>
+    <td><b>{}</b></td>
+    </tr>
+    <tr>
+    <td><b>Platforms</b></td>
+    <td><b>{}</b></td>
+    </tr>
+    <tr>
+    <td><b>Year</b></td>
+    <td><b>{}</b></td>
+    </tr>
+    <tr>
+    <td><b>Associated ATT&CK Software</b></td>
+    <td><b>{}</b></td>
+    </tr>
+    </table>
+  TitleStr: '# {}'
+  BehavTableStr: '|Name|Use|'
+  BehavStr: '|[{} ({})]({})|{}|'
+  BehavDescStr: '{} [[{}]](#{}) '
+  ReferenceStr: '<a name="{}">[{}]</a> {}'
+  TableStr: '|---|---|'
+  IoCStr: '- {}'
+  SHAStr: 'SHA256 Hashes'
+
+  capaRefStr: 'capa v4.0, analyzed at MITRE on 10/12/2022'
+
+capaPath: '/home/ryan/MBC/capa-rules/'
+attackLink: 'https://attack.mitre.org/techniques/'
