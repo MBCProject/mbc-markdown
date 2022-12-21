@@ -41,6 +41,7 @@ See ATT&CK: **Create or Modify System Process::Windows Service ([T1543.003](http
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Locates an inactive driver service to Hijack and set it to start automatically [[3]](#3)|
 |[**Conficker**](../xample-malware/conficker.md)|2008|--|Copies itself into the $systemroot%\system32 directory and registers as a service  [[4]](#4)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon enables the RemoteRegistry service to allow remote registry modification [[5]](#5)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus disables Windows AutoUpdate and patches the first byte of TerminateProcess and TerminateThread API with c3 (RET Instruction) to prevent external processes from terminating the running instance of malware. [[6]](#6)|
 
 ## References
 
@@ -53,3 +54,5 @@ See ATT&CK: **Create or Modify System Process::Windows Service ([T1543.003](http
 <a name="4">[4]</a> https://en.wikipedia.org/wiki/Conficker
 
 <a name="5">[5]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-returns-to-wipe-systems-in-middle-east-europe/
+
+<a name="6">[6]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
