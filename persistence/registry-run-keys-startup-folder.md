@@ -50,6 +50,7 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 |[**DarkComet**](../xample-malware/darkcomet.md)|2008|--|adds several registry entries to enable automatic execution at startup  [[12]](#12)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|--|To start itself at system boot, Emotet adds the downloaded payload to the registry to maintain persistence [[13]](#13)|
 |[**Bagle**](../xample-malware/bagle.md)|2004|--|Adds registry keys to enable its automatic execution at every system startup  [[14]](#14)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Adds registry keys to enable  execution at system startup  [[15]](#15)|
 
 ## References
 
@@ -80,3 +81,5 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 <a name="13">[13]</a> https://cofense.com/recent-geodo-malware-campaigns-feature-heavily-obfuscated-macros/
 
 <a name="14">[14]</a> https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/WORM_BAGLE.U/
+
+<a name="15">[15]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
