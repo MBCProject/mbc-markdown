@@ -45,6 +45,7 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 |[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|Can download files from remote repository upon instruction  [[4]](#4)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Creates a folder on remote computers and then copies its executables (Shamoon and Filerase) into that directory  [[5]](#5)|
 |[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar requests a file using SSL to a C2 domain [[6]](#6)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus downloads its latest version from a remote server [[7]](#7)|
 
 
 ## References
@@ -60,3 +61,5 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 <a name="5">[5]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-attackers-employ-new-tool-kit-to-wipe-infected-systems/
 
 <a name="6">[6]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke
+
+<a name="7">[7]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
