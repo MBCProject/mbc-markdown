@@ -62,6 +62,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |[**GotBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR performs several checks on the compromised machine to avoid being emulated or executed in a sandbox. [[5]](#5)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware check for sandboxes that suppress errors returned from API routine calls the using ZwGetWriteWatch routine. [[6]](#6)|
 |[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny hooks time retrieval APIs and calls each API twice to calculate a delta. Execution aborts depending on the delta value [[7]](#7)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus uses GetModuleHandle API to check for the presence of a sandbox [[8]](#8)|
 
 
 ## Detection
@@ -127,3 +128,5 @@ mov     bl, 1
 <a name="6">[6]</a> https://blogs.cisco.com/security/talos/rombertik
 
 <a name="7">[7]</a> https://web.archive.org/web/20150311013500/http://www.cyphort.com/evilbunny-malware-instrumented-lua/
+
+<a name="8">[8]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
