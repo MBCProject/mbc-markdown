@@ -80,6 +80,7 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 |**Fake Adobe Flash Update OS X**|February 2016|--|[[2]](#2)|
 |**Dridex**|March 2015|--|[[3]](#3)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFICE. [[6]](#6)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus uses GetModuleHandle API to check for the presence of a debugger [[7]](#7)|
 
 ## References
 
@@ -94,3 +95,5 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 <a name="5">[5]</a> https://search.unprotect.it/map/
 
 <a name="6">[6]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
+
+<a name="7">[7]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
