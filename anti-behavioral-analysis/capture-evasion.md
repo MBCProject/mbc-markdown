@@ -46,8 +46,12 @@ Malware has characteristics enabling it to evade capture from the infected syste
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus is downloaded in an encrypted form [[1]](#1)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus is downloaded in an encrypted form. [[1]](#1)|
+
+|[**TEARDROP**](../xample-malware/teardrop.md)|2018|--|TEARDROP loads its payload only into memory. [[2]](#2)|
 
 ## References
 
 <a name="1">[1]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
+
+<a name="2">[2]</a> https://www.cisa.gov/uscert/ncas/analysis-reports/ar21-039b
