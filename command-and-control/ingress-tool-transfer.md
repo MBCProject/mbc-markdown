@@ -40,12 +40,13 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 |---|---|---|---|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy implant is running on the target machine, the attacker can use a Windows GUI controller to control the target computer. [[1]](#1)|
-|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware receives a public key from the C2 [[2]](#2)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|--|The malware receives data from C2 [[3]](#3)|
-|[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|Can download files from remote repository upon instruction  [[4]](#4)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Creates a folder on remote computers and then copies its executables (Shamoon and Filerase) into that directory  [[5]](#5)|
-|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar requests a file using SSL to a C2 domain [[6]](#6)|
-|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus downloads its latest version from a remote server [[7]](#7)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware receives a public key from the C2. [[2]](#2)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|The malware receives data from C2. [[3]](#3)|
+|[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|Can download files from remote repository upon instruction.  [[4]](#4)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Creates a folder on remote computers and then copies its executables (Shamoon and Filerase) into that directory.  [[5]](#5)|
+|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar requests a file using SSL to a C2 domain. [[6]](#6)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus downloads its latest version from a remote server. [[7]](#7)|
+|[**TEARDROP**](../xample-malware/teardrop.md)|2018|--|TEARDROP decrypts embedded code buffer which is a Cobalt Strike RAT. [[8]](#8)|
 
 
 ## References
@@ -63,3 +64,5 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 <a name="6">[6]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke
 
 <a name="7">[7]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
+
+<a name="8">[8]</a> https://www.cisa.gov/uscert/ncas/analysis-reports/ar21-039b
