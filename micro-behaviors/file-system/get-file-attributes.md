@@ -28,4 +28,19 @@
 
 # Get File Attributes
 
-Malware gets the attributes of a file. 
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|C0049|Get file attributes (This capa rule had 2 matches) [[1]](#1)|
+|[**DNSChanger**](../xample-malware/dnschanger.md)|2011|C0049|Get file attributes (This capa rule had 1 match) [[1]](#1)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|C0049|Get file attributes (This capa rule had 10 matches) [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0049|Get file attributes (This capa rule had 3 matches) [[1]](#1)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|C0049|Get file attributes (This capa rule had 2 matches) [[1]](#1)|
+|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|C0049|Get file attributes (This capa rule had 7 matches) [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

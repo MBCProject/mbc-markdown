@@ -61,13 +61,12 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Ursnif**](../xample-malware/ursnif.md)|May 2016|--|Ursnif uses malware macros to evade sandbox detection. [[2]](#2)|
-|[**Terminator**](../xample-malware/terminator.md)|October 2013|--|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[3]](#3)|
+|[**Terminator**](../xample-malware/terminator.md)|October 2013|B0003.003|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[3]](#3)|
 |**Nap**|2013|--|Trojan Nap (tied to the Kelihos Botnet) uses extended sleep calls to evade sandbox analysis. [[3]](#3)|
 |**Smokeloader**|2019|--|Smokeloader drops a copy of ntdll.dll to %APPDATA%\Local\Temp\ [[4]](#4)|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Evades dynamic analysis.)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware stalls by writing a byte of random data to memory 960 million times which complicates analysis. It also calls specific Windows API functions [[5]](#5)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Uses numerous printf loops to delay the execution process and overload the sandbox with junk data (API Hammering) [[6]](#6)|
-
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|B0003|Evades dynamic analysis. [[7]](#7)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0003.002, B0003.011|Please see the Rombertik malware page for details. [[5]](#5)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|B0003.012|Uses numerous printf loops to delay the execution process and overload the sandbox with junk data (API Hammering) [[6]](#6)|
 
 ## References
 
@@ -82,3 +81,8 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 <a name="5">[5]</a> https://blogs.cisco.com/security/talos/rombertik
 
 <a name="6">[6]</a> https://www.joesecurity.org/blog/498839998833561473
+
+<a name="7">[7]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+
+<a name="8">[8]</a> https://www.mandiant.com/resources/hot-knives-through-butter-evading-file-based-sandboxes
+

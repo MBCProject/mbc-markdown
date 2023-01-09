@@ -35,4 +35,15 @@ Malware modifies environment variables.
 |Name|ID|Description|
 |---|---|---|
 |**Set Variable**|C0034.001|Malware sets an environment variable.|
-|**Get Variable**|C0034.002|Malware gets an environment variable.|
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Kovter**](../xample-malware/kovter.md)|2016|C0034.001|Set environment variable (This capa rule had 3 matches) [[1]](#1)|
+|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|C0034.001|Set environment variable (This capa rule had 1 match) [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

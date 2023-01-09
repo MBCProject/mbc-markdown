@@ -44,6 +44,14 @@ Some methods apply to both types of disassemblers; others apply to one type and 
 |**VBA Stomping**|B0012.005|Typically, VBA source code is compiled into p-code, which is stored with compressed sourced code in the OLE file with VBA macros. VBA Stomping - when the VBA source code is removed and only the p-code remains - makes analysis much harder. See [[3]](#3) for an analysis of a VBA-Stomped malicious VBA Office document. See [[4]](#4) for information on Evil Clippy, a tool that creates malicious MS Office documents.|
 |**Value Dependent Jumps**|B0012.003|Explicit use of computed values for control flow, often in the same basic block or function.|
 
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|B0012.001|Contain obfuscated stackstrings (This capa rule had 3 matches) [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0012.001|Contain obfuscated stackstrings (This capa rule had 1 match) [[6]](#6)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0012.001|Contain obfuscated stackstrings (This capa rule had 1 match) [[6]](#6)|
+
 ## References
 
 <a name="1">[1]</a> http://staff.ustc.edu.cn/~bjhua/courses/security/2014/readings/anti-disas.pdf
@@ -54,4 +62,7 @@ Some methods apply to both types of disassemblers; others apply to one type and 
 
 <a name="4">[4]</a> https://boingboing.net/2019/05/05/p-code-r-us.html
 
-<a name="5">[5]</a> https://www.ndss-symposium.org/wp-content/uploads/2020/04/bar2020-23004-paper.pdf
+<a name="5">[5]</a> https://www.ndss-symposium.org/wp-content/uploads/2020/04/bar2020-23004-paper.pd
+
+<a name="6">[6]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

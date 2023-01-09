@@ -43,8 +43,9 @@ Behaviors that obstruct analysis in an emulator.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Evades emulator-based analysis. [[1]](#1)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|B0005|Evades emulator-based analysis. [[1]](#1)|
 
 ## References
 
 <a name="1">[1]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+

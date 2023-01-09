@@ -49,6 +49,14 @@ Malware may decrypt data.
 |**Stream Cipher**|C0031.013|Malware decrypts data encrypted with a stream cipher.|
 |**Twofish**|C0031.014|Malware decrypts data encrypted with the Twofish algorithm.|
 
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0031|Encrypt or decrypt via WinCrypt (This capa rule had 1 match) [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|C0031|Encrypt or decrypt via WinCrypt (This capa rule had 1 match) [[1]](#1)|
+
 ## Code Snippets
 
 ### C0031
@@ -106,4 +114,8 @@ pop     ebx
 retn
 
 </pre>
-</details>
+
+## References
+
+<a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

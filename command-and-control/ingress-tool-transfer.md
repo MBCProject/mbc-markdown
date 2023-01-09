@@ -38,14 +38,13 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites. [[7]](#7)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy implant is running on the target machine, the attacker can use a Windows GUI controller to control the target computer. [[1]](#1)|
 |[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware receives a public key from the C2 [[2]](#2)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|--|The malware receives data from C2 [[3]](#3)|
-|[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|Can download files from remote repository upon instruction  [[4]](#4)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Creates a folder on remote computers and then copies its executables (Shamoon and Filerase) into that directory  [[5]](#5)|
-|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar requests a file using SSL to a C2 domain [[6]](#6)|
-
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|E1105|Creates a folder on remote computers and then copies its executables (Shamoon and Filerase) into that directory  [[5]](#5)|
+|[**CozyCar**](../xample-malware/cozycar.md)|2010|E1105|CozyCar requests a file using SSL to a C2 domain [[6]](#6)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|E1105|Can download files from remote repository upon instruction  [[4]](#4)|
 
 ## References
 
@@ -60,3 +59,6 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 <a name="5">[5]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-attackers-employ-new-tool-kit-to-wipe-infected-systems/
 
 <a name="6">[6]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke
+
+<a name="7">[7]</a> https://www.trendmicro.com/en_us/research/18/k/trickbot-shows-off-new-trick-password-grabber-module.html
+

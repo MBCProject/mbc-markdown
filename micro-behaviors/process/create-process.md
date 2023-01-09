@@ -43,9 +43,22 @@ Malware creates a process.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet will use WMI operations with the explorere.exe token in order to copy itself and exscute on the remote share  [[1]](#1)|
-
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|C0017.002|Stuxnet will use WMI operations with the explorere.exe token in order to copy itself and exscute on the remote share  [[1]](#1)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0017|Create process on Windows (This capa rule had 2 matches) [[2]](#2)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|C0017|Create process on Windows (This capa rule had 6 matches) [[2]](#2)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|C0017|Create process on Windows (This capa rule had 4 matches) [[2]](#2)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|C0017|Create process on Windows (This capa rule had 4 matches) [[2]](#2)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0017|Create process on Windows (This capa rule had 9 matches) [[2]](#2)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|C0017|Create process on Windows (This capa rule had 22 matches) [[2]](#2)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|C0017|Create process on Windows (This capa rule had 1 match) [[2]](#2)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|C0017, C0017.003|Please see the Redhip malware page for details. [[2]](#2)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|C0017|Create process on Windows (This capa rule had 2 matches) [[2]](#2)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|C0017, C0017.003|Please see the TrickBot malware page for details. [[2]](#2)|
+|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|C0017|Create process on Windows (This capa rule had 3 matches) [[2]](#2)|
 
 ## References
 
 <a name="1">[1]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
+
+<a name="2">[2]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

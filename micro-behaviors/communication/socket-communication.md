@@ -60,8 +60,14 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**SYNfulKnock**](../../xample-malware/synful-knock.md)|2015|--|To initiate communication with the C2 server, a uniquely crafted TCP SYN packet is sent to port 80 of the "implanted" router  [[1]](#1)|
-
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0001.010|Create UDP socket (This capa rule had 1 match) [[2]](#2)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|C0001.011|Create TCP socket (This capa rule had 1 match) [[2]](#2)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|C0001.009|Initialize Winsock library (This capa rule had 1 match) [[2]](#2)|
+|[**SYNful Knock**](../xample-malware/synful-knock.md)|2015|C0001.014|To initiate communication with the C2 server, a uniquely crafted TCP SYN packet is sent to port 80 of the "implanted" router  [[1]](#1)|
 
 ## References
 
 <a name="1">[1]</a> https://www.mandiant.com/resources/synful-knock-acis
+
+<a name="2">[2]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

@@ -42,9 +42,11 @@ Polymorphic code, a file with the same functionality but different execution, is
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny utilizes Lua scripts to exhibit polymorphism [[2]](#2)|
+|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|B0029|EvilBunny utilizes Lua scripts to exhibit polymorphism [[2]](#2)|
 
 ## References
 
 <a name="1">[1]</a> https://www.mccormick.northwestern.edu/eecs/documents/tech-reports/2010-2014/evaluating-android-anti-malware-against-transformation-attacks.pdf
+
 <a name="2">[2]</a> https://web.archive.org/web/20150311013500/http://www.cyphort.com/evilbunny-malware-instrumented-lua/
+

@@ -36,10 +36,10 @@ This behavior is related to the **Phishing ([T1566](https://attack.mitre.org/tec
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut probes the infected system's SMTP port 25 by sending a test SMTP transaction to mail.ru and hotmail.com. If port 25 is open, the bot requests the spam template and email list, which it uses to send spam. [[1]](#1)|
-|[**Bagle**](../xample-malware/bagle.md)|2004|--|Bagle uses its own SMTP engine to mass-mail itself as an attachment from an infected computer. [[2]](#2)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
-|[**Emotet**](../xample-malware/emotet.md)|2018|--|spam email with the Emotet loader is sent automatically [[3]](#3)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|B0020|Gamut probes the infected system's SMTP port 25 by sending a test SMTP transaction to mail.ru and hotmail.com. If port 25 is open, the bot requests the spam template and email list, which it uses to send spam. [[1]](#1)|
+|[**Bagle**](../xample-malware/bagle.md)|2004|B0020|Bagle uses its own SMTP engine to mass-mail itself as an attachment from an infected computer. [[2]](#2)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites. [[4]](#4)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|B0020|Spam email with the Emotet loader is sent automatically [[3]](#3)|
 
 ## References
 
@@ -48,3 +48,6 @@ This behavior is related to the **Phishing ([T1566](https://attack.mitre.org/tec
 <a name="2">[2]</a> https://en.wikipedia.org/wiki/Bagle_(computer_worm)
 
 <a name="3">[3]</a> https://securelist.com/the-banking-trojan-emotet-detailed-analysis/69560/
+
+<a name="4">[4]</a> https://www.trendmicro.com/en_us/research/18/k/trickbot-shows-off-new-trick-password-grabber-module.html
+

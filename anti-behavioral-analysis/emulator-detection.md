@@ -44,6 +44,7 @@ Detects whether the malware instance is being executed inside an emulator. If so
 |**Failed Network Connections**|B0004.004|Some emulated systems fail to handle some network communications; such failures will indicate the emulated environment.|
 
 ## Detection
+
 |Tool: capa|Mapping|APIs|
 |---|---|---|
 |[check if process is running under wine](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-emulation/wine/check-if-process-is-running-under-wine.yml)|Emulator Detection (B0007)|GetModuleHandle, GetProcAddress|

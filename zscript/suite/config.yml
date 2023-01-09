@@ -4,6 +4,29 @@ MBCdir:
   objectives: ['anti-behavioral-analysis', 'anti-static-analysis', 'collection', 'command-and-control', 'credential-access', 'defense-evasion', 'discovery', 'execution', 'exfiltration', 'impact', 'lateral-movement', 'micro-behaviors', 'persistence', 'privilege-escalation']
   micro-behaviors: ['communication', 'cryptography', 'data', 'file-system', 'hardware', 'memory', 'operating-system', 'process']
 
+Behavior:
+  TitleRegex: '^# (.*)'
+  MethodRegex: '## Methods'
+  MalwareRegex: '## Use in Malware'
+  SnippetRegex: '## Code Snippets'
+  DetectionRegex: '## Detection'
+  ReferencesRegex: '## References'
+
+  # Given this example: |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware injects itself into a browser and captures user input data [[1]](#1)|
+  # Group 1: Rombertik
+  # Group 2: ../xample-malware/rombertik.md
+  # Group 3: 2015
+  # Group 4: --
+  # Group 5: The malware injects itself into a browser and captures user input data [[1]](#1)
+  UseinMalwareRegex: '\|\[\*\*(.*?)\*\*\]\((.*?)\)\|(.*?)\|(.*?)\|(.*?)\|'
+  UseinMalwareRegex2: '\|\*\*(.*?)\*\*\|(.*?)\|(.*?)\|(.*?)\|'
+
+  UseinMalwareTableStr1: '|Name|Date|Method|Description|'
+  UseinMalwareTableStr2: '|---|---|---|---|'
+  UseinMalwareStr: '|[**{}**]({})|{}|{}|{}|'
+  UseinMalwareStr2: '|**{}**|{}|{}|{}|'
+  UseinMalwareDescStr: '{} [[{}]](#{}) '
+  UseinMalwarePluralDesc: 'Please see the {} malware page for details.'
 
 Malware:
   HeaderRegex: '{}<\/b><\/td>\n<td><b>(.*?)<' # Needs to include a .format("{}") ID/Aliases/Platforms/Year/Associated ATT&CK Software

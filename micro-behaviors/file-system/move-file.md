@@ -28,4 +28,19 @@
 
 # Move File
 
-Malware moves a file. 
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Gamut**](../xample-malware/gamut.md)|2014|C0063|Move file (This capa rule had 1 match) [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0063|Move file (This capa rule had 1 match) [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|C0063|Move file (This capa rule had 24 matches) [[1]](#1)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|C0063|Move file (This capa rule had 2 matches) [[1]](#1)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|C0063|Move file (This capa rule had 2 matches) [[1]](#1)|
+|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|C0063|Move file (This capa rule had 2 matches) [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

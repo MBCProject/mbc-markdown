@@ -39,3 +39,15 @@ The DNS Communication micro-behavior focuses on DNS communication.
 |**Resolve Free Hosting Domain**|C0011.005|Resolves a free hosting domain (e.g., freeiz.com).|
 |**Resolve TLD**|C0011.004|Resolves top level domain.|
 |**Server Connect**|C0011.002|Connects to DNS server.|
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0011.001|Resolve DNS (This capa rule had 1 match) [[1]](#1)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|C0011.001|Resolve DNS (This capa rule had 1 match) [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
