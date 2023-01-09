@@ -45,7 +45,6 @@ See ATT&CK: **Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/te
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|F0002, F0002.002|Please see the Hupigon malware page for details. [[1]](#1)|
-|[**UP007**](../xample-malware/up007.md)|2016|--|The malware logs keystrokes to a file  [[2]](#2)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|F0002|Keylogger plugin allows for collection of keystrokes [[3]](#3)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|F0002|Can capture keystrokes  [[5]](#5)|
 |[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|F0002|CHOPSTICK collects user keystrokes [[6]](#6)|

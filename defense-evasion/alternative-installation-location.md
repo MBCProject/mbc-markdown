@@ -42,7 +42,6 @@ Malware may install itself not as a file on the hard drive. [[1]](#1)
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Kovter**](../xample-malware/kovter.md)|2016|B0027.002|Stores malware files in the Registry instead of the hard drive. [[1]](#1)|
-|[**SYNfulKnock**](../xample-malware/synful-knock.md)|2015|--|100 memory-resident modules can be installed  [[2]](#2)|
 |[**SYNful Knock**](../xample-malware/synful-knock.md)|2015|B0027.001|100 memory-resident modules can be installed  [[2]](#2)|
 
 ## References

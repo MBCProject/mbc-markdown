@@ -61,7 +61,6 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|E1027.m02|Trojan spyware program that has mainly been used for targeting banking sites. [[4]](#4)|
-|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy variant encrypts all its strings. [[6]](#6)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|E1027|Obfuscates files. [[5]](#5)|
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|E1027|GoBotKR uses base64 to obfuscate strings, commands and files. [[1]](#1)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|E1027|The malware will use a key to decrypt text from a URL to create more malicious code [[2]](#2)|

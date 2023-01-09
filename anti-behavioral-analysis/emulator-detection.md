@@ -49,12 +49,6 @@ Detects whether the malware instance is being executed inside an emulator. If so
 |---|---|---|
 |[check if process is running under wine](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-emulation/wine/check-if-process-is-running-under-wine.yml)|Emulator Detection (B0007)|GetModuleHandle, GetProcAddress|
 
-## Use in Malware
-
-|Name|Date|Method|Description|
-|---|---|---|---|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet checks for specific operating systems on 32-bit machines, registry keys, and dates to profile a potential target machine before execution. If the conditions are not met to be considered a viable target, it will exit execution  [[2]](#2)|
-
 ## References
 
 <a name="1">[1]</a> https://search.unprotect.it/map/sandbox-evasion/

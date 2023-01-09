@@ -37,19 +37,17 @@ See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites. [[9]](#9)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[1]](#1)|
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|E1112|GoBotKR can modify registry keys to disable Task Manager, Registry Editor and Command Prompt. [[2]](#2)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|E1112|The malware adds many entries to the registry [[3]](#3)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|E1112|The malware adds a registry key [[4]](#4)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|E1112|The malware modifies the registry during execution [[5]](#5)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|E1112|Disables remote user account control by enabling the registry key LocalAccountTokenFilterPolicy  [[6]](#6)|
 |[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|E1112|CHOPSTICK may encrypt and store configuration data inside a registry key [[7]](#7)|
-|[**Clipminer**](../xample-malware/clipminer.md)|2011|E1112|Clipminer edits the registry [[8]](#8)|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|E1112|Clipminer edits the registry [[1]](#1)|
 
 ## References
 
-<a name="1">[1]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
+<a name="1">[1]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking
 
 <a name="2">[2]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
 
@@ -63,9 +61,4 @@ See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112
 
 <a name="7">[7]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
 
-<a name="8">[8]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking
-
-<a name="9">[9]</a> https://www.trendmicro.com/en_us/research/18/k/trickbot-shows-off-new-trick-password-grabber-module.html
-
-<a name="10">[10]</a> https://labs.vipre.com/analysis-of-kovter-a-very-clever-piece-of-malware/#:~:text=Kovter%20copies%20the%20fileless%20persistence,written%20on%20to%20the%20filesystem.
 

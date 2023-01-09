@@ -42,7 +42,6 @@ Malware that installs another component is called a "dropper." If the code is co
 |[**MazarBot**](../xample-malware/mazarbot.md)|2016|B0023|Installs a backdoor. [[8]](#8)|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|B0023|Malware contains a dropper that installs additional programs like Cbrom.exe. [[9]](#9)|
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|B0023|Can download and install arbitrary iOS apps. [[10]](#10)|
-|[**UP007**](../xample-malware/up007.md)|2016|--|The malware is a dropper that creates multiple files [[4]](#4)|
 |[**CozyCar**](../xample-malware/cozycar.md)|2010|B0023|Upon execution, CozyCar drops a decoy file and a secondary dropper [[5]](#5)|
 |[**Clipminer**](../xample-malware/clipminer.md)|2011|B0023|Clipminer drops a file masquerading as a Control Panel (CPL) file [[6]](#6)|
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|B0023|Contain an embedded PE file (This capa rule had 1 match) [[11]](#11)|

@@ -57,7 +57,6 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**UP007**](../xample-malware/up007.md)|April 2016|--|Injects secondary payload into memory. [[4]](#4)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|E1055|Trojan spyware program that has mainly been used for targeting banking sites. [[11]](#11)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|E1055|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|E1055|Injects minor code into a running process. [[12]](#12)|
@@ -93,6 +92,4 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 <a name="11">[11]</a> https://www.trendmicro.com/en_us/research/18/k/trickbot-shows-off-new-trick-password-grabber-module.html
 
 <a name="12">[12]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
-
-<a name="13">[13]</a> https://www.cybereason.com/blog/research/dropping-anchor-from-a-trickbot-infection-to-the-discovery-of-the-anchor-malware
 

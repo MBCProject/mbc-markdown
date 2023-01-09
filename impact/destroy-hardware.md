@@ -44,5 +44,3 @@ Destroys a physical piece of hardware. For example, malware may cause hardware t
 
 <a name="1">[1]</a> https://www.bbc.com/timelines/zc6fbk7
 
-<a name="2">[2]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
-
