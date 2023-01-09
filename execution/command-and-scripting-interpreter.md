@@ -36,15 +36,15 @@ See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.or
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[1]](#1)|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|From the command line, drops and unzips a password-protected Cabinet archive file. [[1]](#1)|
-|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR uses cmd.exe to execute commands. [[2]](#2)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|--|The malware executes malicious javascript and powershell [[3]](#3)|
-|[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam uses a batch file for executing the malware and deleting certain components   [[4]](#4)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|The wiper component of Shamoon creates a service to run the driver with the command: sc create hdv_725x type= kernel start= demand binpath= WINDOWS\hdv_725x.sys 2>&1 >nul and sends an additional reboot command after completion [[5]](#5)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet will store and execute SQL code that will extract and execute Stuxnet from the saved CAB file using xp_cmdshell  [[6]](#6)|
-|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny executes Lua scripts [[7]](#7)|
-|[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker is written and executed in Powershell [[8]](#8)|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|E1059|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[1]](#1)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|E1059|From the command line, drops and unzips a password-protected Cabinet archive file. [[1]](#1)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|E1059|GoBotKR uses cmd.exe to execute commands. [[2]](#2)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|E1059|The malware executes malicious javascript and powershell [[3]](#3)|
+|[**SamSam**](../xample-malware/samsam.md)|2015|E1059|SamSam uses a batch file for executing the malware and deleting certain components   [[4]](#4)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|E1059|The wiper component of Shamoon creates a service to run the driver with the command: sc create hdv_725x type= kernel start= demand binpath= WINDOWS\hdv_725x.sys 2>&1 >nul and sends an additional reboot command after completion [[5]](#5)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1059|Stuxnet will store and execute SQL code that will extract and execute Stuxnet from the saved CAB file using xp_cmdshell  [[6]](#6)|
+|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|E1049|EvilBunny executes Lua scripts [[7]](#7)|
+|[**Netwalker**](../xample-malware/netwalker.md)|2020|E1049|Netwalker is written and executed in Powershell [[8]](#8)|
 
 ## References
 
@@ -63,3 +63,6 @@ See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.or
 <a name="7">[7]</a> https://web.archive.org/web/20150311013500/http://www.cyphort.com/evilbunny-malware-instrumented-lua/
 
 <a name="8">[8]</a> https://www.trendmicro.com/en_us/research/20/e/netwalker-fileless-ransomware-injected-via-reflective-loading.html
+
+<a name="9">[9]</a> https://blog.malwarebytes.com/threat-analysis/2016/07/untangling-kovter/
+

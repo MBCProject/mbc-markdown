@@ -46,9 +46,9 @@ See ATT&CK: **Hide Artifacts: Hidden Files and Directories ([T1564.001](https://
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|--| GoBotKR stores itself in a file with Hidden and System attributes. [[1]](#1)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Modifies target files' time to August 2012 as an antiforensic trick  [[2]](#2)|
-|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK creates a hidden file for temporary storage [[3]](#3)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|F0005| GoBotKR stores itself in a file with Hidden and System attributes. [[1]](#1)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|F0005.004|Modifies target files' time to August 2012 as an antiforensic trick  [[2]](#2)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|F0005|CHOPSTICK creates a hidden file for temporary storage [[3]](#3)|
 
 ## References
 
@@ -56,4 +56,5 @@ See ATT&CK: **Hide Artifacts: Hidden Files and Directories ([T1564.001](https://
 
 <a name="2">[2]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-returns-to-wipe-systems-in-middle-east-europe/
 
-<a name="3">[]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
+<a name="3">[3]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
+

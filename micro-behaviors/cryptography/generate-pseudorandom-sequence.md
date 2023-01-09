@@ -38,4 +38,15 @@ The Generate Pseudo-random Sequence microbehavior can be used for a number of pu
 |**Use API**|C0021.003|Malware generates a pseudo-random sequence using a Windows API.|
 |**rand**|C0021.002|Malware generates a pseudo-random sequence using rand.|
 |**RC4 PRGA**|C0021.004|Malware generates a pseudo-random sequence using the RC4 Pseudo Random (Byte) Generation Algorithm (PRGA).|
-|**Mersenne Twister**|C0021.005|Malware generates a pseudo-random sequence using the Mersenne Twister PRNG.|
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0021.003|Generate random numbers via WinAPI (This capa rule had 1 match) [[1]](#1)|
+|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|C0021.003|Generate random numbers via WinAPI (This capa rule had 1 match) [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

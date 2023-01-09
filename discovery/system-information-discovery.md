@@ -42,14 +42,14 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Learns about the system so it can drop compatible miner software.|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Uses windows command prompt commands to gather system info, task list, installed drivers, and installed programs  [[1]](#1)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|uses Systeminfo to gather OS version, system configuration, BIOS, the motherboard, and processor [ [[2]](#2)|
-|[**DarkComet**](../xample-malware/darkcomet.md)|2008|--|Can collect information about the compter, resources, and operating system version  [[3]](#3)|
-|[**Emotet**](../xample-malware/emotet.md)|2018|--|Collects information related to OS, processes, and sometimes mail client information and sends it to c2 [[4]](#4)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Gathers information (OS version, workgroup status, computer name, domain/workgroup name, file name of infected project file) about each computer in the net to spread itself  [[5]](#5)|
-|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK collects information from the host including Windows version, CPU architecture, and UAC settings [[6]](#6)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|E1082|Trojan spyware program that has mainly been used for targeting banking sites. [[7]](#7)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|E1082|Learns about the system so it can drop compatible miner software. [[8]](#8)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|E1082|Uses windows command prompt commands to gather system info, task list, installed drivers, and installed programs  [[1]](#1)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|E1082|Uses Systeminfo to gather OS version, system configuration, BIOS, the motherboard, and processor [ [[2]](#2)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|E1082|Collects information related to OS, processes, and sometimes mail client information and sends it to c2 [[4]](#4)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1082|Gathers information (OS version, workgroup status, computer name, domain/workgroup name, file name of infected project file) about each computer in the net to spread itself  [[5]](#5)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|E1082|CHOPSTICK collects information from the host including Windows version, CPU architecture, and UAC settings [[6]](#6)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|E1082|Can collect information about the compter, resources, and operating system version  [[3]](#3)|
 
 ## References
 
@@ -64,3 +64,8 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 <a name="5">[5]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
 
 <a name="6">[6]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
+
+<a name="7">[7]</a> https://www.trendmicro.com/en_us/research/18/k/trickbot-shows-off-new-trick-password-grabber-module.html
+
+<a name="8">[8]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+

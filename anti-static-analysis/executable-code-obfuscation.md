@@ -65,15 +65,8 @@ For encryption and encoding characteristics of malware samples, as well as malwa
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Heriplor**](../xample-malware/heriplor.md)|March 2019|--|The Heriplor Trojan uses API Hashing. [[1]](#1)|
-|[**Emotet**](../xample-malware/emotet.md)|2018|--|Emotet macros are heavily obfuscated with junk functions and string substitutions. [[2]](#2)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
-|[**Rombertik**](../anti-static-analysis/executable-code-obfuscation.md)|2015|--|Most of the malware file consists of unnecessary code or unnecessary data [[4]](#4)|
-|[**Ursnif**](../anti-static-analysis/executable-code-obfuscation.md)|2016|--|Creates an encrypted Registry key called TorClient to store its data [[5]](#5)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy variant encrypts all its strings [[6]](#6)|
-|[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam obfuscates functions, class names and strings, including the list of targeted file extensions, the help file contents and environment variables using DES encryption with a fixed hard-coded key and the IV  [[7]](#7)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|The configuration data block is encoded with a NOT XOR 0xFF operation  [[8]](#8)|
-
+|[**Emotet**](../xample-malware/emotet.md)|2018|B0032.007|Emotet macros are heavily obfuscated with junk functions and string substitutions. [[2]](#2)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0032.002|Most of the malware file consists of unnecessary code or unnecessary data [[1]](#1)|
 
 ## Code Snippets
 
@@ -140,18 +133,8 @@ jmp short loc_401326
 
 ## References
 
-<a name="1">[1]</a> https://insights.sei.cmu.edu/cert/2019/03/api-hashing-tool-imagine-that.html
+<a name="1">[1]</a> https://blogs.cisco.com/security/talos/rombertik
 
 <a name="2">[2]</a> https://cofense.com/recent-geodo-malware-campaigns-feature-heavily-obfuscated-macros/
 
 <a name="3">[3]</a> Rob Simmons, "Comparing Malicious Files," BSides, 2019. http://www.irongeek.com/i.php?page=videos/bsidescharm2019/2-04-comparing-malicious-files-robert-simmons
-
-<a name="4">[4]</a> https://blogs.cisco.com/security/talos/rombertik
-
-<a name="5">[5]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-variant-dreambot-adds-tor-functionality
-
-<a name="6">[6]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf
-
-<a name="7">[7]</a> https://blog.talosintelligence.com/2018/01/samsam-evolution-continues-netting-over.html
-
-<a name="8">[8]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en

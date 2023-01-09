@@ -28,4 +28,15 @@
 
 # Compression Library
 
-Malware uses a compression library.
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|C0060|Linked against ZLIB (This capa rule had 1 match) [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0060|Linked against ZLIB (This capa rule had 1 match) [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

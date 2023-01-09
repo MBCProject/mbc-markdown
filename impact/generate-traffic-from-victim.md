@@ -45,8 +45,9 @@ Malware may generate traffic from the victim system such as clicks of advertisin
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**DNSChanger**](../xample-malware/dnschanger.md)|November 2011|--|Alters DNS server settings to route to a rogue DNS server for the purpose of click hijacking. [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|--|Performs click-fraud. [[4]](#4)|
+|[**DNSChanger**](../xample-malware/dnschanger.md)|November 2011|E1643|Alters DNS server settings to route to a rogue DNS server for the purpose of click hijacking. [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|E1643|Performs click-fraud. [[4]](#4)|
+|[**YiSpecter**](../xample-malware/yispecter.md)|2015|E1643.m02|Displays brief advertisements whenever the user opens applications on their phone [[6]](#6)|
 
 ## References
 
@@ -57,3 +58,8 @@ Malware may generate traffic from the victim system such as clicks of advertisin
 <a name="3">[3]</a> https://www.huffingtonpost.com/2011/11/09/click-hijack-hackers-online-ad-scam_n_1084497.html
 
 <a name="4">[4]</a> https://www.bleepingcomputer.com/virus-removal/remove-kovter-trojan
+
+<a name="5">[5]</a> https://blog.malwarebytes.com/threat-analysis/2016/07/untangling-kovter/
+
+<a name="6">[6]</a> http://researchcenter.paloaltonetworks.com/2015/10/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
+

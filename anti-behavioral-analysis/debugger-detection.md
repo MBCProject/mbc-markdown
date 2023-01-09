@@ -82,11 +82,14 @@ Details on methods of detecting debuggers are given in the references; many are 
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Redhip**](../xample-malware/rebhip.md)|January 2011|--|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[4]](#4)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|--|The malware detects debuggers using an INT 03h trap and IsDebuggerPresent[[8]](#8)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|an anti-analysis function within the packer is called to check the username and filename of the executing process for strings like “malwar”, “sampl”, “viru”, and “sandb”. [[9]](#9)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy Variant checks for breakpoints and exits immediately if found [[10]](#10)|
-
+|[**Redhip**](../xample-malware/rebhip.md)|January 2011|B0001, B0001.035, B0001.032|Please see the Redhip malware page for details. [[4]](#4)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|B0001.006, B0001.008|Please see the Gamut malware page for details. [[8]](#8)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0001.016, B0001.038, B0001.032|Please see the Rombertik malware page for details. [[9]](#9)|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|B0001.005, B0001.008|Please see the Poison-Ivy malware page for details. [[10]](#10)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|B0001.032|Check for time delay via GetTickCount (This capa rule had 4 matches) [[11]](#11)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0001.034, B0001.025, B0001.032|Please see the Hupigon malware page for details. [[11]](#11)|
+|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|B0001.032|Check for time delay via GetTickCount (This capa rule had 1 match) [[11]](#11)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|B0001.028|Manipulates TLS Callbacks while injecting to child process [[12]](#12)|
 
 ## References
 
@@ -109,3 +112,8 @@ Details on methods of detecting debuggers are given in the references; many are 
 <a name="9">[9]</a> https://blogs.cisco.com/security/talos/rombertik
 
 <a name="10">[10]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf
+
+<a name="11">[11]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
+<a name="12">[12]</a> https://www.fireeye.com/blog/threat-research/2017/11/ursnif-variant-malicious-tls-callback-technique.html
+

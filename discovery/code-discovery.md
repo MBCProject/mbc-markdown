@@ -36,4 +36,24 @@ Malware may inspect code or enumerate aspects.
 |---|---|---|
 |**Enumerate PE Sections**|B0046.001|Malware enumerates virtual offsets of code sections.|
 |**Inspect Section Memory Permissions**|B0046.002|Malware identifies section memory permissions from image section header.|
-|**Parse PE Header**|B0046.003|Malware parses the PE header.|
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|B0046.001|Enumerate PE sections (This capa rule had 1 match) [[1]](#1)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|B0046.001|Enumerate PE sections (This capa rule had 1 match) [[1]](#1)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|B0046.001|Enumerate PE sections (This capa rule had 3 matches) [[1]](#1)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|B0046.001|Enumerate pe sections (this capa rule had 1 match) [[1]](#1)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|B0046.001|Enumerate PE sections (This capa rule had 1 match) [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0046.001|Enumerate PE sections (This capa rule had 3 matches) [[1]](#1)|
+|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|B0046.001|Enumerate PE sections (This capa rule had 2 matches) [[1]](#1)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|B0046.002|Inspect section memory permissions (This capa rule had 1 match) [[1]](#1)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|B0046.001|Enumerate PE sections (This capa rule had 1 match) [[1]](#1)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|B0046.002|Inspect section memory permissions (This capa rule had 2 matches) [[1]](#1)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|B0046.001|Enumerate PE sections (This capa rule had 1 match) [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

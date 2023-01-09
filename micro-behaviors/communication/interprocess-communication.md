@@ -38,3 +38,15 @@ The Interprocess Communication micro-behavior focuses on interprocess communicat
 |**Create Pipe**|C0003.001||
 |**Read Pipe**|C0003.003||
 |**Write Pipe**|C0003.004||
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0003.001, C0003.004|Please see the Hupigon malware page for details. [[1]](#1)|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|C0003.004|Write pipe (This capa rule had 1 match) [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
