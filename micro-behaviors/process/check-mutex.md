@@ -35,8 +35,13 @@ Malware checks a mutex.
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy variant checks if the wireshark-is-running{} named mutex object exists [[1]](#1)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware checks if multiple instances in the same mutex is running. If multiple instances are running, the malware exits. [[2]](#2) [[3]](#3)|
 
 
 ## References
 
 <a name="1">[1]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf
+
+<a name="2">[2]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
+
+<a name="3">[3]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
