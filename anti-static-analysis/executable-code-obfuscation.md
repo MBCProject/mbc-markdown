@@ -73,7 +73,7 @@ For encryption and encoding characteristics of malware samples, as well as malwa
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy variant encrypts all its strings [[6]](#6)|
 |[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam obfuscates functions, class names and strings, including the list of targeted file extensions, the help file contents and environment variables using DES encryption with a fixed hard-coded key and the IV  [[7]](#7)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|The configuration data block is encoded with a NOT XOR 0xFF operation  [[8]](#8)|
-|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The function to import APIs uses a hash value and the DLL name of the target API. The API address returned from the function is stored into a global variance. API calls are obfuscated in the same manner as the stack strings and are resolved dynamically as the malware needs to use them. [[9]](#9) [[10]](#10)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The function to import APIs uses a hash value and the DLL name of the target API. The API address returned from the function is stored into a global variance. API calls are obfuscated in the same manner as the stack strings and are resolved dynamically as the malware needs to use them. The malware encodes data in a stack string and copies that data into a global character buffer as a form of string obfuscation. The malware has 4 different export functions. [[9]](#9) [[10]](#10)|
 
 
 ## Code Snippets
