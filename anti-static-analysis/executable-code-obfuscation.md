@@ -73,6 +73,7 @@ For encryption and encoding characteristics of malware samples, as well as malwa
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy variant encrypts all its strings [[6]](#6)|
 |[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam obfuscates functions, class names and strings, including the list of targeted file extensions, the help file contents and environment variables using DES encryption with a fixed hard-coded key and the IV  [[7]](#7)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|The configuration data block is encoded with a NOT XOR 0xFF operation  [[8]](#8)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The function to import APIs uses a hash value and the DLL name of the target API. The API address returned from the function is stored into a global variance. API calls are obfuscated in the same manner as the stack strings and are resolved dynamically as the malware needs to use them. [[9]](#9) [[10]](#10)|
 
 
 ## Code Snippets
@@ -155,3 +156,7 @@ jmp short loc_401326
 <a name="7">[7]</a> https://blog.talosintelligence.com/2018/01/samsam-evolution-continues-netting-over.html
 
 <a name="8">[8]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
+
+<a name="9">[9]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
+
+<a name="10">[10]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
