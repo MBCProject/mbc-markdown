@@ -89,6 +89,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip detects VMWare, Virtual PC and Virtual Box. It also detects VM environments in general by considering timing lapses. [[6]](#6)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|--|Emotet checks for various processes that are associated with various virtual machines by comparing hash values of the process names with the hash values of the list of running process names [[7]](#7)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus checks for the presence of virtualization software by querying the system registry. [[8]](#8)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware checks if it is running in a sandbox. If it is, the malware exits. [[9]](#9) [[10]](#10)|
 
 
 ## Detection
@@ -156,3 +157,7 @@ jmp short loc_401CBB
 <a name="7">[7]</a> https://securelist.com/the-banking-trojan-emotet-detailed-analysis/69560/
 
 <a name="8">[8]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
+
+<a name="9">[9]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
+
+<a name="10">[10]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
