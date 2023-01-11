@@ -47,6 +47,7 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 |[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar requests a file using SSL to a C2 domain. [[6]](#6)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus downloads its latest version from a remote server. [[7]](#7)|
 |[**TEARDROP**](../xample-malware/teardrop.md)|2018|--|TEARDROP decrypts embedded code buffer which is a Cobalt Strike RAT. [[8]](#8)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware downloads DLLs from the hardcoded URL/remote server. [[9]](#9) [[10]](#10)|
 
 
 ## References
@@ -66,3 +67,7 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 <a name="7">[7]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
 
 <a name="8">[8]</a> https://www.cisa.gov/uscert/ncas/analysis-reports/ar21-039b
+
+<a name="9">[9]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
+
+<a name="10">[10]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
