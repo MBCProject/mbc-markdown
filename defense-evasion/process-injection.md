@@ -66,6 +66,7 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Bypasses UAC using a Shim Database instructing SndVol.exe to execute cmd.exe instead, allowing for elevated execution  [[8]](#8)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet injects the entire DLL into another process and then just calls the particular export  [[9]](#9)|
 |[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker uses reflective DLL loading to inject from memory [[10]](#10)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2020|--|Malware loader loads different parts of the malware from different DLLs. [[11]](#11) [12]](#12)|
 
 ## References
 
@@ -88,3 +89,7 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 <a name="9">[9]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
 
 <a name="10">[10]</a> https://www.trendmicro.com/en_us/research/20/e/netwalker-fileless-ransomware-injected-via-reflective-loading.html
+
+<a name="11">[11]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
+
+<a name="12">[12]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
