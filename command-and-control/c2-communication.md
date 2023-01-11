@@ -71,6 +71,7 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar communicates with a C2 server [[9]](#9)|
 |[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny communicates C2 via HTTP [[10]](#10)|
 |[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer communicates to a Tor Onion Service via HTTP [[11]](#11)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The malware sends collected data about the system to C2 server. The C2 server returns base64 encoded data containing the information about the next command for the loader. The payload is run by explorer.exe. [12]](#12) [[13]](#13)|
 
 ## Code Snippets
 
@@ -118,3 +119,7 @@ jmp short loc_4019A2
 <a name="10">[10]</a> https://web.archive.org/web/20150311013500/http://www.cyphort.com/evilbunny-malware-instrumented-lua/
 
 <a name="11">[11]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking
+
+<a name="12">[12]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
+
+<a name="13">[13]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
