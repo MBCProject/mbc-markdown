@@ -46,6 +46,7 @@ Malware that installs another component is called a "dropper." If the code is co
 |[**CozyCar**](../xample-malware/cozycar.md)|2010|--|Upon execution, CozyCar drops a decoy file and a secondary dropper [[5]](#5)|
 |[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer drops a file masquerading as a Control Panel (CPL) file [[6]](#6)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus downloads malware from other malware families [[7]](#7)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware drops the first loader which is responsible for loading the main loader into memory. [[8]](#8) [[9]](#9)|
 
 ## References
 
@@ -62,3 +63,7 @@ Malware that installs another component is called a "dropper." If the code is co
 <a name="6">[6]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking
 
 <a name="7">[7]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
+
+<a name="8">[8]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
+
+<a name="9">[9]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
