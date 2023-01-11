@@ -66,7 +66,7 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Bypasses UAC using a Shim Database instructing SndVol.exe to execute cmd.exe instead, allowing for elevated execution  [[8]](#8)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet injects the entire DLL into another process and then just calls the particular export  [[9]](#9)|
 |[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker uses reflective DLL loading to inject from memory [[10]](#10)|
-|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2020|--|Malware loader loads different parts of the malware from different DLLs. [[11]](#11) [12]](#12)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware loader loads different parts of the malware from different DLLs. [[11]](#11) [12]](#12)|
 
 ## References
 
