@@ -44,6 +44,7 @@ Malware may enumerate files and directories or may search for specific files or 
 |[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--| [[1]](#1)|
 |[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware searches for user files before encrypting them [[2]](#2)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Collects local files with specified file extensions and information from the victim's machine [[3]](#3)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware verifies that the folder from the first stage loader exists on the system. The malware also checks for the path for the Opera web browser. If it exists, the malware exits. [[4]](#4) [[5]](#5)|
 
 ## References
 
@@ -52,3 +53,7 @@ Malware may enumerate files and directories or may search for specific files or 
 <a name="2">[2]</a> https://www.secureworks.com/research/cryptolocker-ransomware
 
 <a name="3">[3]</a> https://www.securityartwork.es/wp-content/uploads/2017/07/Trickbot-report-S2-Grupo.pdf
+
+<a name="4">[4]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
+
+<a name="5">[5]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
