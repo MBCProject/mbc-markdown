@@ -48,9 +48,15 @@ Malware has characteristics enabling it to evade capture from the infected syste
 |---|---|---|---|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus is downloaded in an encrypted form. [[1]](#1)|
 |[**TEARDROP**](../xample-malware/teardrop.md)|2018|--|TEARDROP loads its payload only into memory. [[2]](#2)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware consists of 2 loaders. Malware downloads multiple payloads (as files and DLLs) that are stored in a memory buffer. [[3]](#3) [[4]](#4)|
+
 
 ## References
 
 <a name="1">[1]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
 
 <a name="2">[2]</a> https://www.cisa.gov/uscert/ncas/analysis-reports/ar21-039b
+
+<a name="3">[3]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
+
+<a name="4">[4]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
