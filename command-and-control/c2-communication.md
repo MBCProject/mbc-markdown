@@ -73,6 +73,7 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny communicates C2 via HTTP [[10]](#10)|
 |[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer communicates to a Tor Onion Service via HTTP [[11]](#11)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The malware sends collected data about the system to C2 server. The C2 server returns base64 encoded data containing the information about the next command for the loader. The payload is run by explorer.exe. [12]](#12) [[13]](#13)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut receives data from C2. [[15]](#15)|
 
 ## Code Snippets
 
@@ -126,3 +127,5 @@ jmp short loc_4019A2
 <a name="13">[13]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
 
 <a name="14">[14]</a> https://www.secureworks.com/research/cryptolocker-ransomware
+
+<a name="15">[15]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/
