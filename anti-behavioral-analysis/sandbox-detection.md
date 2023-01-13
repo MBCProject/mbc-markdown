@@ -61,7 +61,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Ursnif uses malware macros to evade sandbox detection.|
 |[**GotBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR performs several checks on the compromised machine to avoid being emulated or executed in a sandbox. [[5]](#5)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware check for sandboxes that suppress errors returned from API routine calls the using ZwGetWriteWatch routine. [[6]](#6)|
-|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny hooks time retrieval APIs and calls each API twice to calculate a delta. Execution aborts depending on the delta value [[7]](#7)|
+|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny hooks time retrieval APIs and calls each API twice to calculate a delta. Execution aborts depending on the delta value. [[7]](#7)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus uses GetModuleHandle API to check for the presence of a sandbox [[8]](#8)|
 
 
@@ -69,7 +69,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[check for microsoft office emulation](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-microsoft-office-emulation.yml)|[Sandbox Detection::Product Key/ID Testing (B0007.005)|CreateFile|
+|[check for microsoft office emulation](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-microsoft-office-emulation.yml)|Sandbox Detection::Product Key/ID Testing (B0007.005)|CreateFile|
 |[check for sandbox and av modules](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-av/check-for-sandbox-and-av-modules.yml)|Sandbox Detection (B0007)|GetModuleHandle|
 
 |Tool: CAPE|Mapping|APIs|
