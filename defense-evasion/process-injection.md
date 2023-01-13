@@ -61,7 +61,7 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Injects minor code into a running process.|
-|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--| [[6]](#6)|
+|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--|The malware injects code into a new svchost process. [[6]](#6)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|The malware injects itself into processes such as cmd.exe, notepad.exe [[7]](#7)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Bypasses UAC using a Shim Database instructing SndVol.exe to execute cmd.exe instead, allowing for elevated execution. BlackEnergy injects its dll component into svchost.exe. [[8]](#8)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet injects the entire DLL into another process and then just calls the particular export  [[9]](#9)|
