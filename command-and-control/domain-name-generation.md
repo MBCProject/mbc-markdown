@@ -38,7 +38,7 @@ The related **Dynamic Resolution: Domain Generation Algorithms ([T1568.002](http
 |---|---|---|---|
 |[**Kraken**](../xample-malware/kraken.md)|April 2008|--|Kraken uses a domain generating algorithm to provide new domains. [[2]](#2)|
 |[**Conficker**](../xample-malware/conficker.md)|November 2008|--|Conficker uses a domain name generator seeded by the current date to ensure that every copy of the virus generates the same names on their respective days. [[3]](#3)|
-|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware sends a hash value generated from system information [[4]](#4|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware uses an internal domain generation algorithm. [[4]](#4)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Ursnif has used a Domain name generation algorithm in the past [[5]](#5)|
 
 ## References
