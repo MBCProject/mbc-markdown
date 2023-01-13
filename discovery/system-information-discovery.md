@@ -50,6 +50,16 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1082|Gathers information (OS version, workgroup status, computer name, domain/workgroup name, file name of infected project file) about each computer in the net to spread itself  [[5]](#5)|
 |[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|E1082|CHOPSTICK collects information from the host including Windows version, CPU architecture, and UAC settings [[6]](#6)|
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|E1082|Can collect information about the compter, resources, and operating system version  [[3]](#3)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|E1082|Query environment variable (This capa rule had 1 match) [[9]](#9)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|E1082|Query environment variable (This capa rule had 1 match) [[9]](#9)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|E1082|GoBotKR uses wmic, systeminfo and ver commands to collect information about the system and the installed software. [[10]](#10)query environment variable (This capa rule had 2 matches) [[9]](#9)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1082|Query environment variable (This capa rule had 1 match) [[9]](#9)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|E1082|Get disk information (This capa rule had 1 match) [[9]](#9)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|E1082|Check OS version (This capa rule had 1 match) [[9]](#9)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|E1082|Check OS version (This capa rule had 1 match) [[9]](#9)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|E1082|Get disk size (This capa rule had 1 match) [[9]](#9)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|E1082|Get hostname (This capa rule had 1 match) [[9]](#9)|
+|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|E1082|Query environment variable (This capa rule had 1 match) [[9]](#9)|
 
 ## References
 
@@ -68,4 +78,8 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 <a name="7">[7]</a> https://www.trendmicro.com/en_us/research/18/k/trickbot-shows-off-new-trick-password-grabber-module.html
 
 <a name="8">[8]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+
+<a name="9">[9]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
+<a name="10">[10]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
 

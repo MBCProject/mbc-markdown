@@ -34,7 +34,7 @@ To avoid running multiple instances of itself, malware may check a system to see
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Bagle**](../xample-malware/bagle.md)|2004|B0024|Some variants look for an unnamed mutex to ensure only one copy of itself is running on a system. [[1]](#1) |
+|[**Bagle**](../xample-malware/bagle.md)|2004|B0024|Some variants look for an unnamed mutex to ensure only one copy of itself is running on a system. [[1]](#1)|
 
 ## References
 

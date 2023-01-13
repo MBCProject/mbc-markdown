@@ -57,4 +57,3 @@ See ATT&CK: **Input Capture ([T1056](https://attack.mitre.org/techniques/T1056),
 
 <a name="4">[4]</a> https://www.cyber.nj.gov/threat-center/threat-profiles/trojan-variants/poison-ivy
 
-

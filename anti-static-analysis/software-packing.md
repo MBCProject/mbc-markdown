@@ -82,5 +82,3 @@ This description refines the ATT&CK **Obfuscated Files or Information: Software 
 
 <a name="8">[8]</a> https://documents.trendmicro.com/assets/white_papers/ExploringEmotetsActivities_Final.pdf
 
-<a name="9">[9]</a> https://blog.malwarebytes.com/threat-analysis/2016/07/untangling-kovter/
-

@@ -39,3 +39,4 @@ Malware may use a non-cryptographic hash.
 |**FNV**|C0030.005|Malware uses the FNV hash function.|
 |**MurmurHash**|C0030.001|Malware uses the MurmurHash hash function.|
 |**pHash**|C0030.002|Malware uses the pHash hash function.|
+|**djb2**|C0030.006|Malware uses the djb2 hash function.|

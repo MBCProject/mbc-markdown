@@ -64,5 +64,3 @@ See ATT&CK: **Data Encrypted for Impact ([T1486](https://attack.mitre.org/techni
 
 <a name="5">[5]</a> https://www.trendmicro.com/en_us/research/20/e/netwalker-fileless-ransomware-injected-via-reflective-loading.html
 
-<a name="6">[6]</a> https://news.sophos.com/en-us/2015/12/17/the-current-state-of-ransomware-cryptowall/
-

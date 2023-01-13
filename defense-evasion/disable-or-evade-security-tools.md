@@ -64,3 +64,4 @@ See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://atta
 <a name="3">[3]</a> Alexander Adamov, Stealthy WastedLocker: eluding behavior blockers, but not only. Online:   https://vblocalhost.com/conference/presentations/stealthy-wastedlocker-eluding-behaviour-blockers-but-not-only/
 
 <a name="4">[4]</a> Carl Petty, Red Canary, 3/3/2020. Online: https://redcanary.com/blog/heavens-gate-technique-on-linux/
+

@@ -50,5 +50,3 @@ Malware may install itself not as a file on the hard drive. [[1]](#1)
 
 <a name="2">[2]</a> https://www.mandiant.com/resources/synful-knock-acis
 
-<a name="3">[3]</a> https://labs.vipre.com/analysis-of-kovter-a-very-clever-piece-of-malware/#:~:text=Kovter%20copies%20the%20fileless%20persistence,written%20on%20to%20the%20filesystem.
-

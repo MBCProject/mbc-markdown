@@ -77,11 +77,11 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|E1027.m07|Poison Ivy variant encrypts all its strings [[6]](#6)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|E1027.m02|Encode data using XOR (This capa rule had 1 match) [[7]](#7)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|E1027.m02|Encode data using XOR (This capa rule had 5 matches) [[7]](#7)|
-|[**SamSam**](../xample-malware/samsam.md)|2015|E1027.m07|SamSam obfuscates functions, class names and strings, including the list of targeted file extensions, the help file contents and environment variables using DES encryption with a fixed hard-coded key and the IV  [[9]](#9)|
+|[**SamSam**](../xample-malware/samsam.md)|2015|E1027.m07|SamSam obfuscates functions, class names and strings, including the list of targeted file extensions, the help file contents and environment variables using DES encryption with a fixed hard-coded key and the IV  [[8]](#8)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|E1027.m02|Encode data using XOR (This capa rule had 1 match) [[7]](#7)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1027.m01, E1027.m02|Please see the Stuxnet malware page for details. [[10]](#10)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1027.m01, E1027.m02|Please see the Stuxnet malware page for details. [[9]](#9)|
 |[**UP007 Malware Family**](../xample-malware/up007.md)|2016|E1027.m02|Encode data using XOR (This capa rule had 13 matches) [[7]](#7)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|E1027|Creates an encrypted Registry key called TorClient to store its data [[11]](#11)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|E1027|Creates an encrypted Registry key called TorClient to store its data [[10]](#10)|
 
 ## References
 
@@ -99,11 +99,9 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 
 <a name="7">[7]</a> capa v4.0, analyzed at MITRE on 10/12/2022
 
-<a name="8">[8]</a> https://blog.malwarebytes.com/threat-analysis/2016/07/untangling-kovter/
+<a name="8">[8]</a> https://blog.talosintelligence.com/2018/01/samsam-evolution-continues-netting-over.html
 
-<a name="9">[9]</a> https://blog.talosintelligence.com/2018/01/samsam-evolution-continues-netting-over.html
+<a name="9">[9]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
 
-<a name="10">[10]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
-
-<a name="11">[11]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-variant-dreambot-adds-tor-functionality
+<a name="10">[10]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-variant-dreambot-adds-tor-functionality
 

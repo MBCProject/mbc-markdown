@@ -51,5 +51,3 @@ The related **Network Denial of Service ([T1498](https://attack.mitre.org/techni
 
 <a name="2">[2]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
 
-<a name="3">[3]</a> https://blog-assets.f-secure.com/wp-content/uploads/2019/10/15163408/BlackEnergy_Quedagh.pdf
-
