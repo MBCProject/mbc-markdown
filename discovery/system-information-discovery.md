@@ -46,7 +46,7 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Learns about the system so it can drop compatible miner software.|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Uses windows command prompt commands to gather system info, task list, installed drivers, and installed programs  [[1]](#1)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|uses Systeminfo to gather OS version, system configuration, BIOS, the motherboard, and processor [[2]](#2)|
-|[**DarkComet**](../xample-malware/darkcomet.md)|2008|--|Can collect information about the compter, resources, and operating system version  [[3]](#3)|
+|[**DarkComet**](../xample-malware/darkcomet.md)|2008|--|Can collect information about the computer, resources, and operating system version  [[3]](#3)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|--|Collects information related to OS, processes, and sometimes mail client information and sends it to c2 [[4]](#4)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Gathers information (OS version, workgroup status, computer name, domain/workgroup name, file name of infected project file) about each computer in the net to spread itself  [[5]](#5)|
 |[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK collects information from the host including Windows version, CPU architecture, and UAC settings [[6]](#6)|
