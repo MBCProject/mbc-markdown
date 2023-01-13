@@ -56,8 +56,8 @@ Some aspects of this Conditional Execution behavior are related to the [Executio
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Drops either Cryptonight or Claymore's Zcash miner, depending on system architecture. [[1]](#1)|
-|[**Conficker**](../xample-malware/conficker.md)|2008|--|A routine causes the process to suicide exit if the keyboard language is set to Ukranian.|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Macros check if there are at least 50 running processes with a graphical interface, check if a list of blacklisted processes are running, and checks if the application is running in Australia and is NOT affiliated with a select group of networks (Security Research, Hospitals, Universities, Veterans, etc.) [1] [[3]](#3)|
+|[**Conficker**](../xample-malware/conficker.md)|2008|--|A routine causes the process to suicide exit if the keyboard language is set to Ukranian. [[5]](#5)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Macros check if there are at least 50 running processes with a graphical interface, check if a list of blacklisted processes are running, and checks if the application is running in Australia and is NOT affiliated with a select group of networks (Security Research, Hospitals, Universities, Veterans, etc.) [[3]](#3)|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Malware only proceeds if it detects the BIOS ROM is Award BIOS [[4]](#4)|
 
 ## References
@@ -70,3 +70,5 @@ https://reverseengineering.stackexchange.com/questions/2019/debugging-malware-th
 <a name="3">[3]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-banking-trojan-campaign-sandbox-evasion-techniques
 
 <a name="4">[4]</a> https://www.webroot.com/blog/2011/09/13/mebromi-the-first-bios-rootkit-in-the-wild/
+
+<a name="5">[5]</a> http://www.csl.sri.com/users/vinod/papers/Conficker/
