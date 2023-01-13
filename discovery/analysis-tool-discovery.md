@@ -51,7 +51,7 @@ This behavior corresponds to simple, general discovery of analysis tools. Behavi
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Emotet**](../xample-malware/emotet.md)|2018|--|If it recieves a response from the c2 server stating a debugging-related tool is in the list of running processes, it recieves an "upgrade" command which calls the ShellExecuteW function and exits [[1]](#1)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|--|If it receives a response from the C2 server stating a debugging-related tool is in the list of running processes, it recieves an "upgrade" command which calls the ShellExecuteW function and exits [[1]](#1)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy Variant runs a threat to check if any analysis tools are running by creating specially named pipes that are created by various analysis tools. If one of the named pipes cannot be created, it means one fo the analysis tools is running.  [[2]](#2)|
 
 ## References
