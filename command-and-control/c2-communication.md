@@ -60,7 +60,7 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--|The malware sends a hash value generated from system information [[1]](#1)|
+|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--|The malware sends a hash value generated from system information. The malware receives a public key from the C2. [[1]](#1)|
 |[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware sends a hash value generated from system information. The malware receives a public key from the C2. The malware sends a phone-home message with encryption to start. [[14]](#14)|
 |[**GotBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR receives data from the C2 [[2]](#2)|
 |[**Terminator**](../xample-malware/terminator.md)|2013|--|The malware sends data to C2 [[3]](#3)|
