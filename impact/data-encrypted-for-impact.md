@@ -47,7 +47,7 @@ See ATT&CK: **Data Encrypted for Impact ([T1486](https://attack.mitre.org/techni
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--|[[1]](#1)|
-|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|[[2]](#2)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware launches Internet Explorer to show ransom notes. [[2]](#2)|
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|Encrypts files for ransom without any connection to the Internet [[3]](#3)|
 |[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam encrypts data to hold for ransom [[4]](#4)|
 |[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker encrypts files for ransom [[5]](#5)|
