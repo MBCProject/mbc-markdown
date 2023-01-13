@@ -138,3 +138,4 @@ jmp short loc_401326
 <a name="2">[2]</a> https://cofense.com/recent-geodo-malware-campaigns-feature-heavily-obfuscated-macros/
 
 <a name="3">[3]</a> Rob Simmons, "Comparing Malicious Files," BSides, 2019. http://www.irongeek.com/i.php?page=videos/bsidescharm2019/2-04-comparing-malicious-files-robert-simmons
+

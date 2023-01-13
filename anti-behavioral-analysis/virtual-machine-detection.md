@@ -90,6 +90,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |[**Emotet**](../xample-malware/emotet.md)|2018|B0009.010|Emotet checks for various processes that are associated with various virtual machines by comparing hash values of the process names with the hash values of the list of running process names [[7]](#7)|
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|B0009.012|Check for unmoving mouse cursor (This capa rule had 1 match) [[8]](#8)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|B0009.004|Checks if there are virtual machine processes running (Vbox, vmware, etc) [[9]](#9)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0007.010, B0001.016, B0001.038|Please see the Rombertik malware page for details. [[10]](#10)|
 
 ## Code Snippets
 
@@ -151,4 +152,6 @@ jmp short loc_401CBB
 <a name="8">[8]</a> capa v4.0, analyzed at MITRE on 10/12/2022
 
 <a name="9">[9]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-banking-trojan-campaign-sandbox-evasion-techniques
+
+<a name="10">[10]</a> https://blogs.cisco.com/security/talos/rombertik
 

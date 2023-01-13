@@ -41,6 +41,9 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|E1105|Creates a folder on remote computers and then copies its executables (Shamoon and Filerase) into that directory  [[2]](#2)|
 |[**CozyCar**](../xample-malware/cozycar.md)|2010|E1105|CozyCar requests a file using SSL to a C2 domain [[3]](#3)|
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|E1105|Can download files from remote repository upon instruction  [[1]](#1)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|E1105|The malware receives files from C2 [[4]](#4)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|E1105|GoBotKR can download additional files and update itself. [[5]](#5)|
+|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|E1105|The malware downloads files from C2 [[6]](#6)|
 
 ## References
 
@@ -49,4 +52,10 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 <a name="2">[2]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-attackers-employ-new-tool-kit-to-wipe-infected-systems/
 
 <a name="3">[3]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke
+
+<a name="4">[4]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/
+
+<a name="5">[5]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
+
+<a name="6">[6]</a> https://citizenlab.ca/2016/04/between-hong-kong-and-burma/
 

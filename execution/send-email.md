@@ -48,4 +48,3 @@ This behavior is related to the **Phishing ([T1566](https://attack.mitre.org/tec
 
 <a name="3">[3]</a> https://securelist.com/the-banking-trojan-emotet-detailed-analysis/69560/
 
-

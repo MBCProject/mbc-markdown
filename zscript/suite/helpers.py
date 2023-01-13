@@ -90,7 +90,7 @@ def match_name_with_path(name, rel_path_base = None):
 # ==============================================================================
 # BEHAVIOR HELPERS
 # ==============================================================================
-MalwareLink = namedtuple('MalwareLink', ['Name', 'Link', 'Year', 'ID', 'Description']) # Example: ['Rombertik', [T1056.001], '2015', '../xample-malware/rombertik.md', ['desc', '<url>']]
+MalwareLink = namedtuple('MalwareLink', ['Name', 'Link', 'Year', 'ID', 'Description']) # Example: ['Rombertik', '../xample-malware/rombertik.md', '2015', [T1056.001],  ['desc', '<url>']]
 
 
 def analyze_behavior_file_section_line_nums(file_list):

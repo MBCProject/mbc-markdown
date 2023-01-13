@@ -38,7 +38,7 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 |---|---|---|---|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|F0012|Trojan spyware program that has mainly been used for targeting banking sites. [[15]](#15)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|F0012|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|F0012|Hupigon drops the file "Systen.dll" and adds the registry entry: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Notify\BITS DllName = "%System%\Systen.dll". [[3]](#3)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|F0012, E1547.001|Please see the Hupigon malware page for details. [[3]](#3)|
 |[**Terminator**](../xample-malware/terminator.md)|May 2013|F0012|The Terminator rat sets "2019" as Windows' startup folder by modifying a registry value. [[4]](#4)|
 |[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|F0012|The malware creates an "autorun" registry key [[5]](#5)|
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|F0012| GoBotKR installs itself under registry run keys to establish persistence. [[6]](#6)|
@@ -50,6 +50,7 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 |[**Emotet**](../xample-malware/emotet.md)|2018|F0012|To start itself at system boot, Emotet adds the downloaded payload to the registry to maintain persistence [[13]](#13)|
 |[**Bagle**](../xample-malware/bagle.md)|2004|F0012|Adds registry keys to enable its automatic execution at every system startup  [[14]](#14)|
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|F0012|Adds several registry entries to enable automatic execution at startup  [[12]](#12)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|E1547.001|Persist via Run registry key (This capa rule had 4 matches) [[16]](#16)|
 
 ## References
 
@@ -83,5 +84,5 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 
 <a name="15">[15]</a> https://www.trendmicro.com/en_us/research/18/k/trickbot-shows-off-new-trick-password-grabber-module.html
 
-<a name="16">[16]</a> https://labs.vipre.com/analysis-of-kovter-a-very-clever-piece-of-malware/#:~:text=Kovter%20copies%20the%20fileless%20persistence,written%20on%20to%20the%20filesystem.
+<a name="16">[16]</a> capa v4.0, analyzed at MITRE on 10/12/2022
 

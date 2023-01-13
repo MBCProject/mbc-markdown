@@ -54,4 +54,3 @@ See ATT&CK Technique: **User Execution ([T1204](https://attack.mitre.org/techniq
 
 <a name="5">[5]</a> https://www.secureworks.com/research/cryptolocker-ransomware
 
-
