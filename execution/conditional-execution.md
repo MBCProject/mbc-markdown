@@ -56,7 +56,7 @@ Some aspects of this Conditional Execution behavior are related to the [Executio
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Drops either Cryptonight or Claymore's Zcash miner, depending on system architecture. [[1]](#1)|
-|[**Conficker**](../xample-malware/conficker.md)|2008|--|A routine causes the process to suicide exit if the keyboard language is set to Ukranian. [[5]](#5)|
+|[**Conficker**](../xample-malware/conficker.md)|2008|--|Conficker A variant has a routine that causes the process to suicide exit if the keyboard language is set to Ukranian. Conficker B variant has significantly more suicide logic embedded in its code and employs anti-debugging features to avoid reverse engineering attempts. [[5]](#5)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Macros check if there are at least 50 running processes with a graphical interface, check if a list of blacklisted processes are running, and checks if the application is running in Australia and is NOT affiliated with a select group of networks (Security Research, Hospitals, Universities, Veterans, etc.) [[3]](#3)|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Malware only proceeds if it detects the BIOS ROM is Award BIOS [[4]](#4)|
 
