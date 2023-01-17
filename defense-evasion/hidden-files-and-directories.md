@@ -50,7 +50,7 @@ See ATT&CK: **Hide Artifacts: Hidden Files and Directories ([T1564.001](https://
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Modifies target files' time to August 2012 as an antiforensic trick  [[2]](#2)|
 |[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK creates a hidden file for temporary storage [[3]](#3)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus is located on external drives or network shares and attaches itself to ZIP and RAR files. Vobfus hides folders present on the external drive and drops an executable with the same name and a disguised folder icon [[4]](#4)|
-|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware looks for a specific folder on the victim. If the folder doesn't exist, the malware creates the folder on the victim. The malware also appends the filename and extension .ocx to the ProgramData folder path. [[5]](#5) [[6]](#6)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware looks for a specific folder on the victim. If the folder doesn't exist, the malware creates the folder on the victim by calling CreateDirectoryA and downloads the remote file into the new folder. The malware also appends the filename and extension .ocx to the ProgramData folder path. [[5]](#5) [[6]](#6)|
 
 ## References
 
