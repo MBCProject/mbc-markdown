@@ -59,7 +59,7 @@ Malware may encrypt data.
 |[**GravityRAT**](../../xample-malware/gravity-rat.md)|2018|--|	GravityRat v3 supports file AES file encryption  [[3]](#3)|
 |[**Poison-Ivy**](../../xample-malware/poison-ivy.md)|2005|--|Poison Ivy's custom network protocol over TCP is encrypted using Camellia cipher with a 256-bit key  [[4]](#4)|
 |[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK encrypts the configuration block using RC4 encryption [[5]](#5)|
-|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The malware decrypts inner configurations stored in the binary. The malware also encrypts the value of each JSON key with RC4 and encodes the value with base64. [6]](#6) [[7]](#7)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The malware decrypts inner configurations stored in the binary. The malware also encrypts the value of each JSON key with RC4 and encodes the value with base64. [[6]](#6) [[7]](#7)|
 
 ## Code Snippets
 
