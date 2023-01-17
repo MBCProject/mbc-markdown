@@ -37,7 +37,7 @@ Malware that installs another component is called a "dropper." If the code is co
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**WebCobra**](../xample-malware/webcobra.md)|November 2018|--|Drops software to mine for cryptocurrency. [[1]](#1)|
-|[**Geneio**](../xample-malware/geneio.md)|August 2015|--|Tricks OS X keychain to create application files.|
+|[**Geneio**](../xample-malware/geneio.md)|August 2015|--|Malware tricks OS X keychain to create application files. Malware also installs the browser extension Omnibar.safariextz. [[10]](#10)|
 |[**GotBotKR**](../xample-malware/gobotkr.md)|July 2019|--|GotBotKR reinstalls its running instance if it is removed. [[3]](#3)|
 |[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|Installs a backdoor.|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|--|A Trojan downloader.|
@@ -67,3 +67,5 @@ Malware that installs another component is called a "dropper." If the code is co
 <a name="8">[8]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
 
 <a name="9">[9]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
+
+<a name="10">[10]</a> https://blog.malwarebytes.org/mac/2015/08/genieo-installer-tricks-keychain/
