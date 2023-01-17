@@ -72,7 +72,7 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar communicates with a C2 server [[9]](#9)|
 |[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny communicates C2 via HTTP [[10]](#10)|
 |[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer communicates to a Tor Onion Service via HTTP [[11]](#11)|
-|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The malware sends collected data about the system to C2 server. The C2 server returns base64 encoded data containing the information about the next command for the loader. The payload is run by explorer.exe. [12]](#12) [[13]](#13)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The malware sends collected data about the system to C2 server. The C2 server returns base64 encoded data containing the information about the next command for the loader. The payload is run by explorer.exe. [[12]](#12) [[13]](#13)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut receives data from C2. [[15]](#15)|
 |[**Heriplor**](../xample-malware/heriplor.md)|2012|--|Heriplor malware has a capability to connect with a C2 to download arbitrary code. [[16]](#16)|
 
