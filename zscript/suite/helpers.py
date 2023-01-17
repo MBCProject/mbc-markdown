@@ -422,9 +422,9 @@ def analyze_malware_file_header(file):
     return_dict["Year"] = year
 
     attack_soft = regex_match_single(config['Malware']['AssociatedSoftwareRegex1'], file, "Associated ATT&CK Software field of header")
-    if attack_soft != 'None':
-        # Do a bit more processing, converting "<a href="https://attack.mitre.org/software/S0370/">SamSam</a>" to just "SamSam"
-        attack_soft = regex_match_single(config['Malware']['AssociatedSoftwareRegex2'], attack_soft, "Associated ATT&CK Software link and name")
+    # if attack_soft != 'None':
+    #     # Do a bit more processing, converting "<a href="https://attack.mitre.org/software/S0370/">SamSam</a>" to just "SamSam"
+    #     attack_soft = regex_match_single(config['Malware']['AssociatedSoftwareRegex2'], attack_soft, "Associated ATT&CK Software link and name")
     return_dict["Associated ATT&CK Software"] = attack_soft
 
     return return_dict
