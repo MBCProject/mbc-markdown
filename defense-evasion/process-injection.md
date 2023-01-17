@@ -59,7 +59,7 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 |---|---|---|---|
 |[**UP007**](../xample-malware/up007.md)|April 2016|--|Injects secondary payload into memory. [[4]](#4)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison-Ivy code is injected into explorer.exe. [[2]](#2)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Injects minor code into a running process.|
 |[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--|The malware injects code into a new svchost process. [[6]](#6)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|The malware injects itself into processes such as cmd.exe, notepad.exe [[7]](#7)|
