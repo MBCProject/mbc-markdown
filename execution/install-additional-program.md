@@ -40,7 +40,7 @@ Malware that installs another component is called a "dropper." If the code is co
 |[**Geneio**](../xample-malware/geneio.md)|August 2015|--|Malware tricks OS X keychain to create application files. Malware also installs the browser extension Omnibar.safariextz. [[10]](#10)|
 |[**GotBotKR**](../xample-malware/gobotkr.md)|July 2019|--|GotBotKR reinstalls its running instance if it is removed. [[3]](#3)|
 |[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|Installs a backdoor.|
-|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|A Trojan downloader.|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Malware contains a dropper that installs additional programs like Cbrom.exe. [[11]](#11)|
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|--|Can download and install arbitrary iOS apps.|
 |[**UP007**](../xample-malware/up007.md)|2016|--|The malware is a dropper that creates multiple files [[4]](#4)|
 |[**CozyCar**](../xample-malware/cozycar.md)|2010|--|Upon execution, CozyCar drops a decoy file and a secondary dropper [[5]](#5)|
@@ -69,3 +69,5 @@ Malware that installs another component is called a "dropper." If the code is co
 <a name="9">[9]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
 
 <a name="10">[10]</a> https://blog.malwarebytes.org/mac/2015/08/genieo-installer-tricks-keychain/
+
+<a name="11">[11]</a> https://www.webroot.com/blog/2011/09/13/mebromi-the-first-bios-rootkit-in-the-wild/
