@@ -86,7 +86,7 @@ Details on methods of detecting debuggers are given in the references; many are 
 |[**Gamut**](../xample-malware/gamut.md)|2014|--|The malware detects debuggers using an INT 03h trap and IsDebuggerPresent[[8]](#8)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|an anti-analysis function within the packer is called to check the username and filename of the executing process for strings like “malwar”, “sampl”, “viru”, and “sandb”. [[9]](#9)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy Variant checks for breakpoints and exits immediately if found [[10]](#10)|
-|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The malware calls GetTickCount64 to retrieve timestamp. Malware executes Sleep and Beep in a repeated loop. [11]](#11) [[12]](#12)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The malware calls GetTickCount64 to retrieve timestamp. Malware executes Sleep and Beep in a repeated loop for 10 times. [[11]](#11) [[12]](#12)|
 
 
 ## References
