@@ -84,7 +84,8 @@ Details on methods of detecting debuggers are given in the references; many are 
 |---|---|---|---|
 |[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[4]](#4)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|--|The malware detects debuggers using an INT 03h trap and IsDebuggerPresent[[8]](#8)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0001.038; B0001.016|An anti-analysis function within the packer is called to check the username and filename of the executing process for strings like “malwar”, “sampl”, “viru”, and “sandb”. The malware also calls the Windows API OutputDebugString function 335,000 times. [[9]](#9)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0001.038|An anti-analysis function within the packer is called to check the username and filename of the executing process for strings like “malwar”, “sampl”, “viru”, and “sandb”. [[9]](#9)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0001.016|The malware also calls the Windows API OutputDebugString function 335,000 times. [[9]](#9)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy Variant checks for breakpoints and exits immediately if found. Poison Ivy uses the IsDebuggerPresent API function call to check if the process is running in a debugger. [[10]](#10) [[13]](#13)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The malware calls GetTickCount64 to retrieve timestamp. Malware executes Sleep and Beep in a repeated loop for 10 times. [[11]](#11) [[12]](#12)|
 
