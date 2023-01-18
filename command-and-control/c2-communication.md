@@ -75,6 +75,7 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The malware sends collected data about the system to C2 server. The C2 server returns base64 encoded data containing the information about the next command for the loader. The payload is run by explorer.exe. [[12]](#12) [[13]](#13)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut receives data from C2. [[15]](#15)|
 |[**Heriplor**](../xample-malware/heriplor.md)|2012|--|Heriplor malware has a capability to connect with a C2 to download arbitrary code. [[16]](#16)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2012|--|The malware sends data to the C2. [[17]](#17)|
 
 ## Code Snippets
 
@@ -132,3 +133,5 @@ jmp short loc_4019A2
 <a name="15">[15]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/
 
 <a name="16">[16]</a> https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/troj_heriplor.a
+
+<a name="17">[17]</a> https://blogs.cisco.com/security/talos/rombertik
