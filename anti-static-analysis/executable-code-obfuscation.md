@@ -68,7 +68,7 @@ For encryption and encoding characteristics of malware samples, as well as malwa
 |[**Heriplor**](../xample-malware/heriplor.md)|March 2019|--|The Heriplor Trojan uses API Hashing. [[1]](#1)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|--|Emotet macros are heavily obfuscated with junk functions and string substitutions. [[2]](#2)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
-|[**Rombertik**](../anti-static-analysis/executable-code-obfuscation.md)|2015|--|Most of the malware file consists of unnecessary code or unnecessary data [[4]](#4)|
+|[**Rombertik**](../anti-static-analysis/executable-code-obfuscation.md)|2015|B0032.002|Most of the malware file consists of unnecessary code or unnecessary data [[4]](#4)|
 |[**Ursnif**](../anti-static-analysis/executable-code-obfuscation.md)|2016|--|Creates an encrypted Registry key called TorClient to store its data [[5]](#5)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy variant encrypts all its strings [[6]](#6)|
 |[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam obfuscates functions, class names and strings, including the list of targeted file extensions, the help file contents and environment variables using DES encryption with a fixed hard-coded key and the IV  [[7]](#7)|
