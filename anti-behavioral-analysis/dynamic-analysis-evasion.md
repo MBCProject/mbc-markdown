@@ -65,7 +65,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |**Nap**|2013|--|Trojan Nap (tied to the Kelihos Botnet) uses extended sleep calls to evade sandbox analysis. [[3]](#3)|
 |**Smokeloader**|2019|--|Smokeloader drops a copy of ntdll.dll to %APPDATA%\Local\Temp\ [[4]](#4)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Evades dynamic analysis.)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware stalls by writing a byte of random data to memory 960 million times which complicates analysis. It also calls specific Windows API functions [[5]](#5)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0003.002|The malware stalls by writing a byte of random data to memory 960 million times which complicates analysis. It also calls specific Windows API functions [[5]](#5)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Uses numerous printf loops to delay the execution process and overload the sandbox with junk data (API Hammering) [[6]](#6)|
 
 
