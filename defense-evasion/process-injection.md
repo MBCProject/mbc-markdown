@@ -64,7 +64,7 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 |[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--|The malware injects code into a new svchost process. [[6]](#6)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|The malware injects itself into processes such as cmd.exe, notepad.exe [[7]](#7)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Bypasses UAC using a Shim Database instructing SndVol.exe to execute cmd.exe instead, allowing for elevated execution. BlackEnergy injects its dll component into svchost.exe. [[8]](#8)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet injects the entire DLL into another process and then just calls the particular export  [[9]](#9)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1055.001|Stuxnet injects the entire DLL into another process and then just calls the particular export  [[9]](#9)|
 |[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker uses reflective DLL loading to inject from memory [[10]](#10)|
 
 
