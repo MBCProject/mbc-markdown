@@ -59,6 +59,7 @@ Some aspects of this Conditional Execution behavior are related to the [Executio
 |[**Conficker**](../xample-malware/conficker.md)|2008|--|Conficker A variant has a routine that causes the process to suicide exit if the keyboard language is set to Ukranian. Conficker B variant has significantly more suicide logic embedded in its code and employs anti-debugging features to avoid reverse engineering attempts. [[5]](#5)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Macros check if there are at least 50 running processes with a graphical interface, check if a list of blacklisted processes are running, and checks if the application is running in Australia and is NOT affiliated with a select group of networks (Security Research, Hospitals, Universities, Veterans, etc.) [[3]](#3)|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Malware only proceeds if it detects the BIOS ROM is Award BIOS [[4]](#4)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|B0025.004|Stuxnet checks for specific operating systems on 32-bit machines, registry keys, and dates to profile a potential target machine before execution. If the conditions are not met to be considered a viable target, it will exit execution. [[6]](#6)|
 
 ## References
 
@@ -72,3 +73,5 @@ https://reverseengineering.stackexchange.com/questions/2019/debugging-malware-th
 <a name="4">[4]</a> https://www.webroot.com/blog/2011/09/13/mebromi-the-first-bios-rootkit-in-the-wild/
 
 <a name="5">[5]</a> http://www.csl.sri.com/users/vinod/papers/Conficker/
+
+<a name="6">[6]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
