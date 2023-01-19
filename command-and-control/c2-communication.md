@@ -76,6 +76,7 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut receives data from C2. [[15]](#15)|
 |[**Heriplor**](../xample-malware/heriplor.md)|2012|--|Heriplor malware has a capability to connect with a C2 to download arbitrary code. [[16]](#16)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2012|--|The malware sends data to the C2. [[17]](#17)|
+|[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|B0030.002|The malware receives data from the C2 server. [[18]](#18)|
 
 ## Code Snippets
 
@@ -135,3 +136,5 @@ jmp short loc_4019A2
 <a name="16">[16]</a> https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/troj_heriplor.a
 
 <a name="17">[17]</a> https://blogs.cisco.com/security/talos/rombertik
+
+<a name="18">[18]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
