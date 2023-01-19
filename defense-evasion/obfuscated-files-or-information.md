@@ -67,7 +67,7 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[**Kovter**](../xample-malware/kovter.md)|2016|--|The malware will use a key to decrypt text from a URL to create more malicious code. [[2]](#2)|
 |[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker is obfuscated with several layers of encoding, obfuscation, and encryption techniques such as base64, hexademcimal, and XOR. [[3]](#3)|
 |[**TEARDROP**](../xample-malware/teardrop.md)|2018|--|TEARDROP decrypts an embedded code buffer using an XOR-based stream cipher. [[4]](#4)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|The configuration data block is encoded with a NOT XOR 0xFF operationr. [[5]](#5)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1027.m01|The configuration data block is encoded with a NOT XOR 0xFF operationr. [[5]](#5)|
 
 ## References
 
