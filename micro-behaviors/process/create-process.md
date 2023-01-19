@@ -43,7 +43,7 @@ Malware creates a process.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet will use WMI operations with the explorere.exe token in order to copy itself and exscute on the remote share  [[1]](#1)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|C0017.002|Stuxnet will use WMI operations with the explorer.exe token in order to copy itself and execute on the remote share. [[1]](#1)|
 
 
 ## References
