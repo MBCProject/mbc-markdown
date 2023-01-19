@@ -47,6 +47,7 @@ Malware that installs another component is called a "dropper." If the code is co
 |[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer drops a file masquerading as a Control Panel (CPL) file [[6]](#6)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus downloads malware from other malware families [[7]](#7)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware drops the first loader which is responsible for loading the main loader into memory. [[8]](#8) [[9]](#9)|
+|[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|The malware installs an open-source program called mitmproxy. [[12]](#12)|
 
 ## References
 
@@ -71,3 +72,5 @@ Malware that installs another component is called a "dropper." If the code is co
 <a name="10">[10]</a> https://blog.malwarebytes.org/mac/2015/08/genieo-installer-tricks-keychain/
 
 <a name="11">[11]</a> https://www.webroot.com/blog/2011/09/13/mebromi-the-first-bios-rootkit-in-the-wild/
+
+<a name="12">[12]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
