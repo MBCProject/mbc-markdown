@@ -51,8 +51,8 @@ Rootkits may hide artifacts (kernel modules, services, threads, userspace librar
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|--| Certain variants of the malware may have rootkit functionality [[3]](#3)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet registers custom resource drives signed with a legitimate Realtek digital certificate  [[4]](#4)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--| Certain variants of the malware may have rootkit functionality. [[3]](#3)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1014.m16|Stuxnet registers custom resource drives signed with a legitimate Realtek digital certificate. [[4]](#4)|
 
 
 ## Detection
