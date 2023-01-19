@@ -65,6 +65,7 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|The malware injects itself into processes such as cmd.exe, notepad.exe [[7]](#7)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Bypasses UAC using a Shim Database instructing SndVol.exe to execute cmd.exe instead, allowing for elevated execution. BlackEnergy injects its dll component into svchost.exe. [[8]](#8)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1055.001|Stuxnet injects the entire DLL into another process and then just calls the particular export  [[9]](#9)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1055.m02|The driver Stuxnet uses for persistence Mrxcls.sys is registered as a boot start service creating the registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MRxCIs"ImagePath" = "%System%\drivers\mrxcls.sys." [[9]](#9)|
 |[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker uses reflective DLL loading to inject from memory [[10]](#10)|
 
 
