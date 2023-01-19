@@ -42,6 +42,7 @@ See ATT&CK Technique: **User Execution ([T1204](https://attack.mitre.org/techniq
 |[**Terminator**](../xample-malware/terminator.md)|2013|--|The malware relies on user interaction to execute [[3]](#3)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|The malware relies on user interaction to run the executable [[4]](#4)|
 |[**CryptoLocker**](../xample-malware/vobfus.md)|2013|--|The malware relies on victims to execute. [[4]](#4)|
+|[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|The user opens a disk image file which invisibly installs its components. [[6]](#6)|
 
 ## References
 
@@ -54,3 +55,5 @@ See ATT&CK Technique: **User Execution ([T1204](https://attack.mitre.org/techniq
 <a name="4">[4]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
 
 <a name="5">[5]</a> https://www.secureworks.com/research/cryptolocker-ransomware
+
+<a name="6">[6]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
