@@ -65,6 +65,7 @@ See ATT&CK: **Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques
 |[**SYNfulKnock**](../xample-malware/synful-knock.md)|2015|--|Hooks IOS functions to call and initialize the malware  [[9]](#9)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|F0015.006|Malware escalates privileges by impersonating the token through first using LogonUser and ImpersonateLoggedOnUser, then ImpersonateNamedPipeClient. [[10]](#10)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|F0015.003|Stuxnet hooks ntdll.dll to monitor for requests to load specially crafted file names which are mapped to a location specified by Stuxnet.  [[11]](#11)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|F0015.007|WTR4141.tmp hooks APIs from kernel32.dll and ntdll.dll and replaces the original code for these functions with code that checks for files with properties pertaining to Stuxnet files. If a request is made to list a file with the specified properties, the response from these APIs is altered to state that the file does not exist, thereby hiding all files with these properties. [[11]](#11)|
 
 ## References
 
