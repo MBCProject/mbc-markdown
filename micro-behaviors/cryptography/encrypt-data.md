@@ -54,7 +54,7 @@ Malware may encrypt data.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**TrickBot**](../../xample-malware/trickbot.md)|2016|--|Uses an AES CBC (256 bits) encryption algorithm for its loader and configuration files  [[1]](#1)|
+|[**TrickBot**](../../xample-malware/trickbot.md)|2016|C0027.001|The malware uses an AES CBC (256 bits) encryption algorithm for its loader and configuration files. [[1]](#1)|
 |[**Emotet**](../../xample-malware/emotet.md)|2018|--|Emotet uses RSA to encrypt network traffic to its C2 [[2]](#2)|
 |[**GravityRAT**](../../xample-malware/gravity-rat.md)|2018|--|	GravityRat v3 supports file AES file encryption  [[3]](#3)|
 |[**Poison-Ivy**](../../xample-malware/poison-ivy.md)|2005|--|Poison Ivy's custom network protocol over TCP is encrypted using Camellia cipher with a 256-bit key  [[4]](#4)|
