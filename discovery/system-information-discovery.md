@@ -42,7 +42,7 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware can collect information about the computer, resources, services, installed programs, firmware, and operating system version. [[7]](#7)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Malware learns about the system so it can drop compatible miner software.|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Malware uses windows command prompt commands to gather system info, task list, installed drivers, and installed programs.  [[1]](#1)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Malware uses Systeminfo to gather OS version, system configuration, BIOS, the motherboard, and processor. [[2]](#2)|
@@ -64,3 +64,5 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 <a name="5">[5]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
 
 <a name="6">[6]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
+
+<a name="7">[7]</a> https://www.securityartwork.es/wp-content/uploads/2017/07/Trickbot-report-S2-Grupo.pdf
