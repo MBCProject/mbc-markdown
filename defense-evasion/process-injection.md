@@ -57,7 +57,7 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**UP007**](../xample-malware/up007.md)|April 2016|--|Injects secondary payload into memory. [[4]](#4)|
+|[**UP007**](../xample-malware/up007.md)|2016|E1055.001|The malware loads multiple DLLs into memory. [[4]](#4)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware injects itself into svchost.exe. [[11]](#11)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison-Ivy code is injected into explorer.exe. [[2]](#2)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Injects minor code into a running process.|
