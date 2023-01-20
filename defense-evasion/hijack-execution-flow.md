@@ -60,8 +60,8 @@ See ATT&CK: **Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques
 |---|---|---|---|
 |**Kronos**|June 2014|--|Kronos hooks the API of processes to prevent detection. [[6]](#6)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Hooks various DLL exported functions when the component is loaded in their respective Browser application process is running to monitor network traffic [[7]](#7)|
-|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|	Abuses Microsoft's Dynamic Data Exchange (DDE) protocol  [[8]](#8)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|The malware hooks various DLL exported functions when the DLL component is loaded into their respective Browser application process to monitor network traffic. [[7]](#7)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|Abuses Microsoft's Dynamic Data Exchange (DDE) protocol  [[8]](#8)|
 |[**SYNfulKnock**](../xample-malware/synful-knock.md)|2015|--|SYNful Knock hooks IOS functions to call and initialize the malware. [[9]](#9)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|F0015.006|Malware escalates privileges by impersonating the token through first using LogonUser and ImpersonateLoggedOnUser, then ImpersonateNamedPipeClient. [[10]](#10)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|F0015.003|Stuxnet hooks ntdll.dll to monitor for requests to load specially crafted file names which are mapped to a location specified by Stuxnet.  [[11]](#11)|
