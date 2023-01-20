@@ -58,7 +58,7 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**UP007**](../xample-malware/up007.md)|April 2016|--|Injects secondary payload into memory. [[4]](#4)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware injects itself into svchost.exe. [[11]](#11)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison-Ivy code is injected into explorer.exe. [[2]](#2)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Injects minor code into a running process.|
 |[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--|The malware injects code into a new svchost process. [[6]](#6)|
@@ -90,3 +90,5 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 <a name="9">[9]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
 
 <a name="10">[10]</a> https://www.trendmicro.com/en_us/research/20/e/netwalker-fileless-ransomware-injected-via-reflective-loading.html
+
+<a name="11">[11]</a> https://www.cybereason.com/blog/research/dropping-anchor-from-a-trickbot-infection-to-the-discovery-of-the-anchor-malware
