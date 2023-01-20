@@ -46,14 +46,14 @@ See ATT&CK: **Indicator Removal on Host: Uninstall Malicious Application ([T1630
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Terminator**](../xample-malware/terminator.md)|2013|--|Evades sandboxes by terminating and removing itself (DW20.exe) after installation. [[1]](#1)|
+|[**Terminator**](../xample-malware/terminator.md)|2013|F0007.001|The RAT evades sandboxes by terminating and removing itself (DW20.exe) after installation. [[1]](#1)|
 |[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar has a dll file that serves as a cleanup mechanism for its dropped binary [[2]](#2)|
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|The malware will monitor if a specific file gets deleted, and then will delete itself. [[3]](#3)|
 
 
 ## References
 
-<a name="1">[1]</a> https://www.mandiant.com/resources/hot-knives-through-butter-evading-file-based-sandboxes
+<a name="1">[1]</a> https://paper.seebug.org/papers/APT/APT_CyberCriminal_Campagin/2013/FireEye-Terminator_RAT.pdf
 
 <a name="2">[2]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke
 
