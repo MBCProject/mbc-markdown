@@ -67,7 +67,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Evades dynamic analysis.)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|B0003.002|The malware stalls by writing a byte of random data to memory 960 million times which complicates analysis. It also calls specific Windows API functions. [[5]](#5)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|B0003.011|The malware computes a 32-bit hash of a resource in memory, and compares it to the PE Compile Timestamp of the unpacked sample. If the resource or compile time has been altered, the malware acts destructively. [[5]](#5)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Uses numerous printf loops to delay the execution process and overload the sandbox with junk data (API Hammering) [[6]](#6)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|B0003.012|The malware uses numerous printf loops to delay the execution process and overload the sandbox with junk data (API Hammering). [[6]](#6)|
 
 
 ## References
