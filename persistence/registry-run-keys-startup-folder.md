@@ -36,7 +36,7 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware has an auto-start service that allows it to run whenever the machine boots. [[16]](#16)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|To start itself at system boot, Poison Ivy adds registry entries. [[2]](#2)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon drops the file "Systen.dll" and adds the registry entry: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Notify\BITS DllName = "%System%\Systen.dll". [[3]](#3)|
 |[**Terminator**](../xample-malware/terminator.md)|2013|--|The Terminator RAT sets "2019" as Windows' startup folder by modifying a registry value. [[4]](#4)|
@@ -83,3 +83,5 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 <a name="14">[14]</a> https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/WORM_BAGLE.U/
 
 <a name="15">[15]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
+
+<a name="16">[16]</a> https://www.trendmicro.com/en_us/research/18/k/trickbot-shows-off-new-trick-password-grabber-module.html
