@@ -61,7 +61,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Ursnif**](../xample-malware/ursnif.md)|May 2016|--|Ursnif uses malware macros to evade sandbox detection. [[2]](#2)|
-|[**Terminator**](../xample-malware/terminator.md)|October 2013|--|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[3]](#3)|
+|[**Terminator**](../xample-malware/terminator.md)|2013|B0003.003|The Terminator RAT evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[3]](#3)|
 |**Nap**|2013|--|Trojan Nap (tied to the Kelihos Botnet) uses extended sleep calls to evade sandbox analysis. [[3]](#3)|
 |**Smokeloader**|2019|--|Smokeloader drops a copy of ntdll.dll to %APPDATA%\Local\Temp\ [[4]](#4)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Evades dynamic analysis.)|
