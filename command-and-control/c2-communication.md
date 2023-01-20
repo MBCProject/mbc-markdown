@@ -64,7 +64,8 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware sends a hash value generated from system information. The malware receives a public key from the C2. The malware sends a phone-home message with encryption to start. [[14]](#14)|
 |[**GotBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR receives data from the C2 [[2]](#2)|
 |[**Terminator**](../xample-malware/terminator.md)|2013|B0030.001|The malware sends data to the C2. [[3]](#3)|
-|[**UP007**](../xample-malware/up007.md)|2016|--|The malware receives payloads [[4]](#4)|
+|[**UP007**](../xample-malware/up007.md)|2016|B0030.002|The malware receives payloads. [[4]](#4)|
+|[**UP007**](../xample-malware/up007.md)|2016|B0030.001|The malware sends harded HTTP headers disguised as Microsoft Update traffic. [[4]](#4)|
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|--|Connects to the command and control server using HTTP to send device information [[5]](#5)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Ursnif variant Dreambot authenticates and encrypts traffic to C2 server using TOR [[6]](#6)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|--|New email addresses are collected automatically from the victim's address books [[7]](#7)|
