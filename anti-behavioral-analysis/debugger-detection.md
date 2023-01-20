@@ -88,6 +88,7 @@ Details on methods of detecting debuggers are given in the references; many are 
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|B0001.016|The malware calls the Windows API OutputDebugString function 335,000 times. [[9]](#9)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy Variant checks for breakpoints and exits immediately if found. Poison Ivy uses the IsDebuggerPresent API function call to check if the process is running in a debugger. [[10]](#10) [[13]](#13)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The malware calls GetTickCount64 to retrieve timestamp. Malware executes Sleep and Beep in a repeated loop for 10 times. [[11]](#11) [[12]](#12)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|B0001.028|The malware manipulates TLS Callbacks while injecting to child process. [[12]](#12)|
 
 
 ## References
@@ -117,3 +118,5 @@ Details on methods of detecting debuggers are given in the references; many are 
 <a name="12">[12]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
 
 <a name="13">[13]</a> https://www.fortinet.com/blog/threat-research/deep-analysis-of-new-poison-ivy-variant
+
+<a name="14">[14]</a> https://www.fireeye.com/blog/threat-research/2017/11/ursnif-variant-malicious-tls-callback-technique.html
