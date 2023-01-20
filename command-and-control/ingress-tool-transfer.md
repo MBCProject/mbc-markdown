@@ -46,7 +46,7 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Creates a folder on remote computers and then copies its executables (Shamoon and Filerase) into that directory.  [[5]](#5)|
 |[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar requests a file using SSL to a C2 domain. [[6]](#6)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus downloads its latest version from a remote server. [[7]](#7)|
-|[**TEARDROP**](../xample-malware/teardrop.md)|2018|--|TEARDROP decrypts embedded code buffer which is a Cobalt Strike RAT. [[8]](#8)|
+|[**TEARDROP**](../xample-malware/teardrop.md)|2018|--|TEARDROP executes the decrypted, embedded code buffer, which is a Cobalt Strike RAT. [[8]](#8)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware downloads DLLs from the hardcoded URL/remote server. [[9]](#9) [[10]](#10)|
 
 
