@@ -41,7 +41,7 @@ Malware that installs another component is called a "dropper." If the code is co
 |[**GotBotKR**](../xample-malware/gobotkr.md)|July 2019|--|GotBotKR reinstalls its running instance if it is removed. [[3]](#3)|
 |[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|Installs a backdoor.|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Malware contains a dropper that installs additional programs like Cbrom.exe. [[11]](#11)|
-|[**YiSpecter**](../xample-malware/yispecter.md)|2015|--|Can download and install arbitrary iOS apps.|
+|[**YiSpecter**](../xample-malware/yispecter.md)|2015|--|The malware can download and install arbitrary iOS apps. [[13]](#13)|
 |[**UP007**](../xample-malware/up007.md)|2016|--|The malware is a dropper that creates multiple files [[4]](#4)|
 |[**CozyCar**](../xample-malware/cozycar.md)|2010|--|Upon execution, CozyCar drops a decoy file and a secondary dropper [[5]](#5)|
 |[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer drops a file masquerading as a Control Panel (CPL) file [[6]](#6)|
@@ -74,3 +74,5 @@ Malware that installs another component is called a "dropper." If the code is co
 <a name="11">[11]</a> https://www.webroot.com/blog/2011/09/13/mebromi-the-first-bios-rootkit-in-the-wild/
 
 <a name="12">[12]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
+
+<a name="13">[13]</a> http://researchcenter.paloaltonetworks.com/2015/10/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
