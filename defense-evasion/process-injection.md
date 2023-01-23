@@ -60,7 +60,7 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 |[**UP007**](../xample-malware/up007.md)|2016|E1055.001|The malware loads multiple DLLs into memory. [[4]](#4)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware injects itself into svchost.exe. [[11]](#11)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison-Ivy code is injected into explorer.exe. [[2]](#2)|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Injects minor code into a running process.|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|The malware injects miner code into a running process. [[12]](#12)|
 |[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--|The malware injects code into a new svchost process. [[6]](#6)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|The malware injects itself into processes such as cmd.exe, notepad.exe [[7]](#7)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Bypasses UAC using a Shim Database instructing SndVol.exe to execute cmd.exe instead, allowing for elevated execution. BlackEnergy injects its dll component into svchost.exe. [[8]](#8)|
@@ -92,3 +92,5 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 <a name="10">[10]</a> https://www.trendmicro.com/en_us/research/20/e/netwalker-fileless-ransomware-injected-via-reflective-loading.html
 
 <a name="11">[11]</a> https://www.cybereason.com/blog/research/dropping-anchor-from-a-trickbot-infection-to-the-discovery-of-the-anchor-malware
+
+<a name="12">[12]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
