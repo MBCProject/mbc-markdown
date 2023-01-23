@@ -36,7 +36,7 @@ Malware that installs another component is called a "dropper." If the code is co
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**WebCobra**](../xample-malware/webcobra.md)|November 2018|--|Drops software to mine for cryptocurrency. [[1]](#1)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|The malware downloads and executes Claymore's Zcash miner from a remote server. [[1]](#1)|
 |[**Geneio**](../xample-malware/geneio.md)|August 2015|--|Malware tricks OS X keychain to create application files. Malware also installs the browser extension Omnibar.safariextz. [[10]](#10)|
 |[**GotBotKR**](../xample-malware/gobotkr.md)|July 2019|--|GotBotKR reinstalls its running instance if it is removed. [[3]](#3)|
 |[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|Installs a backdoor.|
