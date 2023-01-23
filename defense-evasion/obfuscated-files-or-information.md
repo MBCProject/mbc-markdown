@@ -61,7 +61,7 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|Obfuscates files.|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Obfuscates files.|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|The dropped file is password-protected. Once unzipped, the file contains a DLL file to decrypt the second file (a bin file with an encrypted malicious payload). [[7]](#7)|
 |[**GotBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR uses base64 to obfuscate strings, commands and files. [[1]](#1)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|--|The malware will use a key to decrypt text from a URL to create more malicious code. [[2]](#2)|
 |[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker is obfuscated with several layers of encoding, obfuscation, and encryption techniques such as base64, hexademcimal, and XOR. [[3]](#3)|
@@ -82,3 +82,5 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 <a name="5">[5]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
 
 <a name="6">[6]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-variant-dreambot-adds-tor-functionality
+
+<a name="7">[7]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
