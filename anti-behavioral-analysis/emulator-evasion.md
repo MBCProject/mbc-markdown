@@ -43,7 +43,7 @@ Behaviors that obstruct analysis in an emulator.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Evades emulator-based analysis. [[1]](#1)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|B0005.004|The malware evades emulator-based analysis by using an infinite loop to check all open windows and compare each window's title bar to a list of strings. [[1]](#1)|
 
 ## References
 
