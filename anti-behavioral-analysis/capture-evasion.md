@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Created</b></td>
-<td><b>18 November 2019</b></td>
+<td><b>2019</b></td>
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
@@ -38,7 +38,7 @@ Malware has characteristics enabling it to evade capture from the infected syste
 
 |Name|ID|Description|
 |---|---|---|
-|**Encrypted Payloads**|B0036.002|Decryption key is stored external to the executable or never touches the disk.|
+|**Encrypted Payloads**|B0036.002|The decryption key is stored external to the executable or never touches the disk.|
 |**Memory-only Payload**|B0036.001|Malware is never written to disk (e.g., RAT plugins received from the controller are never written to disk).|
 |**Multiple Stages of Loaders**|B0036.003|Multiple stages of loaders are used with an encoded payload.|
 
@@ -48,7 +48,7 @@ Malware has characteristics enabling it to evade capture from the infected syste
 |---|---|---|---|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|B0036.002|Vobfus is downloaded in an encrypted form then decrypted. [[1]](#1)|
 |[**TEARDROP**](../xample-malware/teardrop.md)|2018|B0036.001|TEARDROP loads its payload only into memory. [[2]](#2)|
-|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware consists of 2 loaders. Malware downloads multiple payloads (as files and DLLs) that are stored in a memory buffer. [[3]](#3) [[4]](#4)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0036.003|Matanbuchus consists of 2 loaders. The malware downloads multiple payloads (as files and DLLs) that are stored in a memory buffer. [[3]](#3) [[4]](#4)|
 
 
 ## References
