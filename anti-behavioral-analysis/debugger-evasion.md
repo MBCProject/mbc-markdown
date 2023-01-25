@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Created</b></td>
-<td><b>1 August 2019</b></td>
+<td><b>2019</b></td>
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
@@ -45,7 +45,7 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 |**Block Interrupts**|B0002.001|Block interrupt (via hooking) 1 and/or 3 to prevent debuggers from working.|
 |**Break Point Clearing**|B0002.002|Intentionally clearing software or hardware breakpoints.|
 |**Byte Stealing**|B0002.003|Move or copy the first bytes / instructions of the original code elsewhere. AKA stolen bytes or code splicing. For example, a packer may incorporate the first few instructions of the original EntryPoint (EP) into its unpacking stub before the tail transition in order to confuse automated unpackers and novice analysts. This can make it harder for rebuilding and may bypass breakpoints if set prematurely.|
-|**Change SizeOfImage**|B0002.004|Changing this value during run time can prevent some debuggers from attaching. Also confuses some unpackers and dumpers.|
+|**Change SizeOfImage**|B0002.004|Changing this value during run time can prevent some debuggers from attaching and also confuses some unpackers and dumpers.|
 |**Code Integrity Check**|B0002.005|Check that the unpacking code is unmodified. Variation exists where unpacking code is part of the "key" used to unpack, therefore any Software Breakpoints during debugging causes unpacking to completely fail or result in malformed unpacked code.|
 |**Exception Misdirection**|B0002.006|Using exception handling (SEH) to cause flow of program to non-obvious paths.|
 |**Get Base Indirectly**|B0002.007|CALL to a POP; finds base of code or data, often the packed version of the code; also used often in obfuscated/packed shellcode.|
@@ -77,8 +77,8 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|**Fake Adobe Flash Update OS X**|February 2016|--|[[2]](#2)|
-|**Dridex**|March 2015|--|[[3]](#3)|
+|**Fake Adobe Flash Update OS X**|2016|--|[[2]](#2)|
+|**Dridex**|2015|--|[[3]](#3)|
 |[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[6]](#6)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus uses GetModuleHandle API to check for the presence of a debugger [[7]](#7)|
 
