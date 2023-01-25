@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Created</b></td>
-<td><b>1 August 2019</b></td>
+<td><b>2019</b></td>
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
@@ -47,7 +47,7 @@ Details on methods of detecting debuggers are given in the references; many are 
 |**CloseHandle**|B0001.003|(NtClose); If an invalid handle is passed to the CloseHandle function and a debugger is present, then an EXCEPTION_INVALID_HANDLE (0xC0000008) exception will be raised. [[7]](#7)|
 |**Debugger Artifacts**|B0001.004|Malware may detect a debugger by its artifact (window title, device driver, exports, etc.).|
 |**Hardware Breakpoints**|B0001.005|(SEH/GetThreadContext); Debug registers will indicate the presence of a debugger. See [[7]](#7) for details.|
-|**Interruption**|B0001.006|If an interruption is mishandled by the debugger, it can cause a single-byte instruction to be inadvertently skipped, which can be detected by malware. Examples include Interrupt 0x2d and Interrupt 1 [7].|
+|**Interruption**|B0001.006|If an interruption is mishandled by the debugger, it can cause a single-byte instruction to be inadvertently skipped, which can be detected by malware. Examples include Interrupt 0x2d and Interrupt 1 [[7]](#7).|
 |**IsDebuggerPresent**|B0001.008|The kernel32!IsDebuggerPresent API function call checks the PEB BeingDebugged flag to see if the calling process is being debugged. It returns 1 if the process is being debugged, 0 otherwise. This is one of the most common ways of debugger detection.|
 |**Memory Breakpoints**|B0001.009|(PAGE_GUARD); Guard pages trigger an exception the first time they are accessed and can be used to detect a debugger. See [[7]](#7) for details.|
 |**Memory Write Watching**|B0001.010|[[7]](#7)|
@@ -83,11 +83,13 @@ Details on methods of detecting debuggers are given in the references; many are 
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[4]](#4)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|--|The malware detects debuggers using an INT 03h trap and IsDebuggerPresent[[8]](#8)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|B0001.006|The malware detects debuggers using an INT 03h trap. [[8]](#8)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|B0001.008|The malware detects debuggers using IsDebuggerPresent. [[8]](#8)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|B0001.038|An anti-analysis function within the packer is called to check the username and filename of the executing process for strings like “malwar”, “sampl”, “viru”, and “sandb”. [[9]](#9)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|B0001.016|The malware calls the Windows API OutputDebugString function 335,000 times. [[9]](#9)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy Variant checks for breakpoints and exits immediately if found. Poison Ivy uses the IsDebuggerPresent API function call to check if the process is running in a debugger. [[10]](#10) [[13]](#13)|
-|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The malware calls GetTickCount64 to retrieve timestamp. Malware executes Sleep and Beep in a repeated loop for 10 times. [[11]](#11) [[12]](#12)|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|B0001.005|Poison Ivy Variant checks for breakpoints and exits immediately if found. [[13]](#13)|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|B0001.008|Poison Ivy uses the IsDebuggerPresent API function call to check if the process is running in a debugger. [[13]](#13)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0001.032|The malware calls GetTickCount64 to retrieve timestamp. Malware executes Sleep and Beep in a repeated loop for 10 times. [[11]](#11) [[12]](#12)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|B0001.028|The malware manipulates TLS Callbacks while injecting to child process. [[12]](#12)|
 
 
