@@ -53,7 +53,7 @@ See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://atta
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Most security products hook some APIs to monitor the behavior of malware. To avoid being identified by this technique, WebCobra loads ntdll.dll and user32.dll as data files in memory and overwrites the first 8 bytes of those functions, which unhooks the APIs. [[1]](#1)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware terminates the following anti-malware services: Window Defender, MBamService (Malwarebytes), SAVService (Sophos AV). [[6]](#6)|
 |[**DNSChanger**](../xample-malware/dnschanger.md)|2011|--|DNSChanger prevents the infected system from installing anti-virus software updates. [[2]](#2)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus uses GetModuleHandle API to check for presence of Avast Antivirus. [[5]](#5)|
 
@@ -68,3 +68,5 @@ See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://atta
 <a name="4">[4]</a> Carl Petty, Red Canary, 3/3/2020. Online: https://redcanary.com/blog/heavens-gate-technique-on-linux/
 
 <a name="5">[5]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
+
+<a name="6">[6]</a> https://www.trendmicro.com/en_us/research/18/k/trickbot-shows-off-new-trick-password-grabber-module.html
