@@ -53,30 +53,35 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |**Send Heartbeat**|B0030.007|Heartbeat sent.|
 |**Send System Information**|B0030.006|Implant sends system information.|
 |**Server to Client File Transfer**|B0030.003|File is transferred from controller to implant.|
-|**Start Interactive Shell**|B0030.016|Start an interactive shell using a built-in program (e.g. cmd.exe, PowerShell, bash). This is often implemented with polling the network connection from the controller for text commands to redirect to the shell's stdin and polling the shell's stdout and stderr to redirect over the network to the controller. This differs from Execute Shell Command because the shell process runs across multiple iterations of the recv-command(s)-send-result loop.|
+|**Start Interactive Shell**|B0030.016|Starts an interactive shell using a built-in program (e.g. cmd.exe, PowerShell, bash). This is often implemented with polling the network connection from the controller for text commands to redirect to the shell's stdin and polling the shell's stdout and stderr to redirect over the network to the controller. This differs from Execute Shell Command because the shell process runs across multiple iterations of the recv-command(s)-send-result loop.|
 
 
 ## Use in Malware
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--|The malware sends a hash value generated from system information. The malware receives a public key from the C2. [[1]](#1)|
-|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware sends a hash value generated from system information. The malware receives a public key from the C2. The malware sends a phone-home message with encryption to start. [[14]](#14)|
-|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR receives data from the C2 [[2]](#2)|
+|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|B0030.001|The malware sends a hash value generated from system information. [[1]](#1)|
+|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|B0030.002|The malware receives a public key from the C2. [[1]](#1)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|B0030.001|The malware sends a hash value generated from system information. [[14]](#14)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|B0030.002|The malware receives a public key from the C2. [[14]](#14)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|B0030.011|The malware sends a phone-home message with encryption to start. [[14]](#14)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|B0030.002|GoBotKR receives data from the C2. [[2]](#2)|
 |[**Terminator**](../xample-malware/terminator.md)|2013|B0030.001|The malware sends data to the C2. [[3]](#3)|
 |[**UP007**](../xample-malware/up007.md)|2016|B0030.002|The malware receives payloads. [[4]](#4)|
-|[**UP007**](../xample-malware/up007.md)|2016|B0030.001|The malware sends harded HTTP headers disguised as Microsoft Update traffic. [[4]](#4)|
+|[**UP007**](../xample-malware/up007.md)|2016|B0030.001|The malware sends hardened HTTP headers disguised as Microsoft Update traffic. [[4]](#4)|
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|B0030.006|The malware connects to the command and control server using HTTP to send device information. [[5]](#5)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|B0030.011|Ursnif variant Dreambot authenticates and encrypts traffic to C2 server using TOR [[6]](#6)|
-|[**Emotet**](../xample-malware/emotet.md)|2018|--|New email addresses are collected automatically from the victim's address books [[7]](#7)|
-|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK sends data to the C2 server using HTTP POST requests [[8]](#8)|
-|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar communicates with a C2 server [[9]](#9)|
-|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny communicates C2 via HTTP [[10]](#10)|
-|[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer communicates to a Tor Onion Service via HTTP [[11]](#11)|
-|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The malware sends collected data about the system to C2 server. The C2 server returns base64 encoded data containing the information about the next command for the loader. The payload is run by explorer.exe. [[12]](#12) [[13]](#13)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut receives data from C2. [[15]](#15)|
-|[**Heriplor**](../xample-malware/heriplor.md)|2012|--|Heriplor malware has a capability to connect with a C2 to download arbitrary code. [[16]](#16)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2012|--|The malware sends data to the C2. [[17]](#17)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|B0030.011|Ursnif variant Dreambot authenticates and encrypts traffic to C2 server using TOR. [[6]](#6)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|B0030.010|New email addresses are collected automatically from the victim's address books. [[7]](#7)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|B0030.001|CHOPSTICK sends data to the C2 server using HTTP POST requests. [[8]](#8)|
+|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar communicates with a C2 server. [[9]](#9)|
+|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny communicates C2 via HTTP. [[10]](#10)|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer communicates to a Tor Onion Service via HTTP. [[11]](#11)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0030.001|The malware sends collected data about the system to C2 server. [[12]](#12) [[13]](#13)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0030.002|The C2 server returns base64 encoded data containing the information about the next command for the loader. [[12]](#12) [[13]](#13)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0030.013|The payload is run by explorer.exe. [[12]](#12) [[13]](#13)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|B0030.002|Gamut receives data from C2. [[15]](#15)|
+|[**Heriplor**](../xample-malware/heriplor.md)|2012|B0030.002|Heriplor malware has a capability to connect with a C2 to download arbitrary code. [[16]](#16)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0030.001|The malware sends data to the C2. [[17]](#17)|
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|B0030.002|The malware receives data from the C2 server. [[18]](#18)|
 
 ## Code Snippets
