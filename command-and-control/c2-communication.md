@@ -79,7 +79,8 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0030.001|The malware sends collected data about the system to C2 server. [[12]](#12) [[13]](#13)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0030.002|The C2 server returns base64 encoded data containing the information about the next command for the loader. [[12]](#12) [[13]](#13)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0030.013|The payload is run by explorer.exe. [[12]](#12) [[13]](#13)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|B0030.002|Gamut receives data from C2. [[15]](#15)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|B0030.002|Gamut receives data from the C2. [[15]](#15)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|B0030.003|The malware receives files from the C2. [[15]](#15)|
 |[**Heriplor**](../xample-malware/heriplor.md)|2012|B0030.002|Heriplor malware has a capability to connect with a C2 to download arbitrary code. [[16]](#16)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|B0030.001|The malware sends data to the C2. [[17]](#17)|
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|B0030.002|The malware receives data from the C2 server. [[18]](#18)|
