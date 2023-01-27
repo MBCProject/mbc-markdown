@@ -34,12 +34,12 @@ See ATT&CK: **Process Injection ([T1055](https://attack.mitre.org/techniques/T10
 
 |ID|ATT&CK Sub-Technique|Notes|
 |---|---|---|
-|E1055.001|Dynamic-link Library Injection|Malware creates a thread using CreateRemoteThread (or NtCreateThreadEx, RtlCreateUserThread) and LoadLibrary. The path to the malware's malicious dynamic-link library (DLL) is written in the virtual address space of another process; the malware ensures the remote process loads it by creating a remote thread in the target process. This is one of the most common process injection methods. Called *Classic DLL Injection via CreateRemoteThread and LoadLibrary* in [[1]](#1).|
-|E1055.002|Portable Executable Injection|Malware copies its malicious code into an existing open process and causes it to execute via shellcode or by calling CreateRemoteThread (instead of passing the address of the LoadLibrary). Called *Portable Executable Injection* in [[1]](#1).|
-|E1055.003|Thread Execution Hijacking|Malware targets an existing thread of a process, avoiding noisy process or thread creations operations. Called *Thread Execution Hijacking* in [[1]](#1).|
-|E1055.004|Asynchronous Procedure Call|Malware may leverage Asynchronous Procedure Calls (APC) to force another thread to execute its code by attaching it to the APC Queue of the target thread (using QueueUserAPC / NtQueueApcThread); also called AtomBombing [[3]](#3). Called *APC Injection and AtomBombing* in [[1]](#1).|
-|E1055.011|Extra Window Memory Injection|Malware may inject into Explorer tray window’s extra window memory. Called *Extra Window Memory Injection* in [[1]](#1).|
-|E1055.012|Process Hollowing|Instead of injecting code into a program, malware can upmap (hollow out) legitimate code from memory of a target process, overwriting it with a malicious executable. Called *Process Hollowing* in [[1]](#1).|
+|E1055.001|Dynamic-link Library Injection|Malware creates a thread using CreateRemoteThread (or NtCreateThreadEx, RtlCreateUserThread) and LoadLibrary. The path to the malware's malicious dynamic-link library (DLL) is written in the virtual address space of another process; the malware ensures the remote process loads it by creating a remote thread in the target process. This is one of the most common process injection methods, called *Classic DLL Injection via CreateRemoteThread and LoadLibrary* in [[1]](#1).|
+|E1055.002|Portable Executable Injection|Malware copies its malicious code into an existing open process and causes it to execute via shellcode or by calling CreateRemoteThread (instead of passing the address of the LoadLibrary), called *Portable Executable Injection* in [[1]](#1).|
+|E1055.003|Thread Execution Hijacking|Malware targets an existing thread of a process, avoiding noisy process or thread creations operations, called *Thread Execution Hijacking* in [[1]](#1).|
+|E1055.004|Asynchronous Procedure Call|Malware may leverage Asynchronous Procedure Calls (APC) to force another thread to execute its code by attaching it to the APC Queue of the target thread (using QueueUserAPC / NtQueueApcThread), called AtomBombing [[3]](#3), also called *APC Injection and AtomBombing* in [[1]](#1).|
+|E1055.011|Extra Window Memory Injection|Malware may inject into Explorer tray window’s extra window memory, called *Extra Window Memory Injection* in [[1]](#1).|
+|E1055.012|Process Hollowing|Instead of injecting code into a program, malware can upmap (hollow out) legitimate code from memory of a target process, overwriting it with a malicious executable, called *Process Hollowing* in [[1]](#1).|
 
 Methods not captured by ATT&CK Process Injection sub-techniques are listed below. Note that IAT hooking and inline hooking (aka userland rootkits) are defined as methods under the [Hooking](../credential-access/hooking.md) behavior.
 
@@ -63,10 +63,11 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|The malware injects miner code into a running process. [[12]](#12)|
 |[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--|The malware injects code into a new svchost process. [[6]](#6)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|The malware injects itself into processes such as cmd.exe, notepad.exe [[7]](#7)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Bypasses UAC using a Shim Database instructing SndVol.exe to execute cmd.exe instead, allowing for elevated execution. BlackEnergy injects its dll component into svchost.exe. [[8]](#8)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1055.001|Stuxnet injects the entire DLL into another process and then just calls the particular export  [[9]](#9)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|E1055.m05|BlackEnergy bypasses UAC using a Shim Database instructing SndVol.exe to execute cmd.exe instead, allowing for elevated execution. [[8]](#8)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy injects its dll component into svchost.exe. [[8]](#8)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1055.001|Stuxnet injects the entire DLL into another process and then just calls the particular export. [[9]](#9)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1055.m02|The driver Stuxnet uses for persistence Mrxcls.sys is registered as a boot start service creating the registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MRxCIs"ImagePath" = "%System%\drivers\mrxcls.sys." [[9]](#9)|
-|[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker uses reflective DLL loading to inject from memory [[10]](#10)|
+|[**Netwalker**](../xample-malware/netwalker.md)|2020|E1055.001|Netwalker uses reflective DLL loading to inject from memory [[10]](#10)|
 
 
 ## References
