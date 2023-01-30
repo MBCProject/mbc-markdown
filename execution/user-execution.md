@@ -36,11 +36,10 @@ See ATT&CK Technique: **User Execution ([T1204](https://attack.mitre.org/techniq
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
-|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|--| GoBotKR makes their malware look like the torrent content that the user intended to download, in order to entice a user to click on it. [[1]](#1)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware relies on a victim to execute itself [[2]](#2)|
-|[**Terminator**](../xample-malware/terminator.md)|2013|--|The malware relies on user interaction to execute [[3]](#3)|
-|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|The malware relies on user interaction to run the executable [[4]](#4)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--| GoBotKR makes their malware look like the torrent content that the user intended to download, in order to entice a user to click on it. [[1]](#1)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware relies on a victim to execute itself. [[2]](#2)|
+|[**Terminator**](../xample-malware/terminator.md)|2013|--|The malware relies on user interaction to execute. [[3]](#3)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|The malware relies on user interaction to run the executable. [[4]](#4)|
 |[**CryptoLocker**](../xample-malware/vobfus.md)|2013|--|The malware relies on victims to execute. [[4]](#4)|
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|The user opens a disk image file which invisibly installs its components. [[6]](#6)|
 
