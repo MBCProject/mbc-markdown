@@ -38,7 +38,7 @@ ATT&CK defines Clipboard Modification as a Mobile technique (Android platform). 
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer monitors the clipboard for cryptocurrency addresses and replaces them with ones controlled by the adversary [[1]](#1)|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer monitors the clipboard for cryptocurrency addresses and replaces them with ones controlled by the adversary. [[1]](#1)|
 
 
 ## References
