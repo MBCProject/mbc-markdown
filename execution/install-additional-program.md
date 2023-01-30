@@ -37,15 +37,15 @@ Malware that installs another component is called a "dropper." If the code is co
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|The malware downloads and executes Claymore's Zcash miner from a remote server. [[1]](#1)|
-|[**Geneio**](../xample-malware/geneio.md)|August 2015|--|Malware tricks OS X keychain to create application files. Malware also installs the browser extension Omnibar.safariextz. [[10]](#10)|
-|[**GotBotKR**](../xample-malware/gobotkr.md)|July 2019|--|GotBotKR reinstalls its running instance if it is removed. [[3]](#3)|
-|[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|Installs a backdoor.|
+|[**Geneio**](../xample-malware/geneio.md)|2015|--|Malware tricks OS X keychain to create application files. Malware also installs the browser extension Omnibar.safariextz. [[10]](#10)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR reinstalls its running instance if it is removed. [[3]](#3)|
+|[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|MazarBot installs a backdoor. [[14]](#14)|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Malware contains a dropper that installs additional programs like Cbrom.exe. [[11]](#11)|
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|--|The malware can download and install arbitrary iOS apps. [[13]](#13)|
-|[**UP007**](../xample-malware/up007.md)|2016|--|The malware is a dropper that creates multiple files [[4]](#4)|
-|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|Upon execution, CozyCar drops a decoy file and a secondary dropper [[5]](#5)|
-|[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer drops a file masquerading as a Control Panel (CPL) file [[6]](#6)|
-|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus downloads malware from other malware families [[7]](#7)|
+|[**UP007**](../xample-malware/up007.md)|2016|--|The malware is a dropper that creates multiple files. [[4]](#4)|
+|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|Upon execution, CozyCar drops a decoy file and a secondary dropper. [[5]](#5)|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer drops a file masquerading as a Control Panel (CPL) file. [[6]](#6)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus downloads malware from other malware families. [[7]](#7)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware drops the first loader which is responsible for loading the main loader into memory. [[8]](#8) [[9]](#9)|
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|The malware installs an open-source program called mitmproxy. [[12]](#12)|
 
@@ -76,3 +76,5 @@ Malware that installs another component is called a "dropper." If the code is co
 <a name="12">[12]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
 
 <a name="13">[13]</a> http://researchcenter.paloaltonetworks.com/2015/10/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
+
+<a name="14">[14]</a> https://us.norton.com/internetsecurity-emerging-threats-mazar-bot-malware-invades-and-erases-android-devices.html
