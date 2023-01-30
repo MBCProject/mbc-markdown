@@ -34,7 +34,7 @@ A malicious attachment is sent via spam SMS or MMS messages. When the user click
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**MazarBot**](../xample-malware/mazarbot.md)||--|MazarBot is delivered via a poisoned SMS message. [[1]](#1)|
+|[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|MazarBot is delivered via a poisoned SMS message. [[1]](#1)|
 
 ## References
 
