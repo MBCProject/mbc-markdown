@@ -56,9 +56,10 @@ Autonomous behaviors - those done by the malware without an active attacker - sh
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|--|The malware commands are sent by a remote user can archive/upload files, capture screenshots, clear cookies, download/execute other files, list running processes, reboot the affected system, steal certificates and cookies, update/download a configuration file, and upload a log file which contains stolen information. [[1]](#1)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|infected bots receive commands from botmaster to load plugins associated with botmaster's goals. [[2]](#2)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Infected bots receive commands from the botmaster to load plugins associated with botmaster's goals. [[2]](#2)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware receives various commands from the C2 server. [[3]](#3)|
-|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The malware sleeps if it fails to send collected data or execute its commands. The malware loader can uninstall itself from the victim computer. [[4]](#4) [[5]](#5)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0011.005|The malware sleeps if it fails to send collected data or execute its commands. [[4]](#4) [[5]](#5)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0011.006|The malware loader can uninstall itself from the victim computer. [[4]](#4) [[5]](#5)|
 
 ## References
 
