@@ -45,6 +45,7 @@ Malware may enumerate files and directories or may search for specific files or 
 |[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware searches for user files before encrypting them. [[2]](#2)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware collects local files with specified file extensions and information from the victim's machine. [[3]](#3)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware verifies that the folder from the first stage loader exists on the system. The malware also checks for the path for the Opera web browser. If it exists, the malware exits. [[4]](#4) [[5]](#5)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware queries target computer for a target folder. [[4]](#4) [[5]](#5)|
 
 ## References
 
