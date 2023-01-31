@@ -34,5 +34,5 @@ Malware may encode data.
 
 |Name|ID|Description|
 |---|---|---|
-|**Base64**|C0026.001|Malware may encode data using Base64.|
-|**XOR**|C0026.002|Malware may use xor to encode data.|
+|**Base64**|C0026.001|Malware may encode data using base64.|
+|**XOR**|C0026.002|Malware may use XOR to encode data.|
