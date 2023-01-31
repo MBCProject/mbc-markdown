@@ -49,8 +49,8 @@ Note that the **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniqu
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Allows an attacker to control the system via a GUI. [[3]](#3)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|The malware acts as a backdoor [[4]](#4)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Dark Comet allows an attacker to control the system via a GUI. [[3]](#3)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|The malware acts as a backdoor. [[4]](#4)|
 
 ## References
 
