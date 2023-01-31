@@ -28,4 +28,4 @@
 
 # Check String
 
-Malware may check a string for some characteristics, such as being ascii content; credit card number; or length.
+Malware may check a string for some characteristics, such as being ASCII content, credit card number, or length.
