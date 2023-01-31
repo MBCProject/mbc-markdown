@@ -34,5 +34,5 @@ Malware may decode data.
 
 |Name|ID|Description|
 |---|---|---|
-|**Base64**|C0053.001|Malware may decode data using Base64.|
-|**XOR**|C0053.002|Malware may use xor to decode data.|
+|**Base64**|C0053.001|Malware may decode data using base64.|
+|**XOR**|C0053.002|Malware may use XOR to decode data.|
