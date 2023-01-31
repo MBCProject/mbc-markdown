@@ -28,7 +28,7 @@
 
 # Supply Chain Compromise
 
-The supply chain may be compromised to enable initial malware infection. MBC objectives don't encompass initial infection, but the malware-related methods are listed below supplement the information available defined in ATT&CK and allow for lateral movement: **Supply Chain Compromise ([T1195](https://attack.mitre.org/techniques/T1195/), [T1474](https://attack.mitre.org/techniques/T1474/))**.  
+The supply chain may be compromised to enable initial malware infection. MBC objectives don't encompass initial infection, but the malware-related methods listed below supplement the information available and defined in ATT&CK and allow for lateral movement: **Supply Chain Compromise ([T1195](https://attack.mitre.org/techniques/T1195/), [T1474](https://attack.mitre.org/techniques/T1474/))**.  
 
 ## Methods
 
@@ -42,7 +42,7 @@ The supply chain may be compromised to enable initial malware infection. MBC obj
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|E1195.m01|YiSpecter's malicious apps were signed with three iOS enterprise certificates issued by Apple so they can be installed as enterprise apps on non-jailbroken iOS devices via in-house distribution. [[1]](#1)|
-|[**YiSpecter**](../xample-malware/yispecter.md)|2015|E1195.m02|Within the malware, use of the private api allows installation of malicious apps and uninstallation of legitimate apps without user notification. [[1]](#1)|
+|[**YiSpecter**](../xample-malware/yispecter.md)|2015|E1195.m02|Within the malware, use of the private API allows installation of malicious apps and uninstallation of legitimate apps without user notification. [[1]](#1)|
 
 ## References
 
