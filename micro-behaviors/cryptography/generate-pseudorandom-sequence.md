@@ -28,7 +28,7 @@
 
 # Generate Pseudo-random Sequence
 
-The Generate Pseudo-random Sequence microbehavior can be used for a number of purposes. The methods below include specific functions, as well as pseudorandom number generators (PRNG).
+The Generate Pseudo-random Sequence micro-behavior can be used for a number of purposes. The methods below include specific functions, as well as pseudo-random number generators (PRNG).
 
 ## Methods
 
