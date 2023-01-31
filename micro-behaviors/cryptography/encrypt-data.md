@@ -55,11 +55,11 @@ Malware may encrypt data.
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**TrickBot**](../../xample-malware/trickbot.md)|2016|C0027.001|The malware uses an AES CBC (256 bits) encryption algorithm for its loader and configuration files. [[1]](#1)|
-|[**Emotet**](../../xample-malware/emotet.md)|2018|--|Emotet uses RSA to encrypt network traffic to its C2 [[2]](#2)|
-|[**GravityRAT**](../../xample-malware/gravity-rat.md)|2018|--|	GravityRat v3 supports file AES file encryption  [[3]](#3)|
-|[**Poison-Ivy**](../../xample-malware/poison-ivy.md)|2005|--|Poison Ivy's custom network protocol over TCP is encrypted using Camellia cipher with a 256-bit key  [[4]](#4)|
-|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK encrypts the configuration block using RC4 encryption [[5]](#5)|
-|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|The malware decrypts inner configurations stored in the binary. The malware also encrypts the value of each JSON key with RC4 and encodes the value with base64. [[6]](#6) [[7]](#7)|
+|[**Emotet**](../../xample-malware/emotet.md)|2018|C0027.011|Emotet uses RSA to encrypt network traffic to its C2. [[2]](#2)|
+|[**GravityRAT**](../../xample-malware/gravity-rat.md)|2018|C0027.001|GravityRat v3 supports file AES file encryption. [[3]](#3)|
+|[**Poison-Ivy**](../../xample-malware/poison-ivy.md)|2005|C0027.003|Poison Ivy's custom network protocol over TCP is encrypted using Camellia cipher with a 256-bit key. [[4]](#4)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|C0027.009|CHOPSTICK encrypts the configuration block using RC4 encryption. [[5]](#5)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|C0027.009|The malware decrypts inner configurations stored in the binary. The malware also encrypts the value of each JSON key with RC4 and encodes the value with base64. [[6]](#6) [[7]](#7)|
 
 ## Code Snippets
 
