@@ -45,8 +45,8 @@ Malware may generate traffic from the victim system such as clicks of advertisin
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**DNSChanger**](../xample-malware/dnschanger.md)|November 2011|--|Alters DNS server settings to route to a rogue DNS server for the purpose of click hijacking. [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|--|Performs click-fraud. [[4]](#4)|
+|[**DNSChanger**](../xample-malware/dnschanger.md)|2011|E1643.m02|Malware alters DNS server settings to route to a rogue DNS server for the purpose of click hijacking. [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter performs click-fraud. [[4]](#4)|
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|E1643.m02|The malware displays brief advertisements whenever the user opens applications on their phone. [[5]](#5)|
 
 ## References
