@@ -53,7 +53,6 @@ See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://atta
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Loads ntdll.dll and user32.dll as data files in memory and overwrites the first 8 bytes of those functions, which unhooks the APIs. [[1]](#1)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
 |[**DNSChanger**](../xample-malware/dnschanger.md)|2011|--|Prevents the infected system from installing anti-virus software updates. [[2]](#2)|
 
 ## References
@@ -65,3 +64,4 @@ See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://atta
 <a name="3">[3]</a> Alexander Adamov, Stealthy WastedLocker: eluding behavior blockers, but not only. Online:   https://vblocalhost.com/conference/presentations/stealthy-wastedlocker-eluding-behaviour-blockers-but-not-only/
 
 <a name="4">[4]</a> Carl Petty, Red Canary, 3/3/2020. Online: https://redcanary.com/blog/heavens-gate-technique-on-linux/
+

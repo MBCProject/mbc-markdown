@@ -41,8 +41,9 @@ The supply chain may be compromised to enable initial malware infection. MBC obj
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**YiSpecter**](../xample-malware/yispecter.md)|October 2015|--|Attacks both jailbroken and non-jailbroken iOS devices by exploiting private APIs. [[1]](#1)|
+|[**YiSpecter**](../xample-malware/yispecter.md)|October 2015|E1195.m02, E1195.m01|Please see the YiSpecter malware page for details. [[1]](#1)|
 
 ## References
 
 <a name="1">[1]</a> http://researchcenter.paloaltonetworks.com/2015/10/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
+

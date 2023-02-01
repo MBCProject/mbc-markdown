@@ -41,8 +41,11 @@ The related **Data Manipulation: Transmitted Data Manipulation ([T1565.002](http
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|Intercepts encrypted web traffic to inject adds. [[1]](#1)|
-|[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|Intercepts data coming into and going out of device.|
+|[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|Intercepts data coming into and going out of device. [[2]](#2)|
 
 ## References
 
 <a name="1">[1]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
+
+<a name="2">[2]</a> https://us.norton.com/internetsecurity-emerging-threats-mazar-bot-malware-invades-and-erases-android-devices.html
+

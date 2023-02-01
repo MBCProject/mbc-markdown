@@ -77,9 +77,8 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|**Fake Adobe Flash Update OS X**|February 2016|--|[[2]](#2)|
-|**Dridex**|March 2015|--|[[3]](#3)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFICE. [[6]](#6)|
+|**Fake Adobe Flash Update OS X**|February 2016|--|Malware contains code that manually detects a debugger [[2]](#2)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFICE. [[3]](#3)|
 
 ## References
 
@@ -87,10 +86,11 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 
 <a name="2">[2]</a> https://www.synack.com/2016/02/17/analyzing-the-anti-analysis-logic-of-an-adware-installer/
 
-<a name="3">[3]</a> http://phishme.com/dridex-code-breaking-modify-the-malware-to-bypass-the-vm-bypass/
+<a name="3">[3]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
 
 <a name="4">[4]</a> http://antukh.com/blog/2015/01/19/malware-techniques-cheat-sheet/
 
 <a name="5">[5]</a> https://search.unprotect.it/map/
 
-<a name="6">[6]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
+<a name="6">[6]</a> https://web.archive.org/web/20161025013916/https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
+

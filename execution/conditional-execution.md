@@ -56,17 +56,26 @@ Some aspects of this Conditional Execution behavior are related to the [Executio
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Drops either Cryptonight or Claymore's Zcash miner, depending on system architecture. [[1]](#1)|
-|[**Conficker**](../xample-malware/conficker.md)|2008|--|A routine causes the process to suicide exit if the keyboard language is set to Ukranian.|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Macros check if there are at least 50 running processes with a graphical interface, check if a list of blacklisted processes are running, and checks if the application is running in Australia and is NOT affiliated with a select group of networks (Security Research, Hospitals, Universities, Veterans, etc.) [1] [[3]](#3)|
+|[**Conficker**](../xample-malware/conficker.md)|2008|B0025, B0025.001|Please see the Conficker malware page for details. [[5]](#5)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|B0025.004|Macros check if there are at least 50 running processes with a graphical interface, check if a list of blacklisted processes are running, and checks if the application is running in Australia and is NOT affiliated with a select group of networks (Security Research, Hospitals, Universities, Veterans, etc.) [[3]](#3)|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Malware only proceeds if it detects the BIOS ROM is Award BIOS [[4]](#4)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0025.007|Run as service (This capa rule had 1 match) [[6]](#6)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|B0025.007|Run as service (This capa rule had 1 match) [[6]](#6)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|B0025.004|Stuxnet checks for specific operating systems on 32-bit machines, registry keys, and dates to profile a potential target machine before execution. If the conditions are not met to be considered a viable target, it will exit execution  [[7]](#7)|
 
 ## References
 
 <a name="1">[1]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
-<a name="2">[2]</a> 
-https://reverseengineering.stackexchange.com/questions/2019/debugging-malware-that-will-only-run-as-a-service
+<a name="2">[2]</a> https://reverseengineering.stackexchange.com/questions/2019/debugging-malware-that-will-only-run-as-a-service
 
 <a name="3">[3]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-banking-trojan-campaign-sandbox-evasion-techniques
 
 <a name="4">[4]</a> https://www.webroot.com/blog/2011/09/13/mebromi-the-first-bios-rootkit-in-the-wild/
+
+<a name="5">[5]</a> https://en.wikipedia.org/wiki/Conficker
+
+<a name="6">[6]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
+<a name="7">[7]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
+

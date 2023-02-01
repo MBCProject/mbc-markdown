@@ -54,11 +54,19 @@ Malware may encrypt data.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**TrickBot**](../../xample-malware/trickbot.md)|2016|--|Uses an AES CBC (256 bits) encryption algorithm for its loader and configuration files  [[1]](#1)|
-|[**Emotet**](../../xample-malware/emotet.md)|2018|--|Emotet uses RSA to encrypt network traffic to its C2 [[2]](#2)|
-|[**GravityRAT**](../../xample-malware/gravity-rat.md)|2018|--|	GravityRat v3 supports file AES file encryption  [[3]](#3)|
-|[**Poison-Ivy**](../../xample-malware/poison-ivy.md)|2005|--|Poison Ivy's custom network protocol over TCP is encrypted using Camellia cipher with a 256-bit key  [[4]](#4)|
-|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK encrypts the configuration block using RC4 encryption [[5]](#5)|
+|[**TrickBot**](../../xample-malware/trickbot.md)|2016|C0027.001|Uses an AES CBC (256 bits) encryption algorithm for its loader and configuration files  [[1]](#1)|
+|[**GravityRAT**](../../xample-malware/gravity-rat.md)|2018|C0027.001|	GravityRat v3 supports file AES file encryption  [[3]](#3)|
+|[**Poison-Ivy**](../../xample-malware/poison-ivy.md)|2005|C0027.003|Poison Ivy's custom network protocol over TCP is encrypted using Camellia cipher with a 256-bit key  [[4]](#4)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|C0027.009|CHOPSTICK encrypts the configuration block using RC4 encryption [[5]](#5)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0027.009|Encrypt data using RC4 via WinAPI (This capa rule had 1 match) [[6]](#6)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|C0027.009|Encrypt data using RC4 PRGA (This capa rule had 3 matches) [[6]](#6)|
+|[**DNSChanger**](../xample-malware/dnschanger.md)|2011|C0027.009|Encrypt data using RC4 PRGA (This capa rule had 1 match) [[6]](#6)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|C0027.011, C0027.009|Please see the Emotet malware page for details. [[2]](#2)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0027.004|Encrypt data using DES (This capa rule had 1 match) [[6]](#6)|
+|[**Kraken**](../xample-malware/kraken.md)|2008|C0027.009|Encrypt data using RC4 PRGA (This capa rule had 2 matches) [[6]](#6)|
+|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|C0027.009|Encrypt data using RC4 PRGA (This capa rule had 1 match) [[6]](#6)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Encrypt data using DPAPI (This capa rule had 6 matches) [[6]](#6)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|C0027.009|Encrypt data using RC4 PRGA (This capa rule had 1 match) [[6]](#6)|
 
 ## Code Snippets
 
@@ -130,4 +138,6 @@ retn
 <a name="4">[4]</a> https://www.cyber.nj.gov/threat-center/threat-profiles/trojan-variants/poison-ivy
 
 <a name="5">[5]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
+
+<a name="6">[6]</a> capa v4.0, analyzed at MITRE on 10/12/2022
 

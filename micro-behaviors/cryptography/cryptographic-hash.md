@@ -40,3 +40,17 @@ Malware may use a cryptographic hash.
 |**SHA256**|C0029.003|Malware uses a SHA-256 hash.|
 |**Snefru**|C0029.006|Malware uses a Snefru hash.|
 |**Tiger**|C0029.005|Malware uses a Tiger hash.|
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0029, C0029.001, C0029.002|Please see the BlackEnergy malware page for details. [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Hash data via WinCrypt (This capa rule had 22 matches) [[1]](#1)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|C0029, C0029.002|Please see the Redhip malware page for details. [[1]](#1)|
+|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|C0029.002|Hash data using SHA1 (This capa rule had 1 match) [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

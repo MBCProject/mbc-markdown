@@ -53,3 +53,4 @@ Virtualized code is a software protection technique. Themida is a commercial too
 <a name="1">[1]</a> https://github.com/xiaoweime/WProtect
 
 <a name="2">[2]</a> https://blog.malwarebytes.com/threat-analysis/2017/01/locky-bart-ransomware-and-backend-server-analysis/
+

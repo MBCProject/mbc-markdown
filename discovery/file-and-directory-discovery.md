@@ -41,9 +41,23 @@ Malware may enumerate files and directories or may search for specific files or 
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--| [[1]](#1)|
+|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--|The malware searches for user files before encrypting them [[1]](#1)|
 |[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware searches for user files before encrypting them [[2]](#2)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Collects local files with specified file extensions and information from the victim's machine [[3]](#3)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|Enumerate files on windows (This capa rule had 3 matches) [[4]](#4)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1083, E1083.m01|Please see the Hupigon malware page for details. [[4]](#4)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|E1083.m01|Access the Windows event log (This capa rule had 2 matches) [[4]](#4)|
+|[**SamSam**](../xample-malware/samsam.md)|2015|--|Enumerate files on windows (This capa rule had 1 match) [[4]](#4)|
+|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|--|Enumerate files on windows (This capa rule had 1 match) [[4]](#4)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Get common file path (This capa rule had 3 matches) [[4]](#4)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Get file version info (This capa rule had 1 match) [[4]](#4)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|Get common file path (This capa rule had 5 matches) [[4]](#4)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|Check if file exists (This capa rule had 1 match) [[4]](#4)|
+|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|Get file size (This capa rule had 1 match) [[4]](#4)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Get file size (This capa rule had 1 match) [[4]](#4)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Get file size (This capa rule had 3 matches) [[4]](#4)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Get file version info (This capa rule had 1 match) [[4]](#4)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Get common file path (This capa rule had 1 match) [[4]](#4)|
 
 ## References
 
@@ -52,3 +66,6 @@ Malware may enumerate files and directories or may search for specific files or 
 <a name="2">[2]</a> https://www.secureworks.com/research/cryptolocker-ransomware
 
 <a name="3">[3]</a> https://www.securityartwork.es/wp-content/uploads/2017/07/Trickbot-report-S2-Grupo.pdf
+
+<a name="4">[4]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

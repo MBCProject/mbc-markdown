@@ -28,4 +28,14 @@
 
 # Taskbar Discovery
 
-Malware may find the taskbar.
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Find taskbar (This capa rule had 1 match) [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

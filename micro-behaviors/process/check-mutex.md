@@ -36,7 +36,9 @@ Malware checks a mutex.
 |---|---|---|---|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy variant checks if the wireshark-is-running{} named mutex object exists [[1]](#1)|
 
-
 ## References
 
 <a name="1">[1]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf
+
+<a name="2">[2]</a> https://www.fortinet.com/blog/threat-research/deep-analysis-of-new-poison-ivy-variant
+

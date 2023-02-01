@@ -36,7 +36,6 @@ See ATT&CK: **Create or Modify System Process::Windows Service ([T1543.003](http
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[1]](#1)|
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|--|Hijacks other installed applications' launch routines to use "ADPage" (an installed malicious app) to display advertisements  [[2]](#2)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Locates an inactive driver service to Hijack and set it to start automatically [[3]](#3)|
 |[**Conficker**](../xample-malware/conficker.md)|2008|--|Copies itself into the $systemroot%\system32 directory and registers as a service  [[4]](#4)|
@@ -53,3 +52,4 @@ See ATT&CK: **Create or Modify System Process::Windows Service ([T1543.003](http
 <a name="4">[4]</a> https://en.wikipedia.org/wiki/Conficker
 
 <a name="5">[5]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-returns-to-wipe-systems-in-middle-east-europe/
+

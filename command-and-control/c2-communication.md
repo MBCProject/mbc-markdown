@@ -60,17 +60,24 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--|The malware sends a hash value generated from system information [[1]](#1)|
-|[**GotBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR receives data from the C2 [[2]](#2)|
-|[**Terminator**](../xample-malware/terminator.md)|2013|--|The malware sends data to C2 [[3]](#3)|
-|[**UP007**](../xample-malware/up007.md)|2016|--|The malware receives payloads [[4]](#4)|
-|[**YiSpecter**](../xample-malware/yispecter.md)|2015|--|Connects to the command and control server using HTTP to send device information [[5]](#5)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Ursnif variant Dreambot authenticates and encrypts traffic to C2 server using TOR [[6]](#6)|
-|[**Emotet**](../xample-malware/emotet.md)|2018|--|New email addresses are collected automatically from the victim's address books [[7]](#7)|
-|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK sends data to the C2 server using HTTP POST requests [[8]](#8)|
+|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|B0030.001, B0030.002|Please see the CryptoWall malware page for details. [[1]](#1)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|B0030.002|GoBotKR receives data from the C2 [[2]](#2)|
+|[**Terminator**](../xample-malware/terminator.md)|2013|B0030.001|The malware sends data to C2 [[3]](#3)|
+|[**YiSpecter**](../xample-malware/yispecter.md)|2015|B0030.006|Connects to the command and control server using HTTP to send device information [[5]](#5)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|B0030.011|Ursnif variant Dreambot authenticates and encrypts traffic to C2 server using TOR [[6]](#6)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|B0030.010|New email addresses are collected automatically from the victim's address books [[7]](#7)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|B0030.001|CHOPSTICK sends data to the C2 server using HTTP POST requests [[8]](#8)|
 |[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar communicates with a C2 server [[9]](#9)|
 |[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny communicates C2 via HTTP [[10]](#10)|
 |[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer communicates to a Tor Onion Service via HTTP [[11]](#11)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|B0030.001, B0030.002, B0030.011|Please see the CryptoLocker malware page for details. [[12]](#12)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|B0030.002|The malware receives data from C2 [[13]](#13)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|B0030.002|Receive data (This capa rule had 1 match) [[14]](#14)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0030.002, B0030.001|Please see the Hupigon malware page for details. [[14]](#14)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|B0030.002, B0030.001|Please see the Kovter malware page for details. [[14]](#14)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0030.001, B0030.002|Please see the Rombertik malware page for details. [[15]](#15)|
+|[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|B0030.002| The malware receives data from the C2 server. [[16]](#16)|
+|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|B0030.002, B0030.001|Please see the UP007 Malware Family malware page for details. [[4]](#4)|
 
 ## Code Snippets
 
@@ -118,3 +125,16 @@ jmp short loc_4019A2
 <a name="10">[10]</a> https://web.archive.org/web/20150311013500/http://www.cyphort.com/evilbunny-malware-instrumented-lua/
 
 <a name="11">[11]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking
+
+<a name="12">[12]</a> https://www.secureworks.com/research/cryptolocker-ransomware
+
+<a name="13">[13]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/
+
+<a name="14">[14]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
+<a name="15">[15]</a> https://blogs.cisco.com/security/talos/rombertik
+
+<a name="16">[16]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
+
+<a name="17">[17]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke/
+

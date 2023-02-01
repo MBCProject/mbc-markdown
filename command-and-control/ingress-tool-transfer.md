@@ -38,25 +38,26 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites.|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy implant is running on the target machine, the attacker can use a Windows GUI controller to control the target computer. [[1]](#1)|
-|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware receives a public key from the C2 [[2]](#2)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|--|The malware receives data from C2 [[3]](#3)|
-|[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|Can download files from remote repository upon instruction  [[4]](#4)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Creates a folder on remote computers and then copies its executables (Shamoon and Filerase) into that directory  [[5]](#5)|
-|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar requests a file using SSL to a C2 domain [[6]](#6)|
-
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Creates a folder on remote computers and then copies its executables (Shamoon and Filerase) into that directory  [[2]](#2)|
+|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar requests a file using SSL to a C2 domain [[3]](#3)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Can download files from remote repository upon instruction  [[1]](#1)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|The malware receives files from C2 [[4]](#4)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR can download additional files and update itself. [[5]](#5)|
+|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|--|The malware downloads files from C2 [[6]](#6)|
 
 ## References
 
-<a name="1">[1]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
+<a name="1">[1]</a> https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/
 
-<a name="2">[2]</a> https://www.secureworks.com/research/cryptolocker-ransomware
+<a name="2">[2]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-attackers-employ-new-tool-kit-to-wipe-infected-systems/
 
-<a name="3">[3]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/
+<a name="3">[3]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke
 
-<a name="4">[4]</a> https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/
+<a name="4">[4]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/
 
-<a name="5">[5]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-attackers-employ-new-tool-kit-to-wipe-infected-systems/
+<a name="5">[5]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
 
-<a name="6">[6]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke
+<a name="6">[6]</a> https://citizenlab.ca/2016/04/between-hong-kong-and-burma/
+
+<a name="7">[7]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke/
+
