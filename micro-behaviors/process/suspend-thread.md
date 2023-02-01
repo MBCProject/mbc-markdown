@@ -33,10 +33,10 @@
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|C0055|Suspend thread (This capa rule had 1 match) [[1]](#1)|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|C0055|Suspend thread (This capa rule had 2 matches) [[1]](#1)|
-|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|C0055|Suspend thread (This capa rule had 6 matches) [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0055|Suspend thread (This capa rule had 1 match) [[1]](#1)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Suspend thread (This capa rule had 1 match) [[1]](#1)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|Suspend thread (This capa rule had 2 matches) [[1]](#1)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|Suspend thread (This capa rule had 6 matches) [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Suspend thread (This capa rule had 1 match) [[1]](#1)|
 
 ## References
 

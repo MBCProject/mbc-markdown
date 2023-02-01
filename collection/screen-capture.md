@@ -43,9 +43,9 @@ See ATT&CK: **Screen Capture ([T1113](https://attack.mitre.org/techniques/T1113/
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|E1113| GoBotKR is capable of capturing screenshots. [[1]](#1)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|E1113|Screenshot plugin allows for collection of screenshots  [[2]](#2)|
-|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|E1113|CHOPSTICK takes snapshots of deskop and window contents [[4]](#4)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--| GoBotKR is capable of capturing screenshots. [[1]](#1)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Screenshot plugin allows for collection of screenshots  [[2]](#2)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK takes snapshots of deskop and window contents [[4]](#4)|
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|E1113, E1113.m01|Please see the Dark Comet malware page for details. [[3]](#3)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|E1113.m01|Capture screenshot (This capa rule had 2 matches) [[5]](#5)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|E1113.m01|Capture screenshot (This capa rule had 1 match) [[5]](#5)|

@@ -50,7 +50,7 @@ Rootkits may hide artifacts (kernel modules, services, threads, userspace librar
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1014| Certain variants of the malware may have rootkit functionality [[3]](#3)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--| Certain variants of the malware may have rootkit functionality [[3]](#3)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1014.m17|Stuxnet registers custom resource drives signed with a legitimate Realtek digital certificate  [[4]](#4)|
 
 ## References

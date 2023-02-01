@@ -65,7 +65,7 @@ Malware may encrypt data.
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|C0027.004|Encrypt data using DES (This capa rule had 1 match) [[6]](#6)|
 |[**Kraken**](../xample-malware/kraken.md)|2008|C0027.009|Encrypt data using RC4 PRGA (This capa rule had 2 matches) [[6]](#6)|
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|C0027.009|Encrypt data using RC4 PRGA (This capa rule had 1 match) [[6]](#6)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|C0027|Encrypt data using DPAPI (This capa rule had 6 matches) [[6]](#6)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Encrypt data using DPAPI (This capa rule had 6 matches) [[6]](#6)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|C0027.009|Encrypt data using RC4 PRGA (This capa rule had 1 match) [[6]](#6)|
 
 ## Code Snippets

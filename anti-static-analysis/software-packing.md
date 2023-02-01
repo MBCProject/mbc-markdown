@@ -57,12 +57,12 @@ This description refines the ATT&CK **Obfuscated Files or Information: Software 
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|F0001|Redhip samples are packed with different custom packers. [[3]](#3)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|F0001|The malware comes packed by a crypter/FUD [[4]](#4)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip samples are packed with different custom packers. [[3]](#3)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|The malware comes packed by a crypter/FUD [[4]](#4)|
 |[**Conficker**](../xample-malware/conficker.md)|2008|F0001.008|Conficker is propagated as a DLL which has been backed using the UPX packer [[5]](#5)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|F0001|Has a custom packer to obfuscate itself  [[7]](#7)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Has a custom packer to obfuscate itself  [[7]](#7)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|F0001.005|Emotet uses custom packers which first decrypt the loaders and the loaders decrypt and load Emotet's main payloads [[8]](#8)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|F0001|Has the option to compress its payload using UPX or MPRESS  [[6]](#6)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Has the option to compress its payload using UPX or MPRESS  [[6]](#6)|
 
 ## References
 
@@ -81,4 +81,8 @@ This description refines the ATT&CK **Obfuscated Files or Information: Software 
 <a name="7">[7]</a> https://www.securityartwork.es/wp-content/uploads/2017/07/Trickbot-report-S2-Grupo.pdf
 
 <a name="8">[8]</a> https://documents.trendmicro.com/assets/white_papers/ExploringEmotetsActivities_Final.pdf
+
+<a name="9">[9]</a> https://blog.malwarebytes.com/threat-analysis/2016/07/untangling-kovter/
+
+<a name="10">[10]</a> https://web.archive.org/web/20161025013916/https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
 

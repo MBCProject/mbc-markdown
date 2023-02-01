@@ -36,11 +36,11 @@ See ATT&CK Technique: **User Execution ([T1204](https://attack.mitre.org/techniq
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|E1204| GoBotKR makes their malware look like the torrent content that the user intended to download, in order to entice a user to click on it. [[1]](#1)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|E1204|The malware relies on a victim to execute itself [[2]](#2)|
-|[**Terminator**](../xample-malware/terminator.md)|2013|E1204|The malware relies on user interaction to execute [[3]](#3)|
-|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|E1204|The malware relies on victims to execute [[5]](#5)|
-|[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|E1204|A user must execute the malicious program. [[4]](#4)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--| GoBotKR makes their malware look like the torrent content that the user intended to download, in order to entice a user to click on it. [[1]](#1)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware relies on a victim to execute itself [[2]](#2)|
+|[**Terminator**](../xample-malware/terminator.md)|2013|--|The malware relies on user interaction to execute [[3]](#3)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware relies on victims to execute [[5]](#5)|
+|[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|A user must execute the malicious program. [[4]](#4)|
 
 ## References
 
@@ -53,4 +53,6 @@ See ATT&CK Technique: **User Execution ([T1204](https://attack.mitre.org/techniq
 <a name="4">[4]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
 
 <a name="5">[5]</a> https://www.secureworks.com/research/cryptolocker-ransomware
+
+<a name="6">[6]</a> https://paper.seebug.org/papers/APT/APT_CyberCriminal_Campagin/2013/FireEye-Terminator_RAT.pdf
 

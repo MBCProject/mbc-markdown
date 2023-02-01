@@ -48,11 +48,11 @@ See ATT&CK: **Data Destruction ([T1485](https://attack.mitre.org/techniques/T148
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|E1485|A 2018 variant includes a component that erases files and then wipes the master boot record, preventing file recovery. [[1]](#1)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|E1485|If a specific anti-analysis check fails, the malware will overwrite the Master Boot Record or the User's home folder [[2]](#2)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|E1485|BlackEnergy 2 variant contains a Destroy plugin that destroys data stored on victim hard drives by overwriting file contents  [[3]](#3)|
-|[**Conficker**](../xample-malware/conficker.md)|2008|E1485|Resets system restore points and deletes backup files [[4]](#4)|
-|[**MazarBot**](../xample-malware/mazarbot.md)|2016|E1485|Can erase phone data  [[5]](#5)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|A 2018 variant includes a component that erases files and then wipes the master boot record, preventing file recovery. [[1]](#1)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|If a specific anti-analysis check fails, the malware will overwrite the Master Boot Record or the User's home folder [[2]](#2)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy 2 variant contains a Destroy plugin that destroys data stored on victim hard drives by overwriting file contents  [[3]](#3)|
+|[**Conficker**](../xample-malware/conficker.md)|2008|--|Resets system restore points and deletes backup files [[4]](#4)|
+|[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|Can erase phone data  [[5]](#5)|
 
 ## References
 
@@ -65,4 +65,6 @@ See ATT&CK: **Data Destruction ([T1485](https://attack.mitre.org/techniques/T148
 <a name="4">[4]</a> https://en.wikipedia.org/wiki/Conficker
 
 <a name="5">[5]</a> https://heimdalsecurity.com/blog/security-alert-mazar-bot-active-attacks-android-malware/
+
+<a name="6">[6]</a> https://www.darkreading.com/attacks-breaches/disk-wiping-shamoon-malware-resurfaces-with-file-erasing-malware-in-tow
 

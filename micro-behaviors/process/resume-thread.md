@@ -33,8 +33,8 @@
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|C0054|Resume thread (This capa rule had 1 match) [[1]](#1)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|C0054|Resume thread (This capa rule had 2 matches) [[1]](#1)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|Resume thread (This capa rule had 1 match) [[1]](#1)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Resume thread (This capa rule had 2 matches) [[1]](#1)|
 
 ## References
 

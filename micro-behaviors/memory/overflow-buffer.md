@@ -35,7 +35,7 @@ Malware may overflow the buffer for various purposes.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Conficker**](../../xample-malware/conficker.md)|2008|C0010|Variants A, B, C, and E exploit a vulnerability in the Server Service on Windows computers in which an already compromised computer sends a specially-crafted RPC request to force a buffer overflow and execute shellcode on the target computer  [[1]](#1)|
+|[**Conficker**](../../xample-malware/conficker.md)|2008|--|Variants A, B, C, and E exploit a vulnerability in the Server Service on Windows computers in which an already compromised computer sends a specially-crafted RPC request to force a buffer overflow and execute shellcode on the target computer  [[1]](#1)|
 
 ## References
 

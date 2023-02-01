@@ -55,10 +55,10 @@ Some aspects of this Conditional Execution behavior are related to the [Executio
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|B0025|Drops either Cryptonight or Claymore's Zcash miner, depending on system architecture. [[1]](#1)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Drops either Cryptonight or Claymore's Zcash miner, depending on system architecture. [[1]](#1)|
 |[**Conficker**](../xample-malware/conficker.md)|2008|B0025, B0025.001|Please see the Conficker malware page for details. [[5]](#5)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|B0025.004|Macros check if there are at least 50 running processes with a graphical interface, check if a list of blacklisted processes are running, and checks if the application is running in Australia and is NOT affiliated with a select group of networks (Security Research, Hospitals, Universities, Veterans, etc.) [[3]](#3)|
-|[**Mebromi**](../xample-malware/mebromi.md)|2011|B0025|Malware only proceeds if it detects the BIOS ROM is Award BIOS [[4]](#4)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Malware only proceeds if it detects the BIOS ROM is Award BIOS [[4]](#4)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|B0025.007|Run as service (This capa rule had 1 match) [[6]](#6)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|B0025.007|Run as service (This capa rule had 1 match) [[6]](#6)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|B0025.004|Stuxnet checks for specific operating systems on 32-bit machines, registry keys, and dates to profile a potential target machine before execution. If the conditions are not met to be considered a viable target, it will exit execution  [[7]](#7)|

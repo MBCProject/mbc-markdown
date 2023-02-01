@@ -42,7 +42,7 @@ Polymorphic code, a file with the same functionality but different execution, is
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|B0029|EvilBunny utilizes Lua scripts to exhibit polymorphism [[2]](#2)|
+|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny utilizes Lua scripts to exhibit polymorphism [[2]](#2)|
 
 ## References
 

@@ -33,12 +33,12 @@
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|C0045|Copy file (This capa rule had 1 match) [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0045|Copy file (This capa rule had 1 match) [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|C0045|Copy file (This capa rule had 5 matches) [[1]](#1)|
-|[**Mebromi**](../xample-malware/mebromi.md)|2011|C0045|Copy file (This capa rule had 2 matches) [[1]](#1)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|C0045|Copy file (This capa rule had 2 matches) [[1]](#1)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|C0045|Copy file (This capa rule had 2 matches) [[1]](#1)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|Copy file (This capa rule had 1 match) [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Copy file (This capa rule had 1 match) [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Copy file (This capa rule had 5 matches) [[1]](#1)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Copy file (This capa rule had 2 matches) [[1]](#1)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Copy file (This capa rule had 2 matches) [[1]](#1)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Copy file (This capa rule had 2 matches) [[1]](#1)|
 
 ## References
 

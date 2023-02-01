@@ -57,16 +57,16 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|E1055|Trojan spyware program that has mainly been used for targeting banking sites. [[11]](#11)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|E1055|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|E1055|Injects minor code into a running process. [[12]](#12)|
-|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|E1055|The malware injects code into a new svchost process [[6]](#6)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites. [[11]](#11)|
+|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[2]](#2)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Injects minor code into a running process. [[12]](#12)|
+|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--|The malware injects code into a new svchost process [[6]](#6)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|E1055, E1055.012|Please see the Hupigon malware page for details. [[7]](#7)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|E1055.m05|Bypasses UAC using a Shim Database instructing SndVol.exe to execute cmd.exe instead, allowing for elevated execution  [[8]](#8)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1055.001, E1055.m05|Please see the Stuxnet malware page for details. [[9]](#9)|
 |[**Netwalker**](../xample-malware/netwalker.md)|2020|E1055.001|Netwalker uses reflective DLL loading to inject from memory [[10]](#10)|
-|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|E1055|The malware loads multiple DLLs into memory [[4]](#4)|
-|[**DNSChanger**](../xample-malware/dnschanger.md)|2011|E1055|Attach user process memory (This capa rule had 1 match) [[13]](#13)|
+|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|--|The malware loads multiple DLLs into memory [[4]](#4)|
+|[**DNSChanger**](../xample-malware/dnschanger.md)|2011|--|Attach user process memory (This capa rule had 1 match) [[13]](#13)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|E1055.003|Inject thread (This capa rule had 1 match) [[13]](#13)|
 
 ## References
@@ -96,4 +96,8 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 <a name="12">[12]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
 <a name="13">[13]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
+<a name="14">[14]</a> https://www.cybereason.com/blog/research/dropping-anchor-from-a-trickbot-infection-to-the-discovery-of-the-anchor-malware
+
+<a name="15">[15]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf
 

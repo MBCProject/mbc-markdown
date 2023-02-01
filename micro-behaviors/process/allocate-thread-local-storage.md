@@ -35,8 +35,8 @@ Malware allocates thread local storage.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Kovter**](../xample-malware/kovter.md)|2016|C0040|Allocate thread local storage (This capa rule had 3 matches) [[1]](#1)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|C0040|Allocate thread local storage (This capa rule had 1 match) [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Allocate thread local storage (This capa rule had 3 matches) [[1]](#1)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Allocate thread local storage (This capa rule had 1 match) [[1]](#1)|
 
 ## References
 

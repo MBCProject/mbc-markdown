@@ -46,7 +46,7 @@ Malware may use a cryptographic hash.
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0029, C0029.001, C0029.002|Please see the BlackEnergy malware page for details. [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|C0029|Hash data via WinCrypt (This capa rule had 22 matches) [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Hash data via WinCrypt (This capa rule had 22 matches) [[1]](#1)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|C0029, C0029.002|Please see the Redhip malware page for details. [[1]](#1)|
 |[**UP007 Malware Family**](../xample-malware/up007.md)|2016|C0029.002|Hash data using SHA1 (This capa rule had 1 match) [[1]](#1)|
 

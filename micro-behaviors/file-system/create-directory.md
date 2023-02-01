@@ -33,13 +33,13 @@
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Gamut**](../xample-malware/gamut.md)|2014|C0046|Create directory (This capa rule had 1 match) [[1]](#1)|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|C0046|Create directory (This capa rule had 1 match) [[1]](#1)|
-|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|C0046|Create directory (This capa rule had 1 match) [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0046|Create directory (This capa rule had 1 match) [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|C0046|Create directory (This capa rule had 14 matches) [[1]](#1)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|C0046|Create directory (This capa rule had 1 match) [[1]](#1)|
-|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|C0046|Create directory (This capa rule had 1 match) [[1]](#1)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|Create directory (This capa rule had 1 match) [[1]](#1)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|Create directory (This capa rule had 1 match) [[1]](#1)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|Create directory (This capa rule had 1 match) [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Create directory (This capa rule had 1 match) [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Create directory (This capa rule had 14 matches) [[1]](#1)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Create directory (This capa rule had 1 match) [[1]](#1)|
+|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|--|Create directory (This capa rule had 1 match) [[1]](#1)|
 
 ## References
 

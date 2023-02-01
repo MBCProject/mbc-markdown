@@ -36,10 +36,10 @@ The related **Dynamic Resolution: Domain Generation Algorithms ([T1568.002](http
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Kraken**](../xample-malware/kraken.md)|April 2008|B0003|Kraken uses a domain generating algorithm to provide new domains. [[2]](#2)|
-|[**Conficker**](../xample-malware/conficker.md)|November 2008|B0031|Conficker uses a domain name generator. [[3]](#3)|
-|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|B0031|The malware sends a hash value generated from system information [[4]](#4)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|B0031|Ursnif has used a Domain name generation algorithm in the past [[5]](#5)|
+|[**Kraken**](../xample-malware/kraken.md)|April 2008|--|Kraken uses a domain generating algorithm to provide new domains. [[2]](#2)|
+|[**Conficker**](../xample-malware/conficker.md)|November 2008|--|Conficker uses a domain name generator. [[3]](#3)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware sends a hash value generated from system information [[4]](#4)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Ursnif has used a Domain name generation algorithm in the past [[5]](#5)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|B0030.001|The malware sends data to the C2 [[6]](#6)|
 
 ## References

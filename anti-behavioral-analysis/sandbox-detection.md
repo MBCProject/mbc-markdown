@@ -58,8 +58,8 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |[**Redhip**](../xample-malware/rebhip.md)|2011|B0007.005|Redhip detects publicly available automated analysis workbenches (e.g., Joe Box) by considering OS product keys and special DLLs. [[1]](#1)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|B0007.010|The malware check for sandboxes that suppress errors returned from API routine calls the using ZwGetWriteWatch routine. [[2]](#2)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|B0007.007|Ursnif uses malware macros to evade sandbox detection. [[6]](#6)|
-|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|B0007|EvilBunny hooks time retrieval APIs and calls each API twice to calculate a delta. Execution aborts depending on the delta value [[4]](#4)|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|B0007|GoBotKR performs several checks on the compromised machine to avoid being emulated or executed in a sandbox. [[5]](#5)|
+|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny hooks time retrieval APIs and calls each API twice to calculate a delta. Execution aborts depending on the delta value [[4]](#4)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR performs several checks on the compromised machine to avoid being emulated or executed in a sandbox. [[5]](#5)|
 
 ## Code Snippets
 

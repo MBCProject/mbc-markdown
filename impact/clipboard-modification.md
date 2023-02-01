@@ -38,12 +38,11 @@ ATT&CK defines Clipboard Modification as a Mobile technique (Android platform). 
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Clipminer**](../xample-malware/clipminer.md)|2011|E1510|Clipminer monitors the clipboard for cryptocurrency addresses and replaces them with ones controlled by the adversary [[1]](#1)|
-|[**Impact::Clipboard Modification**](./test_malware.md)|2018|E1510|Write clipboard data (This capa rule had 1 match) [[2]](#2)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|E1510|Write clipboard data (This capa rule had 4 matches) [[2]](#2)|
-|[**Emotet**](../xample-malware/emotet.md)|2018|E1510|Write clipboard data (this capa rule had 1 match) [[2]](#2)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1510|Replace clipboard data (This capa rule had 1 match) [[2]](#2)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|E1510|Replace clipboard data (This capa rule had 1 match) [[2]](#2)|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer monitors the clipboard for cryptocurrency addresses and replaces them with ones controlled by the adversary [[1]](#1)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Write clipboard data (This capa rule had 4 matches) [[2]](#2)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|--|Write clipboard data (this capa rule had 1 match) [[2]](#2)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Replace clipboard data (This capa rule had 1 match) [[2]](#2)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Replace clipboard data (This capa rule had 1 match) [[2]](#2)|
 
 ## References
 

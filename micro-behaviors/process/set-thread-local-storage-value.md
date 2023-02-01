@@ -35,12 +35,12 @@ Malware allocates thread local storage.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|C0041|Set thread local storage value (This capa rule had 1 match) [[1]](#1)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|C0041|Set thread local storage value (This capa rule had 1 match) [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0041|Set thread local storage value (This capa rule had 1 match) [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|C0041|Set thread local storage value (This capa rule had 3 matches) [[1]](#1)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|C0041|Set thread local storage value (This capa rule had 1 match) [[1]](#1)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|C0041|Set thread local storage value (This capa rule had 1 match) [[1]](#1)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Set thread local storage value (This capa rule had 1 match) [[1]](#1)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|Set thread local storage value (This capa rule had 1 match) [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Set thread local storage value (This capa rule had 1 match) [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Set thread local storage value (This capa rule had 3 matches) [[1]](#1)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Set thread local storage value (This capa rule had 1 match) [[1]](#1)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Set thread local storage value (This capa rule had 1 match) [[1]](#1)|
 
 ## References
 

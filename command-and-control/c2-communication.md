@@ -67,9 +67,9 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|B0030.011|Ursnif variant Dreambot authenticates and encrypts traffic to C2 server using TOR [[6]](#6)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|B0030.010|New email addresses are collected automatically from the victim's address books [[7]](#7)|
 |[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|B0030.001|CHOPSTICK sends data to the C2 server using HTTP POST requests [[8]](#8)|
-|[**CozyCar**](../xample-malware/cozycar.md)|2010|B0030|CozyCar communicates with a C2 server [[9]](#9)|
-|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|B0030|EvilBunny communicates C2 via HTTP [[10]](#10)|
-|[**Clipminer**](../xample-malware/clipminer.md)|2011|B0030|Clipminer communicates to a Tor Onion Service via HTTP [[11]](#11)|
+|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar communicates with a C2 server [[9]](#9)|
+|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny communicates C2 via HTTP [[10]](#10)|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer communicates to a Tor Onion Service via HTTP [[11]](#11)|
 |[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|B0030.001, B0030.002, B0030.011|Please see the CryptoLocker malware page for details. [[12]](#12)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|B0030.002|The malware receives data from C2 [[13]](#13)|
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|B0030.002|Receive data (This capa rule had 1 match) [[14]](#14)|
@@ -136,5 +136,5 @@ jmp short loc_4019A2
 
 <a name="16">[16]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
 
-<a name="17">[17]</a> https://paper.seebug.org/papers/APT/APT_CyberCriminal_Campagin/2013/FireEye-Terminator_RAT.pdf
+<a name="17">[17]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke/
 

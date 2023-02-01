@@ -39,7 +39,7 @@ This description refines the ATT&CK **Disk Wipe ([T1203](https://attack.mitre.or
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|F0014|An overwrite component will overwrite the MBR so that the compromised computer can no longer start  [[1]](#1)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|An overwrite component will overwrite the MBR so that the compromised computer can no longer start  [[1]](#1)|
 
 ## References
 

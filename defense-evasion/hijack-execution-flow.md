@@ -59,11 +59,11 @@ See ATT&CK: **Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques
 |Name|Date|Method|Description|
 |---|---|---|---|
 |**Kronos**|June 2014|--|Kronos hooks the API of processes to prevent detection. [[6]](#6)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|F0015|Hooks various DLL exported functions when the component is loaded in their respective Browser application process is running to monitor network traffic [[7]](#7)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Hooks various DLL exported functions when the component is loaded in their respective Browser application process is running to monitor network traffic [[7]](#7)|
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|F0015.006|	Abuses Microsoft's Dynamic Data Exchange (DDE) protocol  [[8]](#8)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|F0015.006|Escalates privilege by impersonating the token. First uses LogonUser and ImpersonateLoggedOnUser, then ImpersonateNamedPipeClient. [[10]](#10)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|F0015.003, F0015.007|Please see the Stuxnet malware page for details. [[11]](#11)|
-|[**SYNful Knock**](../xample-malware/synful-knock.md)|2015|F0015|Hooks IOS functions to call and initialize the malware  [[9]](#9)|
+|[**SYNful Knock**](../xample-malware/synful-knock.md)|2015|--|Hooks IOS functions to call and initialize the malware  [[9]](#9)|
 
 ## References
 

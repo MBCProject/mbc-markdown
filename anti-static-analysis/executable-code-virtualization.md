@@ -46,7 +46,7 @@ Virtualized code is a software protection technique. Themida is a commercial too
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Locky Bart**](../xample-malware/locky-bart.md)|January 2017|B0008|Code virtualization is added to the Locky Bart binary using WPProtect. [[2]](#2)|
+|[**Locky Bart**](../xample-malware/locky-bart.md)|January 2017|--|Code virtualization is added to the Locky Bart binary using WPProtect. [[2]](#2)|
 
 ## References
 

@@ -85,8 +85,8 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|May 2018|B0009, B0009.024, B0009.023, B0009.018, B0009.028|Please see the GravityRAT malware page for details. [[3]](#3)|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|B0009|WebCobra injects malicious code to svchost.exe and uses an infinite loop to check all open windows and to compare each window’s title bar text with a set of strings to determine whether it is running in an isolated, malware analysis environment [[4]](#4)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|B0009|Redhip detects VMWare, Virtual PC and Virtual Box. It also detects VM environments in general by considering timing lapses. [[1]](#1)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|WebCobra injects malicious code to svchost.exe and uses an infinite loop to check all open windows and to compare each window’s title bar text with a set of strings to determine whether it is running in an isolated, malware analysis environment [[4]](#4)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip detects VMWare, Virtual PC and Virtual Box. It also detects VM environments in general by considering timing lapses. [[1]](#1)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|B0009.010|Emotet checks for various processes that are associated with various virtual machines by comparing hash values of the process names with the hash values of the list of running process names [[7]](#7)|
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|B0009.012|Check for unmoving mouse cursor (This capa rule had 1 match) [[8]](#8)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|B0009.004|Checks if there are virtual machine processes running (Vbox, vmware, etc) [[9]](#9)|
@@ -154,4 +154,6 @@ jmp short loc_401CBB
 <a name="9">[9]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-banking-trojan-campaign-sandbox-evasion-techniques
 
 <a name="10">[10]</a> https://blogs.cisco.com/security/talos/rombertik
+
+<a name="11">[11]</a> https://web.archive.org/web/20161025013916/https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
 

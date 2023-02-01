@@ -37,13 +37,13 @@ See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|E1112|GoBotKR can modify registry keys to disable Task Manager, Registry Editor and Command Prompt. [[2]](#2)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1112|The malware adds many entries to the registry [[3]](#3)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|E1112|The malware adds a registry key [[4]](#4)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|E1112|The malware modifies the registry during execution [[5]](#5)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|E1112|Disables remote user account control by enabling the registry key LocalAccountTokenFilterPolicy  [[6]](#6)|
-|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|E1112|CHOPSTICK may encrypt and store configuration data inside a registry key [[7]](#7)|
-|[**Clipminer**](../xample-malware/clipminer.md)|2011|E1112|Clipminer edits the registry [[1]](#1)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR can modify registry keys to disable Task Manager, Registry Editor and Command Prompt. [[2]](#2)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|The malware adds many entries to the registry [[3]](#3)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|The malware adds a registry key [[4]](#4)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|The malware modifies the registry during execution [[5]](#5)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Disables remote user account control by enabling the registry key LocalAccountTokenFilterPolicy  [[6]](#6)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK may encrypt and store configuration data inside a registry key [[7]](#7)|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer edits the registry [[1]](#1)|
 
 ## References
 
@@ -60,4 +60,6 @@ See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112
 <a name="6">[6]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-returns-to-wipe-systems-in-middle-east-europe/
 
 <a name="7">[7]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
+
+<a name="8">[8]</a> https://labs.vipre.com/analysis-of-kovter-a-very-clever-piece-of-malware/#:~:text=Kovter%20copies%20the%20fileless%20persistence,written%20on%20to%20the%20filesystem.
 

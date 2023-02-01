@@ -46,9 +46,9 @@ See ATT&CK: **Hide Artifacts: Hidden Files and Directories ([T1564.001](https://
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|F0005| GoBotKR stores itself in a file with Hidden and System attributes. [[1]](#1)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--| GoBotKR stores itself in a file with Hidden and System attributes. [[1]](#1)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|F0005.004|Modifies target files' time to August 2012 as an antiforensic trick  [[2]](#2)|
-|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|F0005|CHOPSTICK creates a hidden file for temporary storage [[3]](#3)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK creates a hidden file for temporary storage [[3]](#3)|
 
 ## References
 

@@ -40,8 +40,8 @@ The related **Data Manipulation: Transmitted Data Manipulation ([T1565.002](http
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|B0019|Intercepts encrypted web traffic to inject adds. [[1]](#1)|
-|[**MazarBot**](../xample-malware/mazarbot.md)|2016|B0019|Intercepts data coming into and going out of device. [[2]](#2)|
+|[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|Intercepts encrypted web traffic to inject adds. [[1]](#1)|
+|[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|Intercepts data coming into and going out of device. [[2]](#2)|
 
 ## References
 

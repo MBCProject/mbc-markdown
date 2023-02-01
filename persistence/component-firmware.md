@@ -53,3 +53,4 @@ See ATT&CK: **Pre-OS Boot: Component Firmware ([T1542.002](https://attack.mitre.
 <a name="1">[1]</a> https://www.scmagazine.com/home/opinions/are-synful-knock-style-router-attacks-set-to-become-the-new-normal/
 
 <a name="2">[2]</a> https://www.fireeye.com/blog/threat-research/2015/09/synful_knock_-_acis.html
+
