@@ -2,9 +2,9 @@
 15 August 2022
 
 ## Histograms ##
-The histograms below show the number of capa rules mapped into each ATT&CK tactic, MBC objective, and MBC micro-objective. Details of the tactics and objectives follow.
+The histograms below show the number of capa rules mapped into ATT&CK techniques (organized by tactic), MBC behaviors (organized by objective), and MBC micro-behaviors (organized by micro-objective). The explicit techniques, behaviors, and micro-behaviors follow.
 
-### ATT&CK Mapping Histogram ###
+### ATT&CK Mapping Histogram (number of techniques) ###
 
 | **TACTIC** | **Number**  |  |
 |-----|-----|-----|
@@ -23,7 +23,7 @@ The histograms below show the number of capa rules mapped into each ATT&CK tacti
 |Exfiltration|0| |
 |**Impact**|5| **XXXXX** |
 
-### MBC Mapping Histogram (Objectives) ###
+### MBC Mapping Histogram (number of behaviors) ###
 
 | **OBJECTIVE** | **Number** |  |
 |-----|-----|-----|
@@ -41,7 +41,7 @@ The histograms below show the number of capa rules mapped into each ATT&CK tacti
 |Persistence|0| |
 |Privilege Escalation|0 | |
 
-### MBC Mapping Histogram (Micro-Objectives) ###
+### MBC Mapping Histogram (number of micro-behaviors) ###
 
 | **MICRO-OBJECTIVE** | **Number**  |  |
 |-----|-----|-----|
