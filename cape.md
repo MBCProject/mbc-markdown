@@ -27,7 +27,7 @@ Information on CAPE signatures can be found [here](https://github.com/kevoreilly
 |**Exfiltration**|4| **XXXX** |
 |**Impact**|11| **XXXXXXXXXXX** |
 
-### MBC Mapping Histogram (Objectives) ###
+### MBC Mapping Histogram ###
 
 | **OBJECTIVE** | **Number of Behaviors** |  |
 |-----|-----|-----|
@@ -45,7 +45,7 @@ Information on CAPE signatures can be found [here](https://github.com/kevoreilly
 |**Persistence**|11| **XXXXXXXXXXX** |
 |**Privilege Escalation**|4| **XXXX** |
 
-### MBC Mapping Histogram (Micro-Objectives) ###
+### MBC Mapping Histogram ###
 
 | **MICRO-OBJECTIVE** | **Number of Micro-Behaviors**  |  |
 |-----|-----|-----|
