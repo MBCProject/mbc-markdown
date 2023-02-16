@@ -44,8 +44,24 @@ Malware creates a process.
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|C0017.002|Stuxnet will use WMI operations with the explorer.exe token in order to copy itself and execute on the remote share. [[1]](#1)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy creates a process on Windows. [[2]](#2)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Dark Comet creates a process on Windows. [[2]](#2)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut creates a process on Windows. [[2]](#2)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR creates a process on Windows. [[2]](#2)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon creates a process on Windows. [[2]](#2)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter creates a process on Windows. [[2]](#2)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi create a process on Windows. [[2]](#2)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip creates a  process on Windows. [[2]](#2)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|C0017.003|Redhip creates a suspended process. [[2]](#2)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon creates a process on Windows. [[2]](#2)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|TrickBot creates a process on Windows. [[2]](#2)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|C0017.003|TrickBot creates a suspended process. [[2]](#2)|
+|[**UP007**](../xample-malware/up007.md)|2016|--|The malware creates a process on Windows. [[2]](#2)|
 
 
 ## References
 
 <a name="1">[1]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
+
+<a name="2">[2]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

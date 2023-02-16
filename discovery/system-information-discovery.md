@@ -50,6 +50,17 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 |[**Emotet**](../xample-malware/emotet.md)|2018|--|Emotet collects information related to OS, processes, and sometimes mail client information and sends it to C2. [[4]](#4)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Malware gathers information (OS version, workgroup status, computer name, domain/workgroup name, file name of infected project file) about each computer in the net to spread itself.  [[5]](#5)|
 |[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK collects information from the host including Windows version, CPU architecture, and UAC settings. [[6]](#6)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware queries environment variables. [[9]](#9)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|The malware queries environment variables. [[9]](#9)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR uses wmic, systeminfo and ver commands to collect information about the system and the installed software and queries environment variables. [[9]](#9) [[10]](#10)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon queries environment variables. [[9]](#9)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter gets disk information. [[9]](#9)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi checks OS version. [[9]](#9)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip checks the OS version. [[9]](#9)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Rombertik gets the disk size. [[9]](#9)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon gets the hostname. [[9]](#9)|
+|[**UP007**](../xample-malware/up007.md)|2016|--|The malware queries environment variables. [[9]](#9)|
+
 
 ## References
 
@@ -68,3 +79,7 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 <a name="7">[7]</a> https://www.securityartwork.es/wp-content/uploads/2017/07/Trickbot-report-S2-Grupo.pdf
 
 <a name="8">[8]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+
+<a name="9">[9]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
+<a name="10">[10]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/

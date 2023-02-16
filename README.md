@@ -140,5 +140,5 @@ The table below lists MBC behaviors and related ATT&CK techniques. In most cases
 |**B0046**|DISCOVERY|**Code Discovery**|*none*|
 |**B0047**|DEFENSE EVASION, PERSISTENCE|**Install Insecure or Malicious Code**|*none*|
 
-**Copyright 2022 The MITRE Corporation.  [Terms of Use.](./tou.md)**
+**Copyright © 2021-2023, The MITRE Corporation.  [Terms of Use.](./tou.md)**
 

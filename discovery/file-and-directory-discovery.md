@@ -46,6 +46,22 @@ Malware may enumerate files and directories or may search for specific files or 
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware collects local files with specified file extensions and information from the victim's machine. [[3]](#3)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware verifies that the folder from the first stage loader exists on the system. The malware also checks for the path for the Opera web browser. If it exists, the malware exits. [[4]](#4) [[5]](#5)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware queries target computer for a target folder. [[4]](#4) [[5]](#5)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|GravityRAT enumerates files on windows. [[6]](#6)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon enumerates files recursively. [[6]](#6)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1083.m01|Hupigon accesses the Windows event log. [[6]](#6)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|E1083.m01|Kovter accesses the Windows event log. [[6]](#6)|
+|[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam enumerates files on windows. [[6]](#6)|
+|[**UP007**](../xample-malware/up007.md)|2016|--|The malware enumerates files on windows. [[6]](#6)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|The malware gets the common file path. [[6]](#6)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|The malware gets file version info. [[6]](#6)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut gets the common file path. [[6]](#6)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR checks if a file exists. [[6]](#6)|
+|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|The malware gets a file size. [[6]](#6)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi gets a file size. [[6]](#6)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip gets a file size. [[6]](#6)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware gets the file version info. [[6]](#6)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon gets a common file path. [[6]](#6)|
+
 
 ## References
 
@@ -58,3 +74,5 @@ Malware may enumerate files and directories or may search for specific files or 
 <a name="4">[4]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
 
 <a name="5">[5]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
+
+<a name="6">[6]</a> capa v4.0, analyzed at MITRE on 10/12/2022

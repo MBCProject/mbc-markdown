@@ -73,7 +73,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 
 <a name="1">[1]</a> http://joe4security.blogspot.com/2013/06/overloading-sandboxes-new-generic.html
 
-<a name="2">[2]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/ursnif
+<a name="2">[2]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
 <a name="3">[3]</a> https://www.fireeye.com/content/dam/fireeye-www/current-threats/pdfs/pf/file/fireeye-hot-knives-through-butter.pdf
 
@@ -82,5 +82,3 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 <a name="5">[5]</a> https://blogs.cisco.com/security/talos/rombertik
 
 <a name="6">[6]</a> https://www.joesecurity.org/blog/498839998833561473
-
-<a name="7">[7]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/

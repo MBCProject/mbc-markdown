@@ -28,4 +28,19 @@
 
 # Copy File
 
-Malware copies a file. 
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR copies files. [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon copies files. [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter copies files. [[1]](#1)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi copies files. [[1]](#1)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip copies files. [[1]](#1)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon copies files. [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

@@ -39,7 +39,15 @@ ATT&CK defines Clipboard Modification as a Mobile technique (Android platform). 
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer monitors the clipboard for cryptocurrency addresses and replaces them with ones controlled by the adversary. [[1]](#1)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|The malware writes clipboard data.  [[2]](#2)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|--|Emotet writes clipboard data. [[2]](#2)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon replaces clipboard data. [[2]](#2)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware replaces clipboard data. [[2]](#2)|
 
 
 ## References
+
 <a name="1">[1]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking
+
+<a name="2">[2]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

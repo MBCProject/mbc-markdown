@@ -38,4 +38,5 @@ To avoid running multiple instances of itself, malware may check a system to see
 
 ## References
 
-<a name="1">[1]</a> https://www.trendmicro.com/vinfo/us/threat-encyclopedia/archive/malware/worm_bagle.u
+<a name="1">[1]</a> https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/WORM_BAGLE.U/
+

@@ -131,7 +131,7 @@
 |C0049|FILE SYSTEM|**[Get File Attributes](https://github.com/MBCProject/mbc-markdown/blob/v2.3/micro-behaviors/file-system/get-file-attributes.md)**|
 |C0050|FILE SYSTEM|**[Set File Attributes](https://github.com/MBCProject/mbc-markdown/blob/v2.3/micro-behaviors/file-system/set-file-attributes.md)**|
 |C0051|FILE SYSTEM|**[Read File](https://github.com/MBCProject/mbc-markdown/blob/v2.3/micro-behaviors/file-system/read-file.md)**|
-|C0052|FILE SYSTEM|**[Writes File](https://github.com/MBCProject/mbc-markdown/blob/v2.3/micro-behaviors/file-system/write-file.md)**|
+|C0052|FILE SYSTEM|**[Writes File](https://github.com/MBCProject/mbc-markdown/blob/v2.3/micro-behaviors/file-system/writes-file.md)**|
 |C0053|DATA|**[Decode Data](https://github.com/MBCProject/mbc-markdown/blob/v2.3/micro-behaviors/data/decode-data.md)**|
 |C0054|PROCESS|**[Resume Thread](https://github.com/MBCProject/mbc-markdown/blob/v2.3/micro-behaviors/process/resume-thread.md)**|
 |C0055|PROCESS|**[Suspend Thread](https://github.com/MBCProject/mbc-markdown/blob/v2.3/micro-behaviors/process/suspend-thread.md)**|

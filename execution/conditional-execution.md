@@ -61,13 +61,15 @@ Some aspects of this Conditional Execution behavior are related to the [Executio
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|B0025.004|Macros check if there are at least 50 running processes with a graphical interface, check if a list of blacklisted processes are running, and checks if the application is running in Australia and is NOT affiliated with a select group of networks (Security Research, Hospitals, Universities, Veterans, etc.). [[3]](#3)|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Malware only proceeds if it detects the BIOS ROM is Award BIOS. [[4]](#4)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|B0025.004|Stuxnet checks for specific operating systems on 32-bit machines, registry keys, and dates to profile a potential target machine before execution. If the conditions are not met to be considered a viable target, it will exit execution. [[6]](#6)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0025.007|Hupigon can run as a service. [[7]](#7)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|B0025.007|Shamoon can run as a service. [[7]](#7)|
+
 
 ## References
 
 <a name="1">[1]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
-<a name="2">[2]</a> 
-https://reverseengineering.stackexchange.com/questions/2019/debugging-malware-that-will-only-run-as-a-service
+<a name="2">[2]</a> https://reverseengineering.stackexchange.com/questions/2019/debugging-malware-that-will-only-run-as-a-service
 
 <a name="3">[3]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-banking-trojan-campaign-sandbox-evasion-techniques
 
@@ -76,3 +78,6 @@ https://reverseengineering.stackexchange.com/questions/2019/debugging-malware-th
 <a name="5">[5]</a> http://www.csl.sri.com/users/vinod/papers/Conficker/
 
 <a name="6">[6]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
+
+<a name="7">[7]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

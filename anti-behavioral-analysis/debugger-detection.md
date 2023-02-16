@@ -83,14 +83,22 @@ Details on methods of detecting debuggers are given in the references; many are 
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[4]](#4)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|B0001.032|Redhip checks for a time delay using GetTickCount. [[15]](#15)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|B0001.035|Redhip checks for PEB BeingDebugged flag. [[15]](#15)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|B0001.006|The malware detects debuggers using an INT 03h trap. [[8]](#8)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|B0001.008|The malware detects debuggers using IsDebuggerPresent. [[8]](#8)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0001.038|An anti-analysis function within the packer is called to check the username and filename of the executing process for strings like “malwar”, “sampl”, “viru”, and “sandb”. [[9]](#9)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|B0001.016|The malware calls the Windows API OutputDebugString function 335,000 times. [[9]](#9)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0001.032|The malware checks for a time delay via GetTickCount. [[15]](#15)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0001.038|An anti-analysis function within the packer is called to check the username and filename of the executing process for strings like “malwar”, “sampl”, “viru”, and “sandb”. [[9]](#9)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|B0001.005|Poison Ivy Variant checks for breakpoints and exits immediately if found. [[13]](#13)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|B0001.008|Poison Ivy uses the IsDebuggerPresent API function call to check if the process is running in a debugger. [[13]](#13)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0001.032|The malware calls GetTickCount64 to retrieve timestamp. Malware executes Sleep and Beep in a repeated loop for 10 times. [[11]](#11) [[12]](#12)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|B0001.028|The malware manipulates TLS Callbacks while injecting to child process. [[12]](#12)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|B0001.032|The malware checks for a time delay via GetTickCount. [[15]](#15)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0001.025|The malware checks for software breakpoints. [[15]](#15)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0001.032|The malware checks for a time delay via GetTickCount. [[15]](#15)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0001.034|The malware executes anti-debugging instructions. [[15]](#15)|
+|[**UP007**](../xample-malware/up007.md)|2016|B0001.032|The malware checks for a time delay via GetTickCount. [[15]](#15)|
 
 
 ## References
@@ -122,3 +130,5 @@ Details on methods of detecting debuggers are given in the references; many are 
 <a name="13">[13]</a> https://www.fortinet.com/blog/threat-research/deep-analysis-of-new-poison-ivy-variant
 
 <a name="14">[14]</a> https://www.fireeye.com/blog/threat-research/2017/11/ursnif-variant-malicious-tls-callback-technique.html
+
+<a name="15">[15]</a> capa v4.0, analyzed at MITRE on 10/12/2022

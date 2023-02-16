@@ -67,7 +67,25 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker is obfuscated with several layers of encoding, obfuscation, and encryption techniques such as base64, hexademcimal, and XOR. [[3]](#3)|
 |[**TEARDROP**](../xample-malware/teardrop.md)|2018|E1027.m05|TEARDROP decrypts an embedded code buffer using an XOR-based stream cipher. [[4]](#4)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1027.m01|The configuration data block is encoded with a NOT XOR 0xFF operation. [[5]](#5)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1027.m02|Stuxnet encodes data using XOR. [[9]](#9)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|--|The malware creates an encrypted Registry key called TorClient to store its data. [[6]](#6)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|E1027.m02|TrickBot encodes data using XOR. [[9]](#9)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|E1027.m05|BlackEnergy encrypts data using RC4 via WinAPI. [[9]](#9)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|E1027.m02|CryptoLocker encodes data using XOR. [[9]](#9)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|E1027.m02|Dark Comet encodes data using XOR. [[9]](#9)|
+|[**DNSChanger**](../xample-malware/dnschanger.md)|2011|E1027.m02|DNSChanger encodes data using XOR. [[9]](#9)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|E1027.m02|Gamut encodes data using XOR. [[9]](#9)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1027.m02|Hupigon encodes data using XOR. [[9]](#9)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1027.m05|Hupigon encrypts data using DES. [[9]](#9)|
+|[**Kraken**](../xample-malware/kraken.md)|2008|E1027.m02|Kraken encodes data using XOR. [[9]](#9)|
+|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|E1027.m02|Locky Bart encodes data using XOR. [[9]](#9)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|E1027.m02|Mebromi encodes data using XOR. [[9]](#9)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|E1027.m02|Redhip encodes data using XOR. [[9]](#9)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|E1027.m02|Rombertik encodes data using XOR. [[9]](#9)|
+|[**SamSam**](../xample-malware/samsam.md)|2015|E1027.m07|SamSam obfuscates functions, class names and strings, including the list of targeted file extensions, the help file contents and environment variables using DES encryption with a fixed hard-coded key and the IV. [[10]](#10)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|E1027.m02|Shamoon encodes data using XOR. [[9]](#9)|
+|[**UP007**](../xample-malware/up007.md)|2016|E1027.m02|The malware encodes data using XOR. [[9]](#9)|
+
 
 ## References
 
@@ -86,3 +104,7 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 <a name="7">[7]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
 <a name="8">[8]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf
+
+<a name="9">[9]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
+<a name="10">[10]</a> https://blog.talosintelligence.com/2018/01/samsam-evolution-continues-netting-over.html

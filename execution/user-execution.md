@@ -43,6 +43,7 @@ See ATT&CK Technique: **User Execution ([T1204](https://attack.mitre.org/techniq
 |[**CryptoLocker**](../xample-malware/vobfus.md)|2013|--|The malware relies on victims to execute. [[4]](#4)|
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|The user opens a disk image file which invisibly installs its components. [[6]](#6)|
 
+
 ## References
 
 <a name="1">[1]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/

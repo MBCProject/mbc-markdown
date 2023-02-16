@@ -39,32 +39,34 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy implant is running on the target machine, the attacker can use a Windows GUI controller to control the target computer. [[1]](#1)|
-|[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|DarkComet can download files from a remote repository upon instruction. [[4]](#4)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon creates a folder on remote computers and then copies its executables (Shamoon and Filerase) into that directory. [[5]](#5)|
-|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar requests a file using SSL to a C2 domain. [[6]](#6)|
-|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus downloads its latest version from a remote server. [[7]](#7)|
-|[**TEARDROP**](../xample-malware/teardrop.md)|2018|--|TEARDROP executes the decrypted, embedded code buffer, which is a Cobalt Strike RAT. [[8]](#8)|
-|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware downloads DLLs from the hardcoded URL/remote server. [[9]](#9) [[10]](#10)|
+|[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|DarkComet can download files from a remote repository upon instruction. [[2]](#2)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon creates a folder on remote computers and then copies its executables (Shamoon and Filerase) into that directory. [[3]](#3)|
+|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar requests a file using SSL to a C2 domain. [[4]](#4)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus downloads its latest version from a remote server. [[5]](#5)|
+|[**TEARDROP**](../xample-malware/teardrop.md)|2018|--|TEARDROP executes the decrypted, embedded code buffer, which is a Cobalt Strike RAT. [[6]](#6)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware downloads DLLs from the hardcoded URL/remote server. [[7]](#7) [[8]](#8)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR can download additional files and update itself. [[9]](#9)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut receives files from C2. [[10]](#10)|
 
 
 ## References
 
 <a name="1">[1]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
 
-<a name="2">[2]</a> https://www.secureworks.com/research/cryptolocker-ransomware
+<a name="2">[2]</a> https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/
 
-<a name="3">[3]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/
+<a name="3">[3]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-attackers-employ-new-tool-kit-to-wipe-infected-systems/
 
-<a name="4">[4]</a> https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/
+<a name="4">[4]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke
 
-<a name="5">[5]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-attackers-employ-new-tool-kit-to-wipe-infected-systems/
+<a name="5">[5]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
 
-<a name="6">[6]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke
+<a name="6">[6]</a> https://www.cisa.gov/uscert/ncas/analysis-reports/ar21-039b
 
-<a name="7">[7]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
+<a name="7">[7]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
 
-<a name="8">[8]</a> https://www.cisa.gov/uscert/ncas/analysis-reports/ar21-039b
+<a name="8">[8]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
 
-<a name="9">[9]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
+<a name="9">[9]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
 
-<a name="10">[10]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
+<a name="10">[10]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/

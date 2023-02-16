@@ -58,6 +58,7 @@ See ATT&CK: **Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques
 
 |Name|Date|Method|Description|
 |---|---|---|---|
+<<<<<<< HEAD
 |**Kronos**|2014|--|Kronos hooks the API of processes to prevent detection. [[6]](#6)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|--|The malware hooks various DLL exported functions when the DLL component is loaded into their respective Browser application process to monitor network traffic. [[7]](#7)|
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|F0015.006|GravityRAT abuses Microsoft's Dynamic Data Exchange (DDE) protocol. [[8]](#8)|
@@ -65,6 +66,7 @@ See ATT&CK: **Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|F0015.006|Malware escalates privileges by impersonating the token through first using LogonUser and ImpersonateLoggedOnUser, then ImpersonateNamedPipeClient. [[10]](#10)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|F0015.003|Stuxnet hooks ntdll.dll to monitor for requests to load specially crafted file names which are mapped to a location specified by Stuxnet. [[11]](#11)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|F0015.007|WTR4141.tmp hooks APIs from kernel32.dll and ntdll.dll and replaces the original code for these functions with code that checks for files with properties pertaining to Stuxnet files. If a request is made to list a file with the specified properties, the response from these APIs is altered to state that the file does not exist, thereby hiding all files with these properties. [[11]](#11)|
+
 
 ## References
 
@@ -89,3 +91,4 @@ See ATT&CK: **Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques
 <a name="10">[10]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-returns-to-wipe-systems-in-middle-east-europe/
 
 <a name="11">[11]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
+

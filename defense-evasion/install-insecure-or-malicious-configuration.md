@@ -34,8 +34,9 @@ Malware may install malicious configuration settings or may modify existing conf
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Black Energy**](../xample-malware/blackenergy.md)|2007|--|Configures the system to the TESTSIGNING boot configuration option to load its unsigned driver component [[1]](#1)|
+|[**Black Energy**](../xample-malware/blackenergy.md)|2007|--|Malware configures the system to the TESTSIGNING boot configuration option to load its unsigned driver component. [[1]](#1)|
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|--|The malware changes iOS Safari's default configuration. [[2]](#2)|
+
 
 ## References
 

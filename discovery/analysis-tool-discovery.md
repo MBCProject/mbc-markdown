@@ -56,6 +56,7 @@ This behavior corresponds to simple, general discovery of analysis tools. Behavi
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|B0013.010|Poison Ivy goes through all the running program windows to check if any windows class name contains a special string to determine if an analysis tool is running. [[2]](#2) [[3]](#3)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|B0013.004|When infecting a x64 architecture system, the malware terminates if Wireshark is running on the system. [[4]](#4)|
 
+
 ## References
 
 <a name="1">[1]</a> https://www.fortinet.com/blog/threat-research/deep-analysis-of-new-emotet-variant-part-1

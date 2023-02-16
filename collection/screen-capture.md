@@ -43,10 +43,15 @@ See ATT&CK: **Screen Capture ([T1113](https://attack.mitre.org/techniques/T1113/
 
 |Name|Date|Method|Description|
 |---|---|---|---|
+<<<<<<< HEAD
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR is capable of capturing screenshots. [[1]](#1)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy's screenshot plugin allows for collection of screenshots. [[2]](#2)|
-|[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|DarkComet can take screenshots of the victim's computer. [[3]](#3)|
+|[**DarkComet**](../xample-malware/dark-comet.md)|2008|E1113.m01|DarkComet can take screenshots of the victim's computer. [[3]](#3) [[5]](#5)|
 |[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK takes snapshots of deskop and window contents. [[4]](#4)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1113.m01|Malware captures screenshots. [[5]](#5)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|E1113.m01|Malware captures screenshots. [[5]](#5)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|E1113.m01|Malware captures screenshots. [[5]](#5)|
+
 
 ## References
 
@@ -57,3 +62,6 @@ See ATT&CK: **Screen Capture ([T1113](https://attack.mitre.org/techniques/T1113/
 <a name="3">[3]</a> https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/
 
 <a name="4">[4]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
+
+<a name="5">[5]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

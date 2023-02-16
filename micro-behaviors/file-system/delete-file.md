@@ -28,4 +28,26 @@
 
 # Delete File
 
-Malware deletes a file. 
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Dark Comet deletes files. [[1]](#1)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut deletes files. [[1]](#1)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR deletes files. [[1]](#1)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|GravityRAT deletes files. [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon deletes files. [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter deletes files. [[1]](#1)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi deletes files. [[1]](#1)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip deletes files. [[1]](#1)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Rombertik deletes files. [[1]](#1)|
+|[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam deletes files. [[1]](#1)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon deletes files. [[1]](#1)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet deletes files. [[1]](#1)|
+|[**UP007**](../xample-malware/up007.md)|2016|--|UP007 deletes files. [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

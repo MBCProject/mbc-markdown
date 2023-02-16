@@ -52,6 +52,7 @@ Note that the **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniqu
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Dark Comet allows an attacker to control the system via a GUI. [[3]](#3)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|The malware acts as a backdoor. [[4]](#4)|
 
+
 ## References
 
 <a name="1">[1]</a> https://en.wikipedia.org/wiki/Remote_access_trojan
@@ -61,3 +62,4 @@ Note that the **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniqu
 <a name="3">[3]</a> https://en.wikipedia.org/wiki/DarkComet
 
 <a name="4">[4]</a> https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/HUPIGON
+

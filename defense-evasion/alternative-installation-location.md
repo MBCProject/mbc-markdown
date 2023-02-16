@@ -44,8 +44,10 @@ Malware may install itself in areas other than the hard drive. [[1]](#1)
 |[**Kovter**](../xample-malware/kovter.md)|2016|B0027.002|Kovter stores malware files in the Registry instead of on the hard drive. [[1]](#1)|
 |[**SYNful Knock**](../xample-malware/synful-knock.md)|2015|B0027.001|100 memory-resident modules can be installed. [[2]](#2)|
 
+
 ## References
 
 <a name="1">[1]</a> https://www.bleepingcomputer.com/virus-removal/remove-kovter-trojan
 
 <a name="2">[2]</a> https://www.mandiant.com/resources/synful-knock-acis
+

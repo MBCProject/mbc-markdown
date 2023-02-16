@@ -61,6 +61,7 @@ Autonomous behaviors - those done by the malware without an active attacker - sh
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0011.005|The malware sleeps if it fails to send collected data or execute its commands. [[4]](#4) [[5]](#5)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0011.006|The malware loader can uninstall itself from the victim computer. [[4]](#4) [[5]](#5)|
 
+
 ## References
 
 <a name="1">[1]</a> https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/BKDR_URSNIF.SM?_ga=2.129468940.1462021705.1559742358-1202584019.1549394279

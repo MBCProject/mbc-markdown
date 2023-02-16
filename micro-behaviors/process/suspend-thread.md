@@ -28,4 +28,17 @@
 
 # Suspend Thread
 
-Malware may suspend a thread.
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Dark Comet suspends threads. [[1]](#1)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR suspends threads. [[1]](#1)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|GravityRAT suspends threads. [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon suspends threads. [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

@@ -43,6 +43,7 @@ The related **Data Manipulation: Transmitted Data Manipulation ([T1565.002](http
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|Adware intercepts encrypted web traffic to inject ads. [[1]](#1)|
 |[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|MazarBot intercepts data coming into and going out of device. [[2]](#2)|
 
+
 ## References
 
 <a name="1">[1]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/

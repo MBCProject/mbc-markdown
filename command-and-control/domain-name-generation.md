@@ -41,6 +41,7 @@ The related **Dynamic Resolution: Domain Generation Algorithms ([T1568.002](http
 |[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware uses an internal domain generation algorithm. [[4]](#4)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Ursnif has used a Domain name generation algorithm in the past. [[5]](#5)|
 
+
 ## References
 
 <a name="1">[1]</a> https://blog.malwarebytes.com/security-world/2016/12/explained-domain-generating-algorithm/
@@ -52,3 +53,4 @@ The related **Dynamic Resolution: Domain Generation Algorithms ([T1568.002](http
 <a name="4">[4]</a> https://www.secureworks.com/research/cryptolocker-ransomware
 
 <a name="5">[5]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-variant-dreambot-adds-tor-functionality
+

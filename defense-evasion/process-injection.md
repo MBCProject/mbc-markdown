@@ -62,16 +62,18 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison-Ivy code is injected into explorer.exe. [[2]](#2)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|The malware injects miner code into a running process. [[12]](#12)|
 |[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--|The malware injects code into a new svchost process. [[6]](#6)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|The malware injects itself into processes such as cmd.exe, notepad.exe [[7]](#7)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|The malware injects itself into processes such as cmd.exe and notepad.exe [[7]](#7)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1055.012|The malware uses process replacement. [[13]](#13)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|E1055.m05|BlackEnergy bypasses UAC using a Shim Database instructing SndVol.exe to execute cmd.exe instead, allowing for elevated execution. [[8]](#8)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy injects its dll component into svchost.exe. [[8]](#8)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1055.001|Stuxnet injects the entire DLL into another process and then just calls the particular export. [[9]](#9)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1055.m02|The driver Stuxnet uses for persistence Mrxcls.sys is registered as a boot start service creating the registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MRxCIs"ImagePath" = "%System%\drivers\mrxcls.sys." [[9]](#9)|
 |[**Netwalker**](../xample-malware/netwalker.md)|2020|E1055.001|Netwalker uses reflective DLL loading to inject from memory [[10]](#10)|
+|[**DNSChanger**](../xample-malware/dnschanger.md)|2011|--|The malware can attach user process memory. [[13]](#13)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|E1055.003|The malware can inject threads. [[13]](#13)|
 
 
 ## References
-
 <a name="1">[1]</a> Ashkan Hosseini, *Ten Process Injection Techniques: A Technical Survey of Common and Trending Process Injection Techniques*, July 2017. https://www.elastic.co/blog/ten-process-injection-techniques-technical-survey-common-and-trending-process
 
 <a name="2">[2]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
@@ -95,3 +97,5 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 <a name="11">[11]</a> https://www.cybereason.com/blog/research/dropping-anchor-from-a-trickbot-infection-to-the-discovery-of-the-anchor-malware
 
 <a name="12">[12]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+
+<a name="13">[13]</a> capa v4.0, analyzed at MITRE on 10/12/2022

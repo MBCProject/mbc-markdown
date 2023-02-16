@@ -30,4 +30,15 @@
 
 Malware allocates thread local storage. 
 
-This micro behavior is a lower level counterpart to ATT&CK's [**Process Injection::Thread Local Storage**](https://attack.mitre.org/techniques/T1055/005) technique.
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Allocate thread local storage (This capa rule had 3 matches) [[1]](#1)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Allocate thread local storage (This capa rule had 1 match) [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

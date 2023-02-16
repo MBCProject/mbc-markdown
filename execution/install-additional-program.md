@@ -48,6 +48,10 @@ Malware that installs another component is called a "dropper." If the code is co
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus downloads malware from other malware families. [[7]](#7)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware drops the first loader which is responsible for loading the main loader into memory. [[8]](#8) [[9]](#9)|
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|The malware installs an open-source program called mitmproxy. [[12]](#12)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|The malware contains an embedded PE file. [[15]](#15)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut contains an embedded PE file. [[15]](#15)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip contains an embedded PE file. [[15]](#15)|
+
 
 ## References
 
@@ -78,3 +82,5 @@ Malware that installs another component is called a "dropper." If the code is co
 <a name="13">[13]</a> http://researchcenter.paloaltonetworks.com/2015/10/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
 
 <a name="14">[14]</a> https://us.norton.com/internetsecurity-emerging-threats-mazar-bot-malware-invades-and-erases-android-devices.html
+
+<a name="15">[15]</a> capa v4.0, analyzed at MITRE on 10/12/2022

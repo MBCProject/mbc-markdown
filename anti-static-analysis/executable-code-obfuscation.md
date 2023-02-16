@@ -141,7 +141,7 @@ jmp short loc_401326
 
 ## References
 
-<a name="1">[1]</a> https://insights.sei.cmu.edu/cert/2019/03/api-hashing-tool-imagine-that.html
+<a name="1">[1]</a> https://blogs.cisco.com/security/talos/rombertik
 
 <a name="2">[2]</a> https://cofense.com/recent-geodo-malware-campaigns-feature-heavily-obfuscated-macros/
 

@@ -48,9 +48,10 @@ The related **Resource Hijacking ([T1496](https://attack.mitre.org/techniques/T1
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|B0018.002|The malware drops software that mines for cryptocurrency, depending on the system architecture. If the system has x86 architecture, the malware drops Cryptonight miner. If the system has x64 architecture, the malware drops Claymore's Zcash miner. [[1]](#1)|
-|Adylkuzz|2017|--|Malware consumes system resources to mine for cryptocurrency. [[2]](#2)|
+|[**Adylkuzz**]|2017|--|Malware consumes system resources to mine for cryptocurrency. [[2]](#2)|
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR can use the compromised computer’s network bandwidth to seed torrents or execute DDoS. [[3]](#3)|
 |[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer uses sytem resources to mine for cryptocurrency. [[4]](#4)|
+
 
 ## References
 
@@ -61,3 +62,4 @@ The related **Resource Hijacking ([T1496](https://attack.mitre.org/techniques/T1
 <a name="3">[3]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
 
 <a name="4">[4]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking
+

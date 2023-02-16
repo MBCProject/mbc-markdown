@@ -65,10 +65,10 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|B0030.001|The malware sends a hash value generated from system information. [[14]](#14)|
 |[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|B0030.002|The malware receives a public key from the C2. [[14]](#14)|
 |[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|B0030.011|The malware sends a phone-home message with encryption to start. [[14]](#14)|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|B0030.002|GoBotKR receives data from the C2. [[2]](#2)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|B0030.002|GoBotKR receives data from the C2. [[2]](#2) [[19]](#19)|
 |[**Terminator**](../xample-malware/terminator.md)|2013|B0030.001|The malware sends data to the C2. [[3]](#3)|
-|[**UP007**](../xample-malware/up007.md)|2016|B0030.002|The malware receives payloads. [[4]](#4)|
 |[**UP007**](../xample-malware/up007.md)|2016|B0030.001|The malware sends hardened HTTP headers disguised as Microsoft Update traffic. [[4]](#4)|
+|[**UP007**](../xample-malware/up007.md)|2016|B0030.002|The malware receives payloads. [[4]](#4)|
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|B0030.006|The malware connects to the command and control server using HTTP to send device information. [[5]](#5)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|B0030.011|Ursnif variant Dreambot authenticates and encrypts traffic to C2 server using TOR. [[6]](#6)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|B0030.010|New email addresses are collected automatically from the victim's address books. [[7]](#7)|
@@ -81,9 +81,16 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0030.013|The payload is run by explorer.exe. [[12]](#12) [[13]](#13)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|B0030.002|Gamut receives data from the C2. [[15]](#15)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|B0030.003|The malware receives files from the C2. [[15]](#15)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|B0030.002|GravityRAT receives data from the C2.  [[19]](#19)|
 |[**Heriplor**](../xample-malware/heriplor.md)|2012|B0030.002|Heriplor malware has a capability to connect with a C2 to download arbitrary code. [[16]](#16)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0030.001|The malware sends data to the C2. [[17]](#17)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0030.001|The malware sends data to the C2. [[17]](#17) [[19]](#19)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0030.002|The malware receives data from the C2. [[19]](#19)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|BB0030.001|The malware sends data to the C2. [[19]](#19)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0030.002|The malware receives data from the C2. [[19]](#19)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|B0030.001|The malware sends data to the C2. [[19]](#19)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|B0030.002|The malware receives data from the C2. [[19]](#19)|
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|B0030.002|The malware receives data from the C2 server. [[18]](#18)|
+
 
 ## Code Snippets
 
@@ -145,3 +152,5 @@ jmp short loc_4019A2
 <a name="17">[17]</a> https://blogs.cisco.com/security/talos/rombertik
 
 <a name="18">[18]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
+
+<a name="19">[19]</a> capa v4.0, analyzed at MITRE on 10/12/2022

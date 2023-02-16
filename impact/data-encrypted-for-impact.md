@@ -52,14 +52,16 @@ See ATT&CK: **Data Encrypted for Impact ([T1486](https://attack.mitre.org/techni
 |[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam encrypts data to hold for ransom. [[4]](#4)|
 |[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker encrypts files for ransom. [[5]](#5)|
 
+
 ## References
 
 <a name="1">[1]</a> http://www.secureworks.com/cyber-threat-intelligence/threats/cryptowall-ransomware/
 
-<a name="2">[2]</a> http://www.secureworks.com/cyber-threat-intelligence/threats/cryptolocker-ransomware/
+<a name="2">[2]</a> https://www.secureworks.com/research/cryptolocker-ransomware
 
 <a name="3">[3]</a> https://blog.malwarebytes.com/threat-analysis/2017/01/locky-bart-ransomware-and-backend-server-analysis/
 
 <a name="4">[4]</a> https://www.cisa.gov/uscert/ncas/alerts/AA18-337A
 
 <a name="5">[5]</a> https://www.trendmicro.com/en_us/research/20/e/netwalker-fileless-ransomware-injected-via-reflective-loading.html
+

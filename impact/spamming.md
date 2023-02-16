@@ -46,3 +46,4 @@ Malware may use a victim machine to create and send spam.
 <a name="1">[1]</a> https://techcrunch.com/2019/07/12/trickbot-spam-millions-emails/
 
 <a name="2">[2]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/
+

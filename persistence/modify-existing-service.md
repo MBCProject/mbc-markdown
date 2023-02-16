@@ -42,6 +42,7 @@ See ATT&CK: **Create or Modify System Process::Windows Service ([T1543.003](http
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon enables the RemoteRegistry service to allow remote registry modification. [[5]](#5)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus disables Windows AutoUpdate and patches the first byte of TerminateProcess and TerminateThread API with C3 (RET Instruction) to prevent external processes from terminating the running instance of malware. [[6]](#6)|
 
+
 ## References
 
 <a name="1">[1]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy

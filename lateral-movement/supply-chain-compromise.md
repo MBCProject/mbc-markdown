@@ -44,6 +44,8 @@ The supply chain may be compromised to enable initial malware infection. MBC obj
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|E1195.m01|YiSpecter's malicious apps were signed with three iOS enterprise certificates issued by Apple so they can be installed as enterprise apps on non-jailbroken iOS devices via in-house distribution. [[1]](#1)|
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|E1195.m02|Within the malware, use of the private API allows installation of malicious apps and uninstallation of legitimate apps without user notification. [[1]](#1)|
 
+
 ## References
 
 <a name="1">[1]</a> http://researchcenter.paloaltonetworks.com/2015/10/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
+

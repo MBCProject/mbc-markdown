@@ -60,6 +60,7 @@ Rootkits can be detected by detecting primary rootkit behaviors: Hide Artifacts,
 
 Rootkits can also be detected via memory dump analysis or virtual machine introspection.
 
+
 ## References
 
 <a name="1">[1]</a> https://en.wikipedia.org/wiki/Rootkit
@@ -69,3 +70,4 @@ Rootkits can also be detected via memory dump analysis or virtual machine intros
 <a name="3">[3]</a> https://www.f-secure.com/v-descs/backdoor_w32_hupigon.shtml
 
 <a name="4">[4]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
+

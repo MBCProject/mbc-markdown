@@ -28,4 +28,15 @@
 
 # Resume Thread
 
-Malware typically resumes a thread in order to execute previously injected code (e.g., in the course of the [Process Injection::Process Hollowing](../../defense-evasion/process-injection.md)).
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|CryptoLocker resumes thread. [[1]](#1)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Dark Comet resumes a thread. [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+

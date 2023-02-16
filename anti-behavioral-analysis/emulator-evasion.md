@@ -48,3 +48,4 @@ Behaviors that obstruct analysis in an emulator.
 ## References
 
 <a name="1">[1]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+
