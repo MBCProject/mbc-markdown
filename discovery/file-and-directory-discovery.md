@@ -49,6 +49,7 @@ Malware may enumerate files and directories or may search for specific files or 
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|GravityRAT enumerates files on windows. [[6]](#6)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon enumerates files recursively. [[6]](#6)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|E1083.m01|Hupigon accesses the Windows event log. [[6]](#6)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter gets file version info. [[6]](#6)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|E1083.m01|Kovter accesses the Windows event log. [[6]](#6)|
 |[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam enumerates files on windows. [[6]](#6)|
 |[**UP007**](../xample-malware/up007.md)|2016|--|The malware enumerates files on windows. [[6]](#6)|

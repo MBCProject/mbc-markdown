@@ -62,7 +62,8 @@ Malware modifies the registry.
 |[**Gamut**](../xample-malware/gamut.md)|2014|C0036.007|Gamut deletes registry values. [[1]](#1)|
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|C0036.006|GoBotKR queries or enumerates registry values. [[1]](#1)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|C0036.002, C0036.007, C0036.005, C0036.006, C0036.001|Please see the Hupigon malware page for details. [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|C0036.004, C0036.006|Please see the Kovter malware page for details. [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|C0036.004|Kovter creates or opens registry keys. [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|C0036.006|Kovter queries or enumerates registry values. [[1]](#1)|
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|C0036.001|Locky Bart sets registry values. [[1]](#1)|
 |[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|C0036.006|Poison Ivy queries or enumerates registry values. [[1]](#1)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|C0036.001|Redhip set registry values. [[1]](#1)|
