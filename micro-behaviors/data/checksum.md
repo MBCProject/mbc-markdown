@@ -30,6 +30,7 @@
 
 Malware may derive a checksum from some block of data. The checksum is often used for data validation.
 
+
 ## Methods
 
 |Name|ID|Description|
@@ -39,14 +40,16 @@ Malware may derive a checksum from some block of data. The checksum is often use
 |**CRC32**|C0032.001|Malware computes a CRC32 checksum.|
 |**Luhn**|C0032.002|Malware uses Luhn algorithm, often to validate identification numbers (e.g, credit card number).| 
 
+
 ## Use in Malware
 
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|C0032.001|Dark Comet hashes data with CRC32. [[1]](#1)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|C0032.001|Gamut hashes data with CRC32. [[1]](#1)|
-|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|C0032.001|Hash data with CRC32 (This capa rule had 2 matches) [[1]](#1)|
-|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|C0032.001|Hash data with CRC32 (This capa rule had 1 match) [[1]](#1)|
+|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|C0032.001|Locky Bart hashes data with CRC32. [[1]](#1)|
+|[**UP007**](../xample-malware/up007.md)|2016|C0032.001|UP007 hashes data with CRC32. [[1]](#1)|
+
 
 ## References
 
