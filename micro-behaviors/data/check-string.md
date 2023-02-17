@@ -35,7 +35,8 @@ Malware may check a string for some characteristics, such as being ASCII content
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|Reference Base64 string (This capa rule had 1 match) [[1]](#1)|
+|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|Locky Bart references Base64 strings. [[1]](#1)|
+
 
 ## References
 
