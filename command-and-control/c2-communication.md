@@ -77,7 +77,7 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny communicates C2 via HTTP. [[10]](#10)|
 |[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer communicates to a Tor Onion Service via HTTP. [[11]](#11)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0030.001|The malware sends collected data about the system to C2 server. [[12]](#12) [[13]](#13)|
-|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0030.002|The C2 server returns base64 encoded data containing the information about the next command for the loader. [[12]](#12) [[13]](#13)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0030.002|The C2 server returns Base64 encoded data containing the information about the next command for the loader. [[12]](#12) [[13]](#13)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0030.013|The payload is run by explorer.exe. [[12]](#12) [[13]](#13)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|B0030.002|Gamut receives data from the C2. [[15]](#15)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|B0030.003|The malware receives files from the C2. [[15]](#15)|
