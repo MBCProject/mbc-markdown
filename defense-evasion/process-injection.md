@@ -41,7 +41,7 @@ See ATT&CK: **Process Injection ([T1055](https://attack.mitre.org/techniques/T10
 |E1055.011|Extra Window Memory Injection|Malware may inject into Explorer tray window’s extra window memory. Called *Extra Window Memory Injection* in [[1]](#1).|
 |E1055.012|Process Hollowing|Instead of injecting code into a program, malware can upmap (hollow out) legitimate code from memory of a target process, overwriting it with a malicious executable. Called *Process Hollowing* in [[1]](#1).|
 
-Methods not captured by ATT&CK Process Injection sub-techniques are listed below. Note that IAT hooking and inline hooking (aka userland rootkits) are defined as methods under the [Hooking](../credential-access/hooking.md) behavior.
+Methods not captured by ATT&CK Process Injection sub-techniques are listed below. Note that IAT hooking and inline hooking (aka userland rootkits) are defined as methods under the [Hijack Execution Flow](../defense-evasion/hijack-execution-flow.md) behavior.
 
 ## Methods
 
