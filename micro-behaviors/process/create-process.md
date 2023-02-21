@@ -50,8 +50,8 @@ Malware creates a process.
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR creates a process on Windows. [[2]](#2)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon creates a process on Windows. [[2]](#2)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter creates a process on Windows. [[2]](#2)|
-|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi create a process on Windows. [[2]](#2)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip creates a  process on Windows. [[2]](#2)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi creates a process on Windows. [[2]](#2)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip creates a process on Windows. [[2]](#2)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|C0017.003|Redhip creates a suspended process. [[2]](#2)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon creates a process on Windows. [[2]](#2)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|TrickBot creates a process on Windows. [[2]](#2)|
