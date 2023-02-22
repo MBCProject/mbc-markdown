@@ -90,7 +90,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|B0009.024|GravityRAT creates a WMI request to identify the BIOS version. [[3]](#3)|
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|B0009.028|GravityRAT checks if the MAC address starts with a well-known hexadecimal number used by various VM developers. [[3]](#3)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|B0009.022|WebCobra injects malicious code to svchost.exe and uses an infinite loop to check all open windows and to compare each window’s title bar text with a set of strings to determine whether it is running in a VM. [[4]](#4)|
-|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip detects VMWare, Virtual PC and Virtual Box. It also detects VM environments in general by considering timing lapses. [[6]](#6)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip detects VMWare, Virtual PC, and Virtual Box. It also detects VM environments in general by considering time lapses. [[6]](#6)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|B0009.010|Emotet checks for various processes that are associated with various virtual machines by comparing hash values of the process names with the hash values of the list of running process names. [[7]](#7)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus checks for the presence of virtualization software by querying the system registry. [[8]](#8)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0009.003|Malware checks if it is running in a sandbox. If it is, the malware exits. [[9]](#9) [[10]](#10)|
