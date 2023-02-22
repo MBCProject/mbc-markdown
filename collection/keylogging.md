@@ -50,7 +50,7 @@ See ATT&CK: **Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/te
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy's keylogger plugin allows for the collection of keystrokes. [[3]](#3)|
 |[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|DarkComet can capture keystrokes.  [[4]](#4)|
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|F0002.002|Malware logs keystrokes via polling. [[9]](#9)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison-Ivy can capture keystrokes.  [[5]](#5)|
+|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy can capture keystrokes.  [[5]](#5)|
 |[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK collects user keystrokes. [[6]](#6)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|F0002.002|Malware logs keystrokes via polling. [[9]](#9)|
 |[**Redhip**](../xample-malware/redhip.md)|2011|F0002.001|Malware logs keystrokes via application hook. [[9]](#9)|
