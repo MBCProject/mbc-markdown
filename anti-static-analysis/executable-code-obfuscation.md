@@ -68,7 +68,7 @@ For encryption and encoding characteristics of malware samples, as well as malwa
 |[**Heriplor**](../xample-malware/heriplor.md)|2012|B0032.001|The Heriplor Trojan uses API Hashing. [[1]](#1)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|B0032.007|Emotet macros are heavily obfuscated with junk functions and string substitutions. [[2]](#2)|
 |[**Rombertik**](../anti-static-analysis/executable-code-obfuscation.md)|2015|B0032.002|Most of the malware file consists of unnecessary code or unnecessary data. [[4]](#4)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|B0032.017|Poison Ivy variant encrypts all its strings. [[6]](#6)|
+|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|B0032.017|Poison Ivy variant encrypts all its strings. [[6]](#6)|
 |[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam obfuscates functions, class names and strings, including the list of targeted file extensions, the help file contents and environment variables using DES encryption with a fixed hard-coded key and the IV. [[7]](#7)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1027.m01|The configuration data block is encoded with a NOT XOR 0xFF operation. [[8]](#8)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0032.001|The function to import APIs uses a hash value and the DLL name of the target API. The API address returned from the function is stored into a global variance. API calls are obfuscated in the same manner as the stack strings and are resolved dynamically as the malware needs to use them. The malware encodes data in a stack string and copies that data into a global character buffer as a form of string obfuscation. [[9]](#9) [[10]](#10)|
