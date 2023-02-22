@@ -38,7 +38,7 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy implant is running on the target machine, the attacker can use a Windows GUI controller to control the target computer. [[1]](#1)|
+|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison Ivy implant is running on the target machine, the attacker can use a Windows GUI controller to control the target computer. [[1]](#1)|
 |[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|DarkComet can download files from a remote repository upon instruction. [[2]](#2)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon creates a folder on remote computers and then copies its executables (Shamoon and Filerase) into that directory. [[3]](#3)|
 |[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar requests a file using SSL to a C2 domain. [[4]](#4)|
