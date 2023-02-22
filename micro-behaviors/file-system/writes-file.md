@@ -40,7 +40,7 @@
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|GravityRAT writes files on Windows. [[1]](#1)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon writes files on Windows. [[1]](#1)|
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|Locky Bart writes files on Windows. [[1]](#1)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy writes files on Windows. [[1]](#1)|
+|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy writes files on Windows. [[1]](#1)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip writes files on Windows. [[1]](#1)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Rombertik writes files on Windows. [[1]](#1)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon writes files on Windows. [[1]](#1)|
