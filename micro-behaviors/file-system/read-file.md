@@ -41,7 +41,7 @@
 |[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter reads files on Windows. [[1]](#1)|
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|Locky Bart reads files on Windows. [[1]](#1)|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi reads files on Windows. [[1]](#1)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy reads files on Windows. [[1]](#1)|
+|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy reads files on Windows. [[1]](#1)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip reads files on Windows. [[1]](#1)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Rombertik reads files on Windows. [[1]](#1)|
 |[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam reads files on Windows. [[1]](#1)|
