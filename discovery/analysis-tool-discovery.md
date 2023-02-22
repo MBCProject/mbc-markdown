@@ -52,8 +52,8 @@ This behavior corresponds to simple, general discovery of analysis tools. Behavi
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Emotet**](../xample-malware/emotet.md)|2018|B0013.002|If Emotet receives a response from the C2 server stating a debugging-related tool is in the list of running processes, it recieves an "upgrade" command which calls the ShellExecuteW function and exits. [[1]](#1)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy Variant runs a threat to check if any analysis tools are running by creating specially named pipes that are created by various analysis tools. If one of the named pipes cannot be created, it means one of the analysis tools is running. [[2]](#2) [[3]](#3)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|B0013.010|Poison Ivy goes through all the running program windows to check if any windows class name contains a special string to determine if an analysis tool is running. [[2]](#2) [[3]](#3)|
+|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy Variant runs a threat to check if any analysis tools are running by creating specially named pipes that are created by various analysis tools. If one of the named pipes cannot be created, it means one of the analysis tools is running. [[2]](#2) [[3]](#3)|
+|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|B0013.010|Poison Ivy goes through all the running program windows to check if any Windows class name contains a special string to determine if an analysis tool is running. [[2]](#2) [[3]](#3)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|B0013.004|When infecting a x64 architecture system, the malware terminates if Wireshark is running on the system. [[4]](#4)|
 
 
