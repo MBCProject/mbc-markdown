@@ -55,7 +55,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Redhip**](../xample-malware/redhip.md)|2011|B0007.005|Redhip detects publicly available automated analysis workbenches (e.g., Joe Box) by considering OS product keys and special DLLs. [[1]](#1)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|B0007.005|Redhip detects publicly available automated analysis workbenches (e.g., Joe Box) by considering OS product keys and special DLLs and checks for sandboxes and AV modules. [[1]](#1)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|B0007.010|The malware check for sandboxes that suppress errors returned from API routine calls the using ZwGetWriteWatch routine. [[2]](#2)|
 |[**Terminator**](../xample-malware/terminator.md)|2013|--|The Terminator RAT evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[4]](#4)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|B0007.007|Ursnif uses malware macros to evade sandbox detection, checking whether the filename contains only hexadecimal characters before the extension. [[8]](#8)|
