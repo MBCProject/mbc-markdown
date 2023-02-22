@@ -65,7 +65,7 @@ Malware modifies the registry.
 |[**Kovter**](../xample-malware/kovter.md)|2016|C0036.004|Kovter creates or opens registry keys. [[1]](#1)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|C0036.006|Kovter queries or enumerates registry values. [[1]](#1)|
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|C0036.001|Locky Bart sets registry values. [[1]](#1)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|C0036.006|Poison Ivy queries or enumerates registry values. [[1]](#1)|
+|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|C0036.006|Poison Ivy queries or enumerates registry values. [[1]](#1)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|C0036.001|Redhip set registry values. [[1]](#1)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|C0036.002|Redhip deletes registry keys. [[1]](#1)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|C0036.006|Redhip queries or enumerates registry values. [[1]](#1)|
