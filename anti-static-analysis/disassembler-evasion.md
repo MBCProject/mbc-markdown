@@ -49,8 +49,8 @@ Some methods apply to both types of disassemblers; others apply to one type and 
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|B0012.001|BlackEnergy contains obfuscated stack strings. [[1]](#1) [[6]](#6)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0012.001|Contain obfuscated stackstrings (This capa rule had 1 match) [[6]](#6)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0012.001|Contain obfuscated stackstrings (This capa rule had 1 match) [[6]](#6)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0012.001|Hupigon contains obfuscated stack strings. [[6]](#6)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0012.001|Rombertik contains obfuscated stack strings. [[6]](#6)|
 
 ## References
 
