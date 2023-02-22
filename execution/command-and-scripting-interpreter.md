@@ -36,7 +36,7 @@ See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.or
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[1]](#1)|
+|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[1]](#1)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|From the command line, the malware drops and unzips a password-protected Cabinet archive file. [[1]](#1)|
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR uses cmd.exe to execute commands. [[2]](#2)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|--|The malware executes malicious javascript and powershell. [[3]](#3)|
