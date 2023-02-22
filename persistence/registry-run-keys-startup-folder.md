@@ -37,7 +37,7 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware has an auto-start service that allows it to run whenever the machine boots. [[16]](#16)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|To start itself at system boot, Poison Ivy adds registry entries. [[2]](#2)|
+|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|To start itself at system boot, Poison Ivy adds registry entries. [[2]](#2)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon drops the file "Systen.dll" and adds the registry entry: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Notify\BITS DllName = "%System%\Systen.dll". [[3]](#3)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|E1547.001|Hupigon persists via Run registry key. [[3]](#3)|
 |[**Terminator**](../xample-malware/terminator.md)|2013|--|The Terminator RAT sets "2019" as Windows' startup folder by modifying a registry value. [[4]](#4)|
