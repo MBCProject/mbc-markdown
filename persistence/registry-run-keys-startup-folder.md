@@ -52,7 +52,7 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 |[**Emotet**](../xample-malware/emotet.md)|2018|--|To start itself at system boot, Emotet adds the downloaded payload to the registry to maintain persistence. [[13]](#13)|
 |[**Bagle**](../xample-malware/bagle.md)|2004|--|Bagle adds registry keys to enable its automatic execution at every system startup. [[14]](#14)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Malware adds registry keys to enable startup after reboot. [[15]](#15)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|E1547.001|Redhip persists via Run registry key. [[17]](#17)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|E1547.001|Redhip persists via a Run registry key. [[17]](#17)|
 
 
 ## References
