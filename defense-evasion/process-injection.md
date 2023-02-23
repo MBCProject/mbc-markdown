@@ -67,7 +67,7 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|E1055.m05|BlackEnergy bypasses UAC using a Shim Database instructing SndVol.exe to execute cmd.exe instead, allowing for elevated execution. [[8]](#8)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy injects its dll component into svchost.exe. [[8]](#8)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1055.001|Stuxnet injects the entire DLL into another process and then just calls the particular export. [[9]](#9)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1055.m02|The driver Stuxnet uses for persistence Mrxcls.sys is registered as a boot start service creating the registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MRxCIs"ImagePath" = "%System%\drivers\mrxcls.sys." [[9]](#9)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1055.m02|Stuxnet uses Mrxcls.sys driver for persistence. It is registered as a boot start service by creating the registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MRxCIs\"ImagePath" = "%System%\drivers\mrxcls.sys". [[9]](#9)|
 |[**Netwalker**](../xample-malware/netwalker.md)|2020|E1055.001|Netwalker uses reflective DLL loading to inject from memory. [[10]](#10)|
 |[**DNSChanger**](../xample-malware/dnschanger.md)|2011|--|The malware can attach user process memory. [[13]](#13)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|E1055.003|The malware can inject threads. [[13]](#13)|
