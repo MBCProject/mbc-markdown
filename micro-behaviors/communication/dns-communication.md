@@ -44,8 +44,8 @@ The DNS Communication micro-behavior focuses on DNS communication.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0011.001|Resolve DNS (This capa rule had 1 match) [[1]](#1)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|C0011.001|Resolve DNS (This capa rule had 1 match) [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0011.001|Hupigon resolves DNS. [[1]](#1)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|C0011.001|Shamoon resolves DNS. [[1]](#1)|
 
 ## References
 
