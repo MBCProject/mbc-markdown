@@ -49,6 +49,7 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 |[**DarkComet**](../xample-malware/darkcomet.md)|2008|--|Malware can collect information about the computer, resources, and operating system version.  [[3]](#3)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|--|Emotet collects information related to OS, processes, and sometimes mail client information and sends it to C2. [[4]](#4)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Malware gathers information (OS version, workgroup status, computer name, domain/workgroup name, file name of infected project file) about each computer in the network to spread itself. [[5]](#5)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet checks OS version. [[5]](#5)|
 |[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK collects information from the host including Windows version, CPU architecture, and UAC settings. [[6]](#6)|
 |[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware queries environment variables. [[9]](#9)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|--|The malware queries environment variables. [[9]](#9)|
