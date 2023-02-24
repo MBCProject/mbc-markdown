@@ -59,7 +59,7 @@ See ATT&CK: **Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques
 |Name|Date|Method|Description|
 |---|---|---|---|
 |**Kronos**|2014|--|Kronos hooks the API of processes to prevent detection. [[6]](#6)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|The malware hooks various DLL exported functions when the DLL component is loaded into their respective Browser application process to monitor network traffic. [[7]](#7)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|The malware hooks various DLL exported functions when the DLL component is loaded into their respective browser application to monitor network traffic. [[7]](#7)|
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|F0015.006|GravityRAT abuses Microsoft's Dynamic Data Exchange (DDE) protocol. [[8]](#8)|
 |[**SYNful Knock**](../xample-malware/synful-knock.md)|2015|--|SYNful Knock hooks iOS functions to call and initialize the malware. [[9]](#9)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|F0015.006|Malware escalates privileges by impersonating the token through using LogonUser and ImpersonateLoggedOnUser then ImpersonateNamedPipeClient. [[10]](#10)|
