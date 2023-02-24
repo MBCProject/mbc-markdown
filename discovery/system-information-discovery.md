@@ -44,7 +44,7 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 |---|---|---|---|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware can collect information about the computer, resources, services, installed programs, firmware, and operating system versions. [[7]](#7)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Malware learns about the system so it can drop compatible miner software. [[8]](#8)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Malware uses windows command prompt commands to gather system info, task list, installed drivers, and installed programs.  [[1]](#1)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Malware uses Window's command prompt commands to gather system info, task list, installed drivers, and installed programs.  [[1]](#1)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Malware uses Systeminfo to gather OS version, system configuration, BIOS, the motherboard, and processor. [[2]](#2)|
 |[**DarkComet**](../xample-malware/darkcomet.md)|2008|--|Malware can collect information about the computer, resources, and operating system version.  [[3]](#3)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|--|Emotet collects information related to OS, processes, and sometimes mail client information and sends it to C2. [[4]](#4)|
