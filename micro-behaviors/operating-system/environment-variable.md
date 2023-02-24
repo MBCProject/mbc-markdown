@@ -40,8 +40,8 @@ Malware modifies environment variables.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Kovter**](../xample-malware/kovter.md)|2016|C0034.001|Set environment variable (This capa rule had 3 matches) [[1]](#1)|
-|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|C0034.001|Set environment variable (This capa rule had 1 match) [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|C0034.001|Kovter sets environment variables. [[1]](#1)|
+|[**UP007**](../xample-malware/up007.md)|2016|C0034.001|UP007 sets environment variables. [[1]](#1)|
 
 ## References
 
