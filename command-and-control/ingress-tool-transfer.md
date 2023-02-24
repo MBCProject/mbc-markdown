@@ -46,7 +46,8 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 |[**TEARDROP**](../xample-malware/teardrop.md)|2018|--|TEARDROP executes the decrypted, embedded code buffer, which is a Cobalt Strike RAT. [[6]](#6)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware downloads DLLs from the hardcoded URL/remote server. [[7]](#7) [[8]](#8)|
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR can download additional files and update itself. [[9]](#9)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut receives files from C2. [[10]](#10)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut receives files from the C2. [[10]](#10)|
+|[**UP007**](../xample-malware/up007.md)|2016|--|UP007 downloads files from the C2. [[10]](#10)|
 
 
 ## References
