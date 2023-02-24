@@ -59,7 +59,7 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**SYNful Knock**](../../xample-malware/synful-knock.md)|2015|C0001.014|SYNful Knock initiates communication with the C2 server, a uniquely crafted TCP SYN packet is sent to port 80 of the "implanted" router. [[1]](#1)|
+|[**SYNful Knock**](../../xample-malware/synful-knock.md)|2015|C0001.014|SYNful Knock initiates communication with the C2 server via a uniquely crafted TCP SYN packet sent to port 80 of the "implanted" router. [[1]](#1)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|C0001.010|Hupigon creates a UDP socket. [[2]](#2)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|C0001.011|Rombertik creates a TCP socket. [[2]](#2)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|C0001.009|Shamoon initializes a Winsock library. [[2]](#2)|
