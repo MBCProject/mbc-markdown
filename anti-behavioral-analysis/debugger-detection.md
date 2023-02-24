@@ -93,7 +93,7 @@ Details on methods of detecting debuggers are given in the references; many are 
 |[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|B0001.005|Poison Ivy Variant checks for breakpoints and exits immediately if found. [[13]](#13)|
 |[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|B0001.008|Poison Ivy uses the IsDebuggerPresent API function call to check if the process is running in a debugger. [[13]](#13)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0001.032|The malware calls GetTickCount64 to retrieve timestamp. Malware executes Sleep and Beep in a repeated loop for 10 times. [[11]](#11) [[12]](#12)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|B0001.028|The malware manipulates TLS Callbacks while injecting to child process. [[12]](#12)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|B0001.028|The malware manipulates TLS Callbacks while injecting to a child process. [[12]](#12)|
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|B0001.032|The malware checks for a time delay via GetTickCount. [[15]](#15)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|B0001.025|The malware checks for software breakpoints. [[15]](#15)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|B0001.032|The malware checks for a time delay via GetTickCount. [[15]](#15)|
