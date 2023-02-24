@@ -44,7 +44,7 @@ Malware may attempt to get a listing of open application windows.
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|E1010.m01|Hupigon gets graphical window texts. [[1]](#1)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|E1010.m01|Kovter gets graphical window texts. [[1]](#1)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|E1010.m01|Rombertik gets graphical window texts. [[1]](#1)|
-|[**UP007**](../xample-malware/up007.md)|2016|E1010.m01|UP007 gets graphical window texts. [[1]](#1)|
+|[**UP007**](../xample-malware/up007.md)|2016|E1010.m01|UP007 gets graphical window text. [[1]](#1)|
 
 ## References
 
