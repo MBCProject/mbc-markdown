@@ -61,7 +61,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|B0007.007|Ursnif uses malware macros to evade sandbox detection - checking whether the filename contains only hexadecimal characters before the extension. [[8]](#8)|
 |[**GotBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR performs several checks on the compromised machine to avoid being emulated or executed in a sandbox. [[5]](#5)|
 |[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny hooks time retrieval APIs and calls each API twice to calculate a delta. Execution aborts depending on the delta value. [[6]](#6)|
-|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus uses GetModuleHandle API to check for the presence of a sandbox [[7]](#7)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus uses GetModuleHandle API to check for the presence of a sandbox. [[7]](#7)|
 
 
 ## Detection
