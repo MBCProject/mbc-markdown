@@ -55,7 +55,7 @@ See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://atta
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Most security products hook some APIs to monitor the behavior of malware. To avoid being identified by this technique, WebCobra loads ntdll.dll and user32.dll as data files in memory and overwrites the first 8 bytes of those functions, which unhooks the APIs. [[1]](#1)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware terminates the following anti-malware services: Window Defender, MBamService (Malwarebytes), SAVService (Sophos AV). [[6]](#6)|
 |[**DNSChanger**](../xample-malware/dnschanger.md)|2011|--|DNSChanger prevents the infected system from installing anti-virus software updates. [[2]](#2)|
-|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus uses GetModuleHandle API to check for presence of Avast Antivirus. [[5]](#5)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus uses GetModuleHandle API to check for the presence of Avast Antivirus. [[5]](#5)|
 
 
 ## References
