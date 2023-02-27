@@ -77,7 +77,6 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-<<<<<<< HEAD
 |**Fake Adobe Flash Update OS X**|2016|--|Malware contains code that manually detects a debugger. [[2]](#2)|
 |**Dridex**|2015|--|[[3]](#3)|
 |[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[6]](#6)|
