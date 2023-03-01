@@ -28,7 +28,7 @@
 
 # Polymorphic Code
 
-Polymorphic code, a file with the same functionality but different execution, is created, often on the fly, making it difficult to detect. This behavior includes metamorphic code where the code is changed (not just executed differently), but with the behavior the same. Polymorphic Code behavior is typically identified through analysis of related samples.
+Polymorphic code, a file with the same functionality but different execution, is created, often on the fly, making it difficult to detect. This behavior includes metamorphic code where the code is changed (not just executed differently), but with the behavior the same. Polymorphic code behavior is typically identified through analysis of related samples.
 
 ## Methods
 
@@ -42,7 +42,7 @@ Polymorphic code, a file with the same functionality but different execution, is
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny utilizes Lua scripts to exhibit polymorphism [[2]](#2)|
+|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny utilizes Lua scripts to exhibit polymorphism. [[2]](#2)|
 
 ## References
 

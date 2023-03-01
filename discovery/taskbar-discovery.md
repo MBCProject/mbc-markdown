@@ -33,7 +33,7 @@
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Find taskbar (This capa rule had 1 match) [[1]](#1)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip finds taskbars. [[1]](#1)|
 
 ## References
 

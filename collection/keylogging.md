@@ -44,16 +44,20 @@ See ATT&CK: **Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/te
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|F0002, F0002.002|Please see the Hupigon malware page for details. [[1]](#1)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Keylogger plugin allows for collection of keystrokes [[3]](#3)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Can capture keystrokes  [[5]](#5)|
-|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK collects user keystrokes [[6]](#6)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|F0002, F0002.002|Please see the Dark Comet malware page for details. [[4]](#4)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|F0002.002|Log keystrokes via polling (This capa rule had 1 match) [[7]](#7)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|F0002.001, F0002.002|Please see the Redhip malware page for details. [[7]](#7)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|F0002.002|Log keystrokes via polling (This capa rule had 7 matches) [[7]](#7)|
-|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|--|The malware logs keystrokes to a file  [[2]](#2)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|F0002.002|Log keystrokes via polling (This capa rule had 1 match) [[7]](#7)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Certain variants of the malware may have keylogging functionality. [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|F0002.002|Malware logs keystrokes via polling. [[9]](#9)|
+|[**UP007**](../xample-malware/up007.md)|2016|--|The malware logs keystrokes to a file. [[2]](#2)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy's keylogger plugin allows for the collection of keystrokes. [[3]](#3)|
+|[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|DarkComet can capture keystrokes.  [[4]](#4)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|F0002.002|Malware logs keystrokes via polling. [[9]](#9)|
+|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy can capture keystrokes.  [[5]](#5)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK collects user keystrokes. [[6]](#6)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|F0002.002|Malware logs keystrokes via polling. [[9]](#9)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|F0002.001|Malware logs keystrokes via application hook. [[9]](#9)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|F0002.002|Malware logs keystrokes via polling. [[9]](#9)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|F0002.002|Malware logs keystrokes via polling. [[9]](#9)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|F0002.002|Malware logs keystrokes via polling. [[9]](#9)|
+
 
 ## References
 
@@ -72,4 +76,6 @@ See ATT&CK: **Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/te
 <a name="7">[7]</a> capa v4.0, analyzed at MITRE on 10/12/2022
 
 <a name="8">[8]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf
+
+<a name="9">[9]</a> capa v4.0, analyzed at MITRE on 10/12/2022
 

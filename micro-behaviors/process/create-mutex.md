@@ -34,12 +34,13 @@ Malware creates a mutex.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy has a default process mutex, but can be altered at build time [2] [[1]](#1)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Creates global mutexes signal that rootkit installation has occurred successfully  [[2]](#2)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Create mutex (This capa rule had 1 match) [[3]](#3)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|--|Create mutex (This capa rule had 2 matches) [[3]](#3)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Create mutex (This capa rule had 1 match) [[3]](#3)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Create mutex (This capa rule had 1 match) [[3]](#3)|
+|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy has a default process mutex, but can be altered at build time. [[1]](#1)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Malware creates global mutexes that signal rootkit installation has occurred successfully. [[2]](#2)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon creates a mutex. [[3]](#3)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter creates a mutex. [[3]](#3)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip creates a mutex. [[3]](#3)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Rombertik creates a mutex. [[3]](#3)|
+
 
 ## References
 
@@ -48,6 +49,3 @@ Malware creates a mutex.
 <a name="2">[2]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
 
 <a name="3">[3]</a> capa v4.0, analyzed at MITRE on 10/12/2022
-
-<a name="4">[4]</a> https://www.fortinet.com/blog/threat-research/deep-analysis-of-new-poison-ivy-variant
-

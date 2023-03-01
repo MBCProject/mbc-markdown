@@ -54,19 +54,22 @@ Malware may encrypt data.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**TrickBot**](../../xample-malware/trickbot.md)|2016|C0027.001|Uses an AES CBC (256 bits) encryption algorithm for its loader and configuration files  [[1]](#1)|
-|[**GravityRAT**](../../xample-malware/gravity-rat.md)|2018|C0027.001|	GravityRat v3 supports file AES file encryption  [[3]](#3)|
-|[**Poison-Ivy**](../../xample-malware/poison-ivy.md)|2005|C0027.003|Poison Ivy's custom network protocol over TCP is encrypted using Camellia cipher with a 256-bit key  [[4]](#4)|
-|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|C0027.009|CHOPSTICK encrypts the configuration block using RC4 encryption [[5]](#5)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0027.009|Encrypt data using RC4 via WinAPI (This capa rule had 1 match) [[6]](#6)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|C0027.009|Encrypt data using RC4 PRGA (This capa rule had 3 matches) [[6]](#6)|
-|[**DNSChanger**](../xample-malware/dnschanger.md)|2011|C0027.009|Encrypt data using RC4 PRGA (This capa rule had 1 match) [[6]](#6)|
-|[**Emotet**](../xample-malware/emotet.md)|2018|C0027.011, C0027.009|Please see the Emotet malware page for details. [[2]](#2)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0027.004|Encrypt data using DES (This capa rule had 1 match) [[6]](#6)|
-|[**Kraken**](../xample-malware/kraken.md)|2008|C0027.009|Encrypt data using RC4 PRGA (This capa rule had 2 matches) [[6]](#6)|
-|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|C0027.009|Encrypt data using RC4 PRGA (This capa rule had 1 match) [[6]](#6)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Encrypt data using DPAPI (This capa rule had 6 matches) [[6]](#6)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|C0027.009|Encrypt data using RC4 PRGA (This capa rule had 1 match) [[6]](#6)|
+|[**TrickBot**](../../xample-malware/trickbot.md)|2016|C0027.001|The malware uses an AES CBC (256 bits) encryption algorithm for its loader and configuration files. [[1]](#1)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|C0027.009|Emotet encrypts data using RC4 PRGA. [[8]](#8)|
+|[**Emotet**](../../xample-malware/emotet.md)|2018|C0027.011|Emotet uses RSA to encrypt network traffic to its C2. [[2]](#2)|
+|[**GravityRAT**](../../xample-malware/gravity-rat.md)|2018|C0027.001|GravityRat v3 supports file AES file encryption. [[3]](#3)|
+|[**Poison Ivy**](../../xample-malware/poison-ivy.md)|2005|C0027.003|Poison Ivy's custom network protocol over TCP is encrypted using Camellia cipher with a 256-bit key. [[4]](#4)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|C0027.009|CHOPSTICK encrypts the configuration block using RC4 encryption. [[5]](#5)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|C0027.009|The malware decrypts inner configurations stored in the binary. The malware also encrypts the value of each JSON key with RC4 and encodes the value with Base64. [[6]](#6) [[7]](#7)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0027.009|BlackEnergy encrypts data using RC4 via WinAPI. [[8]](#8)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|C0027.009|Dark Comet encrypts data using RC4 PRGA. [[8]](#8)|
+|[**DNSChanger**](../xample-malware/dnschanger.md)|2011|C0027.009|DNSChanger encrypts data using RC4 PRGA. [[8]](#8)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0027.004|Hupigon encrypts data using DES. [[8]](#8)|
+|[**Kraken**](../xample-malware/kraken.md)|2008|C0027.009|Kraken encrypts data using RC4 PRGA. [[8]](#8)|
+|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|C0027.009|Locky Bart encrypts data using RC4 PRGA. [[8]](#8)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip encrypts data using DPAPI. [[8]](#8)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|C0027.009|Rombertik encrypts data using RC4 PRGA. [[8]](#8)|
+
 
 ## Code Snippets
 
@@ -139,5 +142,8 @@ retn
 
 <a name="5">[5]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
 
-<a name="6">[6]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+<a name="6">[6]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
 
+<a name="7">[7]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
+
+<a name="8">[8]</a> capa v4.0, analyzed at MITRE on 10/12/2022

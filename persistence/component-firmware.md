@@ -32,7 +32,7 @@
 
 # Component Firmware
 
-Malware may overwrite the flash memory of firmware outside of the main system firmware or BIOS. [[1]](#1). Methods related to malware (extending ATT&CK's definitions) are below. 
+Malware may overwrite the flash memory of firmware outside of the main system firmware or BIOS [[1]](#1). Methods related to malware (extending ATT&CK's definitions) are below. 
 
 See ATT&CK: **Pre-OS Boot: Component Firmware ([T1542.002](https://attack.mitre.org/techniques/T1542/002/))**.
 
@@ -48,9 +48,14 @@ See ATT&CK: **Pre-OS Boot: Component Firmware ([T1542.002](https://attack.mitre.
 |---|---|---|---|
 |[**SYNful Knock**](../xample-malware/synful-knock.md)|2015|F0009.001|SYNful Knock is a stealthy modification of the router's firmware image that can be used to maintain persistence within a victim's network. [[2]](#2)|
 
+
 ## References
 
 <a name="1">[1]</a> https://www.scmagazine.com/home/opinions/are-synful-knock-style-router-attacks-set-to-become-the-new-normal/
 
 <a name="2">[2]</a> https://www.fireeye.com/blog/threat-research/2015/09/synful_knock_-_acis.html
+
+<a name="3">[3]</a> http://researchcenter.paloaltonetworks.com/2015/10/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
+
+<a name="4">[4]</a> https://www.mandiant.com/resources/synful-knock-acis
 

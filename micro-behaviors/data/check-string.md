@@ -28,15 +28,16 @@
 
 # Check String
 
-Malware may check a string for some characteristics, such as being ascii content; credit card number; or length.
+Malware may check a string for some characteristics, such as being ASCII content, credit card number, or length.
+
 
 ## Use in Malware
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|Reference Base64 string (This capa rule had 1 match) [[1]](#1)|
+|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|Locky Bart references Base64 strings. [[1]](#1)|
+
 
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
-

@@ -42,7 +42,7 @@ Malware may decompress data.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Bagle**](../xample-malware/bagle.md)|2004|C0025.003|Decompress data using aPLib (This capa rule had 1 match) [[1]](#1)|
+|[**Bagle**](../xample-malware/bagle.md)|2004|C0025.003|Bagle decompresses data using aPLib. [[1]](#1)|
 
 ## References
 

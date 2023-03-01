@@ -38,7 +38,8 @@ This behavior is related to the **Phishing ([T1566](https://attack.mitre.org/tec
 |---|---|---|---|
 |[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut probes the infected system's SMTP port 25 by sending a test SMTP transaction to mail.ru and hotmail.com. If port 25 is open, the bot requests the spam template and email list, which it uses to send spam. [[1]](#1)|
 |[**Bagle**](../xample-malware/bagle.md)|2004|--|Bagle uses its own SMTP engine to mass-mail itself as an attachment from an infected computer. [[2]](#2)|
-|[**Emotet**](../xample-malware/emotet.md)|2018|--|Spam email with the Emotet loader is sent automatically [[3]](#3)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|--|Spam email with the Emotet loader is sent automatically. [[3]](#3)|
+
 
 ## References
 
@@ -47,6 +48,4 @@ This behavior is related to the **Phishing ([T1566](https://attack.mitre.org/tec
 <a name="2">[2]</a> https://en.wikipedia.org/wiki/Bagle_(computer_worm)
 
 <a name="3">[3]</a> https://securelist.com/the-banking-trojan-emotet-detailed-analysis/69560/
-
-<a name="4">[4]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/
 

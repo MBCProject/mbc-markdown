@@ -36,10 +36,12 @@ See ATT&CK: **Create or Modify System Process::Windows Service ([T1543.003](http
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**YiSpecter**](../xample-malware/yispecter.md)|2015|--|Hijacks other installed applications' launch routines to use "ADPage" (an installed malicious app) to display advertisements  [[2]](#2)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Locates an inactive driver service to Hijack and set it to start automatically [[3]](#3)|
-|[**Conficker**](../xample-malware/conficker.md)|2008|--|Copies itself into the $systemroot%\system32 directory and registers as a service  [[4]](#4)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon enables the RemoteRegistry service to allow remote registry modification [[5]](#5)|
+|[**YiSpecter**](../xample-malware/yispecter.md)|2015|--|The malware hijacks other installed applications' launch routines to use "ADPage" (an installed malicious app) to display advertisements. [[2]](#2)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Malware locates an inactive driver service to hijack and set it to start automatically. [[3]](#3)|
+|[**Conficker**](../xample-malware/conficker.md)|2008|--|Malware copies itself into the $systemroot%\system32 directory and registers as a service. [[4]](#4)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon enables the RemoteRegistry service to allow remote registry modification. [[5]](#5)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus disables Windows AutoUpdate and patches the first byte of TerminateProcess and TerminateThread API with C3 (RET Instruction) to prevent external processes from terminating the running instance of malware. [[6]](#6)|
+
 
 ## References
 
@@ -53,3 +55,4 @@ See ATT&CK: **Create or Modify System Process::Windows Service ([T1543.003](http
 
 <a name="5">[5]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-returns-to-wipe-systems-in-middle-east-europe/
 
+<a name="6">[6]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/

@@ -28,7 +28,7 @@
 
 # Generate Pseudo-random Sequence
 
-The Generate Pseudo-random Sequence microbehavior can be used for a number of purposes. The methods below include specific functions, as well as pseudorandom number generators (PRNG).
+The Generate Pseudo-random Sequence micro-behavior can be used for a number of purposes. The methods below include specific functions, as well as pseudo-random number generators (PRNG).
 
 ## Methods
 
@@ -43,7 +43,7 @@ The Generate Pseudo-random Sequence microbehavior can be used for a number of pu
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0021.003|Generate random numbers via WinAPI (This capa rule had 1 match) [[1]](#1)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0021.003|BlackEnergy generates random numbers via WinAPI. [[1]](#1)|
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|C0021.003|Generate random numbers via WinAPI (This capa rule had 1 match) [[1]](#1)|
 
 ## References
