@@ -79,7 +79,7 @@ See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.or
 
 <a name="10">[10]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
 
-<a name="11">[11]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+<a name="11">[11]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
 <a name="12">[12]</a> https://blog.malwarebytes.com/threat-analysis/2016/07/untangling-kovter/
 

@@ -67,7 +67,7 @@ Some aspects of this Conditional Execution behavior are related to the [Executio
 
 ## References
 
-<a name="1">[1]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+<a name="1">[1]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
 <a name="2">[2]</a> https://reverseengineering.stackexchange.com/questions/2019/debugging-malware-that-will-only-run-as-a-service
 

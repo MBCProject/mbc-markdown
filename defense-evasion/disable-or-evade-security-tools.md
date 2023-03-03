@@ -60,11 +60,11 @@ See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://atta
 
 ## References
 
-<a name="1">[1]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+<a name="1">[1]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
 <a name="2">[2]</a> https://www.huffingtonpost.com/2011/11/09/click-hijack-hackers-online-ad-scam_n_1084497.html
 
-<a name="3">[3]</a> Alexander Adamov, Stealthy WastedLocker: eluding behavior blockers, but not only. Online:   https://vblocalhost.com/conference/presentations/stealthy-wastedlocker-eluding-behaviour-blockers-but-not-only/
+<a name="3">[3]</a> Alexander Adamov, Stealthy WastedLocker: eluding behavior blockers, but not only. Online:   https://vb2020.vblocalhost.com/conference/presentations/stealthy-wastedlocker-eluding-behaviour-blockers-but-not-only/
 
 <a name="4">[4]</a> Carl Petty, Red Canary, 3/3/2020. Online: https://redcanary.com/blog/heavens-gate-technique-on-linux/
 
