@@ -55,7 +55,7 @@ See ATT&CK: **Pre-OS Boot: Component Firmware ([T1542.002](https://attack.mitre.
 
 <a name="2">[2]</a> https://www.fireeye.com/blog/threat-research/2015/09/synful_knock_-_acis.html
 
-<a name="3">[3]</a> http://researchcenter.paloaltonetworks.com/2015/10/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
+<a name="3">[3]</a> https://unit42.paloaltonetworks.com/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
 
 <a name="4">[4]</a> https://www.mandiant.com/resources/synful-knock-acis
 

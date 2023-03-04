@@ -108,7 +108,7 @@ jmp short loc_401326
 
 <a name="2">[2]</a> http://blog.threatexpert.com/2008/04/kraken-changes-tactics.html
 
-<a name="3">[3]</a> http://waleedassar.blogspot.com/search/label/anti-dump
+<a name="3">[3]</a> https://waleedassar.blogspot.com/search/label/anti-dump
 
 <a name="4">[4]</a> https://www.gironsec.com/code/packers.pdf
 

@@ -96,6 +96,6 @@ Methods not captured by ATT&CK Process Injection sub-techniques are listed below
 
 <a name="11">[11]</a> https://www.cybereason.com/blog/research/dropping-anchor-from-a-trickbot-infection-to-the-discovery-of-the-anchor-malware
 
-<a name="12">[12]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+<a name="12">[12]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
 <a name="13">[13]</a> capa v4.0, analyzed at MITRE on 10/12/2022

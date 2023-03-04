@@ -49,4 +49,4 @@ Malware code evades accurate call graph generation during disassembly. Call grap
 
 <a name="3">[3]</a> http://fumalwareanalysis.blogspot.com/2012/01/malware-analysis-tutorial-10-tricks-for.html
 
-<a name="4">[4]</a> S. Shang, N. Zheng, J. Xu, M. Xu, H. Zhang, "Detecting Malware Variants via Function-call Graph Similarity," IEEE 2010 5th International Conference on Malicious and Unwanted Software, 2010. http://seclab.hdu.edu.cn/static/uploads/paper/10-05.pdf
+<a name="4">[4]</a> S. Shang, N. Zheng, J. Xu, M. Xu, H. Zhang, "Detecting Malware Variants via Function-call Graph Similarity," IEEE 2010 5th International Conference on Malicious and Unwanted Software, 2010. https://seclab.hdu.edu.cn/static/uploads/paper/10-05.pdf
