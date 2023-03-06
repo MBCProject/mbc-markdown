@@ -28,7 +28,7 @@
 
 # Disable or Evade Security Tools
 
-Malware may disable or evade security tools to avoid detection. Security tools include OS security features and updating tools, anti-virus (AV) tools, firewalls, tool components providing security related logging and/or reporting, and Antimalware Scan Interface (AMSI) related capabilities. 
+Malware may disable or evade security tools to avoid detection. Security tools include OS security features and updating tools, anti-virus (AV) tools, firewalls, tool components providing security related logging and/or reporting, and Antimalware Scan Interface (AMSI) related capabilities. This behavior is related to Unprotect technique U0508. 
 
 Malware-related methods extending ATT&CK's definition are below. 
 

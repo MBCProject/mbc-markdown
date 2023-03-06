@@ -40,7 +40,7 @@ This description refines the ATT&CK **Obfuscated Files or Information: Software 
 |Name|ID|Description|
 |---|---|---|
 |**Armadillo**|F0001.012|Uses Armadillo.|
-|**ASPack**|F0001.013|Uses ASPack.|
+|**ASPack**|F0001.013|Uses ASPack. This method is related to Unprotect technique U1411.|
 |**Confuser**|F0001.009|Uses Confuser packer.|
 |**Custom Compression**|F0001.005|Uses a custom algorithm to compress an executable file.|
 |**Custom Compression of Code**|F0001.006|Uses a custom algorithm to compress opcode mnemonics.|
@@ -49,9 +49,9 @@ This description refines the ATT&CK **Obfuscated Files or Information: Software 
 |**Standard Compression**|F0001.002|Uses a standard algorithm, such as UPX or LZMA, to compress an executable file.|
 |**Standard Compression of Code**|F0001.003|Uses a standard algorithm to compress the opcode mnemonics.|
 |**Standard Compression of Data**|F0001.004|Uses a standard algorithm to compress strings and variables (executable file data).|
-|**Themida**|F0001.011|Uses Themida.|
-|**UPX**|F0001.008|Uses UPX packer.|
-|**VMProtect**|F0001.010|Uses VMProtect.|
+|**Themida**|F0001.011|Uses Themida.This method is related to Unprotect technique U1406.|
+|**UPX**|F0001.008|Uses UPX packer. This method is related to Unprotect technique U1402.|
+|**VMProtect**|F0001.010|Uses VMProtect. This method is related to Unprotect technique U1410.|
 
 ## Use in Malware
 

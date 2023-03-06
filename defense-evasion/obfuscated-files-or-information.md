@@ -47,9 +47,9 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |Name|ID|Description|
 |---|---|---|
 |**Encoding**|E1027.m01|A malware sample, file, or other information is encoded.|
-|**Encoding-Custom Algorithm**|E1027.m03|A custom algorithm is used to encode a malware sample, file or other information.|
-|**Encoding-Standard Algorithm**|E1027.m02|A standard algorithm (e.g., base64) is used to encode a malware sample, file, or other information.|
-|**Encryption**|E1027.m04|A malware sample, file, or other information is encrypted.|
+|**Encoding-Custom Algorithm**|E1027.m03|A custom algorithm is used to encode a malware sample, file or other information. This method is related to Unprotect technique U0702.|
+|**Encoding-Standard Algorithm**|E1027.m02|A standard algorithm (e.g., base64) is used to encode a malware sample, file, or other information. This method is related to Unprotect technique U0701 and U0706.|
+|**Encryption**|E1027.m04|A malware sample, file, or other information is encrypted. This method is related to Unprotect technique U0703.|
 |**Encryption-Custom Algorithm**|E1027.m08|A custom algorithm is used to encrypt a malware sample, file, or other information.|
 |**Encryption-Standard Algorithm**|E1027.m05|A standard algorithm (e.g., Rijndael/AES, DES, RC4) is used to encrypt a malware sample, file, or other information.|
 |**Encryption of Code**|E1027.m06|A file's executable code is encrypted, but not necessarily the file's data.|
