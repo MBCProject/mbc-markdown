@@ -125,7 +125,7 @@ jmp short loc_4019A2
 
 <a name="4">[4]</a> https://citizenlab.ca/2016/04/between-hong-kong-and-burma/
 
-<a name="5">[5]</a> http://researchcenter.paloaltonetworks.com/2015/10/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
+<a name="5">[5]</a> https://unit42.paloaltonetworks.com/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
 
 <a name="6">[6]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-variant-dreambot-adds-tor-functionality
 
@@ -135,7 +135,7 @@ jmp short loc_4019A2
 
 <a name="9">[9]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke
 
-<a name="10">[10]</a> https://web.archive.org/web/20150311013500/http://www.cyphort.com/evilbunny-malware-instrumented-lua/
+<a name="10">[10]</a>https://web.archive.org/web/20150311013500/http://www.cyphort.com/evilbunny-malware-instrumented-lua/
 
 <a name="11">[11]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking
 

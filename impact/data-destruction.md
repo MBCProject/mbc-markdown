@@ -57,7 +57,7 @@ See ATT&CK: **Data Destruction ([T1485](https://attack.mitre.org/techniques/T148
 
 ## References
 
-<a name="1">[1]</a> http://www.darkreading.com/attacks-breaches/disk-wiping-shamoon-malware-resurfaces-with-file-erasing-malware-in-tow/d/d-id/1333509
+<a name="1">[1]</a> https://www.darkreading.com/attacks-breaches/disk-wiping-shamoon-malware-resurfaces-with-file-erasing-malware-in-tow/d/d-id/1333509
 
 <a name="2">[2]</a> https://blogs.cisco.com/security/talos/rombertik
 

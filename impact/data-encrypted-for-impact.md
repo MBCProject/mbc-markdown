@@ -55,7 +55,7 @@ See ATT&CK: **Data Encrypted for Impact ([T1486](https://attack.mitre.org/techni
 
 ## References
 
-<a name="1">[1]</a> http://www.secureworks.com/cyber-threat-intelligence/threats/cryptowall-ransomware/
+<a name="1">[1]</a> https://www.secureworks.com/research/cryptowall-ransomware
 
 <a name="2">[2]</a> https://www.secureworks.com/research/cryptolocker-ransomware
 

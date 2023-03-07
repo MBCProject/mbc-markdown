@@ -91,7 +91,7 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 
 <a name="3">[3]</a> http://phishme.com/dridex-code-breaking-modify-the-malware-to-bypass-the-vm-bypass/
 
-<a name="4">[4]</a> http://antukh.com/blog/2015/01/19/malware-techniques-cheat-sheet/
+<a name="4">[4]</a> https://antukh.com/blog/2015/01/19/malware-techniques-cheat-sheet/
 
 <a name="5">[5]</a> https://search.unprotect.it/map/
 

@@ -58,7 +58,7 @@ Malware may generate traffic from the victim system such as clicks of advertisin
 
 <a name="3">[3]</a> https://www.bleepingcomputer.com/virus-removal/remove-kovter-trojan
 
-<a name="4">[4]</a> http://researchcenter.paloaltonetworks.com/2015/10/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
+<a name="4">[4]</a> https://unit42.paloaltonetworks.com/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
 
 <a name="5">[5]</a> https://blog.malwarebytes.com/threat-analysis/2016/07/untangling-kovter/
 

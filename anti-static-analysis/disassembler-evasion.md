@@ -54,15 +54,15 @@ Some methods apply to both types of disassemblers; others apply to one type and 
 
 ## References
 
-<a name="1">[1]</a> http://staff.ustc.edu.cn/~bjhua/courses/security/2014/readings/anti-disas.pdf
+<a name="1">[1]</a> https://staff.ustc.edu.cn/~bjhua/courses/security/2014/readings/anti-disas.pdf
 
-<a name="2">[2]</a> http://www.kernelhacking.com/rodrigo/docs/blackhat2012-paper.pdf
+<a name="2">[2]</a> https://www.kernelhacking.com/rodrigo/docs/blackhat2012-paper.pdf
 
 <a name="3">[3]</a> https://isc.sans.edu/diary/Malicious+VBA+Office+Document+Without+Source+Code/24870
 
 <a name="4">[4]</a> https://boingboing.net/2019/05/05/p-code-r-us.html
 
-<a name="5">[5]</a> https://www.ndss-symposium.org/wp-content/uploads/2020/04/bar2020-23004-paper.pd
+<a name="5">[5]</a> https://www.ndss-symposium.org/wp-content/uploads/2020/04/bar2020-23004-paper.pdf
 
 <a name="6">[6]</a> capa v4.0, analyzed at MITRE on 10/12/2022
 

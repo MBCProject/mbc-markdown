@@ -81,7 +81,7 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 
 <a name="12">[12]</a> https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/
 
-<a name="13">[13]</a> https://cofense.com/recent-geodo-malware-campaigns-feature-heavily-obfuscated-macros/
+<a name="13">[13]</a> https://cofense.com/blog/recent-geodo-malware-campaigns-feature-heavily-obfuscated-macros/
 
 <a name="14">[14]</a> https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/WORM_BAGLE.U/
 

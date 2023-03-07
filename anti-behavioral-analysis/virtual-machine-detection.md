@@ -154,11 +154,11 @@ jmp short loc_401CBB
 
 <a name="3">[3]</a> https://www.hackread.com/gravityrat-malware-evades-detection-targets-india/
 
-<a name="4">[4]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+<a name="4">[4]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
 <a name="5">[5]</a> https://github.com/LordNoteworthy/al-khaser
 
-<a name="6">[6]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
+<a name="6">[6]</a> https://web.archive.org/web/20161025013916/https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
 
 <a name="7">[7]</a> https://securelist.com/the-banking-trojan-emotet-detailed-analysis/69560/
 

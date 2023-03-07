@@ -79,7 +79,7 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 
 <a name="7">[7]</a> https://www.securityartwork.es/wp-content/uploads/2017/07/Trickbot-report-S2-Grupo.pdf
 
-<a name="8">[8]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+<a name="8">[8]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
 <a name="9">[9]</a> capa v4.0, analyzed at MITRE on 10/12/2022
 
