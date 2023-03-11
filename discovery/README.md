@@ -17,7 +17,7 @@
 
 Behaviors that enable malware to gain knowledge about the system and network.
 
-* **Analysis Tool Discovery** [B0013](../discovery/anlaysis-tool-discovery.md)
+* **Analysis Tool Discovery** [B0013](../discovery/analysis-tool-discovery.md)
 * **Application Window Discovery** [E1010](../discovery/application-window-discovery.md)
 * **Code Discovery** [B0046](../discovery/code-discovery.md)
 * **File and Directory Discovery** [E1083](../discovery/file-and-directory-discovery.md)
