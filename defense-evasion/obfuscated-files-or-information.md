@@ -48,7 +48,7 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |---|---|---|
 |**Encoding**|E1027.m01|A malware sample, file, or other information is encoded.|
 |**Encoding-Custom Algorithm**|E1027.m03|A custom algorithm is used to encode a malware sample, file or other information.|
-|**Encoding-Standard Algorithm**|E1027.m02|A standard algorithm (e.g., base64) is used to encode a malware sample, file, or other information.|
+|**Encoding-Standard Algorithm**|[E1027.m02](#e1027m02-snippet)|A standard algorithm (e.g., base64) is used to encode a malware sample, file, or other information.|
 |**Encryption**|E1027.m04|A malware sample, file, or other information is encrypted.|
 |**Encryption-Custom Algorithm**|E1027.m08|A custom algorithm is used to encrypt a malware sample, file, or other information.|
 |**Encryption-Standard Algorithm**|E1027.m05|A standard algorithm (e.g., Rijndael/AES, DES, RC4) is used to encrypt a malware sample, file, or other information.|
@@ -82,6 +82,24 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1027.m01, E1027.m02|Please see the Stuxnet malware page for details. [[9]](#9)|
 |[**UP007 Malware Family**](../xample-malware/up007.md)|2016|E1027.m02|Encode data using XOR (This capa rule had 13 matches) [[7]](#7)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Creates an encrypted Registry key called TorClient to store its data [[10]](#10)|
+
+## Code Snippets
+
+### E1027.M02 Snippet
+<details>
+<summary> Obfuscated Files or Information::Encoding-Standard Algorithm </summary>
+SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
+<pre>
+asm
+jle short_40182F
+mov dl, byte ptr [ebp+eax+var_7CA8]
+xor dl, cl
+mov byte ptr [ebp+eax+var_7CA8], dl
+inc eax
+cmp eax, edi
+jl short loc_40181A
+</pre>
+</details>
 
 ## References
 

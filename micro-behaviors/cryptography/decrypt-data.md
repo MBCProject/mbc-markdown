@@ -59,7 +59,7 @@ Malware may decrypt data.
 
 ## Code Snippets
 
-### C0031
+### C0031 Snippet
 <details>
 <summary> Decrypt Data </summary>
 SHA256: c86cbf5e78c9f05ecfc11e4f2c147781cef77842a457e19ba690477eb564c22b
@@ -114,6 +114,7 @@ pop     ebx
 retn
 
 </pre>
+</details>
 
 ## References
 

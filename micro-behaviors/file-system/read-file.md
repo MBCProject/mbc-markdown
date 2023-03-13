@@ -28,6 +28,7 @@
 
 # Read File
 
+Malware reads a file. 
 
 ## Use in Malware
 

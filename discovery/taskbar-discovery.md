@@ -28,6 +28,7 @@
 
 # Taskbar Discovery
 
+Malware may find the taskbar.
 
 ## Use in Malware
 

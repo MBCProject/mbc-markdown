@@ -28,6 +28,7 @@
 
 # Suspend Thread
 
+Malware may suspend a thread.
 
 ## Use in Malware
 

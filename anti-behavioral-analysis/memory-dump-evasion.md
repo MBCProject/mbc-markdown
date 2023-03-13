@@ -47,7 +47,7 @@ Malware hinders retrieval and/or discovery of the contents of the physical memor
 |**SizeOfImage**|B0006.004|Set the SizeOfImage field of PEB.LoaderData to be huge.|
 |**Tampering**|B0006.005|Erase or corrupt specific file parts to prevent rebuilding (header, packer stub, etc.).|
 |**Hook memory mapping APIs**|B0006.010|Hooking prevents memory dumps by preventing mapping of memory into the kernel's virtual address space. [[1]](#1)|
-|**Patch MmGetPhysicalMemoryRanges**|[B0006.011](#b0006011)|Patching this function to always return NULL prevents drivers from getting information about the physical address space layout, preventing memory dumps. [[1]](#1)|
+|**Patch MmGetPhysicalMemoryRanges**|[B0006.011](#b0006011-snippet)|Patching this function to always return NULL prevents drivers from getting information about the physical address space layout, preventing memory dumps. [[1]](#1)|
 
 ## Use in Malware
 
@@ -57,7 +57,7 @@ Malware hinders retrieval and/or discovery of the contents of the physical memor
 
 ## Code Snippets
 
-### B0006.011
+### B0006.011 Snippet
 <details>
 <summary> Memory Dump::Code Encryption in Memory </summary>
 SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03

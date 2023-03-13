@@ -34,6 +34,7 @@ Malware may attempt to get a listing of open application windows.
 
 |Name|ID|Description|
 |---|---|---|
+|**Window Text**|E1010.m01|After finding an open application window, malware gets graphical window text.|
 
 ## Use in Malware
 

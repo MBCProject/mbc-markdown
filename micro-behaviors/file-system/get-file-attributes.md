@@ -28,6 +28,7 @@
 
 # Get File Attributes
 
+Malware gets the attributes of a file. 
 
 ## Use in Malware
 

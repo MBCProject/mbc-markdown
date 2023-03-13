@@ -28,6 +28,7 @@
 
 # Set File Attributes
 
+Malware sets or modifies the attributes of a file.
 
 ## Use in Malware
 
