@@ -46,7 +46,7 @@ For encryption and encoding characteristics of malware samples, as well as malwa
 |**Dead Code Insertion**|B0032.003|Include "dead" code with no real functionality. When executing, malware may skip over such code via an opaque predicate.|
 |**Entry Point Obfuscation**|B0032.009|Obfuscate the entry point of the malware executable.|
 |**Fake Code Insertion**|B0032.004|Add fake code similar to known packers or known goods to fool identification. Can confuse some automated unpackers.|
-|**Guard Pages**|B0032.010|Encrypt blocks of code individually and decrypt temporarily only upon execution.|
+|**Guard Pages**|B0032.010|Encrypt blocks of code individually and decrypt temporarily only upon execution. This method is related to Unprotect technique U0102.|
 |**Import Address Table Obfuscation**|B0032.011|Obfuscate the import address table.|
 |**Import Compression**|B0032.012|Store and load imports with a compact import table format. Each DLL needed by the executable is mentioned in the IAT, but only one function from each/most is imported; the rest are imported via GetProcAddress calls.|
 |**Instruction Overlap**|B0032.013|Jump after the first byte of an instruction to confuse disassembler.|
