@@ -34,18 +34,17 @@ Malware may attempt to get a listing of open application windows.
 
 |Name|ID|Description|
 |---|---|---|
-|**Window Text**|E1010.m01|After finding an open application window, malware gets graphical window text.|
 
 ## Use in Malware
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|E1010.m01|Get graphical window text (This capa rule had 2 matches) [[1]](#1)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|E1010.m01|Get graphical window text (This capa rule had 1 match) [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1010.m01|Get graphical window text (This capa rule had 1 match) [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|E1010.m01|Get graphical window text (This capa rule had 2 matches) [[1]](#1)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|E1010.m01|Get graphical window text (This capa rule had 2 matches) [[1]](#1)|
-|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|E1010.m01|Get graphical window text (This capa rule had 1 match) [[1]](#1)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|E1010.m01|DarkComet gets graphical window texts. [[1]](#1)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|E1010.m01|Gamut gets graphical window texts. [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1010.m01|Hupigon gets graphical window texts. [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|E1010.m01|Kovter gets graphical window texts. [[1]](#1)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|E1010.m01|Rombertik gets graphical window texts. [[1]](#1)|
+|[**UP007**](../xample-malware/up007.md)|2016|E1010.m01|UP007 gets graphical window text. [[1]](#1)|
 
 ## References
 

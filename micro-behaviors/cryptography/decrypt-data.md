@@ -54,7 +54,7 @@ Malware may decrypt data.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Encrypt or decrypt via WinCrypt (This capa rule had 1 match) [[1]](#1)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy encrypts or decrypts via WinCrypt. [[1]](#1)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|--|Encrypt or decrypt via WinCrypt (This capa rule had 1 match) [[1]](#1)|
 
 ## Code Snippets
@@ -114,7 +114,6 @@ pop     ebx
 retn
 
 </pre>
-</details>
 
 ## References
 

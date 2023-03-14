@@ -28,19 +28,18 @@
 
 # Create Directory
 
-Malware creates a directory. 
 
 ## Use in Malware
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Gamut**](../xample-malware/gamut.md)|2014|--|Create directory (This capa rule had 1 match) [[1]](#1)|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|Create directory (This capa rule had 1 match) [[1]](#1)|
-|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|Create directory (This capa rule had 1 match) [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Create directory (This capa rule had 1 match) [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|--|Create directory (This capa rule had 14 matches) [[1]](#1)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Create directory (This capa rule had 1 match) [[1]](#1)|
-|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|--|Create directory (This capa rule had 1 match) [[1]](#1)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut creates directories. [[1]](#1)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR creates directories. [[1]](#1)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|GravityRAT creates directories. [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon creates directories. [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter creates directories. [[1]](#1)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip creates directories. [[1]](#1)|
+|[**UP007**](../xample-malware/up007.md)|2016|--|UP007 creates directories. [[1]](#1)|
 
 ## References
 

@@ -60,18 +60,20 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Terminator**](../xample-malware/terminator.md)|October 2013|B0003.003|The Terminator rat evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[3]](#3)|
+|[**Terminator**](../xample-malware/terminator.md)|2013|B0003.003|The Terminator RAT evades a sandbox by not executing until after a reboot. Most sandboxes don't reboot during an analysis. [[3]](#3)|
 |**Nap**|2013|--|Trojan Nap (tied to the Kelihos Botnet) uses extended sleep calls to evade sandbox analysis. [[3]](#3)|
 |**Smokeloader**|2019|--|Smokeloader drops a copy of ntdll.dll to %APPDATA%\Local\Temp\ [[4]](#4)|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Evades dynamic analysis. [[2]](#2)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0003.002, B0003.011|Please see the Rombertik malware page for details. [[5]](#5)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|B0003.012|Uses numerous printf loops to delay the execution process and overload the sandbox with junk data (API Hammering) [[6]](#6)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|B0003.001|The malware loads ntdll.dll and user32.dll as data files and overwrites the first 8 bytes of those functions to avoid API hooking by security products. [[7]](#7)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0003.002|The malware stalls by writing a byte of random data to memory 960 million times which complicates analysis. It also calls specific Windows API functions. [[5]](#5)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0003.011|The malware computes a 32-bit hash of a resource in memory, and compares it to the PE Compile Timestamp of the unpacked sample. If the resource or compile time has been altered, the malware acts destructively. [[5]](#5)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|B0003.012|The malware uses numerous printf loops to delay the execution process and overload the sandbox with junk data (API Hammering). [[6]](#6)|
+
 
 ## References
 
-<a name="1">[1]</a> http://joe4security.blogspot.com/2013/06/overloading-sandboxes-new-generic.html
+<a name="1">[1]</a> https://joesecurity.org/blog/43104088277279070
 
-<a name="2">[2]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+<a name="2">[2]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
 <a name="3">[3]</a> https://www.fireeye.com/content/dam/fireeye-www/current-threats/pdfs/pf/file/fireeye-hot-knives-through-butter.pdf
 

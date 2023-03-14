@@ -60,46 +60,32 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|E1027.m02|Trojan spyware program that has mainly been used for targeting banking sites. [[4]](#4)|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Obfuscates files. [[5]](#5)|
+|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|Malware obfuscates files.[[8]](#8)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|The dropped file is password-protected. Once unzipped, the file contains a DLL file to decrypt the second file (a bin file with an encrypted malicious payload). [[7]](#7)|
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR uses base64 to obfuscate strings, commands and files. [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|--|The malware will use a key to decrypt text from a URL to create more malicious code [[2]](#2)|
-|[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker is obfuscated with several layers of encoding, obfuscation, and encryption techniques such as base64, hexademcimal, and XOR [[3]](#3)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|E1027.m05|Encrypt data using RC4 via WinAPI (This capa rule had 1 match) [[7]](#7)|
-|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|E1027.m02|Encode data using XOR (This capa rule had 1 match) [[7]](#7)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|E1027.m02|Encode data using XOR (This capa rule had 13 matches) [[7]](#7)|
-|[**DNSChanger**](../xample-malware/dnschanger.md)|2011|E1027.m02|Encode data using XOR (This capa rule had 1 match) [[7]](#7)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|E1027.m02|Encode data using XOR (This capa rule had 1 match) [[7]](#7)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1027.m02, E1027.m05|Please see the Hupigon malware page for details. [[7]](#7)|
-|[**Kraken**](../xample-malware/kraken.md)|2008|E1027.m02|Encode data using XOR (This capa rule had 2 matches) [[7]](#7)|
-|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|E1027.m02|Encode data using XOR (This capa rule had 4 matches) [[7]](#7)|
-|[**Mebromi**](../xample-malware/mebromi.md)|2011|E1027.m02|Encode data using XOR (This capa rule had 2 matches) [[7]](#7)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|E1027.m07|Poison Ivy variant encrypts all its strings [[6]](#6)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|E1027.m02|Encode data using XOR (This capa rule had 1 match) [[7]](#7)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|E1027.m02|Encode data using XOR (This capa rule had 5 matches) [[7]](#7)|
-|[**SamSam**](../xample-malware/samsam.md)|2015|E1027.m07|SamSam obfuscates functions, class names and strings, including the list of targeted file extensions, the help file contents and environment variables using DES encryption with a fixed hard-coded key and the IV  [[8]](#8)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|E1027.m02|Encode data using XOR (This capa rule had 1 match) [[7]](#7)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1027.m01, E1027.m02|Please see the Stuxnet malware page for details. [[9]](#9)|
-|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|E1027.m02|Encode data using XOR (This capa rule had 13 matches) [[7]](#7)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Creates an encrypted Registry key called TorClient to store its data [[10]](#10)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|The malware will use a key to decrypt text from a URL to create more malicious code. [[2]](#2)|
+|[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker is obfuscated with several layers of encoding, obfuscation, and encryption techniques such as Base64, hexademcimal, and XOR. [[3]](#3)|
+|[**TEARDROP**](../xample-malware/teardrop.md)|2018|E1027.m05|TEARDROP decrypts an embedded code buffer using an XOR-based stream cipher. [[4]](#4)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1027.m01|The configuration data block is encoded with a NOT XOR 0xFF operation. [[5]](#5)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1027.m02|Stuxnet encodes data using XOR. [[9]](#9)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|The malware creates an encrypted Registry key called TorClient to store its data. [[6]](#6)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|E1027.m02|TrickBot encodes data using XOR. [[9]](#9)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|E1027.m05|BlackEnergy encrypts data using RC4 via WinAPI. [[9]](#9)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|E1027.m02|CryptoLocker encodes data using XOR. [[9]](#9)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|E1027.m02|Dark Comet encodes data using XOR. [[9]](#9)|
+|[**DNSChanger**](../xample-malware/dnschanger.md)|2011|E1027.m02|DNSChanger encodes data using XOR. [[9]](#9)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|E1027.m02|Gamut encodes data using XOR. [[9]](#9)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1027.m02|Hupigon encodes data using XOR. [[9]](#9)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1027.m05|Hupigon encrypts data using DES. [[9]](#9)|
+|[**Kraken**](../xample-malware/kraken.md)|2008|E1027.m02|Kraken encodes data using XOR. [[9]](#9)|
+|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|E1027.m02|Locky Bart encodes data using XOR. [[9]](#9)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|E1027.m02|Mebromi encodes data using XOR. [[9]](#9)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|E1027.m02|Redhip encodes data using XOR. [[9]](#9)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|E1027.m02|Rombertik encodes data using XOR. [[9]](#9)|
+|[**SamSam**](../xample-malware/samsam.md)|2015|E1027.m07|SamSam obfuscates functions, class names and strings, including the list of targeted file extensions, the help file contents and environment variables using DES encryption with a fixed hard-coded key and the IV. [[10]](#10)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|E1027.m02|Shamoon encodes data using XOR. [[9]](#9)|
+|[**UP007**](../xample-malware/up007.md)|2016|E1027.m02|The malware encodes data using XOR. [[9]](#9)|
 
-## Code Snippets
-
-### E1027.M02 Snippet
-<details>
-<summary> Obfuscated Files or Information::Encoding-Standard Algorithm </summary>
-SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
-<pre>
-asm
-jle short_40182F
-mov dl, byte ptr [ebp+eax+var_7CA8]
-xor dl, cl
-mov byte ptr [ebp+eax+var_7CA8], dl
-inc eax
-cmp eax, edi
-jl short loc_40181A
-</pre>
-</details>
 
 ## References
 
@@ -109,19 +95,16 @@ jl short loc_40181A
 
 <a name="3">[3]</a> https://www.trendmicro.com/en_us/research/20/e/netwalker-fileless-ransomware-injected-via-reflective-loading.html
 
-<a name="4">[4]</a> https://www.trendmicro.com/en_us/research/18/k/trickbot-shows-off-new-trick-password-grabber-module.html
+<a name="4">[4]</a> https://www.cisa.gov/uscert/ncas/analysis-reports/ar21-039b
 
-<a name="5">[5]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+<a name="5">[5]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
 
-<a name="6">[6]</a> https://www.fortinet.com/blog/threat-research/deep-analysis-of-new-poison-ivy-variant
+<a name="6">[6]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-variant-dreambot-adds-tor-functionality
 
-<a name="7">[7]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+<a name="7">[7]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
-<a name="8">[8]</a> https://blog.talosintelligence.com/2018/01/samsam-evolution-continues-netting-over.html
+<a name="8">[8]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf
 
-<a name="9">[9]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
+<a name="9">[9]</a> capa v4.0, analyzed at MITRE on 10/12/2022
 
-<a name="10">[10]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-variant-dreambot-adds-tor-functionality
-
-<a name="11">[11]</a> https://blog.malwarebytes.com/threat-analysis/2016/07/untangling-kovter/
-
+<a name="10">[10]</a> https://blog.talosintelligence.com/2018/01/samsam-evolution-continues-netting-over.html

@@ -38,6 +38,26 @@ Malware has characteristics enabling it to evade capture from the infected syste
 
 |Name|ID|Description|
 |---|---|---|
-|**Encrypted Payloads**|B0036.002|Decryption key is stored external to the executable or never touches the disk.|
+|**Encrypted Payloads**|B0036.002|The decryption key is stored external to the executable or never touches the disk.|
 |**Memory-only Payload**|B0036.001|Malware is never written to disk (e.g., RAT plugins received from the controller are never written to disk).|
 |**Multiple Stages of Loaders**|B0036.003|Multiple stages of loaders are used with an encoded payload.|
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|B0036.002|Vobfus is downloaded in an encrypted form then decrypted. [[1]](#1)|
+|[**TEARDROP**](../xample-malware/teardrop.md)|2018|B0036.001|TEARDROP loads its payload only into memory. [[2]](#2)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0036.001|The malware downloads multiple payloads (as files and DLLs) that are stored in a memory buffer. [[4]](#4)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0036.003|Matanbuchus consists of 2 loaders. [[3]](#3) [[4]](#4)|
+
+
+## References
+
+<a name="1">[1]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
+
+<a name="2">[2]</a> https://www.cisa.gov/uscert/ncas/analysis-reports/ar21-039b
+
+<a name="3">[3]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
+
+<a name="4">[4]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader

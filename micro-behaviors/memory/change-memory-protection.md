@@ -28,7 +28,7 @@
 
 # Change Memory Protection
 
-Malware may change memory protection. For example, read-write memory may be changed to read-execute. Changing memory protection may exploits (e.g., bypass Data Execution Prevention).
+Malware may change memory protection. For example, read-write memory may be changed to read-execute. Changing memory protection may allow exploits (e.g., bypass Data Execution Prevention).
 
 ## Methods
 
@@ -42,8 +42,9 @@ Malware may change memory protection. For example, read-write memory may be chan
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Ursnif**](../../xample-malware/ursnif.md)|2016|--|Changes the PE header of the child process to enable write access to that page, writes 18 bytes of buffer at offset 0x40 from the start of svchost.exe process executable in the target child process. Then changes the region protection back to "read only" to avoid suspicion  [[1]](#1)|
-|[**SYNful Knock**](../xample-malware/synful-knock.md)|2015|--|Modifies the translation lookaside buffer (TLB) Read/Write attributes  [[2]](#2)|
+|[**Ursnif**](../../xample-malware/ursnif.md)|2016|--|The malware changes the PE header of the child process to enable write access to that page and writes 18 bytes of buffer at offset 0x40 from the start of svchost.exe in the target child process. The region protection is changed back to "read only" to avoid suspicion. [[1]](#1)|
+|[**SYNful Knock**](../../xample-malware/synful-knock.md)|2015|--|SYNful Knock modifies the translation lookaside buffer (TLB) Read/Write attributes. [[2]](#2)|
+
 
 ## References
 

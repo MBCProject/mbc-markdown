@@ -36,25 +36,26 @@ See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.or
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison-Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[1]](#1)|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|From the command line, drops and unzips a password-protected Cabinet archive file. [[1]](#1)|
+|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|After the Poison Ivy server is running on the target machine, the attacker can use a Windows GUI client to control the target computer. [[1]](#1)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|From the command line, the malware drops and unzips a password-protected Cabinet archive file. [[1]](#1)|
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR uses cmd.exe to execute commands. [[2]](#2)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|--|The malware executes malicious javascript and powershell [[3]](#3)|
-|[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam uses a batch file for executing the malware and deleting certain components   [[4]](#4)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|The wiper component of Shamoon creates a service to run the driver with the command: sc create hdv_725x type= kernel start= demand binpath= WINDOWS\hdv_725x.sys 2>&1 >nul and sends an additional reboot command after completion [[5]](#5)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet will store and execute SQL code that will extract and execute Stuxnet from the saved CAB file using xp_cmdshell  [[6]](#6)|
-|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny executes Lua scripts [[7]](#7)|
-|[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker is written and executed in Powershell [[8]](#8)|
-|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|Accept command line arguments (This capa rule had 2 matches) [[9]](#9)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Accept command line arguments (This capa rule had 2 matches) [[9]](#9)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|--|Accept command line arguments (This capa rule had 1 match) [[9]](#9)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Accept command line arguments (This capa rule had 2 matches) [[9]](#9)|
-|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Accept command line arguments (This capa rule had 1 match) [[9]](#9)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Accept command line arguments (This capa rule had 1 match) [[9]](#9)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Accept command line arguments (This capa rule had 1 match) [[9]](#9)|
-|[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|The malware installs a script to inject JavaScript script and modify web traffic. [[10]](#10)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Accept command line arguments (This capa rule had 1 match) [[9]](#9)|
-|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|--|Accept command line arguments (This capa rule had 1 match) [[9]](#9)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|The malware executes malicious javascript and powershell. [[3]](#3)|
+|[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam uses a batch file for executing the malware and deleting certain components. [[4]](#4)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|The wiper component of Shamoon creates a service to run the driver with the command: sc create hdv_725x type= kernel start= demand binpath= WINDOWS\hdv_725x.sys 2>&1 >nul and sends an additional reboot command after completion. Shamoon also accepts command line arguments.[[5]](#5)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet will store and execute SQL code that will extract and execute Stuxnet from the saved CAB file using xp_cmdshell. [[6]](#6)|
+|[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny executes Lua scripts. [[7]](#7)|
+|[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker is written and executed in Powershell. [[8]](#8)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware accepts command line arguments. [[9]](#9)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|The malware accepts command line arguments. [[9]](#9)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut accepts command line arguments. [[9]](#9)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon accepts command line arguments. [[9]](#9)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi accepts command line arguments. [[9]](#9)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip accepts command line arguments. [[9]](#9)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware accepts command line arguments. [[9]](#9)|
+|[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|The malware installs a script to inject a JavaScript script and modify web traffic. [[10]](#10)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|TrickBot accepts command line arguments. [[9]](#9)|
+|[**UP007**](../xample-malware/up007.md)|2016|--|The malware accepts command line arguments. [[9]](#9)|
+
 
 ## References
 
@@ -78,7 +79,7 @@ See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.or
 
 <a name="10">[10]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
 
-<a name="11">[11]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+<a name="11">[11]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
 <a name="12">[12]</a> https://blog.malwarebytes.com/threat-analysis/2016/07/untangling-kovter/
 

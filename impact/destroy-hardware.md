@@ -32,7 +32,7 @@
 
 # Destroy Hardware
 
-Destroys a physical piece of hardware. For example, malware may cause hardware to overheat.
+Malware destroys a physical piece of hardware. For example, malware may cause hardware to overheat.
 
 ## Use in Malware
 
@@ -42,7 +42,7 @@ Destroys a physical piece of hardware. For example, malware may cause hardware t
 
 ## References
 
-<a name="1">[1]</a> https://www.bbc.com/timelines/zc6fbk7
+<a name="1">[1]</a> https://www.langner.com/wp-content/uploads/2017/03/to-kill-a-centrifuge.pdf
 
 <a name="2">[2]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
 

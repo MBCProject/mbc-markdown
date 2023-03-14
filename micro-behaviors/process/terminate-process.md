@@ -34,15 +34,15 @@ Malware terminates a process.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Terminate process via fastfail (This capa rule had 1 match) [[1]](#1)|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|Terminate process (This capa rule had 1 match) [[1]](#1)|
-|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|Terminate process (This capa rule had 1 match) [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Terminate process (This capa rule had 3 matches) [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|--|Terminate process (This capa rule had 6 matches) [[1]](#1)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Terminate process (This capa rule had 1 match) [[1]](#1)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Terminate process (This capa rule had 1 match) [[1]](#1)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Terminate process (This capa rule had 1 match) [[1]](#1)|
-|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|--|Terminate process (This capa rule had 2 matches) [[1]](#1)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy terminates a process via fastfail. [[1]](#1)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR terminates processes. [[1]](#1)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|GravityRAT terminates processes. [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon terminates processes. [[1]](#1)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter terminates processes. [[1]](#1)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon terminates processes. [[1]](#1)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet terminates processes. [[1]](#1)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|TrickBot terminates processes. [[1]](#1)|
+|[**UP007**](../xample-malware/up007.md)|2016|--|UP007 terminates processes. [[1]](#1)|
 
 ## References
 

@@ -55,6 +55,7 @@ Malware hinders retrieval and/or discovery of the contents of the physical memor
 |---|---|---|---|
 |[**Kraken**](../xample-malware/kraken.md)|2008|--|Dumping Kraken's c.dll module from the heap of its own process is tricky because its PE-header is erased in memory. [[2]](#2)|
 
+
 ## Code Snippets
 
 ### B0006.011 Snippet
@@ -107,7 +108,7 @@ jmp short loc_401326
 
 <a name="2">[2]</a> http://blog.threatexpert.com/2008/04/kraken-changes-tactics.html
 
-<a name="3">[3]</a> http://waleedassar.blogspot.com/search/label/anti-dump
+<a name="3">[3]</a> https://waleedassar.blogspot.com/search/label/anti-dump
 
 <a name="4">[4]</a> https://www.gironsec.com/code/packers.pdf
 

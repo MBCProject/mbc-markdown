@@ -48,15 +48,16 @@ See ATT&CK: **Data Destruction ([T1485](https://attack.mitre.org/techniques/T148
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|A 2018 variant includes a component that erases files and then wipes the master boot record, preventing file recovery. [[1]](#1)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|If a specific anti-analysis check fails, the malware will overwrite the Master Boot Record or the User's home folder [[2]](#2)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy 2 variant contains a Destroy plugin that destroys data stored on victim hard drives by overwriting file contents  [[3]](#3)|
-|[**Conficker**](../xample-malware/conficker.md)|2008|--|Resets system restore points and deletes backup files [[4]](#4)|
-|[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|Can erase phone data  [[5]](#5)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|A 2018 variant includes a component that erases files and then wipes the Master Boot Record (MBR), preventing file recovery. [[1]](#1)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|If a specific anti-analysis check fails, the malware will overwrite the Master Boot Record or the user's home folder. [[2]](#2)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy 2 variant contains a Destroy plugin that destroys data stored on victim hard drives by overwriting file contents.  [[3]](#3)|
+|[**Conficker**](../xample-malware/conficker.md)|2008|--|Conficker resets system restore points and deletes backup files. [[4]](#4)|
+|[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|MazarBot can erase phone data. [[5]](#5)|
+
 
 ## References
 
-<a name="1">[1]</a> http://www.darkreading.com/attacks-breaches/disk-wiping-shamoon-malware-resurfaces-with-file-erasing-malware-in-tow/d/d-id/1333509
+<a name="1">[1]</a> https://www.darkreading.com/attacks-breaches/disk-wiping-shamoon-malware-resurfaces-with-file-erasing-malware-in-tow/d/d-id/1333509
 
 <a name="2">[2]</a> https://blogs.cisco.com/security/talos/rombertik
 

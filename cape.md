@@ -2,7 +2,7 @@
 February 2023
 
 ## Histograms ##
-The histograms below show the number of CAPE signatures mapped into each ATT&CK tactic, MBC objective, and MBC micro-objective. Details of the tactics and objectives follow. 
+The histograms below show the number of CAPE rules mapped to ATT&CK techniques (organized by tactic), MBC behaviors (organized by objective), and MBC micro-behaviors (organized by micro-objective). The explicit techniques, behaviors, and micro-behaviors follow. 
 
 The data below reflects [community repository signatures](https://github.com/kevoreilly/community/tree/master/modules/signatures) (not including deprecated signatures), as well as [CAPEv2 signatures](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py). 
 
@@ -27,7 +27,7 @@ Information on CAPE signatures can be found [here](https://github.com/kevoreilly
 |**Exfiltration**|4| **XXXX** |
 |**Impact**|11| **XXXXXXXXXXX** |
 
-### MBC Mapping Histogram (Objectives) ###
+### MBC Mapping Histogram ###
 
 | **OBJECTIVE** | **Number of Behaviors** |  |
 |-----|-----|-----|
@@ -45,7 +45,7 @@ Information on CAPE signatures can be found [here](https://github.com/kevoreilly
 |**Persistence**|11| **XXXXXXXXXXX** |
 |**Privilege Escalation**|4| **XXXX** |
 
-### MBC Mapping Histogram (Micro-Objectives) ###
+### MBC Mapping Histogram ###
 
 | **MICRO-OBJECTIVE** | **Number of Micro-Behaviors**  |  |
 |-----|-----|-----|

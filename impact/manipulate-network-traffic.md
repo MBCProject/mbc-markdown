@@ -32,7 +32,7 @@
 
 # Manipulate Network Traffic
 
-Malware intercepts and manipulates network traffic, typically accessing or modifying data, going to or originating from the system on which the malware instance is executing. Also known as a Man-in-the-Middle attack.
+Malware intercepts and manipulates network traffic, typically accessing or modifying data, going to or originating from the system on which the malware instance is executing, also known as a Man-in-the-Middle attack.
 
 The related **Data Manipulation: Transmitted Data Manipulation ([T1565.002](https://attack.mitre.org/techniques/T1565/002/))** ATT&CK sub-technique was defined subsequent to this MBC behavior.
 
@@ -40,12 +40,12 @@ The related **Data Manipulation: Transmitted Data Manipulation ([T1565.002](http
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|Intercepts encrypted web traffic to inject adds. [[1]](#1)|
-|[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|Intercepts data coming into and going out of device. [[2]](#2)|
+|[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|SearchAwesome adware intercepts encrypted web traffic to inject ads. [[1]](#1)|
+|[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|MazarBot intercepts data coming into and going out of the device. [[2]](#2)|
+
 
 ## References
 
 <a name="1">[1]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
 
 <a name="2">[2]</a> https://us.norton.com/internetsecurity-emerging-threats-mazar-bot-malware-invades-and-erases-android-devices.html
-

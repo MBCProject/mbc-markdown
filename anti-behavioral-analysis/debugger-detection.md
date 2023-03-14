@@ -47,7 +47,7 @@ Details on methods of detecting debuggers are given in the references; many are 
 |**CloseHandle**|B0001.003|(NtClose); If an invalid handle is passed to the CloseHandle function and a debugger is present, then an EXCEPTION_INVALID_HANDLE (0xC0000008) exception will be raised. [[7]](#7)|
 |**Debugger Artifacts**|B0001.004|Malware may detect a debugger by its artifact (window title, device driver, exports, etc.).|
 |**Hardware Breakpoints**|B0001.005|(SEH/GetThreadContext); Debug registers will indicate the presence of a debugger. See [[7]](#7) for details.|
-|**Interruption**|B0001.006|If an interruption is mishandled by the debugger, it can cause a single-byte instruction to be inadvertently skipped, which can be detected by malware. Examples include Interrupt 0x2d and Interrupt 1 [7].|
+|**Interruption**|B0001.006|If an interruption is mishandled by the debugger, it can cause a single-byte instruction to be inadvertently skipped, which can be detected by malware. Examples include Interrupt 0x2d and Interrupt 1 [[7]](#7).|
 |**IsDebuggerPresent**|B0001.008|The kernel32!IsDebuggerPresent API function call checks the PEB BeingDebugged flag to see if the calling process is being debugged. It returns 1 if the process is being debugged, 0 otherwise. This is one of the most common ways of debugger detection.|
 |**Memory Breakpoints**|B0001.009|(PAGE_GUARD); Guard pages trigger an exception the first time they are accessed and can be used to detect a debugger. See [[7]](#7) for details.|
 |**Memory Write Watching**|B0001.010|[[7]](#7)|
@@ -82,14 +82,24 @@ Details on methods of detecting debuggers are given in the references; many are 
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Redhip**](../xample-malware/rebhip.md)|January 2011|B0001, B0001.035, B0001.032|Please see the Redhip malware page for details. [[4]](#4)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|B0001.006, B0001.008|Please see the Gamut malware page for details. [[8]](#8)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0001.016, B0001.038, B0001.032|Please see the Rombertik malware page for details. [[9]](#9)|
-|[**Poison-Ivy**](../xample-malware/poison-ivy.md)|2005|B0001.005, B0001.008|Please see the Poison-Ivy malware page for details. [[10]](#10)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|B0001.032|Check for time delay via GetTickCount (This capa rule had 4 matches) [[11]](#11)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0001.034, B0001.025, B0001.032|Please see the Hupigon malware page for details. [[11]](#11)|
-|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|B0001.032|Check for time delay via GetTickCount (This capa rule had 1 match) [[11]](#11)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|B0001.028|Manipulates TLS Callbacks while injecting to child process [[12]](#12)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[4]](#4)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|B0001.032|Redhip checks for a time delay using GetTickCount. [[15]](#15)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|B0001.035|Redhip checks for PEB BeingDebugged flag. [[15]](#15)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|B0001.006|The malware detects debuggers using an INT 03h trap. [[8]](#8)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|B0001.008|The malware detects debuggers using IsDebuggerPresent. [[8]](#8)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0001.016|The malware calls the Windows API OutputDebugString function 335,000 times. [[9]](#9)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0001.032|The malware checks for a time delay via GetTickCount. [[15]](#15)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0001.038|An anti-analysis function within the packer is called to check the username and filename of the executing process for strings like “malwar”, “sampl”, “viru”, and “sandb”. [[9]](#9)|
+|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|B0001.005|Poison Ivy Variant checks for breakpoints and exits immediately if found. [[13]](#13)|
+|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|B0001.008|Poison Ivy uses the IsDebuggerPresent API function call to check if the process is running in a debugger. [[13]](#13)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0001.032|The malware calls GetTickCount64 to retrieve timestamp. Malware executes Sleep and Beep in a repeated loop for 10 times. [[11]](#11) [[12]](#12)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|B0001.028|The malware manipulates TLS Callbacks while injecting to a child process. [[12]](#12)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|B0001.032|The malware checks for a time delay via GetTickCount. [[15]](#15)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0001.025|The malware checks for software breakpoints. [[15]](#15)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0001.032|The malware checks for a time delay via GetTickCount. [[15]](#15)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0001.034|The malware executes anti-debugging instructions. [[15]](#15)|
+|[**UP007**](../xample-malware/up007.md)|2016|B0001.032|The malware checks for a time delay via GetTickCount. [[15]](#15)|
+
 
 ## References
 
@@ -113,7 +123,12 @@ Details on methods of detecting debuggers are given in the references; many are 
 
 <a name="10">[10]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf
 
-<a name="11">[11]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+<a name="11">[11]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
 
-<a name="12">[12]</a> https://www.fireeye.com/blog/threat-research/2017/11/ursnif-variant-malicious-tls-callback-technique.html
+<a name="12">[12]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
 
+<a name="13">[13]</a> https://www.fortinet.com/blog/threat-research/deep-analysis-of-new-poison-ivy-variant
+
+<a name="14">[14]</a> https://www.fireeye.com/blog/threat-research/2017/11/ursnif-variant-malicious-tls-callback-technique.html
+
+<a name="15">[15]</a> capa v4.0, analyzed at MITRE on 10/12/2022

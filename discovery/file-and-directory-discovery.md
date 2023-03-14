@@ -41,23 +41,27 @@ Malware may enumerate files and directories or may search for specific files or 
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--|The malware searches for user files before encrypting them [[1]](#1)|
-|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware searches for user files before encrypting them [[2]](#2)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Collects local files with specified file extensions and information from the victim's machine [[3]](#3)|
-|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|Enumerate files on windows (This capa rule had 3 matches) [[4]](#4)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1083, E1083.m01|Please see the Hupigon malware page for details. [[4]](#4)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|E1083.m01|Access the Windows event log (This capa rule had 2 matches) [[4]](#4)|
-|[**SamSam**](../xample-malware/samsam.md)|2015|--|Enumerate files on windows (This capa rule had 1 match) [[4]](#4)|
-|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|--|Enumerate files on windows (This capa rule had 1 match) [[4]](#4)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Get common file path (This capa rule had 3 matches) [[4]](#4)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Get file version info (This capa rule had 1 match) [[4]](#4)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|--|Get common file path (This capa rule had 5 matches) [[4]](#4)|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|Check if file exists (This capa rule had 1 match) [[4]](#4)|
-|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|Get file size (This capa rule had 1 match) [[4]](#4)|
-|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Get file size (This capa rule had 1 match) [[4]](#4)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Get file size (This capa rule had 3 matches) [[4]](#4)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Get file version info (This capa rule had 1 match) [[4]](#4)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Get common file path (This capa rule had 1 match) [[4]](#4)|
+|[**CryptoWall**](../xample-malware/cryptowall.md)|2014|--|The malware searches for user files before encrypting them. [[1]](#1)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware searches for user files before encrypting them. [[2]](#2)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware collects machine information and local files with specified file extensions. [[3]](#3)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware verifies that the folder from the first stage loader exists on the system. The malware also checks for the path for the Opera web browser. If it exists, the malware exits. [[4]](#4) [[5]](#5)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|GravityRAT enumerates files on Windows. [[6]](#6)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon enumerates files recursively. [[6]](#6)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1083.m01|Hupigon accesses the Windows event log. [[6]](#6)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter gets file version info. [[6]](#6)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|E1083.m01|Kovter accesses the Windows event log. [[6]](#6)|
+|[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam enumerates files on Windows. [[6]](#6)|
+|[**UP007**](../xample-malware/up007.md)|2016|--|The malware enumerates files on Windows. [[6]](#6)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|The malware gets the common file path. [[6]](#6)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|The malware gets file version info. [[6]](#6)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut gets the common file path. [[6]](#6)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR checks if a file exists. [[6]](#6)|
+|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|The malware gets a file size. [[6]](#6)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi gets a file size. [[6]](#6)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip gets a file size. [[6]](#6)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware gets the file version info. [[6]](#6)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon gets a common file path. [[6]](#6)|
+
 
 ## References
 
@@ -67,5 +71,8 @@ Malware may enumerate files and directories or may search for specific files or 
 
 <a name="3">[3]</a> https://www.securityartwork.es/wp-content/uploads/2017/07/Trickbot-report-S2-Grupo.pdf
 
-<a name="4">[4]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+<a name="4">[4]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
 
+<a name="5">[5]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
+
+<a name="6">[6]</a> capa v4.0, analyzed at MITRE on 10/12/2022

@@ -47,8 +47,12 @@ See ATT&CK: **Hide Artifacts: Hidden Files and Directories ([T1564.001](https://
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--| GoBotKR stores itself in a file with Hidden and System attributes. [[1]](#1)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|F0005.004|Modifies target files' time to August 2012 as an antiforensic trick  [[2]](#2)|
-|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK creates a hidden file for temporary storage [[3]](#3)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|F0005.004|Malware modifies target files' time to August 2012 as an antiforensic trick. [[2]](#2)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK creates a hidden file for temporary storage. [[3]](#3)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|F0005.002|Vobfus is located on external drives or network shares and attaches itself to ZIP and RAR files, other removable drives, and network shares. Vobfus hides folders on the external drive and drops an executable with the same name and a disguised folder icon. [[4]](#4)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|F0005.002|Malware looks for a specific folder on the victim. If the folder doesn't exist, the malware creates the folder on the victim by calling CreateDirectoryA and downloads the remote file into the new folder. [[5]](#5) [[6]](#6)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|F0005.001|The malware also appends the filename and extension .ocx to the ProgramData folder path. [[5]](#5) [[6]](#6)|
+
 
 ## References
 
@@ -58,3 +62,8 @@ See ATT&CK: **Hide Artifacts: Hidden Files and Directories ([T1564.001](https://
 
 <a name="3">[3]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
 
+<a name="4">[4]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
+
+<a name="5">[5]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
+
+<a name="6">[6]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader

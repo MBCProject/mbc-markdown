@@ -30,25 +30,28 @@
 
 Installs another, different program on the system. The additional program can be any secondary module; examples include backdoors, malicious drivers, kernel modules, and OS X Apps. 
 
-Malware that installs another component is called a "dropper." If the code is contained in the malware, it's a "single stage" dropper; "two stage" droppers download the code from a remote location (the associated download behavior is covered by the **Ingress Tool Transfer ([E1105](../command-and-control/ingress-tool-transfer.md))** behavior.
+Malware that installs another component is called a "dropper." If the code is contained in the malware, it's a "single stage" dropper; "two stage" droppers download the code from a remote location (the associated download behavior is covered by **Ingress Tool Transfer ([E1105](../command-and-control/ingress-tool-transfer.md))**).
 
 ## Use in Malware
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**WebCobra**](../xample-malware/webcobra.md)|November 2018|--|Drops software to mine for cryptocurrency. [[1]](#1)|
-|[**Geneio**](../xample-malware/geneio.md)|August 2015|--|Geneio installs the browser extension ~/Library/Safari/Extensions/Omnibar.safariextz. It also creates app files. [[7]](#7)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|The malware downloads and executes Claymore's Zcash miner from a remote server. [[1]](#1)|
+|[**Geneio**](../xample-malware/geneio.md)|2015|--|Malware tricks OS X keychain to create application files. Malware also installs the browser extension Omnibar.safariextz. [[10]](#10)|
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR reinstalls its running instance if it is removed. [[3]](#3)|
-|[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|Installs a backdoor. [[8]](#8)|
-|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Malware contains a dropper that installs additional programs like Cbrom.exe. [[9]](#9)|
-|[**YiSpecter**](../xample-malware/yispecter.md)|2015|--|Can download and install arbitrary iOS apps. [[10]](#10)|
-|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|Upon execution, CozyCar drops a decoy file and a secondary dropper [[5]](#5)|
-|[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer drops a file masquerading as a Control Panel (CPL) file [[6]](#6)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Contain an embedded PE file (This capa rule had 1 match) [[11]](#11)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|--|Contain an embedded PE file (This capa rule had 1 match) [[11]](#11)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Contain an embedded PE file (This capa rule had 1 match) [[11]](#11)|
+|[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|MazarBot installs a backdoor. [[14]](#14)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Malware contains a dropper that installs additional programs like Cbrom.exe. [[11]](#11)|
+|[**YiSpecter**](../xample-malware/yispecter.md)|2015|--|The malware can download and install arbitrary iOS apps. [[13]](#13)|
+|[**UP007**](../xample-malware/up007.md)|2016|--|The malware is a dropper that creates multiple files. [[4]](#4)|
+|[**CozyCar**](../xample-malware/cozycar.md)|2010|--|Upon execution, CozyCar drops a decoy file and a secondary dropper. [[5]](#5)|
+|[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer drops a file masquerading as a Control Panel (CPL) file. [[6]](#6)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus downloads malware from other malware families. [[7]](#7)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware drops the first loader which is responsible for loading the main loader into memory. [[8]](#8) [[9]](#9)|
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|The malware installs an open-source program called mitmproxy. [[12]](#12)|
-|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|--|The malware is a dropper that creates multiple files [[4]](#4)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|The malware contains an embedded PE file. [[15]](#15)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut contains an embedded PE file. [[15]](#15)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip contains an embedded PE file. [[15]](#15)|
+
 
 ## References
 
@@ -64,17 +67,20 @@ Malware that installs another component is called a "dropper." If the code is co
 
 <a name="6">[6]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking
 
-<a name="7">[7]</a> https://blog.malwarebytes.org/mac/2015/08/genieo-installer-tricks-keychain/
+<a name="7">[7]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
 
-<a name="8">[8]</a> https://us.norton.com/internetsecurity-emerging-threats-mazar-bot-malware-invades-and-erases-android-devices.html
+<a name="8">[8]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
 
-<a name="9">[9]</a> https://www.webroot.com/blog/2011/09/13/mebromi-the-first-bios-rootkit-in-the-wild/
+<a name="9">[9]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
 
-<a name="10">[10]</a> http://researchcenter.paloaltonetworks.com/2015/10/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
+<a name="10">[10]</a> https://blog.malwarebytes.org/mac/2015/08/genieo-installer-tricks-keychain/
 
-<a name="11">[11]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+<a name="11">[11]</a> https://www.webroot.com/blog/2011/09/13/mebromi-the-first-bios-rootkit-in-the-wild/
 
 <a name="12">[12]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
 
-<a name="13">[13]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke/
+<a name="13">[13]</a> https://unit42.paloaltonetworks.com/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
 
+<a name="14">[14]</a> https://us.norton.com/internetsecurity-emerging-threats-mazar-bot-malware-invades-and-erases-android-devices.html
+
+<a name="15">[15]</a> capa v4.0, analyzed at MITRE on 10/12/2022

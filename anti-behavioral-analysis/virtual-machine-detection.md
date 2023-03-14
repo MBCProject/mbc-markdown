@@ -43,8 +43,8 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |**Check File and Directory Artifacts**|B0009.001|Virtual machines create files on the file system (e.g., VMware creates files in the installation directory C:\Program Files\VMware\VMware Tools). Malware can check the different folders to find virtual machine artifacts (e.g., Virtualbox has the artifact VBoxMouse.sys). [[2]](#2)|
 |**Check Memory Artifacts**|B0009.002|VMware leaves many artifacts in memory. Some are critical processor structures, which, because they are either moved or changed on a virtual machine, leave recognizable footprints. Malware can search through physical memory for the strings VMware, commonly used to detect memory artifacts. [[2]](#2)|
 |**Check Named System Objects**|B0009.003|Virtual machines often include specific named system objects by default, such as Windows device drivers, which can be detected by testing for specific strings, whether found in the Windows registry or other places.|
-|**Check Processes**|B0009.004|The VMware Tools use processes like VMwareServices.exe or VMwareTray.exe, to perform actions on the virtual environment. Malware can list the process and searches for the VMware string. Process related to Virtualbox can be detected by malware by query the process list. [[2]](#2)|
-|**Check Registry Keys**|B0009.005|Virtual machines register artifacts in the registry, which can be detected by malware. For example, a search for "VMware" or "VBOX" in the registry might reveal keys that include information about a virtual hard drive, adapters, running services, or virtual mouse. [[2]](#2) Example registry key value artifacts include "HARDWARE\Description\System (SystemBiosVersion) (VBOX)" and "SYSTEM\ControlSet001\Control\SystemInformation (SystemManufacturer) (VMWARE)"; example registry key artifacts include "SOFTWARE\VMware, Inc.\VMware Tools (VMWARE)" and "SOFTWARE\Oracle\VirtualBox Guest Additions (VBOX)". [[5]](#5)|
+|**Check Processes**|B0009.004|The VMware Tools use processes like VMwareServices.exe or VMwareTray.exe, to perform actions on the virtual environment. Malware can list the processes and searches for the VMware string. Processes related to Virtualbox can be detected by the malware by querying the process list. [[2]](#2)|
+|**Check Registry Keys**|B0009.005|Virtual machines register artifacts in the registry, which can be detected by malware. For example, a search for "VMware" or "VBOX" in the registry might reveal keys that include information about a virtual hard drive, adapters, running services, or a virtual mouse. [[2]](#2) Example registry key value artifacts include "HARDWARE\Description\System (SystemBiosVersion) (VBOX)" and "SYSTEM\ControlSet001\Control\SystemInformation (SystemManufacturer) (VMWARE)"; example registry key artifacts include "SOFTWARE\VMware, Inc.\VMware Tools (VMWARE)" and "SOFTWARE\Oracle\VirtualBox Guest Additions (VBOX)". [[5]](#5)|
 |**Check Running Services**|B0009.006|VMwareService.exe runs the VMware Tools Service as a child of services.exe. It can be identified by listing services. [[2]](#2)|
 |**Check Software**|B0009.007|Malware may check software version; for example, to determine whether the software is relatively current.|
 |**Check Virtual Devices**|B0009.008|The presence of virtual devices can indicate a virtualized environment (e.g., "\\.\VBoxTrayIPC"). [[5]](#5)|
@@ -84,13 +84,26 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**GravityRAT**](../xample-malware/gravity-rat.md)|May 2018|B0009, B0009.024, B0009.023, B0009.018, B0009.028|Please see the GravityRAT malware page for details. [[3]](#3)|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|WebCobra injects malicious code to svchost.exe and uses an infinite loop to check all open windows and to compare each window’s title bar text with a set of strings to determine whether it is running in an isolated, malware analysis environment [[4]](#4)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip detects VMWare, Virtual PC and Virtual Box. It also detects VM environments in general by considering timing lapses. [[1]](#1)|
-|[**Emotet**](../xample-malware/emotet.md)|2018|B0009.010|Emotet checks for various processes that are associated with various virtual machines by comparing hash values of the process names with the hash values of the list of running process names [[7]](#7)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|B0009.012|Check for unmoving mouse cursor (This capa rule had 1 match) [[8]](#8)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|B0009.004|Checks if there are virtual machine processes running (Vbox, vmware, etc) [[9]](#9)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0007.010, B0001.016, B0001.038|Please see the Rombertik malware page for details. [[10]](#10)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|GravityRAT checks system temperature by recording thermal readings for detecting VMs. Heat levels indicate whether the system is a VM. [[3]](#3)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|B0009.018|GravityRAT determines the machine is a VM if the core count is 1. [[3]](#3)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|B0009.023|GravityRAT checks if the manufacturer field in the Win32_Computer entry (in WMI) contains "Virtual," "Vmware," or "Virtualbox." [[3]](#3)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|B0009.024|GravityRAT creates a WMI request to identify the BIOS version. [[3]](#3)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|B0009.028|GravityRAT checks if the MAC address starts with a well-known hexadecimal number used by various VM developers. [[3]](#3)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|B0009.022|WebCobra injects malicious code in to svchost.exe and uses an infinite loop to check all open windows and to compare each window’s title bar text with a set of strings to determine whether it is running in a VM. [[4]](#4)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip detects VMWare, Virtual PC, and Virtual Box. It also detects VM environments in general by considering time lapses. [[6]](#6)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|B0009.010|Emotet checks for various processes that are associated with various virtual machines by comparing hash values of the process names with the hash values of the list of running process names. [[7]](#7)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus checks for the presence of virtualization software by querying the system registry. [[8]](#8)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0009.003|Malware checks if it is running in a sandbox. If it is, the malware exits. [[9]](#9) [[10]](#10)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|B0009.004|The malware checks if there are virtual machine processes running (Vbox, vmware, etc). [[11]](#11)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|B0009.012|The malware checks for an unmoving mouse cursor. [[12]](#12)|
+
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[check if process is running under wine](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-emulation/wine/check-if-process-is-running-under-wine.yml)|Emulator Detection (B0007)|GetModuleHandle, GetProcAddress|
+
 
 ## Code Snippets
 
@@ -135,25 +148,26 @@ jmp short loc_401CBB
 
 ## References
 
-<a name="1">[1]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
+<a name="1">[1]</a> https://web.archive.org/web/20161025013916/https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
 
 <a name="2">[2]</a> https://search.unprotect.it/map/sandbox-evasion/
 
 <a name="3">[3]</a> https://www.hackread.com/gravityrat-malware-evades-detection-targets-india/
 
-<a name="4">[4]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+<a name="4">[4]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
 <a name="5">[5]</a> https://github.com/LordNoteworthy/al-khaser
 
-<a name="6">[6]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
+<a name="6">[6]</a> https://web.archive.org/web/20161025013916/https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
 
 <a name="7">[7]</a> https://securelist.com/the-banking-trojan-emotet-detailed-analysis/69560/
 
-<a name="8">[8]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+<a name="8">[8]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
 
-<a name="9">[9]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-banking-trojan-campaign-sandbox-evasion-techniques
+<a name="9">[9]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
 
-<a name="10">[10]</a> https://blogs.cisco.com/security/talos/rombertik
+<a name="10">[10]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
 
-<a name="11">[11]</a> https://web.archive.org/web/20161025013916/https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
+<a name="11">[11]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-banking-trojan-campaign-sandbox-evasion-techniques
 
+<a name="12">[12]</a> capa v4.0, analyzed at MITRE on 10/12/2022

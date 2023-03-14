@@ -42,24 +42,26 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Trojan spyware program that has mainly been used for targeting banking sites. [[7]](#7)|
-|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Learns about the system so it can drop compatible miner software. [[8]](#8)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Uses windows command prompt commands to gather system info, task list, installed drivers, and installed programs  [[1]](#1)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Uses Systeminfo to gather OS version, system configuration, BIOS, the motherboard, and processor [ [[2]](#2)|
-|[**Emotet**](../xample-malware/emotet.md)|2018|--|Collects information related to OS, processes, and sometimes mail client information and sends it to c2 [[4]](#4)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Gathers information (OS version, workgroup status, computer name, domain/workgroup name, file name of infected project file) about each computer in the net to spread itself  [[5]](#5)|
-|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK collects information from the host including Windows version, CPU architecture, and UAC settings [[6]](#6)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Can collect information about the compter, resources, and operating system version  [[3]](#3)|
-|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|Query environment variable (This capa rule had 1 match) [[9]](#9)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|--|Query environment variable (This capa rule had 1 match) [[9]](#9)|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR uses wmic, systeminfo and ver commands to collect information about the system and the installed software. [[10]](#10)query environment variable (This capa rule had 2 matches) [[9]](#9)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Query environment variable (This capa rule had 1 match) [[9]](#9)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|--|Get disk information (This capa rule had 1 match) [[9]](#9)|
-|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Check OS version (This capa rule had 1 match) [[9]](#9)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Check OS version (This capa rule had 1 match) [[9]](#9)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Get disk size (This capa rule had 1 match) [[9]](#9)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Get hostname (This capa rule had 1 match) [[9]](#9)|
-|[**UP007 Malware Family**](../xample-malware/up007.md)|2016|--|Query environment variable (This capa rule had 1 match) [[9]](#9)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware can collect information about the computer, resources, services, installed programs, firmware, and operating system versions. [[7]](#7)|
+|[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Malware learns about the system so it can drop compatible miner software. [[8]](#8)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Malware uses Window's command prompt commands to gather system info, task list, installed drivers, and installed programs.  [[1]](#1)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Malware uses Systeminfo to gather OS version, system configuration, BIOS, the motherboard, and processor. [[2]](#2)|
+|[**DarkComet**](../xample-malware/darkcomet.md)|2008|--|Malware can collect information about the computer, resources, and operating system version.  [[3]](#3)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|--|Emotet collects information related to OS, processes, and sometimes mail client information and sends it to C2. [[4]](#4)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Malware gathers information (OS version, workgroup status, computer name, domain/workgroup name, file name of infected project file) about each computer in the network to spread itself. [[5]](#5)|
+|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet checks OS version. [[5]](#5)|
+|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK collects information from the host including Windows version, CPU architecture, and UAC settings. [[6]](#6)|
+|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware queries environment variables. [[9]](#9)|
+|[**Gamut**](../xample-malware/gamut.md)|2014|--|The malware queries environment variables. [[9]](#9)|
+|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR uses wmic, systeminfo and ver commands to collect information about the system and the installed software and queries environment variables. [[9]](#9) [[10]](#10)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon queries environment variables. [[9]](#9)|
+|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter gets disk information. [[9]](#9)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi checks OS version. [[9]](#9)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip checks the OS version. [[9]](#9)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Rombertik gets the disk size. [[9]](#9)|
+|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon gets the hostname. [[9]](#9)|
+|[**UP007**](../xample-malware/up007.md)|2016|--|The malware queries environment variables. [[9]](#9)|
+
 
 ## References
 
@@ -75,13 +77,10 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 
 <a name="6">[6]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
 
-<a name="7">[7]</a> https://www.trendmicro.com/en_us/research/18/k/trickbot-shows-off-new-trick-password-grabber-module.html
+<a name="7">[7]</a> https://www.securityartwork.es/wp-content/uploads/2017/07/Trickbot-report-S2-Grupo.pdf
 
-<a name="8">[8]</a> https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
+<a name="8">[8]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
 <a name="9">[9]</a> capa v4.0, analyzed at MITRE on 10/12/2022
 
 <a name="10">[10]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
-
-<a name="11">[11]</a> https://www.securityartwork.es/wp-content/uploads/2017/07/Trickbot-report-S2-Grupo.pdf
-

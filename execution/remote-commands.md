@@ -55,9 +55,12 @@ Autonomous behaviors - those done by the malware without an active attacker - sh
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Commands sent by a remote user can archive/upload files, capture screenshots, clear cookies, download execute other files, list running processes, reboot the affected system, steal certificates and cookies, update/download a configuration file, upload a log file which contains stolen information  [[1]](#1)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Infected bots receive commands from botmaster to load plugins associated with botmaster's goals [[2]](#2)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Receives various commands from c2 server.  [[3]](#3)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|--|The malware commands sent by a remote user can archive/upload files, capture screenshots, clear cookies, download/execute other files, list running processes, reboot the affected system, steal certificates and cookies, update/download a configuration file, and upload a log file which contains stolen information. [[1]](#1)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Infected bots receive commands from the botmaster to load plugins associated with botmaster's goals. [[2]](#2)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware receives various commands from the C2 server. [[3]](#3)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0011.005|The malware sleeps if it fails to send collected data or execute its commands. [[4]](#4) [[5]](#5)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0011.006|The malware loader can uninstall itself from the victim computer. [[4]](#4) [[5]](#5)|
+
 
 ## References
 
@@ -67,3 +70,6 @@ Autonomous behaviors - those done by the malware without an active attacker - sh
 
 <a name="3">[3]</a> https://www.cybereason.com/blog/research/dropping-anchor-from-a-trickbot-infection-to-the-discovery-of-the-anchor-malware
 
+<a name="4">[4]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
+
+<a name="5">[5]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader

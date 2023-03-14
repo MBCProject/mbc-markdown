@@ -48,21 +48,21 @@ Some methods apply to both types of disassemblers; others apply to one type and 
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|B0012.001|Contain obfuscated stackstrings (This capa rule had 3 matches) [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0012.001|Contain obfuscated stackstrings (This capa rule had 1 match) [[6]](#6)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0012.001|Contain obfuscated stackstrings (This capa rule had 1 match) [[6]](#6)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|B0012.001|BlackEnergy contains obfuscated stack strings. [[1]](#1) [[6]](#6)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0012.001|Hupigon contains obfuscated stack strings. [[6]](#6)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0012.001|Rombertik contains obfuscated stack strings. [[6]](#6)|
 
 ## References
 
-<a name="1">[1]</a> http://staff.ustc.edu.cn/~bjhua/courses/security/2014/readings/anti-disas.pdf
+<a name="1">[1]</a> https://staff.ustc.edu.cn/~bjhua/courses/security/2014/readings/anti-disas.pdf
 
-<a name="2">[2]</a> http://www.kernelhacking.com/rodrigo/docs/blackhat2012-paper.pdf
+<a name="2">[2]</a> https://www.kernelhacking.com/rodrigo/docs/blackhat2012-paper.pdf
 
 <a name="3">[3]</a> https://isc.sans.edu/diary/Malicious+VBA+Office+Document+Without+Source+Code/24870
 
 <a name="4">[4]</a> https://boingboing.net/2019/05/05/p-code-r-us.html
 
-<a name="5">[5]</a> https://www.ndss-symposium.org/wp-content/uploads/2020/04/bar2020-23004-paper.pd
+<a name="5">[5]</a> https://www.ndss-symposium.org/wp-content/uploads/2020/04/bar2020-23004-paper.pdf
 
 <a name="6">[6]</a> capa v4.0, analyzed at MITRE on 10/12/2022
 

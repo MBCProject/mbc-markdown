@@ -36,8 +36,9 @@ The MBC also associates the Bootkit behavior with Defense Evasion because the ma
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|An MBR bootkit and a BIOS bootkit targeting Award BIOS. [[1]](#1)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|Can implement malicious code into firmware, allowing read, write, and/or erasure of the UEFI/BIOS firmware  [[2]](#2)|
+|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|The malware is an MBR bootkit and a BIOS bootkit targeting Award BIOS. [[1]](#1)|
+|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware can implement malicious code into firmware, allowing read, write, and/or erasure of the UEFI/BIOS firmware. [[2]](#24)|
+
 
 ## References
 
