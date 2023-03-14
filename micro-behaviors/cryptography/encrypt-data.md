@@ -73,7 +73,7 @@ Malware may encrypt data.
 
 ## Code Snippets
 
-### C0031
+### C0027 Snippet
 <details>
 <summary> Encrypt Data </summary>
 SHA256: c86cbf5e78c9f05ecfc11e4f2c147781cef77842a457e19ba690477eb564c22b
