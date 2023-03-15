@@ -20,7 +20,7 @@ Behaviors that enable malware to remain on a system regardless of system events,
 * **Bootkit** [F0013](../defense-evasion/bootkit.md)
 * **Component Firmware** [F0009](../persistence/component-firmware.md)
 * **Hide Artifacts** [E1564](../defense-evasion/hide-artifacts.md)
-* **Hidden Files and Directories** [F0005](../defense-evasion/hidden-files-and-directories.md)
+* **Hidden Files and Directories** [F0005](../defense-evasion/hidden-files-and-directories.md) This method is related to Unprotect technique U1230.
 * **Hijack Execution Flow** [E1574](../defense-evasion/hijack-execution-flow.md)
 * **Install Insecure or Malicious Configuration** [B0047](../defense-evasion/install-insecure-or-malicious-configuration.md)
 * **Kernel Modules and Extensions** [F0010](../persistence/kernel-modules-and-extensions.md)
