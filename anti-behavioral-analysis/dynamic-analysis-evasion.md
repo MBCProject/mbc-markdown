@@ -43,10 +43,10 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |Name|ID|Description|
 |---|---|---|
 |**Alternative ntdll.dll**|B0003.001|A copy of ntdll.dll is dropped to the filesystem and then loaded. This alternative DLL is used to execute function calls to evade sandboxes which use hooking in the operating system's ntdll.dll.|
-|**API Hammering**|B0003.012|Uses of a huge number of calls to Windows APIs as a form of extended sleep to evade analysis in sandbox environments.|
+|**API Hammering**|B0003.012|Uses of a huge number of calls to Windows APIs as a form of extended sleep to evade analysis in sandbox environments. This method is related to Unprotect technique U1305.|
 |**Code Integrity Check**|B0003.011|Compares memory-based and disk-based versions of itself. If differences are detected, the malware alters its execution, possibly acting destructively.|
 |**Data Flood**|B0003.002|Overloads a sandbox by generating a flood of meaningless behavioral data. [[1]](#1)|
-|**Delayed Execution**|B0003.003|Stalling code is typically executed before any malicious behavior. The malware's aim is to delay the execution of the malicious activity long enough so that an automated dynamic analysis system fails to extract the interesting malicious behavior. This method is very similar to ATT&CK's [Virtualization/Sandbox Evasion: Time Based Evasion](https://attack.mitre.org/techniques/T1497/003/) sub-technique.|
+|**Delayed Execution**|B0003.003|Stalling code is typically executed before any malicious behavior. The malware's aim is to delay the execution of the malicious activity long enough so that an automated dynamic analysis system fails to extract the interesting malicious behavior. This method is very similar to ATT&CK's [Virtualization/Sandbox Evasion: Time Based Evasion](https://attack.mitre.org/techniques/T1497/003/) sub-technique. This method is related to Unprotect technique U1318.|
 |**Demo Mode**|B0003.004|Inclusion of a demo binary/mode that is executed when token is absent or not privileged enough.|
 |**Drop Code**|B0003.005|Original file is written to disk then executed. May confuse some sandboxes, especially if the dropped executable must be provided specific arguments and the original dropper is not associated with the drop file(s).|
 |**Encode File**|B0003.006|Encode a file on disk, such as an implant's config file.|

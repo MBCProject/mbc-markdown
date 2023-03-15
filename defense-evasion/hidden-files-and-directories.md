@@ -30,6 +30,8 @@
 
 Malware may hide files and folders to avoid detection and/or to persist on the system. See potential methods below. 
 
+This behavior is related to Unprotect technique U1230.
+
 See ATT&CK: **Hide Artifacts: Hidden Files and Directories ([T1564.001](https://attack.mitre.org/techniques/T1564/001/))**.
 
 ## Methods

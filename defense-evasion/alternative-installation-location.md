@@ -34,7 +34,7 @@ Malware may install itself in areas other than the hard drive. [[1]](#1)
  
 |Name|ID|Description|
 |---|---|---|
-|**Fileless Malware**|B0027.001|Stores itself in memory.|
+|**Fileless Malware**|B0027.001|Stores itself in memory. This method is related to Unprotect technique U1205.|
 |**Registry Install**|B0027.002|Stores itself in the Windows registry.|
 
 ## Use in Malware

@@ -28,6 +28,7 @@
 
 # Suspend Thread
 
+This behavior is related to Unprotect technique U0101.
 
 ## Use in Malware
 

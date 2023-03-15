@@ -32,6 +32,8 @@ Malware generates the domain name of the controller to which it connects. Access
 
 The related **Dynamic Resolution: Domain Generation Algorithms ([T1568.002](https://attack.mitre.org/techniques/T1568/002/))** ATT&CK sub-technique (oriented toward an adversary perspective with examples that include malware) was defined subsequent to this MBC behavior.
 
+This behavior is related to Unprotect technique U0906.
+
 ## Use in Malware
 
 |Name|Date|Method|Description|
