@@ -53,9 +53,9 @@ For encryption and encoding characteristics of malware samples, as well as malwa
 |**Interleaving Code**|B0032.014|Split code into sections that may be rearranged and may be connected by unconditional jumps. When instructions are out of order, writing a function signature is more difficult.|
 |**Jump Insertion**|B0032.005|Insert jumps to make analysis visually harder.|
 |**Junk Code Insertion**|B0032.007|Insert dummy code between relevant opcodes. Can make signature writing more complex. This method is related to Unprotect technique U0204.|
-|**Merged Code Sections**|B0032.015|Merge all sections resulting in just one entry in the sections table to make readability more difficult. May affect some detection signatures if written to be section dependent.|
+|**Merged Code Sections**|B0032.015|Merge all sections resulting in just one entry in the sections table to make readability more difficult. May affect some detection signatures if written to be section depe
 |**Opaque Predicate**|B0032.019|An opaque predicate either always jumps (jumping over dead or junk code) or never jumps (executing essential code), but determining the execution path can be difficult. This method is related to Unprotect technique U0201.|
-|**Stack Strings**|B0032.017|Build and decrypt strings on the stack at each use, then discard to avoid obvious references.|
+|**Stack Strings**|[B0032.017](#b0032017-snippet)|Build and decrypt strings on the stack at each use, then discard to avoid obvious references.|
 |**Structured Exception Handling (SEH)**|B0032.016|A portion of the code always generates an exception so that malicious code is executed with the exception handling. See [[3]](#3). This method is related to Unprotect technique U0218.|
 |**Symbol Obfuscation**|B0032.018|Remove or rename symbolic information commonly inserted by compilers for debugging purposes.|
 |**Thunk Code Insertion**|B0032.006|Variation on Jump Insertion. Used by some compilers for user-generated functions.|
@@ -78,22 +78,7 @@ For encryption and encoding characteristics of malware samples, as well as malwa
 
 ## Code Snippets
 
-<details>
-<summary> Obfuscated Files or Information::Encoding-Standard Algorithm </summary>
-SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03
-<pre>
-asm
-jle short_40182F
-mov dl, byte ptr [ebp+eax+var_7CA8]
-xor dl, cl
-mov byte ptr [ebp+eax+var_7CA8], dl
-inc eax
-cmp eax, edi
-jl short loc_40181A
-</pre>
-</details>
-
-### B0032.017
+### B0032.017 Snippet
 <details>
 <summary> Executable Code Obfuscation::Stack Strings </summary>
 SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e03

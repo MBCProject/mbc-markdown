@@ -82,3 +82,4 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 <a name="5">[5]</a> https://blogs.cisco.com/security/talos/rombertik
 
 <a name="6">[6]</a> https://www.joesecurity.org/blog/498839998833561473
+

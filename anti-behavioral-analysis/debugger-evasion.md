@@ -89,7 +89,7 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 
 <a name="2">[2]</a> https://www.synack.com/2016/02/17/analyzing-the-anti-analysis-logic-of-an-adware-installer/
 
-<a name="3">[3]</a> http://phishme.com/dridex-code-breaking-modify-the-malware-to-bypass-the-vm-bypass/
+<a name="3">[3]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
 
 <a name="4">[4]</a> https://antukh.com/blog/2015/01/19/malware-techniques-cheat-sheet/
 

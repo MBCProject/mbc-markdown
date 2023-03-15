@@ -45,7 +45,7 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |**Execute Shell Command**|B0030.014|Execute/run the given command using a built-in program (e.g. cmd.exe, PowerShell, bash). This differs from Start Interactive Shell because the shell process is started only for the received command or set of commands and then exits. There is no loop looking for additional commands while the shell process is still running.|
 |**File search**|B0030.015|Controller requests the implant to search for a given filename pattern, often a [glob](https://en.wikipedia.org/wiki/Glob_(programming)).|
 |**Implant to Controller File Transfer**|B0030.004|File is transferred from implant to controller.|
-|**Receive Data**|[B0030.002](#b0030002)|Receive data or command from a controller.|
+|**Receive Data**|[B0030.002](#b0030002-snippet)|Receive data or command from a controller.|
 |**Request Command**|B0030.008|Implant requests a command.|
 |**Request Email Address List**|B0030.010|Request email address list.|
 |**Request Email Template**|B0030.009|Request email template.|
@@ -94,7 +94,7 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 
 ## Code Snippets
 
-### B0030.002
+### B0030.002 Snippet
 <details>
 <summary> C2 Communication::Receive Data </summary>
 SHA256: 304f533ce9ea4a9ee5c19bc81c49838857c63469e26023f330823c3240ee4e0

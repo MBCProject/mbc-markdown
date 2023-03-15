@@ -48,7 +48,7 @@ See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112
 
 ## References
 
-<a name="1">[1]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
+<a name="1">[1]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking
 
 <a name="2">[2]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
 

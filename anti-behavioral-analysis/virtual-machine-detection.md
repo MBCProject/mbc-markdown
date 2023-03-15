@@ -55,7 +55,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |**Guest Process Testing**|B0009.010|Virtual machines offer guest additions that can be installed to add functionality such as clipboard sharing. Detecting the process responsible for these tasks, via its name or other methods, is a technique employed by malware for detecting whether it is being executed in a virtual machine.|
 |**HTML5 Performance Object Check**|B0009.011|In three browser families, it is possible to extract the frequency of the Windows performance counter frequency, using standard HTML and Javascript. This value can then be used to detect whether the code is being executed in a virtual machine, by detecting two specific frequencies commonly used in virtual but not physical machines.|
 |**Human User Check**|B0009.012|Detects whether there is any "user" activity on the machine, such as the movement of the mouse cursor, non-default wallpaper, or recently opened Office files. Directories or file might be counted. If there is no human activity, the machine is suspected to be a virtualized machine and/or sandbox. Other items used to detect a user: mouse clicks (single/double), DialogBox, scrolling, color of background pixel, change in foreground window [[5]](#5). This method is very similar to ATT&CK's [Virtualization/Sandbox Evasion: User Activity Based Checks](https://attack.mitre.org/techniques/T1497/002/) sub-technique.|
-|**Instruction Testing**|[B0009.029](#b0009029)|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2)|
+|**Instruction Testing**|[B0009.029](#b0009029-snippet)|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2)|
 |**Instruction Testing - CPUID**|B0009.034|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2) Checking the CPU ID found within the registry can provide information to system type. This method is related to Unprotect technqiue U1324.|
 |**Instruction Testing - IN**|B0009.035|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2) This method is related to Unprotect technique U1323.|
 |**Instruction Testing - RDTSC**|B0009.036|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2)|
@@ -107,7 +107,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 
 ## Code Snippets
 
-### B0009.029
+### B0009.029 Snippet
 <details>
 <summary> Virtual Machine Detection::Instruction Testing </summary>
 SHA256: cfaf863181e49906df33f9104795678f2fb41a007a8fd066a84fd99f613d7ef3
