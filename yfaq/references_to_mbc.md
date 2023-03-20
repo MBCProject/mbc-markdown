@@ -2,12 +2,13 @@
 
 The following table contains community references to MBC:
 
-| Date     | Reference                                                                                                                                                                                                                       |
-|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Date | Reference |
+|------|-----------|
+| Aug 2022 | AccidentalRebel, “Talking about Mitre's Malware Behavior Catalog” Blackhat Middle East & Africa community meetup lightning talk, 2022. https://www.accidentalrebel.com/talking-about-mitres-malware-behavior-catalog.html   |
 | Dec 2021 | L.F. Martin, “PIFMANA: Pipeline for Malware Analysis,” Master Thesis, Universitat Oberta de Catalunya, 2021.                                                                                                                |
 | Dec 2021 | K. Oosthoek and C. Doerr, "Inside the Matrix: CTI Frameworks as Partial Abstractions of Complex Threats," 2021 IEEE International Conference on Big Data (Big Data), 2021.                                                  |
 | Dec 2021 | M. R. Smith et al., "Malware Generation with Specific Behaviors to Improve Machine Learning-based Detection," 2021 IEEE International Conference on Big Data (Big Data), 2021.                                              |
-| Nov 2021 | K. Licudine, Blackhat Middle East community meetup presentation. https://www.linkedin.com/ posts/juan-karlo-licudine_malware-community-middleeast-activity-6958155280530456576-UUlb/                                        |
+| Nov 2021 | K. Licudine, Blackhat Middle East community meetup presentation. https://www.linkedin.com/posts/juan-karlo-licudine_malware-community-middleeast-activity-6958155280530456576-UUlb/                                         |
 | Nov 2021 | F. Bilstein, “Capability Analysis of Malicious Software,” Universitat Bonn, Nov 2021 (advisor: Daniel Plohmann, Malpedia)                                                                                                   |
 | Oct 2021 | M. M. Islam, A. Dutta, M. S. I. Sajid, E. Al-Shaer, J. Wei and S. Farhang, "CHIMERA: Autonomous Planning and Orchestration for Malware Deception," 2021 IEEE Conference on Communications and Network Security (CNS), 2021. |
 | Sep 2021 | D. Beck, “Malware Behavior Catalog,” DoD/NNSA SwA CoP 2021, Sept 2021.                                                                                                                                                      |
