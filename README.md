@@ -63,7 +63,7 @@ This visual representation of the MBC Matrix is based on the ATT&CK Navigator. T
 * <a href="https://raw.githubusercontent.com/MBCProject/mbc-markdown/master/yfaq/mbc_matrix_without_ids.svg" target="_blank">Matrix without identifiers</a>
 
 ### Malware Corpus ###
-The MBC contains a [malware corpus](./xample-malware/README.md) where each malware entry is decomposed into behaviors that are mapped to ATT&CK and MBC. The mappings are based on open source malware analysis reports.
+The MBC contains a [malware corpus](./xample-malware/README.md) where each malware entry is decomposed into behaviors that are mapped to ATT&CK and MBC. The mappings are based on open source malware analysis reports. Note that some malware types are also present in the ATT&CK software page. We refer readers to the corresponding ATT&CK page for a list of identified ATT&CK techniques. However, we will list any newly identified ATT&CK techniques in the MBC malware page. 
 
 ## Micro-behavior Objectives ##
 [Micro-behaviors](./micro-behaviors/README.md) and their associated objectives are under development.
