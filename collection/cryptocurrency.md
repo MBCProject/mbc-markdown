@@ -30,6 +30,10 @@
 
 Malware accesses files that contain sensitive data or credentials related to Bitcoin and other cryptocurrency wallets.
 
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**ElectroRAT**](../xample-malware/)|2023|B0028.001|This malware attacks multiple currines to include Monaro, Doegecoin, Etherum, Litecoin, and Bitcoin. [[2]](#2)|
+
 ## Methods
 
 |Name|ID|Description|

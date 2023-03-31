@@ -38,7 +38,13 @@ See ATT&CK: **System Services ([T1569](https://attack.mitre.org/techniques/T1569
 |---|---|---|
 |**MSDTC**|E1569.m01|The Distributed Transaction Coordinator (MSDTC) coordinates transaction across multiple resource managers (databases, message queues and file systems). This legitimate Microsoft service is part of Windows 2000 and later and can be used to import and load DLLs. Malware may abuse MSDTC to import and load DLLs.[[1]](#1)|
 
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Earth Lusca**](../xample-malware/)|2019|B0044.001|This malware uses scheduled tasks for exeuction. [[2]](#2)|
 
 ## References
 
 <a name="1">[1]</a> https://support.resolver.com/hc/en-ca/articles/207161116-Configure-Microsoft-Distributed-Transaction-Coordinator-MSDTC-
+<a name="2">[2]</a> https://attack.mitre.org/groups/G1006/

@@ -32,8 +32,15 @@ Malware may exfiltrate data via automated processing or scripting.
 
 See ATT&CK Technique: **Automated Exfiltration ([T1020](https://attack.mitre.org/techniques/T1020/))**.
 
-## Methods
 
-|Name|ID|Description|
-|---|---|---|
-|**Exfiltrate via File Hosting Service**|E1020.m01|Malware may exfiltrate files to a file hosting location.|
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|**Attor**|--|Malware has a file uploader plugin that automatically exfiltrates the collected data and log files to the C2 server.[[1]](#1)|
+
+
+## References
+
+<a name="1">[1] https://www.welivesecurity.com/wp-content/uploads/2019/10/ESET_Attor.pdf

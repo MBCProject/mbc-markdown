@@ -30,9 +30,16 @@
 
 Malware may hide data or binary files within other files, the registry, etc. 
 
+Name|Date|Method|Description|
+|---|---|---|---|
+|[**Agent Tesla**](../xample-malware/)|2023|B0040.001|This malware can achieve persistence by modifying Registry key entries.[[1]](#1)|
+
 ## Methods
 
 |Name|ID|Description|
 |---|---|---|
-|**Hide Data in Registry**|B0040.001|Malware may use a registry key to store a long sequence of bytes.|
+|**Hide Data in Registry**|B0040.001|Malware may use a registry key to store a long sequence of bytes. ([T112](https://attack.mitre.org/techniques/T1112/)|
 |**Steganography**|B0040.002|Malware may store information in an image. See related ATT&CK techniques: Data Obfuscation: Steganography [T1001.002](https://attack.mitre.org/techniques/T1001/002), Obfuscated Files or Information: Steganography ([T1027.003](https://attack.mitre.org/techniques/T1027/003), [T1406.001](https://attack.mitre.org/techniques/T1406/001)).|
+
+
+<a name="1">[1]</a> https://www.sentinelone.com/labs/agent-tesla-old-rat-uses-new-tricks-to-stay-on-top/

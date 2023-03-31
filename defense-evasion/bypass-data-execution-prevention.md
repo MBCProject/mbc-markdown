@@ -30,14 +30,18 @@
 
 Malware may bypass Data Execution Prevention (DEP).
 
+Name|Date|Method|Description|
+|---|---|---|---|
+|[**TeslaCrypt**](../xample-malware/)|2023|B0037.002|This malware routines to call VirtualProtect and VirtualAlloc, respectively, with PAGE_EXECUTE_READWRITE, thus evading DEP[[2]](#2)|
+
 ## Methods
 
 |Name|ID|Description|
 |---|---|---|
 |**ROP Chains**|B0037.001|Return-Oriented Programming can be used to bypass DEP. It can also be used to bypass code signing. [[1]](#1)|
+|**VirtualProtect/VirtualAlloc**|B0037.002|Call VirtualProtect and VirtualAlloc, respectively, with PAGE_EXECUTE_READWRITE, thus evading DEP and evading return address validation-based heuristics. [[1]](#1)|
 
 ## References
 
 <a name="1">[1]</a> https://medium.com/cybersecurityservices/dep-bypass-using-rop-chains-garima-chopra-e8b3361e50ce
-
-<a name="2">[2]</a> https://www.cybereason.com/blog/research/dropping-anchor-from-a-trickbot-infection-to-the-discovery-of-the-anchor-malware
+<a name="2">[2]</a> https://arstechnica.com/information-technology/2016/06/drive-by-exploits-pushing-ransomware-now-able-to-bypass-microsoft-emet/

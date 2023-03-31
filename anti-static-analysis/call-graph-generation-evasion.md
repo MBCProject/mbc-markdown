@@ -40,6 +40,7 @@ Malware code evades accurate call graph generation during disassembly. Call grap
 |---|---|---|
 |**Invoke NTDLL System Calls via Encoded Table**|B0010.002|Invokes ntdll.dll functions without using an export table; an encoded translation table on the stack is used instead. [[3]](#3)|
 |**Two-layer Function Return**|B0010.001|Two layer jumping confuses tools plotting call graphs. [[3]](#3)|
+|**Shadow Process Communication**|B0010.003| Using muitiple processes to accomplish malware behavior that would be detectable in one process[[5]](#5)|
 
 ## References
 
@@ -50,3 +51,6 @@ Malware code evades accurate call graph generation during disassembly. Call grap
 <a name="3">[3]</a> http://fumalwareanalysis.blogspot.com/2012/01/malware-analysis-tutorial-10-tricks-for.html
 
 <a name="4">[4]</a> S. Shang, N. Zheng, J. Xu, M. Xu, H. Zhang, "Detecting Malware Variants via Function-call Graph Similarity," IEEE 2010 5th International Conference on Malicious and Unwanted Software, 2010. https://seclab.hdu.edu.cn/static/uploads/paper/10-05.pdf
+
+<a name="5">[5]</a> Weiqin Ma, Pu Duan, Sanmin Liu, Guofei Gu and Jyh-Charn Liu,"Shadow Attacks: Automatically Evading System-Call-Behavior
+Based Malware Detection" https://people.engr.tamu.edu/guofei/paper/ShadowAttacks_final-onecolumn.pdf

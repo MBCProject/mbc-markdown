@@ -32,8 +32,19 @@ Malware may use loadable kernel modules to persist on a system. For example, one
 
 See ATT&CK: **Boot or Logon Autostart Execution: Kernel Modules and Extensions ([T1547.006](https://attack.mitre.org/techniques/T1547/006/))**.
 
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Drovorub**](../xample-malware/)|2023|--|This malware uses a kernel module rootkit for loading and persistance. [[1]](#1)|
+
+
 ## Methods
 
 |Name|ID|Description|
 |---|---|---|
 |**Device Driver**|F0010.001|Allows kernel to access hardware connected to the system.|
+
+## Refrences
+
+<a name="1">[1]</a> https://media.defense.gov/2020/Aug/13/2002476465/-1/-1/0/CSA_DROVORUB_RUSSIAN_GRU_MALWARE_AUG_2020.PDF
