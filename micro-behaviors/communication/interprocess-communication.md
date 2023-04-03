@@ -43,7 +43,8 @@ The Interprocess Communication micro-behavior focuses on interprocess communicat
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0003.001, C0003.004|Please see the Hupigon malware page for details. [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0003.001|Hupigon creates two anonymous pipes. [[1]](#1)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0003.004|Hupigon writes pipes. [[1]](#1)|
 |[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|C0003.004|Poison Ivy writes pipes. [[1]](#1)|
 
 ## References
