@@ -35,3 +35,13 @@
 Data stored on the file system of a compromised system is manipulated to compromise its integrity.
 
 The related **Data Manipulation: Stored Data Manipulation ([T1565.001](https://attack.mitre.org/techniques/T1565/001/))** ATT&CK sub-technique was defined subsequent to this MBC behavior.
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**DYEPACK**](../xample-malware/)|2023|--|This malware creates, deletes, and alter records in databases used for SWIFT transactions. [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> https://content.fireeye.com/apt/rpt-apt38

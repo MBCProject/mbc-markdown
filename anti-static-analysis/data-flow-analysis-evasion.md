@@ -34,6 +34,12 @@
 
 Malware code evades data flow analysis (also known as information flow analysis and taint-tracking).
 
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**SonicWall Malware**](../xample-malware/)|2023|B0045.001|This malware uses a large if/then/else clause to hide control depenence[[2]](#2)|
+
 ## Methods
 
 |Name|ID|Description|
@@ -45,3 +51,4 @@ Malware code evades data flow analysis (also known as information flow analysis 
 ## References
 
 <a name="1">[1]</a> http://www.seclab.cs.sunysb.edu/seclab/pubs/antitaint.pdf
+<a name="2">[1]</a> https://www.ironnet.com/blog/malware-analysis-nspps-a-go-rat-backdoor
