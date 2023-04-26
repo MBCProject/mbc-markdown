@@ -76,6 +76,7 @@ Details on methods of detecting debuggers are given in the references; many are 
 |**Timing/Delay Check GetTickCount**|B0001.032|Malware uses GetTickCount function in a timing/delay check. This method is related to Unprotect technique U0125.|
 |**Timing/Delay Check QueryPerformanceCounter**|B0001.033|Malware uses QueryPerformanceCounter in a timing/delay check. This method is related to Unprotect techniques U110 and U1309.|
 |**UnhandledExceptionFilter**|B0001.030|The UnhandledExceptionFilter function is called if no registered exception handlers exist, but it will not be reached if a debugger is present. See [[7]](#7) for details. Row 11 This method is related to Unprotect technique U0108.|
+|**Use Exception**|B0001.032|The malware intentionally causes an exception that is handled by the code and allowed to run to its intended effect; however, an attached Debugger will “catch” the exception and pause execution. This method may be combined with the Timing/Delay Check, UnhandledExceptionFilter, or Exception Flooding methods.|
 |**WudfIsAnyDebuggerPresent**|B0001.031|Includes use of WudfIsAnyDebuggerPresent, WudfIsKernelDebuggerPresent, WudfIsUserDebuggerPresent.|
 
 ## Use in Malware

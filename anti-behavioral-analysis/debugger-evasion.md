@@ -48,6 +48,7 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 |**Change SizeOfImage**|B0002.004|Changing this value during run time can prevent some debuggers from attaching and also confuses some unpackers and dumpers.|
 |**Code Integrity Check**|B0002.005|Check that the unpacking code is unmodified. Variation exists where unpacking code is part of the "key" used to unpack, therefore any Software Breakpoints during debugging causes unpacking to completely fail or result in malformed unpacked code.|
 |**Exception Misdirection**|B0002.006|Using exception handling (SEH) to cause flow of program to non-obvious paths.|
+|**Exception Flooding**|B0002.031|The malware causes numerous intentional exceptions, which are not ignored by the debugger (see Debugger Detection::Use Exception), slowing manual debugging (analyst exhaustion) or preventing automated debugging.|
 |**Get Base Indirectly**|B0002.007|CALL to a POP; finds base of code or data, often the packed version of the code; also used often in obfuscated/packed shellcode.|
 |**Guard Pages**|B0002.008|Encrypt blocks of code individually and decrypt temporarily only upon execution. This method is related to Unprotect technique U0102.|
 |**Hook Interrupt**|B0002.009|Modification of interrupt vector or descriptor tables.|
