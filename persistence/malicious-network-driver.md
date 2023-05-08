@@ -21,16 +21,16 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>21 November 2022</b></td>
+<td><b>01 May 2023</b></td>
 </tr>
 </table>
 
 
 # Malicious Network Driver
 
-Malicious network drivers can be installed on several machines on a network via an exploited server with high uptime. Once the drivers are installed on the host machines, they can re-infect the server if it is restarted (persistence), can infect other machines on the network (lateral movement), and can redirect traffic on the network. 
+Malicious network drivers can be installed on several machines on a network via an exploited server with high uptime. Once the drivers are installed on the host machines, they can re-infect the server if it is restarted (Persistence), can infect other machines on the network (Lateral Movement), and can redirect traffic on the network (Impact). 
 
-A malicious network driver can tunnel outside traffic into the network, allowing the attackers to access remote desktop sessions or to connect to servers inside the domain by using previously acquired credentials. Using the credentials, they can re-deploy the entire platform following a massive shutdown or power loss and as a result, the malware will persist on network-connected machines even after reboot: after the machine connects to the server, the malware repopulates itself on the server; this, in turn, (re)infects the remaining machines on the network.  
+A malicious network driver can tunnel outside traffic into the network, allowing the attackers to access remote desktop sessions or to connect to servers inside the domain by using previously acquired credentials. Using the credentials, they can re-deploy the entire platform following a massive shutdown or power loss, causing the malware to persist on network-connected systems even after reboot. Persistence is attained after the information system connects to the server—the malware reinstalls itself on the server, with (re)infection of the remaining systems on the network ensuing.  
 
 ## Use in Malware
 

@@ -25,14 +25,14 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>21 November 2022</b></td>
+<td><b>4 May 2023</b></td>
 </tr>
 </table>
 
 
 # Debugger Evasion
 
-Behaviors that make debugging difficult.
+Debugger evasion is employed by malware to foil a debugger and avoid analysis. For example, to hinder the malware analyst and debugger, malware may use exception handling to execute non-obvious execution paths (exception misdirection method) or may use several parallel threads (parallel threads method). Additional debugger evasion methods are described below.
 
 A thorough reference for anti-debugging, both detection and evasion, is given in [[1]](#1).
 

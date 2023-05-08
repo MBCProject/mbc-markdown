@@ -25,16 +25,22 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>21 November 2022</b></td>
+<td><b>2 May 2023</b></td>
 </tr>
 </table>
 
 
 # Debugger Detection
 
-Malware detects whether it's being executed inside a debugger. If so, conditional execution selects a benign execution path. [[1]](#1), [[2]](#2)
+Malware detects whether it's being executed inside a debugger by checking for artifacts such as DLLs, processes, and registry keys [[1]](#1). If malware detects a debugger,  it may change its execution path or change its code to initiate a crash [[2]](#2).
 
-Details on methods of detecting debuggers are given in the references; many are listed below.
+While many methods are listed in the table below, among the most commonly used are:
+- Using APIs such as IsDebuggerPresent, CheckRemoteDebuggerPresent, and OutputDebugString
+- Reading the BeingDebugged bit ( is it a 1 or 0) in the Process Environment Block (PEB)
+- Checking whether a software breakpoint instruction is used (INT3; 0xCC opcode)
+
+Details on detecting debuggers are given in the references.
+
 
 ## Methods
 
@@ -46,7 +52,6 @@ Details on methods of detecting debuggers are given in the references; many are 
 |**Check Processes**|B0001.038|The malware may check running processes for specific strings such as "malw" to detect a analysis environment.|
 |**CloseHandle**|B0001.003|(NtClose); If an invalid handle is passed to the CloseHandle function and a debugger is present, then an EXCEPTION_INVALID_HANDLE (0xC0000008) exception will be raised. [[7]](#7) This method is related to Unprotect technique U0114.|
 |**Debugger Artifacts**|B0001.004|Malware may detect a debugger by its artifact (window title, device driver, exports, etc.).|
-|**Exception Use**|B0001.039|The malware intentionally causes an exception that is handled by the code and allowed to run to its intended effect; however, an attached debugger will “catch” the exception and pause execution. This method may be combined with the Timing/Delay Check, UnhandledExceptionFilter, or Debugger Evasion::Exception Flooding methods.|
 |**Hardware Breakpoints**|B0001.005|(SEH/GetThreadContext); Debug registers will indicate the presence of a debugger. See [[7]](#7) for details. This method is related to Unprotect technique U0127.|
 |**Interruption**|B0001.006|If an interruption is mishandled by the debugger, it can cause a single-byte instruction to be inadvertently skipped, which can be detected by malware. Examples include Interrupt 0x2d and Interrupt 1 [[7]](#7). This method is related to Unprotect technique U0129.|
 |**IsDebuggerPresent**|B0001.008|The kernel32!IsDebuggerPresent API function call checks the PEB BeingDebugged flag to see if the calling process is being debugged. It returns 1 if the process is being debugged, 0 otherwise. This is one of the most common ways of debugger detection.This method is related to Unprotect technique U0122.|
@@ -104,9 +109,9 @@ Details on methods of detecting debuggers are given in the references; many are 
 
 ## References
 
-<a name="1">[1]</a> Alexander Antukh, "Anti-debugging Techniques Cheat Sheet," 19 January 2015.  http://antukh.com/blog/2015/01/19/malware-techniques-cheat-sheet. 
+<a name="1">[1]</a> S. Yosef,"RASPBERRY ROBIN: ANTI-EVASION HOW-TO & EXPLOIT ANALYSIS," https://research.checkpoint.com/, 18 Apr 2023. [Online]. Available: https://research.checkpoint.com/2023/raspberry-robin-anti-evasion-how-to-exploit-analysis/.  
 
-<a name="2">[2]</a> Joshua Cannell, Malwarebytes Labs, "Five Anti-Analysis Tricks that sometimes Fool Analysts," 31 March 2016. https://blog.malwarebytes.com/threat-analysis/2014/09/five-anti-debugging-tricks-that-sometimes-fool-analysts.
+<a name="2">[2]</a> M. Sikorski and A. Honig, Practical Malware Analysis: The Hands-On Guide to Dissecting Malicious Software, No Starch Press, 2012. 
 
 <a name="3">[3]</a> Peter Ferrie, "The 'Ultimate' Anti-Debugging Reference," 4 May 2011. https://anti-reversing.com/Downloads/Anti-Reversing/The_Ultimate_Anti-Reversing_Reference.pdf.
 

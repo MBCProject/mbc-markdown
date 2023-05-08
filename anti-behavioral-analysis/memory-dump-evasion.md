@@ -25,13 +25,13 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>21 November 2022</b></td>
+<td><b>02 May 2023</b></td>
 </tr>
 </table>
 
 # Memory Dump Evasion
 
-Malware hinders retrieval and/or discovery of the contents of the physical memory of the system on which the malware instance is executing [[1]](#1). 
+Memory dump evasion is an anti-forensic technique in which malware hinders retrieval and/or discovery of the contents of the physical memory of the system on which the malware instance is executing [[1]](#1). Tools enabling capture of malware code from memory can be software-based or hardware-based. Malicious code thwarts software-based tools by relying on such methods as resolving API addresses before each use (on-the-fly APIs method) and erasing or corrupting specific file parts to prevent rebuilding (tampering method) [[2]](#2),[[3]](#3). 
 
 ## Methods
 
@@ -40,7 +40,7 @@ Malware hinders retrieval and/or discovery of the contents of the physical memor
 |**Code Encryption in Memory**|B0006.001|Encrypt the executing malware instance code in memory.|
 |**Erase the PE header**|B0006.002|Erase PE header from memory.|
 |**Feed Misinformation**|B0006.008|API behavior can be altered to prevent memory dumps. For example, inaccurate data can be reported when the contents of the physical memory of the system on which the malware instance is executing is retrieved. See [Hooking](../credential-access/hooking.md).|
-|**Flow Opcode Obstruction**|B0006.009|Flow opcodes (e.g., jumps, loops) are removed and emulated (or decrypted) by the packer during execution, resulting in incorrect dumps. [[4]](#4).|
+|**Flow Opcode Obstruction**|B0006.009|Flow opcodes (e.g., jumps, loops) are removed and emulated (or decrypted) by the packer during execution, resulting in incorrect dumps. [[6]](#6).|
 |**Guard Pages**|B0006.006|Encrypt blocks of code individually and decrypt temporarily only upon execution. This method is related to Unprotect technique U0102.|
 |**Hide virtual memory**|B0006.003|Hide arbitrary segments of virtual memory.|
 |**On-the-Fly APIs**|B0006.007|Resolve API addresses before each use to prevent complete dumping.|
@@ -53,7 +53,7 @@ Malware hinders retrieval and/or discovery of the contents of the physical memor
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Kraken**](../xample-malware/kraken.md)|2008|--|Dumping Kraken's c.dll module from the heap of its own process is tricky because its PE-header is erased in memory. [[2]](#2)|
+|[**Kraken**](../xample-malware/kraken.md)|2008|--|Dumping Kraken's c.dll module from the heap of its own process is tricky because its PE-header is erased in memory. [[4]](#4)|
 
 
 ## Code Snippets
@@ -104,11 +104,15 @@ jmp short loc_401326
 
 ## References
 
-<a name="1">[1]</a> J. Stuttgen, M. Cohen, Anti-forensic resilient memory acquisition, https://www.dfrws.org/sites/default/files/session-files/paper-anti-forensic_resilient_memory_acquisition.pdf
+<a name="1">[1]</a> J. Stüttgen and M. Cohen,"Anti-Forensic Resilient Memory Acquisition," in DFRWS USA 2013 Conference, 2013. [Online]. Available: https://dfrws.org/presentation/anti-forensic-resilient-memory-acquisition/. 
 
-<a name="2">[2]</a> http://blog.threatexpert.com/2008/04/kraken-changes-tactics.html
+<a name="2">[2]</a> L. Maffia, D. Nisi, P. Kotzias, G. Lagorio, S. Aonzo, and D. Balzarotti, "Longitudinal Study of the Prevalence of Malware Evasive Techniques," arXiv:2112.11289 , 21 Dec 2021. [Online]. Available: https://arxiv.org/pdf/2112.11289.pdf.
 
-<a name="3">[3]</a> https://waleedassar.blogspot.com/search/label/anti-dump
+<a name="3">[3]</a> "PlugX: Memory Forensics Lifecycle with Volatility," Volatility Labs, blog, 6 Nov. 2015. [Online]. Available: https://volatility-labs.blogspot.com/2015/11/plugx-memory-forensics-lifecycle-with.html.
 
-<a name="4">[4]</a> https://www.gironsec.com/code/packers.pdf
+<a name="4">[4]</a> http://blog.threatexpert.com/2008/04/kraken-changes-tactics.html
+
+<a name="5">[5]</a> https://waleedassar.blogspot.com/search/label/anti-dump
+
+<a name="6">[6]</a> https://www.gironsec.com/code/packers.pdf
 
