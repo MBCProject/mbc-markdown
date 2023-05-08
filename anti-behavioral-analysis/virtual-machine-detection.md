@@ -25,14 +25,19 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>21 November 2022</b></td>
+<td><b>4 May 2023</b></td>
 </tr>
 </table>
 
 
 # Virtual Machine Detection
 
-Detects whether the malware instance is being executed in a virtual machine (VM), such as VMWare. If so, conditional execution selects a benign execution path. [[1]](#1)
+Malware checks whether it is being executed inside a virtual environment. In performing reconnaissance of its environment, the malware will check on a variety of user or system based artifacts. Examples include: 
+	•	monitoring for user action as reflected by scrolling
+	•	verifying system characteristics through Windows Management Interface (WMI) queries, e.g., for MAC address
+	•	observing whether tool artifacts represented by strings or processes exist, e.g., VirtualBox.exe or joeboxserver.exe  
+	•	and checking specific registry keys or values [[1]](#1)
+Upon detection of the virtual machine, conditional execution will change the malware’s behavior. For example, execution may terminate, or activity may appear benign, e.g., connecting to a benign domain.
 
 The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/))** ATT&CK techniques were defined subsequent to this MBC behavior.
 
@@ -56,6 +61,8 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |**HTML5 Performance Object Check**|B0009.011|In three browser families, it is possible to extract the frequency of the Windows performance counter frequency, using standard HTML and Javascript. This value can then be used to detect whether the code is being executed in a virtual machine, by detecting two specific frequencies commonly used in virtual but not physical machines.|
 |**Human User Check**|B0009.012|Detects whether there is any "user" activity on the machine, such as the movement of the mouse cursor, non-default wallpaper, or recently opened Office files. Directories or file might be counted. If there is no human activity, the machine is suspected to be a virtualized machine and/or sandbox. Other items used to detect a user: mouse clicks (single/double), DialogBox, scrolling, color of background pixel, change in foreground window [[5]](#5). This method is very similar to ATT&CK's [Virtualization/Sandbox Evasion: User Activity Based Checks](https://attack.mitre.org/techniques/T1497/002/) sub-technique.|
 |**Instruction Testing**|[B0009.029](#b0009029-snippet)|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2)|
+|**Instruction Testing - CPUID**|B0009.034|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2) Checking the CPU ID found within the registry can provide information to system type.|
+|**Instruction Testing - IN**|B0009.035|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2)|
 |**Instruction Testing - CPUID**|B0009.034|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2) Checking the CPU ID found within the registry can provide information to system type. This method is related to Unprotect technqiue U1324.|
 |**Instruction Testing - IN**|B0009.035|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2) This method is related to Unprotect technique U1323.|
 |**Instruction Testing - RDTSC**|B0009.036|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2)|
@@ -148,7 +155,7 @@ jmp short loc_401CBB
 
 ## References
 
-<a name="1">[1]</a> https://web.archive.org/web/20161025013916/https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
+<a name="1">[1]</a> Check Point Research,"CP<r>: Evasion Techniques," evasions.checkpoint.com, [Online]. Available: https://evasions.checkpoint.com.
 
 <a name="2">[2]</a> https://search.unprotect.it/map/sandbox-evasion/
 

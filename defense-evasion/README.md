@@ -13,7 +13,7 @@
 </table>
 
 
-# Defense Evasion #
+# Defense Evasion
 
 Behaviors that enable malware to evade detection.
 

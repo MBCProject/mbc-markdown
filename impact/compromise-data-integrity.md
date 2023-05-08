@@ -25,13 +25,17 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>4 May 2023</b></td>
 </tr>
 </table>
 
 
 # Compromise Data Integrity
 
-Data stored on the file system of a compromised system is manipulated to compromise its integrity.
+Data stored on the file system of a compromised system is manipulated to compromise its integrity. Manipulative actions in this context include unauthorized insertion, deletion, or modification of data [[1]](#1). 
 
 The related **Data Manipulation: Stored Data Manipulation ([T1565.001](https://attack.mitre.org/techniques/T1565/001/))** ATT&CK sub-technique was defined subsequent to this MBC behavior.
+
+## References
+
+<a name="1">[1]</a> "TRISIS Malware: Analysis of Safety System Targeted Malware, version 1.20171213," Dragos, 13 Dec. 2017. [Online]. Available: https://www.dragos.com/wp-content/uploads/TRISIS-01.pdf.

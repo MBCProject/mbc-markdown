@@ -25,44 +25,44 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>4 May 2023</b></td>
 </tr>
 </table>
 
 # Disassembler Evasion
 
-Malware code evades disassembly in a recursive (flow-oriented) or linear disassembler, resulting in inaccurate or incomplete disassembly. The Disassembler Evasion behavior may also result in the disassembly process halting with an error.
-
-Some methods apply to both types of disassemblers; others apply to one type and not the other. 
+Anti-disassembly techniques take advantage of weaknesses in either flow-oriented (also referred to as recursive) or linear disassembler algorithms, resulting in inaccurate or incomplete disassembly or the disassembly process halting with an error. Reportedly, the most common anti-disassembly technique is one that employs two consecutive conditional jump instructions (jz followed by jnz) that point to the same target address [[1]](#1).
 
 ## Methods
 
 |Name|ID|Description|
 |---|---|---|
 |**Conditional Misdirection**|B0012.002|Conditional jumps are sometimes used to confuse disassembly engines, resulting in the wrong instruction boundaries and thus wrong mnemonic and operands; may be identified by instructions *jmp/jcc to a label+#* (e.g., JNE loc_401345fe+2).|
-|**Desynchronizing Opaque Predicates**|B0012.006|Opaque predicates inject superfluous branches into the disassembly, resulting in disassembly desynchronization, as well as code bloat. The junk bytes introduced damage the disassembly process when the bytes are treated as code. [[5]](#5) This method is related to Unprotect technique U0201.|
-|**VBA Stomping**|B0012.005|Typically, VBA source code is compiled into p-code, which is stored with compressed sourced code in the OLE file with VBA macros. VBA Stomping - when the VBA source code is removed and only the p-code remains - makes analysis much harder. See [[3]](#3) for an analysis of a VBA-Stomped malicious VBA Office document. See [[4]](#4) for information on Evil Clippy, a tool that creates malicious MS Office documents.|
+|**Desynchronizing Opaque Predicates**|B0012.006|Opaque predicates inject superfluous branches into the disassembly, resulting in disassembly desynchronization, as well as code bloat. The junk bytes introduced damage the disassembly process when the bytes are treated as code. [[6]](#6) This method is related to Unprotect technique U0201.|
+|**VBA Stomping**|B0012.005|Typically, VBA source code is compiled into p-code, which is stored with compressed sourced code in the OLE file with VBA macros. VBA Stomping - when the VBA source code is removed and only the p-code remains - makes analysis much harder. See [[4]](#4) for an analysis of a VBA-Stomped malicious VBA Office document. See [[5]](#5) for information on Evil Clippy, a tool that creates malicious MS Office documents.|
 |**Value Dependent Jumps**|B0012.003|Explicit use of computed values for control flow, often in the same basic block or function.|
 
 ## Use in Malware
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|B0012.001|BlackEnergy contains obfuscated stack strings. [[1]](#1) [[6]](#6)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0012.001|Hupigon contains obfuscated stack strings. [[6]](#6)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0012.001|Rombertik contains obfuscated stack strings. [[6]](#6)|
+|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|B0012.001|BlackEnergy contains obfuscated stack strings. [[2]](#2) [[7]](#7)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|B0012.001|Hupigon contains obfuscated stack strings. [[7]](#7)|
+|[**Rombertik**](../xample-malware/rombertik.md)|2015|B0012.001|Rombertik contains obfuscated stack strings. [[7]](#7)|
 
 ## References
 
-<a name="1">[1]</a> https://staff.ustc.edu.cn/~bjhua/courses/security/2014/readings/anti-disas.pdf
+<a name="1">[1]</a> Practical Malware Analysis by Michael Sikorski, Andrew Honig, February 2012, Publisher(s): No Starch Press.
 
-<a name="2">[2]</a> https://www.kernelhacking.com/rodrigo/docs/blackhat2012-paper.pdf
+<a name="2">[2]</a> https://staff.ustc.edu.cn/~bjhua/courses/security/2014/readings/anti-disas.pdf
 
-<a name="3">[3]</a> https://isc.sans.edu/diary/Malicious+VBA+Office+Document+Without+Source+Code/24870
+<a name="3">[3]</a> https://www.kernelhacking.com/rodrigo/docs/blackhat2012-paper.pdf
 
-<a name="4">[4]</a> https://boingboing.net/2019/05/05/p-code-r-us.html
+<a name="4">[4]</a> https://isc.sans.edu/diary/Malicious+VBA+Office+Document+Without+Source+Code/24870
 
-<a name="5">[5]</a> https://www.ndss-symposium.org/wp-content/uploads/2020/04/bar2020-23004-paper.pdf
+<a name="5">[5]</a> https://boingboing.net/2019/05/05/p-code-r-us.html
 
-<a name="6">[6]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+<a name="6">[6]</a> https://www.ndss-symposium.org/wp-content/uploads/2020/04/bar2020-23004-paper.pdf
+
+<a name="7">[7]</a> capa v4.0, analyzed at MITRE on 10/12/2022
 

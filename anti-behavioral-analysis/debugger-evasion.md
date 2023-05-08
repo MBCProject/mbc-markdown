@@ -25,14 +25,14 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>21 November 2022</b></td>
+<td><b>4 May 2023</b></td>
 </tr>
 </table>
 
 
 # Debugger Evasion
 
-Behaviors that make debugging difficult.
+Debugger evasion is employed by malware to foil a debugger and avoid analysis. For example, to hinder the malware analyst and debugger, malware may use exception handling to execute non-obvious execution paths (exception misdirection method) or may use several parallel threads (parallel threads method). Additional debugger evasion methods are described below.
 
 A thorough reference for anti-debugging, both detection and evasion, is given in [[1]](#1).
 
@@ -48,7 +48,6 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 |**Change SizeOfImage**|B0002.004|Changing this value during run time can prevent some debuggers from attaching and also confuses some unpackers and dumpers.|
 |**Code Integrity Check**|B0002.005|Check that the unpacking code is unmodified. Variation exists where unpacking code is part of the "key" used to unpack, therefore any Software Breakpoints during debugging causes unpacking to completely fail or result in malformed unpacked code.|
 |**Exception Misdirection**|B0002.006|Using exception handling (SEH) to cause flow of program to non-obvious paths.|
-|**Exception Flooding**|B0002.031|The malware causes numerous intentional exceptions, which are not ignored by the debugger (see Debugger Detection::Exception Use), slowing manual debugging (analyst exhaustion) or preventing automated debugging.|
 |**Get Base Indirectly**|B0002.007|CALL to a POP; finds base of code or data, often the packed version of the code; also used often in obfuscated/packed shellcode.|
 |**Guard Pages**|B0002.008|Encrypt blocks of code individually and decrypt temporarily only upon execution. This method is related to Unprotect technique U0102.|
 |**Hook Interrupt**|B0002.009|Modification of interrupt vector or descriptor tables.|
@@ -80,22 +79,16 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 |---|---|---|---|
 |**Fake Adobe Flash Update OS X**|2016|--|Malware contains code that manually detects a debugger. [[2]](#2)|
 |**Dridex**|2015|--|[[3]](#3)|
-|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[6]](#6)|
-|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus uses GetModuleHandle API to check for the presence of a debugger. [[7]](#7)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[3]](#3)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus uses GetModuleHandle API to check for the presence of a debugger. [[4]](#4)|
 
 
 ## References
 
 <a name="1">[1]</a> https://anti-reversing.com/Downloads/Anti-Reversing/The_Ultimate_Anti-Reversing_Reference.pdf
 
-<a name="2">[2]</a> https://www.synack.com/2016/02/17/analyzing-the-anti-analysis-logic-of-an-adware-installer/
+<a name="2">[2]</a> https://web.archive.org/web/20210225195315/https://www.synack.com/blog/analyzing-the-anti-analysis-logic-of-an-adware-installer/
 
-<a name="3">[3]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
+<a name="3">[3]</a> Atif Mushtaq, FireEye, "The Dead Giveaways of VM-Aware Malware," 27 January 2011. https://web.archive.org/web/20161025013916/https:/www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
 
-<a name="4">[4]</a> https://antukh.com/blog/2015/01/19/malware-techniques-cheat-sheet/
-
-<a name="5">[5]</a> https://search.unprotect.it/map/
-
-<a name="6">[6]</a> https://web.archive.org/web/20161025013916/https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
-
-<a name="7">[7]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
+<a name="4">[4]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/

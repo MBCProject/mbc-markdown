@@ -13,7 +13,7 @@
 </table>
 
 
-# Cryptography Micro-objective #
+# Cryptography Micro-objective
 Micro-behaviors that enable malware to use crypto.
 
 * **Crypto Algorithm** [C0068](../cryptography/crypto-algorithm.md)

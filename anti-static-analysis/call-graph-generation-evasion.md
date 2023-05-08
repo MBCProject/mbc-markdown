@@ -25,28 +25,30 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>4 May 2023</b></td>
 </tr>
 </table>
 
 
 # Call Graph Generation Evasion
 
-Malware code evades accurate call graph generation during disassembly. Call graphs are used by malware similarity tools and algorithms ([[1]](#1), [[4]](#4)), as well as for malware detection [[2]](#2).
+Malicious code evades accurate call graph generation, which can be used for malware detection during disassembly of the binary [[1]](#1). Evading accurate call graph generation can also hinder follow-on analysis. For instance, using randomization of call graphs, malware can defeat call graph-based similarity analysis in which analysts calculate similarity between pairs of malicious binaries [[2]](#2), [[3]](#3). Application of clustering algorithms to malware call graphs has also resulted in the discovery of malware families [[4]] (#4). 
 
 ## Methods
 
 |Name|ID|Description|
 |---|---|---|
-|**Invoke NTDLL System Calls via Encoded Table**|B0010.002|Invokes ntdll.dll functions without using an export table; an encoded translation table on the stack is used instead. [[3]](#3)|
-|**Two-layer Function Return**|B0010.001|Two layer jumping confuses tools plotting call graphs. [[3]](#3)|
+|**Invoke NTDLL System Calls via Encoded Table**|B0010.002|Invokes ntdll.dll functions without using an export table; an encoded translation table on the stack is used instead. [[5]](#5)|
+|**Two-layer Function Return**|B0010.001|Two layer jumping confuses tools plotting call graphs. [[5]](#5)|
 
 ## References
 
-<a name="1">[1]</a> K. Blokhin, D. Mentis, J. Saxe, "Malware Similarity Identification Using Call Graph Based System Call Subsequence Features," 2013 IEEE 33rd International Conference on Distributed Computing Systems Workshops, July 2013. https://www.researchgate.net/publication/269326967_Malware_Similarity_Identification_Using_Call_Graph_Based_System_Call_Subsequence_Features
+<a name="1">[1]</a> P. Deshpande and M. Stamp,"Metamorphic Malware Detection Using Function Call Graph Analysis," MIS Review, Vol. 21, Nos. 1/2, Sept.(2015)/Mar.(2016), [Online]. Available: https://pdfs.semanticscholar.org/8db2/69106ea6e1f59e4dac0889665dd3336ee9b1.pdf.
 
-<a name="2">[2]</a> P. Deshpande, M. Stamp, "Metamorphic Malware Detection Using Function Call Graph Analysis," MIS Review Vol. 21, Nos. 1/2, September(2015)/March(2016). https://pdfs.semanticscholar.org/8db2/69106ea6e1f59e4dac0889665dd3336ee9b1.pdf
+<a name="2">[2]</a> K. Blokhin, D. Mentis, and J. Saxe,"Malware Similarity Identification Using Call Graph Based System Call Subsequence Features," 2013 IEEE 33rd International Conference on Distributed Computing Systems Workshops, July 2013. [Online]. Available: https://www.researchgate.net/publication/269326967_Malware_Similarity_Identification_Using_Call_Graph_Based_System_Call_Subsequence_Features.
 
-<a name="3">[3]</a> http://fumalwareanalysis.blogspot.com/2012/01/malware-analysis-tutorial-10-tricks-for.html
+<a name="3">[3]</a> S. Shang, N. Zheng, J. Xu, M. Xu, and H. Zhang,"Detecting Malware Variants via Function-call Graph Similarity," IEEE 2010 5th International Conference on Malicious and Unwanted Software, 2010. [Online]. Available: https://seclab.hdu.edu.cn/static/uploads/paper/10-05.pdf.
 
-<a name="4">[4]</a> S. Shang, N. Zheng, J. Xu, M. Xu, H. Zhang, "Detecting Malware Variants via Function-call Graph Similarity," IEEE 2010 5th International Conference on Malicious and Unwanted Software, 2010. https://seclab.hdu.edu.cn/static/uploads/paper/10-05.pdf
+<a name="4">[4]</a> J. Kinable, "Malware Detection Through Call Graphs," Master thesis, Department of Telematics, Norwegian University of Science and Technology, Norway, June 2010. [Online]. Available: https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/262290/353049_FU LLTEXT01.pdf?sequence=1&isAllowed=y.
+
+<a name="5">[5]</a> http://fumalwareanalysis.blogspot.com/2012/01/malware-analysis-tutorial-10-tricks-for.html
