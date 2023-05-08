@@ -115,7 +115,7 @@ mov     bl, 1
 
 ## References
 
-<a name="1">[1]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html 
+<a name="1">[1]</a> Atif Mushtaq, FireEye, "The Dead Giveaways of VM-Aware Malware," 27 January 2011. https://web.archive.org/web/20161025013916/https:/www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
 
 <a name="2">[2]</a> https://blogs.cisco.com/security/talos/rombertik
 

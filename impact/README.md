@@ -13,7 +13,7 @@
 </table>
 
 
-# Impact #
+# Impact
 
 Behaviors that enable malware to manipulate, interrupt, or destroy systems and data. 
 

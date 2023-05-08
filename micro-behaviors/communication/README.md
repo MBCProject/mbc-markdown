@@ -13,7 +13,7 @@
 </table>
 
 
-# Communication Micro-objective #
+# Communication Micro-objective
 Micro-behaviors that enable malware to communicate.
 
 * **DNS Communication** [C0011](../communication/dns-communication.md)

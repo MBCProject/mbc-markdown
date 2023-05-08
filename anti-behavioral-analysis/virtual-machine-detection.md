@@ -90,12 +90,12 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|B0009.024|GravityRAT creates a WMI request to identify the BIOS version. [[3]](#3)|
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|B0009.028|GravityRAT checks if the MAC address starts with a well-known hexadecimal number used by various VM developers. [[3]](#3)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|B0009.022|WebCobra injects malicious code in to svchost.exe and uses an infinite loop to check all open windows and to compare each window’s title bar text with a set of strings to determine whether it is running in a VM. [[4]](#4)|
-|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip detects VMWare, Virtual PC, and Virtual Box. It also detects VM environments in general by considering time lapses. [[6]](#6)|
-|[**Emotet**](../xample-malware/emotet.md)|2018|B0009.010|Emotet checks for various processes that are associated with various virtual machines by comparing hash values of the process names with the hash values of the list of running process names. [[7]](#7)|
-|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus checks for the presence of virtualization software by querying the system registry. [[8]](#8)|
-|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0009.003|Malware checks if it is running in a sandbox. If it is, the malware exits. [[9]](#9) [[10]](#10)|
-|[**Ursnif**](../xample-malware/ursnif.md)|2016|B0009.004|The malware checks if there are virtual machine processes running (Vbox, vmware, etc). [[11]](#11)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|B0009.012|The malware checks for an unmoving mouse cursor. [[12]](#12)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip detects VMWare, Virtual PC, and Virtual Box. It also detects VM environments in general by considering time lapses. [[1]](#1)|
+|[**Emotet**](../xample-malware/emotet.md)|2018|B0009.010|Emotet checks for various processes that are associated with various virtual machines by comparing hash values of the process names with the hash values of the list of running process names. [[6]](#6)|
+|[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus checks for the presence of virtualization software by querying the system registry. [[7]](#7)|
+|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0009.003|Malware checks if it is running in a sandbox. If it is, the malware exits. [[8]](#8) [[9]](#9)|
+|[**Ursnif**](../xample-malware/ursnif.md)|2016|B0009.004|The malware checks if there are virtual machine processes running (Vbox, vmware, etc). [[10]](#10)|
+|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|B0009.012|The malware checks for an unmoving mouse cursor. [[11]](#11)|
 
 
 ## Detection
@@ -148,7 +148,7 @@ jmp short loc_401CBB
 
 ## References
 
-<a name="1">[1]</a> https://web.archive.org/web/20161025013916/https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
+<a name="1">[1]</a> Atif Mushtaq, FireEye, "The Dead Giveaways of VM-Aware Malware," 27 January 2011. https://web.archive.org/web/20161025013916/https:/www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
 
 <a name="2">[2]</a> https://search.unprotect.it/map/sandbox-evasion/
 
@@ -158,16 +158,14 @@ jmp short loc_401CBB
 
 <a name="5">[5]</a> https://github.com/LordNoteworthy/al-khaser
 
-<a name="6">[6]</a> https://web.archive.org/web/20161025013916/https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
+<a name="6">[6]</a> https://securelist.com/the-banking-trojan-emotet-detailed-analysis/69560/
 
-<a name="7">[7]</a> https://securelist.com/the-banking-trojan-emotet-detailed-analysis/69560/
+<a name="7">[7]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
 
-<a name="8">[8]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
+<a name="8">[8]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
 
-<a name="9">[9]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
+<a name="9">[9]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
 
-<a name="10">[10]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
+<a name="10">[10]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-banking-trojan-campaign-sandbox-evasion-techniques
 
-<a name="11">[11]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-banking-trojan-campaign-sandbox-evasion-techniques
-
-<a name="12">[12]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+<a name="11">[11]</a> capa v4.0, analyzed at MITRE on 10/12/2022

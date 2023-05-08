@@ -9,7 +9,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b>Clipboard Modification (<a href="https://attack.mitre.org/techniques/T1510/">T1510</a>)</b></td>
+<td><b>Data Manipulation: Transmitted Data Manipulation (<a href="https://attack.mitre.org/techniques/T1641/001/">T1641.001</a>)</b></td>
 </tr>
 <tr>
 <td><b>Impact Type</b></td>
