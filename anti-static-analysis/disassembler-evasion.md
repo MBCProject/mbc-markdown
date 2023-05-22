@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>4 May 2023</b></td>
+<td><b>19 May 2023</b></td>
 </tr>
 </table>
 
@@ -37,6 +37,7 @@ Anti-disassembly techniques take advantage of weaknesses in either flow-oriented
 
 |Name|ID|Description|
 |---|---|---|
+|**Argument Obfuscation**|B0012.001|Simple number or string arguments to API calls are calculated at runtime, making linear disassembly more difficult.|
 |**Conditional Misdirection**|B0012.002|Conditional jumps are sometimes used to confuse disassembly engines, resulting in the wrong instruction boundaries and thus wrong mnemonic and operands; may be identified by instructions *jmp/jcc to a label+#* (e.g., JNE loc_401345fe+2).|
 |**Desynchronizing Opaque Predicates**|B0012.006|Opaque predicates inject superfluous branches into the disassembly, resulting in disassembly desynchronization, as well as code bloat. The junk bytes introduced damage the disassembly process when the bytes are treated as code. [[6]](#6) This method is related to Unprotect technique U0201.|
 |**VBA Stomping**|B0012.005|Typically, VBA source code is compiled into p-code, which is stored with compressed sourced code in the OLE file with VBA macros. VBA Stomping - when the VBA source code is removed and only the p-code remains - makes analysis much harder. See [[4]](#4) for an analysis of a VBA-Stomped malicious VBA Office document. See [[5]](#5) for information on Evil Clippy, a tool that creates malicious MS Office documents.|
