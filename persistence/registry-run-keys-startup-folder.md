@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>21 November 2022</b></td>
+<td><b>19 May 2023</b></td>
 </tr>
 </table>
 
@@ -39,7 +39,7 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware has an auto-start service that allows it to run whenever the machine boots. [[16]](#16)|
 |[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|To start itself at system boot, Poison Ivy adds registry entries. [[2]](#2)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon drops the file "Systen.dll" and adds the registry entry: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Notify\BITS DllName = "%System%\Systen.dll". [[3]](#3)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|E1547.001|Hupigon persists via Run registry key. [[3]](#3)|
+|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon persists via Run registry key. [[3]](#3)|
 |[**Terminator**](../xample-malware/terminator.md)|2013|--|The Terminator RAT sets "2019" as Windows' startup folder by modifying a registry value. [[4]](#4)|
 |[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware creates an "autorun" registry key. [[5]](#5)|
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR installs itself under registry run keys to establish persistence. [[6]](#6)|
@@ -52,7 +52,7 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 |[**Emotet**](../xample-malware/emotet.md)|2018|--|To start itself at system boot, Emotet adds the downloaded payload to the registry to maintain persistence. [[13]](#13)|
 |[**Bagle**](../xample-malware/bagle.md)|2004|--|Bagle adds registry keys to enable its automatic execution at every system startup. [[14]](#14)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Malware adds registry keys to enable startup after reboot. [[15]](#15)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|E1547.001|Redhip persists via a Run registry key. [[17]](#17)|
+|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip persists via a Run registry key. [[17]](#17)|
 
 
 ## References

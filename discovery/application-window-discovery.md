@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>19 May 2023</b></td>
 </tr>
 </table>
 
@@ -34,6 +34,7 @@ Malware may attempt to get a listing of open application windows.
 
 |Name|ID|Description|
 |---|---|---|
+|**Window Text**|E1010.m01|After finding an open application window, malware gets graphical window text.|
 
 ## Use in Malware
 
