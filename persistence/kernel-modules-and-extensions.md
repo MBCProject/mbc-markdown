@@ -43,7 +43,7 @@ See ATT&CK: **Boot or Logon Autostart Execution: Kernel Modules and Extensions (
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Drovorub**](../xample-malware/drovorub.md)|2023|--|Drovorub uses a kernel module rootkit for loading and persistance. [[1]](#1)|
+|[**Drovorub**](../xample-malware/drovorub.md)|2020|--|Drovorub uses a kernel module rootkit for loading and for persistence. [[1]](#1)|
 
 ## References
 

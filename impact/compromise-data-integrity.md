@@ -40,7 +40,7 @@ The related **Data Manipulation: Stored Data Manipulation ([T1565.001](https://a
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**DYEPACK**](../xample-malware/dyepack.md)|2023|--|DYEPACK (a suite of tools) creates, deletes, and alters records in databases used for SWIFT transactions. [[2]](#2)|
+|[**DYEPACK**](../xample-malware/dyepack.md)|2015|--|DYEPACK alters records in databases used for SWIFT transactions. [[2]](#2)|
 
 
 ## References

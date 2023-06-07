@@ -25,7 +25,6 @@
 </tr>
 </table>
 
-
 # Cryptocurrency
 
 Malware accesses files that contain sensitive data or credentials related to Bitcoin and other cryptocurrency wallets.
@@ -39,9 +38,11 @@ Malware accesses files that contain sensitive data or credentials related to Bit
 |**Zcash**|B0028.003|Access Zcash data.|
 
 ## Use in Malware
+
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**ElectroRAT**](../xample-malware/electrorat.md)|2023|--|ElectroRAT compromises multiple currencies, including Monaro, Doegecoin, Ethereum, Litecoin, and Bitcoin. [[1]](#1)|
+|[**ElectroRAT**](../xample-malware/electrorat.md)|2020|--|ElectroRat examines the disk for cryptocurrency addresses and keys to steal money from a wallet. It compromises multiple currencies, including Monaro, Doegecoin, Ethereum, Litecoin, and Bitcoin. [[1]](#1)|
 
 ## References
+
 <a name="1">[1]</a> https://www.intezer.com/blog/research/operation-electrorat-attacker-creates-fake-companies-to-drain-your-crypto-wallets/
