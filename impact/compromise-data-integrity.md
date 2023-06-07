@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.0</b></td>
+<td><b>2.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>4 May 2023</b></td>
+<td><b>3 June 2023</b></td>
 </tr>
 </table>
 
@@ -36,6 +36,15 @@ Data stored on the file system of a compromised system is manipulated to comprom
 
 The related **Data Manipulation: Stored Data Manipulation ([T1565.001](https://attack.mitre.org/techniques/T1565/001/))** ATT&CK sub-technique was defined subsequent to this MBC behavior.
 
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**DYEPACK**](../xample-malware/dyepack.md)|2023|--|DYEPACK (a suite of tools) creates, deletes, and alters records in databases used for SWIFT transactions. [[2]](#2)|
+
+
 ## References
 
 <a name="1">[1]</a> "TRISIS Malware: Analysis of Safety System Targeted Malware, version 1.20171213," Dragos, 13 Dec. 2017. [Online]. Available: https://www.dragos.com/wp-content/uploads/TRISIS-01.pdf.
+
+<a name="2">[2]</a> https://content.fireeye.com/apt/rpt-apt38

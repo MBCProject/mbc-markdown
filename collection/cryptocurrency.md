@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.0</b></td>
+<td><b>2.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>3 June 2023</b></td>
 </tr>
 </table>
 
@@ -37,3 +37,11 @@ Malware accesses files that contain sensitive data or credentials related to Bit
 |**Bitcoin**|B0028.001|Access Bitcoin data.|
 |**Ethereum**|B0028.002|Access Ethereum data.|
 |**Zcash**|B0028.003|Access Zcash data.|
+
+## Use in Malware
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**ElectroRAT**](../xample-malware/electrorat.md)|2023|--|ElectroRAT compromises multiple currencies, including Monaro, Doegecoin, Ethereum, Litecoin, and Bitcoin. [[1]](#1)|
+
+## References
+<a name="1">[1]</a> https://www.intezer.com/blog/research/operation-electrorat-attacker-creates-fake-companies-to-drain-your-crypto-wallets/

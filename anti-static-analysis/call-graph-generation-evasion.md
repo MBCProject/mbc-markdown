@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.0</b></td>
+<td><b>2.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>4 May 2023</b></td>
+<td><b>3 June 2023</b></td>
 </tr>
 </table>
 
@@ -40,6 +40,7 @@ Malicious code evades accurate call graph generation, which can be used for malw
 |---|---|---|
 |**Invoke NTDLL System Calls via Encoded Table**|B0010.002|Invokes ntdll.dll functions without using an export table; an encoded translation table on the stack is used instead. [[5]](#5)|
 |**Two-layer Function Return**|B0010.001|Two layer jumping confuses tools plotting call graphs. [[5]](#5)|
+|**Shadow Process Communication**|B0010.003| Uses muitiple processes (instead of one process) to make behavior detection more difficult. [[6]](#6)|
 
 ## References
 
@@ -52,3 +53,6 @@ Malicious code evades accurate call graph generation, which can be used for malw
 <a name="4">[4]</a> J. Kinable, "Malware Detection Through Call Graphs," Master thesis, Department of Telematics, Norwegian University of Science and Technology, Norway, June 2010. [Online]. Available: https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/262290/353049_FU LLTEXT01.pdf?sequence=1&isAllowed=y.
 
 <a name="5">[5]</a> http://fumalwareanalysis.blogspot.com/2012/01/malware-analysis-tutorial-10-tricks-for.html
+
+<a name="6">[6]</a> Weiqin Ma, Pu Duan, Sanmin Liu, Guofei Gu and Jyh-Charn Liu,"Shadow Attacks: Automatically Evading System-Call-Behavior
+Based Malware Detection" https://people.engr.tamu.edu/guofei/paper/ShadowAttacks_final-onecolumn.pdf

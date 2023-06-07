@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.0</b></td>
+<td><b>2.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>3 June 2023</b></td>
 </tr>
 </table>
 
@@ -37,3 +37,14 @@ See ATT&CK: **Boot or Logon Autostart Execution: Kernel Modules and Extensions (
 |Name|ID|Description|
 |---|---|---|
 |**Device Driver**|F0010.001|Allows kernel to access hardware connected to the system.|
+
+
+# Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Drovorub**](../xample-malware/drovorub.md)|2023|--|Drovorub uses a kernel module rootkit for loading and persistance. [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> https://media.defense.gov/2020/Aug/13/2002476465/-1/-1/0/CSA_DROVORUB_RUSSIAN_GRU_MALWARE_AUG_2020.PDF

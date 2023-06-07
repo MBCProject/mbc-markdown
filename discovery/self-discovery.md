@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.0</b></td>
+<td><b>2.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>3 June 2023</b></td>
 </tr>
 </table>
 
@@ -29,3 +29,24 @@
 # Self Discovery
 
 Malware may gather information about itself, such as its filename or size on disk. 
+
+# Methods
+
+|Name|ID|Description|
+|---|---|---|
+|**Use Hashquine**|B0038.001| Malware uses a hashquine (the file contains it's own hash) for use as an integrity check. [[1]](#1)|
+|**Check Magic String**|B0038.002| Malware checks a static value (i.e., magic string or number) to verify integrity. [[2]](#2)|
+|**Check Section Length**|B0038.003| Malware checks the length of a section to verify integrity. [[2]](#2)|
+
+## Use in Malware
+
+Name|Date|Method|Description|
+|---|---|---|---|
+|[**WannaCry**](../xample-malware/wannacry.md)|2017|B0038.002|The malware checks a string, keylen and a magic number before decrypting a dll. [[2]](#2)|
+|[**WannaCry**](../xample-malware/wannacry.md)|2017|B0038.003|The malware checks the data lengh of a section before decypting a dll. [[2]](#2)|
+
+
+## References
+
+<a name="1">[1]</a> https://github.com/Rogdham/gif-md5-hashquine
+<a name="2">[2]</a> https://www.mandiant.com/resources/blog/wannacry-malware-profile
