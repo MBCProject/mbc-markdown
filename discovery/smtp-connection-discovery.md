@@ -29,10 +29,13 @@
 # SMTP Connection Discovery
 
 Malware may test whether an outgoing SMTP connection can be made from the system on which the malware instance is executing to some SMTP server, by sending a test SMTP transaction. 
+
 ## Use in Malware
+
 Name|Date|Method|Description|
 |---|---|---|---|
 |[**Snake**](../xample-malware/snake.md)|2004|--|Snake attempts to login to an attacker controlled SMTP server before sending information. [[1]](#1)|
 
 ## References
+
 <a name="1">[1]</a> https://www.cybereason.com/blog/research/threat-analysis-report-snake-infostealer-malware

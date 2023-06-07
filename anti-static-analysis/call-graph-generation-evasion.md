@@ -40,7 +40,7 @@ Malicious code evades accurate call graph generation, which can be used for malw
 |---|---|---|
 |**Invoke NTDLL System Calls via Encoded Table**|B0010.002|Invokes ntdll.dll functions without using an export table; an encoded translation table on the stack is used instead. [[5]](#5)|
 |**Two-layer Function Return**|B0010.001|Two layer jumping confuses tools plotting call graphs. [[5]](#5)|
-|**Shadow Process Communication**|B0010.003| Uses muitiple processes (instead of one process) to make behavior detection more difficult. [[6]](#6)|
+|**Shadow Process Communication**|B0010.003| Uses multiple processes (instead of one process) to make behavior detection more difficult. [[6]](#6)|
 
 ## References
 

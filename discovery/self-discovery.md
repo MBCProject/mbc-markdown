@@ -50,4 +50,5 @@ Name|Date|Method|Description|
 ## References
 
 <a name="1">[1]</a> https://github.com/Rogdham/gif-md5-hashquine
+
 <a name="2">[2]</a> https://www.mandiant.com/resources/blog/wannacry-malware-profile
