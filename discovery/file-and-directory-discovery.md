@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.0</b></td>
+<td><b>2.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>21 November 2022</b></td>
+<td><b>6 June 2022</b></td>
 </tr>
 </table>
 
@@ -61,6 +61,7 @@ Malware may enumerate files and directories or may search for specific files or 
 |[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip gets a file size. [[6]](#6)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware gets the file version info. [[6]](#6)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon gets a common file path. [[6]](#6)|
+|[**ElectroRAT**](../xample-malware/electrorat.md)|2020|--|ElectroRat looks for wallets to steal cryptocurrency. [[7]](#7)|
 
 
 ## References
@@ -76,3 +77,5 @@ Malware may enumerate files and directories or may search for specific files or 
 <a name="5">[5]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
 
 <a name="6">[6]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
+<a name="7">[7]</a> https://www.intezer.com/blog/research/operation-electrorat-attacker-creates-fake-companies-to-drain-your-crypto-wallets/

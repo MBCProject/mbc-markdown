@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.0</b></td>
+<td><b>2.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>21 November 2022</b></td>
+<td><b>6 June 2023</b></td>
 </tr>
 </table>
 
@@ -90,6 +90,7 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |[**Kovter**](../xample-malware/kovter.md)|2016|B0030.001|The malware sends data to the C2. [[19]](#19)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|B0030.002|The malware receives data from the C2. [[19]](#19)|
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|B0030.002|The malware receives data from the C2 server. [[18]](#18)|
+|[**ElectroRAT**](../xample-malware/electrorat.md)|2020|--|ElectroRat communicates to a Pastebin site via HTTP. [[20]](#20)|
 
 
 ## Code Snippets
@@ -154,3 +155,5 @@ jmp short loc_4019A2
 <a name="18">[18]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
 
 <a name="19">[19]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
+<a name="20">[20]</a> https://www.intezer.com/blog/research/operation-electrorat-attacker-creates-fake-companies-to-drain-your-crypto-wallets/

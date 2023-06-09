@@ -39,5 +39,3 @@ Malware may bypass Data Execution Prevention (DEP).
 ## References
 
 <a name="1">[1]</a> https://medium.com/cybersecurityservices/dep-bypass-using-rop-chains-garima-chopra-e8b3361e50ce
-
-<a name="2">[2]</a> https://www.cybereason.com/blog/research/dropping-anchor-from-a-trickbot-infection-to-the-discovery-of-the-anchor-malware

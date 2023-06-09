@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.0</b></td>
+<td><b>2.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>21 November 2022</b></td>
+<td><b>6 June 2023</b></td>
 </tr>
 </table>
 
@@ -46,6 +46,7 @@ See ATT&CK: **Input Capture ([T1056](https://attack.mitre.org/techniques/T1056),
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|--|The malware injects HTML into a browser session to collect sensitive online banking information when the victim performs their online banking. [[2]](#2)|
 |[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy can capture audio and video. [[4]](#4)|
 |[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer monitors keyboard and mouse activity to determine if the machine is in use. [[5]](#5)|
+|[**ElectroRAT**](../xample-malware/electrorat.md)|2020|--|ElectroRat monitors keyboard and mouse activity to determine whether the machine is in use. [[6]](#6)|
 
 
 ## References
@@ -59,4 +60,6 @@ See ATT&CK: **Input Capture ([T1056](https://attack.mitre.org/techniques/T1056),
 <a name="4">[4]</a> https://www.cyber.nj.gov/threat-center/threat-profiles/trojan-variants/poison-ivy
 
 <a name="5">[5]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf
+
+<a name="6">[6]</a> https://www.intezer.com/blog/research/operation-electrorat-attacker-creates-fake-companies-to-drain-your-crypto-wallets/
 

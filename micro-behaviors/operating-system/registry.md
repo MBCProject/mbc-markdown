@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.0</b></td>
+<td><b>2.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>24 May 2023</b></td>
 </tr>
 </table>
 
@@ -40,7 +40,7 @@ Malware modifies the registry.
 |**Open Registry Key**|C0036.003|Malware opens a registry key.|
 |**Query Registry Key**|C0036.005|Malware queries a registry key.|
 |**Query Registry Value**|C0036.006|Malware queries a registry value.|
-|**Set Registry Key**|C0036.001|Malware sets a registry key.|
+|**Set Registry Value**|C0036.001|Malware sets a registry value.|
 
 ## Use in Malware
 

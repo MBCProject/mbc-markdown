@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.0</b></td>
+<td><b>2.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>19 May 2023</b></td>
+<td><b>6 June 2023</b></td>
 </tr>
 </table>
 
@@ -53,6 +53,7 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 |[**Bagle**](../xample-malware/bagle.md)|2004|--|Bagle adds registry keys to enable its automatic execution at every system startup. [[14]](#14)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Malware adds registry keys to enable startup after reboot. [[15]](#15)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip persists via a Run registry key. [[17]](#17)|
+|[**WannaCry**](../xample-malware/wannacry.md)|2017|--|WannaCry creates two registry run keys to ensure persistence. [[18]](#18)|
 
 
 ## References
@@ -90,3 +91,5 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 <a name="16">[16]</a> https://www.trendmicro.com/en_us/research/18/k/trickbot-shows-off-new-trick-password-grabber-module.html
 
 <a name="17">[17]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
+<a name="18">[18]</a> https://www.mandiant.com/resources/blog/wannacry-malware-profile
