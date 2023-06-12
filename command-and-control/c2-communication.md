@@ -121,7 +121,7 @@ jmp short loc_4019A2
 
 <a name="2">[2]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
 
-<a name="3">[3]</a> https://www.mandiant.com/resources/hot-knives-through-butter-evading-file-based-sandboxes
+<a name="3">[3]</a> https://www.fireeye.com/content/dam/fireeye-www/current-threats/pdfs/pf/file/fireeye-hot-knives-through-butter.pdf
 
 <a name="4">[4]</a> https://citizenlab.ca/2016/04/between-hong-kong-and-burma/
 

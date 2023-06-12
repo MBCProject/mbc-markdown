@@ -76,7 +76,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 
 ## References
 
-<a name="1">[1]</a> https://joesecurity.org/blog/43104088277279070
+<a name="1">[1]</a> https://www.joesecurity.org/blog/4310408827727907098
 
 <a name="2">[2]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 

@@ -41,4 +41,4 @@ See ATT&CK: **System Services ([T1569](https://attack.mitre.org/techniques/T1569
 
 ## References
 
-<a name="1">[1]</a> https://support.resolver.com/hc/en-ca/articles/207161116-Configure-Microsoft-Distributed-Transaction-Coordinator-MSDTC-
+<a name="1">[1]</a> https://cyware.com/news/catb-ransomware-exploits-msdtc-service-to-steal-data-3bb46fc0

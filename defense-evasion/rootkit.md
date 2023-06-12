@@ -65,7 +65,7 @@ Rootkits can also be detected via memory dump analysis or virtual machine intros
 
 <a name="1">[1]</a> https://en.wikipedia.org/wiki/Rootkit
 
-<a name="2">[2]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
+<a name="2">[2]</a> https://www.cyber.nj.gov/threat-center/threat-profiles/trojan-variants/poison-ivy
 
 <a name="3">[3]</a> https://www.f-secure.com/v-descs/backdoor_w32_hupigon.shtml
 

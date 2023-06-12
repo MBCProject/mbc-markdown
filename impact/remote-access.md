@@ -57,7 +57,7 @@ Note that the **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniqu
 
 <a name="1">[1]</a> https://en.wikipedia.org/wiki/Remote_access_trojan
 
-<a name="2">[2]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
+<a name="2">[2]</a> https://www.cyber.nj.gov/threat-center/threat-profiles/trojan-variants/poison-ivy
 
 <a name="3">[3]</a> https://en.wikipedia.org/wiki/DarkComet
 

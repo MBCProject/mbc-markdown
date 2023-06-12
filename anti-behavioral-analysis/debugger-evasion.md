@@ -89,6 +89,6 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 
 <a name="2">[2]</a> https://web.archive.org/web/20210225195315/https://www.synack.com/blog/analyzing-the-anti-analysis-logic-of-an-adware-installer/
 
-<a name="3">[3]</a> Atif Mushtaq, FireEye, "The Dead Giveaways of VM-Aware Malware," 27 January 2011. https://web.archive.org/web/20161025013916/https:/www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
+<a name="3">[3]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
 
 <a name="4">[4]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/

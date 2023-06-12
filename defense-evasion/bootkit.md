@@ -44,5 +44,5 @@ The MBC also associates the Bootkit behavior with Defense Evasion because the ma
 
 <a name="1">[1]</a> https://www.webroot.com/blog/2011/09/13/mebromi-the-first-bios-rootkit-in-the-wild/
 
-<a name="2">[2]</a> https://eclypsium.com/wp-content/uploads/2020/12/TrickBot-Now-Offers-TrickBoot-Persist-Brick-Profit.pdf
+<a name="2">[2]</a> https://eclypsium.com/wp-content/uploads/TrickBot-Now-Offers-TrickBoot-Persist-Brick-Profit.pdf
 

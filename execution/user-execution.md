@@ -52,7 +52,7 @@ See ATT&CK Technique: **User Execution ([T1204](https://attack.mitre.org/techniq
 
 <a name="2">[2]</a> https://blogs.cisco.com/security/talos/rombertik
 
-<a name="3">[3]</a> https://www.mandiant.com/resources/hot-knives-through-butter-evading-file-based-sandboxes
+<a name="3">[3]</a> https://www.fireeye.com/content/dam/fireeye-www/current-threats/pdfs/pf/file/fireeye-hot-knives-through-butter.pdf
 
 <a name="4">[4]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
 
