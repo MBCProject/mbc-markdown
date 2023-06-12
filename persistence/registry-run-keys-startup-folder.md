@@ -60,7 +60,7 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 
 <a name="1">[1]</a> https://threatvector.cylance.com/en_us/home/windows-registry-persistence-part-2-the-run-keys-and-search-order.html
 
-<a name="2">[2]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
+<a name="2">[2]</a> https://www.cyber.nj.gov/threat-center/threat-profiles/trojan-variants/poison-ivy
 
 <a name="3">[3]</a> https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/HUPIGON
 
