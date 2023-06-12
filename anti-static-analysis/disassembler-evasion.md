@@ -53,7 +53,7 @@ Anti-disassembly techniques take advantage of weaknesses in either flow-oriented
 
 ## References
 
-<a name="1">[1]</a> Practical Malware Analysis by Michael Sikorski, Andrew Honig, February 2012, Publisher(s): No Starch Press.
+<a name="1">[1]</a> M. Sikorski and A. Honig, Practical Malware Analysis: The Hands-On Guide to Dissecting Malicious Software, No Starch Press, 2012.
 
 <a name="2">[2]</a> https://staff.ustc.edu.cn/~bjhua/courses/security/2014/readings/anti-disas.pdf
 

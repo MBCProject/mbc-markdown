@@ -43,7 +43,7 @@ This behavior is related to the **Phishing ([T1566](https://attack.mitre.org/tec
 
 ## References
 
-<a name="1">[1]</a> https://www.trustwave.com/Resources/SpiderLabs-Blog/Gamut-Spambot-Analysis/
+<a name="1">[1]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/
 
 <a name="2">[2]</a> https://en.wikipedia.org/wiki/Bagle_(computer_worm)
 

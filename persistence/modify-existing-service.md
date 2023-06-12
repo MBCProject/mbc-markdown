@@ -45,7 +45,7 @@ See ATT&CK: **Create or Modify System Process::Windows Service ([T1543.003](http
 
 ## References
 
-<a name="1">[1]</a> https://www.cyber.nj.gov/threat-profiles/trojan-variants/poison-ivy
+<a name="1">[1]</a> https://www.cyber.nj.gov/threat-center/threat-profiles/trojan-variants/poison-ivy
 
 <a name="2">[2]</a> https://unit42.paloaltonetworks.com/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
 

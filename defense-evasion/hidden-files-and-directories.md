@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.0</b></td>
+<td><b>2.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>21 November 2022</b></td>
+<td><b>6 June 2023</b></td>
 </tr>
 </table>
 
@@ -54,6 +54,7 @@ See ATT&CK: **Hide Artifacts: Hidden Files and Directories ([T1564.001](https://
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|F0005.002|Vobfus is located on external drives or network shares and attaches itself to ZIP and RAR files, other removable drives, and network shares. Vobfus hides folders on the external drive and drops an executable with the same name and a disguised folder icon. [[4]](#4)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|F0005.002|Malware looks for a specific folder on the victim. If the folder doesn't exist, the malware creates the folder on the victim by calling CreateDirectoryA and downloads the remote file into the new folder. [[5]](#5) [[6]](#6)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|F0005.001|The malware also appends the filename and extension .ocx to the ProgramData folder path. [[5]](#5) [[6]](#6)|
+|[**WannaCry**](../xample-malware/wannacry.md)|2017|F0005.003|WannaCry uses the +h attribute to hide its files. [[7]](#7)|
 
 
 ## References
@@ -69,3 +70,5 @@ See ATT&CK: **Hide Artifacts: Hidden Files and Directories ([T1564.001](https://
 <a name="5">[5]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
 
 <a name="6">[6]</a> https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader
+
+<a name="7">[7]</a> https://www.mandiant.com/resources/blog/wannacry-malware-profile

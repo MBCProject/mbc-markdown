@@ -32,6 +32,6 @@ Behaviors that prevent, obstruct, or evade behavioral analysis of malware--for e
 
 ## References
 
-<a name="1">[1]</a> Unprotect Project, a database about malware self-defense and protection. https://search.unprotect.it/map
+<a name="1">[1]</a> https://search.unprotect.it/map/
 
 <a name="2">[2]</a> InDepthUnpacking, course content for teaching malware anti-analysis techniques and mitigations, with emphasis on packers. https://github.com/knowmalware/InDepthUnpacking

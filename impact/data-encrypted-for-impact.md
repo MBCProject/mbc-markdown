@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.0</b></td>
+<td><b>2.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>21 November 2022</b></td>
+<td><b>6 June 2023</b></td>
 </tr>
 </table>
 
@@ -51,6 +51,7 @@ See ATT&CK: **Data Encrypted for Impact ([T1486](https://attack.mitre.org/techni
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|Locky Bart encrypts files for ransom without any connection to the Internet. [[3]](#3)|
 |[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam encrypts data to hold for ransom. [[4]](#4)|
 |[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker encrypts files for ransom. [[5]](#5)|
+|[**WannaCry**](../xample-malware/wannacry.md)|2017|B0025|WannaCry encrypts files for ransom. [[6]](#6)|
 
 
 ## References
@@ -64,4 +65,6 @@ See ATT&CK: **Data Encrypted for Impact ([T1486](https://attack.mitre.org/techni
 <a name="4">[4]</a> https://www.cisa.gov/uscert/ncas/alerts/AA18-337A
 
 <a name="5">[5]</a> https://www.trendmicro.com/en_us/research/20/e/netwalker-fileless-ransomware-injected-via-reflective-loading.html
+
+<a name="6">[6]</a> https://www.mandiant.com/resources/blog/wannacry-malware-profile
 

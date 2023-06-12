@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.0</b></td>
+<td><b>2.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>01 May 2023</b></td>
+<td><b>6 June 2023</b></td>
 </tr>
 </table>
 
@@ -60,6 +60,7 @@ Droppers may be described as “single stage” or “two stage.” While the fo
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|The malware contains an embedded PE file. [[19]](#19)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut contains an embedded PE file. [[19]](#19)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip contains an embedded PE file. [[19]](#19)|
+|[**ElectroRAT**](../xample-malware/electrorat.md)|2020|--|ElectroRat looks for wallets to steal cryptocurrency. [[20]](#20)|
 
 
 ## References
@@ -100,3 +101,5 @@ Droppers may be described as “single stage” or “two stage.” While the fo
 <a name="18">[18]</a> https://us.norton.com/internetsecurity-emerging-threats-mazar-bot-malware-invades-and-erases-android-devices.html
 
 <a name="19">[19]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
+<a name="20">[20]</a> https://www.intezer.com/blog/research/operation-electrorat-attacker-creates-fake-companies-to-drain-your-crypto-wallets/
