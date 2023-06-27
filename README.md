@@ -8,8 +8,8 @@ Open-source malware analysis tools map their output to MBC and ATT&CK:
 
 MBC supports other community efforts:
 
-* [OASIS CACAO](https://github.com/oasis-tcs/cacao) - an example CACAO playbook for references MBC behaviors (see [Locky Bart](https://github.com/oasis-tcs/cacao/tree/master/Examples/CACAO-2.0)).
-* [MITRE Engenuity Attack Flow](https://github.com/center-for-threat-informed-defense/attack-flow/tree/main/corpus) - MBC corpus examples illustrate how Attack Flow can reference MBC behaviors ([Shamoon](./xample-malware/shamoon.md) and [SearchAwesome](./xample-malware/searchawesome.md)).
+* [CACAO](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cacao) - an example [CACAO playbook](https://github.com/oasis-tcs/cacao/tree/master/Examples/CACAO-2.0) for [Locky Bart](https://github.com/MBCProject/mbc-markdown/blob/main/xample-malware/locky-bart.md) references MBC behaviors.
+* [Attack Flow](https://github.com/center-for-threat-informed-defense/attack-flow/tree/main/corpus) - MBC corpus examples [Shamoon](./xample-malware/shamoon.md) and [SearchAwesome](./xample-malware/searchawesome.md) illustrate how Attack Flow can reference MBC behaviors.
 
 Check out MBC presentations:
 
