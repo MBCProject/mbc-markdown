@@ -1,12 +1,17 @@
 # <a name="mbc"></a>Malware Behavior Catalog v2.3 #
 The Malware Behavior Catalog (MBC) is a catalog of malware objectives and behaviors, created to support malware analysis-oriented use cases, such as labeling, similarity analysis, and standardized reporting. Please see the [FAQ](./yfaq/README.md) page for answers to common questions, and read the [newsletters](./ynewsletters/README.md) for information on the most recent MBC updates and activity.
 
-Two open-source malware analysis tools map their output to MBC and ATT&CK:
+Open-source malware analysis tools map their output to MBC and ATT&CK:
 
 * [capa](https://github.com/fireeye/capa-rules) - see the [capa rule mapping distribution](./capa.md)
 * [CAPE](https://github.com/kevoreilly/community/tree/master/modules/signatures) - see the [CAPE signature mapping distribution](./cape.md)
 
-Check out the MBC presentations:
+MBC supports other community efforts:
+
+* [CACAO](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cacao) - a [playbook](https://github.com/oasis-tcs/cacao/tree/master/Examples/CACAO-2.0) for the MBC corpus malware [Locky Bart](./xample-malware/locky-bart.md) shows how CACAO can reference MBC behaviors.
+* [Attack Flow](https://github.com/center-for-threat-informed-defense/attack-flow/tree/main/corpus) - flow diagrams for the MBC corpus malware [Shamoon](./xample-malware/shamoon.md) and [SearchAwesome](./xample-malware/searchawesome.md) illustrate how Attack Flow can reference MBC behaviors.
+
+Check out MBC presentations:
 
 * [Standardized Reporting with the Malware Behavior Catalog](https://youtu.be/qZef-SoREdY), VB2020 localhost (October 2020)
 * [Malware Behavior Catalog](https://youtu.be/KY8Ty-0sdVU), BSides DC (October 2019)
@@ -55,6 +60,9 @@ In cases where an MBC behavior enhances a technique/sub-technique that is define
 The canonical representation for MBC content is **OBJECTIVE::Behavior::Method**. For example, *ANTI-BEHAVIORAL ANALYSIS::Debugger Detection::Process Environment Block*. 
 
 Objectives and behaviors can be used alone, but a method *must* be associated with a behavior.
+
+### STIX 2.1 Representation ###
+A refined STIX 2.1 [Malware Behavior Extension](https://docs.google.com/document/d/1azr8ewNXhWyLt1a2wE2cG964QuFSPdIBSqCJFJrwEVo/) includes new STIX domain objects for MBC objectives, behaviors, and methods.
 
 ### Navigator View ###
 This visual representation of the MBC Matrix is based on the ATT&CK Navigator. Two views are available: 
