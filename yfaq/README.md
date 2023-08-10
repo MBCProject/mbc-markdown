@@ -14,7 +14,7 @@
 
 ## <a name="next"></a>What's New? ##
 
-* **MBC v3.0** - A new version of MBC will be released in the second half of 2023. Changes include behavior detection information, new properties (version, created and modified dates).
+* **MBC v3.0** - A new version of MBC will be released in the second half of 2023. Changes include behavior detection information and new properties (version, created and modified dates).
 
 * **STIX 2 Representation** - MBC content is available in STIX 2.1 format which uses a new STIX 2.1 Extension Definition object - see the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository.
 
@@ -22,7 +22,7 @@
 
 * **CACAO Playbook Example** - We defined a [CACAO](https://github.com/oasis-tcs/cacao/tree/master/Examples/CACAO-2.0) playbook for [Locky Bart](../xample-malware/locky-bart.md) that references MBC behaviors.
 
-* **MBC Website** - We are developing an MBC website, which should be live in late 2023! 
+* **MBC Website** - We are developing a website! It should go live in late 2023.
 
 ## <a name="use"></a>Using MBC ##
 
@@ -43,12 +43,12 @@ Most of the content in the MBC malware [corpus](../xample-malware) came from map
 While building the malware corpus, the MBC team compiled the following tips for mapping malware analysis reports to MBC and ATT&CK.
 
 * Review ATT&CK and MBC content to become familiar with options for mapping. The MBC review should include micro-behaviors. 
-* If a malware analysis report contains explicit mappings to ATT&CK techniques, start by reviewing and validating them. We found it was easier to validate ATT&CK mappings before identifying unmapped behaviors because it allowed one to get an overview of the behaviors before getting into the details.
+* If a malware analysis report contains explicit mappings to ATT&CK techniques, start by reviewing and validating them. We found it was easier to validate ATT&CK mappings before identifying unmapped behaviors because ATT&CK mappings usually provide an overview.
 * Check whether an ATT&CK technique has been enhanced in MBC and if so, update the mapping to reflect the MBC identifier.
 * If a report does not explicitly reference ATT&CK techniques, it’s still easier to consider ATT&CK mappings before MBC mappings because ATT&CK techniques are generally higher level than MBC behaviors. 
-* The ATT&CK Powered Suit  browser extension is useful for quickly finding potential ATT&CK techniques. 
-* The MBC matrix  is useful for identifying MBC behaviors and methods even though it doesn’t have search capabilities. 
-* If the mapping of a behavior is unclear, mark it for further contemplation and move on. An uncertain mapping often becomes clearer later in the process.
+* The ATT&CK Powered Suit browser extension is useful for quickly finding potential ATT&CK techniques. 
+* The MBC matrix is useful for identifying MBC behaviors and methods even though it doesn’t have search capabilities. 
+* If the mapping of a behavior is unclear, mark it for further consideration and move on. An uncertain mapping often becomes clearer later in the process.
 * Analysis reports often contain initial compromise information that is out of scope of MBC (i.e., activity beyond the malware code).
 
 ### What are objectives? ###
@@ -150,7 +150,7 @@ To illustrate MBC's use, we defined a playbook for [Locky Bart](../xample-malwar
 MBC content is available in STIX 2.1 format. See the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository for details. The [usage document](https://github.com/MBCProject/mbc-stix2/blob/master/USAGE.md) gives details of how behaviors are captured with STIX 2 objects.
 
 ### Why was MBC's STIX 2.1 representation updated? ###
-The previous STIX 2.1 representation was valid, but it didn't take advantage of the STIX 2.1 Extension Definition Object. MBC users said they found the MBC representation (and ATT&CK) kludgy. ZZZZ
+The previous STIX 2.1 representation was valid, but it didn't take advantage of the STIX 2.1 Extension Definition Object. MBC users said they found the MBC representation (and ATT&CK) kludgy.
 
 ### How are malware corpus examples captured in STIX? ###
 
