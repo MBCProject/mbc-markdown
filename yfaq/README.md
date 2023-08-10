@@ -2,32 +2,27 @@
 
 * [What's New?](#next)
 * [Using MBC](#use)
-* [MBC and STIX 2](#stix)
+* [STIX Representation](#stix)
+* [Malware Analysis Tools](#tools)
+* [MBC and Other Efforts](#other)
 * [MBC's Relationship to ATT&CK](#relationship)
-* [MBC Origins](#origin)
-* [MBC Content](#content)
+* [Origins](#origin)
+* [Content Notes](#content)
+* [Malware Corpus](#corpus)
+
+**MBC Mailing List** - To join the MBC mailing list, please send a request to mbc@mitre.org.
 
 ## <a name="next"></a>What's New? ##
 
-* **MBC Mailing List** - To join the MBC mailing list, please send a request to mbc@mitre.org.
+* **MBC v3.0** - A new version of MBC will be released in the second half of 2023. Changes include behavior detection information, new properties (version, created and modified dates).
 
-* **capa-MBC Mappings** - The MBC team has contributed to the ATT&CK and MBC mappings of [capa](https://github.com/fireeye/capa), the FLARE team's open-source static analysis tool. See [capa rules](https://github.com/fireeye/capa-rules).
+* **STIX 2 Representation** - MBC content is available in STIX 2.1 format which uses a new STIX 2.1 Extension Definition object - see the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository.
 
-* **Cuckoo-MBC Mappings** - Cuckoo Sandbox 2.0.7 includes mappings between its signatures and ATT&CK. The MBC team updated the mappings using MBC, which increased the accuracy due to MBC’s malware focus. A fork of the Cuckoo community repo is now available on [MBCProject](https://github.com/MBCProject) (see [community](https://github.com/MBCProject/community) and [cuckoo](https://github.com/MBCProject/cuckoo)).
+* **Attack Flow Examples** - We defined attack flows for [Shamoon](../xample-malware/shamoon.md) and [SearchAwesome](../xample-malware/searchawesome.md) that reference MBC behaviors.
 
-* **STIX 2 Representation** - MBC content is available in STIX 2.1 format - see the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository.
+* **CACAO Playbook Example** - We defined a [CACAO](https://github.com/oasis-tcs/cacao/tree/master/Examples/CACAO-2.0) playbook for [Locky Bart](../xample-malware/locky-bart.md) that references MBC behaviors.
 
-* **Micro-behaviors** - Low-level malware behaviors that support other objectives and behaviors are captured as micro-behaviors in MBC 2.x.
-
-* **Version Control** - MBC v1.0 was released at the end of January 2020. Further changes are being tracked and releases will happen on an as-needed basis: 
-    - MBC v2.0 was released in September 2020 and includes micro-behaviors and changes associated with [ATT&CK sub-techniques](https://attack.mitre.org/resources/updates/updates-july-2020/index.html).
-    - MBC v2.1 was released in February 2021 and includes additional micro-behaviors and behavior methods.
-    - MBC v2.2 was released in February 2022 and includes additional micro-behaviors and behavior methods. Added code snippets to certain methods.
-	- MBC v2.3 was released in September 2022 and aligns with ATT&CK v11 and includes an updated malware corpus.
-
-* **MBC Website** - An MBC website will eventually replace markdown documents.
-
-* **Code Snippets** - In addition to associating malware samples to behaviors, we plan to capture code snippets that illustrate behavior implementation.
+* **MBC Website** - We are developing an MBC website, which should be live in late 2023! 
 
 ## <a name="use"></a>Using MBC ##
 
@@ -38,19 +33,46 @@
 * **Labeled data sets for malware research**: Using MBC to label malware samples provides a collection of malware meeting chosen criteria that can support research (e.g., assessment of tool effectiveness, similarity analysis).
 * **Malware analysis support**: MBC's set of identified, organized behaviors helps an analyst know what to look for, informing the malware analysis process.
 
-### How should information in the Methods section be used? ###
+### What does it mean to map a malware analysis report to MBC? ###
 
-Methods are variations of behaviors and are provided to help explain behaviors. Although it would be hard to enumerate all methods associated with a behavior, our aim is to define those most commonly used by malware. Methods may be referenced in analyses as a refinement of behaviors. 
+Malware analysis reports contain information about a malware's behaviors, but the information is in text and not standardized. Mapping a report entails interpreting the sentences to identify the associated MBC behaviors and ATT&CK techniques. 
+
+Most of the content in the MBC malware [corpus](../xample-malware) came from mapping malware analysis reports. Please see [Kovter](../xample-malware/kovter.md) and [Poison Ivy](../xample-malware/poison-ivy.md) as good examples of report mappings.
+
+### Are there any tips for successful report mappings? ###
+While building the malware corpus, the MBC team compiled the following tips for mapping malware analysis reports to MBC and ATT&CK.
+
+* Review ATT&CK and MBC content to become familiar with options for mapping. The MBC review should include micro-behaviors. 
+* If a malware analysis report contains explicit mappings to ATT&CK techniques, start by reviewing and validating them. We found it was easier to validate ATT&CK mappings before identifying unmapped behaviors because it allowed one to get an overview of the behaviors before getting into the details.
+* Check whether an ATT&CK technique has been enhanced in MBC and if so, update the mapping to reflect the MBC identifier.
+* If a report does not explicitly reference ATT&CK techniques, it’s still easier to consider ATT&CK mappings before MBC mappings because ATT&CK techniques are generally higher level than MBC behaviors. 
+* The ATT&CK Powered Suit  browser extension is useful for quickly finding potential ATT&CK techniques. 
+* The MBC matrix  is useful for identifying MBC behaviors and methods even though it doesn’t have search capabilities. 
+* If the mapping of a behavior is unclear, mark it for further contemplation and move on. An uncertain mapping often becomes clearer later in the process.
+* Analysis reports often contain initial compromise information that is out of scope of MBC (i.e., activity beyond the malware code).
+
+### What are objectives? ###
+**Objectives** correspond to the intentions behind malware behaviors. For example, malware may use [Hooking](../credential-access/hooking.md) (behavior) to load and execute code within the context of another process either to hide its execution (defense evasion objective), to gain elevated privileges (privilege escalation objective), or to access the process's memory (credential access objective). 
+
+### How should methods be used? ###
+
+**Methods** are variations of behaviors and are provided to help explain behaviors. Although it would be hard to enumerate all methods associated with a behavior, our aim is to define those most commonly used by malware. Methods may be referenced in analyses as a refinement of behaviors. 
+
+### What are micro-behaviors? ###
+
+**Micro-behaviors** are low-level malware behaviors that support other objectives and behaviors.
 
 ### When should micro-behaviors be used? ###
 
 Micro-behaviors should be used when context isn’t clear but there is value in capturing basic mechanics. For example, a behavior of “write and execute a file” can ideally map to [Execution::Install Additional Program](../execution/install-additional-program.md), but if the context isn't clear, the behaviors can be captured as [File System::Create File](../micro-behaviors/file-system/create-file.md) and [Process::Create Process](../micro-behaviors/process/create-process.md).
 
-### Can MBC behaviors be used without MBC objectives? Can objectives be used without behaviors? Or must objectives and behaviors be specified in pairs? Can methods be used alone? ###
+### Do objectives and behaviors have to be specified in pairs? Can MBC behaviors be used without MBC objectives? Can objectives be used without behaviors? ###
 
-Objectives correspond to the intentions behind malware behaviors. For example, malware may use [Hooking](../credential-access/hooking.md) (behavior) to load and execute code within the context of another process either to hide its execution (defense evasion objective), to gain elevated privileges (privilege escalation objective), or to access the process's memory (credential access objective). Because it's not always possible to know intent, MBC behaviors can be used without objectives. For example, automated sandbox analysis may indicate hooking behavior without corresponding information on intent, in which case objectives might not be specified; alternatively, *all* objectives associated with a behavior might be noted. 
+Objectives and behaviors do not need to be specified in pairs. Because it's not always possible to know intent, MBC behaviors can be used without objectives. For example, automated sandbox analysis may indicate hooking behavior without corresponding information on intent, in which case objectives might not be specified; alternatively, *all* objectives associated with a behavior might be noted. 
 
 If lower level behaviors are not known, it may be appropriate to only reference an MBC objective. For example, if a sandbox reports that a malware sample exhibits "self-defense" with no other details, the information is best captured by the Defense Evasion objective, without specifying any specific behaviors.
+
+### Can methods be used alone? ###
 
 Because methods are specific to a behavior, they're always associated with a behavior and aren’t used on their own.
 
@@ -68,7 +90,7 @@ Although one-to-one mappings are best practice, there may be some instances when
 
 ### Can malware behaviors identified by automated sandboxes and tools map to multiple MBC behaviors or should correspondence be one-to-one? ###
 
-Behaviors identified by automated tools are often intentionally broad to give an overview of the malware sample's behavior. Broad behaviors will often map to multiple MBC behaviors. For example, if a tool reports that Armadillo was used on the sample, both [Executable Code Obfuscation](../anti-static-analysis/executable-code-obfuscation.md) and [Software Packing](../anti-static-analysis/software-packing.md) behaviors apply.
+Behaviors identified by automated tools are often intentionally broad to give an overview of the malware sample's behavior. Broad behaviors will often map to multiple MBC behaviors. For example, if a tool reports that Armadillo was used on a malware sample, both [Executable Code Obfuscation](../anti-static-analysis/executable-code-obfuscation.md) and [Software Packing](../anti-static-analysis/software-packing.md) behaviors apply.
 
 ### How are MBC behaviors, possibly at different levels of abstraction, associated? ###
 
@@ -80,7 +102,7 @@ Ideally, the product vendor will provide the MBC mapping, but if not and it's no
 
 ### Can variant names captured by an anti-virus tool be captured in MBC? ###
 
-No. MBC captures behaviors and characteristics directly associated with malware code. Variant names are outside MBC's scope. A variant name may lead to published reports, in which case, one could map the sample to its associated behaviors.
+No. MBC captures behaviors and characteristics directly associated with malware code. Variant names are outside MBC's scope. A variant name may lead to published reports, in which case, one could use the report to map the sample to its associated behaviors.
 
 ### Can MBC capture specific data values associated with a behavior? ###
 
@@ -94,10 +116,49 @@ Yes. In many cases, malware will display only a subset of a behavior's attribute
 
 The MBC will evolve to better support the malware analysis community. If you have a suggestion for a new behavior (or any content change), please open an [issue](https://github.com/MBCProject/mbc-markdown/issues) on GitHub.
 
+## <a name="tools"></a>Malware Analysis Tools ##
+
+### capa ###
+
+The [capa](https://github.com/fireeye/capa) tool is an open-source static analysis tool developed by the FLARE team. Most [capa rules](https://github.com/fireeye/capa-rules) are associated with MBC behaviors and/or ATT&CK techniques. The MBC team reviews new capa rules quarterly, sometimes suggesting additions or updates.
+
+### CAPE ###
+
+The [CAPE](https://github.com/kevoreilly/CAPEv2) sandbox was derived from Cuckoo with the goal of adding automated malware unpacking and config extraction. CAPE maps its signatures to MBC and ATT&CK. The MBC team reviewed the mappings and suggested additions and updates.
+
+### Cuckoo Sandbox ###
+
+Cuckoo Sandbox 2.0.7 includes mappings between its signatures and ATT&CK. The MBC team updated the mappings using MBC, which increased the accuracy due to MBC’s malware focus. A fork of the Cuckoo community repo is available on [MBCProject](https://github.com/MBCProject) (see [community](https://github.com/MBCProject/community) and [cuckoo](https://github.com/MBCProject/cuckoo)).
+
+## <a name="other"></a>MBC and Other Community Efforts ##
+
+### What is an "attack flow" and how is MBC used in a flow? ###
+
+Developed by MITRE Engenuity, [Attack Flow](https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/attack-flow/) is a data model with supporting tooling and examples for describing sequences of adversary behaviors. Attack flows can also describe sequences of malware behaviors, and MBC (along with ATT&CK) provides a supporting catalog of malware objectives and behaviors.
+
+To illustrate MBC's use, we defined attack flows for [Shamoon](../xample-malware/shamoon.md) and [SearchAwesome](../xample-malware/searchawesome.md) that reference MBC behaviors.
+
+### What is CACAO and how is MBC used in a playbook? ###
+
+The OASIS Collaborative Automated Course of Action Operations ([CACAO](https://oasis-open.org/committees/tc_home.php?wg_abbrev=cacao)) project defines the standard for implementing course of action playbooks for cybersecurity operations. The sequence of behaviors exhibited by malware can be captured as an "attack" type playbook. 
+
+To illustrate MBC's use, we defined a playbook for [Locky Bart](../xample-malware/locky-bart.md), which is available in the [CACAO example repository](https://github.com/oasis-tcs/cacao/tree/master/Examples/CACAO-2.0). 
+
 ## <a name="stix"></a>MBC and STIX 2 ##
 
 ### How are MBC behaviors captured in STIX 2? ###
 MBC content is available in STIX 2.1 format. See the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository for details. The [usage document](https://github.com/MBCProject/mbc-stix2/blob/master/USAGE.md) gives details of how behaviors are captured with STIX 2 objects.
+
+### Why was MBC's STIX 2.1 representation updated? ###
+The previous STIX 2.1 representation was valid, but it didn't take advantage of the STIX 2.1 Extension Definition Object. MBC users said they found the MBC representation (and ATT&CK) kludgy. ZZZZ
+
+### How are malware corpus examples captured in STIX? ###
+
+Corpus examples are captured using the Malware SDO. Three new properties are defined in the STIX 2.1 Malware Behavior extension:
+ 
+* **obj_defn** (required) provides a reference to the malware that includes the MBC ID.
+* **year** (optional) denotes the year the malware was first seen.
+* **platforms** (optional) denotes the operating system affected by the malware.
 
 ## <a name="relationship"></a>MBC's Relationship to ATT&CK ##
 
@@ -112,6 +173,10 @@ Operationally, most malware behaviors are identified via analysis, either direct
 It's not feasible for ATT&CK to expand to cover *all* problem spaces, to include the malware analysis space. As stated in the ATT&CK design and philosophy document [[1]](#1), "The basis of ATT&CK is the set of individual techniques that represent actions that adversaries can perform to accomplish objectives." This differs from the malware community's need to capture information discovered via *analysis* of malware code. 
 
 While malware sometimes acts as a surrogate for an adversary (i.e., there is overlap between malware and adversary behavior), there are aspects unique to malware, mostly notably anti-analysis characteristics that are only identified during analysis: [ANTI-BEHAVIORAL ANALYSIS](../anti-behavioral-analysis) and [ANTI-STATIC ANALYSIS](../anti-static-analysis). Some MBC behaviors may be appropriate for inclusion in ATT&CK, but it is up to the ATT&CK team to identify them and integrate the content.
+
+### ATT&CK defines "tactics" and "techniques." Why does MBC define "objectives" and "behaviors" instead? ###
+
+The cyber adversary and malware analysis realms each have their own vocabulary, and MBC aims to reflect malware analysis common word usage. Just as "tactics," "techniques," and "procedures" (TTPs) are considered when discussing advanced persistent threats (APTs), "objectives" and "behaviors" are commonly considered when analyzing malware. Maintaining a distinct vocabulary also helps to better differentiate MBC and ATT&CK content.
 
 ### MBC 1.0 included ATT&CK techniques? Why is MBC v2.x a stand-alone *supplement* to ATT&CK? ###
 
@@ -137,9 +202,23 @@ After noting clear overlap between EMA and ATT&CK, we initially decided that EMA
 
 ### How were MBC behaviors identified? ###
 
-Many MBC behaviors stemmed from the MAEC and EMA work, with the collection evolving to mesh with ATT&CK tactics and techniques. We also identified MBC behaviors by studying publicly available analyses, reports, and output of automated analysis engines (some of which map behavior indicators to ATT&CK). Such resources enabled identification of malware-related ATT&CK techniques, as well as definition of new behaviors for results that could not be mapped to ATT&CK. 
+As discussed above, many MBC behaviors stemmed from MAEC and EMA. Mapping [capa rules](https://github.com/fireeye/capa-rules) to MBC was another avenue for defining behaviors (especially MBC's micro-behaviors). We also identified MBC behaviors by studying publicly available analysis reports and output of automated analysis engines (some of which map behavior indicators to ATT&CK). Such resources enabled identification of MBC-enhanced ATT&CK techniques, as well as the definition of new behaviors for results that could not be mapped to ATT&CK. 
 
 ## <a name="content"></a>MBC Content ##
+
+### Does MBC have version control? ###
+
+There was no version control when MBC v1.0 was released at the end of January 2020. However, further changes have been tracked: 
+
+* MBC v2.0 was released in September 2020 and includes micro-behaviors and changes associated with [ATT&CK sub-techniques](https://attack.mitre.org/resources/updates/updates-july-2020/index.html).
+* MBC v2.1 was released in February 2021 and includes additional micro-behaviors and behavior methods.
+* MBC v2.2 was released in February 2022 and includes additional micro-behaviors and behavior methods. Added code snippets to certain methods.
+* MBC v2.3 was released in September 2022 and aligns with ATT&CK v11 and includes an updated malware corpus.
+
+### What are code snippets? ###
+
+A code snippet illustrates a behavior or method implementation. See [Anti-Behavioral Analysis::Sandbox Detection::Product Key/ID Testing](https://github.com/MBCProject/mbc-markdown/blob/main/anti-behavioral-analysis/sandbox-detection.md#b0007005-snippet) for an example snippet.
+
 
 ### Why aren't ATT&CK [Initial Access](https://attack.mitre.org/tactics/TA0001/) techniques included in MBC? ###
 
@@ -152,9 +231,7 @@ Some malware self-replicates or distributes other malware, but in keeping with M
 
 PRE-ATT&CK is independent of technology and models an adversary's behavior as they attempt to gain access. By contrast, MBC captures behaviors associated with malware executable *code*. It does not capture human behaviors, even if the behaviors relate to malware. (Malware with obfuscated code, which makes analysis difficult, would be captured using the MBC [Executable Code Obfuscation](../anti-static-analysis/executable-code-obfuscation.md) behavior.) 
 
-### ATT&CK defines "tactics" and "techniques." Why does MBC define "objectives" and "behaviors" instead? ###
 
-The cyber adversary behavior and malware analysis realms each have their own vocabulary, and MBC aims to reflect malware analysis common word usage. Just as "tactics," "techniques," and "procedures" (TTPs) are considered when discussing advanced persistent threats (APTs), "objectives" and "behaviors" are commonly considered when analyzing malware.
 
 ### ATT&CK is organized by the Enterprise and Mobile technology domains. Why isn't MBC? ###
 
@@ -185,6 +262,18 @@ MBC maintains a malware, code-oriented perspective, so MBC behavior names will n
 Yes. Sometimes an ATT&CK technique does not provide enough granularity for malware analysis-oriented use cases; therefore, multiple, more granular MBC behaviors may link to the same ATT&CK technique. 
 
 For example, MBC defines separate behaviors for detecting sandboxes ([Sandbox Detection](../anti-behavioral-analysis/sandbox-detection.md)) and virtual machines ([Virtual Machine Detection](../anti-behavioral-analysis/virtual-machine-detection.md)). When ATT&CK was updated to include the  [Virtualization/Sandbox Evasion](https://attack.mitre.org/techniques/T1497/) technique, which includes detection of virtualization and sandboxes (although not obstruction in the sense of MBC's Dynamic Analysis Evasion behavior), the MBC behaviors were not combined. Rather, both were updated to show a relationship to the new ATT&CK technique.
+
+## <a name="corpus"></a>Malware Corpus ##
+
+### Are all behaviors for a malware sample captured in a corpus example? ###
+
+A behavior is listed for a corpus example only if an associated analysis report contains a narrative for the behavior or if the behavior is identified by an automated tool. For automated tools, the description is taken from the rule name (e.g., "initialize Winsock library" --> "Shamoon initializes a Winsock library"). 
+
+While under development, a corpus example may contain a limited number of behaviors (e.g., behaviors of particular interest may be added first).
+
+### Are all known IoCs captured in a corpus example? ###
+
+Corpus examples include some but not all indicators of compromise (IoCs) due to space considerations. 
 
 ## References
 
