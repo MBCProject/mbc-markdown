@@ -12,15 +12,15 @@
 
 ## <a name="next"></a>What's New? ##
 
-* **MBC v3.0** - The latest MBC release includes behavior detection information and new properties, such as version and created and modified dates.
+* **MBC v3.0** - The latest MBC release includes behavior detection information, expanded descriptions, and new properties, such as version and created and modified dates.
 
 * **STIX 2.1 Representation** - MBC content is available in an updated [STIX format](https://github.com/MBCProject/mbc-stix2) based on a new [STIX 2.1 extension](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications).
 
-* **Attack Flow Examples** - Attack flows for [Shamoon](../xample-malware/shamoon.md) and [SearchAwesome](../xample-malware/searchawesome.md) reference MBC behaviors.
+* **Attack Flow Examples** - Example attack flows for [Shamoon](../xample-malware/shamoon.md) and [SearchAwesome](../xample-malware/searchawesome.md) reference MBC behaviors.
 
-* **CACAO Playbook Example** - A [CACAO](https://github.com/oasis-tcs/cacao/tree/master/Examples/CACAO-2.0) playbook for [Locky Bart](../xample-malware/locky-bart.md) references MBC behaviors.
+* **CACAO Playbook Example** - An example [CACAO](https://github.com/oasis-tcs/cacao/tree/master/Examples/CACAO-2.0) playbook for [Locky Bart](../xample-malware/locky-bart.md) references MBC behaviors.
 
-* **MBC Website** - We're developing a website to replace the current markdown content, which is slated to go live in late 2023.
+* **MBC Website** - We're developing a website to replace the current markdown content. It's slated to go live in late 2023!
 
 ## <a name="use"></a>Using MBC ##
 
