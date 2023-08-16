@@ -37,7 +37,7 @@ While the definition of fileless malware can be ambiguous, here it represents ma
  
 |Name|ID|Description|
 |---|---|---|
-|**Fileless Malware**|B0027.001|Stores itself in memory. This method is related to Unprotect technique U1205 and ATT&CK sub-technique Obfuscated Files or Information: Fileless Storage [T1027.011](https://attack.mitre.org/techniques/T1027/011/)|
+|**Fileless Malware**|B0027.001|Stores itself in memory. This method is related to Unprotect technique U1205 and ATT&CK sub-technique Obfuscated Files or Information: Fileless Storage [T1027.011](https://attack.mitre.org/techniques/T1027/011/). |
 |**Registry Install**|B0027.002|Stores itself in the Windows registry.|
 
 ## Use in Malware
