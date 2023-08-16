@@ -10,7 +10,7 @@
 
 ## <a name="next"></a>What's New? ##
 
-* **MBC v3.0** - The latest MBC release includes behavior detection information, expanded descriptions, and new properties, such as version and created and modified dates.
+* **MBC v3.0** - The latest MBC release (to be released soon) includes behavior detection information, expanded descriptions, and new properties, such as version and created and modified dates.
 
 * **STIX 2.1 Representation** - MBC content is available in an updated [STIX format](https://github.com/MBCProject/mbc-stix2) based on a new [STIX 2.1 extension](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications).
 
@@ -18,7 +18,7 @@
 
 * **CACAO Playbook Example** - An example [CACAO](https://github.com/oasis-tcs/cacao/tree/master/Examples/CACAO-2.0) playbook for [Locky Bart](../xample-malware/locky-bart.md) references MBC behaviors.
 
-* **MBC Website** - We're developing a website to replace the current markdown content. It's slated to go live in late 2023!
+* **MBC Website** - We're developing a website to replace the current markdown content.
 
 * **MBC Mailing List** - To join the MBC mailing list, please send a request to mbc@mitre.org.
 
