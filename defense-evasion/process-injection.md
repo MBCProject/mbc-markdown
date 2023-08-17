@@ -73,7 +73,7 @@ The methods table includes existing ATT&CK sub-techniques, which have been enhan
 ## References
 <a name="1">[1]</a> Ashkan Hosseini, *Ten Process Injection Techniques: A Technical Survey of Common and Trending Process Injection Techniques*, July 2017. https://www.elastic.co/blog/ten-process-injection-techniques-technical-survey-common-and-trending-process
 
-<a name="2">[2]</a> https://www.cyber.nj.gov/threat-center/threat-profiles/trojan-variants/poison-ivy
+<a name="2">[2]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf
 
 <a name="3">[3]</a> https://github.com/LordNoteworthy/al-khaser
 

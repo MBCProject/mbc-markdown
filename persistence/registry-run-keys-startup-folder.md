@@ -54,6 +54,7 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Malware adds registry keys to enable startup after reboot. [[15]](#15)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip persists via a Run registry key. [[17]](#17)|
 |[**WannaCry**](../xample-malware/wannacry.md)|2017|--|WannaCry creates two registry run keys to ensure persistence. [[18]](#18)|
+|[**CryptoWall**](../xample-malware/cryptowall.md)|A copy of Crytowall is placed in the startup folder and a directory at the root of the system drive. Also adds multiple "autostart" registry keys. [[19]](#19)|
 
 
 ## References
@@ -93,3 +94,5 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 <a name="17">[17]</a> capa v4.0, analyzed at MITRE on 10/12/2022
 
 <a name="18">[18]</a> https://www.mandiant.com/resources/blog/wannacry-malware-profile
+
+<a name="19">[19]</a> https://www.secureworks.com/research/cryptowall-ransomware

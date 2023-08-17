@@ -125,7 +125,7 @@ jmp short loc_401326
 
 ## References
 
-<a name="1">[1]</a> https://blogs.cisco.com/security/talos/rombertik
+<a name="1">[1]</a> https://insights.sei.cmu.edu/blog/api-hashing-tool-imagine-that/
 
 <a name="2">[2]</a> https://cofense.com/blog/recent-geodo-malware-campaigns-feature-heavily-obfuscated-macros/
 
@@ -135,7 +135,7 @@ jmp short loc_401326
 
 <a name="5">[5]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-variant-dreambot-adds-tor-functionality
 
-<a name="6">[6]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf
+<a name="6">[6]</a> https://www.fortinet.com/blog/threat-research/deep-analysis-of-new-poison-ivy-variant
 
 <a name="7">[7]</a> https://blog.talosintelligence.com/2018/01/samsam-evolution-continues-netting-over.html
 
