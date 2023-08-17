@@ -50,7 +50,7 @@ While the definition of fileless malware can be ambiguous, here it represents ma
 
 ## References
 
-<a name="1">[1]</a> "How to remove the Kovter Trojan (Removal Guide)," bleepingcomputer.com, 23 Mar. 2016. [Online]. Available: https://www.bleepingcomputer.com/virus-removal/remove-kovter-trojan.
+<a name="1">[1]</a> https://labs.vipre.com/analysis-of-kovter-a-very-clever-piece-of-malware/#:~:text=Kovter%20copies%20the%20fileless%20persistence,written%20on%20to%20the%20filesystem.
 
 <a name="2">[2]</a> J. Glazova,"CosmicStrand: A UEFI Rootkit," Kaspersky, blog, 26 Jul. 2022. [Online]. Available: https://usa.kaspersky.com/blog/cosmicstrand-uefi-rootkit/26807/.
 

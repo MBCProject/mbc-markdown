@@ -39,7 +39,7 @@ Malware checks a mutex.
 
 ## References
 
-<a name="1">[1]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf
+<a name="1">[1]</a> https://www.fortinet.com/blog/threat-research/deep-analysis-of-new-poison-ivy-variant
 
 <a name="2">[2]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
 

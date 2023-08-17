@@ -47,4 +47,4 @@ See ATT&CK Technique: **Automated Exfiltration ([T1020](https://attack.mitre.org
 
 ## References
 
-<a name="1">[1] https://www.welivesecurity.com/wp-content/uploads/2019/10/ESET_Attor.pdf
+<a name="1">[1]</a> https://www.welivesecurity.com/wp-content/uploads/2019/10/ESET_Attor.pdf
