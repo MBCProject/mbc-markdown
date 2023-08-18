@@ -57,6 +57,6 @@ See ATT&CK: **Indicator Removal on Host: Uninstall Malicious Application ([T1630
 
 <a name="2">[2]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke
 
-<a name="3">[3]</a> https://www.malwarebytes.com/blog/news/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection
+<a name="3">[3]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
 
 <a name="4">[4]</a> https://www.mandiant.com/resources/blog/wannacry-malware-profile

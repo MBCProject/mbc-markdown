@@ -52,10 +52,10 @@ See ATT&CK Technique: **User Execution ([T1204](https://attack.mitre.org/techniq
 
 <a name="2">[2]</a> https://blogs.cisco.com/security/talos/rombertik
 
-<a name="3">[3]</a> https://paper.seebug.org/papers/APT/APT_CyberCriminal_Campagin/2013/FireEye-Terminator_RAT.pdf
+<a name="3">[3]</a> https://www.fireeye.com/content/dam/fireeye-www/current-threats/pdfs/pf/file/fireeye-hot-knives-through-butter.pdf
 
 <a name="4">[4]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
 
 <a name="5">[5]</a> https://www.secureworks.com/research/cryptolocker-ransomware
 
-<a name="6">[6]</a> https://www.malwarebytes.com/blog/news/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection
+<a name="6">[6]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/

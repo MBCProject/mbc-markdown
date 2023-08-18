@@ -47,7 +47,7 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware downloads DLLs from the hardcoded URL/remote server. [[7]](#7) [[8]](#8)|
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR can download additional files and update itself. [[9]](#9)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut receives files from the C2. [[10]](#10)|
-|[**UP007**](../xample-malware/up007.md)|2016|--|UP007 downloads files from the C2. [[11]](#11)|
+|[**UP007**](../xample-malware/up007.md)|2016|--|UP007 downloads files from the C2. [[10]](#10)|
 
 
 ## References
@@ -75,5 +75,3 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 <a name="9">[9]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
 
 <a name="10">[10]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/
-
-<a name="11">[11]</a> https://citizenlab.ca/2016/04/between-hong-kong-and-burma/

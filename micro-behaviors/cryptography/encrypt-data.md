@@ -138,7 +138,7 @@ retn
 
 <a name="3">[3]</a> https://blog.talosintelligence.com/2018/04/gravityrat-two-year-evolution-of-apt.html
 
-<a name="4">[4]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf
+<a name="4">[4]</a> https://www.cyber.nj.gov/threat-center/threat-profiles/trojan-variants/poison-ivy
 
 <a name="5">[5]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
 

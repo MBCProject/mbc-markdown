@@ -38,5 +38,5 @@ Malware may install a certificate to gain access to https traffic.
 
 ## References
 
-<a name="1">[1]</a> https://www.malwarebytes.com/blog/news/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection
+<a name="1">[1]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
 
