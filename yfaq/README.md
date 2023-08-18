@@ -160,7 +160,7 @@ Corpus examples are captured using the Malware SDO. Three new properties are def
 * **platforms** (optional) denotes the operating system affected by the malware.
 
 ### Why is the STIX "is_family" property set to true for all the malware in the corpus? ###
-The "is_family" property (defined on the STIX Malware object) indicates whether the object represents a malware family (if true) or a malware instance (if false). All the malware in the corpus represent malware families.
+The "is_family" property (defined on the Malware SDO) indicates whether an object represents a malware family (if true) or a malware instance (if false). All the malware in the corpus represent malware families.
 
 ## <a name="tools"></a>Malware Analysis Tools ##
 MBC is used in the following malware analysis tools.
