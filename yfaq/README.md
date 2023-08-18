@@ -54,6 +54,12 @@ While under development, a corpus example may contain a limited number of behavi
 ### Are all known IoCs captured in a corpus entry? ###
 Corpus entries include some but not all indicators of compromise (IoCs) due to space considerations. 
 
+### What is the MBC matrix? ###
+The MBC matrix is a visual representation of MBC based on the ATT&CK Navigator. Two views are available: 
+
+* <a href="https://raw.githubusercontent.com/MBCProject/mbc-markdown/master/yfaq/mbc_matrix_with_ids.svg" target="_blank">Matrix with identifiers</a>
+* <a href="https://raw.githubusercontent.com/MBCProject/mbc-markdown/master/yfaq/mbc_matrix_without_ids.svg" target="_blank">Matrix without identifiers</a>
+
 ### Does MBC have version control? ###
 There was no version control when MBC v1.0 was released at the end of January 2020. However, further changes have been tracked: 
 
@@ -153,6 +159,9 @@ Corpus examples are captured using the Malware SDO. Three new properties are def
 * **year** (optional) denotes the year the malware was first seen.
 * **platforms** (optional) denotes the operating system affected by the malware.
 
+### Why is the STIX "is_family" property set to true for all the malware in the corpus? ###
+The "is_family" property (defined on the STIX Malware object) indicates whether the object represents a malware family (if true) or a malware instance (if false). All the malware in the corpus represent malware families.
+
 ## <a name="tools"></a>Malware Analysis Tools ##
 MBC is used in the following malware analysis tools.
 
@@ -201,7 +210,7 @@ While malware sometimes acts as a surrogate for an adversary (i.e., there is ove
 No. Given that MBC aims to serve as a model and test case for how ATT&CK can be expanded by second parties, we consult with the ATT&CK team to keep them apprised of our work, but there is no formal relationship between ATT&CK and MBC. While content of MBC was not coordinated with the ATT&CK team, we borrowed from ATT&CK's philosophy and methodology [[1]](#1). Namely, MBC will maintain a malware analysis-oriented perspective; focus on real-world use of behaviors through empirical malware examples, drawing upon publicly available analysis and reporting; and maintain a level of abstraction appropriate for supporting malware analysis use cases (e.g., develop malware signatures, mitigate infection, drive analytics, attribution).  
 
 ### ATT&CK defines "tactics" and "techniques." Why does MBC instead define "objectives" and "behaviors"? ###
-The cyber adversary and malware analysis realms each have their own vocabulary, and MBC aims to reflect malware analysis common word usage. Just as "tactics," "techniques," and "procedures" (TTPs) are considered when discussing advanced persistent threats (APTs), "objectives" and "behaviors" are commonly considered when analyzing malware. Maintaining a distinct vocabulary also helps to better differentiate MBC and ATT&CK content.
+The cyber adversary and malware analysis realms each have their own vocabulary, and MBC aims to reflect malware analysis common word usage. Just as "tactics," "techniques," and "procedures" (TTPs) are considered when discussing advanced persistent threats (APTs), "objectives" and "behaviors" are commonly considered when analyzing malware. Maintaining a distinct vocabulary also helps to differentiate MBC and ATT&CK content.
 
 ### Why don't MBC behavior names always match ATT&CK technique names? ###
 MBC maintains a malware, code-oriented perspective, so MBC behavior names will not always match related ATT&CK names. This is especially true when an MBC behavior is defined before an ATT&CK technique. In such cases, the preexisting MBC identifier is preserved and the new ATT&CK identifier is referenced.
