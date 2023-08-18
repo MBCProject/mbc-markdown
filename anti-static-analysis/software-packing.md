@@ -73,7 +73,7 @@ This description refines the ATT&CK **Obfuscated Files or Information: Software 
 
 <a name="3">[3]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
 
-<a name="4">[4]</a> https://www.bleepingcomputer.com/virus-removal/remove-kovter-trojan
+<a name="4">[4]</a> https://blog.malwarebytes.com/threat-analysis/2016/07/untangling-kovter/
 
 <a name="5">[5]</a> http://www.csl.sri.com/users/vinod/papers/Conficker/
 

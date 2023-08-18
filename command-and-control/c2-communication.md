@@ -122,7 +122,7 @@ jmp short loc_4019A2
 
 <a name="2">[2]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
 
-<a name="3">[3]</a> https://www.fireeye.com/content/dam/fireeye-www/current-threats/pdfs/pf/file/fireeye-hot-knives-through-butter.pdf
+<a name="3">[3]</a> https://paper.seebug.org/papers/APT/APT_CyberCriminal_Campagin/2013/FireEye-Terminator_RAT.pdf
 
 <a name="4">[4]</a> https://citizenlab.ca/2016/04/between-hong-kong-and-burma/
 
@@ -136,7 +136,7 @@ jmp short loc_4019A2
 
 <a name="9">[9]</a> https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke
 
-<a name="10">[10]</a>https://web.archive.org/web/20150311013500/http://www.cyphort.com/evilbunny-malware-instrumented-lua/
+<a name="10">[10]</a> https://web.archive.org/web/20150311013500/http://www.cyphort.com/evilbunny-malware-instrumented-lua/
 
 <a name="11">[11]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking
 
@@ -152,7 +152,7 @@ jmp short loc_4019A2
 
 <a name="17">[17]</a> https://blogs.cisco.com/security/talos/rombertik
 
-<a name="18">[18]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
+<a name="18">[18]</a> https://www.malwarebytes.com/blog/news/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection
 
 <a name="19">[19]</a> capa v4.0, analyzed at MITRE on 10/12/2022
 

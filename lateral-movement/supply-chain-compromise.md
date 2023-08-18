@@ -50,5 +50,5 @@ The supply chain may be compromised to enable initial malware infection. MBC obj
 
 <a name="1">[1]</a> https://unit42.paloaltonetworks.com/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/
 
-<a name="2">[2]</a> 
+<a name="2">[2]</a> https://eclypsium.com/wp-content/uploads/TrickBot-Now-Offers-TrickBoot-Persist-Brick-Profit.pdf
 
