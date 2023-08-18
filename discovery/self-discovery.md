@@ -30,13 +30,13 @@
 
 Malware may gather information about itself, such as its filename or size on disk. 
 
-## Methods
+# Methods
 
 |Name|ID|Description|
 |---|---|---|
-|**Use Hashquine**|B0038.001|Malware uses a hashquine (the file contains it's own hash) for use as an integrity check. [[1]](#1)|
-|**Check Magic String**|B0038.002|Malware checks a static value (i.e., magic string or number) to verify integrity. [[2]](#2)|
-|**Check Section Length**|B0038.003|Malware checks the length of a section to verify integrity. [[2]](#2)|
+|**Use Hashquine**|B0038.001| Malware uses a hashquine (the file contains it's own hash) for use as an integrity check. [[1]](#1)|
+|**Check Magic String**|B0038.002| Malware checks a static value (i.e., magic string or number) to verify integrity. [[2]](#2)|
+|**Check Section Length**|B0038.003| Malware checks the length of a section to verify integrity. [[2]](#2)|
 
 ## Use in Malware
 

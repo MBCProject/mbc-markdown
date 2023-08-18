@@ -61,6 +61,8 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |**HTML5 Performance Object Check**|B0009.011|In three browser families, it is possible to extract the frequency of the Windows performance counter frequency, using standard HTML and Javascript. This value can then be used to detect whether the code is being executed in a virtual machine, by detecting two specific frequencies commonly used in virtual but not physical machines.|
 |**Human User Check**|B0009.012|Detects whether there is any "user" activity on the machine, such as the movement of the mouse cursor, non-default wallpaper, or recently opened Office files. Directories or file might be counted. If there is no human activity, the machine is suspected to be a virtualized machine and/or sandbox. Other items used to detect a user: mouse clicks (single/double), DialogBox, scrolling, color of background pixel, change in foreground window [[5]](#5). This method is very similar to ATT&CK's [Virtualization/Sandbox Evasion: User Activity Based Checks](https://attack.mitre.org/techniques/T1497/002/) sub-technique.|
 |**Instruction Testing**|[B0009.029](#b0009029-snippet)|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2)|
+|**Instruction Testing - CPUID**|B0009.034|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2) Checking the CPU ID found within the registry can provide information to system type.|
+|**Instruction Testing - IN**|B0009.035|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2)|
 |**Instruction Testing - CPUID**|B0009.034|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2) Checking the CPU ID found within the registry can provide information to system type. This method is related to Unprotect technqiue U1324.|
 |**Instruction Testing - IN**|B0009.035|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2) This method is related to Unprotect technique U1323.|
 |**Instruction Testing - RDTSC**|B0009.036|The execution of certain x86 instructions will result in different values when executed inside of a VM instead of on bare metal. Accordingly, these can be used to detect the execution of the malware in a VM. [[2]](#2)|
@@ -92,7 +94,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|GravityRAT checks system temperature by recording thermal readings for detecting VMs. Heat levels indicate whether the system is a VM. [[3]](#3)|
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|B0009.018|GravityRAT determines the machine is a VM if the core count is 1. [[3]](#3)|
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|B0009.023|GravityRAT checks if the manufacturer field in the Win32_Computer entry (in WMI) contains "Virtual," "Vmware," or "Virtualbox." [[3]](#3)|
-|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|B0009.024|GravityRAT creates a WMI request to identify the BIOS version. [[13]](#13)|
+|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|B0009.024|GravityRAT creates a WMI request to identify the BIOS version. [[3]](#3)|
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|B0009.028|GravityRAT checks if the MAC address starts with a well-known hexadecimal number used by various VM developers. [[3]](#3)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|B0009.022|WebCobra injects malicious code in to svchost.exe and uses an infinite loop to check all open windows and to compare each window’s title bar text with a set of strings to determine whether it is running in a VM. [[4]](#4)|
 |[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip detects VMWare, Virtual PC, and Virtual Box. It also detects VM environments in general by considering time lapses. [[6]](#6)|
@@ -157,7 +159,7 @@ jmp short loc_401CBB
 
 <a name="2">[2]</a> https://search.unprotect.it/map/sandbox-evasion/
 
-<a name="3">[3]</a> https://blog.talosintelligence.com/2018/04/gravityrat-two-year-evolution-of-apt.html
+<a name="3">[3]</a> https://www.hackread.com/gravityrat-malware-evades-detection-targets-india/
 
 <a name="4">[4]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
 
@@ -176,5 +178,3 @@ jmp short loc_401CBB
 <a name="11">[11]</a> https://www.proofpoint.com/us/threat-insight/post/ursnif-banking-trojan-campaign-sandbox-evasion-techniques
 
 <a name="12">[12]</a> capa v4.0, analyzed at MITRE on 10/12/2022
-
-<a name="12">[12]</a> https://www.hackread.com/gravityrat-malware-evades-detection-targets-india/

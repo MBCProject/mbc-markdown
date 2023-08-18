@@ -47,6 +47,6 @@ The related **Data Manipulation: Transmitted Data Manipulation ([T1565.002](http
 ## References
 <a name="1">[1]</a> B. Feeley and B. Stone-Gross,"New Evidence Proves Ongoing WIZARD SPIDER / LUNAR SPIDER Collaboration," CrowdStrike, blog, 20 Mar. 2019. [Online]. Available: https://www.crowdstrike.com/blog/wizard-spider-lunar-spider-shared-proxy-module. 
 
-<a name="2">[2]</a> https://www.malwarebytes.com/blog/news/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection
+<a name="2">[2]</a> https://blog.malwarebytes.com/threat-analysis/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection/
 
 <a name="3">[3]</a> https://us.norton.com/internetsecurity-emerging-threats-mazar-bot-malware-invades-and-erases-android-devices.html
