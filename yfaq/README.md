@@ -240,7 +240,7 @@ ATT&CK separates the Enterprise and Mobile domains because of how ATT&CK evolved
 ### ATT&CK is a mid-level adversary model. Does MBC model malware in a similar way? ###
 ATT&CK models the life cycle of a human adversary, which results in an ordering of tactics (not necessarily strict), starting with Initial Access and ending with Impact. Software (malware code) executes sequentially but from a timing, life cycle perspective, it executes simultaneously. Therefore, MBC objectives are presented alphabetically, and MBC doesn't provide a model in the same sense as ATT&CK: rather MBC captures an unordered collection of objectives and behaviors applicable to a malware sample.
 
-### MBC 1.0 included ATT&CK techniques? Why is MBC v2.x a stand-alone *supplement* to ATT&CK? ###
+### MBC v1.0 included ATT&CK techniques? Why is MBC v2.x a stand-alone *supplement* to ATT&CK? ###
 When MBC provided a complete set of malware-related behaviors (MBC v1.0), updates to ATT&CK, including addition of new platforms (e.g., ICS and cloud), made it difficult to keep MBC current. Also, most malware vendors using ATT&CK in their reporting consider the complete set of ATT&CK techniques, even though some techniques are never used. Consequently, MBC v2.x defines new, malware-related behaviors, as well as malware-focused enhancements to ATT&CK techniques, but it no longer defines a restricted set of ATT&CK techniques that pertains to malware.
 
 ## References
