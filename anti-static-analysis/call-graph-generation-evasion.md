@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>3 June 2023</b></td>
+<td><b>31 August 2023</b></td>
 </tr>
 </table>
 
@@ -50,7 +50,7 @@ Malicious code evades accurate call graph generation, which can be used for malw
 
 <a name="3">[3]</a> S. Shang, N. Zheng, J. Xu, M. Xu, and H. Zhang,"Detecting Malware Variants via Function-call Graph Similarity," IEEE 2010 5th International Conference on Malicious and Unwanted Software, 2010. [Online]. Available: https://seclab.hdu.edu.cn/static/uploads/paper/10-05.pdf.
 
-<a name="4">[4]</a> J. Kinable, "Malware Detection Through Call Graphs," Master thesis, Department of Telematics, Norwegian University of Science and Technology, Norway, June 2010. [Online]. Available: https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/262290/353049_FU LLTEXT01.pdf?sequence=1&isAllowed=y.
+<a name="4">[4]</a> J. Kinable, "Malware Detection Through Call Graphs," Master thesis, Department of Telematics, Norwegian University of Science and Technology, Norway, June 2010. [Online]. Available: https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/262290/353049_FULLTEXT01.pdf?sequence=1&isAllowed=y.
 
 <a name="5">[5]</a> http://fumalwareanalysis.blogspot.com/2012/01/malware-analysis-tutorial-10-tricks-for.html
 
