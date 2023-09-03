@@ -33,10 +33,12 @@
 # Virtual Machine Detection
 
 Malware checks whether it is being executed inside a virtual environment. In performing reconnaissance of its environment, the malware will check on a variety of user or system based artifacts. Examples include: 
-	•	monitoring for user action as reflected by scrolling
-	•	verifying system characteristics through Windows Management Interface (WMI) queries, e.g., for MAC address
-	•	observing whether tool artifacts represented by strings or processes exist, e.g., VirtualBox.exe or joeboxserver.exe  
-	•	and checking specific registry keys or values [[1]](#1)
+
+- monitoring for user action as reflected by scrolling
+- verifying system characteristics through Windows Management Interface (WMI) queries, e.g., for MAC address
+- observing whether tool artifacts represented by strings or processes exist, e.g., VirtualBox.exe or joeboxserver.exe  
+- checking specific registry keys or values [[1]](#1)
+
 Upon detection of the virtual machine, conditional execution will change the malware’s behavior. For example, execution may terminate, or activity may appear benign, e.g., connecting to a benign domain.
 
 The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/))** ATT&CK techniques were defined subsequent to this MBC behavior.
