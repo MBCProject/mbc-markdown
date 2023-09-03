@@ -58,6 +58,6 @@ Detects whether the malware instance is being executed inside an emulator. If so
 
 ## References
 
-<a name="1">[1]</a> https://search.unprotect.it/map/sandbox-evasion/
+<a name="1">[1]</a> https://search.unprotect.it/category/sandbox-evasion/
 
 <a name="2">[2]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
