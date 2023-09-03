@@ -107,8 +107,14 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[check if process is running under wine](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-emulation/wine/check-if-process-is-running-under-wine.yml)|Emulator Detection (B0007)|GetModuleHandle, GetProcAddress|
-
+|[check for sandbox and av modules](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-av/check-for-sandbox-and-av-modules.yml) | Virtual Machine Detection (B0009)|GetModuleHandle|
+|[check for unmoving mouse cursor](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-unmoving-mouse-cursor.yml) | Virtual Machine Detection::Human User Check (B0009.012) | |
+|[reference anti-VM strings](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/reference-anti-vm-strings.yml) | Virtual Machine Detection (B0009) | |
+|[check for Windows sandbox via device](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-windows-sandbox-via-device.yml) | Virtual Machine Detection (B0009) | |
+|[reference anti-VM strings targeting VMWare](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/reference-anti-vm-strings-targeting-vmware.yml) | Virtual Machine Detection (B0009) | |
+|[reference anti-VM strings targeting Parallels](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/reference-anti-vm-strings-targeting-parallels.yml) |  Virtual Machine Detection (B0009) | |
+|[check for Windows sandbox via registry](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-windows-sandbox-via-registry.yml) | Virtual Machine Detection (B0009) | |
+|PLUS OTHERS... | | |
 
 ## Code Snippets
 
@@ -155,7 +161,7 @@ jmp short loc_401CBB
 
 <a name="1">[1]</a> Check Point Research,"CP<r>: Evasion Techniques," evasions.checkpoint.com, [Online]. Available: https://evasions.checkpoint.com.
 
-<a name="2">[2]</a> https://search.unprotect.it/map/sandbox-evasion/
+<a name="2">[2]</a> https://search.unprotect.it/category/sandbox-evasion/
 
 <a name="3">[3]</a> https://blog.talosintelligence.com/2018/04/gravityrat-two-year-evolution-of-apt.html
 
