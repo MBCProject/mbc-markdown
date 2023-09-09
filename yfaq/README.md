@@ -194,7 +194,7 @@ The OASIS Collaborative Automated Course of Action Operations ([CACAO](https://o
 To illustrate MBC's use, we defined a playbook for [Locky Bart](../xample-malware/locky-bart.md), which is available in the [CACAO example repository](https://github.com/oasis-tcs/cacao/tree/master/Examples/CACAO-2.0). 
 
 ### Can Pafish behaviors be mapped to MBC? ###
-Yes. [Pafish](https://github.com/a0rtega/pafish) is a tool for detecting virtual machines and malware analysis environments. Malware analysts use it to determine whether their analysis environment is likely to be detected by malware. [[1]](#1) We studied the Pafish source code to identify its behaviors and mapped those behaviors to MBC. The results are [here](pafish.md).
+Yes. [Pafish](https://github.com/a0rtega/pafish) is a tool for detecting virtual machines and malware analysis environments. Malware analysts use Pafish to determine whether their analysis environment is likely to be detected by malware. [[1]](#1) We studied the Pafish source code to identify its behaviors and mapped those behaviors to MBC. The results are [here](pafish.md).
 
 ## <a name="relationship"></a>Relationship to ATT&CK ##
 

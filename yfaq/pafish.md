@@ -1,8 +1,6 @@
-# Pafish
+# Pafish - MBC Behaviors
 
-Pafish is a tool for detecting malware analysis environments. [[1]](#1) The behaviors shown below were identified by reviewing the Pafish source code.
-
-## MBC Behaviors
+[Pafish](https://github.com/a0rtega/pafish) is a testing tool that detects virtual machines and malware analysis environments using the same techniques as malware. [[1]](#1) The behaviors below were identified by reviewing the Pafish source code.
 
 |Name|Use|
 |---|---|
