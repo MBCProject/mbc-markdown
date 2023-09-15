@@ -144,7 +144,6 @@ Observables that do not reflect on the malware's *code* are not captured in MBC;
 ### Do malware behaviors and adversary behaviors overlap? ###
 Malware behaviors and adversary behaviors can overlap because adversaries sometimes use malware to achieve their goals. However, MBC only captures behaviors associated with malware *code*. In other words, MBC behaviors are identified through analysis of a malware sample's binary code or by observing the malware on a network (or in a disassembler), whereas adversary behaviors may be derived from a variety of indicators on a system or network. 
 
-
 ## <a name="stix"></a>STIX Representation ##
 
 ### How are MBC behaviors captured in STIX 2? ###
@@ -194,6 +193,8 @@ The OASIS Collaborative Automated Course of Action Operations ([CACAO](https://o
 
 To illustrate MBC's use, we defined a playbook for [Locky Bart](../xample-malware/locky-bart.md), which is available in the [CACAO example repository](https://github.com/oasis-tcs/cacao/tree/master/Examples/CACAO-2.0). 
 
+### Can Pafish behaviors be mapped to MBC? ###
+Yes. [Pafish](https://github.com/a0rtega/pafish) is a tool for detecting virtual machines and malware analysis environments. Malware analysts use Pafish to determine whether their analysis environment is likely to be detected by malware. [[1]](#1) We studied the Pafish source code to identify its behaviors and mapped those behaviors to MBC. The results are [here](pafish.md).
 
 ## <a name="relationship"></a>Relationship to ATT&CK ##
 
