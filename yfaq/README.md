@@ -12,7 +12,7 @@
 
 * **MBC v3.0** - The latest MBC release (to be released soon) includes behavior detection information, expanded descriptions, and new properties, such as version and created and modified dates.
 
-* **STIX 2.1 Representation** - MBC content is available in an updated [STIX format](https://github.com/MBCProject/mbc-stix2) based on a new [STIX 2.1 extension](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications).
+* **STIX 2.1 Representation** - MBC content will soon be available in an updated STIX format based on the new [STIX 2.1 Malware Behavior Extension](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/malware-behavior).
 
 * **Attack Flow Examples** - Example attack flows for [Shamoon](../xample-malware/shamoon.md) and [SearchAwesome](../xample-malware/searchawesome.md) reference MBC behaviors.
 
