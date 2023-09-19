@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>17 August 2023</b></td>
+<td><b>18 September 2023</b></td>
 </tr>
 </table>
 
@@ -68,6 +68,7 @@ The methods table includes existing ATT&CK sub-techniques, which have been enhan
 |[**Netwalker**](../xample-malware/netwalker.md)|2020|E1055.001|Netwalker uses reflective DLL loading to inject from memory. [[10]](#10)|
 |[**DNSChanger**](../xample-malware/dnschanger.md)|2011|--|The malware can attach user process memory. [[13]](#13)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|E1055.003|The malware can inject threads. [[13]](#13)|
+|[**Conti**](../xample-malware/conti.md)|2019|E1055.012|Conti creates a process in a suspended state and unmaps or removes the PE image layout from a given process space.|
 
 
 ## References
