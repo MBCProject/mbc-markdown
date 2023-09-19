@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>4 May 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -58,6 +58,11 @@ This behavior corresponds to simple, general discovery of analysis tools. Behavi
 |[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|B0013.010|Poison Ivy goes through all the running program windows to check if any Windows class name contains a special string to determine if an analysis tool is running. [[2]](#2) [[3]](#3)|
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|B0013.004|When infecting a x64 architecture system, the malware terminates if Wireshark is running on the system. [[4]](#4)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[reference analysis tools strings](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/reference-analysis-tools-strings.yml)|Analysis Tool Discovery::Process detection (B0013.001)| |
 
 ## References
 

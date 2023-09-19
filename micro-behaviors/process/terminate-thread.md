@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -29,3 +29,9 @@
 # Terminate Thread
 
 Malware terminates a thread.
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[terminate thread](https://github.com/mandiant/capa-rules/blob/master/host-interaction/thread/terminate/terminate-thread.yml)|Terminate Thread (C0039)|kernel32.TerminateThread, PsTerminateSystemThread, System.Threading.Thread.Abort|

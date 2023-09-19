@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -37,6 +37,12 @@ Malware may check a string for some characteristics, such as being ASCII content
 |---|---|---|---|
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|Locky Bart references Base64 strings. [[1]](#1)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[reference Base64 string](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encoding/base64/reference-base64-string.yml)|Check String (C0019)| |
+|[parse credit card information](https://github.com/mandiant/capa-rules/blob/master/collection/credit-card/parse-credit-card-information.yml)|Check String (C0019)| |
 
 ## References
 

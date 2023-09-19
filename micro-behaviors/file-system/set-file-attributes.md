@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -39,6 +39,13 @@
 |[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter sets file attributes. [[1]](#1)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip sets file attributes. [[1]](#1)|
 |[**UP007**](../xample-malware/up007.md)|2016|--|UP007 sets file attributes. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[change file permission on Linux](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/change-file-permission-on-linux.yml)|Set File Attributes (C0050)|chown, fchown, lchown, fchownat|
+|[set file attributes](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/meta/set-file-attributes.yml)|Set File Attributes (C0050)|kernel32.SetFileAttributes, ZwSetInformationFile, NtSetInformationFile, System.IO.File::SetAttributes, System.IO.File::SetCreationTime, System.IO.File::SetCreationTimeUtc, System.IO.File::SetLastAccessTime, System.IO.File::SetLastAccessTimeUtc, System.IO.File::SetLastWriteTime, System.IO.File::SetLastWriteTimeUtc|
 
 ## References
 

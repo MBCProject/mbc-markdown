@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>21 November 2022</b></td>
+<td><b>19 September 2023</b></td>
 </tr>
 </table>
 
@@ -43,18 +43,18 @@ Detects whether the malware instance is being executed inside an emulator. If so
 |**Check for WINE Version**|B0004.002|Checks for WINE via the `get_wine_version` function from WINE's `ntdll.dll`.|
 |**Failed Network Connections**|B0004.004|Some emulated systems fail to handle some network communications; such failures will indicate the emulated environment.|
 
-## Detection
-
-|Tool: capa|Mapping|APIs|
-|---|---|---|
-|[check if process is running under wine](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-emulation/wine/check-if-process-is-running-under-wine.yml)|Emulator Detection (B0007)|GetModuleHandle, GetProcAddress|
-
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet checks for specific operating systems on 32-bit machines, registry keys, and dates to profile a potential target machine before execution. If the conditions are not met to be considered a viable target, it will exit execution. [[2]](#2)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[check if process is running under wine](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-emulation/wine/check-if-process-is-running-under-wine.yml)|Emulator Detection (B0004)|GetModuleHandle, GetProcAddress|
+
 
 ## References
 

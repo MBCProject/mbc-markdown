@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>19 May 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -69,6 +69,16 @@ The methods table includes existing ATT&CK sub-techniques, which have been enhan
 |[**DNSChanger**](../xample-malware/dnschanger.md)|2011|--|The malware can attach user process memory. [[13]](#13)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|E1055.003|The malware can inject threads. [[13]](#13)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[patch process command line](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-forensic/patch-process-command-line.yml)|Process Injection::Patch Process Command Line (E1055.m04)|VirtualProtect, GetProcAddress, ReadProcessMemory|
+|[attach user process memory](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/inject/attach-user-process-memory.yml)|Process Injection (E1055)|ntoskrnl.KeStackAttachProcess, ntoskrnl.KeUnstackDetachProcess|
+|[inject shellcode using extra window memory](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/inject/inject-shellcode-using-extra-window-memory.yml)|Process Injection (E1055)|SetWindowLong, SetWindowLongPtr, PostMessage, SendNotifyMessage|
+|[inject shellcode using a file mapping object](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/inject/inject-shellcode-using-a-file-mapping-object.yml)|Process Injection (E1055)|CreateFileMapping, MapViewOfFile, MapViewOfFileNuma2|
+|[inject shellcode using window subclass procedure](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/inject/inject-shellcode-using-window-subclass-procedure.yml)|Process Injection (E1055)|user32.SetProp, PostMessage, SendNotifyMessage|
+|[execute shellcode via Windows fibers](https://github.com/mandiant/capa-rules/blob/master/load-code/shellcode/execute-shellcode-via-windows-fibers.yml)|Process Injection::Injection via Windows Fibers (E1055.m05)|ConvertThreadToFiber, CreateFiber, SwitchToFiber|
 
 ## References
 <a name="1">[1]</a> Ashkan Hosseini, *Ten Process Injection Techniques: A Technical Survey of Common and Trending Process Injection Techniques*, July 2017. https://www.elastic.co/blog/ten-process-injection-techniques-technical-survey-common-and-trending-process

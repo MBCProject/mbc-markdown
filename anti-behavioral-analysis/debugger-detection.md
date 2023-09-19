@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>2 May 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -106,6 +106,27 @@ Details on detecting debuggers are given in the references.
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|B0001.034|The malware executes anti-debugging instructions. [[15]](#15)|
 |[**UP007**](../xample-malware/up007.md)|2016|B0001.032|The malware checks for a time delay via GetTickCount. [[15]](#15)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[check for trap flag exception](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-detection/check-for-trap-flag-exception.yml)|Debugger Detection (B0001)| |
+|[check for software breakpoints](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-detection/check-for-software-breakpoints.yml)|Debugger Detection::Software Breakpoints (B0001.025)| |
+|[check process job object](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-detection/check-process-job-object.yml)|Debugger Detection (B0001)|kernel32.QueryInformationJobObject, kernel32.OpenProcess|
+|[check for PEB BeingDebugged flag](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-detection/check-for-peb-beingdebugged-flag.yml)|Debugger Detection::Process Environment Block BeingDebugged (B0001.035)| |
+|[check for time delay via GetTickCount](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-detection/check-for-time-delay-via-gettickcount.yml)|Debugger Detection::Timing/Delay Check GetTickCount (B0001.032)| |
+|[check for protected handle exception](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-detection/check-for-protected-handle-exception.yml)|Debugger Detection::SetHandleInformation (B0001.024)|SetHandleInformation, CloseHandle|
+|[check for OutputDebugString error](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-detection/check-for-outputdebugstring-error.yml)|Debugger Detection::OutputDebugString (B0001.016)|kernel32.SetLastError, kernel32.GetLastError, kernel32.OutputDebugString|
+|[check for unexpected memory writes](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-detection/check-for-unexpected-memory-writes.yml)|Debugger Detection::Memory Write Watching (B0001.010)|kernel32.GetWriteWatch|
+|[check for kernel debugger via shared user data structure](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-detection/check-for-kernel-debugger-via-shared-user-data-structure.yml)|Debugger Detection (B0001)| |
+|[check for time delay via QueryPerformanceCounter](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-detection/check-for-time-delay-via-queryperformancecounter.yml)|Debugger Detection::Timing/Delay Check QueryPerformanceCounter (B0001.033)| |
+|[check for hardware breakpoints](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-detection/check-for-hardware-breakpoints.yml)|Debugger Detection::Hardware Breakpoints (B0001.005)|kernel32.GetThreadContext|
+|[check ProcessDebugPort](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-detection/check-processdebugport.yml)|Debugger Detection::NtQueryInformationProcess (B0001.012)|NtQueryInformationProcess|
+|[check for debugger via API](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-detection/check-for-debugger-via-api.yml)|Debugger Detection::CheckRemoteDebuggerPresent (B0001.002)|kernel32.CheckRemoteDebuggerPresent, WUDFPlatform.WudfIsAnyDebuggerPresent, WUDFPlatform.WudfIsKernelDebuggerPresent, WUDFPlatform.WudfIsUserDebuggerPresent|
+|[check for debugger via API](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-detection/check-for-debugger-via-api.yml)|Debugger Detection::WudfIsAnyDebuggerPresent (B0001.031)|kernel32.CheckRemoteDebuggerPresent, WUDFPlatform.WudfIsAnyDebuggerPresent, WUDFPlatform.WudfIsKernelDebuggerPresent, WUDFPlatform.WudfIsUserDebuggerPresent|
+|[check for PEB NtGlobalFlag flag](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-detection/check-for-peb-ntglobalflag-flag.yml)|Debugger Detection::Process Environment Block NtGlobalFlag (B0001.036)| |
+|[execute anti-debugging instructions](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-detection/execute-anti-debugging-instructions.yml)|Debugger Detection::Anti-debugging Instructions (B0001.034)| |
+|[PEB access](https://github.com/mandiant/capa-rules/blob/master/lib/peb-access.yml)|Debugger Detection::Process Environment Block (B0001.019)| |
 
 ## References
 

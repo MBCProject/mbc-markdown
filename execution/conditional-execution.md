@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b> 4 May 2023</b></td>
+<td><b>19 September 2023</b></td>
 </tr>
 </table>
 
@@ -68,7 +68,7 @@ Some aspects of this Conditional Execution behavior are related to the [Executio
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[run as a service](https://github.com/mandiant/capa-rules/blob/master/host-interaction/service/run-as-service.yml) | Conditional Execution::Runs as Service (B0025.007)|RegisterServiceCtrlHandler, RegisterServiceCtrlHandlerEx, StartServiceCtrlDispatcher, System.ServiceProcess.ServiceBase::Run |
+|[run as service](https://github.com/mandiant/capa-rules/blob/master/host-interaction/service/run-as-service.yml)|Conditional Execution::Runs as Service (B0025.007)|RegisterServiceCtrlHandler, RegisterServiceCtrlHandlerEx, StartServiceCtrlDispatcher, System.ServiceProcess.ServiceBase::Run|
 
 ## References
 

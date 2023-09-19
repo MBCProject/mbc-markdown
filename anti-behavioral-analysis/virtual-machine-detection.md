@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>4 May 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -109,14 +109,23 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[check for sandbox and av modules](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-av/check-for-sandbox-and-av-modules.yml) | Virtual Machine Detection (B0009)|GetModuleHandle|
-|[check for unmoving mouse cursor](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-unmoving-mouse-cursor.yml) | Virtual Machine Detection::Human User Check (B0009.012) | |
-|[reference anti-VM strings](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/reference-anti-vm-strings.yml) | Virtual Machine Detection (B0009) | |
-|[check for Windows sandbox via device](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-windows-sandbox-via-device.yml) | Virtual Machine Detection (B0009) | |
-|[reference anti-VM strings targeting VMWare](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/reference-anti-vm-strings-targeting-vmware.yml) | Virtual Machine Detection (B0009) | |
-|[reference anti-VM strings targeting Parallels](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/reference-anti-vm-strings-targeting-parallels.yml) |  Virtual Machine Detection (B0009) | |
-|[check for Windows sandbox via registry](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-windows-sandbox-via-registry.yml) | Virtual Machine Detection (B0009) | |
-|PLUS OTHERS... | | |
+|[check for sandbox and av modules](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-av/check-for-sandbox-and-av-modules.yml)|Virtual Machine Detection (B0009)|GetModuleHandle|
+|[check for Windows sandbox via genuine state](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-windows-sandbox-via-genuine-state.yml)|Virtual Machine Detection (B0009)|SLIsGenuineLocal, UuidFromString|
+|[reference anti-VM strings targeting Parallels](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/reference-anti-vm-strings-targeting-parallels.yml)|Virtual Machine Detection (B0009)| |
+|[check for unmoving mouse cursor](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-unmoving-mouse-cursor.yml)|Virtual Machine Detection::Human User Check (B0009.012)| |
+|[reference anti-VM strings targeting VirtualPC](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/reference-anti-vm-strings-targeting-virtualpc.yml)|Virtual Machine Detection (B0009)| |
+|[reference anti-VM strings targeting VMWare](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/reference-anti-vm-strings-targeting-vmware.yml)|Virtual Machine Detection (B0009)| |
+|[check for foreground window switch](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-foreground-window-switch.yml)|Virtual Machine Detection::Human User Check (B0009.012)|Sleep|
+|[detect VM via disk hardware WMI queries](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/detect-vm-via-disk-hardware-wmi-queries.yml)|Virtual Machine Detection::Unique Hardware/Firmware Check (B0009.023)| |
+|[reference anti-VM strings targeting Qemu](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/reference-anti-vm-strings-targeting-qemu.yml)|Virtual Machine Detection (B0009)| |
+|[reference anti-VM strings targeting Xen](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/reference-anti-vm-strings-targeting-xen.yml)|Virtual Machine Detection (B0009)| |
+|[check for sandbox username or hostname](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-sandbox-username-or-hostname.yml)|Virtual Machine Detection (B0009)| |
+|[check for Windows sandbox via process name](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-windows-sandbox-via-process-name.yml)|Virtual Machine Detection (B0009)| |
+|[check for Windows sandbox via dns suffix](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-windows-sandbox-via-dns-suffix.yml)|Virtual Machine Detection (B0009)|GetAdaptersAddresses|
+|[check for Windows sandbox via device](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-windows-sandbox-via-device.yml)|Virtual Machine Detection (B0009)| |
+|[reference anti-VM strings targeting VirtualBox](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/reference-anti-vm-strings-targeting-virtualbox.yml)|Virtual Machine Detection (B0009)| |
+|[check for Windows sandbox via registry](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/check-for-windows-sandbox-via-registry.yml)|Virtual Machine Detection (B0009)|RegOpenKeyEx, RegEnumValue|
+|[reference anti-VM strings](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-vm/vm-detection/reference-anti-vm-strings.yml)|Virtual Machine Detection (B0009)| |
 
 ## Code Snippets
 

@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -29,3 +29,9 @@
 # Hashed Message Authentication Code
 
 Malware uses a hashed message authentication code (HMAC) schema.
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[authenticate HMAC](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hmac/authenticate-hmac.yml)|Hashed Message Authentication Code (C0061)| |

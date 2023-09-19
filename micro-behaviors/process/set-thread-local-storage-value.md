@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -41,6 +41,12 @@ Malware allocates thread local storage.
 |[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter sets thread local storage values. [[1]](#1)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip sets thread local storage values. [[1]](#1)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Rombertik sets thread local storage values. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[set thread local storage value](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/set-thread-local-storage-value.yml)|Set Thread Local Storage Value (C0041)|kernel32.TlsSetValue|
 
 ## References
 

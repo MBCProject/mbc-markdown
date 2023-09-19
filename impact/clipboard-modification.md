@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>21 November 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -44,6 +44,11 @@ ATT&CK defines Clipboard Modification as a Mobile technique (Android platform). 
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon replaces clipboard data. [[2]](#2)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware replaces clipboard data. [[2]](#2)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[write clipboard data](https://github.com/mandiant/capa-rules/blob/master/host-interaction/clipboard/write-clipboard-data.yml)|Clipboard Modification (E1510)|user32.EmptyClipboard, System.Windows.Forms.Clipboard::Clear, user32.SetClipboardData, System.Windows.Forms.Clipboard::SetAudio, System.Windows.Forms.Clipboard::SetData, System.Windows.Forms.Clipboard::SetDataObject, System.Windows.Forms.Clipboard::SetFileDropList, System.Windows.Forms.Clipboard::SetImage, System.Windows.Forms.Clipboard::SetText|
 
 ## References
 
