@@ -36,10 +36,10 @@ Malware detects whether it's being executed inside a debugger by checking for ar
 
 While many methods are listed in the table below, among the most commonly used are:
 - Using APIs such as IsDebuggerPresent, CheckRemoteDebuggerPresent, and OutputDebugString
-- Reading the BeingDebugged bit ( is it a 1 or 0) in the Process Environment Block (PEB)
+- Reading the BeingDebugged bit (is it a 1 or 0) in the Process Environment Block (PEB)
 - Checking whether a software breakpoint instruction is used (INT3; 0xCC opcode)
 
-Details on detecting debuggers are given in the references.
+Details on detecting debuggers can be found in the references.
 
 
 ## Methods

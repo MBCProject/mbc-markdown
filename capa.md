@@ -2,7 +2,7 @@
 19 September 2023
 
 ## Histograms ##
-The histograms below show the number of capa rules mapped into ATT&CK techniques (organized by tactic), MBC behaviors (organized by objective), and MBC micro-behaviors (organized by micro-objective). The explicit techniques, behaviors, and micro-behaviors follow.
+The histograms below show the number of capa rules mapped into ATT&CK techniques (organized by tactic), MBC behaviors (organized by objective), and MBC micro-behaviors (organized by micro-objective). The count tracks ATT&CK techniques and sub-techniques and MBC behaviors and methods separately. For example, both B0009 and B0009.012 are counted under the Anti-Behavioral Analysis objective. The explicit techniques/sub-techiques, behaviors/methods, and micro-behaviors/micro-methods follow the histograms.
 
 ### ATT&CK Mapping Histogram ###
 
