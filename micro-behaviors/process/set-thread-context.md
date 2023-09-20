@@ -1,7 +1,7 @@
 <table>
 <tr>
 <td><b>ID</b></td>
-<td><b>C0022</b></td>
+<td><b>C0072</b></td>
 </tr>
 <tr>
 <td><b>Objective(s)</b></td>
@@ -13,25 +13,19 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.0</b></td>
+<td><b>1.0</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
-<td><b>14 August 2020</b></td>
+<td><b>18 September 2023</b></td>
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>10 November 2022</b></td>
+<td><b>18 September 2023</b></td>
 </tr>
 </table>
 
 
-# Synchronization
+# Set Thread Context
 
-Malware enables two or more processes/threads to share a resource. 
-
-## Methods
-
-|Name|ID|Description|
-|---|---|---|
-|**Create Mutex**|C0022.001|Malware creates a mutex to enable synchronization.|
+Malware sets the context for a specified thread.
