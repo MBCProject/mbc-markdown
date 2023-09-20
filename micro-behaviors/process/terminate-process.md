@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -43,6 +43,14 @@ Malware terminates a process.
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet terminates processes. [[1]](#1)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|TrickBot terminates processes. [[1]](#1)|
 |[**UP007**](../xample-malware/up007.md)|2016|--|UP007 terminates processes. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[check mutex and exit](https://github.com/mandiant/capa-rules/blob/master/host-interaction/mutex/check-mutex-and-exit.yml)|Terminate Process (C0018)|ExitProcess, exit, _Exit, _exit, WaitForSingleObject, GetLastError|
+|[terminate process via kill](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/terminate/terminate-process-via-kill.yml)|Terminate Process (C0018)|kill|
+|[terminate process](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/terminate/terminate-process.yml)|Terminate Process (C0018)|System.Diagnostics.Process::Kill, System.Diagnostics.Process::WaitForExit, System.Diagnostics.Process::WaitForExitAsync, System.Environment::Exit, System.Windows.Forms.Application::Exit, kernel32.TerminateProcess, ntdll.NtTerminateProcess, kernel32.ExitProcess|
 
 ## References
 

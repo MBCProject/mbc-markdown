@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>6 June 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -48,6 +48,11 @@ See ATT&CK: **Input Capture ([T1056](https://attack.mitre.org/techniques/T1056),
 |[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer monitors keyboard and mouse activity to determine if the machine is in use. [[5]](#5)|
 |[**ElectroRAT**](../xample-malware/electrorat.md)|2020|--|ElectroRat monitors keyboard and mouse activity to determine whether the machine is in use. [[6]](#6)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[use .NET library SharpClipboard](https://github.com/mandiant/capa-rules/blob/master/collection/use-dotnet-library-sharpclipboard.yml)|Input Capture (E1056)| |
 
 ## References
 

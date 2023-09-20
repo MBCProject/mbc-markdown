@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>6 June 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -63,6 +63,19 @@ Malware may enumerate files and directories or may search for specific files or 
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon gets a common file path. [[6]](#6)|
 |[**ElectroRAT**](../xample-malware/electrorat.md)|2020|--|ElectroRat looks for wallets to steal cryptocurrency. [[7]](#7)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[get common file path](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/get-common-file-path.yml)|File and Directory Discovery (E1083)|kernel32.GetTempPath, kernel32.GetTempFileName, kernel32.GetSystemDirectory, kernel32.GetWindowsDirectory, kernel32.GetSystemWow64Directory, GetAllUsersProfileDirectory, GetAppContainerFolderPath, GetCurrentDirectory, GetDefaultUserProfileDirectory, GetProfilesDirectory, GetUserProfileDirectory, SHGetFolderPathAndSubDir, shell32.SHGetFolderPath, shell32.SHGetFolderLocation, shell32.SHGetKnownFolderPath, shell32.SHGetSpecialFolderPath, shell32.SHGetSpecialFolderLocation, System.IO.Directory::GetCurrentDirectory, System.Environment::GetFolderPath|
+|[get file version info](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/meta/get-file-version-info.yml)|File and Directory Discovery (E1083)|version.GetFileVersionInfo, version.GetFileVersionInfoEx, System.Diagnostics.FileVersionInfo::GetVersionInfo, version.VerQueryValue, version.GetFileVersionInfoSize, version.GetFileVersionInfoSizeEx|
+|[get file size](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/meta/get-file-size.yml)|File and Directory Discovery (E1083)|kernel32.GetFileSize, kernel32.GetFileSizeEx|
+|[check if file exists](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/exists/check-if-file-exists.yml)|File and Directory Discovery (E1083)|kernel32.GetFileAttributes, kernel32.GetLastError, shlwapi.PathFileExists, System.IO.File::Exists|
+|[enumerate files on Linux](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/files/list/enumerate-files-on-linux.yml)|File and Directory Discovery (E1083)|getdents, getdents64, opendir, readdir|
+|[enumerate files on Windows](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/files/list/enumerate-files-on-windows.yml)|File and Directory Discovery (E1083)|kernel32.FindFirstFile, kernel32.FindFirstFileEx, kernel32.FindFirstFileTransacted, kernel32.FindFirstFileName, kernel32.FindFirstFileNameTransacted, kernel32.FindNextFile, kernel32.FindNextFileName, kernel32.FindClose, ntdll.NtOpenDirectoryObject, ntdll.NtQueryDirectoryObject, RtlAllocateHeap, System.IO.DirectoryInfo::GetFiles, System.IO.DirectoryInfo::EnumerateFiles, System.IO.Directory::GetFiles, System.IO.Directory::EnumerateFiles, System.IO.Directory::EnumerateFileSystemEntries, System.IO.DirectoryInfo::GetDirectories, System.IO.DirectoryInfo::EnumerateDirectories, System.IO.Directory::GetDirectories, System.IO.Directory::EnumerateDirectories|
+|[enumerate files recursively](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/files/list/enumerate-files-recursively.yml)|File and Directory Discovery (E1083)| |
+|[read data from CLFS log container](https://github.com/mandiant/capa-rules/blob/master/host-interaction/log/clfs/read-data-from-clfs-log-container.yml)|File and Directory Discovery::Log File (E1083.m01)|clfsw32.CreateLogFile, clfsw32.CreateLogMarshallingArea, clfsw32.ReadLogRecord, clfsw32.ReadNextLogRecord|
+|[access the Windows event log](https://github.com/mandiant/capa-rules/blob/master/host-interaction/log/winevt/access/access-the-windows-event-log.yml)|File and Directory Discovery::Log File (E1083.m01)|OpenEventLog, ClearEventLog, OpenBackupEventLog, ReportEvent|
 
 ## References
 

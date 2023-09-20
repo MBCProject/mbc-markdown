@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>6 June 2023</b></td>
+<td><b>31 August 2023</b></td>
 </tr>
 </table>
 
@@ -51,7 +51,7 @@ See ATT&CK: **Data Encrypted for Impact ([T1486](https://attack.mitre.org/techni
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|Locky Bart encrypts files for ransom without any connection to the Internet. [[3]](#3)|
 |[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam encrypts data to hold for ransom. [[4]](#4)|
 |[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker encrypts files for ransom. [[5]](#5)|
-|[**WannaCry**](../xample-malware/wannacry.md)|2017|B0025|WannaCry encrypts files for ransom. [[6]](#6)|
+|[**WannaCry**](../xample-malware/wannacry.md)|2017|--|WannaCry encrypts files for ransom. [[6]](#6)|
 
 
 ## References

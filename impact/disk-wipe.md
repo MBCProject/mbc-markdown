@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>21 November 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -40,6 +40,12 @@ This description refines the ATT&CK **Disk Wipe: Disk Content Wipe ([T1561.001](
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|An overwrite component will overwrite the MBR so that the compromised computer can no longer start. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[overwrite Master Boot Record (MBR)](https://github.com/mandiant/capa-rules/blob/master/impact/wipe-disk/wipe-mbr/overwrite-master-boot-record-mbr.yml)|Disk Wipe (F0014)|kernel32.WriteFile|
 
 ## References
 

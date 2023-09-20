@@ -8,7 +8,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>12 June 2023</b></td>
 </tr>
 </table>
 
@@ -28,6 +28,6 @@ Behaviors and code characteristics that prevent or hinder static analysis of the
 
 ## References
 
-<a name="1">[1]</a> https://search.unprotect.it/map/sandbox-evasion/
+<a name="1">[1]</a> https://search.unprotect.it/category/sandbox-evasion/
 
 <a name="2">[2]</a> InDepthUnpacking, course content for teaching malware anti-analysis techniques and mitigations, with emphasis on packers. https://github.com/knowmalware/InDepthUnpacking

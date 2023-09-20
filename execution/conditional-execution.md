@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b> 4 May 2023</b></td>
+<td><b>19 September 2023</b></td>
 </tr>
 </table>
 
@@ -64,6 +64,11 @@ Some aspects of this Conditional Execution behavior are related to the [Executio
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|B0025.007|Hupigon can run as a service. [[7]](#7)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|B0025.007|Shamoon can run as a service. [[7]](#7)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[run as service](https://github.com/mandiant/capa-rules/blob/master/host-interaction/service/run-as-service.yml)|Conditional Execution::Runs as Service (B0025.007)|RegisterServiceCtrlHandler, RegisterServiceCtrlHandlerEx, StartServiceCtrlDispatcher, System.ServiceProcess.ServiceBase::Run|
 
 ## References
 

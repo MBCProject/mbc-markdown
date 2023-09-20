@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -29,3 +29,9 @@
 # Read Virtual Disk
 
 Malware reads a virtual disk. 
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[read virtual disk](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/read/read-virtual-disk.yml)|Read Virtual Disk (C0056)|OpenVirtualDisk, AttachVirtualDisk, GetVirtualDiskPhysicalPath|

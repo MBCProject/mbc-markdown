@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -36,3 +36,9 @@ Malware simulates hardware.
 |---|---|---|
 |**Ctrl-Alt-Del**|C0057.001|Malware simulates Ctrl-Alt-Del.|
 |**Mouse Click**|C0057.002|Malware simulates mouse click.|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[simulate CTRL ALT DEL](https://github.com/mandiant/capa-rules/blob/master/host-interaction/hardware/keyboard/simulate-ctrl-alt-del.yml)|Simulate Hardware::Ctrl-Alt-Del (C0057.001)|OpenDesktop, OpenInputDesktop, PostMessage|

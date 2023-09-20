@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>21 November 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -57,6 +57,16 @@ See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://atta
 |[**DNSChanger**](../xample-malware/dnschanger.md)|2011|--|DNSChanger prevents the infected system from installing anti-virus software updates. [[2]](#2)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus uses GetModuleHandle API to check for the presence of Avast Antivirus. [[5]](#5)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[64-bit execution via heavens gate](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-disasm/64-bit-execution-via-heavens-gate.yml)|Disable or Evade Security Tools::Heavens Gate (F0004.008)| |
+|[patch Event Tracing for Windows function](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-av/patch-event-tracing-for-windows-function.yml)|Disable or Evade Security Tools (F0004)|kernel32.VirtualProtect, ntdll.NtProtectVirtualMemory, ZwProtectVirtualMemory|
+|[block operations on executable memory pages using Arbitrary Code Guard](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-av/block-operations-on-executable-memory-pages-using-arbitrary-code-guard.yml)|Disable or Evade Security Tools::Modify Policy (F0004.005)|SetProcessMitigationPolicy|
+|[protect spawned processes with mitigation policies](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-av/protect-spawned-processes-with-mitigation-policies.yml)|Disable or Evade Security Tools::Modify Policy (F0004.005)|UpdateProcThreadAttribute|
+|[bypass Windows File Protection](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/windows-file-protection/bypass-windows-file-protection.yml)|Disable or Evade Security Tools::Bypass Windows File Protection (F0004.007)| |
+|[disable driver code integrity](https://github.com/mandiant/capa-rules/blob/master/host-interaction/driver/disable-driver-code-integrity.yml)|Disable or Evade Security Tools::Disable Code Integrity (F0004.009)| |
 
 ## References
 

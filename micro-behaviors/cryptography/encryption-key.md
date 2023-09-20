@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -48,6 +48,14 @@ Malware may import, generate, or otherwise use an encryption key.
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|Locky Bart creates a new key via CryptAcquireContext. [[1]](#1)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|C0028.002|Rombertik encrypts data using RC4 KSA. [[1]](#1)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[import public key](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/import-public-key.yml)|Encryption Key::Import Public Key (C0028.001)|advapi32.CryptAcquireContext, crypt32.CryptImportPublicKeyInfo, crypt32.CryptStringToBinary, crypt32.CryptDecodeObjectEx|
+|[create new key via CryptAcquireContext](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/create-new-key-via-cryptacquirecontext.yml)|Encryption Key (C0028)|advapi32.CryptAcquireContext|
+|[encrypt data using RC4 KSA](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/rc4/encrypt-data-using-rc4-ksa.yml)|Encryption Key::RC4 KSA (C0028.002)| |
+|[reference public RSA key](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/rsa/reference-public-rsa-key.yml)|Encryption Key (C0028)| |
 
 ## References
 

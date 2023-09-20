@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -39,6 +39,12 @@
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon gets file attributes. [[1]](#1)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip gets file attributes. [[1]](#1)|
 |[**UP007**](../xample-malware/up007.md)|2016|--|UP007 gets file attributes. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[get file attributes](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/meta/get-file-attributes.yml)|Get File Attributes (C0049)|kernel32.GetFileAttributes, ZwQueryDirectoryFile, ZwQueryInformationFile, NtQueryDirectoryFile, NtQueryInformationFile, System.IO.File::GetAttributes, System.IO.File::GetCreationTime, System.IO.File::GetCreationTimeUtc, System.IO.File::GetLastAccessTime, System.IO.File::GetLastAccessTimeUtc, System.IO.File::GetLastWriteTime, System.IO.File::GetLastWriteTimeUtc|
 
 ## References
 

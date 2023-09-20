@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>6 June 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -62,6 +62,12 @@ Droppers may be described as “single stage” or “two stage.” While the fo
 |[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip contains an embedded PE file. [[19]](#19)|
 |[**ElectroRAT**](../xample-malware/electrorat.md)|2020|--|ElectroRat looks for wallets to steal cryptocurrency. [[20]](#20)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[contain an embedded PE file](https://github.com/mandiant/capa-rules/blob/master/executable/subfile/pe/contain-an-embedded-pe-file.yml)|Install Additional Program (B0023)| |
+|[write and execute a file](https://github.com/mandiant/capa-rules/blob/master/communication/c2/file-transfer/write-and-execute-a-file.yml)|Install Additional Program (B0023)| |
 
 ## References
 <a name="1">"Cyclops Blink: Malware Analysis Report, Version 1.0," National Cyber Security Centre/GCHQ, 23 Feb. 2022. [Online]. Available: https://www.ncsc.gov.uk/files/Cyclops-Blink-Malware-Analysis-Report.pdf.

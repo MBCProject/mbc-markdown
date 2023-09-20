@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>21 November 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -58,6 +58,15 @@ Malware creates a process.
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|C0017.003|TrickBot creates a suspended process. [[2]](#2)|
 |[**UP007**](../xample-malware/up007.md)|2016|--|The malware creates a process on Windows. [[2]](#2)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[create process on Windows](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/create/create-process-on-windows.yml)|Create Process (C0017)|kernel32.WinExec, kernel32.CreateProcess, shell32.ShellExecute, shell32.ShellExecuteEx, advapi32.CreateProcessAsUser, advapi32.CreateProcessWithLogon, advapi32.CreateProcessWithToken, kernel32.CreateProcessInternal, ntdll.NtCreateUserProcess, ntdll.NtCreateProcess, ntdll.NtCreateProcessEx, ntdll.ZwCreateProcess, ZwCreateProcessEx, ntdll.ZwCreateUserProcess, ntdll.RtlCreateUserProcess, System.Diagnostics.Process::Start|
+|[create process on Linux](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/create/create-process-on-linux.yml)|Create Process (C0017)|execve, execl, execlp, execle, execv, execvp, execvpe, posix_spawn, posix_spawnp, popen|
+|[execute command](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/create/execute-command.yml)|Create Process (C0017)|system, _system, wsystem, _wsystem|
+|[create a process with modified I/O handles and window](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/create/create-a-process-with-modified-io-handles-and-window.yml)|Create Process (C0017)|kernel32.CreateProcess, kernel32.CreateProcessInternal, advapi32.CreateProcessAsUser, advapi32.CreateProcessWithLogon, advapi32.CreateProcessWithToken, kernel32.GetStartupInfo, System.Diagnostics.Process::Start|
+|[create process suspended](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/create/create-process-suspended.yml)|Create Process::Create Suspended Process (C0017.003)|kernel32.CreateProcess, advapi32.CreateProcessAsUser|
 
 ## References
 

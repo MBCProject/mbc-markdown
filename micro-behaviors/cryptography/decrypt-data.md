@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -56,6 +56,13 @@ Malware may decrypt data.
 |---|---|---|---|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy encrypts or decrypts via WinCrypt. [[1]](#1)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|--|Encrypt or decrypt via WinCrypt (This capa rule had 1 match) [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[encrypt or decrypt via WinCrypt](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/encrypt-or-decrypt-via-wincrypt.yml)|Decrypt Data (C0031)|CryptEncrypt, CryptDecrypt, CryptAcquireContext, CryptGenKey, CryptImportKey|
+|[decrypt data using AES via x86 extensions](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/aes/decrypt-data-using-aes-via-x86-extensions.yml)|Decrypt Data::AES (C0031.001)| |
 
 ## Code Snippets
 

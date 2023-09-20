@@ -12,7 +12,7 @@
 
 * **MBC v3.0** - The latest MBC release (to be released soon) includes behavior detection information, expanded descriptions, and new properties, such as version and created and modified dates.
 
-* **STIX 2.1 Representation** - MBC content is available in an updated [STIX format](https://github.com/MBCProject/mbc-stix2) based on a new [STIX 2.1 extension](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications).
+* **STIX 2.1 Representation** - MBC content will soon be available in an updated STIX format based on the new [STIX 2.1 Malware Behavior Extension](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/malware-behavior).
 
 * **Attack Flow Examples** - Example attack flows for [Shamoon](../xample-malware/shamoon.md) and [SearchAwesome](../xample-malware/searchawesome.md) reference MBC behaviors.
 
@@ -144,7 +144,6 @@ Observables that do not reflect on the malware's *code* are not captured in MBC;
 ### Do malware behaviors and adversary behaviors overlap? ###
 Malware behaviors and adversary behaviors can overlap because adversaries sometimes use malware to achieve their goals. However, MBC only captures behaviors associated with malware *code*. In other words, MBC behaviors are identified through analysis of a malware sample's binary code or by observing the malware on a network (or in a disassembler), whereas adversary behaviors may be derived from a variety of indicators on a system or network. 
 
-
 ## <a name="stix"></a>STIX Representation ##
 
 ### How are MBC behaviors captured in STIX 2? ###
@@ -194,6 +193,8 @@ The OASIS Collaborative Automated Course of Action Operations ([CACAO](https://o
 
 To illustrate MBC's use, we defined a playbook for [Locky Bart](../xample-malware/locky-bart.md), which is available in the [CACAO example repository](https://github.com/oasis-tcs/cacao/tree/master/Examples/CACAO-2.0). 
 
+### Can Pafish behaviors be mapped to MBC? ###
+Yes. [Pafish](https://github.com/a0rtega/pafish) is a tool for detecting virtual machines and malware analysis environments. Malware analysts use Pafish to determine whether their analysis environment is likely to be detected by malware. [[1]](#1) We studied the Pafish source code to identify its behaviors and mapped those behaviors to MBC. The results are [here](pafish.md).
 
 ## <a name="relationship"></a>Relationship to ATT&CK ##
 

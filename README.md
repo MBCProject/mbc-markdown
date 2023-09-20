@@ -29,11 +29,11 @@ Methods are associated with behaviors and serve different roles, depending on th
 
 Note that a method cannot be used without a behavior.
 
-### Micro-behaviors ###
+### Micro-objectives / Micro-behaviors ###
 Some malware behaviors are low-level, support many objectives and other behaviors, and aren't necessarily malicious. For example, a TCP socket may be created, or a string may be checked for some condition. Because such behaviors are often noted in malware analysis, they are captured in MBC. See [Micro-behaviors](./micro-behaviors/README.md) for details.
 
 ### <a name="ids"></a>Identifiers ###
-As shown below, the letter of an identifier relays information about a behavior. Note that letters used in MBC v2 are changed from MBC v1.
+As shown below, the letter of an identifier relays information about a behavior. Note that letters used in MBC v2 and v3 are changed from MBC v1.
 
 |**Letter**|**Example**|**Description**|
 |---|---|---|
@@ -72,9 +72,6 @@ This visual representation of the MBC Matrix is based on the ATT&CK Navigator. T
 
 ### Malware Corpus ###
 The MBC contains a [malware corpus](./xample-malware/README.md) where each malware entry is decomposed into behaviors that are mapped to ATT&CK and MBC. The mappings are based on open source malware analysis reports. Note that some malware types are also present in the ATT&CK software page. We refer readers to the corresponding ATT&CK page for a list of identified ATT&CK techniques. However, we will list any newly identified ATT&CK techniques in the MBC malware page. 
-
-## Micro-behavior Objectives ##
-[Micro-behaviors](./micro-behaviors/README.md) and their associated objectives are under development.
 
 ## Malware Objective Descriptions ##
 Malware objectives are defined in the table below. Follow the links to view associated behaviors. 

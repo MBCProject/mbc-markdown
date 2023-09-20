@@ -8,7 +8,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>29 November 2022</b></td>
 </tr>
 </table>
 
@@ -26,8 +26,11 @@ Micro-behaviors related to processes.
 * **Open Process** [C0065](../process/open-process.md)
 * **Open Thread** [C0066](../process/open-thread.md)
 * **Resume Thread** [C0054](../process/resume-thread.md)
+* **Set Thread Context** [C0072](../process/set-thread-context.md)
 * **Set Thread Local Storage Value** [C0041](../process/set-thread-local-storage-value.md)
 * **Suspend Thread** [C0055](../process/suspend-thread.md)	
 * **Synchronization** [C0022](../process/synchronization.md)
 * **Terminate Process** [C0018](../process/terminate-process.md)
 * **Terminate Thread** [C0039](../process/terminate-thread.md)
+* **Unmap Section View** [C0070](../process/unmap-section-view.md)
+* **Write Process Memory** [C0071](../process/write-process-memory.md)

@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>31 October 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -35,6 +35,12 @@
 |---|---|---|---|
 |[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|CryptoLocker resumes thread. [[1]](#1)|
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Dark Comet resumes a thread. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[resume thread](https://github.com/mandiant/capa-rules/blob/master/host-interaction/thread/resume/resume-thread.yml)|Resume Thread (C0054)|kernel32.ResumeThread, ntdll.NtResumeThread, ntdll.ZwResumeThread, System.Threading.Thread::Resume|
 
 ## References
 

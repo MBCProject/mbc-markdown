@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>24 May 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -80,6 +80,22 @@ Malware modifies the registry.
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|C0036.007|Shamoon deletes registry values. [[1]](#1)|
 |[**UP007**](../xample-malware/up007.md)|2016|C0036.001|UP007 sets registry values. [[1]](#1)|
 |[**UP007**](../xample-malware/up007.md)|2016|C0036.006|UP007 queries or enumerates registry values. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[set registry key via offline registry library](https://github.com/mandiant/capa-rules/blob/master/host-interaction/registry/set-registry-key-via-offline-registry-library.yml)|Registry::Set Registry Key (C0036.001)|ORSetValue, ORSaveHive|
+|[open registry key via offline registry library](https://github.com/mandiant/capa-rules/blob/master/host-interaction/registry/open-registry-key-via-offline-registry-library.yml)|Registry::Open Registry Key (C0036.003)|OROpenHive, OROpenKey|
+|[query or enumerate registry key](https://github.com/mandiant/capa-rules/blob/master/host-interaction/registry/query-or-enumerate-registry-key.yml)|Registry::Query Registry Key (C0036.005)|advapi32.RegEnumKey, advapi32.RegEnumKeyEx, advapi32.RegQueryInfoKeyA, ZwQueryKey, ZwEnumerateKey, NtQueryKey, NtEnumerateKey, RtlCheckRegistryKey, SHEnumKeyEx, SHQueryInfoKey, SHRegEnumUSKey, SHRegQueryInfoUSKey, Microsoft.Win32.RegistryKey::GetSubKeyNames, Microsoft.Win32.RegistryKey::OpenBaseKey, Microsoft.Win32.RegistryKey::OpenRemoteBaseKey, Microsoft.Win32.RegistryKey::OpenSubKey|
+|[query or enumerate registry value](https://github.com/mandiant/capa-rules/blob/master/host-interaction/registry/query-or-enumerate-registry-value.yml)|Registry::Query Registry Value (C0036.006)|advapi32.RegGetValue, advapi32.RegEnumValue, advapi32.RegQueryValue, advapi32.RegQueryValueEx, advapi32.RegQueryMultipleValues, ZwQueryValueKey, ZwEnumerateValueKey, NtQueryValueKey, NtEnumerateValueKey, RtlQueryRegistryValues, SHGetValue, SHEnumValue, SHRegGetInt, SHRegGetPath, SHRegGetValue, SHQueryValueEx, SHRegGetUSValue, SHOpenRegStream, SHRegEnumUSValue, SHOpenRegStream2, SHRegQueryUSValue, SHRegGetBoolUSValue, SHRegGetValueFromHKCUHKLM, SHRegGetBoolValueFromHKCUHKLM, Microsoft.Win32.RegistryKey::GetValue, Microsoft.Win32.RegistryKey::GetValueKind, Microsoft.Win32.RegistryKey::GetValueNames, Microsoft.Win32.Registry::GetValue|
+|[query registry key via offline registry library](https://github.com/mandiant/capa-rules/blob/master/host-interaction/registry/query-registry-key-via-offline-registry-library.yml)|Registry::Query Registry Value (C0036.006)|ORGetValue|
+|[create registry key via offline registry library](https://github.com/mandiant/capa-rules/blob/master/host-interaction/registry/create-registry-key-via-offline-registry-library.yml)|Registry::Create Registry Key (C0036.004)|ORCreateHive, ORCreateKey|
+|[set registry value](https://github.com/mandiant/capa-rules/blob/master/host-interaction/registry/create/set-registry-value.yml)|Registry::Set Registry Key (C0036.001)|advapi32.RegSetValue, advapi32.RegSetValueEx, advapi32.RegSetKeyValue, ZwSetValueKey, NtSetValueKey, RtlWriteRegistryValue, SHSetValue, SHRegSetPath, SHRegSetValue, SHRegSetUSValue, SHRegWriteUSValue, Microsoft.Win32.RegistryKey::SetValue, Microsoft.Win32.Registry::SetValue|
+|[delete registry key](https://github.com/mandiant/capa-rules/blob/master/host-interaction/registry/delete/delete-registry-key.yml)|Registry::Delete Registry Key (C0036.002)|advapi32.RegDeleteKey, advapi32.RegDeleteTree, advapi32.RegDeleteKeyEx, advapi32.RegDeleteKeyTransacted, ZwDeleteKey, NtDeleteKey, SHDeleteKey, SHDeleteEmptyKey, SHRegDeleteEmptyUSKey, Microsoft.Win32.RegistryKey::DeleteSubKey, Microsoft.Win32.RegistryKey::DeleteSubKeyTree|
+|[delete registry value](https://github.com/mandiant/capa-rules/blob/master/host-interaction/registry/delete/delete-registry-value.yml)|Registry::Delete Registry Value (C0036.007)|advapi32.RegDeleteValue, advapi32.RegDeleteKeyValue, ZwDeleteValueKey, NtDeleteValueKey, RtlDeleteRegistryValue, SHDeleteValue, SHRegDeleteUSValue, Microsoft.Win32.RegistryKey::DeleteValue|
+|[create or open registry key](https://github.com/mandiant/capa-rules/blob/master/lib/create-or-open-registry-key.yml)|Registry::Create Registry Key (C0036.004)|advapi32.RegOpenKey, advapi32.RegOpenKeyEx, advapi32.RegCreateKey, advapi32.RegCreateKeyEx, advapi32.RegOpenCurrentUser, advapi32.RegOpenKeyTransacted, advapi32.RegOpenUserClassesRoot, advapi32.RegCreateKeyTransacted, ZwOpenKey, ZwOpenKeyEx, ZwCreateKey, ZwOpenKeyTransacted, ZwOpenKeyTransactedEx, ZwCreateKeyTransacted, NtOpenKey, NtCreateKey, SHRegOpenUSKey, SHRegCreateUSKey, RtlCreateRegistryKey, Microsoft.Win32.RegistryKey::OpenSubKey, Microsoft.Win32.RegistryKey::OpenBaseKey, Microsoft.Win32.RegistryKey::OpenRemoteBaseKey, Microsoft.Win32.RegistryKey::CreateSubKey|
+|[create or open registry key](https://github.com/mandiant/capa-rules/blob/master/lib/create-or-open-registry-key.yml)|Registry::Open Registry Key (C0036.003)|advapi32.RegOpenKey, advapi32.RegOpenKeyEx, advapi32.RegCreateKey, advapi32.RegCreateKeyEx, advapi32.RegOpenCurrentUser, advapi32.RegOpenKeyTransacted, advapi32.RegOpenUserClassesRoot, advapi32.RegCreateKeyTransacted, ZwOpenKey, ZwOpenKeyEx, ZwCreateKey, ZwOpenKeyTransacted, ZwOpenKeyTransactedEx, ZwCreateKeyTransacted, NtOpenKey, NtCreateKey, SHRegOpenUSKey, SHRegCreateUSKey, RtlCreateRegistryKey, Microsoft.Win32.RegistryKey::OpenSubKey, Microsoft.Win32.RegistryKey::OpenBaseKey, Microsoft.Win32.RegistryKey::OpenRemoteBaseKey, Microsoft.Win32.RegistryKey::CreateSubKey|
 
 ## References
 
