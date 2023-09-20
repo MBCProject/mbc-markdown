@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>17 August 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -63,6 +63,31 @@ This description refines the ATT&CK **Obfuscated Files or Information: Software 
 |[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|DarkComet has the option to compress its payload using UPX or MPRESS.  [[6]](#6)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware has a custom packer to obfuscate itself. [[7]](#7)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|F0001.005|Emotet uses custom packers which first decrypt the loaders and the loaders decrypt and load Emotet's main payloads. [[8]](#8)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[packed with pebundle](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/pebundle/packed-with-pebundle.yml)|Software Packing (F0001)| |
+|[packed with Themida](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/themida/packed-with-themida.yml)|Software Packing::Themida (F0001.011)| |
+|[packed with VMProtect](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/vmprotect/packed-with-vmprotect.yml)|Software Packing::VMProtect (F0001.010)| |
+|[packed with y0da crypter](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/y0da/packed-with-y0da-crypter.yml)|Software Packing (F0001)| |
+|[packed with pelocknt](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/pelocknt/packed-with-pelocknt.yml)|Software Packing (F0001)| |
+|[packed with GoPacker](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/gopacker/packed-with-gopacker.yml)|Software Packing::Standard Compression (F0001.002)| |
+|[packed with Confuser](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/confuser/packed-with-confuser.yml)|Software Packing::Confuser (F0001.009)| |
+|[packed with rlpack](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/rlpack/packed-with-rlpack.yml)|Software Packing (F0001)| |
+|[packed with ASPack](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/aspack/packed-with-aspack.yml)|Software Packing (F0001)| |
+|[packed with generic packer](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/generic/packed-with-generic-packer.yml)|Software Packing::Standard Compression (F0001.002)| |
+|[packed with amber](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/amber/packed-with-amber.yml)|Software Packing (F0001)| |
+|[packed with petite](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/petite/packed-with-petite.yml)|Software Packing (F0001)| |
+|[packed with peshield](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/peshield/packed-with-peshield.yml)|Software Packing (F0001)| |
+|[packed with UPX](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/upx/packed-with-upx.yml)|Software Packing::UPX (F0001.008)| |
+|[packed with upack](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/upack/packed-with-upack.yml)|Software Packing (F0001)| |
+|[packed with PECompact](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/pecompact/packed-with-pecompact.yml)|Software Packing (F0001)| |
+|[packed with Huan](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/huan/packed-with-huan.yml)|Software Packing (F0001)| |
+|[packed with nspack](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/nspack/packed-with-nspack.yml)|Software Packing (F0001)| |
+|[packed with kkrunchy](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/kkrunchy/packed-with-kkrunchy.yml)|Software Packing (F0001)| |
+|[packed with PESpin](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/pespin/packed-with-pespin.yml)|Software Packing (F0001)| |
 
 
 ## References

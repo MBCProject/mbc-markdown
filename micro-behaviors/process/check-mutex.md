@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>17 August 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -36,6 +36,13 @@ Malware checks a mutex.
 |---|---|---|---|
 |[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy variant checks if the wireshark-is-running{} named mutex object exists. [[1]](#1)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|--|Malware checks if multiple instances of the same mutex is running. If multiple instances are running, the malware exits. [[2]](#2) [[3]](#3)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[check mutex](https://github.com/mandiant/capa-rules/blob/master/host-interaction/mutex/check-mutex.yml)|Check Mutex (C0043)|kernel32.OpenMutex, System.Threading.Mutex::OpenExisting, System.Threading.Mutex::TryOpenExisting, kernel32.GetLastError|
+|[check mutex and exit](https://github.com/mandiant/capa-rules/blob/master/host-interaction/mutex/check-mutex-and-exit.yml)|Check Mutex (C0043)|ExitProcess, exit, _Exit, _exit, WaitForSingleObject, GetLastError|
 
 ## References
 

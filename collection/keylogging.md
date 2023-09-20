@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -58,6 +58,12 @@ See ATT&CK: **Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/te
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|F0002.002|Malware logs keystrokes via polling. [[9]](#9)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|F0002.002|Malware logs keystrokes via polling. [[9]](#9)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[log keystrokes via polling](https://github.com/mandiant/capa-rules/blob/master/collection/keylog/log-keystrokes-via-polling.yml)|Keylogging::Polling (F0002.002)|user32.GetAsyncKeyState, user32.GetKeyState, user32.GetKeyboardState, user32.VkKeyScan, user32.VkKeyScanEx, user32.GetKeyNameText|
+|[log keystrokes via application hook](https://github.com/mandiant/capa-rules/blob/master/collection/keylog/log-keystrokes-via-application-hook.yml)|Keylogging::Application Hook (F0002.001)| |
 
 ## References
 

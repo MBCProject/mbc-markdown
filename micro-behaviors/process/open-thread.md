@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>10 November 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -29,3 +29,9 @@
 # Open Thread
 
 Malware opens a thread. 
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[open thread](https://github.com/mandiant/capa-rules/blob/master/lib/open-thread.yml)|Open Thread (C0066)|kernel32.OpenThread, NtOpenThread, ZwOpenThread|

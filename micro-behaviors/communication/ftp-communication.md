@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>10 November 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -36,3 +36,10 @@ The FTP Communication micro-behavior focuses on FTP communication.
 |---|---|---|
 |**Send File**|C0004.001|Send FTP file.|
 |**WinINet**|C0004.002|Send FTP command via WinINet.|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[send file using FTP](https://github.com/mandiant/capa-rules/blob/master/communication/ftp/send/send-file-using-ftp.yml)|FTP Communication::Send File (C0004.001)|wininet.FtpPutFile, wininet.FtpSetCurrentDirectory, wininet.InternetConnect, System.Net.WebRequest::Create|
+|[send file using FTP](https://github.com/mandiant/capa-rules/blob/master/communication/ftp/send/send-file-using-ftp.yml)|FTP Communication::WinINet (C0004.002)|wininet.FtpPutFile, wininet.FtpSetCurrentDirectory, wininet.InternetConnect, System.Net.WebRequest::Create|

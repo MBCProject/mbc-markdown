@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -45,6 +45,14 @@
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Rombertik writes files on Windows. [[1]](#1)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon writes files on Windows. [[1]](#1)|
 |[**UP007**](../xample-malware/up007.md)|2016|--|UP007 writes files on Windows. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[write file on Linux](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/write/write-file-on-linux.yml)|Writes File (C0052)|fputc, fputs, putc, write, fputwc, putwc, fputws, write, fwrite, putwchar|
+|[write file on Windows](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/write/write-file-on-windows.yml)|Writes File (C0052)|kernel32.WriteFile, kernel32.WriteFileEx, NtWriteFile, ZwWriteFile, _fwrite, fwrite, System.IO.File::WriteAllBytes, System.IO.File::WriteAllBytesAsync, System.IO.File::WriteAllLines, System.IO.File::WriteAllLinesAsync, System.IO.File::WriteAllText, System.IO.File::WriteAllTextAsync, System.IO.File::AppendAllLines, System.IO.File::AppendAllLinesAsync, System.IO.File::AppendAllText, System.IO.File::AppendAllTextAsync, System.IO.File::AppendText, System.IO.FileInfo::AppendText|
+|[create process memory minidump](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/dump/create-process-memory-minidump.yml)|Writes File (C0052)|dbghelp.MiniDumpWriteDump|
 
 ## References
 

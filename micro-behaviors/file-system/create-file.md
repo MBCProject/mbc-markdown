@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>10 November 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -36,3 +36,9 @@ Malware creates a file.
 |---|---|---|
 |**Create Office Document**|C0016.001|An Office document is created.|
 |**Create Ransomware File**|C0016.002|Create a file used by ransomware.|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[create or open file](https://github.com/mandiant/capa-rules/blob/master/lib/create-or-open-file.yml)|Create File (C0016)|CreateFile, CreateFileEx, IoCreateFile, IoCreateFileEx, ZwOpenFile, ZwCreateFile, NtOpenFile, NtCreateFile, LZCreateFile, LZOpenFile, fopen, fopen64, fdopen, freopen, open, openat|

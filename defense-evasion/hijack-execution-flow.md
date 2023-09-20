@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>15 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -66,6 +66,13 @@ See ATT&CK: **Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|F0015.003|Stuxnet hooks ntdll.dll to monitor for requests to load specially crafted file names which are mapped to a location specified by Stuxnet. [[11]](#11)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|F0015.007|WTR4141.tmp hooks APIs from kernel32.dll and ntdll.dll and replaces the original code for these functions with code that checks for files with properties pertaining to Stuxnet files. If a request is made to list a file with the specified properties, the response from these APIs is altered to state that the file does not exist, thereby hiding all files with these properties. [[11]](#11)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[create new application domain in .NET](https://github.com/mandiant/capa-rules/blob/master/host-interaction/memory/create-new-application-domain-in-dotnet.yml)|Hijack Execution Flow (F0015)| |
+|[execute shellcode via Windows callback function](https://github.com/mandiant/capa-rules/blob/master/load-code/shellcode/execute-shellcode-via-windows-callback-function.yml)|Hijack Execution Flow::Abuse Windows Function Calls (F0015.006)|EnumDateFormats, GrayString, LineDDA, EnumChildWindows, EnumDesktops, EnumDesktopWindows, EnumSystemCodePages, EnumSystemGeoID, EnumSystemLanguageGroups, EnumSystemLocales, EnumThreadWindows, EnumUILanguages, EnumWindows, EnumChildWindows, EnumTimeFormats|
+|[rebuild import table](https://github.com/mandiant/capa-rules/blob/master/load-code/pe/rebuild-import-table.yml)|Hijack Execution Flow::Import Address Table Hooking (F0015.003)|LoadLibraryA, GetProcAddress|
 
 ## References
 

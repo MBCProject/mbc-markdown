@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>10 November 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -29,3 +29,9 @@
 # Wallpaper
 
 Malware modifies the wallpaper. 
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[change the wallpaper](https://github.com/mandiant/capa-rules/blob/master/host-interaction/gui/session/wallpaper/change-the-wallpaper.yml)|Wallpaper (C0035)|SystemParametersInfo|

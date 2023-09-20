@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>22 May 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -46,6 +46,12 @@ Malware may attempt to get a listing of open application windows.
 |[**Kovter**](../xample-malware/kovter.md)|2016|E1010.m01|Kovter gets graphical window texts. [[1]](#1)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|E1010.m01|Rombertik gets graphical window texts. [[1]](#1)|
 |[**UP007**](../xample-malware/up007.md)|2016|E1010.m01|UP007 gets graphical window text. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[get graphical window text](https://github.com/mandiant/capa-rules/blob/master/host-interaction/gui/window/get-text/get-graphical-window-text.yml)|Application Window Discovery (E1010)|user32.IsWindowVisible, user32.SendMessage, user32.GetForegroundWindow, user32.GetWindowText|
 
 ## References
 

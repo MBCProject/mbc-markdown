@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>17 August 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -56,6 +56,12 @@ See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.or
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|TrickBot accepts command line arguments. [[9]](#9)|
 |[**UP007**](../xample-malware/up007.md)|2016|--|The malware accepts command line arguments. [[9]](#9)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[accept command line arguments](https://github.com/mandiant/capa-rules/blob/master/host-interaction/cli/accept-command-line-arguments.yml)|Command and Scripting Interpreter (E1059)|GetCommandLine, CommandLineToArgv, System.Environment::GetCommandLineArgs|
+|[run PowerShell expression](https://github.com/mandiant/capa-rules/blob/master/load-code/powershell/run-powershell-expression.yml)|Command and Scripting Interpreter (E1059)|System.Management.Automation.PowerShell::Create, System.Management.Automation.PowerShell::AddScript, System.Management.Automation.PowerShell::Invoke|
 
 ## References
 

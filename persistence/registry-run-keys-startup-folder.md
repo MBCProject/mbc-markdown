@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>17 August 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -56,6 +56,11 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 |[**WannaCry**](../xample-malware/wannacry.md)|2017|--|WannaCry creates two registry run keys to ensure persistence. [[18]](#18)|
 |[**CryptoWall**](../xample-malware/cryptowall.md)|A copy of Crytowall is placed in the startup folder and a directory at the root of the system drive. Also adds multiple "autostart" registry keys. [[19]](#19)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[persist via Run registry key](https://github.com/mandiant/capa-rules/blob/master/persistence/registry/run/persist-via-run-registry-key.yml)|Registry Run Keys / Startup Folder (F0012)| |
 
 ## References
 

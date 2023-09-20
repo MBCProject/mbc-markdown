@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>10 November 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -35,3 +35,10 @@ Malware installs a driver or minifilter.
 |Name|ID|Description|
 |---|---|---|
 |**Minifilter**|C0037.001|Malware registers a minifilter.|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[install driver](https://github.com/mandiant/capa-rules/blob/master/host-interaction/driver/install-driver.yml)|Install Driver (C0037)|ntdll.NtLoadDriver, ZwLoadDriver|
+|[register minifilter driver](https://github.com/mandiant/capa-rules/blob/master/host-interaction/filter/register-minifilter-driver.yml)|Install Driver::Minifilter (C0037.001)|FltRegisterFilter|

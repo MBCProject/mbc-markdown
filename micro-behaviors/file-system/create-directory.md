@@ -21,13 +21,12 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
 
 # Create Directory
-
 
 ## Use in Malware
 
@@ -40,6 +39,12 @@
 |[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter creates directories. [[1]](#1)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip creates directories. [[1]](#1)|
 |[**UP007**](../xample-malware/up007.md)|2016|--|UP007 creates directories. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[create directory](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/create/create-directory.yml)|Create Directory (C0046)|kernel32.CreateDirectory, kernel32.CreateDirectoryEx, kernel32.CreateDirectoryTransacted, NtCreateDirectoryObject, ZwCreateDirectoryObject, SHCreateDirectory, SHCreateDirectoryEx, _mkdir, _wmkdir, System.IO.Directory::CreateDirectory, System.IO.DirectoryInfo::Create, System.IO.DirectoryInfo::CreateSubdirectory|
 
 ## References
 

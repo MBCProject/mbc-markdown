@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -35,6 +35,13 @@
 |---|---|---|---|
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|DarkComet linked against ZLIB. [[1]](#1)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Linked against ZLIB (This capa rule had 1 match) [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[linked against aPLib](https://github.com/mandiant/capa-rules/blob/master/linking/static/aplib/linked-against-aplib.yml)|Compression Library (C0060)| |
+|[linked against ZLIB](https://github.com/mandiant/capa-rules/blob/master/linking/static/zlib/linked-against-zlib.yml)|Compression Library (C0060)| |
 
 ## References
 

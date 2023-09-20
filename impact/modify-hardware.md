@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>12 June 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -47,6 +47,13 @@ Malware modifies hardware.
 Name|Date|Method|Description|
 |---|---|---|---|
 |[**BadUSB**](../xample-malware/badusb.md)|2014|--| BadUSB can modify USB drives. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[swap mouse buttons](https://github.com/mandiant/capa-rules/blob/master/host-interaction/hardware/mouse/swap-mouse-buttons.yml)|Modify Hardware::Mouse (B0042.002)|user32.SwapMouseButton|
+|[manipulate CD-ROM drive](https://github.com/mandiant/capa-rules/blob/master/host-interaction/hardware/cdrom/manipulate-cd-rom-drive.yml)|Modify Hardware::CDROM (B0042.001)|winmm.mciSendString|
 
 ## References
 

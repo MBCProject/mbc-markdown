@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>12 June 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -52,6 +52,12 @@ Note that the **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniqu
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Dark Comet allows an attacker to control the system via a GUI. [[3]](#3)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|The malware acts as a backdoor. [[4]](#4)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[create reverse shell on Linux](https://github.com/mandiant/capa-rules/blob/master/communication/c2/shell/create-reverse-shell-on-linux.yml)|Remote Access::Reverse Shell (B0022.001)| |
+|[create reverse shell](https://github.com/mandiant/capa-rules/blob/master/communication/c2/shell/create-reverse-shell.yml)|Remote Access::Reverse Shell (B0022.001)|kernel32.PeekNamedPipe, kernel32.CreateProcess, kernel32.ReadFile, kernel32.WriteFile|
 
 ## References
 

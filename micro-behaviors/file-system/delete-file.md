@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -46,6 +46,12 @@
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon deletes files. [[1]](#1)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet deletes files. [[1]](#1)|
 |[**UP007**](../xample-malware/up007.md)|2016|--|UP007 deletes files. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[delete file](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/delete/delete-file.yml)|Delete File (C0047)|kernel32.DeleteFile, DeleteFileTransacted, NtDeleteFile, ZwDeleteFile, remove, _wremove, System.IO.File::Delete, System.IO.FileSystemInfo::Delete, kernel32.SHFileOperation, MoveFileEx|
 
 ## References
 

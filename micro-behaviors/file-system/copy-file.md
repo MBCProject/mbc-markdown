@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -39,6 +39,12 @@
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi copies files. [[1]](#1)|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip copies files. [[1]](#1)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon copies files. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[copy file](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/copy/copy-file.yml)|Copy File (C0045)|kernel32.CopyFile, kernel32.CopyFileEx, CopyFile2, CopyFileTransacted, LZCopy, System.IO.FileInfo::CopyTo, System.IO.File::Copy, kernel32.SHFileOperation|
 
 ## References
 

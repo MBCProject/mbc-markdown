@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -64,6 +64,25 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|C0001.011|Rombertik creates a TCP socket. [[2]](#2)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|C0001.009|Shamoon initializes a Winsock library. [[2]](#2)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[start TCP server](https://github.com/mandiant/capa-rules/blob/master/communication/tcp/serve/start-tcp-server.yml)|Socket Communication::Start TCP Server (C0001.005)|listen, accept, WSAAccept, System.Net.Sockets.TcpListener::Start, System.Net.Sockets.TcpListener::AcceptTcpClient, System.Net.Sockets.TcpListener::BeginAcceptTcpClient, System.Net.Sockets.TcpListener::AcceptTcpClientAsync, System.Net.Sockets.TcpListener::AcceptSocket, System.Net.Sockets.TcpListener::BeginAcceptSocket, System.Net.Sockets.TcpListener::AcceptSocketAsync|
+|[act as TCP client](https://github.com/mandiant/capa-rules/blob/master/communication/tcp/client/act-as-tcp-client.yml)|Socket Communication::TCP Client (C0001.008)|System.Net.Sockets.TcpClient::ctor|
+|[get socket status](https://github.com/mandiant/capa-rules/blob/master/communication/socket/get-socket-status.yml)|Socket Communication::Get Socket Status (C0001.012)|ws2_32.select|
+|[create raw socket](https://github.com/mandiant/capa-rules/blob/master/communication/socket/create-raw-socket.yml)|Socket Communication::Create Socket (C0001.003)|socket, ws2_32.WSASocketA|
+|[set socket configuration](https://github.com/mandiant/capa-rules/blob/master/communication/socket/set-socket-configuration.yml)|Socket Communication::Set Socket Config (C0001.001)|ws2_32.setsockopt, ws2_32.ioctlsocket|
+|[create VMCI socket](https://github.com/mandiant/capa-rules/blob/master/communication/socket/create-vmci-socket.yml)|Socket Communication::Create Socket (C0001.003)|socket, DeviceIoControl, socket, ioctl|
+|[initialize Winsock library](https://github.com/mandiant/capa-rules/blob/master/communication/socket/initialize-winsock-library.yml)|Socket Communication::Initialize Winsock Library (C0001.009)|ws2_32.WSAStartup|
+|[connect TCP socket](https://github.com/mandiant/capa-rules/blob/master/communication/socket/tcp/connect-tcp-socket.yml)|Socket Communication::Connect Socket (C0001.004)|connect, ws2_32.connect, ws2_32.WSAConnect, ConnectEx, WSAIoctl, setsockopt, bind|
+|[create TCP socket](https://github.com/mandiant/capa-rules/blob/master/communication/socket/tcp/create-tcp-socket.yml)|Socket Communication::Create TCP Socket (C0001.011)|ws2_32.socket, ws2_32.WSASocket, socket|
+|[create TCP socket via raw AFD driver](https://github.com/mandiant/capa-rules/blob/master/communication/socket/tcp/create-tcp-socket-via-raw-afd-driver.yml)|Socket Communication::Create TCP Socket (C0001.011)|kernel32.CreateEvent, NtCreateFile, NtDeviceIoControlFile, kernel32.WaitForSingleObject|
+|[obtain TransmitPackets callback function via WSAIoctl](https://github.com/mandiant/capa-rules/blob/master/communication/socket/tcp/send/obtain-transmitpackets-callback-function-via-wsaioctl.yml)|Socket Communication::Send TCP Data (C0001.014)|WSAIoctl, WSAGetLastError|
+|[send TCP data via WFP API](https://github.com/mandiant/capa-rules/blob/master/communication/socket/tcp/send/send-tcp-data-via-wfp-api.yml)|Socket Communication::Send TCP Data (C0001.014)|fwpkclnt.FwpsStreamInjectAsync0|
+|[create UDP socket](https://github.com/mandiant/capa-rules/blob/master/communication/socket/udp/send/create-udp-socket.yml)|Socket Communication::Create UDP Socket (C0001.010)|ws2_32.socket, ws2_32.WSASocket, socket, System.Net.Sockets.Socket::ctor, System.Net.Sockets.UdpClient::ctor|
+|[send data on socket](https://github.com/mandiant/capa-rules/blob/master/communication/socket/send/send-data-on-socket.yml)|Socket Communication::Send Data (C0001.007)|ws2_32.send, ws2_32.sendto, ws2_32.WSASend, ws2_32.WSASendMsg, ws2_32.WSASendTo, send, System.Net.Sockets.Socket::Send, System.Net.Sockets.Socket::SendAsync, System.Net.Sockets.Socket::SendTo, System.Net.Sockets.Socket::SendToAsync, System.Net.Sockets.UdpClient::Send|
+|[receive data on socket](https://github.com/mandiant/capa-rules/blob/master/communication/socket/receive/receive-data-on-socket.yml)|Socket Communication::Receive Data (C0001.006)|ws2_32.recv, ws2_32.recvfrom, ws2_32.WSARecv, ws2_32.WSARecvDisconnect, ws2_32.WSARecvEx, ws2_32.WSARecvFrom, ws2_32.WSARecvMsg, recv, System.Net.Sockets.Socket::Receive, System.Net.Sockets.Socket::ReceiveAsync, System.Net.Sockets.Socket::ReceiveFrom, System.Net.Sockets.Socket::ReceiveFromAsync, System.Net.Sockets.Socket::ReceiveMessageFrom, System.Net.Sockets.Socket::ReceiveMessageFromAsync, System.Net.Sockets.Socket::BeginReceive, System.Net.Sockets.Socket::BeginReceiveFrom, System.Net.Sockets.Socket::BeginReceiveMessageFrom, System.Net.Sockets.Socket::EndReceive, System.Net.Sockets.Socket::EndReceiveFrom, System.Net.Sockets.Socket::EndReceiveMessageFrom|
 
 ## References
 

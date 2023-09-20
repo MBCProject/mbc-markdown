@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -36,6 +36,12 @@
 |[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut deletes directories. [[1]](#1)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Delete directory (This capa rule had 1 match) [[1]](#1)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|--|Delete directory (This capa rule had 4 matches) [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[delete directory](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/delete/delete-directory.yml)|Delete Directory (C0048)|RemoveDirectory, RemoveDirectoryTransacted, _rmdir, _wrmdir, System.IO.DirectoryInfo::Delete, System.IO.Directory::Delete|
 
 ## References
 

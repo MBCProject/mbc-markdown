@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 February 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -40,3 +40,11 @@ Malware may use a non-cryptographic hash.
 |**MurmurHash**|C0030.001|Malware uses the MurmurHash hash function.|
 |**pHash**|C0030.002|Malware uses the pHash hash function.|
 |**djb2**|C0030.006|Malware uses the djb2 hash function.|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[hash data using murmur3](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hashing/murmur/hash-data-using-murmur3.yml)|Non-Cryptographic Hash::MurmurHash (C0030.001)| |
+|[hash data using fnv](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hashing/fnv/hash-data-using-fnv.yml)|Non-Cryptographic Hash::FNV (C0030.005)|_allmul|
+|[hash data using djb2](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hashing/djb2/hash-data-using-djb2.yml)|Non-Cryptographic Hash::djb2 (C0030.006)| |

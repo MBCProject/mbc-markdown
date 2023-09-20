@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>10 November 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -29,3 +29,9 @@
 # Enumerate Threads
 
 Malware enumerates threads. 
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[enumerate threads](https://github.com/mandiant/capa-rules/blob/master/host-interaction/thread/list/enumerate-threads.yml)|Enumerate Threads (C0064)|kernel32.Thread32First, kernel32.Thread32Next, kernel32.CreateToolhelp32Snapshot|

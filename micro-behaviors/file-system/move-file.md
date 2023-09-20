@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -39,6 +39,12 @@
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi moves files. [[1]](#1)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon moves files. [[1]](#1)|
 |[**UP007**](../xample-malware/up007.md)|2016|--|UP007 moves files. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[move file](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/move/move-file.yml)|Move File (C0063)|kernel32.MoveFile, kernel32.MoveFileEx, MoveFileWithProgress, MoveFileTransacted, rename, _wrename, System.IO.FileInfo::MoveTo, System.IO.File::Move, kernel32.SHFileOperation|
 
 ## References
 

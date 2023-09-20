@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>17 August 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -74,6 +74,23 @@ For encryption and encoding characteristics of malware samples, as well as malwa
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0032.001|The function to import APIs uses a hash value and the DLL name of the target API. The API address returned from the function is stored into a global variance. API calls are obfuscated in the same manner as the stack strings and are resolved dynamically as the malware needs to use them. The malware encodes data in a stack string and copies that data into a global character buffer as a form of string obfuscation. [[9]](#9) [[10]](#10)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0032.017|The malware encodes data in a stack string and copies that data into a global character buffer as a form of string obfuscation. Different techniques are used to encrypt and obfuscate strings. Strings are dynamically decrypted when the malware needs to use them. [[9]](#9) [[10]](#10)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0032.009|The malware has 4 different export functions. [[9]](#9) [[10]](#10)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[obfuscated with ADVobfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-advobfuscator.yml)|Executable Code Obfuscation (B0032)| |
+|[obfuscated with DeepSea Obfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-deepsea-obfuscator.yml)|Executable Code Obfuscation (B0032)| |
+|[obfuscated with callobfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-callobfuscator.yml)|Executable Code Obfuscation (B0032)| |
+|[obfuscated with Dotfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-dotfuscator.yml)|Executable Code Obfuscation (B0032)| |
+|[obfuscated with vs-obfuscation](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-vs-obfuscation.yml)|Executable Code Obfuscation (B0032)| |
+|[obfuscated with Spices.Net Obfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-spicesdotnet-obfuscator.yml)|Executable Code Obfuscation (B0032)| |
+|[obfuscated with Babel Obfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-babel-obfuscator.yml)|Executable Code Obfuscation (B0032)| |
+|[obfuscated with SmartAssembly](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-smartassembly.yml)|Executable Code Obfuscation (B0032)| |
+|[obfuscated with Yano](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-yano.yml)|Executable Code Obfuscation (B0032)| |
+|[contain obfuscated stackstrings](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/string/stackstring/contain-obfuscated-stackstrings.yml)|Executable Code Obfuscation::Argument Obfuscation (B0032.020)| |
+|[contain obfuscated stackstrings](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/string/stackstring/contain-obfuscated-stackstrings.yml)|Executable Code Obfuscation::Stack Strings (B0032.017)| |
+|[use .NET library EncryptDecryptUtils](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/aes/use-dotnet-library-encryptdecryptutils.yml)|Executable Code Obfuscation (B0032)| |
 
 
 ## Code Snippets

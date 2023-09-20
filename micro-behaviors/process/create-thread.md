@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -39,6 +39,13 @@
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|Locky Bart creates a thread. [[1]](#1)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Rombertik creates a thread. [[1]](#1)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon creates a thread. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[create thread](https://github.com/mandiant/capa-rules/blob/master/host-interaction/thread/create/create-thread.yml)|Create Thread (C0038)|kernel32.CreateThread, _beginthread, _beginthreadex, PsCreateSystemThread, SHCreateThread, SHCreateThreadWithHandle, kernel32.CreateRemoteThread, kernel32.CreateRemoteThreadEx, RtlCreateUserThread, ntdll.NtCreateThread, ntdll.NtCreateThreadEx, ntdll.ZwCreateThread, ntdll.ZwCreateThreadEx, pthread_create, System.Threading.Thread::Start, System.Threading.Thread::ctor|
+|[spawn thread to RWX shellcode](https://github.com/mandiant/capa-rules/blob/master/load-code/shellcode/spawn-thread-to-rwx-shellcode.yml)|Create Thread (C0038)| |
 
 ## References
 

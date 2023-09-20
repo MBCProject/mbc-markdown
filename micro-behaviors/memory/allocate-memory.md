@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -43,6 +43,15 @@ Malware allocates memory, often to unpack itself.
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Rombertik allocates RWX memory. [[1]](#1)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet allocates RWX memory. [[1]](#1)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|TrickBot allocates RWX memory. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[allocate RWX memory](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/inject/allocate-rwx-memory.yml)|Allocate Memory (C0007)| |
+|[allocate memory](https://github.com/mandiant/capa-rules/blob/master/lib/allocate-memory.yml)|Allocate Memory (C0007)|kernel32.VirtualAlloc, kernel32.VirtualAllocEx, kernel32.VirtualAllocExNuma, kernel32.VirtualProtect, kernel32.VirtualProtectEx, NtAllocateVirtualMemory, ZwAllocateVirtualMemory, NtMapViewOfSection, ZwMapViewOfSection, NtProtectVirtualMemory, ZwProtectVirtualMemory|
+|[allocate RW memory](https://github.com/mandiant/capa-rules/blob/master/lib/allocate-rw-memory.yml)|Allocate Memory (C0007)| |
+|[spawn thread to RWX shellcode](https://github.com/mandiant/capa-rules/blob/master/load-code/shellcode/spawn-thread-to-rwx-shellcode.yml)|Allocate Memory (C0007)| |
 
 ## References
 

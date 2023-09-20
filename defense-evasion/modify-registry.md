@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>14 March 2023</b></td>
+<td><b>19 September 2023</b></td>
 </tr>
 </table>
 
@@ -56,7 +56,7 @@ See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112
 
 <a name="4">[4]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/
 
-<a name="5">[5]</a> https://blog.malwarebytes.com/threat-analysis/2016/07/untangling-kovter/
+<a name="5">[5]</a> https://labs.vipre.com/analysis-of-kovter-a-very-clever-piece-of-malware/#:~:text=Kovter%20copies%20the%20fileless%20persistence,written%20on%20to%20the%20filesystem.
 
 <a name="6">[6]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-returns-to-wipe-systems-in-middle-east-europe/
 

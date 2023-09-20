@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -37,6 +37,12 @@ Malware allocates thread local storage.
 |---|---|---|---|
 |[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter allocates thread local storage. [[1]](#1)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon allocates thread local storage. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[allocate thread local storage](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/allocate-thread-local-storage.yml)|Allocate Thread Local Storage (C0040)|kernel32.TlsAlloc|
 
 ## References
 

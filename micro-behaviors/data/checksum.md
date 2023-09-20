@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -50,6 +50,15 @@ Malware may derive a checksum from some block of data. The checksum is often use
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|C0032.001|Locky Bart hashes data with CRC32. [[1]](#1)|
 |[**UP007**](../xample-malware/up007.md)|2016|C0032.001|UP007 hashes data with CRC32. [[1]](#1)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[validate payment card number using luhn algorithm](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/checksum/luhn/validate-payment-card-number-using-luhn-algorithm.yml)|Checksum::Luhn (C0032.002)| |
+|[compute adler32 checksum](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/checksum/adler32/compute-adler32-checksum.yml)|Checksum::Adler (C0032.005)| |
+|[hash data with CRC32](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/checksum/crc32/hash-data-with-crc32.yml)|Checksum::CRC32 (C0032.001)|RtlComputeCrc32|
+|[validate payment card number using luhn algorithm with lookup table](https://github.com/mandiant/capa-rules/blob/master/lib/validate-payment-card-number-using-luhn-algorithm-with-lookup-table.yml)|Checksum::Luhn (C0032.002)| |
+|[validate payment card number using luhn algorithm with no lookup table](https://github.com/mandiant/capa-rules/blob/master/lib/validate-payment-card-number-using-luhn-algorithm-with-no-lookup-table.yml)|Checksum::Luhn (C0032.002)| |
 
 ## References
 

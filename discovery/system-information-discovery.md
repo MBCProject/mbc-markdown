@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>4 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -62,6 +62,15 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon gets the hostname. [[9]](#9)|
 |[**UP007**](../xample-malware/up007.md)|2016|--|The malware queries environment variables. [[9]](#9)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[query environment variable](https://github.com/mandiant/capa-rules/blob/master/host-interaction/environment-variable/query-environment-variable.yml)|System Information Discovery (E1082)|kernel32.GetEnvironmentVariable, kernel32.GetEnvironmentStrings, kernel32.ExpandEnvironmentStrings, msvcr90.getenv, msvcrt.getenv, System.Environment::GetEnvironmentVariable, System.Environment::GetEnvironmentVariables, System.Environment::ExpandEnvironmentVariables|
+|[get disk information](https://github.com/mandiant/capa-rules/blob/master/host-interaction/hardware/storage/get-disk-information.yml)|System Information Discovery (E1082)|kernel32.GetDriveType, kernel32.GetLogicalDrives, kernel32.GetVolumeInformation, kernel32.GetVolumeNameForVolumeMountPoint, kernel32.GetVolumePathNamesForVolumeName, kernel32.GetLogicalDriveStrings, kernel32.QueryDosDevice|
+|[get disk size](https://github.com/mandiant/capa-rules/blob/master/host-interaction/hardware/storage/get-disk-size.yml)|System Information Discovery (E1082)|kernel32.GetDiskFreeSpace, kernel32.GetDiskFreeSpaceEx, DeviceIoControl|
+|[check OS version](https://github.com/mandiant/capa-rules/blob/master/host-interaction/os/version/check-os-version.yml)|System Information Discovery (E1082)| |
+|[get hostname](https://github.com/mandiant/capa-rules/blob/master/host-interaction/os/hostname/get-hostname.yml)|System Information Discovery (E1082)|kernel32.GetComputerName, kernel32.GetComputerNameEx, GetComputerObjectName, ws2_32.gethostname, gethostname|
 
 ## References
 

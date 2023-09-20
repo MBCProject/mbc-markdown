@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>12 June 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -82,6 +82,12 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 |[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip uses general approaches to detecting user level debuggers (e.g., Process Environment Block 'Being Debugged' field), as well as specific checks for kernel level debuggers like SOFTICE. [[3]](#3)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus uses GetModuleHandle API to check for the presence of a debugger. [[4]](#4)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[hide thread from debugger](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-evasion/hide-thread-from-debugger.yml)|Debugger Evasion (B0002)|NtSetInformationThread, ZwSetInformationThread, GetCurrentThread|
+|[switch active desktop](https://github.com/mandiant/capa-rules/blob/master/host-interaction/gui/switch-active-desktop.yml)|Debugger Evasion (B0002)|user32.CreateDesktop, user32.SwitchDesktop|
 
 ## References
 

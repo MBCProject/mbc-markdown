@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>12 June 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -50,6 +50,12 @@ Anti-disassembly techniques take advantage of weaknesses in either flow-oriented
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|B0012.001|BlackEnergy contains obfuscated stack strings. [[2]](#2) [[7]](#7)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|B0012.001|Hupigon contains obfuscated stack strings. [[7]](#7)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|B0012.001|Rombertik contains obfuscated stack strings. [[7]](#7)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[contain anti-disasm techniques](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-disasm/contain-anti-disasm-techniques.yml)|Disassembler Evasion (B0012)| |
 
 ## References
 

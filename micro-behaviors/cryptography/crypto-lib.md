@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>10 November 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -36,3 +36,13 @@ Malware uses a crypto library.
 |---|---|---|
 |**API Call**|C0059.001|Malware uses crypto API calls.|
 |**Static Public Library**|C0059.002|A public crypto library is embedded in the code.|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[linked against Crypto++](https://github.com/mandiant/capa-rules/blob/master/linking/static/cryptopp/linked-against-crypto.yml)|Crypto Library (C0059)| |
+|[linked against wolfCrypt](https://github.com/mandiant/capa-rules/blob/master/linking/static/wolfcrypt/linked-against-wolfcrypt.yml)|Crypto Library (C0059)| |
+|[linked against OpenSSL](https://github.com/mandiant/capa-rules/blob/master/linking/static/openssl/linked-against-openssl.yml)|Crypto Library (C0059)| |
+|[linked against PolarSSL/mbed TLS](https://github.com/mandiant/capa-rules/blob/master/linking/static/polarssl/linked-against-polarsslmbed-tls.yml)|Crypto Library (C0059)| |
+|[linked against wolfSSL](https://github.com/mandiant/capa-rules/blob/master/linking/static/wolfssl/linked-against-wolfssl.yml)|Crypto Library (C0059)| |

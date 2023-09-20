@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -47,6 +47,15 @@
 |[**SamSam**](../xample-malware/samsam.md)|2015|--|SamSam reads files on Windows. [[1]](#1)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon reads files on Windows. [[1]](#1)|
 |[**UP007**](../xample-malware/up007.md)|2016|--|UP007 reads files on Windows. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[read file on Windows](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/read/read-file-on-windows.yml)|Read File (C0051)|kernel32.ReadFile, ReadFileEx, NtReadFile, ZwReadFile, LZRead, _read, fread, System.IO.File::ReadAllBytes, System.IO.File::ReadAllBytesAsync, System.IO.File::ReadAllLines, System.IO.File::ReadAllLinesAsync, System.IO.File::ReadAllText, System.IO.File::ReadAllTextAsync, System.IO.File::ReadLines|
+|[read file via mapping](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/read/read-file-via-mapping.yml)|Read File (C0051)|kernel32.MapViewOfFile, kernel32.UnmapViewOfFile, kernel32.CreateFileMapping|
+|[read file on Linux](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/read/read-file-on-linux.yml)|Read File (C0051)|fgetc, fgets, getc, getchar, read, getline, getdelim, fgetwc, getwc, fscanf, vfscanf, fread|
+|[read .ini file](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/read/read-ini-file.yml)|Read File (C0051)|GetPrivateProfileInt, GetPrivateProfileString, GetPrivateProfileStruct, GetPrivateProfileSection, GetPrivateProfileSectionNames, GetFullPathName|
 
 ## References
 

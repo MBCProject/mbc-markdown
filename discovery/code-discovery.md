@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>22 May 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -53,6 +53,13 @@ Malware may inspect code or enumerate aspects.
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|B0046.001|Stuxnet enumerates PE sections. [[1]](#1)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|B0046.002|TrickBot inspects section memory permissions. [[1]](#1)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|B0046.001|Ursnif enumerates PE sections. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[enumerate PE sections](https://github.com/mandiant/capa-rules/blob/master/load-code/pe/enumerate-pe-sections.yml)|Code Discovery::Enumerate PE Sections (B0046.001)| |
+|[inspect section memory permissions](https://github.com/mandiant/capa-rules/blob/master/load-code/pe/inspect-section-memory-permissions.yml)|Code Discovery::Inspect Section Memory Permissions (B0046.002)| |
 
 ## References
 

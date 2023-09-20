@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>17 August 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -92,6 +92,13 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|B0030.002|The malware receives data from the C2 server. [[18]](#18)|
 |[**ElectroRAT**](../xample-malware/electrorat.md)|2020|--|ElectroRat communicates to a Pastebin site via HTTP. [[20]](#20)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[send data](https://github.com/mandiant/capa-rules/blob/master/communication/send-data.yml)|C2 Communication::Send Data (B0030.001)| |
+|[receive data](https://github.com/mandiant/capa-rules/blob/master/communication/receive-data.yml)|C2 Communication::Receive Data (B0030.002)| |
+|[download and write a file](https://github.com/mandiant/capa-rules/blob/master/communication/c2/file-transfer/download-and-write-a-file.yml)|C2 Communication::Server to Client File Transfer (B0030.003)| |
 
 ## Code Snippets
 

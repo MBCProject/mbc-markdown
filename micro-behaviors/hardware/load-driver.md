@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>10 November 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -35,3 +35,9 @@ Malware loads a device driver or minifilter.
 |Name|ID|Description|
 |---|---|---|
 |**Minifilter**|C0023.001|Malware starts a minifilter.|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[start minifilter driver](https://github.com/mandiant/capa-rules/blob/master/host-interaction/filter/start-minifilter-driver.yml)|Load Driver::Minifilter (C0023.001)|FltStartFiltering|

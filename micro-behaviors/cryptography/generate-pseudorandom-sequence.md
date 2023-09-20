@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 MArch 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -45,6 +45,15 @@ The Generate Pseudo-random Sequence micro-behavior can be used for a number of p
 |---|---|---|---|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0021.003|BlackEnergy generates random numbers via WinAPI. [[1]](#1)|
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|C0021.003|Generate random numbers via WinAPI (This capa rule had 1 match) [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[encrypt data using RC4 PRGA](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/rc4/encrypt-data-using-rc4-prga.yml)|Generate Pseudo-random Sequence::RC4 PRGA (C0021.004)| |
+|[generate random numbers via WinAPI](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/prng/generate-random-numbers-via-winapi.yml)|Generate Pseudo-random Sequence::Use API (C0021.003)|BCryptGenRandom, CryptGenRandom, BCryptOpenAlgorithmProvider, BCryptCloseAlgorithmProvider, CryptAquireContext|
+|[generate random numbers via RtlGenRandom](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/prng/generate-random-numbers-via-rtlgenrandom.yml)|Generate Pseudo-random Sequence::Use API (C0021.003)|SystemFunction036|
+|[generate random numbers using a Mersenne Twister](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/prng/mersenne/generate-random-numbers-using-a-mersenne-twister.yml)|Generate Pseudo-random Sequence (C0021)| |
 
 ## References
 

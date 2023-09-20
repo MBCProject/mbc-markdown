@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>10 November 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -29,3 +29,9 @@
 # Free Memory
 
 Malware may free memory.
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[free user process memory](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/inject/free-user-process-memory.yml)|Free Memory (C0044)|ZwFreeVirtualMemory|

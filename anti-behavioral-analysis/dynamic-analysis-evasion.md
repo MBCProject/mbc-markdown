@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>12 June 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -60,7 +60,6 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |**Illusion**|B0003.009|Creates an illusion; makes the analyst think something happened when it didn't.|
 |**Restart**|B0003.010|Restarts or shuts down system to bypass sandboxing.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -73,6 +72,11 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|B0003.011|The malware computes a 32-bit hash of a resource in memory, and compares it to the PE Compile Timestamp of the unpacked sample. If the resource or compile time has been altered, the malware acts destructively. [[5]](#5)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|B0003.012|The malware uses numerous printf loops to delay the execution process and overload the sandbox with junk data (API Hammering). [[6]](#6)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[delay execution](https://github.com/mandiant/capa-rules/blob/master/lib/delay-execution.yml)|Dynamic Analysis Evasion::Delayed Execution (B0003.003)|kernel32.Sleep, kernel32.SleepEx, kernel32.WaitForSingleObject, kernel32.SignalObjectAndWait, kernel32.WaitForSingleObjectEx, kernel32.WaitForMultipleObjects, kernel32.WaitForMultipleObjectsEx, kernel32.RegisterWaitForSingleObject, WaitOnAddress, user32.MsgWaitForMultipleObjects, user32.MsgWaitForMultipleObjectsEx, NtDelayExecution, KeWaitForSingleObject, KeDelayExecutionThread, sleep, usleep|
 
 ## References
 

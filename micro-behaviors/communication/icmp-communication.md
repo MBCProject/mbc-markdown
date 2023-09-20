@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>10 November 2022</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -36,3 +36,9 @@ This micro-behavior is related to ICMP communication.
 |---|---|---|
 |**Echo Request**|C0014.002|Send ICMP echo request.|
 |**Generate Traffic**|C0014.001|Generate ICMP traffic.|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[send ICMP echo request](https://github.com/mandiant/capa-rules/blob/master/communication/icmp/send-icmp-echo-request.yml)|ICMP Communication::Echo Request (C0014.002)|IcmpSendEcho, IcmpSendEcho2, IcmpSendEcho2Ex, Icmp6SendEcho2, IcmpCreateFile, Icmp6CreateFile, IcmpCloseHandle|

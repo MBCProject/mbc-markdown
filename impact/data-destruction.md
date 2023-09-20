@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>4 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -54,6 +54,11 @@ See ATT&CK: **Data Destruction ([T1485](https://attack.mitre.org/techniques/T148
 |[**Conficker**](../xample-malware/conficker.md)|2008|--|Conficker resets system restore points and deletes backup files. [[4]](#4)|
 |[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|MazarBot can erase phone data. [[5]](#5)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[delete volume shadow copies](https://github.com/mandiant/capa-rules/blob/master/impact/inhibit-system-recovery/delete-volume-shadow-copies.yml)|Data Destruction::Delete Shadow Copies (E1485.m04)| |
 
 ## References
 

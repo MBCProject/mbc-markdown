@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -51,6 +51,12 @@ See ATT&CK: **Screen Capture ([T1113](https://attack.mitre.org/techniques/T1113/
 |[**Kovter**](../xample-malware/kovter.md)|2016|E1113.m01|Malware captures screenshots. [[5]](#5)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|E1113.m01|Malware captures screenshots. [[5]](#5)|
 
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[capture screenshot](https://github.com/mandiant/capa-rules/blob/master/collection/screenshot/capture-screenshot.yml)|Screen Capture::WinAPI (E1113.m01)|user32.GetWindowDC, user32.GetDC, gdi32.CreateDC, gdi32.BitBlt, gdi32.GetDIBits, gdi32.CreateCompatibleDC, gdi32.CreateCompatibleBitmap, user32.GetSystemMetrics = fetch screen dimensions, user32.GetDesktopWindow = get entire desktop, BitBlt, System.Drawing.Graphics::CopyFromScreen|
+|[capture screenshot via keybd event](https://github.com/mandiant/capa-rules/blob/master/collection/screenshot/capture-screenshot-via-keybd-event.yml)|Screen Capture (E1113)| |
 
 ## References
 

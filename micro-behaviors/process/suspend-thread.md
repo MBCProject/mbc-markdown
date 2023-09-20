@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>15 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -38,6 +38,12 @@ This behavior is related to Unprotect technique U0101.
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR suspends threads. [[1]](#1)|
 |[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|GravityRAT suspends threads. [[1]](#1)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon suspends threads. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[suspend thread](https://github.com/mandiant/capa-rules/blob/master/host-interaction/thread/suspend/suspend-thread.yml)|Suspend Thread (C0055)|kernel32.SuspendThread, ntdll.NtSuspendThread, ntdll.ZwSuspendThread, System.Threading.Thread::Suspend, System.Threading.Thread::Sleep|
 
 ## References
 

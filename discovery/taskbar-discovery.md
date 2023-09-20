@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 March 2023</b></td>
+<td><b>13 September 2023</b></td>
 </tr>
 </table>
 
@@ -34,6 +34,12 @@
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip finds taskbars. [[1]](#1)|
+
+## Detection
+
+|Tool: capa|Mapping|APIs|
+|---|---|---|
+|[find taskbar](https://github.com/mandiant/capa-rules/blob/master/host-interaction/gui/taskbar/find/find-taskbar.yml)|Taskbar Discovery (B0043)| |
 
 ## References
 
