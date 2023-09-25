@@ -1,4 +1,4 @@
-# <a name="mbc"></a>Malware Behavior Catalog v2.3 #
+# <a name="mbc"></a>Malware Behavior Catalog v3.0 #
 The Malware Behavior Catalog (MBC) is a catalog of malware objectives and behaviors, created to support malware analysis-oriented use cases, such as labeling, similarity analysis, and standardized reporting. Please see the [FAQ](./yfaq/README.md) page for answers to common questions, and read the [newsletters](./ynewsletters/README.md) for information on the most recent MBC updates and activity.
 
 Open-source malware analysis tools map their output to MBC and ATT&CK:

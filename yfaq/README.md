@@ -10,9 +10,9 @@
 
 ## <a name="next"></a>What's New? ##
 
-* **MBC v3.0** - The latest MBC release (to be released soon) includes behavior detection information, expanded descriptions, and new properties, such as version and created and modified dates.
+* **MBC v3.0** - The latest MBC release includes behavior detection information, expanded descriptions, and new properties, such as version and created and modified dates.
 
-* **STIX 2.1 Representation** - MBC content will soon be available in an updated STIX format based on the new [STIX 2.1 Malware Behavior Extension](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/malware-behavior).
+* **STIX 2.1 Representation** - MBC content is available in an updated STIX format based on the new [STIX 2.1 Malware Behavior Extension](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/malware-behavior).
 
 * **Attack Flow Examples** - Example attack flows for [Shamoon](../xample-malware/shamoon.md) and [SearchAwesome](../xample-malware/searchawesome.md) reference MBC behaviors.
 
@@ -67,7 +67,7 @@ There was no version control when MBC v1.0 was released at the end of January 20
 * MBC v2.1 was released in February 2021 and includes additional micro-behaviors and behavior methods.
 * MBC v2.2 was released in February 2022 and includes additional micro-behaviors and behavior methods. Added code snippets to certain methods.
 * MBC v2.3 was released in September 2022 and aligns with ATT&CK v11 and includes an updated malware corpus.
-* MBC v3.0 will be released in September 2023.
+* MBC v3.0 was released in September 2023 and includes behavior detection information, expanded descriptions, and new properties.
 
 ## <a name="use"></a>Using MBC ##
 
