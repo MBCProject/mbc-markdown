@@ -147,10 +147,10 @@ Malware behaviors and adversary behaviors can overlap because adversaries someti
 ## <a name="stix"></a>STIX Representation ##
 
 ### How are MBC behaviors captured in STIX 2? ###
-MBC content is available in STIX 2.1 format. See the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository for details. The [usage document](https://github.com/MBCProject/mbc-stix2/blob/master/USAGE.md) gives details of how behaviors are captured with STIX 2 objects.
+MBC content is available in STIX 2.1 format. See the [mbc-stix2.1](https://github.com/MBCProject/mbc-stix2.1) repository for details. MBC content is also available in an [older STIX 2.1 representation](https://github.com/MBCProject/mbc-stix2) based on the representation used for ATT&CK.
 
 ### Why was MBC's STIX representation updated? ###
-The previous STIX 2.1 representation was valid, but it didn't take advantage of the STIX 2.1 Extension Definition Object. MBC users said they found the MBC representation (and ATT&CK) kludgy, so we defined new SDOs and extended the STIX Malware Object in a [malware behavior extension](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications). We think it works much better!
+The previous STIX 2.1 representation was valid, but it didn't take advantage of the STIX 2.1 Extension Definition Object. MBC users said they found the MBC representation (and ATT&CK) kludgy, so we defined new SDOs and extended the STIX Malware Object in a [malware behavior extension](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/malware-behavior). We think it works much better!
 
 ### How are malware corpus examples captured in STIX? ###
 Corpus examples are captured using the Malware SDO. Three new properties are defined in the STIX 2.1 Malware Behavior extension:
