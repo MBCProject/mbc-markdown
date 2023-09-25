@@ -62,7 +62,7 @@ The canonical representation for MBC content is **OBJECTIVE::Behavior::Method**.
 Objectives and behaviors can be used alone, but a method *must* be associated with a behavior.
 
 ### STIX 2.1 Representation ###
-A refined STIX 2.1 [Malware Behavior Extension](https://docs.google.com/document/d/1azr8ewNXhWyLt1a2wE2cG964QuFSPdIBSqCJFJrwEVo/) includes new STIX domain objects for MBC objectives, behaviors, and methods.
+A refined STIX 2.1 [Malware Behavior Extension](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/malware-behavior) includes new STIX domain objects for MBC objectives, behaviors, and methods.
 
 ### Navigator View ###
 This visual representation of the MBC Matrix is based on the ATT&CK Navigator. Two views are available: 
