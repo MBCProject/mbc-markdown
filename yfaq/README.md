@@ -162,6 +162,9 @@ Corpus examples are captured using the Malware SDO. Three new properties are def
 ### Why is the STIX "is_family" property set to true for all the malware in the corpus? ###
 The "is_family" property (defined on the Malware SDO) indicates whether an object represents a malware family (if true) or a malware instance (if false). All the malware in the corpus represent malware families.
 
+### How is MBC versioning captured in STIX? ###
+The "Created" and "Last Modified" metadata for versioned MBC objects are captured in the corresponding STIX object's "created" and "modified" common properties. In such cases, the STIX properties do not correspond to the created and modified dates of the STIX object, but they remain effective for versioning because the modified property is updated each time MBC content changes. 
+
 ## <a name="tools"></a>Malware Analysis Tools ##
 MBC is used in the following malware analysis tools.
 
