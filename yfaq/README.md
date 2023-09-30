@@ -10,9 +10,9 @@
 
 ## <a name="next"></a>What's New? ##
 
-* **MBC v3.0** - The latest MBC release (to be released soon) includes behavior detection information, expanded descriptions, and new properties, such as version and created and modified dates.
+* **MBC v3.0** - The latest MBC release includes behavior detection information, expanded descriptions, and new properties, such as version and created and modified dates.
 
-* **STIX 2.1 Representation** - MBC content will soon be available in an updated STIX format based on the new [STIX 2.1 Malware Behavior Extension](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/malware-behavior).
+* **STIX 2.1 Representation** - MBC content is available in an updated STIX format based on the new [STIX 2.1 Malware Behavior Extension](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/malware-behavior).
 
 * **Attack Flow Examples** - Example attack flows for [Shamoon](../xample-malware/shamoon.md) and [SearchAwesome](../xample-malware/searchawesome.md) reference MBC behaviors.
 
@@ -67,7 +67,7 @@ There was no version control when MBC v1.0 was released at the end of January 20
 * MBC v2.1 was released in February 2021 and includes additional micro-behaviors and behavior methods.
 * MBC v2.2 was released in February 2022 and includes additional micro-behaviors and behavior methods. Added code snippets to certain methods.
 * MBC v2.3 was released in September 2022 and aligns with ATT&CK v11 and includes an updated malware corpus.
-* MBC v3.0 will be released in September 2023.
+* MBC v3.0 was released in September 2023 and includes behavior detection information, expanded descriptions, and new properties.
 
 ## <a name="use"></a>Using MBC ##
 
@@ -147,10 +147,10 @@ Malware behaviors and adversary behaviors can overlap because adversaries someti
 ## <a name="stix"></a>STIX Representation ##
 
 ### How are MBC behaviors captured in STIX 2? ###
-MBC content is available in STIX 2.1 format. See the [mbc-stix2](https://github.com/MBCProject/mbc-stix2) repository for details. The [usage document](https://github.com/MBCProject/mbc-stix2/blob/master/USAGE.md) gives details of how behaviors are captured with STIX 2 objects.
+MBC content is available in STIX 2.1 format. See the [mbc-stix2.1](https://github.com/MBCProject/mbc-stix2.1) repository for details. MBC content is also available in an [older STIX 2.1 representation](https://github.com/MBCProject/mbc-stix2) based on the representation used for ATT&CK.
 
 ### Why was MBC's STIX representation updated? ###
-The previous STIX 2.1 representation was valid, but it didn't take advantage of the STIX 2.1 Extension Definition Object. MBC users said they found the MBC representation (and ATT&CK) kludgy, so we defined new SDOs and extended the STIX Malware Object in a [malware behavior extension](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications). We think it works much better!
+The previous STIX 2.1 representation is valid, but it doesn't take advantage of the STIX 2.1 Extension Definition Object. MBC users said they found the MBC representation (and ATT&CK) kludgy, so we defined new SDOs and extended the STIX Malware Object in a [malware behavior extension](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/malware-behavior). We think it works much better!
 
 ### How are malware corpus examples captured in STIX? ###
 Corpus examples are captured using the Malware SDO. Three new properties are defined in the STIX 2.1 Malware Behavior extension:
@@ -161,6 +161,9 @@ Corpus examples are captured using the Malware SDO. Three new properties are def
 
 ### Why is the STIX "is_family" property set to true for all the malware in the corpus? ###
 The "is_family" property (defined on the Malware SDO) indicates whether an object represents a malware family (if true) or a malware instance (if false). All the malware in the corpus represent malware families.
+
+### How is MBC versioning captured in STIX? ###
+The "Created" and "Last Modified" metadata for versioned MBC objects are captured in the corresponding STIX object's "created" and "modified" common properties. In such cases, the STIX properties do not correspond to the created and modified dates of the STIX object, but they remain effective for versioning because the modified property is updated each time MBC content changes. 
 
 ## <a name="tools"></a>Malware Analysis Tools ##
 MBC is used in the following malware analysis tools.
