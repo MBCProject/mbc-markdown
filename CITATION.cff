@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "Malware Behavior Catalog"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - given-names: MITRE
+    #family-names: ---
+url: "https://github.com/MBCProject/mbc-markdown"
+repository-code: "https://github.com/MBCProject/mbc-markdown"
+version: 3.0
+abstract: >
+  The Malware Behavior Catalog (MBC) is a catalog of malware objectives and behaviors, created to support malware analysis-oriented use cases, such as labeling, similarity analysis, and standardized reporting.
+keywords:
+  - malware
+  - behavior
+  - catalog
+  - mitre
+license: GPL-3.0

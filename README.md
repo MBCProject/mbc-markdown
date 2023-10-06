@@ -147,3 +147,16 @@ The table below lists MBC behaviors and related ATT&CK techniques. In most cases
 
 **Copyright © 2021-2023, The MITRE Corporation.  [Terms of Use.](./tou.md)**
 
+## How to cite ##
+If you use the MBC, you cite it as specified in the [CITATION](./CITATION.cff) file (or also clicking on the "Cite this repository" contextual button on GitHub).
+
+If you would rather prefer a classic approach, consider using this BibTex entry:
+```
+@misc{mbc,
+  title={{Malware Behavior Catalog v2.3}},
+  author={{MITRE}},
+  year={2023},
+  howpublished = {[Online; \url{https://github.com/MBCProject/mbc-markdown}]},
+  note = {Accessed on Month day, year.}
+}
+```
