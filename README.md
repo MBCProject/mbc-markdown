@@ -152,8 +152,8 @@ If you use the MBC, you cite it as specified in the [CITATION](./CITATION.cff) f
 
 If you would rather prefer a classic approach, consider using this BibTex entry:
 ```
-@misc{mbc,
-  title={{Malware Behavior Catalog v2.3}},
+@misc{MITRE_Malware_Behavior_Catalog,
+  title={{Malware Behavior Catalog v3.0}},
   author={{MITRE}},
   year={2023},
   howpublished = {[Online; \url{https://github.com/MBCProject/mbc-markdown}]},
