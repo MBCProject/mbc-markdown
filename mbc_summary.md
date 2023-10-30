@@ -28,7 +28,7 @@
 |B0008|ANTI-BEHAVIORAL ANALYSIS, ANTI-STATIC ANALYSIS|**[Executable Code Virtualization](https://github.com/MBCProject/mbc-markdown/blob/main/anti-static-analysis/executable-code-virtualization.md)**|*none*|
 |B0009|ANTI-BEHAVIORAL ANALYSIS|**[Virtual Machine Detection](https://github.com/MBCProject/mbc-markdown/blob/main/anti-behavioral-analysis/virtual-machine-detection.md)**|Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497),[T1633](https://attack.mitre.org/techniques/T1633))|
 |B0010|ANTI-STATIC ANALYSIS|**[Call Graph Generation Evasion](https://github.com/MBCProject/mbc-markdown/blob/main/anti-static-analysis/call-graph-generation-evasion.md)**|*none*|
-|B0011|EXECUTION|**[Remote Commands](https://github.com/MBCProject/mbc-markdown/blob/main/execution/remote-commands.md)**|Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497),[T1633](https://attack.mitre.org/techniques/T1633))|
+|B0011|EXECUTION|**[Remote Commands](https://github.com/MBCProject/mbc-markdown/blob/main/execution/remote-commands.md)**|*none*|
 |B0012|ANTI-STATIC ANALYSIS|**[Disassembler Evasion](https://github.com/MBCProject/mbc-markdown/blob/main/anti-static-analysis/disassembler-evasion.md)**|*none*|
 |B0013|DISCOVERY|**[Analysis Tool Discovery](https://github.com/MBCProject/mbc-markdown/blob/main/discovery/analysis-tool-discovery.md)**|*none*|
 |B0014|DISCOVERY|**[SMTP Connection Discovery](https://github.com/MBCProject/mbc-markdown/blob/main/discovery/smtp-connection-discovery.md)**|*none*|
