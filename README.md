@@ -107,7 +107,7 @@ The table below lists MBC behaviors and related ATT&CK techniques. In most cases
 |**B0008**|ANTI-BEHAVIORAL ANALYSIS, ANTI-STATIC ANALYSIS|**Executable Code Virtualization**|*none*|
 |**B0009**|ANTI-BEHAVIORAL ANALYSIS|**Virtual Machine Detection**|Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497),[T1633](https://attack.mitre.org/techniques/T1633))|
 |**B0010**|ANTI-STATIC ANALYSIS|**Call Graph Generation Evasion**|*none*|
-|**B0011**|EXECUTION|**Remote Commands**|Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497),[T1633](https://attack.mitre.org/techniques/T1633))|
+|**B0011**|EXECUTION|**Remote Commands**|*none*|
 |**B0012**|ANTI-STATIC ANALYSIS|**Disassembler Evasion**|*none*|
 |**B0013**|DISCOVERY|**Analysis Tool Discovery**|*none*|
 |**B0014**|DISCOVERY|**SMTP Connection Discovery**|*none*|
