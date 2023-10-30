@@ -145,5 +145,7 @@ The table below lists MBC behaviors and related ATT&CK techniques. In most cases
 |**B0046**|DISCOVERY|**Code Discovery**|*none*|
 |**B0047**|DEFENSE EVASION, PERSISTENCE|**Install Insecure or Malicious Code**|*none*|
 
-**Copyright © 2021-2023, The MITRE Corporation.  [Terms of Use.](./tou.md)**
+## Citing MBC ##
+If you use MBC, please cite it as specified in the [CITATION](./CITATION.cff) file or by using GitHub's sidebar citation widget, which provides both APA and BibTeX formats.
 
+**Copyright © 2021-2023, The MITRE Corporation.  [Terms of Use.](./tou.md)**
