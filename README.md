@@ -145,18 +145,7 @@ The table below lists MBC behaviors and related ATT&CK techniques. In most cases
 |**B0046**|DISCOVERY|**Code Discovery**|*none*|
 |**B0047**|DEFENSE EVASION, PERSISTENCE|**Install Insecure or Malicious Code**|*none*|
 
+## Citing MBC ##
+If you use MBC, please cite it as specified in the [CITATION](./CITATION.cff) file or by using GitHub's sidebar citation widget, which provides both APA and BibTeX formats.
+
 **Copyright © 2021-2023, The MITRE Corporation.  [Terms of Use.](./tou.md)**
-
-## How to cite ##
-If you use the MBC, you cite it as specified in the [CITATION](./CITATION.cff) file (or also clicking on the "Cite this repository" contextual button on GitHub).
-
-If you would rather prefer a classic approach, consider using this BibTex entry:
-```
-@misc{MITRE_Malware_Behavior_Catalog,
-  title={{Malware Behavior Catalog v3.0}},
-  author={{MITRE}},
-  year={2023},
-  howpublished = {[Online; \url{https://github.com/MBCProject/mbc-markdown}]},
-  note = {Accessed on Month day, year.}
-}
-```
