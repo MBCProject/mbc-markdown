@@ -107,7 +107,7 @@ The table below lists MBC behaviors and related ATT&CK techniques. In most cases
 |**B0008**|ANTI-BEHAVIORAL ANALYSIS, ANTI-STATIC ANALYSIS|**Executable Code Virtualization**|*none*|
 |**B0009**|ANTI-BEHAVIORAL ANALYSIS|**Virtual Machine Detection**|Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497),[T1633](https://attack.mitre.org/techniques/T1633))|
 |**B0010**|ANTI-STATIC ANALYSIS|**Call Graph Generation Evasion**|*none*|
-|**B0011**|EXECUTION|**Remote Commands**|Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497),[T1633](https://attack.mitre.org/techniques/T1633))|
+|**B0011**|EXECUTION|**Remote Commands**|*none*|
 |**B0012**|ANTI-STATIC ANALYSIS|**Disassembler Evasion**|*none*|
 |**B0013**|DISCOVERY|**Analysis Tool Discovery**|*none*|
 |**B0014**|DISCOVERY|**SMTP Connection Discovery**|*none*|
@@ -145,5 +145,7 @@ The table below lists MBC behaviors and related ATT&CK techniques. In most cases
 |**B0046**|DISCOVERY|**Code Discovery**|*none*|
 |**B0047**|DEFENSE EVASION, PERSISTENCE|**Install Insecure or Malicious Code**|*none*|
 
-**Copyright © 2021-2023, The MITRE Corporation.  [Terms of Use.](./tou.md)**
+## Citing MBC ##
+If you use MBC, please cite it as specified in the [CITATION](./CITATION.cff) file or by using GitHub's sidebar citation widget, which provides both APA and BibTeX formats.
 
+**Copyright © 2021-2023, The MITRE Corporation.  [Terms of Use.](./tou.md)**
