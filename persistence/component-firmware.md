@@ -9,7 +9,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b>Pre-OS Boot: Component Firmware (<a href="https://attack.mitre.org/techniques/T1542/002/">1542.002</a>)</b></td>
+<td><b>Pre-OS Boot: Component Firmware (<a href="https://attack.mitre.org/techniques/T1542/002/">T1542.002</a>)</b></td>
 </tr>
 <tr>
 <td><b>Impact Type</b></td>
