@@ -34,12 +34,7 @@
 
 Malware may obstruct dynamic analysis in a sandbox or virtual machine. An analyst detonates the specimen in these controlled environments to understand the malware's behavior. However, the code may exhibit a variety of anti-analysis methods, including delayed execution and code integrity checks. Additional methods are listed in the table below.
 
-See Emulator Evasion (B0004) for an emulator-specific evasion behavior. See Conditional Execution (B0025) for a behavior that constrains dynamic execution based on environmental conditions.
-
-The related Virtualization/Sandbox Evasion (T1497, T1633) ATT&CK techniques were defined subsequent to this MBC behavior.
-
-
-See **Emulator Evasion ([B0004](../anti-behavioral-analysis/emulator-evasion.md))** for an emulator-specific evasion behavior, and see **Conditional Execution ([B0025](../anti-behavioral-analysis/execution-guardrails.md))** for a behavior that constrains dynamic execution based on environmental conditions. 
+See **Emulator Evasion ([B0004](../anti-behavioral-analysis/emulator-evasion.md))** for an emulator-specific evasion behavior, and see **Conditional Execution ([B0025](../execution/conditional-execution.md))** for a behavior that constrains dynamic execution based on environmental conditions. 
 
 The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/techniques/T1497/), [T1633](https://attack.mitre.org/techniques/T1633/))** ATT&CK techniques were defined subsequent to this MBC behavior.
 
