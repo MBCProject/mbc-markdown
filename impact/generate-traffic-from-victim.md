@@ -49,7 +49,6 @@ Malware may generate traffic from the victim system such as clicks of advertisin
 |[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter performs click-fraud. [[4]](#4)|
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|E1643.m02|The malware displays brief advertisements whenever the user opens applications on their phone. [[5]](#5)|
 
-
 ## References
 
 <a name="1">[1]</a> https://www.huffingtonpost.com/2011/11/09/click-hijack-hackers-online-ad-scam_n_1084497.html

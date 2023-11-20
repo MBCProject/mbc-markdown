@@ -40,7 +40,6 @@ This behavior is related to the **Phishing ([T1566](https://attack.mitre.org/tec
 |[**Bagle**](../xample-malware/bagle.md)|2004|--|Bagle uses its own SMTP engine to mass-mail itself as an attachment from an infected computer. [[2]](#2)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|--|Spam email with the Emotet loader is sent automatically. [[3]](#3)|
 
-
 ## References
 
 <a name="1">[1]</a> https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/

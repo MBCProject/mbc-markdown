@@ -28,7 +28,6 @@
 
 # Get File Attributes
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|

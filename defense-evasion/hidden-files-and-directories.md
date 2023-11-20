@@ -43,7 +43,6 @@ See ATT&CK: **Hide Artifacts: Hidden Files and Directories ([T1564.001](https://
 |**Location**|F0005.002|Malware may change or choose the location of itself, another file, or a directory to prevent detection.|
 |**Timestamp**|F0005.004|Malware may change the timestamp on a file to prevent detection.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -55,7 +54,6 @@ See ATT&CK: **Hide Artifacts: Hidden Files and Directories ([T1564.001](https://
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|F0005.002|Malware looks for a specific folder on the victim. If the folder doesn't exist, the malware creates the folder on the victim by calling CreateDirectoryA and downloads the remote file into the new folder. [[5]](#5) [[6]](#6)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|F0005.001|The malware also appends the filename and extension .ocx to the ProgramData folder path. [[5]](#5) [[6]](#6)|
 |[**WannaCry**](../xample-malware/wannacry.md)|2017|F0005.003|WannaCry uses the +h attribute to hide its files. [[7]](#7)|
-
 
 ## References
 

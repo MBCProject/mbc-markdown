@@ -55,7 +55,6 @@ Detects whether the malware instance is being executed inside an emulator. If so
 |---|---|---|
 |[check if process is running under wine](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-emulation/wine/check-if-process-is-running-under-wine.yml)|Emulator Detection (B0004)|GetModuleHandle, GetProcAddress|
 
-
 ## References
 
 <a name="1">[1]</a> https://search.unprotect.it/category/sandbox-evasion/

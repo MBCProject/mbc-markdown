@@ -41,7 +41,6 @@ While many methods are listed in the table below, among the most commonly used a
 
 Details on detecting debuggers can be found in the references.
 
-
 ## Methods
 
 |Name|ID|Description|

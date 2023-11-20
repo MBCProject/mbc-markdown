@@ -49,7 +49,6 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 |[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut receives files from the C2. [[10]](#10)|
 |[**UP007**](../xample-malware/up007.md)|2016|--|UP007 downloads files from the C2. [[11]](#11)|
 
-
 ## References
 
 <a name="1">[1]</a> https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/

@@ -40,7 +40,6 @@ Examples of droppers include malicious
 Droppers may be described as “single stage” or “two stage.” While the former embeds the malicious code internally, the latter installs itself before downloading additional code from a remote location [[4]](#4).  
 
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|

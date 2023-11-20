@@ -53,7 +53,6 @@ See ATT&CK: **Data Encrypted for Impact ([T1486](https://attack.mitre.org/techni
 |[**Netwalker**](../xample-malware/netwalker.md)|2020|--|Netwalker encrypts files for ransom. [[5]](#5)|
 |[**WannaCry**](../xample-malware/wannacry.md)|2017|--|WannaCry encrypts files for ransom. [[6]](#6)|
 
-
 ## References
 
 <a name="1">[1]</a> https://news.sophos.com/en-us/2015/12/17/the-current-state-of-ransomware-cryptowall/

@@ -46,7 +46,6 @@ Name|Date|Method|Description|
 |[**WannaCry**](../xample-malware/wannacry.md)|2017|B0038.002|WannaCry checks a string, keylen and a magic number before decrypting a dll. [[2]](#2)|
 |[**WannaCry**](../xample-malware/wannacry.md)|2017|B0038.003|WannaCry checks the data lengh of a section before decypting a dll. [[2]](#2)|
 
-
 ## References
 
 <a name="1">[1]</a> https://github.com/Rogdham/gif-md5-hashquine

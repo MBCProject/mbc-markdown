@@ -54,7 +54,6 @@ The histograms below show the number of capa rules mapped into ATT&CK techniques
 |**Operating System**|11| **XXXXXXXXXXX** |
 |**Process**|14| **XXXXXXXXXXXXXX** |
 
-
 ## ATT&CK MAPPINGS ##
 
 ### Reconnaissance ###

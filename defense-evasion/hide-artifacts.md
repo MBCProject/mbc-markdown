@@ -42,7 +42,6 @@ See ATT&CK: **Hide Artifacts ([T1564](https://attack.mitre.org/techniques/T1564/
 |**Hidden Processes**|E1564.m03|Hides processes used by the adversary or malware instance. This can involve techniques such as process list unlinking.|
 |**Hidden Services**|E1564.m04|Hides any system services that the malware instance creates or injects itself into. Services can be hidden by hiding associated registry keys.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|

@@ -38,7 +38,6 @@ Malware creates a process.
 |**Create Process via WMI**|C0017.002|Malware uses WMI to create a process.|
 |**Create Suspended Process**|C0017.003|Malware created a suspended process.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|

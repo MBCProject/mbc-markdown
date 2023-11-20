@@ -28,7 +28,6 @@
 
 # Writes File
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|

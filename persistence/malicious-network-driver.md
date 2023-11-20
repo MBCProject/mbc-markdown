@@ -38,7 +38,6 @@ A malicious network driver can tunnel outside traffic into the network, allowing
 |---|---|---|---|
 |[**Malicious NDISProxy drivers**]|2018|--|The LuckyMouse APT (aka APT27) spreads Trojans via malicious NDISProxy drivers. [[1]](#1)|
 
-
 ## References
 
 <a name="1">[1]</a> https://www.zdnet.com/article/luckymouse-targets-govt-entities-through-malicious-ndisproxy-driver/

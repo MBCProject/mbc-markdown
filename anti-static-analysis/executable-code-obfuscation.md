@@ -92,7 +92,6 @@ For encryption and encoding characteristics of malware samples, as well as malwa
 |[contain obfuscated stackstrings](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/string/stackstring/contain-obfuscated-stackstrings.yml)|Executable Code Obfuscation::Stack Strings (B0032.017)| |
 |[use .NET library EncryptDecryptUtils](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/aes/use-dotnet-library-encryptdecryptutils.yml)|Executable Code Obfuscation (B0032)| |
 
-
 ## Code Snippets
 
 ### B0032.017 Snippet

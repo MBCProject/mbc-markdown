@@ -54,7 +54,6 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |**TCP Client**|C0001.008|TCP client behavior.|
 |**UDP Client**|C0001.013|UDP client behavior.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|

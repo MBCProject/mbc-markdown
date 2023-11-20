@@ -48,7 +48,6 @@ See ATT&CK: **Pre-OS Boot: Component Firmware ([T1542.002](https://attack.mitre.
 |---|---|---|---|
 |[**SYNful Knock**](../xample-malware/synful-knock.md)|2015|F0009.001|SYNful Knock is a stealthy modification of the router's firmware image that can be used to maintain persistence within a victim's network. [[1]](#1)|
 
-
 ## References
 
 <a name="1">[1]</a> https://www.mandiant.com/resources/synful-knock-acis

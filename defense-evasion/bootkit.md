@@ -39,7 +39,6 @@ The MBC also associates the Bootkit behavior with Defense Evasion because the ma
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|--|The malware is an MBR bootkit and a BIOS bootkit targeting Award BIOS. [[1]](#1)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware can implement malicious code into firmware, allowing read, write, and/or erasure of the UEFI/BIOS firmware. [[2]](#24)|
 
-
 ## References
 
 <a name="1">[1]</a> https://www.webroot.com/blog/2011/09/13/mebromi-the-first-bios-rootkit-in-the-wild/

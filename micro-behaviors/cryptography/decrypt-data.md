@@ -49,7 +49,6 @@ Malware may decrypt data.
 |**Stream Cipher**|C0031.013|Malware decrypts data encrypted with a stream cipher.|
 |**Twofish**|C0031.014|Malware decrypts data encrypted with the Twofish algorithm.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|

@@ -29,7 +29,6 @@
 | [Anti-Behavioral Analysis::Virtual Machine Detection::Unique Hardware/Firmware Check - CPU Name (B0009.026)](../anti-behavioral-analysis/virtual-machine-detection.md) | Pafish checks the CPU name to identify virtualization. For example, Qemu is traced using the CPU brand string 'QEMU Virtual CPU', and Bochs is traced using either a typo in the CPU AMD processor name, a CPU AMD Easter egg, or a wrong value in the CPU Intel processor name. [[1]](#1)|
 |[Anti-Behavioral Analysis::Sandbox Detection (B0007)](../anti-behavioral-analysis/sandbox-detection.md)| Pafish checks the TLS hooks information structure (TLS_HOOK_INFO) to identify the presence of Cuckoo. [[1]](#1) |
 
-
 ## References
 
 <a name="1">[1]</a> https://github.com/a0rtega/pafish

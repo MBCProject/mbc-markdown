@@ -55,7 +55,6 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |**Encryption of Code**|E1027.m06|A file's executable code is encrypted, but not necessarily the file's data.|
 |**Encryption of Data**|E1027.m07|A file's data is encrypted, but not necessarily the file's code.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -85,7 +84,6 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[**SamSam**](../xample-malware/samsam.md)|2015|E1027.m07|SamSam obfuscates functions, class names and strings, including the list of targeted file extensions, the help file contents and environment variables using DES encryption with a fixed hard-coded key and the IV. [[10]](#10)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|E1027.m02|Shamoon encodes data using XOR. [[9]](#9)|
 |[**UP007**](../xample-malware/up007.md)|2016|E1027.m02|The malware encodes data using XOR. [[9]](#9)|
-
 
 ## Detection
 

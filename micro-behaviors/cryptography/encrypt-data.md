@@ -49,7 +49,6 @@ Malware may encrypt data.
 |**Stream Cipher**|C0027.012|Malware encrypts with a stream cipher.|
 |**Twofish**|C0027.005|Malware encrypts with the Twofish algorithm.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -154,7 +153,6 @@ pop     ebx
 retn
 </pre>
 </details>
-
 
 ## References
 

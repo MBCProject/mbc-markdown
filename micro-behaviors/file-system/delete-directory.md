@@ -28,7 +28,6 @@
 
 # Delete Directory
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|

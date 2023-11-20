@@ -51,7 +51,6 @@ Malware has characteristics enabling it to evade capture from the infected syste
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0036.001|The malware downloads multiple payloads (as files and DLLs) that are stored in a memory buffer. [[4]](#4)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0036.003|Matanbuchus consists of 2 loaders. [[3]](#3) [[4]](#4)|
 
-
 ## References
 
 <a name="1">[1]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/

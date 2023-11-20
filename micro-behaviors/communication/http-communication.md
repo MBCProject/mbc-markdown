@@ -55,7 +55,6 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |**WinHTTP**|C0002.008|An HTTP request is made via the Windows HTTP Services (WinHTTP) application programming interface (API).|
 |**WinINet**|C0002.007|A HTTP request is made via the Windows Internet (WinINet) application programming interface (API). A specific function can be specified as a method on the [WinInet](../communication/wininet.md) micro-behavior.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|

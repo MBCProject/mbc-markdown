@@ -38,7 +38,6 @@ See ATT&CK: **Screen Capture ([T1113](https://attack.mitre.org/techniques/T1113/
 |---|---|---|
 |**WinAPI**|E1113.m01|Screen is captured using WinAPI functions (e.g., user32.GetDesktopWindow).|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|

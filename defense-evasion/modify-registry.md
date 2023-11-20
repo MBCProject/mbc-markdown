@@ -45,7 +45,6 @@ See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112
 |[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|--|CHOPSTICK may encrypt and store configuration data inside a registry key. [[7]](#7)|
 |[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer edits the registry. [[8]](#8)|
 
-
 ## References
 
 <a name="1">[1]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking

@@ -39,7 +39,6 @@ See ATT&CK: **Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/te
 |**Application Hook**|F0002.001|Keystrokes are captured with an application hook.|
 |**Polling**|F0002.002|Keystrokes are captured via polling (e.g., user32.GetAsyncKeyState, user32.GetKeyState).|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|

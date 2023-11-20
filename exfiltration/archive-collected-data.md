@@ -43,7 +43,6 @@ See ATT&CK Technique: **Archive Collected Data ([T1560](https://attack.mitre.org
 |**Encryption - Custom Encryption**|E1560.m06|Data is encrypted. A custom algorithm is used to encrypt the exfiltrated data.|
 |**Encryption - Standard Encryption**|E1560.m05|Data is encrypted. A standard algorithm, such as Rijndael/AES, DES, RC4, is used to encrypt the exfiltrated data.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -51,7 +50,6 @@ See ATT&CK Technique: **Archive Collected Data ([T1560](https://attack.mitre.org
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|E1560.m02|The malware uses a custom crypter leveraging Microsoft's CryptoAPI to encrypt C2 traffic. C2 update responses seem to have been digitally signed using bcrypt. [[1]](#1)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1560.m04|Exfiltrated payloads are XORed with a static 31-byte long byte string found inside Stuxnet and hexified in order to be passed on as an ASCII data parameter in an HTTP request to the C2 servers. [[2]](#2)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|E1560.m03|Malware sends data as a Base64 string of JSON. [[3]](#3) [[4]](#4)|
-
 
 ## References
 

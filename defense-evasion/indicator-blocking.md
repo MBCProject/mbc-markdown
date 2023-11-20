@@ -38,7 +38,6 @@ See ATT&CK: **Impair Defenses: Indicator Blocking ([T1562.006](https://attack.mi
 |---|---|---|
 |**Remove SMS Warning Messages**|F0006.001|Malware captures the message body of incoming SMS messages and aborts displaying messages that meets a certain criteria.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -47,7 +46,6 @@ See ATT&CK: **Impair Defenses: Indicator Blocking ([T1562.006](https://attack.mi
 |[**Conficker**](../xample-malware/conficker.md)|2008|--|The malware terminates various services related to system security and Windows and prevents network access to various websites related to antivirus software. [[2]](#2)|
 |[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|The malware can disable security center functions like anti-virus and firewall. [[3]](#3)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|TrickBot terminates the following anti-malware services: Window Defender, MBamService (Malwarebytes), SAVService (Sophos AV). [[4]](#4)|
-
 
 ## References
 

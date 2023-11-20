@@ -40,7 +40,6 @@ See ATT&CK: **Indicator Removal on Host: Uninstall Malicious Application ([T1630
 |---|---|---|
 |**COMSPEC Environment Variable**|F0007.001|Uninstalls self via COMSPEC environment variable.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -55,7 +54,6 @@ See ATT&CK: **Indicator Removal on Host: Uninstall Malicious Application ([T1630
 |Tool: capa|Mapping|APIs|
 |---|---|---|
 |[self delete](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-forensic/self-deletion/self-delete.yml)|Self Deletion::COMSPEC Environment Variable (F0007.001)| |
-
 
 ## References
 

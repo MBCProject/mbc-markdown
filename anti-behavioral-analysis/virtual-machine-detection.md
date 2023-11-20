@@ -86,7 +86,6 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |**Unique Hardware/Firmware Check - I/O Communication Port**|B0009.025|Malware may check for hardware characteristics unique to being virtualized, allowing the malware to detect the virtual environment. VMware uses virtual I/O ports for communication between the virtual machine and the host operating system to support functionality like copy and paste between the two systems. The port can be queried and compared with a magic number VMXh to identify the use of VMware. This method is related to Unprotect technique U1336.|
 |**Unique Hardware/Firmware Check - MAC Address**|B0009.028|Malware may check for hardware characteristics unique to being virtualized, allowing the malware to detect the virtual environment. VMware uses specific virtual MAC address that can be detected. The usual MAC address used started with the following numbers: "00:0C:29", "00:1C:14", "00:50:56", "00:05:69". Virtualbox uses specific virtual MAC address that can be detected by Malware. The usual MAC address used started with the following numbers: 08:00:27. [[2]](#2) This method is related to Unprotect technique U1335.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -103,7 +102,6 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0009.003|Malware checks if it is running in a sandbox. If it is, the malware exits. [[9]](#9) [[10]](#10)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|B0009.004|The malware checks if there are virtual machine processes running (Vbox, vmware, etc). [[11]](#11)|
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|B0009.012|The malware checks for an unmoving mouse cursor. [[12]](#12)|
-
 
 ## Detection
 
@@ -166,7 +164,6 @@ pop ebx
 jmp short loc_401CBB
 </pre>
 </details>
-
 
 ## References
 

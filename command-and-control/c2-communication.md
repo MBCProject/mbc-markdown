@@ -55,7 +55,6 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |**Server to Client File Transfer**|B0030.003|File is transferred from controller to implant.|
 |**Start Interactive Shell**|B0030.016|Starts an interactive shell using a built-in program (e.g. cmd.exe, PowerShell, bash). This is often implemented with polling the network connection from the controller for text commands to redirect to the shell's stdin and polling the shell's stdout and stderr to redirect over the network to the controller. This differs from Execute Shell Command because the shell process runs across multiple iterations of the recv-command(s)-send-result loop.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -121,7 +120,6 @@ call recv
 jmp short loc_4019A2
 </pre>
 </details>
-
 
 ## References
 

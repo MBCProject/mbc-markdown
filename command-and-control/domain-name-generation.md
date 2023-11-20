@@ -43,7 +43,6 @@ This behavior is related to Unprotect technique U0906.
 |[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|The malware uses an internal domain generation algorithm. [[4]](#4)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Previous interations of Ursnif have used a Domain Name Generation algorithm. [[5]](#5)|
 
-
 ## References
 
 <a name="1">[1]</a> https://blog.malwarebytes.com/security-world/2016/12/explained-domain-generating-algorithm/

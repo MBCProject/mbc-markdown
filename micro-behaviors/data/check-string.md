@@ -30,7 +30,6 @@
 
 Malware may check a string for some characteristics, such as being ASCII content, credit card number, or length.
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|

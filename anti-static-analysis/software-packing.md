@@ -89,7 +89,6 @@ This description refines the ATT&CK **Obfuscated Files or Information: Software 
 |[packed with kkrunchy](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/kkrunchy/packed-with-kkrunchy.yml)|Software Packing (F0001)| |
 |[packed with PESpin](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/pespin/packed-with-pespin.yml)|Software Packing (F0001)| |
 
-
 ## References
 
 <a name="1">[1]</a> Ange Albertini, Packers, 5 April 2010, https://gironsec.com/code/packers.pdf

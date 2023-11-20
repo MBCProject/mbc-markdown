@@ -50,7 +50,6 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |**Timing/Uptime Check**|B0007.009|Comparing single GetTickCount with some value to see if system has been started at least *X* amount ago. This behavior can be mitigated in non-automated analysis environments.|
 |**Test API Routines**|B0007.010|Calls Windows API routines with invalid arguments to identify error supression.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -63,7 +62,6 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny hooks time retrieval APIs and calls each API twice to calculate a delta. Execution aborts depending on the delta value. [[8]](#8)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus uses GetModuleHandle API to check for the presence of a sandbox. [[9]](#9)|
 
-
 ## Detection
 
 |Tool: capa|Mapping|APIs|
@@ -75,7 +73,6 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |---|---|---|
 |[antisandbox_joe_anubis_files.py](https://github.com/kevoreilly/community/blob/master/modules/signatures/antisandbox_joe_anubis_files.py)|Sandbox Detection::Check Files (B0007.002)|--|
 |[antisandbox_cuckoo_files](https://github.com/kevoreilly/community/blob/master/modules/signatures/antisandbox_cuckoo_files.py)|Sandbox Detection::Check Files (B0007.002)|--|
-
 
 ## Code Snippets
 

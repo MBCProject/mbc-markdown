@@ -32,7 +32,6 @@ Malware may install itself in areas other than the hard drive [[1]](#1). Other p
 
 While the definition of fileless malware can be ambiguous, here it represents malware that lives in memory only, not on disk, and it does not preclude fileless malware from using files on the system. Microsoft and Zeltser have addressed  this ambiguity by providing more context in [[4]](#4) and [[5]](#5), respectively.
 
-
 ## Methods
  
 |Name|ID|Description|
@@ -46,7 +45,6 @@ While the definition of fileless malware can be ambiguous, here it represents ma
 |---|---|---|---|
 |[**Kovter**](../xample-malware/kovter.md)|2016|B0027.002|Kovter stores malware files in the Registry instead of on the hard drive. [[1]](#1)|
 |[**SYNful Knock**](../xample-malware/synful-knock.md)|2015|B0027.001|100 memory-resident modules can be installed. [[6]](#6)|
-
 
 ## References
 

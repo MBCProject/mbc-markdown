@@ -30,7 +30,6 @@
 
 Malware allocates thread local storage. 
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|

@@ -38,7 +38,6 @@ See ATT&CK: **System Services ([T1569](https://attack.mitre.org/techniques/T1569
 |---|---|---|
 |**MSDTC**|E1569.m01|The Distributed Transaction Coordinator (MSDTC) coordinates transaction across multiple resource managers (databases, message queues and file systems). This legitimate Microsoft service is part of Windows 2000 and later and can be used to import and load DLLs. Malware may abuse MSDTC to import and load DLLs.[[1]](#1)|
 
-
 ## References
 
 <a name="1">[1]</a> https://cyware.com/news/catb-ransomware-exploits-msdtc-service-to-steal-data-3bb46fc0
