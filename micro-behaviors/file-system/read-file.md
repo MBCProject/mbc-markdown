@@ -56,6 +56,15 @@
 |[read file on Linux](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/read/read-file-on-linux.yml)|Read File (C0051)|fgetc, fgets, getc, getchar, read, getline, getdelim, fgetwc, getwc, fscanf, vfscanf, fread|
 |[read .ini file](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/read/read-ini-file.yml)|Read File (C0051)|GetPrivateProfileInt, GetPrivateProfileString, GetPrivateProfileStruct, GetPrivateProfileSection, GetPrivateProfileSectionNames, GetFullPathName|
 
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[reads_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/reads_self.py)|Read File (C0051)|NtReadFile, NtSetInformationFile, NtClose, NtCreateFile, NtOpenFile|
+|[accesses_sysvol](https://github.com/CAPESandbox/community/tree/master/modules/signatures/accesses_sysvol.py)|Read File (C0051)|--|
+|[antidebug_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_devices.py)|Read File (C0051)|--|
+|[antiav_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiav_detectfile.py)|Read File (C0051)|--|
+|[infostealer_browser](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_browser.py)|Read File (C0051)|NtReadFile, CopyFileA, CopyFileExW, CopyFileW|
+|[antianalysis_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antianalysis_detectfile.py)|Read File (C0051)|--|
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022

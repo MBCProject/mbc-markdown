@@ -59,6 +59,14 @@ Rootkits can be detected by detecting primary rootkit behaviors: Hide Artifacts,
 
 Rootkits can also be detected via memory dump analysis or virtual machine introspection.
 
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[spicyhotpot_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/spicyhotpot_behavior.py)|Rootkit (E1014)|--|
+|[accesses_primary_patition](https://github.com/CAPESandbox/community/tree/master/modules/signatures/accesses_primary_patition.py)|Rootkit (E1014)|--|
+|[direct_hdd_access](https://github.com/CAPESandbox/community/tree/master/modules/signatures/direct_hdd_access.py)|Rootkit (E1014)|--|
+|[enumerates_physical_drives](https://github.com/CAPESandbox/community/tree/master/modules/signatures/enumerates_physical_drives.py)|Rootkit (E1014)|--|
+|[physical_drive_access](https://github.com/CAPESandbox/community/tree/master/modules/signatures/physical_drive_access.py)|Rootkit (E1014)|--|
+
 ## References
 
 <a name="1">[1]</a> https://en.wikipedia.org/wiki/Rootkit

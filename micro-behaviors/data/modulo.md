@@ -34,4 +34,4 @@ Malware calculates a modulo value.
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[calculate modulo 256 via x86 assembly](https://github.com/mandiant/capa-rules/blob/master/lib/calculate-modulo-256-via-x86-assembly.yml)|Modulo (C0058)| |
+|[calculate modulo 256 via x86 assembly](https://github.com/mandiant/capa-rules/blob/master/lib/calculate-modulo-256-via-x86-assembly.yml)|Modulo (C0058)|--||

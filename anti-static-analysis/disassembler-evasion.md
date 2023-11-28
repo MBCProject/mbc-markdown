@@ -55,7 +55,7 @@ Anti-disassembly techniques take advantage of weaknesses in either flow-oriented
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[contain anti-disasm techniques](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-disasm/contain-anti-disasm-techniques.yml)|Disassembler Evasion (B0012)| |
+|[contain anti-disasm techniques](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-disasm/contain-anti-disasm-techniques.yml)|Disassembler Evasion (B0012)|--|
 
 ## References
 

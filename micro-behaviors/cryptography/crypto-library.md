@@ -41,8 +41,8 @@ Malware uses a crypto library.
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[linked against Crypto++](https://github.com/mandiant/capa-rules/blob/master/linking/static/cryptopp/linked-against-crypto.yml)|Crypto Library (C0059)| |
-|[linked against wolfCrypt](https://github.com/mandiant/capa-rules/blob/master/linking/static/wolfcrypt/linked-against-wolfcrypt.yml)|Crypto Library (C0059)| |
-|[linked against OpenSSL](https://github.com/mandiant/capa-rules/blob/master/linking/static/openssl/linked-against-openssl.yml)|Crypto Library (C0059)| |
-|[linked against PolarSSL/mbed TLS](https://github.com/mandiant/capa-rules/blob/master/linking/static/polarssl/linked-against-polarsslmbed-tls.yml)|Crypto Library (C0059)| |
-|[linked against wolfSSL](https://github.com/mandiant/capa-rules/blob/master/linking/static/wolfssl/linked-against-wolfssl.yml)|Crypto Library (C0059)| |
+|[linked against Crypto++](https://github.com/mandiant/capa-rules/blob/master/linking/static/cryptopp/linked-against-crypto.yml)|Crypto Library (C0059)|--|
+|[linked against wolfCrypt](https://github.com/mandiant/capa-rules/blob/master/linking/static/wolfcrypt/linked-against-wolfcrypt.yml)|Crypto Library (C0059)|--|
+|[linked against OpenSSL](https://github.com/mandiant/capa-rules/blob/master/linking/static/openssl/linked-against-openssl.yml)|Crypto Library (C0059)|--|
+|[linked against PolarSSL/mbed TLS](https://github.com/mandiant/capa-rules/blob/master/linking/static/polarssl/linked-against-polarsslmbed-tls.yml)|Crypto Library (C0059)|--|
+|[linked against wolfSSL](https://github.com/mandiant/capa-rules/blob/master/linking/static/wolfssl/linked-against-wolfssl.yml)|Crypto Library (C0059)|--|

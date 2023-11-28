@@ -79,18 +79,18 @@ For encryption and encoding characteristics of malware samples, as well as malwa
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[obfuscated with ADVobfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-advobfuscator.yml)|Executable Code Obfuscation (B0032)| |
-|[obfuscated with DeepSea Obfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-deepsea-obfuscator.yml)|Executable Code Obfuscation (B0032)| |
-|[obfuscated with callobfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-callobfuscator.yml)|Executable Code Obfuscation (B0032)| |
-|[obfuscated with Dotfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-dotfuscator.yml)|Executable Code Obfuscation (B0032)| |
-|[obfuscated with vs-obfuscation](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-vs-obfuscation.yml)|Executable Code Obfuscation (B0032)| |
-|[obfuscated with Spices.Net Obfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-spicesdotnet-obfuscator.yml)|Executable Code Obfuscation (B0032)| |
-|[obfuscated with Babel Obfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-babel-obfuscator.yml)|Executable Code Obfuscation (B0032)| |
-|[obfuscated with SmartAssembly](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-smartassembly.yml)|Executable Code Obfuscation (B0032)| |
-|[obfuscated with Yano](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-yano.yml)|Executable Code Obfuscation (B0032)| |
-|[contain obfuscated stackstrings](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/string/stackstring/contain-obfuscated-stackstrings.yml)|Executable Code Obfuscation::Argument Obfuscation (B0032.020)| |
-|[contain obfuscated stackstrings](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/string/stackstring/contain-obfuscated-stackstrings.yml)|Executable Code Obfuscation::Stack Strings (B0032.017)| |
-|[use .NET library EncryptDecryptUtils](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/aes/use-dotnet-library-encryptdecryptutils.yml)|Executable Code Obfuscation (B0032)| |
+|[obfuscated with ADVobfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-advobfuscator.yml)|Executable Code Obfuscation (B0032)|--|
+|[obfuscated with DeepSea Obfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-deepsea-obfuscator.yml)|Executable Code Obfuscation (B0032)|--|
+|[obfuscated with callobfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-callobfuscator.yml)|Executable Code Obfuscation (B0032)|--|
+|[obfuscated with Dotfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-dotfuscator.yml)|Executable Code Obfuscation (B0032)|--|
+|[obfuscated with vs-obfuscation](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-vs-obfuscation.yml)|Executable Code Obfuscation (B0032)|--|
+|[obfuscated with Spices.Net Obfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-spicesdotnet-obfuscator.yml)|Executable Code Obfuscation (B0032)|--|
+|[obfuscated with Babel Obfuscator](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-babel-obfuscator.yml)|Executable Code Obfuscation (B0032)|--|
+|[obfuscated with SmartAssembly](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-smartassembly.yml)|Executable Code Obfuscation (B0032)|--|
+|[obfuscated with Yano](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/obfuscated-with-yano.yml)|Executable Code Obfuscation (B0032)|--|
+|[contain obfuscated stackstrings](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/string/stackstring/contain-obfuscated-stackstrings.yml)|Executable Code Obfuscation::Argument Obfuscation (B0032.020)|--|
+|[contain obfuscated stackstrings](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/obfuscation/string/stackstring/contain-obfuscated-stackstrings.yml)|Executable Code Obfuscation::Stack Strings (B0032.017)|--|
+|[use .NET library EncryptDecryptUtils](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/aes/use-dotnet-library-encryptdecryptutils.yml)|Executable Code Obfuscation (B0032)|--|
 
 ## Code Snippets
 

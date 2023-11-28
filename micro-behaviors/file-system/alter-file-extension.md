@@ -35,3 +35,11 @@ Malware alters a file extension. This could be done for many reasons, including 
 |Name|ID|Description|
 |---|---|---|
 |**Append Extension**|C0015.001|A new extension is appended.|
+
+## Detection
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[ransomware_extensions](https://github.com/CAPESandbox/community/tree/master/modules/signatures/ransomware_extensions.py)|Alter File Extension (C0015)|--|
+
+|[mimics_extension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/mimics_extension.py)|Alter File Extension (C0015)|--|

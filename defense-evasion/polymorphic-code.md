@@ -44,6 +44,12 @@ Polymorphic code, a file with the same functionality but different execution, is
 |---|---|---|---|
 |[**EvilBunny**](../xample-malware/evilbunny.md)|2011|--|EvilBunny utilizes Lua scripts to exhibit polymorphism. [[2]](#2)|
 
+## Detection
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[polymorphic](https://github.com/CAPESandbox/community/tree/master/modules/signatures/polymorphic.py)|Polymorphic Code (B0029)|--|
+
 ## References
 
 <a name="1">[1]</a> https://www.mccormick.northwestern.edu/eecs/documents/tech-reports/2010-2014/evaluating-android-anti-malware-against-transformation-attacks.pdf

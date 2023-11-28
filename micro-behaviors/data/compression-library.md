@@ -39,8 +39,8 @@
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[linked against aPLib](https://github.com/mandiant/capa-rules/blob/master/linking/static/aplib/linked-against-aplib.yml)|Compression Library (C0060)| |
-|[linked against ZLIB](https://github.com/mandiant/capa-rules/blob/master/linking/static/zlib/linked-against-zlib.yml)|Compression Library (C0060)| |
+|[linked against aPLib](https://github.com/mandiant/capa-rules/blob/master/linking/static/aplib/linked-against-aplib.yml)|Compression Library (C0060)|--||
+|[linked against ZLIB](https://github.com/mandiant/capa-rules/blob/master/linking/static/zlib/linked-against-zlib.yml)|Compression Library (C0060)|--||
 
 ## References
 

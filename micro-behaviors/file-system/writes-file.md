@@ -53,6 +53,18 @@
 |[write file on Windows](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/write/write-file-on-windows.yml)|Writes File (C0052)|kernel32.WriteFile, kernel32.WriteFileEx, NtWriteFile, ZwWriteFile, _fwrite, fwrite, System.IO.File::WriteAllBytes, System.IO.File::WriteAllBytesAsync, System.IO.File::WriteAllLines, System.IO.File::WriteAllLinesAsync, System.IO.File::WriteAllText, System.IO.File::WriteAllTextAsync, System.IO.File::AppendAllLines, System.IO.File::AppendAllLinesAsync, System.IO.File::AppendAllText, System.IO.File::AppendAllTextAsync, System.IO.File::AppendText, System.IO.FileInfo::AppendText|
 |[create process memory minidump](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/dump/create-process-memory-minidump.yml)|Writes File (C0052)|dbghelp.MiniDumpWriteDump|
 
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[poullight_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/poullight_files.py)|Writes File (C0052)|--|
+|[masslogger_artifacts](https://github.com/CAPESandbox/community/tree/master/modules/signatures/masslogger_artifacts.py)|Writes File (C0052)|CryptDecrypt, FindFirstFileExW|
+|[masslogger_version](https://github.com/CAPESandbox/community/tree/master/modules/signatures/masslogger_version.py)|Writes File (C0052)|NtWriteFile|
+|[writes_sysvol](https://github.com/CAPESandbox/community/tree/master/modules/signatures/writes_sysvol.py)|Writes File (C0052)|--|
+|[wiper_zeroedbytes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/wiper_zeroedbytes.py)|Writes File (C0052)|NtWriteFile|
+|[modify_hostfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/modify_hostfile.py)|Writes File (C0052)|--|
+|[apocalypse_stealer_file_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/apocalypse_stealer_file_behavior.py)|Writes File (C0052)|--|
+|[echelon_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/echelon_files.py)|Writes File (C0052)|--|
+|[upatre_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/upatre_files.py)|Writes File (C0052)|--|
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022

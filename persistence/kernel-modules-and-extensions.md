@@ -45,6 +45,14 @@ See ATT&CK: **Boot or Logon Autostart Execution: Kernel Modules and Extensions (
 |---|---|---|---|
 |[**Drovorub**](../xample-malware/drovorub.md)|2020|--|Drovorub uses a kernel module rootkit for loading and for persistence. [[1]](#1)|
 
+## Detection
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[volatility_devicetree_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/volatility_devicetree_1.py)|Kernel Modules and Extensions (F0010)|--|
+|[volatility_devicetree_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/volatility_devicetree_1.py)|Kernel Modules and Extensions::Device Driver (F0010.001)|--|
+|[driver_load](https://github.com/CAPESandbox/community/tree/master/modules/signatures/driver_load.py)|Kernel Modules and Extensions (F0010)|NtLoadDriver|
+
 ## References
 
 <a name="1">[1]</a> https://media.defense.gov/2020/Aug/13/2002476465/-1/-1/0/CSA_DROVORUB_RUSSIAN_GRU_MALWARE_AUG_2020.PDF

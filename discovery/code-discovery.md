@@ -58,8 +58,8 @@ Malware may inspect code or enumerate aspects.
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[enumerate PE sections](https://github.com/mandiant/capa-rules/blob/master/load-code/pe/enumerate-pe-sections.yml)|Code Discovery::Enumerate PE Sections (B0046.001)| |
-|[inspect section memory permissions](https://github.com/mandiant/capa-rules/blob/master/load-code/pe/inspect-section-memory-permissions.yml)|Code Discovery::Inspect Section Memory Permissions (B0046.002)| |
+|[enumerate PE sections](https://github.com/mandiant/capa-rules/blob/master/load-code/pe/enumerate-pe-sections.yml)|Code Discovery::Enumerate PE Sections (B0046.001)|--|
+|[inspect section memory permissions](https://github.com/mandiant/capa-rules/blob/master/load-code/pe/inspect-section-memory-permissions.yml)|Code Discovery::Inspect Section Memory Permissions (B0046.002)|--|
 
 ## References
 

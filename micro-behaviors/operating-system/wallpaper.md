@@ -35,3 +35,7 @@ Malware modifies the wallpaper.
 |Tool: capa|Mapping|APIs|
 |---|---|---|
 |[change the wallpaper](https://github.com/mandiant/capa-rules/blob/master/host-interaction/gui/session/wallpaper/change-the-wallpaper.yml)|Wallpaper (C0035)|SystemParametersInfo|
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[modify_desktop_wallpaper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/modify_desktop_wallpaper.py)|Wallpaper (C0035)|SystemParametersInfoA, SystemParametersInfoW|

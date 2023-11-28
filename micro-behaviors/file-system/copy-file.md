@@ -45,6 +45,10 @@
 |---|---|---|
 |[copy file](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/copy/copy-file.yml)|Copy File (C0045)|kernel32.CopyFile, kernel32.CopyFileEx, CopyFile2, CopyFileTransacted, LZCopy, System.IO.FileInfo::CopyTo, System.IO.File::Copy, kernel32.SHFileOperation|
 
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[injection_needextension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/injection_needextension.py)|Copy File (C0045)|NtCreateUserProcess, CreateProcessInternalW|
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022

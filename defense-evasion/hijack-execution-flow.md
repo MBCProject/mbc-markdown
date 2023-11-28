@@ -70,9 +70,18 @@ See ATT&CK: **Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[create new application domain in .NET](https://github.com/mandiant/capa-rules/blob/master/host-interaction/memory/create-new-application-domain-in-dotnet.yml)|Hijack Execution Flow (F0015)| |
+|[create new application domain in .NET](https://github.com/mandiant/capa-rules/blob/master/host-interaction/memory/create-new-application-domain-in-dotnet.yml)|Hijack Execution Flow (F0015)|--|
 |[execute shellcode via Windows callback function](https://github.com/mandiant/capa-rules/blob/master/load-code/shellcode/execute-shellcode-via-windows-callback-function.yml)|Hijack Execution Flow::Abuse Windows Function Calls (F0015.006)|EnumDateFormats, GrayString, LineDDA, EnumChildWindows, EnumDesktops, EnumDesktopWindows, EnumSystemCodePages, EnumSystemGeoID, EnumSystemLanguageGroups, EnumSystemLocales, EnumThreadWindows, EnumUILanguages, EnumWindows, EnumChildWindows, EnumTimeFormats|
 |[rebuild import table](https://github.com/mandiant/capa-rules/blob/master/load-code/pe/rebuild-import-table.yml)|Hijack Execution Flow::Import Address Table Hooking (F0015.003)|LoadLibraryA, GetProcAddress|
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[infostealer_keylog](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_keylog.py)|Hijack Execution Flow (F0015)|SetWindowsHookExA, GetAsyncKeyState, SetWindowsHookExW|
+|[infostealer_keylog](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_keylog.py)|Hijack Execution Flow::Procedure Hooking (F0015.007)|SetWindowsHookExA, GetAsyncKeyState, SetWindowsHookExW|
+|[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_mouse_hook.py)|Hijack Execution Flow (F0015)|SetWindowsHookExA, SetWindowsHookExW|
+|[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_mouse_hook.py)|Hijack Execution Flow::Procedure Hooking (F0015.007)|SetWindowsHookExA, SetWindowsHookExW|
+|[dll_load_uncommon_file_types](https://github.com/CAPESandbox/community/tree/master/modules/signatures/dll_load_uncommon_file_types.py)|Hijack Execution Flow (F0015)|LdrLoadDll|
+|[malicious_dynamic_function_loading](https://github.com/CAPESandbox/community/tree/master/modules/signatures/malicious_dynamic_function_loading.py)|Hijack Execution Flow (F0015)|LdrGetProcedureAddress, LdrLoadDll|
 
 ## References
 

@@ -73,6 +73,18 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |---|---|---|
 |[delay execution](https://github.com/mandiant/capa-rules/blob/master/lib/delay-execution.yml)|Dynamic Analysis Evasion::Delayed Execution (B0003.003)|kernel32.Sleep, kernel32.SleepEx, kernel32.WaitForSingleObject, kernel32.SignalObjectAndWait, kernel32.WaitForSingleObjectEx, kernel32.WaitForMultipleObjects, kernel32.WaitForMultipleObjectsEx, kernel32.RegisterWaitForSingleObject, WaitOnAddress, user32.MsgWaitForMultipleObjects, user32.MsgWaitForMultipleObjectsEx, NtDelayExecution, KeWaitForSingleObject, KeDelayExecutionThread, sleep, usleep|
 
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[api_spamming](https://github.com/CAPESandbox/community/tree/master/modules/signatures/api_spamming.py)|Dynamic Analysis Evasion (B0003)|--|
+|[api_spamming](https://github.com/CAPESandbox/community/tree/master/modules/signatures/api_spamming.py)|Dynamic Analysis Evasion::Data Flood (B0003.002)|--|
+|[api_spamming](https://github.com/CAPESandbox/community/tree/master/modules/signatures/api_spamming.py)|Dynamic Analysis Evasion::Delayed Execution (B0003.003)|--|
+|[antisandbox_suspend](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_suspend.py)|Dynamic Analysis Evasion (B0003)|NtSuspendThread|
+|[antisandbox_restart](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_restart.py)|Dynamic Analysis Evasion (B0003)|ExitWindowsEx, InitiateSystemShutdownExW, NtSetSystemPowerState, InitiateSystemShutdownW, InitiateShutdownW, NtRaiseHardError, NtShutdownSystem|
+|[antisandbox_restart](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_restart.py)|Dynamic Analysis Evasion::Restart (B0003.010)|ExitWindowsEx, InitiateSystemShutdownExW, NtSetSystemPowerState, InitiateSystemShutdownW, InitiateShutdownW, NtRaiseHardError, NtShutdownSystem|
+|[stealth_timeout](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_timeout.py)|Dynamic Analysis Evasion (B0003)|NtWaitForSingleObject, NtQuerySystemTime, NtTerminateProcess, GetLocalTime, NtDelayExecution, GetSystemTime, GetSystemTimeAsFileTime|
+|[stealth_timeout](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_timeout.py)|Dynamic Analysis Evasion::Delayed Execution (B0003.003)|NtWaitForSingleObject, NtQuerySystemTime, NtTerminateProcess, GetLocalTime, NtDelayExecution, GetSystemTime, GetSystemTimeAsFileTime|
+|[antisandbox_unhook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_unhook.py)|Dynamic Analysis Evasion (B0003)|--|
+
 ## References
 
 <a name="1">[1]</a> https://www.joesecurity.org/blog/4310408827727907098

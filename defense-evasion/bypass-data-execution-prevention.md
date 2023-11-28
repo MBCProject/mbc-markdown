@@ -36,6 +36,12 @@ Malware may bypass Data Execution Prevention (DEP).
 |---|---|---|
 |**ROP Chains**|B0037.001|Return-Oriented Programming can be used to bypass DEP. It can also be used to bypass code signing. [[1]](#1)|
 
+## Detection
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[dep_bypass](https://github.com/CAPESandbox/community/tree/master/modules/signatures/dep_bypass.py)|Bypass Data Execution Prevention (B0037)|VirtualProtectEx, NtProtectVirtualMemory|
+
 ## References
 
 <a name="1">[1]</a> https://medium.com/cybersecurityservices/dep-bypass-using-rop-chains-garima-chopra-e8b3361e50ce

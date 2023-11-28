@@ -52,6 +52,15 @@
 |---|---|---|
 |[delete file](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/delete/delete-file.yml)|Delete File (C0047)|kernel32.DeleteFile, DeleteFileTransacted, NtDeleteFile, ZwDeleteFile, remove, _wremove, System.IO.File::Delete, System.IO.FileSystemInfo::Delete, kernel32.SHFileOperation, MoveFileEx|
 
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[clears_logs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/clears_logs.py)|Delete File (C0047)|--|
+|[removes_zoneid_ads](https://github.com/CAPESandbox/community/tree/master/modules/signatures/removes_zoneid_ads.py)|Delete File (C0047)|DeleteFileW, DeleteFileA|
+|[ransomware_recyclebin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/ransomware_recyclebin.py)|Delete File (C0047)|--|
+|[trickbot_task_delete](https://github.com/CAPESandbox/community/tree/master/modules/signatures/trickbot_task_delete.py)|Delete File (C0047)|DeleteFileW|
+|[anomalous_deletefile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/anomalous_deletefile.py)|Delete File (C0047)|NtDeleteFile, DeleteFileW, DeleteFileA|
+|[deletes_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/deletes_self.py)|Delete File (C0047)|NtDeleteFile, DeleteFileW, DeleteFileA, MoveFileWithProgressW, MoveFileWithProgressTransactedW|
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022

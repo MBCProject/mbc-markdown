@@ -47,6 +47,18 @@ See ATT&CK: **Impair Defenses: Indicator Blocking ([T1562.006](https://attack.mi
 |[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|The malware can disable security center functions like anti-virus and firewall. [[3]](#3)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|TrickBot terminates the following anti-malware services: Window Defender, MBamService (Malwarebytes), SAVService (Sophos AV). [[4]](#4)|
 
+## Detection
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[tampers_powershell_logging](https://github.com/CAPESandbox/community/tree/master/modules/signatures/tampers_powershell_logging.py)|Indicator Blocking (F0006)|--|
+|[stealth_hidden_extension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_hidden_extension.py)|Indicator Blocking (F0006)|--|
+|[stealth_hiddenreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_hiddenreg.py)|Indicator Blocking (F0006)|--|
+|[stealth_hide_notifications](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_hide_notifications.py)|Indicator Blocking (F0006)|--|
+|[creates_nullvalue](https://github.com/CAPESandbox/community/tree/master/modules/signatures/creates_nullvalue.py)|Indicator Blocking (F0006)|NtCreateKey, NtSetValueKey|
+|[tampers_etw](https://github.com/CAPESandbox/community/tree/master/modules/signatures/tampers_etw.py)|Indicator Blocking (F0006)|--|
+|[disables_wer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/disables_wer.py)|Indicator Blocking (F0006)|--|
+
 ## References
 
 <a name="1">[1]</a> https://blog-assets.f-secure.com/wp-content/uploads/2019/10/15163408/BlackEnergy_Quedagh.pdf

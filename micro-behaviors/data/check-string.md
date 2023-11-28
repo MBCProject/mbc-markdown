@@ -40,8 +40,8 @@ Malware may check a string for some characteristics, such as being ASCII content
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[reference Base64 string](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encoding/base64/reference-base64-string.yml)|Check String (C0019)| |
-|[parse credit card information](https://github.com/mandiant/capa-rules/blob/master/collection/credit-card/parse-credit-card-information.yml)|Check String (C0019)| |
+|[reference Base64 string](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encoding/base64/reference-base64-string.yml)|Check String (C0019)|--|
+|[parse credit card information](https://github.com/mandiant/capa-rules/blob/master/collection/credit-card/parse-credit-card-information.yml)|Check String (C0019)|--|
 
 ## References
 

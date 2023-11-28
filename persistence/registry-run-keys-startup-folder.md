@@ -60,7 +60,13 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[persist via Run registry key](https://github.com/mandiant/capa-rules/blob/master/persistence/registry/run/persist-via-run-registry-key.yml)|Registry Run Keys / Startup Folder (F0012)| |
+|[persist via Run registry key](https://github.com/mandiant/capa-rules/blob/master/persistence/registry/run/persist-via-run-registry-key.yml)|Registry Run Keys / Startup Folder (F0012)|--|
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[persistence_bootexecute](https://github.com/CAPESandbox/community/tree/master/modules/signatures/persistence_bootexecute.py)|Registry Run Keys / Startup Folder (F0012)|RegSetValueExA, RegSetValueExW, NtSetValueKey|
+|[geodo_banking_trojan](https://github.com/CAPESandbox/community/tree/master/modules/signatures/geodo_banking_trojan.py)|Registry Run Keys / Startup Folder (F0012)|--|
+|[persistence_autorun](https://github.com/CAPESandbox/community/tree/master/modules/signatures/persistence_autorun.py)|Registry Run Keys / Startup Folder (F0012)|NtSetValueKey, RegSetValueExA, RegSetValueExW, CreateServiceW, CreateServiceA|
 
 ## References
 

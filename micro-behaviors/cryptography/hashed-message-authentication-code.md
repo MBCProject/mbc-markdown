@@ -34,4 +34,4 @@ Malware uses a hashed message authentication code (HMAC) schema.
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[authenticate HMAC](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hmac/authenticate-hmac.yml)|Hashed Message Authentication Code (C0061)| |
+|[authenticate HMAC](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hmac/authenticate-hmac.yml)|Hashed Message Authentication Code (C0061)|--|

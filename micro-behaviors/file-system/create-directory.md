@@ -46,6 +46,10 @@
 |---|---|---|
 |[create directory](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/create/create-directory.yml)|Create Directory (C0046)|kernel32.CreateDirectory, kernel32.CreateDirectoryEx, kernel32.CreateDirectoryTransacted, NtCreateDirectoryObject, ZwCreateDirectoryObject, SHCreateDirectory, SHCreateDirectoryEx, _mkdir, _wmkdir, System.IO.Directory::CreateDirectory, System.IO.DirectoryInfo::Create, System.IO.DirectoryInfo::CreateSubdirectory|
 
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[arkei_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/arkei_files.py)|Create Directory (C0046)|--|
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022

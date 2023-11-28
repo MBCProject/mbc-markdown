@@ -45,6 +45,6 @@ Malware may use a non-cryptographic hash.
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[hash data using murmur3](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hashing/murmur/hash-data-using-murmur3.yml)|Non-Cryptographic Hash::MurmurHash (C0030.001)| |
+|[hash data using murmur3](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hashing/murmur/hash-data-using-murmur3.yml)|Non-Cryptographic Hash::MurmurHash (C0030.001)|--|
 |[hash data using fnv](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hashing/fnv/hash-data-using-fnv.yml)|Non-Cryptographic Hash::FNV (C0030.005)|_allmul|
-|[hash data using djb2](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hashing/djb2/hash-data-using-djb2.yml)|Non-Cryptographic Hash::djb2 (C0030.006)| |
+|[hash data using djb2](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hashing/djb2/hash-data-using-djb2.yml)|Non-Cryptographic Hash::djb2 (C0030.006)|--|

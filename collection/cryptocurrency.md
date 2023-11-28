@@ -43,6 +43,13 @@ Malware accesses files that contain sensitive data or credentials related to Bit
 |---|---|---|---|
 |[**ElectroRAT**](../xample-malware/electrorat.md)|2020|--|ElectroRat examines the disk for cryptocurrency addresses and keys to steal money from a wallet. It compromises multiple currencies, including Monaro, Doegecoin, Ethereum, Litecoin, and Bitcoin. [[1]](#1)|
 
+## Detection
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[infostealer_bitcoin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_bitcoin.py)|Cryptocurrency (B0028)|--|
+|[infostealer_bitcoin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_bitcoin.py)|Cryptocurrency::Bitcoin (B0028.001)|--|
+
 ## References
 
 <a name="1">[1]</a> https://www.intezer.com/blog/research/operation-electrorat-attacker-creates-fake-companies-to-drain-your-crypto-wallets/

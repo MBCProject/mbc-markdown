@@ -62,7 +62,13 @@ See ATT&CK: **Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/te
 |Tool: capa|Mapping|APIs|
 |---|---|---|
 |[log keystrokes via polling](https://github.com/mandiant/capa-rules/blob/master/collection/keylog/log-keystrokes-via-polling.yml)|Keylogging::Polling (F0002.002)|user32.GetAsyncKeyState, user32.GetKeyState, user32.GetKeyboardState, user32.VkKeyScan, user32.VkKeyScanEx, user32.GetKeyNameText|
-|[log keystrokes via application hook](https://github.com/mandiant/capa-rules/blob/master/collection/keylog/log-keystrokes-via-application-hook.yml)|Keylogging::Application Hook (F0002.001)| |
+|[log keystrokes via application hook](https://github.com/mandiant/capa-rules/blob/master/collection/keylog/log-keystrokes-via-application-hook.yml)|Keylogging::Application Hook (F0002.001)|--|
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[infostealer_keylog](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_keylog.py)|Keylogging (F0002)|SetWindowsHookExA, GetAsyncKeyState, SetWindowsHookExW|
+|[infostealer_keylog](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_keylog.py)|Keylogging::Application Hook (F0002.001)|SetWindowsHookExA, GetAsyncKeyState, SetWindowsHookExW|
+|[browser_scanbox](https://github.com/CAPESandbox/community/tree/master/modules/signatures/browser_scanbox.py)|Keylogging (F0002)|JsEval, COleScript_ParseScriptText, COleScript_Compile|
 
 ## References
 

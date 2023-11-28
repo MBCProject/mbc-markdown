@@ -53,6 +53,10 @@ Malware may attempt to get a listing of open application windows.
 |---|---|---|
 |[get graphical window text](https://github.com/mandiant/capa-rules/blob/master/host-interaction/gui/window/get-text/get-graphical-window-text.yml)|Application Window Discovery (E1010)|user32.IsWindowVisible, user32.SendMessage, user32.GetForegroundWindow, user32.GetWindowText|
 
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[browser_needed](https://github.com/CAPESandbox/community/tree/master/modules/signatures/browser_needed.py)|Application Window Discovery (E1010)|FindWindowW, FindWindowExA, FindWindowExW, FindWindowA|
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022

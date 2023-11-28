@@ -49,6 +49,12 @@ See ATT&CK: **Hide Artifacts ([T1564](https://attack.mitre.org/techniques/T1564/
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|--|The malware hides icons from iOS's SpringBoard as well as use the same name and logos of system apps to trick iOS power users. [[1]](#1)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet intercepts IRP requests (reads, writes) to devices (NFTS, FAT, CD-ROM). It monitors directory control IRPs, in particular directory query notifications, such that when an application requests the list of files, it returns a Stuxnet-specified subset of the true items. These filters hide the files used by Stuxnet to spread through removable drives.  [[2]](#2)|
 
+## Detection
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[stealth_window](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_window.py)|Hide Artifacts (E1564)|ShellExecuteExW, CreateProcessInternalW|
+
 ## References
 
 <a name="1">[1]</a> https://unit42.paloaltonetworks.com/yispecter-first-ios-malware-attacks-non-jailbroken-ios-devices-by-abusing-private-apis/

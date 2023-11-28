@@ -73,9 +73,30 @@ Malware may enumerate files and directories or may search for specific files or 
 |[check if file exists](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/exists/check-if-file-exists.yml)|File and Directory Discovery (E1083)|kernel32.GetFileAttributes, kernel32.GetLastError, shlwapi.PathFileExists, System.IO.File::Exists|
 |[enumerate files on Linux](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/files/list/enumerate-files-on-linux.yml)|File and Directory Discovery (E1083)|getdents, getdents64, opendir, readdir|
 |[enumerate files on Windows](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/files/list/enumerate-files-on-windows.yml)|File and Directory Discovery (E1083)|kernel32.FindFirstFile, kernel32.FindFirstFileEx, kernel32.FindFirstFileTransacted, kernel32.FindFirstFileName, kernel32.FindFirstFileNameTransacted, kernel32.FindNextFile, kernel32.FindNextFileName, kernel32.FindClose, ntdll.NtOpenDirectoryObject, ntdll.NtQueryDirectoryObject, RtlAllocateHeap, System.IO.DirectoryInfo::GetFiles, System.IO.DirectoryInfo::EnumerateFiles, System.IO.Directory::GetFiles, System.IO.Directory::EnumerateFiles, System.IO.Directory::EnumerateFileSystemEntries, System.IO.DirectoryInfo::GetDirectories, System.IO.DirectoryInfo::EnumerateDirectories, System.IO.Directory::GetDirectories, System.IO.Directory::EnumerateDirectories|
-|[enumerate files recursively](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/files/list/enumerate-files-recursively.yml)|File and Directory Discovery (E1083)| |
+|[enumerate files recursively](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/files/list/enumerate-files-recursively.yml)|File and Directory Discovery (E1083)|--|
 |[read data from CLFS log container](https://github.com/mandiant/capa-rules/blob/master/host-interaction/log/clfs/read-data-from-clfs-log-container.yml)|File and Directory Discovery::Log File (E1083.m01)|clfsw32.CreateLogFile, clfsw32.CreateLogMarshallingArea, clfsw32.ReadLogRecord, clfsw32.ReadNextLogRecord|
 |[access the Windows event log](https://github.com/mandiant/capa-rules/blob/master/host-interaction/log/winevt/access/access-the-windows-event-log.yml)|File and Directory Discovery::Log File (E1083.m01)|OpenEventLog, ClearEventLog, OpenBackupEventLog, ReportEvent|
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[antisandbox_cuckoo_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_cuckoo_files.py)|File and Directory Discovery (E1083)|--|
+|[antisandbox_threattrack_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_threattrack_files.py)|File and Directory Discovery (E1083)|--|
+|[antivm_directory_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_directory_objects.py)|File and Directory Discovery (E1083)|NtQueryDirectoryObject, NtOpenDirectoryObject|
+|[antivm_vmware_events](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_events.py)|File and Directory Discovery (E1083)|NtOpenEvent, NtCreateEvent|
+|[antivm_vmware_events](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_events.py)|File and Directory Discovery::Log File (E1083.m01)|NtOpenEvent, NtCreateEvent|
+|[antivm_vbox_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_devices.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vmware_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_devices.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vbox_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_files.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vmware_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_libs.py)|File and Directory Discovery (E1083)|LdrLoadDll|
+|[antiav_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiav_detectfile.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vpc_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vpc_files.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vbox_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_libs.py)|File and Directory Discovery (E1083)|LdrLoadDll|
+|[driver_filtermanager](https://github.com/CAPESandbox/community/tree/master/modules/signatures/driver_filtermanager.py)|File and Directory Discovery (E1083)|--|
+|[antisandbox_joe_anubis_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_joe_anubis_files.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vmware_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_files.py)|File and Directory Discovery (E1083)|--|
+|[antisandbox_fortinet_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_fortinet_files.py)|File and Directory Discovery (E1083)|--|
+|[antisandbox_sunbelt_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_sunbelt_files.py)|File and Directory Discovery (E1083)|--|
+|[antianalysis_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antianalysis_detectfile.py)|File and Directory Discovery (E1083)|--|
 
 ## References
 

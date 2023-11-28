@@ -95,9 +95,31 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[send data](https://github.com/mandiant/capa-rules/blob/master/communication/send-data.yml)|C2 Communication::Send Data (B0030.001)| |
-|[receive data](https://github.com/mandiant/capa-rules/blob/master/communication/receive-data.yml)|C2 Communication::Receive Data (B0030.002)| |
-|[download and write a file](https://github.com/mandiant/capa-rules/blob/master/communication/c2/file-transfer/download-and-write-a-file.yml)|C2 Communication::Server to Client File Transfer (B0030.003)| |
+|[send data](https://github.com/mandiant/capa-rules/blob/master/communication/send-data.yml)|C2 Communication::Send Data (B0030.001)|--|
+|[receive data](https://github.com/mandiant/capa-rules/blob/master/communication/receive-data.yml)|C2 Communication::Receive Data (B0030.002)|--|
+|[download and write a file](https://github.com/mandiant/capa-rules/blob/master/communication/c2/file-transfer/download-and-write-a-file.yml)|C2 Communication::Server to Client File Transfer (B0030.003)|--|
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[office_cve2017_11882_network](https://github.com/CAPESandbox/community/tree/master/modules/signatures/office_cve2017_11882_network.py)|C2 Communication (B0030)|ConnectEx, URLDownloadToFileW|
+|[internet_dropper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/internet_dropper.py)|C2 Communication (B0030)|HttpOpenRequestA, InternetConnectA, HttpOpenRequestW, InternetConnectW|
+|[internet_dropper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/internet_dropper.py)|C2 Communication::Check for Payload (B0030.005)|HttpOpenRequestA, InternetConnectA, HttpOpenRequestW, InternetConnectW|
+|[bot_madness](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bot_madness.py)|C2 Communication (B0030)|--|
+|[bot_drive](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bot_drive.py)|C2 Communication (B0030)|--|
+|[recon_beacon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/recon_beacon.py)|C2 Communication (B0030)|HttpOpenRequestA, HttpSendRequestA|
+|[nemty_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/nemty_network_activity.py)|C2 Communication (B0030)|InternetOpenA, InternetOpenUrlA|
+|[bot_drive2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bot_drive2.py)|C2 Communication (B0030)|--|
+|[bot_dirtjumper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bot_dirtjumper.py)|C2 Communication (B0030)|--|
+|[bot_athenahttp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bot_athenahttp.py)|C2 Communication (B0030)|--|
+|[network_dns_tunneling_request](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_tunneling_request.py)|C2 Communication (B0030)|DnsQuery_A, DnsQuery_W|
+|[network_questionable_host](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_questionable_host.py)|C2 Communication (B0030)|--|
+|[injection_network_traffic](https://github.com/CAPESandbox/community/tree/master/modules/signatures/injection_network_traffic.py)|C2 Communication (B0030)|HttpOpenRequestA, URLDownloadToFileW, HttpOpenRequestW, InternetConnectW, InternetConnectA, connect, InternetCrackUrlW, InternetCrackUrlA, WSASend|
+|[network_bind](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_bind.py)|C2 Communication (B0030)|listen, bind|
+|[network_document_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_document_http.py)|C2 Communication (B0030)|URLDownloadToFileW, HttpOpenRequestW, InternetCrackUrlW, InternetCrackUrlA, WSASend, InternetReadFile|
+|[network_country_distribution](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_country_distribution.py)|C2 Communication (B0030)|--|
+|[banker_zeus_url](https://github.com/CAPESandbox/community/tree/master/modules/signatures/banker_zeus_url.py)|C2 Communication (B0030)|--|
+|[network_dyndns](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dyndns.py)|C2 Communication (B0030)|--|
+|[script_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/script_network_activity.py)|C2 Communication (B0030)|URLDownloadToFileW, HttpOpenRequestW, send, WSAConnect, InternetCrackUrlW, InternetCrackUrlA, SslEncryptPacket, InternetReadFile|
 
 ## Code Snippets
 

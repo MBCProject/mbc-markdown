@@ -42,6 +42,12 @@ The methods below are those of most interest in malware analysis. Details can be
 |**InternetReadFile**|C0005.004|Reads data from an open Internet file (URL data).|
 |**InternetWriteFile**|C0005.005|Writes data to an open Internet file.|
 
+## Detection
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[nemty_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/nemty_network_activity.py)|WinINet (C0005)|InternetOpenA, InternetOpenUrlA|
+
 ## References
 
 <a name="1">[1]</a> https://docs.microsoft.com/en-us/windows/win32/wininet/wininet-functions

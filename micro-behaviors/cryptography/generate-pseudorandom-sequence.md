@@ -50,10 +50,10 @@ The Generate Pseudo-random Sequence micro-behavior can be used for a number of p
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[encrypt data using RC4 PRGA](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/rc4/encrypt-data-using-rc4-prga.yml)|Generate Pseudo-random Sequence::RC4 PRGA (C0021.004)| |
+|[encrypt data using RC4 PRGA](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/rc4/encrypt-data-using-rc4-prga.yml)|Generate Pseudo-random Sequence::RC4 PRGA (C0021.004)|--|
 |[generate random numbers via WinAPI](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/prng/generate-random-numbers-via-winapi.yml)|Generate Pseudo-random Sequence::Use API (C0021.003)|BCryptGenRandom, CryptGenRandom, BCryptOpenAlgorithmProvider, BCryptCloseAlgorithmProvider, CryptAquireContext|
 |[generate random numbers via RtlGenRandom](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/prng/generate-random-numbers-via-rtlgenrandom.yml)|Generate Pseudo-random Sequence::Use API (C0021.003)|SystemFunction036|
-|[generate random numbers using a Mersenne Twister](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/prng/mersenne/generate-random-numbers-using-a-mersenne-twister.yml)|Generate Pseudo-random Sequence (C0021)| |
+|[generate random numbers using a Mersenne Twister](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/prng/mersenne/generate-random-numbers-using-a-mersenne-twister.yml)|Generate Pseudo-random Sequence (C0021)|--|
 
 ## References
 

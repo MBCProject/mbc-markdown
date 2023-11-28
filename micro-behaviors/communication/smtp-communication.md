@@ -36,3 +36,10 @@ This micro-behavior focuses on SMTP communication.
 |---|---|---|
 |**Request**|C0012.002|Makes SMTP request.|
 |**Server Connect**|C0012.001|Connects to an SMTP server.|
+
+## Detection
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[network_smtp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_smtp.py)|SMTP Communication (C0012)|--|
+

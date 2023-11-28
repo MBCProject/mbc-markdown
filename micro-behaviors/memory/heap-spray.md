@@ -29,3 +29,10 @@
 # Heap Spray
 
 Malware may use heap spraying to write a sequence of bytes on the heap section of a process.
+
+## Detection
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[exploit_heapspray](https://github.com/CAPESandbox/community/tree/master/modules/signatures/exploit_heapspray.py)|Heap Spray (C0006)|NtAllocateVirtualMemory|
+

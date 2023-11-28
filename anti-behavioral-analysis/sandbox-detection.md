@@ -73,6 +73,28 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |---|---|---|
 |[antisandbox_joe_anubis_files.py](https://github.com/kevoreilly/community/blob/master/modules/signatures/antisandbox_joe_anubis_files.py)|Sandbox Detection::Check Files (B0007.002)|--|
 |[antisandbox_cuckoo_files](https://github.com/kevoreilly/community/blob/master/modules/signatures/antisandbox_cuckoo_files.py)|Sandbox Detection::Check Files (B0007.002)|--|
+|[antisandbox_cuckoo_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_cuckoo_files.py)|Sandbox Detection (B0007)|--|
+|[antisandbox_cuckoo_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_cuckoo_files.py)|Sandbox Detection::Check Files (B0007.002)|--|
+|[antisandbox_threattrack_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_threattrack_files.py)|Sandbox Detection (B0007)|--|
+|[antisandbox_threattrack_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_threattrack_files.py)|Sandbox Detection::Check Files (B0007.002)|--|
+|[antisandbox_sleep](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_sleep.py)|Sandbox Detection (B0007)|NtDelayExecution|
+|[antisandbox_sleep](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_sleep.py)|Sandbox Detection::Timing/Date Check (B0007.008)|NtDelayExecution|
+|[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_mouse_hook.py)|Sandbox Detection (B0007)|SetWindowsHookExA, SetWindowsHookExW|
+|[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_mouse_hook.py)|Sandbox Detection::Human User Check (B0007.003)|SetWindowsHookExA, SetWindowsHookExW|
+|[antisandbox_foregroundwindows](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_foregroundwindows.py)|Sandbox Detection (B0007)|GetForegroundWindow, NtDelayExecution|
+|[antisandbox_sboxie_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_sboxie_mutex.py)|Sandbox Detection (B0007)|--|
+|[antisandbox_script_timer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_script_timer.py)|Sandbox Detection (B0007)|--|
+|[antisandbox_sboxie_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_sboxie_libs.py)|Sandbox Detection (B0007)|LdrGetDllHandle, LdrLoadDll|
+|[antisandbox_cuckoocrash](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_cuckoocrash.py)|Sandbox Detection (B0007)|--|
+|[antisandbox_joe_anubis_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_joe_anubis_files.py)|Sandbox Detection (B0007)|--|
+|[antisandbox_joe_anubis_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_joe_anubis_files.py)|Sandbox Detection::Check Files (B0007.002)|--|
+|[antisandbox_fortinet_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_fortinet_files.py)|Sandbox Detection (B0007)|--|
+|[antisandbox_fortinet_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_fortinet_files.py)|Sandbox Detection::Check Files (B0007.002)|--|
+|[antisandbox_sunbelt_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_sunbelt_files.py)|Sandbox Detection (B0007)|--|
+|[antisandbox_sunbelt_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_sunbelt_files.py)|Sandbox Detection::Check Files (B0007.002)|--|
+|[antisandbox_sboxie_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_sboxie_objects.py)|Sandbox Detection (B0007)|NtOpenDirectoryObject|
+|[antisandbox_sunbelt_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_sunbelt_libs.py)|Sandbox Detection (B0007)|LdrGetDllHandle, LdrLoadDll|
+|[antisandbox_cuckoo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_cuckoo.py)|Sandbox Detection (B0007)|--|
 
 ## Code Snippets
 

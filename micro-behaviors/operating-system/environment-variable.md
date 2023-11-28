@@ -48,7 +48,7 @@ Malware modifies environment variables.
 |Tool: capa|Mapping|APIs|
 |---|---|---|
 |[set environment variable](https://github.com/mandiant/capa-rules/blob/master/host-interaction/environment-variable/set-environment-variable.yml)|Environment Variable::Set Variable (C0034.001)|kernel32.SetEnvironmentStrings, kernel32.SetEnvironmentVariable, System.Environment::SetEnvironmentVariable|
-|[get COMSPEC environment variable](https://github.com/mandiant/capa-rules/blob/master/host-interaction/environment-variable/get-comspec-environment-variable.yml)|Environment Variable (C0034)| |
+|[get COMSPEC environment variable](https://github.com/mandiant/capa-rules/blob/master/host-interaction/environment-variable/get-comspec-environment-variable.yml)|Environment Variable (C0034)|--|
 
 ## References
 

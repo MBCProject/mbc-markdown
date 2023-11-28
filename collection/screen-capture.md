@@ -55,7 +55,12 @@ See ATT&CK: **Screen Capture ([T1113](https://attack.mitre.org/techniques/T1113/
 |Tool: capa|Mapping|APIs|
 |---|---|---|
 |[capture screenshot](https://github.com/mandiant/capa-rules/blob/master/collection/screenshot/capture-screenshot.yml)|Screen Capture::WinAPI (E1113.m01)|user32.GetWindowDC, user32.GetDC, gdi32.CreateDC, gdi32.BitBlt, gdi32.GetDIBits, gdi32.CreateCompatibleDC, gdi32.CreateCompatibleBitmap, user32.GetSystemMetrics = fetch screen dimensions, user32.GetDesktopWindow = get entire desktop, BitBlt, System.Drawing.Graphics::CopyFromScreen|
-|[capture screenshot via keybd event](https://github.com/mandiant/capa-rules/blob/master/collection/screenshot/capture-screenshot-via-keybd-event.yml)|Screen Capture (E1113)| |
+|[capture screenshot via keybd event](https://github.com/mandiant/capa-rules/blob/master/collection/screenshot/capture-screenshot-via-keybd-event.yml)|Screen Capture (E1113)|--|
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[poullight_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/poullight_files.py)|Screen Capture (E1113)|--|
+|[captures_screenshot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/captures_screenshot.py)|Screen Capture (E1113)|LdrGetProcedureAddress, NtCreateFile|
 
 ## References
 

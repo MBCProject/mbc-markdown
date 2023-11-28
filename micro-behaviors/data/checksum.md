@@ -52,11 +52,11 @@ Malware may derive a checksum from some block of data. The checksum is often use
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[validate payment card number using luhn algorithm](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/checksum/luhn/validate-payment-card-number-using-luhn-algorithm.yml)|Checksum::Luhn (C0032.002)| |
-|[compute adler32 checksum](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/checksum/adler32/compute-adler32-checksum.yml)|Checksum::Adler (C0032.005)| |
+|[validate payment card number using luhn algorithm](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/checksum/luhn/validate-payment-card-number-using-luhn-algorithm.yml)|Checksum::Luhn (C0032.002)|--||
+|[compute adler32 checksum](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/checksum/adler32/compute-adler32-checksum.yml)|Checksum::Adler (C0032.005)|--||
 |[hash data with CRC32](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/checksum/crc32/hash-data-with-crc32.yml)|Checksum::CRC32 (C0032.001)|RtlComputeCrc32|
-|[validate payment card number using luhn algorithm with lookup table](https://github.com/mandiant/capa-rules/blob/master/lib/validate-payment-card-number-using-luhn-algorithm-with-lookup-table.yml)|Checksum::Luhn (C0032.002)| |
-|[validate payment card number using luhn algorithm with no lookup table](https://github.com/mandiant/capa-rules/blob/master/lib/validate-payment-card-number-using-luhn-algorithm-with-no-lookup-table.yml)|Checksum::Luhn (C0032.002)| |
+|[validate payment card number using luhn algorithm with lookup table](https://github.com/mandiant/capa-rules/blob/master/lib/validate-payment-card-number-using-luhn-algorithm-with-lookup-table.yml)|Checksum::Luhn (C0032.002)|--||
+|[validate payment card number using luhn algorithm with no lookup table](https://github.com/mandiant/capa-rules/blob/master/lib/validate-payment-card-number-using-luhn-algorithm-with-no-lookup-table.yml)|Checksum::Luhn (C0032.002)|--||
 
 ## References
 
