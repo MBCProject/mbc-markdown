@@ -60,10 +60,10 @@ Malware may encode data.
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[encode data using XOR](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encoding/xor/encode-data-using-xor.yml)|Encode Data::XOR (C0026.002)| |
+|[encode data using XOR](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encoding/xor/encode-data-using-xor.yml)|Encode Data::XOR (C0026.002)|--|
 |[encode data using Base64](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encoding/base64/encode-data-using-base64.yml)|Encode Data::Base64 (C0026.001)|System.Convert::ToBase64String, System.Convert::ToBase64CharArray, System.Convert::TryToBase64Chars|
-|[decode data using Base64 via dword translation table](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encoding/base64/decode-data-using-base64-via-dword-translation-table.yml)|Encode Data::Base64 (C0026.001)| |
-|[reference Base64 string](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encoding/base64/reference-base64-string.yml)|Encode Data::Base64 (C0026.001)| |
+|[decode data using Base64 via dword translation table](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encoding/base64/decode-data-using-base64-via-dword-translation-table.yml)|Encode Data::Base64 (C0026.001)|--|
+|[reference Base64 string](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encoding/base64/reference-base64-string.yml)|Encode Data::Base64 (C0026.001)|--|
 
 ## References
 

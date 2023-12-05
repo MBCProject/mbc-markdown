@@ -42,14 +42,13 @@ Autonomous behaviors - those done by the malware without an active attacker - sh
 
 |Name|ID|Description|
 |---|---|---|
-|**Delete File**|B0011.001||
-|**Download File**|B0011.002||
-|**Execute**|B0011.003||
-|**Shutdown**|B0011.004||
-|**Sleep**|B0011.005||
-|**Uninstall**|B0011.006||
-|**Upload File**|B0011.007||
-
+|**Delete File**|B0011.001|--|
+|**Download File**|B0011.002|--|
+|**Execute**|B0011.003|--|
+|**Shutdown**|B0011.004|--|
+|**Sleep**|B0011.005|--|
+|**Uninstall**|B0011.006|--|
+|**Upload File**|B0011.007|--|
 
 ## Use in Malware
 
@@ -60,7 +59,6 @@ Autonomous behaviors - those done by the malware without an active attacker - sh
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware receives various commands from the C2 server. [[3]](#3)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0011.005|The malware sleeps if it fails to send collected data or execute its commands. [[4]](#4) [[5]](#5)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|B0011.006|The malware loader can uninstall itself from the victim computer. [[4]](#4) [[5]](#5)|
-
 
 ## References
 

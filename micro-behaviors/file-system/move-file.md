@@ -28,7 +28,6 @@
 
 # Move File
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -45,6 +44,10 @@
 |Tool: capa|Mapping|APIs|
 |---|---|---|
 |[move file](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/move/move-file.yml)|Move File (C0063)|kernel32.MoveFile, kernel32.MoveFileEx, MoveFileWithProgress, MoveFileTransacted, rename, _wrename, System.IO.FileInfo::MoveTo, System.IO.File::Move, kernel32.SHFileOperation|
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[move_file_on_reboot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/move_file_on_reboot.py)|Move File (C0063)|MoveFileWithProgressTransactedA, MoveFileWithProgressTransactedW|
 
 ## References
 

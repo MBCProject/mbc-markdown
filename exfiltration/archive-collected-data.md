@@ -43,7 +43,6 @@ See ATT&CK Technique: **Archive Collected Data ([T1560](https://attack.mitre.org
 |**Encryption - Custom Encryption**|E1560.m06|Data is encrypted. A custom algorithm is used to encrypt the exfiltrated data.|
 |**Encryption - Standard Encryption**|E1560.m05|Data is encrypted. A standard algorithm, such as Rijndael/AES, DES, RC4, is used to encrypt the exfiltrated data.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -52,6 +51,16 @@ See ATT&CK Technique: **Archive Collected Data ([T1560](https://attack.mitre.org
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1560.m04|Exfiltrated payloads are XORed with a static 31-byte long byte string found inside Stuxnet and hexified in order to be passed on as an ASCII data parameter in an HTTP request to the C2 servers. [[2]](#2)|
 |[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|E1560.m03|Malware sends data as a Base64 string of JSON. [[3]](#3) [[4]](#4)|
 
+## Detection
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[encrypt_data_agenttesla_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/encrypt_data_agenttesla_http.py)|Archive Collected Data (E1560)|CryptEncrypt|
+|[encrypt_data_agenttesla_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/encrypt_data_agenttesla_http.py)|Archive Collected Data::Encryption (E1560.m02)|CryptEncrypt|
+|[encrypt_data_agentteslat2_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/encrypt_data_agentteslat2_http.py)|Archive Collected Data (E1560)|CryptEncrypt, GetUserNameW, GetComputerNameW|
+|[encrypt_data_agentteslat2_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/encrypt_data_agentteslat2_http.py)|Archive Collected Data::Encryption (E1560.m02)|CryptEncrypt, GetUserNameW, GetComputerNameW|
+|[encrypt_data_nanocore](https://github.com/CAPESandbox/community/tree/master/modules/signatures/encrypt_data_nanocore.py)|Archive Collected Data (E1560)|CryptEncrypt, GetUserNameW, GetComputerNameW|
+|[encrypt_data_nanocore](https://github.com/CAPESandbox/community/tree/master/modules/signatures/encrypt_data_nanocore.py)|Archive Collected Data::Encryption (E1560.m02)|CryptEncrypt, GetUserNameW, GetComputerNameW|
 
 ## References
 

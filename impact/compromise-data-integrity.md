@@ -42,7 +42,6 @@ The related **Data Manipulation: Stored Data Manipulation ([T1565.001](https://a
 |---|---|---|---|
 |[**DYEPACK**](../xample-malware/dyepack.md)|2015|--|DYEPACK alters records in databases used for SWIFT transactions. [[2]](#2)|
 
-
 ## References
 
 <a name="1">[1]</a> "TRISIS Malware: Analysis of Safety System Targeted Malware, version 1.20171213," Dragos, 13 Dec. 2017. [Online]. Available: https://www.dragos.com/wp-content/uploads/TRISIS-01.pdf.

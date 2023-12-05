@@ -37,7 +37,6 @@ Malware may change memory protection. For example, read-write memory may be chan
 |**Executable Heap**|C0008.002|The heap is made executable.|
 |**Executable Stack**|C0008.001|The stack is made executable.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -45,6 +44,11 @@ Malware may change memory protection. For example, read-write memory may be chan
 |[**Ursnif**](../../xample-malware/ursnif.md)|2016|--|The malware changes the PE header of the child process to enable write access to that page and writes 18 bytes of buffer at offset 0x40 from the start of svchost.exe in the target child process. The region protection is changed back to "read only" to avoid suspicion. [[1]](#1)|
 |[**SYNful Knock**](../../xample-malware/synful-knock.md)|2015|--|SYNful Knock modifies the translation lookaside buffer (TLB) Read/Write attributes. [[2]](#2)|
 
+## Detection
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_guardpages.py)|Change Memory Protection (C0008)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
 
 ## References
 

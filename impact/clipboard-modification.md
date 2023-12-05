@@ -50,6 +50,10 @@ ATT&CK defines Clipboard Modification as a Mobile technique (Android platform). 
 |---|---|---|
 |[write clipboard data](https://github.com/mandiant/capa-rules/blob/master/host-interaction/clipboard/write-clipboard-data.yml)|Clipboard Modification (E1510)|user32.EmptyClipboard, System.Windows.Forms.Clipboard::Clear, user32.SetClipboardData, System.Windows.Forms.Clipboard::SetAudio, System.Windows.Forms.Clipboard::SetData, System.Windows.Forms.Clipboard::SetDataObject, System.Windows.Forms.Clipboard::SetFileDropList, System.Windows.Forms.Clipboard::SetImage, System.Windows.Forms.Clipboard::SetText|
 
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[set_clipboard_data](https://github.com/CAPESandbox/community/tree/master/modules/signatures/set_clipboard_data.py)|Clipboard Modification (E1510)|SetClipboardData|
+
 ## References
 
 <a name="1">[1]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking

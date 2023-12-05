@@ -58,7 +58,14 @@ See ATT&CK: **Data Destruction ([T1485](https://attack.mitre.org/techniques/T148
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[delete volume shadow copies](https://github.com/mandiant/capa-rules/blob/master/impact/inhibit-system-recovery/delete-volume-shadow-copies.yml)|Data Destruction::Delete Shadow Copies (E1485.m04)| |
+|[delete volume shadow copies](https://github.com/mandiant/capa-rules/blob/master/impact/inhibit-system-recovery/delete-volume-shadow-copies.yml)|Data Destruction::Delete Shadow Copies (E1485.m04)|--|
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[clears_logs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/clears_logs.py)|Data Destruction (E1485)|--|
+|[ransomware_recyclebin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/ransomware_recyclebin.py)|Data Destruction (E1485)|--|
+|[uses_windows_utilities_cipher](https://github.com/CAPESandbox/community/tree/master/modules/signatures/uses_windows_utilities_cipher.py)|Data Destruction (E1485)|--|
+|[anomalous_deletefile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/anomalous_deletefile.py)|Data Destruction (E1485)|NtDeleteFile, DeleteFileW, DeleteFileA|
 
 ## References
 

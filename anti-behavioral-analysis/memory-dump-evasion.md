@@ -55,7 +55,6 @@ Memory dump evasion is an anti-forensic technique in which malware hinders retri
 |---|---|---|---|
 |[**Kraken**](../xample-malware/kraken.md)|2008|--|Dumping Kraken's c.dll module from the heap of its own process is tricky because its PE-header is erased in memory. [[4]](#4)|
 
-
 ## Code Snippets
 
 ### B0006.011 Snippet

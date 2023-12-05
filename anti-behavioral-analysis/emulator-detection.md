@@ -55,6 +55,14 @@ Detects whether the malware instance is being executed inside an emulator. If so
 |---|---|---|
 |[check if process is running under wine](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-emulation/wine/check-if-process-is-running-under-wine.yml)|Emulator Detection (B0004)|GetModuleHandle, GetProcAddress|
 
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[antiemu_windefend](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiemu_windefend.py)|Emulator Detection (B0004)|--|
+|[antivm_bochs_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_bochs_keys.py)|Emulator Detection (B0004)|--|
+|[antivm_bochs_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_bochs_keys.py)|Emulator Detection::Check Emulator-related Registry Keys (B0004.003)|--|
+|[antiemu_wine_func](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiemu_wine_func.py)|Emulator Detection (B0004)|LdrGetProcedureAddress|
+|[antiemu_wine_reg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiemu_wine_reg.py)|Emulator Detection (B0004)|--|
+|[antiemu_wine_reg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiemu_wine_reg.py)|Emulator Detection::Check Emulator-related Registry Keys (B0004.003)|--|
 
 ## References
 

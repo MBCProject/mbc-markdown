@@ -40,7 +40,6 @@ See ATT&CK: **Indicator Removal on Host: Uninstall Malicious Application ([T1630
 |---|---|---|
 |**COMSPEC Environment Variable**|F0007.001|Uninstalls self via COMSPEC environment variable.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -54,8 +53,13 @@ See ATT&CK: **Indicator Removal on Host: Uninstall Malicious Application ([T1630
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[self delete](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-forensic/self-deletion/self-delete.yml)|Self Deletion::COMSPEC Environment Variable (F0007.001)| |
+|[self delete](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-forensic/self-deletion/self-delete.yml)|Self Deletion::COMSPEC Environment Variable (F0007.001)|--|
 
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[trickbot_task_delete](https://github.com/CAPESandbox/community/tree/master/modules/signatures/trickbot_task_delete.py)|Self Deletion (F0007)|DeleteFileW|
+|[deletes_executed_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/deletes_executed_files.py)|Self Deletion (F0007)|--|
+|[deletes_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/deletes_self.py)|Self Deletion (F0007)|NtDeleteFile, DeleteFileW, DeleteFileA, MoveFileWithProgressW, MoveFileWithProgressTransactedW|
 
 ## References
 

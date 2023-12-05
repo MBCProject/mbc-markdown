@@ -89,6 +89,14 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 |[hide thread from debugger](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-debugging/debugger-evasion/hide-thread-from-debugger.yml)|Debugger Evasion (B0002)|NtSetInformationThread, ZwSetInformationThread, GetCurrentThread|
 |[switch active desktop](https://github.com/mandiant/capa-rules/blob/master/host-interaction/gui/switch-active-desktop.yml)|Debugger Evasion (B0002)|user32.CreateDesktop, user32.SwitchDesktop|
 
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_guardpages.py)|Debugger Evasion (B0002)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
+|[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_guardpages.py)|Debugger Evasion::Guard Pages (B0002.008)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
+|[antidebug_ntcreatethreadex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_ntcreatethreadex.py)|Debugger Evasion (B0002)|NtCreateThreadEx|
+|[debugs_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/debugs_self.py)|Debugger Evasion (B0002)|CreateProcessInternalW|
+|[debugs_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/debugs_self.py)|Debugger Evasion::Self-Debugging (B0002.024)|CreateProcessInternalW|
+
 ## References
 
 <a name="1">[1]</a> https://anti-reversing.com/Downloads/Anti-Reversing/The_Ultimate_Anti-Reversing_Reference.pdf

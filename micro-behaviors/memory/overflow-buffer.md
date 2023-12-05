@@ -30,7 +30,6 @@
 
 Malware may overflow the buffer for various purposes.
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|

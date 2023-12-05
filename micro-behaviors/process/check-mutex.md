@@ -44,6 +44,13 @@ Malware checks a mutex.
 |[check mutex](https://github.com/mandiant/capa-rules/blob/master/host-interaction/mutex/check-mutex.yml)|Check Mutex (C0043)|kernel32.OpenMutex, System.Threading.Mutex::OpenExisting, System.Threading.Mutex::TryOpenExisting, kernel32.GetLastError|
 |[check mutex and exit](https://github.com/mandiant/capa-rules/blob/master/host-interaction/mutex/check-mutex-and-exit.yml)|Check Mutex (C0043)|ExitProcess, exit, _Exit, _exit, WaitForSingleObject, GetLastError|
 
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[antivm_vpc_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vpc_mutex.py)|Check Mutex (C0043)|--|
+|[antisandbox_sboxie_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_sboxie_mutex.py)|Check Mutex (C0043)|--|
+|[antivm_vmware_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_mutexes.py)|Check Mutex (C0043)|--|
+|[purplewave_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/purplewave_mutexes.py)|Check Mutex (C0043)|--|
+
 ## References
 
 <a name="1">[1]</a> https://www.fortinet.com/blog/threat-research/deep-analysis-of-new-poison-ivy-variant

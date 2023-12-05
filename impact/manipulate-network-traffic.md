@@ -43,7 +43,6 @@ The related **Data Manipulation: Transmitted Data Manipulation ([T1565.002](http
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|SearchAwesome adware intercepts encrypted web traffic to inject ads. [[2]](#2)|
 |[**MazarBot**](../xample-malware/mazarbot.md)|2016|--|MazarBot intercepts data coming into and going out of the device. [[3]](#3)|
 
-
 ## References
 <a name="1">[1]</a> B. Feeley and B. Stone-Gross,"New Evidence Proves Ongoing WIZARD SPIDER / LUNAR SPIDER Collaboration," CrowdStrike, blog, 20 Mar. 2019. [Online]. Available: https://www.crowdstrike.com/blog/wizard-spider-lunar-spider-shared-proxy-module. 
 

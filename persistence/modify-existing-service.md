@@ -42,6 +42,16 @@ See ATT&CK: **Create or Modify System Process::Windows Service ([T1543.003](http
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon enables the RemoteRegistry service to allow remote registry modification. [[5]](#5)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Vobfus disables Windows AutoUpdate and patches the first byte of TerminateProcess and TerminateThread API with C3 (RET Instruction) to prevent external processes from terminating the running instance of malware. [[6]](#6)|
 
+## Detection
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[volatility_svcscan_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/volatility_svcscan_1.py)|Modify Existing Service (F0011)|--|
+|[volatility_svcscan_2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/volatility_svcscan_2.py)|Modify Existing Service (F0011)|--|
+|[volatility_svcscan_3](https://github.com/CAPESandbox/community/tree/master/modules/signatures/volatility_svcscan_3.py)|Modify Existing Service (F0011)|--|
+|[antiav_servicestop](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiav_servicestop.py)|Modify Existing Service (F0011)|OpenServiceA, ControlService, OpenServiceW|
+|[persistence_service](https://github.com/CAPESandbox/community/tree/master/modules/signatures/persistence_service.py)|Modify Existing Service (F0011)|--|
+|[modify_security_center_warnings](https://github.com/CAPESandbox/community/tree/master/modules/signatures/modify_security_center_warnings.py)|Modify Existing Service (F0011)|--|
 
 ## References
 

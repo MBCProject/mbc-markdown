@@ -28,7 +28,6 @@
 
 # Taskbar Discovery
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -39,7 +38,7 @@
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[find taskbar](https://github.com/mandiant/capa-rules/blob/master/host-interaction/gui/taskbar/find/find-taskbar.yml)|Taskbar Discovery (B0043)| |
+|[find taskbar](https://github.com/mandiant/capa-rules/blob/master/host-interaction/gui/taskbar/find/find-taskbar.yml)|Taskbar Discovery (B0043)|--|
 
 ## References
 

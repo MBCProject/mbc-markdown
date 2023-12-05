@@ -53,13 +53,19 @@ Rootkits may hide artifacts (kernel modules, services, threads, userspace librar
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon has certain variants that may have rootkit functionality. [[3]](#3)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|E1014.m16|Stuxnet registers custom resource drives signed with a legitimate Realtek digital certificate. [[4]](#4)|
 
-
 ## Detection
 
 Rootkits can be detected by detecting primary rootkit behaviors: Hide Artifacts, Impair Defenses, and Highjack Execution Flow. Hidden artifacts include kernel modules (hides use of kernel modules used by the malware instance), services (hides any system services that the malware instance creates or injects itself into), threads (hides one or more threads that belong to the malware instance), and userspace libraries (hides use of userspace libraries used by the malware instance). 
 
 Rootkits can also be detected via memory dump analysis or virtual machine introspection.
 
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[spicyhotpot_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/spicyhotpot_behavior.py)|Rootkit (E1014)|--|
+|[accesses_primary_patition](https://github.com/CAPESandbox/community/tree/master/modules/signatures/accesses_primary_patition.py)|Rootkit (E1014)|--|
+|[direct_hdd_access](https://github.com/CAPESandbox/community/tree/master/modules/signatures/direct_hdd_access.py)|Rootkit (E1014)|--|
+|[enumerates_physical_drives](https://github.com/CAPESandbox/community/tree/master/modules/signatures/enumerates_physical_drives.py)|Rootkit (E1014)|--|
+|[physical_drive_access](https://github.com/CAPESandbox/community/tree/master/modules/signatures/physical_drive_access.py)|Rootkit (E1014)|--|
 
 ## References
 

@@ -54,7 +54,6 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |**TCP Client**|C0001.008|TCP client behavior.|
 |**UDP Client**|C0001.013|UDP client behavior.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -83,6 +82,13 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[create UDP socket](https://github.com/mandiant/capa-rules/blob/master/communication/socket/udp/send/create-udp-socket.yml)|Socket Communication::Create UDP Socket (C0001.010)|ws2_32.socket, ws2_32.WSASocket, socket, System.Net.Sockets.Socket::ctor, System.Net.Sockets.UdpClient::ctor|
 |[send data on socket](https://github.com/mandiant/capa-rules/blob/master/communication/socket/send/send-data-on-socket.yml)|Socket Communication::Send Data (C0001.007)|ws2_32.send, ws2_32.sendto, ws2_32.WSASend, ws2_32.WSASendMsg, ws2_32.WSASendTo, send, System.Net.Sockets.Socket::Send, System.Net.Sockets.Socket::SendAsync, System.Net.Sockets.Socket::SendTo, System.Net.Sockets.Socket::SendToAsync, System.Net.Sockets.UdpClient::Send|
 |[receive data on socket](https://github.com/mandiant/capa-rules/blob/master/communication/socket/receive/receive-data-on-socket.yml)|Socket Communication::Receive Data (C0001.006)|ws2_32.recv, ws2_32.recvfrom, ws2_32.WSARecv, ws2_32.WSARecvDisconnect, ws2_32.WSARecvEx, ws2_32.WSARecvFrom, ws2_32.WSARecvMsg, recv, System.Net.Sockets.Socket::Receive, System.Net.Sockets.Socket::ReceiveAsync, System.Net.Sockets.Socket::ReceiveFrom, System.Net.Sockets.Socket::ReceiveFromAsync, System.Net.Sockets.Socket::ReceiveMessageFrom, System.Net.Sockets.Socket::ReceiveMessageFromAsync, System.Net.Sockets.Socket::BeginReceive, System.Net.Sockets.Socket::BeginReceiveFrom, System.Net.Sockets.Socket::BeginReceiveMessageFrom, System.Net.Sockets.Socket::EndReceive, System.Net.Sockets.Socket::EndReceiveFrom, System.Net.Sockets.Socket::EndReceiveMessageFrom|
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[network_excessive_udp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_excessive_udp.py)|Socket Communication (C0001)|--|
+|[blackrat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/blackrat_network_activity.py)|Socket Communication (C0001)|send|
+|[obliquerat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/obliquerat_network_activity.py)|Socket Communication (C0001)|send|
+|[network_bind](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_bind.py)|Socket Communication (C0001)|listen, bind|
 
 ## References
 

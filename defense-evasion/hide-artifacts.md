@@ -42,13 +42,18 @@ See ATT&CK: **Hide Artifacts ([T1564](https://attack.mitre.org/techniques/T1564/
 |**Hidden Processes**|E1564.m03|Hides processes used by the adversary or malware instance. This can involve techniques such as process list unlinking.|
 |**Hidden Services**|E1564.m04|Hides any system services that the malware instance creates or injects itself into. Services can be hidden by hiding associated registry keys.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**YiSpecter**](../xample-malware/yispecter.md)|2015|--|The malware hides icons from iOS's SpringBoard as well as use the same name and logos of system apps to trick iOS power users. [[1]](#1)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet intercepts IRP requests (reads, writes) to devices (NFTS, FAT, CD-ROM). It monitors directory control IRPs, in particular directory query notifications, such that when an application requests the list of files, it returns a Stuxnet-specified subset of the true items. These filters hide the files used by Stuxnet to spread through removable drives.  [[2]](#2)|
+
+## Detection
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[stealth_window](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_window.py)|Hide Artifacts (E1564)|ShellExecuteExW, CreateProcessInternalW|
 
 ## References
 

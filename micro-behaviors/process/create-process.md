@@ -38,7 +38,6 @@ Malware creates a process.
 |**Create Process via WMI**|C0017.002|Malware uses WMI to create a process.|
 |**Create Suspended Process**|C0017.003|Malware created a suspended process.|
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -67,6 +66,14 @@ Malware creates a process.
 |[execute command](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/create/execute-command.yml)|Create Process (C0017)|system, _system, wsystem, _wsystem|
 |[create a process with modified I/O handles and window](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/create/create-a-process-with-modified-io-handles-and-window.yml)|Create Process (C0017)|kernel32.CreateProcess, kernel32.CreateProcessInternal, advapi32.CreateProcessAsUser, advapi32.CreateProcessWithLogon, advapi32.CreateProcessWithToken, kernel32.GetStartupInfo, System.Diagnostics.Process::Start|
 |[create process suspended](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/create/create-process-suspended.yml)|Create Process::Create Suspended Process (C0017.003)|kernel32.CreateProcess, advapi32.CreateProcessAsUser|
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[stealth_system_procname](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_system_procname.py)|Create Process (C0017)|ShellExecuteExW, CreateProcessInternalW|
+|[stack_pivot_process_create](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stack_pivot_process_create.py)|Create Process (C0017)|NtCreateUserProcess, CreateProcessInternalW|
+|[wmi_create_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/wmi_create_process.py)|Create Process (C0017)|NtCreateUserProcess, CreateProcessInternalW|
+|[wmi_create_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/wmi_create_process.py)|Create Process::Create Process via WMI (C0017.002)|NtCreateUserProcess, CreateProcessInternalW|
+|[script_created_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/script_created_process.py)|Create Process (C0017)|NtCreateUserProcess, CreateProcessInternalW|
 
 ## References
 

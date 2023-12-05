@@ -42,5 +42,5 @@ Malware may compress data.
 |Tool: capa|Mapping|APIs|
 |---|---|---|
 |[compress data via WinAPI](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/compression/compress-data-via-winapi.yml)|Compress Data (C0024)|RtlDecompressBuffer, RtlDecompressBufferEx, RtlDecompressBufferEx2, RtlCompressBuffer, RtlCompressBufferLZNT1|
-|[compress data via ZLIB inflate or deflate](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/compression/compress-data-via-zlib-inflate-or-deflate.yml)|Compress Data (C0024)| |
-|[compress data using LZO](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/compression/compress-data-using-lzo.yml)|Compress Data (C0024)| |
+|[compress data via ZLIB inflate or deflate](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/compression/compress-data-via-zlib-inflate-or-deflate.yml)|Compress Data (C0024)|--|
+|[compress data using LZO](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/compression/compress-data-using-lzo.yml)|Compress Data (C0024)|--|

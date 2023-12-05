@@ -40,7 +40,6 @@ Examples of droppers include malicious
 Droppers may be described as “single stage” or “two stage.” While the former embeds the malicious code internally, the latter installs itself before downloading additional code from a remote location [[4]](#4).  
 
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|
@@ -66,8 +65,14 @@ Droppers may be described as “single stage” or “two stage.” While the fo
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[contain an embedded PE file](https://github.com/mandiant/capa-rules/blob/master/executable/subfile/pe/contain-an-embedded-pe-file.yml)|Install Additional Program (B0023)| |
-|[write and execute a file](https://github.com/mandiant/capa-rules/blob/master/communication/c2/file-transfer/write-and-execute-a-file.yml)|Install Additional Program (B0023)| |
+|[contain an embedded PE file](https://github.com/mandiant/capa-rules/blob/master/executable/subfile/pe/contain-an-embedded-pe-file.yml)|Install Additional Program (B0023)|--|
+|[write and execute a file](https://github.com/mandiant/capa-rules/blob/master/communication/c2/file-transfer/write-and-execute-a-file.yml)|Install Additional Program (B0023)|--|
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[bitcoin_opencl](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bitcoin_opencl.py)|Install Additional Program (B0023)|--|
+|[dropper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/dropper.py)|Install Additional Program (B0023)|--|
+|[sniffer_winpcap](https://github.com/CAPESandbox/community/tree/master/modules/signatures/sniffer_winpcap.py)|Install Additional Program (B0023)|--|
 
 ## References
 <a name="1">"Cyclops Blink: Malware Analysis Report, Version 1.0," National Cyber Security Centre/GCHQ, 23 Feb. 2022. [Online]. Available: https://www.ncsc.gov.uk/files/Cyclops-Blink-Malware-Analysis-Report.pdf.

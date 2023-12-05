@@ -52,6 +52,13 @@ The related **Resource Hijacking ([T1496](https://attack.mitre.org/techniques/T1
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR can use the compromised computer’s network bandwidth to seed torrents or execute DDoS. [[5]](#5)|
 |[**Clipminer**](../xample-malware/clipminer.md)|2011|--|Clipminer uses sytem resources to mine for cryptocurrency. [[6]](#6)|
 
+## Detection
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[cryptopool_domains](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cryptopool_domains.py)|Resource Hijacking (B0018)|GetAddrInfoW|
+|[cryptomining_stratum_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cryptomining_stratum_command.py)|Resource Hijacking (B0018)|--|
+|[cryptomining_stratum_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cryptomining_stratum_command.py)|Resource Hijacking::Cryptojacking (B0018.002)|--|
 
 ## References
 <a name="1">[1]</a> B. G. a. M. Ahuje,"CrowdStrike Discovers First-Ever Dero Cryptojacking Campaign Targeting Kubernetes," CrowdStrike, blog, 15 Mar. 2023. [Online]. Available: https://www.crowdstrike.com/blog/crowdstrike-discovers-first-ever-dero-cryptojacking-campaign-targeting-kubernetes/.

@@ -28,7 +28,6 @@
 
 # Resume Thread
 
-
 ## Use in Malware
 
 |Name|Date|Method|Description|

@@ -47,6 +47,12 @@ This description refines the ATT&CK **Disk Wipe: Disk Content Wipe ([T1561.001](
 |---|---|---|
 |[overwrite Master Boot Record (MBR)](https://github.com/mandiant/capa-rules/blob/master/impact/wipe-disk/wipe-mbr/overwrite-master-boot-record-mbr.yml)|Disk Wipe (F0014)|kernel32.WriteFile|
 
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[deletes_shadow_copies](https://github.com/CAPESandbox/community/tree/master/modules/signatures/deletes_shadow_copies.py)|Disk Wipe (F0014)|ShellExecuteExW, NtCreateUserProcess, CreateProcessInternalW|
+|[deletes_system_state_backup](https://github.com/CAPESandbox/community/tree/master/modules/signatures/deletes_system_state_backup.py)|Disk Wipe (F0014)|ShellExecuteExW, NtCreateUserProcess, CreateProcessInternalW|
+|[wiper_zeroedbytes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/wiper_zeroedbytes.py)|Disk Wipe (F0014)|NtWriteFile|
+
 ## References
 
 <a name="1">[1]</a> https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=281521ea-2d18-4bf9-9e88-8b1dc41cfdb6&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments

@@ -49,6 +49,12 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 |[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut receives files from the C2. [[10]](#10)|
 |[**UP007**](../xample-malware/up007.md)|2016|--|UP007 downloads files from the C2. [[11]](#11)|
 
+## Detection
+
+|Tool: CAPE|Mapping|APIs|
+|---|---|---|
+|[suspicious_mpcmdrun_use](https://github.com/CAPESandbox/community/tree/master/modules/signatures/suspicious_mpcmdrun_use.py)|Ingress Tool Transfer (E1105)|--|
+|[network_document_file](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_document_file.py)|Ingress Tool Transfer (E1105)|URLDownloadToFileW, HttpOpenRequestW, send, InternetCrackUrlW, InternetCrackUrlA, WSASend, URLDownloadToCacheFileW|
 
 ## References
 

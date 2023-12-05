@@ -58,12 +58,12 @@ Malware may use a cryptographic hash.
 |Tool: capa|Mapping|APIs|
 |---|---|---|
 |[hash data via WinCrypt](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hashing/hash-data-via-wincrypt.yml)|Cryptographic Hash (C0029)|advapi32.CryptHashData, advapi32.CryptGetHashParam|
-|[hash data using tiger](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hashing/tiger/hash-data-using-tiger.yml)|Cryptographic Hash::Tiger (C0029.005)| |
+|[hash data using tiger](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hashing/tiger/hash-data-using-tiger.yml)|Cryptographic Hash::Tiger (C0029.005)|--|
 |[hash data using SHA1](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hashing/sha1/hash-data-using-sha1.yml)|Cryptographic Hash::SHA1 (C0029.002)|advapi32.CryptCreateHash, System.Security.Cryptography.SHA1Managed::ctor, System.Security.Cryptography.HashAlgorithm::ComputeHash|
 |[hash data using SHA256](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hashing/sha256/hash-data-using-sha256.yml)|Cryptographic Hash::SHA256 (C0029.003)|System.Security.Cryptography.SHA256Managed::Initialize, System.Security.Cryptography.SHA256CryptoServiceProvider::Initialize, System.Security.Cryptography.SHA256::Create, System.Security.Cryptography.SHA256Managed::ctor, System.Security.Cryptography.HashAlgorithm::ComputeHash|
 |[hash data with MD5](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hashing/md5/hash-data-with-md5.yml)|Cryptographic Hash::MD5 (C0029.001)|advapi32.CryptCreateHash, System.Security.Cryptography.MD5::Create, System.Security.Cryptography.MD5CryptoServiceProvider::ctor, System.Security.Cryptography.HashAlgorithm::ComputeHash|
-|[hash data using SHA224](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hashing/sha224/hash-data-using-sha224.yml)|Cryptographic Hash::SHA224 (C0029.004)| |
-|[resolve function by FIN8 fasthash](https://github.com/mandiant/capa-rules/blob/master/linking/runtime-linking/resolve-function-by-fin8-fasthash.yml)|Cryptographic Hash (C0029)| |
+|[hash data using SHA224](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/hashing/sha224/hash-data-using-sha224.yml)|Cryptographic Hash::SHA224 (C0029.004)|--|
+|[resolve function by FIN8 fasthash](https://github.com/mandiant/capa-rules/blob/master/linking/runtime-linking/resolve-function-by-fin8-fasthash.yml)|Cryptographic Hash (C0029)|--|
 
 ## References
 
