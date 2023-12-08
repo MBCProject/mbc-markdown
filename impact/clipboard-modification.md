@@ -9,7 +9,7 @@
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
-<td><b>Data Manipulation: Transmitted Data Manipulation (<a href="https://attack.mitre.org/techniques/T1641/001/">T1641.001</a>)</b></td>
+<td><b>Clipboard Data (<a href="https://attack.mitre.org/techniques/T1115/">T1115</a>), Data Manipulation: Transmitted Data Manipulation (<a href="https://attack.mitre.org/techniques/T1641/001/">T1641.001</a>)</b></td>
 </tr>
 <tr>
 <td><b>Impact Type</b></td>
@@ -32,7 +32,9 @@
 
 # Clipboard Modification
 
-ATT&CK defines Clipboard Modification as a Mobile technique (Android platform). MBC extends it to the Windows platform. 
+ATT&CK defines Clipboard Modification as a Mobile technique (Android platform). MBC extends it to the Windows platform.
+
+After E1510 was defined, T1510 was replaced by T1610.001, and Clipboard Data (<a href="https://attack.mitre.org/techniques/T1115/">T1115</a>) was updated to include content modification.
 
 ## Use in Malware
 
