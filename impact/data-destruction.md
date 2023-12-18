@@ -25,14 +25,14 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>13 September 2023</b></td>
+<td><b>18 December 2023</b></td>
 </tr>
 </table>
 
 
 # Data Destruction
 
-Data, system files, or other files are destroyed. Individual files are selected, as opposed to wiping an entire sector.
+Malware may deliberately delete or otherwise render inaccessible data on a compromised system. This is often done to disrupt the victim's operations, cover the attacker's tracks, or exert pressure on the victim.
 
 See ATT&CK: **Data Destruction ([T1485](https://attack.mitre.org/techniques/T1485/))**.
 
