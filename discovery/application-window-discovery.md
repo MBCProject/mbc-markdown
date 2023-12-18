@@ -28,7 +28,7 @@
 
 # Application Window Discovery
 
-Malware may attempt to get a listing of open application windows.
+Malware may attempt to gain information about the operating system and applications running on a system by enumerating open application windows.
 
 ## Methods
 

@@ -28,7 +28,7 @@
 
 # Automated Exfiltration
 
-Malware may exfiltrate data via automated processing or scripting.
+Malware may automatically transfer, or exfiltrate, collected data from a compromised system to a remote location controlled by the attacker through automated processes or scripting. This is often done to minimize the attacker's manual interaction with the system and to maintain a low profile, thereby reducing the chances of detection. 
 
 See ATT&CK Technique: **Automated Exfiltration ([T1020](https://attack.mitre.org/techniques/T1020/))**.
 

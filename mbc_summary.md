@@ -153,7 +153,7 @@
 | ID | Technique | Objective(s) |
 |----|-----------|--------------|
 |E1010|**[Application Window Discovery](https://github.com/MBCProject/mbc-markdown/blob/main/discovery/application-window-discovery.md)**|DISCOVERY|
-|E1560|**[Archive Collected Data](https://github.com/MBCProject/mbc-markdown/blob/main/exfiltration/archive-collected-data.md)**|EXFILTRATION|
+|E1560|**[Archive Collected Data](https://github.com/MBCProject/mbc-markdown/blob/main/collection/archive-collected-data.md)**|COLLECTION|
 |E1020|**[Automated Exfiltration](https://github.com/MBCProject/mbc-markdown/blob/main/exfiltration/automated-exfiltration.md)**|EXFILTRATION|
 |E1510|**[Clipboard Modification](https://github.com/MBCProject/mbc-markdown/blob/main/impact/clipboard-modification.md)**|IMPACT|
 |E1059|**[Command and Scripting Interpreter](https://github.com/MBCProject/mbc-markdown/blob/main/execution/command-and-scripting-interpreter.md)**|EXECUTION|

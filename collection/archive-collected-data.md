@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td><b>Objective(s)</b></td>
-<td><b><a href="../exfiltration">Exfiltration</a></b></td>
+<td><b><a href="../collection">Collection</a></b></td>
 </tr>
 <tr>
 <td><b>Related ATT&CK Techniques</b></td>
@@ -28,7 +28,7 @@
 
 # Archive Collected Data
 
-Malware may obfuscate data via encryption or encoding before exfiltration.
+Malware may collect and package (or archive) the information they have gathered from a compromised system. Once collected, the data is often compressed and encrypted into an archive file using various tools or utilities. Common formats for archive files include .zip, .tar, .rar, or .7z. This helps the attack by reducing the size of the data, making it easier and quicker to exfiltrate, and helps avoid detection, since many security tools may not inspect the contents of compressed or encrypted files. 
 
 See ATT&CK Technique: **Archive Collected Data ([T1560](https://attack.mitre.org/techniques/T1560/))**.
 
