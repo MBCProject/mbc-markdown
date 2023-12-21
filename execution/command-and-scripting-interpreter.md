@@ -21,14 +21,14 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>13 September 2023</b></td>
+<td><b>18 December 2023</b></td>
 </tr>
 </table>
 
 
 # Command and Scripting Interpreter
 
-Malware may abuse command and script interpreters to execute commands, scripts, or binaries.
+Malware may abuse command and script interpreters to execute commands, scripts, or binaries. This is often done to carry out various malicious activities, such as exploring the system, escalating privileges, or exfiltrating data. Built-in command-line interpreters or scripting environments of the operating system, such as cmd.exe or Powershell on Windows, or Bash on Unix-like systems, are often used. Additionally, adversaries may use other scripting languages like Python, Perl, or Javascript. 
 
 See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.org/techniques/T1059), [T1623](https://attack.mitre.org/techniques/T1623))**.
 

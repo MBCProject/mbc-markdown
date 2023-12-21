@@ -21,14 +21,14 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>13 September 2023</b></td>
+<td><b>18 December 2023</b></td>
 </tr>
 </table>
 
 
 # Application Window Discovery
 
-Malware may attempt to get a listing of open application windows.
+Malware may attempt to gain information about the operating system and applications running on a system by enumerating open application windows.
 
 ## Methods
 
