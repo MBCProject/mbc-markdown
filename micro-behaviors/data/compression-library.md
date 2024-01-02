@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>13 September 2023</b></td>
+<td><b>5 December 2023</b></td>
 </tr>
 </table>
 
@@ -39,8 +39,8 @@
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[linked against aPLib](https://github.com/mandiant/capa-rules/blob/master/linking/static/aplib/linked-against-aplib.yml)|Compression Library (C0060)|--||
-|[linked against ZLIB](https://github.com/mandiant/capa-rules/blob/master/linking/static/zlib/linked-against-zlib.yml)|Compression Library (C0060)|--||
+|[linked against aPLib](https://github.com/mandiant/capa-rules/blob/master/linking/static/aplib/linked-against-aplib.yml)|Compression Library (C0060)|--|
+|[linked against ZLIB](https://github.com/mandiant/capa-rules/blob/master/linking/static/zlib/linked-against-zlib.yml)|Compression Library (C0060)|--|
 
 ## References
 
