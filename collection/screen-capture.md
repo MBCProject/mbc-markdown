@@ -28,7 +28,7 @@
 
 # Screen Capture
 
-Malware takes screen captures of the desktop.
+Malware takes screen captures of the desktop. This technique is often used by cyber attackers to gather sensitive information, such as login credentials, personal data, or confidential documents. The malware can use various methods to capture the screen, including using built-in functions of the operating system or third-party libraries. The captured screenshots are then typically sent back to the attacker's command and control server. This technique is commonly used by spyware, information stealers, and advanced persistent threats (APTs).
 
 See ATT&CK: **Screen Capture ([T1113](https://attack.mitre.org/techniques/T1113/))**.
 

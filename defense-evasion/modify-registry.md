@@ -28,7 +28,7 @@
 
 # Modify Registry
 
-Malware may make changes to the Windows Registry to hide execution or to persist on the system (note that ATT&CK does not extend this behavior to the Persistence objective). 
+Malware may make changes to the Windows Registry to hide execution or to persist on the system (note that ATT&CK does not extend this behavior to the Persistence objective). The Windows registry is a database that stores low-level settings for the operating system and for applications that opt to use the registry. Malware may create, delete, or modify registry keys and values to change the behavior of the system or certain applications. For instance, malware may modify registry keys to enable remote desktop connections, disable security features, or to automatically start the malware whenever the system boots. This technique is commonly used by various types of malware, including ransomware, trojans, and worms.
 
 
 See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112/))**.
