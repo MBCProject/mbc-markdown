@@ -32,7 +32,7 @@
 
 # Generate Traffic from Victim
 
-Malware may generate network traffic from a victim's system to achieve various malicious objectives. This could include disguising its own traffic, overwhelming a network with high traffic volume (Denial of Service attacks),  exhausting the victim's system resources, or simulate clicks of advertising links that generate fraudulent ad revenue. The generated traffic can also be used to trigger network-based rules, alerts, or other types of indicators. This technique can make it difficult for defenders to identify malicious activity and can potentially lead to false positives. The ATT&CK technique, **Generate Traffic from Victim ([T1643](https://attack.mitre.org/techniques/T1643/))**, is only associated with the mobile platform, but the behavior is applicable to other platforms as well.
+Malware may generate network traffic from a victim's system to achieve various malicious objectives. This could include disguising its own traffic, overwhelming a network with high traffic volume (Denial of Service attacks), exhausting the victim's system resources, or simulate clicks of advertising links that generate fraudulent ad revenue. The generated traffic can also be used to trigger network-based rules, alerts, or other types of indicators. This technique can make it difficult for defenders to identify malicious activity and can potentially lead to false positives. The ATT&CK technique, **Generate Traffic from Victim ([T1643](https://attack.mitre.org/techniques/T1643/))**, is only associated with the mobile platform, but the behavior is applicable to other platforms as well.
 
 ## Methods
 

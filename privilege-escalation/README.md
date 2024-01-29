@@ -21,4 +21,4 @@ Behaviors that enable malware to obtain higher level permissions. These behavior
 * **Kernel Modules and Extensions** [F0010](../persistence/kernel-modules-and-extensions.md)
 * **Modify Existing Service** [F0011](../persistence/modify-existing-service.md)
 * **Process Injection** [E1055](../defense-evasion/process-injection.md)
-* **Install Certificate** [F1608](../privilege-escalation/install-certificate.md)
+* **Install Certificate** [F0016](../privilege-escalation/install-certificate.md)
