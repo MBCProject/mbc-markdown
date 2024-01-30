@@ -166,7 +166,6 @@
 |E1564|**[Hide Artifacts](https://github.com/MBCProject/mbc-markdown/blob/main/defense-evasion/hide-artifacts.md)**|DEFENSE EVASION, PERSISTENCE|
 |E1105|**[Ingress Tool Transfer](https://github.com/MBCProject/mbc-markdown/blob/main/command-and-control/ingress-tool-transfer.md)**|COMMAND AND CONTROL, LATERAL MOVEMENT, PERSISTENCE|
 |E1056|**[Input Capture](https://github.com/MBCProject/mbc-markdown/blob/main/collection/input-capture.md)**|COLLECTION, CREDENTIAL ACCESS|
-|E1608|**[Install Certificate](https://github.com/MBCProject/mbc-markdown/blob/main/privilege-escalation/install-certificate.md)**|PRIVILEGE ESCALATION|
 |E1112|**[Modify Registry](https://github.com/MBCProject/mbc-markdown/blob/main/defense-evasion/modify-registry.md)**|DEFENSE EVASION, PERSISTENCE|
 |E1027|**[Obfuscated Files or Information](https://github.com/MBCProject/mbc-markdown/blob/main/defense-evasion/obfuscated-files-or-information.md)**|ANTI-STATIC ANALYSIS, DEFENSE EVASION|
 |E1055|**[Process Injection](https://github.com/MBCProject/mbc-markdown/blob/main/defense-evasion/process-injection.md)**|DEFENSE EVASION, PRIVILEGE ESCALATION|
@@ -187,6 +186,7 @@
 |F0005|**[Hidden Files and Directories](https://github.com/MBCProject/mbc-markdown/blob/main/defense-evasion/hidden-files-and-directories.md)**|DEFENSE EVASION, PERSISTENCE|
 |F0015|**[Hijack Execution Flow](https://github.com/MBCProject/mbc-markdown/blob/main/defense-evasion/hijack-execution-flow.md)**|ANTI-BEHAVIORAL ANALYSIS, COLLECTION, CREDENTIAL ACCESS, DEFENSE EVASION, PERSISTENCE, PRIVILEGE ESCALATION|
 |F0006|**[Indicator Blocking](https://github.com/MBCProject/mbc-markdown/blob/main/defense-evasion/indicator-blocking.md)**|DEFENSE EVASION|
+|F0016|**[Install Certificate](https://github.com/MBCProject/mbc-markdown/blob/main/privilege-escalation/install-certificate.md)**|PRIVILEGE ESCALATION|
 |F0010|**[Kernel Modules and Extensions](https://github.com/MBCProject/mbc-markdown/blob/main/persistence/kernel-modules-and-extensions.md)**|PERSISTENCE, PRIVILEGE ESCALATION|
 |F0002|**[Keylogging](https://github.com/MBCProject/mbc-markdown/blob/main/collection/keylogging.md)**|COLLECTION, CREDENTIAL ACCESS|
 |F0011|**[Modify Existing Service](https://github.com/MBCProject/mbc-markdown/blob/main/persistence/modify-existing-service.md)**|PERSISTENCE, PRIVILEGE ESCALATION|

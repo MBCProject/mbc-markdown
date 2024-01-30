@@ -28,7 +28,7 @@
 
 # Input Capture
 
-Malware captures user input.
+Malware may record user inputs, typically without the user's knowledge. This is often used to capture sensitive information such as usernames, passwords, credit card numbers, and other personal data. The most common form of input capture is keylogging, where the malware records every keystroke made on a device. However, it can also involve capturing mouse clicks, touch screen interactions, or even voice inputs. The captured data is then usually transmitted to the attacker for use in further malicious activities like identity theft or unauthorized access.
 
 See ATT&CK: **Input Capture ([T1056](https://attack.mitre.org/techniques/T1056), [T1417](https://attack.mitre.org/techniques/T1417/))**.
 

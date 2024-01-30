@@ -28,7 +28,7 @@
 
 # System Information Discovery
 
-Malware may attempt to get detailed information about the system. 
+Malware may attempt to get detailed information about the system. This can include details about the operating system, hardware configurations, installed software, system uptime, and other system-level details.
 
 See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/techniques/T1082/))**.
 

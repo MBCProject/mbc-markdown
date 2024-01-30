@@ -28,7 +28,7 @@
 
 # Hidden Files and Directories
 
-Malware may hide files and folders to avoid detection and/or to persist on the system. See potential methods below. 
+Malware may hide files and folders to avoid detection and/or to persist on the system. See potential methods below. This is achieved by marking files or directories as hidden or by using special characters in file names to prevent them from being displayed in standard directory listings. By hiding files or directories, malware can evade detection from users and some security software.
 
 This behavior is related to Unprotect technique U1230.
 
