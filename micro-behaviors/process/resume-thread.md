@@ -28,6 +28,8 @@
 
 # Resume Thread
 
+Malware resumes a thread.
+
 ## Use in Malware
 
 |Name|Date|Method|Description|

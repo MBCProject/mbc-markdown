@@ -28,6 +28,8 @@
 
 # Copy File
 
+Malware copies a file.
+
 ## Use in Malware
 
 |Name|Date|Method|Description|

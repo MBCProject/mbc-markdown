@@ -28,6 +28,8 @@
 
 # Delete Directory
 
+Malware deletes a directory.
+
 ## Use in Malware
 
 |Name|Date|Method|Description|

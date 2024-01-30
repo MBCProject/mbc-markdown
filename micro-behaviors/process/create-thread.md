@@ -28,6 +28,8 @@
 
 # Create Thread
 
+Malware creates a thread.
+
 ## Use in Malware
 
 |Name|Date|Method|Description|

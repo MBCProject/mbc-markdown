@@ -28,6 +28,8 @@
 
 # Compression Library
 
+Malware may utilize a compression library.
+
 ## Use in Malware
 
 |Name|Date|Method|Description|

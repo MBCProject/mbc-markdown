@@ -28,6 +28,8 @@
 
 # Delete File
 
+Malware deletes a file.
+
 ## Use in Malware
 
 |Name|Date|Method|Description|

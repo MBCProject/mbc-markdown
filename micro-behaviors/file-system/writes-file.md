@@ -28,6 +28,8 @@
 
 # Writes File
 
+Malware writes to a file.
+
 ## Use in Malware
 
 |Name|Date|Method|Description|
