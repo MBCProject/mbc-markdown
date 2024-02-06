@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.0</b></td>
+<td><b>2.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>1 February 2023</b></td>
+<td><b>6 February 2024</b></td>
 </tr>
 </table>
 
@@ -40,5 +40,5 @@ A malicious attachment is sent via spam SMS or MMS messages. When the user click
 
 <a name="1">[1]</a> https://us.norton.com/internetsecurity-emerging-threats-mazar-bot-malware-invades-and-erases-android-devices.html
 
-<a name="2">[2]</a> https://www.player.one/new-android-sms-malware-can-completely-own-your-phone-just-one-text-how-avoid-mazar-512363
+<a name="2">[2]</a> https://www.player.one/stub-56857
 

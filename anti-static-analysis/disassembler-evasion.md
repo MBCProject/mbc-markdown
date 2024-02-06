@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>6 February 2024</b></td>
 </tr>
 </table>
 
@@ -61,7 +61,7 @@ Anti-disassembly techniques take advantage of weaknesses in either flow-oriented
 
 <a name="1">[1]</a> M. Sikorski and A. Honig, Practical Malware Analysis: The Hands-On Guide to Dissecting Malicious Software, No Starch Press, 2012.
 
-<a name="2">[2]</a> https://staff.ustc.edu.cn/~bjhua/courses/security/2014/readings/anti-disas.pdf
+<a name="2">[2]</a> https://web.archive.org/web/20220814013655/http://staff.ustc.edu.cn/~bjhua/courses/security/2014/readings/anti-disas.pdf
 
 <a name="3">[3]</a> https://www.kernelhacking.com/rodrigo/docs/blackhat2012-paper.pdf
 
