@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>6 February 2024</b></td>
 </tr>
 </table>
 
@@ -238,7 +238,7 @@ jmp short loc_401CBB
 
 <a name="5">[5]</a> https://github.com/LordNoteworthy/al-khaser
 
-<a name="6">[6]</a> https://web.archive.org/web/20161025013916/https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
+<a name="6">[6]</a> https://web.archive.org/web/20161025013916/https://web.archive.org/web/20200815134441/https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
 
 <a name="7">[7]</a> https://securelist.com/the-banking-trojan-emotet-detailed-analysis/69560/
 

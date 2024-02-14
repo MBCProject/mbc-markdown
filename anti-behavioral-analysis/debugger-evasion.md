@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>6 February 2024</b></td>
 </tr>
 </table>
 
@@ -103,6 +103,6 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 
 <a name="2">[2]</a> https://web.archive.org/web/20210225195315/https://www.synack.com/blog/analyzing-the-anti-analysis-logic-of-an-adware-installer/
 
-<a name="3">[3]</a> https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
+<a name="3">[3]</a> https://web.archive.org/web/20200815134441/https://www.fireeye.com/blog/threat-research/2011/01/the-dead-giveaways-of-vm-aware-malware.html
 
 <a name="4">[4]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/

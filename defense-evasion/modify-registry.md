@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,14 +21,14 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>6 February 2024</b></td>
 </tr>
 </table>
 
 
 # Modify Registry
 
-Malware may make changes to the Windows Registry to hide execution or to persist on the system (note that ATT&CK does not extend this behavior to the Persistence objective). 
+Malware may make changes to the Windows Registry to hide execution or to persist on the system (note that ATT&CK does not extend this behavior to the Persistence objective). The Windows registry is a database that stores low-level settings for the operating system and for applications that opt to use the registry. Malware may create, delete, or modify registry keys and values to change the behavior of the system or certain applications. For instance, malware may modify registry keys to enable remote desktop connections, disable security features, or to automatically start the malware whenever the system boots. This technique is commonly used by various types of malware, including ransomware, trojans, and worms.
 
 
 See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112/))**.
@@ -131,7 +131,7 @@ See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112
 
 <a name="6">[6]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-returns-to-wipe-systems-in-middle-east-europe/
 
-<a name="7">[7]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
+<a name="7">[7]</a> https://web.archive.org/web/20210307034415/https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
 
 <a name="8">[8]</a> https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/clipminer-bitcoin-mining-hijacking
 

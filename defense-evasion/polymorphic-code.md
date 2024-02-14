@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>6 February 2024</b></td>
 </tr>
 </table>
 
@@ -52,7 +52,7 @@ Polymorphic code, a file with the same functionality but different execution, is
 
 ## References
 
-<a name="1">[1]</a> https://www.mccormick.northwestern.edu/eecs/documents/tech-reports/2010-2014/evaluating-android-anti-malware-against-transformation-attacks.pdf
+<a name="1">[1]</a> https://pages.cs.wisc.edu/~vrastogi/static/papers/rcj13b.pdf
 
 <a name="2">[2]</a> https://web.archive.org/web/20150311013500/http://www.cyphort.com/evilbunny-malware-instrumented-lua/
 

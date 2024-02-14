@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.2</b></td>
+<td><b>2.3</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,14 +21,14 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>6 February 2024</b></td>
 </tr>
 </table>
 
 
 # Hidden Files and Directories
 
-Malware may hide files and folders to avoid detection and/or to persist on the system. See potential methods below. 
+Malware may hide files and folders to avoid detection and/or to persist on the system. See potential methods below. This is achieved by marking files or directories as hidden or by using special characters in file names to prevent them from being displayed in standard directory listings. By hiding files or directories, malware can evade detection from users and some security software.
 
 This behavior is related to Unprotect technique U1230.
 
@@ -73,7 +73,7 @@ See ATT&CK: **Hide Artifacts: Hidden Files and Directories ([T1564.001](https://
 
 <a name="2">[2]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-returns-to-wipe-systems-in-middle-east-europe/
 
-<a name="3">[3]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
+<a name="3">[3]</a> https://web.archive.org/web/20210307034415/https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
 
 <a name="4">[4]</a> https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/
 

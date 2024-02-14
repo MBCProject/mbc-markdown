@@ -30,7 +30,7 @@
 
 # Self Deletion
 
-Malware may uninstall itself to avoid detection. 
+Malware may remove itself from an infected system, typically after it has achieved its primary objective. This is done to evade detection, remove evidence of its presence, and make forensic analysis more difficult. The malware may use built-in commands, scripts, or other methods to delete its files, processes, or registry entries. 
 
 See ATT&CK: **Indicator Removal on Host: Uninstall Malicious Application ([T1630.001](https://attack.mitre.org/techniques/T1630/001/)), Indicator Removal on Host: File Deletion ([T1070.004](https://attack.mitre.org/techniques/T1070/004/))**.
 

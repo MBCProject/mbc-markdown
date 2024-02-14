@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>6 February 2024</b></td>
 </tr>
 </table>
 
@@ -171,7 +171,7 @@ retn
 
 <a name="4">[4]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf
 
-<a name="5">[5]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
+<a name="5">[5]</a> https://web.archive.org/web/20210307034415/https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
 
 <a name="6">[6]</a> https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/
 

@@ -28,7 +28,7 @@
 
 # System Services
 
-Malware may abuse system services or daemons to execute. 
+Malware may manipulate, create, or interact with system services to achieve persistence, gain higher privileges, or execute malicious code. System services are background processes that are integral parts of an operating system's functionality. Malware can exploit these services by modifying their configurations, replacing legitimate service binaries with malicious ones, or creating new services that run malicious code. 
 
 See ATT&CK: **System Services ([T1569](https://attack.mitre.org/techniques/T1569/))**.
 

@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>3.0</b></td>
+<td><b>3.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>12 February 2024</b></td>
 </tr>
 </table>
 
@@ -34,7 +34,7 @@
 
 ATT&CK defines Clipboard Modification as a Mobile technique (Android platform). MBC extends it to the Windows platform.
 
-After E1510 was defined, T1510 was replaced by T1610.001, and Clipboard Data (<a href="https://attack.mitre.org/techniques/T1115/">T1115</a>) was updated to include content modification.
+After E1510 was defined, T1510 was replaced by T1641.001, and Clipboard Data (<a href="https://attack.mitre.org/techniques/T1115/">T1115</a>) was updated to include content modification.
 
 ## Use in Malware
 

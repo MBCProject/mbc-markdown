@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.0</b></td>
+<td><b>2.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,12 +21,14 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>13 September 2023</b></td>
+<td><b>6 February 2024</b></td>
 </tr>
 </table>
 
 
 # Set File Attributes
+
+Malware sets file attributes.
 
 ## Use in Malware
 

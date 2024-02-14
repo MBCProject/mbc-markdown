@@ -28,7 +28,7 @@
 
 # Indicator Blocking
 
-Malware blocks indicators or events that would indicate malicious activity. Methods relevant to the malware domain are below. 
+Malware blocks indicators or events that would indicate malicious activity. This is achieved by blocking indicators or alerts that would typically notify users or security tools of a potential infection. This can be done in several ways, such as disabling security software, interfering with event logging, or altering system settings to suppress notifications. By blocking these indicators, the malware can continue its malicious activities without being detected. Methods relevant to the malware domain are below. 
 
 See ATT&CK: **Impair Defenses: Indicator Blocking ([T1562.006](https://attack.mitre.org/techniques/T1562/006/))**.
 

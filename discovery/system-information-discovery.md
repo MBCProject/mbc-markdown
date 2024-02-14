@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,14 +21,14 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>6 February 2024</b></td>
 </tr>
 </table>
 
 
 # System Information Discovery
 
-Malware may attempt to get detailed information about the system. 
+Malware may attempt to get detailed information about the system. This can include details about the operating system, hardware configurations, installed software, system uptime, and other system-level details.
 
 See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/techniques/T1082/))**.
 
@@ -113,7 +113,7 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 
 <a name="5">[5]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en
 
-<a name="6">[6]</a> https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
+<a name="6">[6]</a> https://web.archive.org/web/20210307034415/https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
 
 <a name="7">[7]</a> https://www.securityartwork.es/wp-content/uploads/2017/07/Trickbot-report-S2-Grupo.pdf
 

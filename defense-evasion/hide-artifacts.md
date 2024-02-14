@@ -28,7 +28,9 @@
 
 # Hide Artifacts
 
-Malware may hide artifacts to evade detection and/or to persist on the system. See potential methods related to malware below. 
+Malware may conceal its presence and activities on a system. This can involve hiding files, directories, or other data that could reveal the malware's existence or behavior. Techniques can include using encryption or obfuscation, altering file timestamps, or manipulating data to blend in with normal system activity. The goal is to avoid detection by security tools and to prolong the period during which the malware can operate undetected on the victim's system.
+
+See potential methods related to malware below. 
 
 See ATT&CK: **Hide Artifacts ([T1564](https://attack.mitre.org/techniques/T1564/), [T1628](https://attack.mitre.org/techniques/T1628/))**.
 
