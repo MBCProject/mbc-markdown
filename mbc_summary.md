@@ -158,7 +158,7 @@
 |E1510|**[Clipboard Modification](https://github.com/MBCProject/mbc-markdown/blob/main/impact/clipboard-modification.md)**|IMPACT|
 |E1059|**[Command and Scripting Interpreter](https://github.com/MBCProject/mbc-markdown/blob/main/execution/command-and-scripting-interpreter.md)**|EXECUTION|
 |E1485|**[Data Destruction](https://github.com/MBCProject/mbc-markdown/blob/main/impact/data-destruction.md)**|IMPACT|
-|E1486|**[Data Encrypted for Impact ](https://github.com/MBCProject/mbc-markdown/blob/main/impact/data-encrypted-for-impact-.md)**|IMPACT|
+|E1486|**[Data Encrypted for Impact ](https://github.com/MBCProject/mbc-markdown/blob/main/impact/data-encrypted-for-impact.md)**|IMPACT|
 |E1190|**[Exploit Kit](https://github.com/MBCProject/mbc-markdown/blob/main/impact/exploit-kit.md)**|IMPACT|
 |E1203|**[Exploitation for Client Execution](https://github.com/MBCProject/mbc-markdown/blob/main/execution/exploitation-for-client-execution.md)**|EXECUTION, IMPACT|
 |E1083|**[File and Directory Discovery](https://github.com/MBCProject/mbc-markdown/blob/main/discovery/file-and-directory-discovery.md)**|DISCOVERY|
@@ -190,7 +190,7 @@
 |F0010|**[Kernel Modules and Extensions](https://github.com/MBCProject/mbc-markdown/blob/main/persistence/kernel-modules-and-extensions.md)**|PERSISTENCE, PRIVILEGE ESCALATION|
 |F0002|**[Keylogging](https://github.com/MBCProject/mbc-markdown/blob/main/collection/keylogging.md)**|COLLECTION, CREDENTIAL ACCESS|
 |F0011|**[Modify Existing Service](https://github.com/MBCProject/mbc-markdown/blob/main/persistence/modify-existing-service.md)**|PERSISTENCE, PRIVILEGE ESCALATION|
-|F0012|**[Registry Run Keys / Startup Folder](https://github.com/MBCProject/mbc-markdown/blob/main/persistence/registry-run-keys-/-startup-folder.md)**|PERSISTENCE|
+|F0012|**[Registry Run Keys / Startup Folder](https://github.com/MBCProject/mbc-markdown/blob/main/persistence/registry-run-keys-startup-folder.md)**|PERSISTENCE|
 |F0007|**[Self Deletion](https://github.com/MBCProject/mbc-markdown/blob/main/defense-evasion/self-deletion.md)**|DEFENSE EVASION|
 |F0001|**[Software Packing](https://github.com/MBCProject/mbc-markdown/blob/main/anti-static-analysis/software-packing.md)**|ANTI-BEHAVIORAL ANALYSIS, ANTI-STATIC ANALYSIS, DEFENSE EVASION|
 
