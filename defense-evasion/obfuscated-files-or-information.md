@@ -124,6 +124,42 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[cmdline_obfuscation](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cmdline_obfuscation.py)|Obfuscated Files or Information (E1027)|--|
 |[dotnet_code_compile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/dotnet_code_compile.py)|Obfuscated Files or Information (E1027)|NtWriteFile, CreateProcessInternalA, NtCreateUserProcess, CreateProcessInternalW|
 
+### E1027.m02 Snippet
+<details>
+<summary> Obfuscated Files or Information::Encoding-Standard Algorithm </summary>
+SHA256: 5fb7f3fac0a9b9ab243ee642a0775500c524166ef075035c9510ccbab76ad633
+<pre>
+1  mov eax, dword ptr [esi + 0x38]
+2  xor dword ptr [esi + 0xd0], eax
+3  mov eax, dword ptr [esi + 0xf0]
+4  add eax, 0xfff5b6c8
+5  add eax, ecx
+6  mov ecx, dword ptr [esi + 0x8c]
+7  add dword ptr [esi + 0xc0], eax
+8  mov eax, dword ptr [esi + 0x54]
+9  xor dword ptr [ecx + edx*0x1], eax
+10 add edx, 0x4
+11 mov eax, dword ptr [esi + 0x90]
+12 add dword ptr [esi + 0x54], eax
+13 mov ecx, dword ptr [esi + 0xe8]
+14 mov eax, ecx
+15 xor eax, 0xa4937
+16 add dword ptr [esi + 0x68], eax
+17 mov eax, dword ptr [esi + 0xa4]
+18 xor eax, 0x4
+19 sub dword ptr [esi + 0x60], eax
+20 cmp edx, 0x36c8
+21 jl lab_10001060
+</pre>
+<h4>Notes</h4>
+<ul>
+  <li>Line  9: Encryption operation occurs.</li>
+  <li>Line 10: edx is incremented in preparation to encode the next value</li>
+  <li>Line 20: Test to see if the encryption operation has encoded the last value</li>
+  <li>Line 21: Code loops back to Line 1 if edx is less than 0x36c8</li>
+</ul>
+</details>
+
 ## References
 
 <a name="1">[1]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
