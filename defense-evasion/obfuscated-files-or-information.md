@@ -155,7 +155,7 @@ SHA256: 5fb7f3fac0a9b9ab243ee642a0775500c524166ef075035c9510ccbab76ad633
 <ul>
   <li>Line  9: Encryption operation occurs.</li>
   <li>Line 10: edx is incremented in preparation to encode the next value</li>
-  <li>Line 20: Test to see if the encryption operation has encoded the last value</li>
+  <li>Line 20: Test to see if the encryption operation has encoded the last value (did edx meet or exceed the hardcoded boundary value during the last increment?)</li>
   <li>Line 21: Code loops back to Line 1 if edx is less than 0x36c8</li>
 </ul>
 </details>
