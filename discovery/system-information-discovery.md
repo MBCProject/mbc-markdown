@@ -101,6 +101,18 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 |[browser_scanbox](https://github.com/CAPESandbox/community/tree/master/modules/signatures/browser_scanbox.py)|System Information Discovery (E1082)|JsEval, COleScript_ParseScriptText, COleScript_Compile|
 |[recon_fingerprint](https://github.com/CAPESandbox/community/tree/master/modules/signatures/recon_fingerprint.py)|System Information Discovery (E1082)|--|
 
+### E1082 Snippet
+<details>
+<summary> System Information Discovery </summary>
+SHA256: e4b36a1d4e70d988efa2ec27e5a639be5eb0880474f746851c13e56f007a8377
+Location: 0x004017e9
+<pre>
+push    eax     ; push register to store return value onto the stack
+push    u_ALLUSERSPROFILE_0041a9a4      ; push argument to function (name of the sought environment variable - in this case, ALLUSERSPROFILE)
+call    dword ptr [->KERNEL32.DLL::GetEnvironmentVariableW]     ; call function to get environment variable value
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/PE_URSNIF.A2?_ga=2.131425807.1462021705.1559742358-1202584019.1549394279
