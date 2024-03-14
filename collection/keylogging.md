@@ -70,6 +70,20 @@ See ATT&CK: **Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/te
 |[infostealer_keylog](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_keylog.py)|Keylogging::Application Hook (F0002.001)|SetWindowsHookExA, GetAsyncKeyState, SetWindowsHookExW|
 |[browser_scanbox](https://github.com/CAPESandbox/community/tree/master/modules/signatures/browser_scanbox.py)|Keylogging (F0002)|JsEval, COleScript_ParseScriptText, COleScript_Compile|
 
+### F0002.002 Snippet
+<details>
+<summary> Collection::Keylogging::Polling </summary>
+SHA256: 000b535ab2a4fec86e2d8254f8ed65c6ebd37309ed68692c929f8f93a99233f6
+  
+Location: 0x438af1
+<pre>
+push    0x11    ; provide argument for function call.  In this case, 0x11 is the Windows keyboard code for indicating the 'CTRL' key
+call    USER32.DLL::GetKeyState ; call function to get the state of the control key
+test    ax, 0x8000      ; test to see what the previous function returned.  In this case, we are seeing if the return value's high-order bit is a 1, which would mean the ctrl key is pressed
+setnz   al      ; if the previous condition is not met (the zero flag is 1), a 1 is stored in byte al
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> https://www.f-secure.com/v-descs/backdoor_w32_hupigon.shtml
