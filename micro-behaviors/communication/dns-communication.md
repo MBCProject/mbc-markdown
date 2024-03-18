@@ -65,6 +65,17 @@ The DNS Communication micro-behavior focuses on DNS communication.
 |[network_dns_doh_tls](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_doh_tls.py)|DNS Communication (C0011)|--|
 |[network_dga](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dga.py)|DNS Communication (C0011)|--|
 
+### C0011.001 Snippet
+<details>
+<summary> Communication::DNS Communication::Resolve </summary>
+SHA256: 000b535ab2a4fec86e2d8254f8ed65c6ebd37309ed68692c929f8f93a99233f6
+Location: 0x472CD3
+<pre>
+push    ebx     ; hostname to perform DNS lookup for
+call    WSOCK32.DLL::gethostbyname      ; Windows function which will retrieve an object representing the specified host
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
