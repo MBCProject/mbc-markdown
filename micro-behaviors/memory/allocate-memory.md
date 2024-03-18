@@ -57,6 +57,20 @@ Malware allocates memory, often to unpack itself.
 |---|---|---|
 |[Unpacker](https://github.com/CAPESandbox/community/tree/master/modules/signatures/Unpacker.py)|Allocate Memory (C0007)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
 
+### C0007 Snippet
+<details>
+<summary> Memory::Allocate Memory </summary>
+SHA256: 000b535ab2a4fec86e2d8254f8ed65c6ebd37309ed68692c929f8f93a99233f6
+Location: 0x422BDC
+<pre>
+push    0x40    ; Memory protections to apply to pages in allocated memory region (in this case, PAGE_EXECUTE_READWRITE, which allows execute, read-only, or read/write access to the allocated memory)
+push    0x1000  ; The type of allocation to perform (in this case, MEM_COMMIT which allocates empty virtual memory to begin with and only allocates physical pages when needed).
+push    0x1000  ; Size of region to allocate in bytes
+push    0x0     ; Starting address for region where memory should be allocated (not provided in this example)
+call    KERNEL32.DLL::VirtualAlloc      ; call function to allocate virtual memory
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
