@@ -98,6 +98,21 @@ Malware may enumerate files and directories or may search for specific files or 
 |[antisandbox_sunbelt_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_sunbelt_files.py)|File and Directory Discovery (E1083)|--|
 |[antianalysis_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antianalysis_detectfile.py)|File and Directory Discovery (E1083)|--|
 
+### E1083 Snippet
+<details>
+<summary> Discovery::File and Directory Discovery </summary>
+SHA256: 000b535ab2a4fec86e2d8254f8ed65c6ebd37309ed68692c929f8f93a99233f6
+Location: 0x409A62
+<pre>
+push    eax     ; argument to function containing file path to search
+call    KERNEL32.DLL::GetFileAttributesA        ; Function to retrieve file attributes for file path indicated by eax
+cmp     eax, -0x1       ; Test if function returned an error
+jz      lab_00409a71    ; If the function failed (the file's attributes were not retrieved and the return value is -1), jump to the specified address to continue execution
+test    al, 0x10        ; Test the lower 8 bits of the return value to check if the file is a directory
+jnz     lab_00409a75    ; If the returned result is not a directory, jump to the specified address to continue execution
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> https://news.sophos.com/en-us/2015/12/17/the-current-state-of-ransomware-cryptowall/
