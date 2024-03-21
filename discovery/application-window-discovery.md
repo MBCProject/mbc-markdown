@@ -57,6 +57,21 @@ Malware may attempt to gain information about the operating system and applicati
 |---|---|---|
 |[browser_needed](https://github.com/CAPESandbox/community/tree/master/modules/signatures/browser_needed.py)|Application Window Discovery (E1010)|FindWindowW, FindWindowExA, FindWindowExW, FindWindowA|
 
+### E1010 Snippet
+<details>
+<summary> Discovery::Application Window Discovery </summary>
+SHA256: 465d3aac3ca4daa9ad4de04fcb999f358396efd7abceed9701c9c28c23c126db
+Location: 0x455A5D
+<pre>
+push    0x100   ; Maximum number of characters to get from window title, including trailing string terminator (in this case, 256).
+lea     param_1, [esp + 0x4]
+push    param_1 ; Buffer for receiving text from window
+mov     param_1, dword ptr [ebx + 0x30]
+push    param_1 ; Handle to window containing text
+call    USER32.DLL::GetWindowTextA      ; Function call to fetch specified window title
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
