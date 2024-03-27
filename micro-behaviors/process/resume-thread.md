@@ -43,6 +43,21 @@ Malware resumes a thread.
 |---|---|---|
 |[resume thread](https://github.com/mandiant/capa-rules/blob/master/host-interaction/thread/resume/resume-thread.yml)|Resume Thread (C0054)|kernel32.ResumeThread, ntdll.NtResumeThread, ntdll.ZwResumeThread, System.Threading.Thread::Resume|
 
+### C0054 Snippet
+<details>
+<summary> Process::Resume Thread </summary>
+SHA256: 465d3aac3ca4daa9ad4de04fcb999f358396efd7abceed9701c9c28c23c126db
+Location: 0x41B345
+<pre>
+push    esi     ; Where to store return value
+mov     ebx, param_1
+mov     param_1, dword ptr [ebx + 0x4]
+push    param_1 ; Handle to thread to resume
+call    KERNEL32.DLL::ResumeThread      ; API call to resume thread
+</pre>
+</details>
+
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
