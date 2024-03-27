@@ -70,6 +70,31 @@ Some aspects of this Conditional Execution behavior are related to the [Executio
 |---|---|---|
 |[run as service](https://github.com/mandiant/capa-rules/blob/master/host-interaction/service/run-as-service.yml)|Conditional Execution::Runs as Service (B0025.007)|RegisterServiceCtrlHandler, RegisterServiceCtrlHandlerEx, StartServiceCtrlDispatcher, System.ServiceProcess.ServiceBase::Run|
 
+### B0025.007 Snippet
+<details>
+<summary> Execution::Conditional Execution::Runs as Service </summary>
+SHA256: 465d3aac3ca4daa9ad4de04fcb999f358396efd7abceed9701c9c28c23c126db
+Location: 0x4596BC
+<pre>
+push    0x0     ; Optional password to account running the service.  Not needed for services running as LocalService
+push    0x0     ; Name of account under which to run the service.  If null, use the LocalService account
+push    0x0     ; Optional list of dependencies required for the service to run
+push    0x0     ; Optional variable for tag depending on value of next parameter.  If null, accept the value provided by that parameter.
+push    0x0     ; Optional load order group for the service.  This service does not belong to a group
+mov     param_1, dword ptr [ebp + local_8]
+call    FUN_00404dfc    ; Get path of binary for service to run and any arguments
+push    param_1 ; Push to stack
+push    0x0     ; What to do if there is an error -- in this case, ignore it
+push    0x2     ; How to start service -- in this case, during system startup
+push    0x110   ; Service type -- in this case, service is its own process and is capable of interacting with desktop
+push    0xf01ff ; Desired access rights for service -- in this case, all rights
+push    edi     ; Display name for service
+push    esi     ; Name of service to install
+push    ebx     ; Handle to service control manager database
+call    ADVAPI32.DLL::CreateServiceA    ; Create service
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> https://www.mcafee.com/blogs/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/
