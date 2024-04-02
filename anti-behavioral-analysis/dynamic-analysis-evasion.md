@@ -85,6 +85,17 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |[stealth_timeout](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_timeout.py)|Dynamic Analysis Evasion::Delayed Execution (B0003.003)|NtWaitForSingleObject, NtQuerySystemTime, NtTerminateProcess, GetLocalTime, NtDelayExecution, GetSystemTime, GetSystemTimeAsFileTime|
 |[antisandbox_unhook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_unhook.py)|Dynamic Analysis Evasion (B0003)|--|
 
+### B0003.003 Snippet
+<details>
+<summary> Anti-Behavioral Analysis::Dynamic Analysis Evasion::Delayed Execution </summary>
+SHA256: 21c1fdd6cfd8ec3ffe3e922f944424b543643dbdab99fa731556f8805b0d5561
+Location: 0x40103B
+<pre>
+push    0x36ee80        ; sleep duration: 3600000 milliseconds (1 hour)
+call    dword ptr [->KERNEL32.DLL::Sleep]       ; Windows API call instructing thread to sleep for the time period specified above
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> https://www.joesecurity.org/blog/4310408827727907098
