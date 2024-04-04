@@ -67,6 +67,21 @@ Malware writes to a file.
 |[echelon_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/echelon_files.py)|Writes File (C0052)|--|
 |[upatre_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/upatre_files.py)|Writes File (C0052)|--|
 
+### C0052 Snippet
+<details>
+<summary> File System::Writes File </summary>
+SHA256: e5897829835f3e9fbab71674ca06f48ff127ec014d1629817f0566203c93b732
+Location: 0x4016A7
+<pre>
+mov     r9, rdi         ; variable that will hold number of bytes actually written
+mov     r8d, ebx        ; number of bytes to write
+mov     param_2, rsi    ; pointer to buffer containing data that will be written to the file
+mov     param_1, r12    ; handle to the device/file to write to
+mov     qword ptr [rsp + local_58], 0x0 ; optional pointer to OVERLAPPED structure (in this case, it is NULL)
+call    qword ptr [->KERNEL32.DLL::WriteFile] ; API call to write to file specified in param_1
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
