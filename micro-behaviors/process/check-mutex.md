@@ -51,6 +51,21 @@ Malware checks a mutex.
 |[antivm_vmware_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_mutexes.py)|Check Mutex (C0043)|--|
 |[purplewave_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/purplewave_mutexes.py)|Check Mutex (C0043)|--|
 
+### C0030.005 Snippet
+<details>
+<summary> Process::Check Mutex </summary>
+SHA256: 0b8e662e7e595ef56396a298c367b74721d66591d856e8a8241fcdd60d08373c
+Location: 0x40294C
+<pre>
+  push    eax     ; name of mutex to be opened
+push    0x0     ; whether to allow processes created by the process which owns the mutex to inherit it (false)
+push    0x1f0001        ; mutex access rights (MUTEX_ALL_ACCESS)
+call    dword ptr [->KERNEL32.DLL::OpenMutexW]  ; call function to open mutex
+test    eax, eax        ; test to see if previous function call returned 0
+jz      LAB_00402976    ; if it returned zero (error), jump to new memory location and execute from that point
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> https://www.fortinet.com/blog/threat-research/deep-analysis-of-new-poison-ivy-variant
