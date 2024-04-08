@@ -43,6 +43,16 @@ Malware allocates thread local storage.
 |---|---|---|
 |[allocate thread local storage](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/allocate-thread-local-storage.yml)|Allocate Thread Local Storage (C0040)|kernel32.TlsAlloc|
 
+### C0040 Snippet
+<details>
+<summary> Process::Allocate Thread Local Storage </summary>
+SHA256: 0b8e662e7e595ef56396a298c367b74721d66591d856e8a8241fcdd60d08373c
+Location: 0x4142CB
+<pre>
+call    dword ptr [->KERNEL32.DLL::TlsAlloc]    ; call Windows API function to allocate thread local storage
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
