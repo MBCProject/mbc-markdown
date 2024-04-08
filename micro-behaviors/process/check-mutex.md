@@ -51,7 +51,7 @@ Malware checks a mutex.
 |[antivm_vmware_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_mutexes.py)|Check Mutex (C0043)|--|
 |[purplewave_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/purplewave_mutexes.py)|Check Mutex (C0043)|--|
 
-### C0030.005 Snippet
+### C0043 Snippet
 <details>
 <summary> Process::Check Mutex </summary>
 SHA256: 0b8e662e7e595ef56396a298c367b74721d66591d856e8a8241fcdd60d08373c
