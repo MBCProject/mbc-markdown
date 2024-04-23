@@ -52,6 +52,18 @@ Malware creates a directory.
 |---|---|---|
 |[arkei_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/arkei_files.py)|Create Directory (C0046)|--|
 
+### C0046 Snippet
+<details>
+<summary> File System::Create Directory </summary>
+SHA256: 27253651170386863b148afb2a0fdda7780ae65cbc31405acbd99fa06b44b79f
+Location: 0x1400036d4
+<pre>
+xor     param_2, param_2        ; use default security attributes (param_2 is NULL)
+mov     param_1, rbp    ; use contents of rbp as directory name
+call    qword ptr [->KERNEL32.DLL::CreateDirectoryA]  ; call Windows API to create directory
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
