@@ -44,6 +44,17 @@ Malware deletes a directory.
 |---|---|---|
 |[delete directory](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/delete/delete-directory.yml)|Delete Directory (C0048)|RemoveDirectory, RemoveDirectoryTransacted, _rmdir, _wrmdir, System.IO.DirectoryInfo::Delete, System.IO.Directory::Delete|
 
+### C0048 Snippet
+<details>
+<summary> File System::Delete Directory </summary>
+SHA256: 27253651170386863b148afb2a0fdda7780ae65cbc31405acbd99fa06b44b79f
+Location: 0x140002204
+<pre>
+mov     param_1, rdi    ; store name of directory to remove
+call    qword ptr [->KERNEL32.DLL::RemoveDirectoryA]   ; call Windows API function to remove directory
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
