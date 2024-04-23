@@ -120,6 +120,21 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[downloads_from_filehosting](https://github.com/CAPESandbox/community/tree/master/modules/signatures/downloads_from_filehosting.py)|HTTP Communication (C0002)|WinHttpOpenRequest, InternetOpenUrlA|
 |[purplewave_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/purplewave_network_activity.py)|HTTP Communication (C0002)|InternetOpenW, HttpOpenRequestW, HttpSendRequestW, HttpAddRequestHeadersA|
 
+### C0002.017 Snippet
+<details>
+<summary> Communication::HTTP Communication::Get Response </summary>
+SHA256: 3ac8c22eb7c59d35fe49c20f2a0eca06765543dfb15f455a5557af4428066641
+Location: 0x180001380
+<pre>
+mov     param_2, ebx
+lea     r9, [rsp + 0x44]        ; where to store the number of bytes read
+add     param_2, r14    ; pointer to buffer to receive HTTP data
+mov     param_3, 0x400  ; number of bytes to read (1024)
+mov     param_1, rsi    ; handle to previously opened HTTP request
+call    qword ptr [->WININET::InternetReadFile] ; Windows API for reading data from HTTP or FTP connections
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
