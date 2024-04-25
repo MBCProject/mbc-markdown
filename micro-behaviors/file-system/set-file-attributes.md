@@ -48,6 +48,18 @@ Malware sets file attributes.
 |[change file permission on Linux](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/change-file-permission-on-linux.yml)|Set File Attributes (C0050)|chown, fchown, lchown, fchownat|
 |[set file attributes](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/meta/set-file-attributes.yml)|Set File Attributes (C0050)|kernel32.SetFileAttributes, ZwSetInformationFile, NtSetInformationFile, System.IO.File::SetAttributes, System.IO.File::SetCreationTime, System.IO.File::SetCreationTimeUtc, System.IO.File::SetLastAccessTime, System.IO.File::SetLastAccessTimeUtc, System.IO.File::SetLastWriteTime, System.IO.File::SetLastWriteTimeUtc|
 
+### C0050 Snippet
+<details>
+<summary> File System::Set File Attributes </summary>
+SHA256: 27253651170386863b148afb2a0fdda7780ae65cbc31405acbd99fa06b44b79f
+Location: 0x140006a6d
+<pre>
+mov     edx, 0x2        ; pass the value indicating for the 'hidden' attribute to be set on the file
+lea     rcx, [rsp + 0x40]       ; name of the file for which attributes should be changed
+call    qword ptr [->KERNEL32.DLL::SetFileAttributesA]  ; call Windows API for changing file attributes
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
