@@ -130,8 +130,8 @@ Details on detecting debuggers can be found in the references.
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
 |[antidebug_checkremotedebuggerpresent](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_checkremotedebuggerpresent.py)|Debugger Detection (B0001)|CheckRemoteDebuggerPresent, NtQueryInformationProcess|
-|[antiav_nthookengine_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_nthookengine_libs.py)|Debugger Detection (B0001)|LdrGetDllHandle, LdrLoadDll|
-|[antiav_nthookengine_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_nthookengine_libs.py)|Debugger Detection::API Hook Detection (B0001.001)|LdrGetDllHandle, LdrLoadDll|
+|[antiav_nthookengine_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_nthookengine_libs.py)|Debugger Detection (B0001)|LdrGetDllHandle, LdrLoadDll|
+|[antiav_nthookengine_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_nthookengine_libs.py)|Debugger Detection::API Hook Detection (B0001.001)|LdrGetDllHandle, LdrLoadDll|
 |[antidebug_setunhandledexceptionfilter](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_setunhandledexceptionfilter.py)|Debugger Detection (B0001)|SetUnhandledExceptionFilter|
 |[antidebug_setunhandledexceptionfilter](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_setunhandledexceptionfilter.py)|Debugger Detection::UnhandledExceptionFilter (B0001.030)|SetUnhandledExceptionFilter|
 |[antidebug_addvectoredexceptionhandler](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_addvectoredexceptionhandler.py)|Debugger Detection (B0001)|AddVectoredExceptionHandler|
