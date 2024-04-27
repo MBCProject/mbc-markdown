@@ -127,64 +127,64 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[antivm_generic_disk](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_disk.py)|Virtual Machine Detection (B0009)|DeviceIoControl, NtClose, NtCreateFile, NtDuplicateObject, NtOpenFile, NtDeviceIoControlFile|
-|[antivm_generic_disk](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_disk.py)|Virtual Machine Detection::Modern Specs Check - Drive size (B0009.015)|DeviceIoControl, NtClose, NtCreateFile, NtDuplicateObject, NtOpenFile, NtDeviceIoControlFile|
-|[antivm_vpc_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vpc_mutex.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_directory_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_directory_objects.py)|Virtual Machine Detection (B0009)|NtQueryDirectoryObject, NtOpenDirectoryObject|
-|[antivm_directory_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_directory_objects.py)|Virtual Machine Detection::Check File and Directory Artifacts (B0009.001)|NtQueryDirectoryObject, NtOpenDirectoryObject|
-|[antivm_network_adapters](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_network_adapters.py)|Virtual Machine Detection (B0009)|GetAdaptersAddresses|
-|[antivm_generic_cpu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_cpu.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_generic_cpu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_cpu.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
-|[antivm_generic_cpu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_cpu.py)|Virtual Machine Detection::Unique Hardware/Firmware Check - BIOS (B0009.024)|--|
-|[antivm_vbox_provname](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_provname.py)|Virtual Machine Detection (B0009)|WNetGetProviderNameW|
-|[antivm_vbox_provname](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_provname.py)|Virtual Machine Detection::Check File and Directory Artifacts (B0009.001)|WNetGetProviderNameW|
-|[antivm_generic_bios](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_bios.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_generic_bios](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_bios.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
-|[antivm_generic_bios](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_bios.py)|Virtual Machine Detection::Unique Hardware/Firmware Check - BIOS (B0009.024)|--|
-|[antivm_vbox_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_keys.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_vbox_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_keys.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
-|[antivm_vmware_events](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_events.py)|Virtual Machine Detection (B0009)|NtOpenEvent, NtCreateEvent|
-|[antivm_vbox_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_devices.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_vbox_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_devices.py)|Virtual Machine Detection::Check Virtual Devices (B0009.008)|--|
-|[antivm_vmware_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_devices.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_vmware_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_devices.py)|Virtual Machine Detection::Check Virtual Devices (B0009.008)|--|
-|[antivm_hyperv_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_hyperv_keys.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_hyperv_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_hyperv_keys.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
-|[antivm_vbox_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_files.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_vbox_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_files.py)|Virtual Machine Detection::Check Virtual Devices (B0009.008)|--|
-|[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_mouse_hook.py)|Virtual Machine Detection (B0009)|SetWindowsHookExA, SetWindowsHookExW|
-|[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_mouse_hook.py)|Virtual Machine Detection::Human User Check (B0009.012)|SetWindowsHookExA, SetWindowsHookExW|
-|[antivm_generic_scsi](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_scsi.py)|Virtual Machine Detection (B0009)|RegOpenKeyExW, RegQueryValueExA, RegQueryValueExW, RegOpenKeyExA|
-|[antivm_generic_scsi](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_scsi.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|RegOpenKeyExW, RegQueryValueExA, RegQueryValueExW, RegOpenKeyExA|
-|[antivm_vmware_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_libs.py)|Virtual Machine Detection (B0009)|LdrLoadDll|
-|[antivm_vmware_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_libs.py)|Virtual Machine Detection::Check File and Directory Artifacts (B0009.001)|LdrLoadDll|
-|[antivm_xen_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_xen_keys.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_xen_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_xen_keys.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
-|[antivm_parallels_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_parallels_keys.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_parallels_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_parallels_keys.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
-|[antivm_generic_diskreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_diskreg.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_generic_diskreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_diskreg.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
-|[antivm_vpc_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vpc_keys.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_vpc_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vpc_keys.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
-|[antivm_bochs_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_bochs_keys.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_bochs_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_bochs_keys.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
-|[antivm_vpc_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vpc_files.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_vpc_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vpc_files.py)|Virtual Machine Detection::Check File and Directory Artifacts (B0009.001)|--|
-|[antivm_vmware_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_mutexes.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_vbox_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_libs.py)|Virtual Machine Detection (B0009)|LdrLoadDll|
-|[antivm_vbox_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_libs.py)|Virtual Machine Detection::Check File and Directory Artifacts (B0009.001)|LdrLoadDll|
-|[antivm_generic_system](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_system.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_generic_system](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_system.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
-|[antivm_vmware_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_files.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_vmware_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_files.py)|Virtual Machine Detection::Check File and Directory Artifacts (B0009.001)|--|
-|[antivm_generic_services](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_services.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|RegOpenKeyExW, RegEnumKeyExW, RegEnumKeyExA, RegOpenKeyExA|
-|[antivm_generic_services](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_services.py)|Virtual Machine Detection::Check Running Services (B0009.006)|RegOpenKeyExW, RegEnumKeyExW, RegEnumKeyExA, RegOpenKeyExA|
-|[antivm_generic_disk_setupapi](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_disk_setupapi.py)|Virtual Machine Detection (B0009)|SetupDiGetClassDevsA, SetupDiGetClassDevsW|
-|[antisandbox_sboxie_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_sboxie_objects.py)|Virtual Machine Detection (B0009)|NtOpenDirectoryObject|
-|[antivm_vmware_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_keys.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_vmware_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_keys.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
-|[antivm_vbox_window](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_window.py)|Virtual Machine Detection (B0009)|--|
-|[antivm_vbox_window](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_window.py)|Virtual Machine Detection::Check Windows (B0009.009)|--|
+|[antivm_generic_disk](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_disk.py)|Virtual Machine Detection (B0009)|DeviceIoControl, NtClose, NtCreateFile, NtDuplicateObject, NtOpenFile, NtDeviceIoControlFile|
+|[antivm_generic_disk](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_disk.py)|Virtual Machine Detection::Modern Specs Check - Drive size (B0009.015)|DeviceIoControl, NtClose, NtCreateFile, NtDuplicateObject, NtOpenFile, NtDeviceIoControlFile|
+|[antivm_vpc_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vpc_mutex.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_directory_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_directory_objects.py)|Virtual Machine Detection (B0009)|NtQueryDirectoryObject, NtOpenDirectoryObject|
+|[antivm_directory_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_directory_objects.py)|Virtual Machine Detection::Check File and Directory Artifacts (B0009.001)|NtQueryDirectoryObject, NtOpenDirectoryObject|
+|[antivm_network_adapters](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_network_adapters.py)|Virtual Machine Detection (B0009)|GetAdaptersAddresses|
+|[antivm_generic_cpu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_cpu.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_generic_cpu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_cpu.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
+|[antivm_generic_cpu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_cpu.py)|Virtual Machine Detection::Unique Hardware/Firmware Check - BIOS (B0009.024)|--|
+|[antivm_vbox_provname](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_provname.py)|Virtual Machine Detection (B0009)|WNetGetProviderNameW|
+|[antivm_vbox_provname](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_provname.py)|Virtual Machine Detection::Check File and Directory Artifacts (B0009.001)|WNetGetProviderNameW|
+|[antivm_generic_bios](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_bios.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_generic_bios](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_bios.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
+|[antivm_generic_bios](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_bios.py)|Virtual Machine Detection::Unique Hardware/Firmware Check - BIOS (B0009.024)|--|
+|[antivm_vbox_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_keys.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_vbox_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_keys.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
+|[antivm_vmware_events](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_events.py)|Virtual Machine Detection (B0009)|NtOpenEvent, NtCreateEvent|
+|[antivm_vbox_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_devices.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_vbox_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_devices.py)|Virtual Machine Detection::Check Virtual Devices (B0009.008)|--|
+|[antivm_vmware_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_devices.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_vmware_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_devices.py)|Virtual Machine Detection::Check Virtual Devices (B0009.008)|--|
+|[antivm_hyperv_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_hyperv_keys.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_hyperv_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_hyperv_keys.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
+|[antivm_vbox_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_files.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_vbox_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_files.py)|Virtual Machine Detection::Check Virtual Devices (B0009.008)|--|
+|[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_mouse_hook.py)|Virtual Machine Detection (B0009)|SetWindowsHookExA, SetWindowsHookExW|
+|[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_mouse_hook.py)|Virtual Machine Detection::Human User Check (B0009.012)|SetWindowsHookExA, SetWindowsHookExW|
+|[antivm_generic_scsi](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_scsi.py)|Virtual Machine Detection (B0009)|RegOpenKeyExW, RegQueryValueExA, RegQueryValueExW, RegOpenKeyExA|
+|[antivm_generic_scsi](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_scsi.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|RegOpenKeyExW, RegQueryValueExA, RegQueryValueExW, RegOpenKeyExA|
+|[antivm_vmware_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_libs.py)|Virtual Machine Detection (B0009)|LdrLoadDll|
+|[antivm_vmware_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_libs.py)|Virtual Machine Detection::Check File and Directory Artifacts (B0009.001)|LdrLoadDll|
+|[antivm_xen_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_xen_keys.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_xen_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_xen_keys.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
+|[antivm_parallels_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_parallels_keys.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_parallels_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_parallels_keys.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
+|[antivm_generic_diskreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_diskreg.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_generic_diskreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_diskreg.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
+|[antivm_vpc_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vpc_keys.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_vpc_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vpc_keys.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
+|[antivm_bochs_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_bochs_keys.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_bochs_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_bochs_keys.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
+|[antivm_vpc_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vpc_files.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_vpc_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vpc_files.py)|Virtual Machine Detection::Check File and Directory Artifacts (B0009.001)|--|
+|[antivm_vmware_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_mutexes.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_vbox_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_libs.py)|Virtual Machine Detection (B0009)|LdrLoadDll|
+|[antivm_vbox_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_libs.py)|Virtual Machine Detection::Check File and Directory Artifacts (B0009.001)|LdrLoadDll|
+|[antivm_generic_system](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_system.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_generic_system](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_system.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
+|[antivm_vmware_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_files.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_vmware_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_files.py)|Virtual Machine Detection::Check File and Directory Artifacts (B0009.001)|--|
+|[antivm_generic_services](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_services.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|RegOpenKeyExW, RegEnumKeyExW, RegEnumKeyExA, RegOpenKeyExA|
+|[antivm_generic_services](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_services.py)|Virtual Machine Detection::Check Running Services (B0009.006)|RegOpenKeyExW, RegEnumKeyExW, RegEnumKeyExA, RegOpenKeyExA|
+|[antivm_generic_disk_setupapi](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_disk_setupapi.py)|Virtual Machine Detection (B0009)|SetupDiGetClassDevsA, SetupDiGetClassDevsW|
+|[antisandbox_sboxie_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_sboxie_objects.py)|Virtual Machine Detection (B0009)|NtOpenDirectoryObject|
+|[antivm_vmware_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_keys.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_vmware_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_keys.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
+|[antivm_vbox_window](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_window.py)|Virtual Machine Detection (B0009)|--|
+|[antivm_vbox_window](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_window.py)|Virtual Machine Detection::Check Windows (B0009.009)|--|
 
 ## Code Snippets
 
