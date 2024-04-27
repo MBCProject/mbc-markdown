@@ -91,31 +91,31 @@ This description refines the ATT&CK **Obfuscated Files or Information: Software 
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[packer_nspack](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_nspack.py)|Software Packing (F0001)|--|
-|[packer_vmprotect](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_vmprotect.py)|Software Packing (F0001)|--|
-|[packer_vmprotect](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_vmprotect.py)|Software Packing::VMProtect (F0001.010)|--|
-|[packer_confuser](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_confuser.py)|Software Packing (F0001)|--|
-|[packer_confuser](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_confuser.py)|Software Packing::Confuser (F0001.009)|--|
-|[packer_smartassembly](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_smartassembly.py)|Software Packing (F0001)|--|
-|[packer_mpress](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_mpress.py)|Software Packing (F0001)|--|
-|[packer_enigma](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_enigma.py)|Software Packing (F0001)|--|
-|[Unpacker](https://github.com/CAPESandbox/community/tree/master/modules/signatures/Unpacker.py)|Software Packing (F0001)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
-|[packer_aspirecrypt](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_aspirecrypt.py)|Software Packing (F0001)|--|
-|[packer_nate](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_nate.py)|Software Packing (F0001)|--|
-|[packer_entropy](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_entropy.py)|Software Packing (F0001)|--|
-|[packer_unknown_pe_section_name](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_unknown_pe_section_name.py)|Software Packing (F0001)|--|
-|[packer_upx](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_upx.py)|Software Packing (F0001)|--|
-|[packer_upx](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_upx.py)|Software Packing::UPX (F0001.008)|--|
-|[packer_aspack](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_aspack.py)|Software Packing (F0001)|--|
-|[packer_aspack](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_aspack.py)|Software Packing::ASPack (F0001.013)|--|
-|[packer_bedsprotector](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_bedsprotector.py)|Software Packing (F0001)|--|
-|[packer_themida](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_themida.py)|Software Packing (F0001)|FindWindowA|
-|[packer_themida](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_themida.py)|Software Packing::Themida (F0001.011)|FindWindowA|
-|[packer_themida](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_themida.py)|Software Packing (F0001)|--|
-|[packer_themida](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_themida.py)|Software Packing::Themida (F0001.011)|--|
-|[packer_spices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_spices.py)|Software Packing (F0001)|--|
-|[packer_yoda](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_yoda.py)|Software Packing (F0001)|--|
-|[packer_titan](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_titan.py)|Software Packing (F0001)|--|
+|[packer_nspack](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_nspack.py)|Software Packing (F0001)|--|
+|[packer_vmprotect](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_vmprotect.py)|Software Packing (F0001)|--|
+|[packer_vmprotect](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_vmprotect.py)|Software Packing::VMProtect (F0001.010)|--|
+|[packer_confuser](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_confuser.py)|Software Packing (F0001)|--|
+|[packer_confuser](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_confuser.py)|Software Packing::Confuser (F0001.009)|--|
+|[packer_smartassembly](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_smartassembly.py)|Software Packing (F0001)|--|
+|[packer_mpress](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_mpress.py)|Software Packing (F0001)|--|
+|[packer_enigma](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_enigma.py)|Software Packing (F0001)|--|
+|[Unpacker](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/Unpacker.py)|Software Packing (F0001)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
+|[packer_aspirecrypt](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_aspirecrypt.py)|Software Packing (F0001)|--|
+|[packer_nate](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_nate.py)|Software Packing (F0001)|--|
+|[packer_entropy](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_entropy.py)|Software Packing (F0001)|--|
+|[packer_unknown_pe_section_name](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_unknown_pe_section_name.py)|Software Packing (F0001)|--|
+|[packer_upx](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_upx.py)|Software Packing (F0001)|--|
+|[packer_upx](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_upx.py)|Software Packing::UPX (F0001.008)|--|
+|[packer_aspack](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_aspack.py)|Software Packing (F0001)|--|
+|[packer_aspack](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_aspack.py)|Software Packing::ASPack (F0001.013)|--|
+|[packer_bedsprotector](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_bedsprotector.py)|Software Packing (F0001)|--|
+|[packer_themida](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_themida.py)|Software Packing (F0001)|FindWindowA|
+|[packer_themida](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_themida.py)|Software Packing::Themida (F0001.011)|FindWindowA|
+|[packer_themida](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_themida.py)|Software Packing (F0001)|--|
+|[packer_themida](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_themida.py)|Software Packing::Themida (F0001.011)|--|
+|[packer_spices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_spices.py)|Software Packing (F0001)|--|
+|[packer_yoda](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_yoda.py)|Software Packing (F0001)|--|
+|[packer_titan](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_titan.py)|Software Packing (F0001)|--|
 
 ## References
 
