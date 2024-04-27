@@ -99,11 +99,10 @@ This description refines the ATT&CK **Obfuscated Files or Information: Software 
 |[packer_smartassembly](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/packer_smartassembly.py)|Software Packing (F0001)|--|
 |[packer_mpress](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/packer_mpress.py)|Software Packing (F0001)|--|
 |[packer_enigma](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/packer_enigma.py)|Software Packing (F0001)|--|
-|[Unpacker](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/Unpacker.py)|Software Packing (F0001)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
 |[packer_aspirecrypt](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/packer_aspirecrypt.py)|Software Packing (F0001)|--|
 |[packer_nate](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/packer_nate.py)|Software Packing (F0001)|--|
 |[packer_entropy](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/packer_entropy.py)|Software Packing (F0001)|--|
-|[packer_unknown_pe_section_name](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/packer_unknown_pe_section_name.py)|Software Packing (F0001)|--|
+|[packer_unknown_pe_section_name](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/packer_anomaly.py)|Software Packing (F0001)|--|
 |[packer_upx](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/packer_upx.py)|Software Packing (F0001)|--|
 |[packer_upx](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/packer_upx.py)|Software Packing::UPX (F0001.008)|--|
 |[packer_aspack](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/packer_aspack.py)|Software Packing (F0001)|--|
