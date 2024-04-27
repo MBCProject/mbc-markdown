@@ -91,11 +91,11 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_guardpages.py)|Debugger Evasion (B0002)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
-|[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_guardpages.py)|Debugger Evasion::Guard Pages (B0002.008)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
-|[antidebug_ntcreatethreadex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_ntcreatethreadex.py)|Debugger Evasion (B0002)|NtCreateThreadEx|
-|[debugs_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/debugs_self.py)|Debugger Evasion (B0002)|CreateProcessInternalW|
-|[debugs_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/debugs_self.py)|Debugger Evasion::Self-Debugging (B0002.024)|CreateProcessInternalW|
+|[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_guardpages.py)|Debugger Evasion (B0002)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
+|[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_guardpages.py)|Debugger Evasion::Guard Pages (B0002.008)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
+|[antidebug_ntcreatethreadex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_ntcreatethreadex.py)|Debugger Evasion (B0002)|NtCreateThreadEx|
+|[debugs_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/debugs_self.py)|Debugger Evasion (B0002)|CreateProcessInternalW|
+|[debugs_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/debugs_self.py)|Debugger Evasion::Self-Debugging (B0002.024)|CreateProcessInternalW|
 
 ## References
 
