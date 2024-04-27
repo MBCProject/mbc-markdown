@@ -132,7 +132,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |[antivm_vpc_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vpc_mutex.py)|Virtual Machine Detection (B0009)|--|
 |[antivm_directory_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_dirobjects.py)|Virtual Machine Detection (B0009)|NtQueryDirectoryObject, NtOpenDirectoryObject|
 |[antivm_directory_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_dirobjects.py)|Virtual Machine Detection::Check File and Directory Artifacts (B0009.001)|NtQueryDirectoryObject, NtOpenDirectoryObject|
-|[antivm_network_adapters](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_network_adapters.py)|Virtual Machine Detection (B0009)|GetAdaptersAddresses|
+|[antivm_network_adapters](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_network_adapter.py)|Virtual Machine Detection (B0009)|GetAdaptersAddresses|
 |[antivm_generic_cpu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_cpu.py)|Virtual Machine Detection (B0009)|--|
 |[antivm_generic_cpu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_cpu.py)|Virtual Machine Detection::Check Registry Keys (B0009.005)|--|
 |[antivm_generic_cpu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_cpu.py)|Virtual Machine Detection::Unique Hardware/Firmware Check - BIOS (B0009.024)|--|
