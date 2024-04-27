@@ -83,7 +83,7 @@ The related **Virtualization/Sandbox Evasion ([T1497](https://attack.mitre.org/t
 |[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_mouse_hook.py)|Sandbox Detection::Human User Check (B0007.003)|SetWindowsHookExA, SetWindowsHookExW|
 |[antisandbox_foregroundwindows](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_forehwnd.py)|Sandbox Detection (B0007)|GetForegroundWindow, NtDelayExecution|
 |[antisandbox_sboxie_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_sboxie_mutex.py)|Sandbox Detection (B0007)|--|
-|[antisandbox_script_timer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_script_timer.py)|Sandbox Detection (B0007)|--|
+|[antisandbox_script_timer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_scripttimer.py)|Sandbox Detection (B0007)|--|
 |[antisandbox_sboxie_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_sboxie_libs.py)|Sandbox Detection (B0007)|LdrGetDllHandle, LdrLoadDll|
 |[antisandbox_cuckoocrash](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_cuckoocrash.py)|Sandbox Detection (B0007)|--|
 |[antisandbox_joe_anubis_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_joe_anubis_files.py)|Sandbox Detection (B0007)|--|
