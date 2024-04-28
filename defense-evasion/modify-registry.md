@@ -49,7 +49,7 @@ See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[persistence_rdp_registry](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_rdp_registry.py)|Modify Registry (E1112)|--|
+|[persistence_remotedesktop](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_remotedesktop.py)|Modify Registry (E1112)|--|
 |[browser_helper_object](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/browser_helper_object.py)|Modify Registry (E1112)|--|
 |[browser_security](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/browser_security.py)|Modify Registry (E1112)|--|
 |[disables_notificationcenter](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_notificationcenter.py)|Modify Registry (E1112)|--|
