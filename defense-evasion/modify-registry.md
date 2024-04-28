@@ -85,37 +85,37 @@ See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112
 |[persistence_autorun](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_autorun.py)|Modify Registry (E1112)|NtSetValueKey, RegSetValueExA, RegSetValueExW, CreateServiceW, CreateServiceA|
 |[persistence_autorun_tasks](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_autorun.py)|Modify Registry (E1112)|NtSetValueKey, RegSetValueExA, RegSetValueExW, CreateServiceW, CreateServiceA|
 |[persistence_safeboot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_autorun.py)|Modify Registry (E1112)|--|
-|[modify_attachment_manager](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modify_attachment_manager.py)|Modify Registry (E1112)|--|
-|[modify_certs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modify_certs.py)|Modify Registry (E1112)|--|
-|[modify_proxy](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modify_proxy.py)|Modify Registry (E1112)|--|
+|[modify_attachment_manager](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_bypass.py)|Modify Registry (E1112)|--|
+|[modify_certs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modifies_certs.py)|Modify Registry (E1112)|--|
+|[modify_proxy](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/browser_proxy.py)|Modify Registry (E1112)|--|
 |[disables_appv_virtualization](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_appv_virtualization.py)|Modify Registry (E1112)|--|
 |[njrat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/virus_neshta.py)|Modify Registry (E1112)|--|
-|[modify_uac_prompt](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modify_uac_prompt.py)|Modify Registry (E1112)|--|
-|[blackrat_registry_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/blackrat_registry_keys.py)|Modify Registry (E1112)|RegQueryValueExW, RegSetValueExW|
-|[rdptcp_key](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rdptcp_key.py)|Modify Registry (E1112)|--|
-|[disables_system_restore](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_system_restore.py)|Modify Registry (E1112)|--|
+|[modify_uac_prompt](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modifies_uac_notify.py)|Modify Registry (E1112)|--|
+|[blackrat_registry_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_blackremote.py)|Modify Registry (E1112)|RegQueryValueExW, RegSetValueExW|
+|[rdptcp_key](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/remote_desktop.py)|Modify Registry (E1112)|--|
+|[disables_system_restore](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_sysrestore.py)|Modify Registry (E1112)|--|
 |[disables_folder_options](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_folder_options.py)|Modify Registry (E1112)|--|
 |[office_security](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_security.py)|Modify Registry (E1112)|--|
-|[removes_security_maintenance_icon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_security_maintenance_icon.py)|Modify Registry (E1112)|--|
+|[removes_security_maintenance_icon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_sec_maintain_icon.py)|Modify Registry (E1112)|--|
 |[tampers_etw](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/tampers_etw.py)|Modify Registry (E1112)|--|
 |[disables_event_logging](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_event_logging.py)|Modify Registry (E1112)|--|
 |[browser_addon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/browser_addon.py)|Modify Registry (E1112)|--|
 |[removes_startmenu_defaults](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_startmenu_defaults.py)|Modify Registry (E1112)|--|
 |[disables_uac](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_uac.py)|Modify Registry (E1112)|--|
-|[modify_security_center_warnings](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modify_security_center_warnings.py)|Modify Registry (E1112)|--|
+|[modify_security_center_warnings](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modifies_seccenter.py)|Modify Registry (E1112)|--|
 |[disables_wer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_wer.py)|Modify Registry (E1112)|--|
-|[office_perfkey](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_perfkey.py)|Modify Registry (E1112)|--|
-|[modify_oem_information](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modify_oem_information.py)|Modify Registry (E1112)|--|
-|[limerat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/limerat_regkeys.py)|Modify Registry (E1112)|--|
-|[disables_windows_defender_dism](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windows_defender_dism.py)|Modify Registry (E1112)|--|
-|[disables_windows_defender_logging](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windows_defender_logging.py)|Modify Registry (E1112)|--|
-|[removes_windows_defender_contextmenu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_windows_defender_contextmenu.py)|Modify Registry (E1112)|--|
-|[disables_browser_warn](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_browser_warn.py)|Modify Registry (E1112)|--|
+|[office_perfkey](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_dll_loading.py)|Modify Registry (E1112)|--|
+|[modify_oem_information](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modifies_oem.py)|Modify Registry (E1112)|--|
+|[limerat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_limerat.py)|Modify Registry (E1112)|--|
+|[disables_windows_defender_dism](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windefender.py)|Modify Registry (E1112)|--|
+|[disables_windows_defender_logging](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windefender.py)|Modify Registry (E1112)|--|
+|[removes_windows_defender_contextmenu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windefender.py)|Modify Registry (E1112)|--|
+|[disables_browser_warn](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_browserwarn.py)|Modify Registry (E1112)|--|
 |[disables_windowsupdate](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windowsupdate.py)|Modify Registry (E1112)|--|
 |[removes_pinned_programs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_pinned_programs.py)|Modify Registry (E1112)|--|
-|[medusalocker_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/medusalocker_regkeys.py)|Modify Registry (E1112)|--|
+|[medusalocker_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_medusalocker.py)|Modify Registry (E1112)|--|
 |[bypass_firewall](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bypass_firewall.py)|Modify Registry (E1112)|--|
-|[remcos_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/remcos_regkeys.py)|Modify Registry (E1112)|--|
+|[remcos_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/remcos.py)|Modify Registry (E1112)|--|
 
 ## References
 
