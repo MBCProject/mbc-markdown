@@ -48,7 +48,7 @@ Polymorphic code, a file with the same functionality but different execution, is
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[polymorphic](https://github.com/CAPESandbox/community/tree/master/modules/signatures/polymorphic.py)|Polymorphic Code (B0029)|--|
+|[polymorphic](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/polymorphic.py)|Polymorphic Code (B0029)|--|
 
 ## References
 
