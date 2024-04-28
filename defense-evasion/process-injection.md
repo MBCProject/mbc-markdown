@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>28 April 2024</b></td>
 </tr>
 </table>
 
@@ -83,28 +83,28 @@ The methods table includes existing ATT&CK sub-techniques, which have been enhan
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[volatility_handles_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/volatility_handles_1.py)|Process Injection (E1055)|--|
-|[volatility_ldrmodules_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/volatility_ldrmodules_1.py)|Process Injection (E1055)|--|
-|[volatility_ldrmodules_2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/volatility_ldrmodules_2.py)|Process Injection (E1055)|--|
-|[volatility_malfind_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/volatility_malfind_1.py)|Process Injection (E1055)|--|
-|[volatility_malfind_2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/volatility_malfind_2.py)|Process Injection (E1055)|--|
-|[volatility_modscan_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/volatility_modscan_1.py)|Process Injection (E1055)|--|
-|[injection_explorer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/injection_explorer.py)|Process Injection (E1055)|NtReadVirtualMemory, NtWow64ReadVirtualMemory64, NtOpenProcess, FindWindowExA, SendNotifyMessageW, SendNotifyMessageA, NtCreateSection, SetWindowLongA, SetWindowLongW, FindWindowA, FindWindowW, FindWindowExW, ReadProcessMemory, SetWindowLongPtrA, NtOpenSection, SetWindowLongPtrW|
-|[injection_themeinitapihook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/injection_themeinitapihook.py)|Process Injection (E1055)|ThemeInitApiHook|
-|[explorer_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/explorer_http.py)|Process Injection (E1055)|WinHttpConnect, WinHttpOpenRequest|
-|[injection_createremotethread](https://github.com/CAPESandbox/community/tree/master/modules/signatures/injection_createremotethread.py)|Process Injection (E1055)|--|
-|[doppelganging](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Process Injection (E1055)|--|
-|[injection_inter_process](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Process Injection (E1055)|--|
-|[injection_create_remote_thread](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Process Injection (E1055)|--|
-|[injection_process_hollowing](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Process Injection (E1055)|--|
-|[injection_set_window_long](https://github.com/CAPESandbox/community/tree/master/modules/signatures/injection_set_window_long.py)|Process Injection (E1055)|NtMapViewOfSection, SetWindowLongW, FindWindowExA, SendNotifyMessageW, SendNotifyMessageA, NtCreateSection, SetWindowLongA, FindWindowA, PostMessageA, FindWindowW, FindWindowExW, PostMessageW, SetWindowLongPtrA, NtOpenSection, SetWindowLongPtrW|
-|[transacted_hollowing](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Process Injection (E1055)|NtRollbackTransaction, NtMapViewOfSection, RtlSetCurrentTransaction|
-|[persistence_ifeo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/persistence_ifeo.py)|Process Injection (E1055)|--|
-|[persistence_ifeo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/persistence_ifeo.py)|Process Injection::Injection and Persistence via Registry Modification (E1055.m02)|--|
-|[persistence_slient_process_exit](https://github.com/CAPESandbox/community/tree/master/modules/signatures/persistence_slient_process_exit.py)|Process Injection (E1055)|--|
-|[injection_rwx](https://github.com/CAPESandbox/community/tree/master/modules/signatures/injection_rwx.py)|Process Injection (E1055)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
-|[persistence_shim_database](https://github.com/CAPESandbox/community/tree/master/modules/signatures/persistence_shim_database.py)|Process Injection::Injection using Shims (E1055.m03)|--|
-|[injection_runpe](https://github.com/CAPESandbox/community/tree/master/modules/signatures/injection_runpe.py)|Process Injection (E1055)|--|
+|[volatility_handles_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_handles_1.py)|Process Injection (E1055)|--|
+|[volatility_ldrmodules_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_ldrmodules_1.py)|Process Injection (E1055)|--|
+|[volatility_ldrmodules_2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_ldrmodules_2.py)|Process Injection (E1055)|--|
+|[volatility_malfind_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_malfind_1.py)|Process Injection (E1055)|--|
+|[volatility_malfind_2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_malfind_2.py)|Process Injection (E1055)|--|
+|[volatility_modscan_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_modscan_1.py)|Process Injection (E1055)|--|
+|[injection_explorer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_explorer.py)|Process Injection (E1055)|NtReadVirtualMemory, NtWow64ReadVirtualMemory64, NtOpenProcess, FindWindowExA, SendNotifyMessageW, SendNotifyMessageA, NtCreateSection, SetWindowLongA, SetWindowLongW, FindWindowA, FindWindowW, FindWindowExW, ReadProcessMemory, SetWindowLongPtrA, NtOpenSection, SetWindowLongPtrW|
+|[injection_themeinitapihook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_themeinitapihook.py)|Process Injection (E1055)|ThemeInitApiHook|
+|[explorer_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/explorer_http.py)|Process Injection (E1055)|WinHttpConnect, WinHttpOpenRequest|
+|[injection_createremotethread](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_createremotethread.py)|Process Injection (E1055)|--|
+|[doppelganging](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/windows/CAPE.py)|Process Injection (E1055)|--|
+|[injection_inter_process](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/windows/CAPE.py)|Process Injection (E1055)|--|
+|[injection_create_remote_thread](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/windows/CAPE.py)|Process Injection (E1055)|--|
+|[injection_process_hollowing](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/windows/CAPE.py)|Process Injection (E1055)|--|
+|[injection_set_window_long](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_set_window_long.py)|Process Injection (E1055)|NtMapViewOfSection, SetWindowLongW, FindWindowExA, SendNotifyMessageW, SendNotifyMessageA, NtCreateSection, SetWindowLongA, FindWindowA, PostMessageA, FindWindowW, FindWindowExW, PostMessageW, SetWindowLongPtrA, NtOpenSection, SetWindowLongPtrW|
+|[transacted_hollowing](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/windows/CAPE.py)|Process Injection (E1055)|NtRollbackTransaction, NtMapViewOfSection, RtlSetCurrentTransaction|
+|[persistence_ifeo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_ifeo.py)|Process Injection (E1055)|--|
+|[persistence_ifeo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_ifeo.py)|Process Injection::Injection and Persistence via Registry Modification (E1055.m02)|--|
+|[persistence_slient_process_exit](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_slient_process_exit.py)|Process Injection (E1055)|--|
+|[injection_rwx](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_rwx.py)|Process Injection (E1055)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
+|[persistence_shim_database](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_shim_database.py)|Process Injection::Injection using Shims (E1055.m03)|--|
+|[injection_runpe](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_runpe.py)|Process Injection (E1055)|--|
 
 ## References
 <a name="1">[1]</a> Ashkan Hosseini, *Ten Process Injection Techniques: A Technical Survey of Common and Trending Process Injection Techniques*, July 2017. https://www.elastic.co/blog/ten-process-injection-techniques-technical-survey-common-and-trending-process
