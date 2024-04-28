@@ -91,14 +91,14 @@ The methods table includes existing ATT&CK sub-techniques, which have been enhan
 |[volatility_modscan_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/volatility_sig.py)|Process Injection (E1055)|--|
 |[injection_explorer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_explorer.py)|Process Injection (E1055)|NtReadVirtualMemory, NtWow64ReadVirtualMemory64, NtOpenProcess, FindWindowExA, SendNotifyMessageW, SendNotifyMessageA, NtCreateSection, SetWindowLongA, SetWindowLongW, FindWindowA, FindWindowW, FindWindowExW, ReadProcessMemory, SetWindowLongPtrA, NtOpenSection, SetWindowLongPtrW|
 |[injection_themeinitapihook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_themeinitapihook.py)|Process Injection (E1055)|ThemeInitApiHook|
-|[explorer_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/explorer_http.py)|Process Injection (E1055)|WinHttpConnect, WinHttpOpenRequest|
+|[explorer_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_explorer.py)|Process Injection (E1055)|WinHttpConnect, WinHttpOpenRequest|
 |[injection_createremotethread](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_createremotethread.py)|Process Injection (E1055)|--|
-|[doppelganging](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/windows/CAPE.py)|Process Injection (E1055)|--|
-|[injection_inter_process](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/windows/CAPE.py)|Process Injection (E1055)|--|
-|[injection_create_remote_thread](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/windows/CAPE.py)|Process Injection (E1055)|--|
-|[injection_process_hollowing](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/windows/CAPE.py)|Process Injection (E1055)|--|
+|[doppelganging](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Process Injection (E1055)|--|
+|[injection_inter_process](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Process Injection (E1055)|--|
+|[injection_create_remote_thread](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Process Injection (E1055)|--|
+|[injection_process_hollowing](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Process Injection (E1055)|--|
 |[injection_set_window_long](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_set_window_long.py)|Process Injection (E1055)|NtMapViewOfSection, SetWindowLongW, FindWindowExA, SendNotifyMessageW, SendNotifyMessageA, NtCreateSection, SetWindowLongA, FindWindowA, PostMessageA, FindWindowW, FindWindowExW, PostMessageW, SetWindowLongPtrA, NtOpenSection, SetWindowLongPtrW|
-|[transacted_hollowing](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/windows/CAPE.py)|Process Injection (E1055)|NtRollbackTransaction, NtMapViewOfSection, RtlSetCurrentTransaction|
+|[transacted_hollowing](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Process Injection (E1055)|NtRollbackTransaction, NtMapViewOfSection, RtlSetCurrentTransaction|
 |[persistence_ifeo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_ifeo.py)|Process Injection (E1055)|--|
 |[persistence_ifeo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_ifeo.py)|Process Injection::Injection and Persistence via Registry Modification (E1055.m02)|--|
 |[persistence_slient_process_exit](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_slient_process_exit.py)|Process Injection (E1055)|--|
