@@ -111,9 +111,9 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |[bot_drive2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_drive2.py)|C2 Communication (B0030)|--|
 |[bot_dirtjumper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_dirtjumper.py)|C2 Communication (B0030)|--|
 |[bot_athenahttp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_athenahttp.py)|C2 Communication (B0030)|--|
-|[network_dns_tunneling_request](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_tunneling_request.py)|C2 Communication (B0030)|DnsQuery_A, DnsQuery_W|
-|[network_questionable_host](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_questionable_host.py)|C2 Communication (B0030)|--|
-|[injection_network_traffic](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_network_traffic.py)|C2 Communication (B0030)|HttpOpenRequestA, URLDownloadToFileW, HttpOpenRequestW, InternetConnectW, InternetConnectA, connect, InternetCrackUrlW, InternetCrackUrlA, WSASend|
+|[network_dns_tunneling_request](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|C2 Communication (B0030)|DnsQuery_A, DnsQuery_W|
+|[network_questionable_host](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_questionable_host.py)|C2 Communication (B0030)|--|
+|[injection_network_traffic](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_network.py)|C2 Communication (B0030)|HttpOpenRequestA, URLDownloadToFileW, HttpOpenRequestW, InternetConnectW, InternetConnectA, connect, InternetCrackUrlW, InternetCrackUrlA, WSASend|
 |[network_bind](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_bind.py)|C2 Communication (B0030)|listen, bind|
 |[network_document_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_document_http.py)|C2 Communication (B0030)|URLDownloadToFileW, HttpOpenRequestW, InternetCrackUrlW, InternetCrackUrlA, WSASend, InternetReadFile|
 |[network_country_distribution](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_country_distribution.py)|C2 Communication (B0030)|--|
