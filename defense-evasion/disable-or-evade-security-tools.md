@@ -96,11 +96,11 @@ See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://atta
 |[antisandbox_unhook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_unhook.py)|Disable or Evade Security Tools::Unhook APIs (F0004.003)|--|
 |[modify_security_center_warnings](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modifies_seccenter.py)|Disable or Evade Security Tools (F0004)|--|
 |[disables_wer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_wer.py)|Disable or Evade Security Tools (F0004)|--|
-|[disables_windows_defender](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windows_defender.py)|Disable or Evade Security Tools (F0004)|--|
-|[disables_windows_defender_dism](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windows_defender_dism.py)|Disable or Evade Security Tools (F0004)|--|
-|[disables_windows_defender_logging](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windows_defender_logging.py)|Disable or Evade Security Tools (F0004)|--|
-|[removes_windows_defender_contextmenu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_windows_defender_contextmenu.py)|Disable or Evade Security Tools (F0004)|--|
-|[windows_defender_powershell](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/windows_defender_powershell.py)|Disable or Evade Security Tools (F0004)|--|
+|[disables_windows_defender](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windefender.py)|Disable or Evade Security Tools (F0004)|--|
+|[disables_windows_defender_dism](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windefender.py)|Disable or Evade Security Tools (F0004)|--|
+|[disables_windows_defender_logging](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windefender.py)|Disable or Evade Security Tools (F0004)|--|
+|[removes_windows_defender_contextmenu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windefender.py)|Disable or Evade Security Tools (F0004)|--|
+|[windows_defender_powershell](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windefender.py)|Disable or Evade Security Tools (F0004)|--|
 |[disables_browser_warn](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_browser_warn.py)|Disable or Evade Security Tools (F0004)|--|
 |[antiav_srp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_srp.py)|Disable or Evade Security Tools (F0004)|--|
 |[antiav_srp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_srp.py)|Disable or Evade Security Tools::Modify Policy (F0004.005)|--|
