@@ -56,9 +56,9 @@ See ATT&CK: **Input Capture ([T1056](https://attack.mitre.org/techniques/T1056),
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_mouse_hook.py)|Input Capture (E1056)|SetWindowsHookExA, SetWindowsHookExW|
-|[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_mouse_hook.py)|Input Capture::Mouse Events (E1056.m01)|SetWindowsHookExA, SetWindowsHookExW|
-|[browser_scanbox](https://github.com/CAPESandbox/community/tree/master/modules/signatures/browser_scanbox.py)|Input Capture (E1056)|JsEval, COleScript_ParseScriptText, COleScript_Compile|
+|[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_mouse_hook.py)|Input Capture (E1056)|SetWindowsHookExA, SetWindowsHookExW|
+|[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_mouse_hook.py)|Input Capture::Mouse Events (E1056.m01)|SetWindowsHookExA, SetWindowsHookExW|
+|[browser_scanbox](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/browser_scanbox.py)|Input Capture (E1056)|JsEval, COleScript_ParseScriptText, COleScript_Compile|
 
 ## References
 
