@@ -61,9 +61,9 @@ See ATT&CK: **Hide Artifacts: Hidden Files and Directories ([T1564.001](https://
 |---|---|---|
 |[spoofs_procname](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/spoofs_procname.py)|Hidden Files and Directories (F0005)|--|
 |[spoofs_procname](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/spoofs_procname.py)|Hidden Files and Directories::Location (F0005.002)|--|
-|[pe_compile_timestomping](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/pe_compile_timestomping.py)|Hidden Files and Directories (F0005)|--|
-|[pe_compile_timestomping](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/pe_compile_timestomping.py)|Hidden Files and Directories::Timestamp (F0005.004)|--|
-|[stealth_hidden_extension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hidden_extension.py)|Hidden Files and Directories (F0005)|--|
+|[pe_compile_timestomping](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/static_pe_anomaly.py)|Hidden Files and Directories (F0005)|--|
+|[pe_compile_timestomping](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/static_pe_anomaly.py)|Hidden Files and Directories::Timestamp (F0005.004)|--|
+|[stealth_hidden_extension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hiddenextension.py)|Hidden Files and Directories (F0005)|--|
 |[stealth_hiddenreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hiddenreg.py)|Hidden Files and Directories (F0005)|--|
 |[stealth_file](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_file.py)|Hidden Files and Directories (F0005)|NtSetInformationFile, NtClose, NtCreateFile, NtDuplicateObject, NtOpenFile|
 
