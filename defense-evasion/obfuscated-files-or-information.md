@@ -118,8 +118,8 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[compression](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/windows/CAPE.py)|Obfuscated Files or Information (E1027)|RtlDecompressBuffer|
-|[decryption](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/windows/CAPE.py)|Obfuscated Files or Information (E1027)|CryptDecrypt|
+|[compression](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Obfuscated Files or Information (E1027)|RtlDecompressBuffer|
+|[decryption](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Obfuscated Files or Information (E1027)|CryptDecrypt|
 |[Unpacker](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/Unpacker.py)|Obfuscated Files or Information (E1027)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
 |[cmdline_obfuscation](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_obfuscation.py)|Obfuscated Files or Information (E1027)|--|
 |[dotnet_code_compile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/dotnet_code_compile.py)|Obfuscated Files or Information (E1027)|NtWriteFile, CreateProcessInternalA, NtCreateUserProcess, CreateProcessInternalW|
