@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>28 April 2024</b></td>
 </tr>
 </table>
 
@@ -55,7 +55,7 @@ See ATT&CK: **Hide Artifacts ([T1564](https://attack.mitre.org/techniques/T1564/
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[stealth_window](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_window.py)|Hide Artifacts (E1564)|ShellExecuteExW, CreateProcessInternalW|
+|[stealth_window](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_window.py)|Hide Artifacts (E1564)|ShellExecuteExW, CreateProcessInternalW|
 
 ## References
 
