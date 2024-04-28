@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>28 April 2024</b></td>
 </tr>
 </table>
 
@@ -40,7 +40,7 @@ Malware may bypass Data Execution Prevention (DEP).
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[dep_bypass](https://github.com/CAPESandbox/community/tree/master/modules/signatures/dep_bypass.py)|Bypass Data Execution Prevention (B0037)|VirtualProtectEx, NtProtectVirtualMemory|
+|[dep_bypass](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/dep_bypass.py)|Bypass Data Execution Prevention (B0037)|VirtualProtectEx, NtProtectVirtualMemory|
 
 ## References
 
