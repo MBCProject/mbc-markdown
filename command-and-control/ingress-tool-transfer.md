@@ -53,8 +53,8 @@ See ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[suspicious_mpcmdrun_use](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/suspicious_mpcmdrun_use.py)|Ingress Tool Transfer (E1105)|--|
-|[network_document_file](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_document_file.py)|Ingress Tool Transfer (E1105)|URLDownloadToFileW, HttpOpenRequestW, send, InternetCrackUrlW, InternetCrackUrlA, WSASend, URLDownloadToCacheFileW|
+|[suspicious_mpcmdrun_use](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/windows_utilities.py)|Ingress Tool Transfer (E1105)|--|
+|[network_document_file](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_payload_download.py)|Ingress Tool Transfer (E1105)|URLDownloadToFileW, HttpOpenRequestW, send, InternetCrackUrlW, InternetCrackUrlA, WSASend, URLDownloadToCacheFileW|
 
 ## References
 
