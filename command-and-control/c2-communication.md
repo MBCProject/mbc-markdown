@@ -101,13 +101,13 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[office_cve2017_11882_network](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_cve2017_11882_network.py)|C2 Communication (B0030)|ConnectEx, URLDownloadToFileW|
+|[office_cve2017_11882_network](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_exploit.py)|C2 Communication (B0030)|ConnectEx, URLDownloadToFileW|
 |[internet_dropper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/internet_dropper.py)|C2 Communication (B0030)|HttpOpenRequestA, InternetConnectA, HttpOpenRequestW, InternetConnectW|
 |[internet_dropper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/internet_dropper.py)|C2 Communication::Check for Payload (B0030.005)|HttpOpenRequestA, InternetConnectA, HttpOpenRequestW, InternetConnectW|
-|[bot_madness](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bot_madness.py)|C2 Communication (B0030)|--|
-|[bot_drive](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bot_drive.py)|C2 Communication (B0030)|--|
+|[bot_madness](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_madness.py)|C2 Communication (B0030)|--|
+|[bot_drive](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_drive.py)|C2 Communication (B0030)|--|
 |[recon_beacon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/recon_beacon.py)|C2 Communication (B0030)|HttpOpenRequestA, HttpSendRequestA|
-|[nemty_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/nemty_network_activity.py)|C2 Communication (B0030)|InternetOpenA, InternetOpenUrlA|
+|[nemty_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_nemty.py)|C2 Communication (B0030)|InternetOpenA, InternetOpenUrlA|
 |[bot_drive2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bot_drive2.py)|C2 Communication (B0030)|--|
 |[bot_dirtjumper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bot_dirtjumper.py)|C2 Communication (B0030)|--|
 |[bot_athenahttp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bot_athenahttp.py)|C2 Communication (B0030)|--|
