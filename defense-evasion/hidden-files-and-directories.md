@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.3</b></td>
+<td><b>2.4</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>6 February 2024</b></td>
+<td><b>28 April 2024</b></td>
 </tr>
 </table>
 
@@ -59,13 +59,13 @@ See ATT&CK: **Hide Artifacts: Hidden Files and Directories ([T1564.001](https://
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[spoofs_procname](https://github.com/CAPESandbox/community/tree/master/modules/signatures/spoofs_procname.py)|Hidden Files and Directories (F0005)|--|
-|[spoofs_procname](https://github.com/CAPESandbox/community/tree/master/modules/signatures/spoofs_procname.py)|Hidden Files and Directories::Location (F0005.002)|--|
-|[pe_compile_timestomping](https://github.com/CAPESandbox/community/tree/master/modules/signatures/pe_compile_timestomping.py)|Hidden Files and Directories (F0005)|--|
-|[pe_compile_timestomping](https://github.com/CAPESandbox/community/tree/master/modules/signatures/pe_compile_timestomping.py)|Hidden Files and Directories::Timestamp (F0005.004)|--|
-|[stealth_hidden_extension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_hidden_extension.py)|Hidden Files and Directories (F0005)|--|
-|[stealth_hiddenreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_hiddenreg.py)|Hidden Files and Directories (F0005)|--|
-|[stealth_file](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_file.py)|Hidden Files and Directories (F0005)|NtSetInformationFile, NtClose, NtCreateFile, NtDuplicateObject, NtOpenFile|
+|[spoofs_procname](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/spoofs_procname.py)|Hidden Files and Directories (F0005)|--|
+|[spoofs_procname](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/spoofs_procname.py)|Hidden Files and Directories::Location (F0005.002)|--|
+|[pe_compile_timestomping](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/pe_compile_timestomping.py)|Hidden Files and Directories (F0005)|--|
+|[pe_compile_timestomping](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/pe_compile_timestomping.py)|Hidden Files and Directories::Timestamp (F0005.004)|--|
+|[stealth_hidden_extension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hidden_extension.py)|Hidden Files and Directories (F0005)|--|
+|[stealth_hiddenreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hiddenreg.py)|Hidden Files and Directories (F0005)|--|
+|[stealth_file](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_file.py)|Hidden Files and Directories (F0005)|NtSetInformationFile, NtClose, NtCreateFile, NtDuplicateObject, NtOpenFile|
 
 ## References
 
