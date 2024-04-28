@@ -47,8 +47,8 @@ Malware accesses files that contain sensitive data or credentials related to Bit
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[infostealer_bitcoin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_bitcoin.py)|Cryptocurrency (B0028)|--|
-|[infostealer_bitcoin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_bitcoin.py)|Cryptocurrency::Bitcoin (B0028.001)|--|
+|[infostealer_bitcoin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/infostealer_bitcoin.py)|Cryptocurrency (B0028)|--|
+|[infostealer_bitcoin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/infostealer_bitcoin.py)|Cryptocurrency::Bitcoin (B0028.001)|--|
 
 ## References
 
