@@ -88,8 +88,8 @@ See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://atta
 |[clickfraud_cookies](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/clickfraud_cookies.py)|Disable or Evade Security Tools (F0004)|InternetSetOptionA|
 |[disables_wfp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_wfp.py)|Disable or Evade Security Tools (F0004)|NtWriteFile, CopyFileA, CopyFileExW, CopyFileW|
 |[disables_wfp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_wfp.py)|Disable or Evade Security Tools::Bypass Windows File Protection (F0004.007)|NtWriteFile, CopyFileA, CopyFileExW, CopyFileW|
-|[modify_attachment_manager](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modify_attachment_manager.py)|Disable or Evade Security Tools (F0004)|--|
-|[modify_attachment_manager](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modify_attachment_manager.py)|Disable or Evade Security Tools::Modify Policy (F0004.005)|--|
+|[modify_attachment_manager](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_bypass.py)|Disable or Evade Security Tools (F0004)|--|
+|[modify_attachment_manager](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_bypass.py)|Disable or Evade Security Tools::Modify Policy (F0004.005)|--|
 |[office_security](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_security.py)|Disable or Evade Security Tools (F0004)|--|
 |[disables_event_logging](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_event_logging.py)|Disable or Evade Security Tools (F0004)|--|
 |[antisandbox_unhook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_unhook.py)|Disable or Evade Security Tools (F0004)|--|
