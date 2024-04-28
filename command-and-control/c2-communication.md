@@ -117,9 +117,9 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |[network_bind](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_bind.py)|C2 Communication (B0030)|listen, bind|
 |[network_document_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_docfile_http.py)|C2 Communication (B0030)|URLDownloadToFileW, HttpOpenRequestW, InternetCrackUrlW, InternetCrackUrlA, WSASend, InternetReadFile|
 |[network_country_distribution](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_cnc_generic.py)|C2 Communication (B0030)|--|
-|[banker_zeus_url](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/banker_zeus_url.py)|C2 Communication (B0030)|--|
-|[network_dyndns](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dyndns.py)|C2 Communication (B0030)|--|
-|[script_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/script_network_activity.py)|C2 Communication (B0030)|URLDownloadToFileW, HttpOpenRequestW, send, WSAConnect, InternetCrackUrlW, InternetCrackUrlA, SslEncryptPacket, InternetReadFile|
+|[banker_zeus_url](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/banker_zeus_url.py)|C2 Communication (B0030)|--|
+|[network_dyndns](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_dyndns.py)|C2 Communication (B0030)|--|
+|[script_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/script_downloader.py)|C2 Communication (B0030)|URLDownloadToFileW, HttpOpenRequestW, send, WSAConnect, InternetCrackUrlW, InternetCrackUrlA, SslEncryptPacket, InternetReadFile|
 
 ## Code Snippets
 
