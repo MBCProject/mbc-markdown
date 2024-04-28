@@ -59,8 +59,8 @@ See ATT&CK: **Screen Capture ([T1113](https://attack.mitre.org/techniques/T1113/
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[poullight_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/poullight_files.py)|Screen Capture (E1113)|--|
-|[captures_screenshot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/captures_screenshot.py)|Screen Capture (E1113)|LdrGetProcedureAddress, NtCreateFile|
+|[poullight_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/infostealer_poullight.py)|Screen Capture (E1113)|--|
+|[captures_screenshot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/infostealer_screenshot.py)|Screen Capture (E1113)|LdrGetProcedureAddress, NtCreateFile|
 
 ## References
 
