@@ -61,13 +61,13 @@ See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112
 |[persistence_registry_script](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_fileless.py)|Modify Registry (E1112)|RegSetValueExA, RegSetValueExW, NtSetValueKey|
 |[hides_recycle_bin_icon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/hides_recyclebin_icon.py)|Modify Registry (E1112)|--|
 |[disables_restore_default_state](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_restore_default_state.py)|Modify Registry (E1112)|--|
-|[disables_auto_app_termination](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_auto_app_termination.py)|Modify Registry (E1112)|--|
-|[nemty_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/nemty_regkeys.py)|Modify Registry (E1112)|--|
-|[warzonerat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/warzonerat_regkeys.py)|Modify Registry (E1112)|--|
+|[disables_auto_app_termination](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_app_autotermination.py)|Modify Registry (E1112)|--|
+|[nemty_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_nemty.py)|Modify Registry (E1112)|--|
+|[warzonerat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_warzone.py)|Modify Registry (E1112)|--|
 |[prevents_safeboot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/prevents_safeboot.py)|Modify Registry (E1112)|--|
 |[disables_smartscreen](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_smartscreen.py)|Modify Registry (E1112)|--|
 |[disables_context_menus](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_context_menus.py)|Modify Registry (E1112)|--|
-|[reg_binary](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/windows/CAPE.py)|Modify Registry (E1112)|RegCreateKeyExA, RegSetValueExA, RegCreateKeyExW, RegSetValueExW|
+|[reg_binary](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Modify Registry (E1112)|RegCreateKeyExA, RegSetValueExA, RegCreateKeyExW, RegSetValueExW|
 |[stealth_hidden_extension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hidden_extension.py)|Modify Registry (E1112)|--|
 |[disables_run_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_run_command.py)|Modify Registry (E1112)|--|
 |[persistence_ifeo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_ifeo.py)|Modify Registry (E1112)|--|
