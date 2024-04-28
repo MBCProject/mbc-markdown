@@ -108,9 +108,9 @@ As "server" and "client" are confusing terminology, we use the terms "controller
 |[bot_drive](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_drive.py)|C2 Communication (B0030)|--|
 |[recon_beacon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/recon_beacon.py)|C2 Communication (B0030)|HttpOpenRequestA, HttpSendRequestA|
 |[nemty_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_nemty.py)|C2 Communication (B0030)|InternetOpenA, InternetOpenUrlA|
-|[bot_drive2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bot_drive2.py)|C2 Communication (B0030)|--|
-|[bot_dirtjumper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bot_dirtjumper.py)|C2 Communication (B0030)|--|
-|[bot_athenahttp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bot_athenahttp.py)|C2 Communication (B0030)|--|
+|[bot_drive2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_drive2.py)|C2 Communication (B0030)|--|
+|[bot_dirtjumper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_dirtjumper.py)|C2 Communication (B0030)|--|
+|[bot_athenahttp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_athenahttp.py)|C2 Communication (B0030)|--|
 |[network_dns_tunneling_request](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_tunneling_request.py)|C2 Communication (B0030)|DnsQuery_A, DnsQuery_W|
 |[network_questionable_host](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_questionable_host.py)|C2 Communication (B0030)|--|
 |[injection_network_traffic](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_network_traffic.py)|C2 Communication (B0030)|HttpOpenRequestA, URLDownloadToFileW, HttpOpenRequestW, InternetConnectW, InternetConnectA, connect, InternetCrackUrlW, InternetCrackUrlA, WSASend|
