@@ -52,9 +52,9 @@ See ATT&CK: **Impair Defenses: Indicator Blocking ([T1562.006](https://attack.mi
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
 |[tampers_powershell_logging](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/tampers_powershell_logging.py)|Indicator Blocking (F0006)|--|
-|[stealth_hidden_extension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hidden_extension.py)|Indicator Blocking (F0006)|--|
+|[stealth_hidden_extension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hiddenextension.py)|Indicator Blocking (F0006)|--|
 |[stealth_hiddenreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hiddenreg.py)|Indicator Blocking (F0006)|--|
-|[stealth_hide_notifications](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hide_notifications.py)|Indicator Blocking (F0006)|--|
+|[stealth_hide_notifications](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hidenotifications.py)|Indicator Blocking (F0006)|--|
 |[creates_nullvalue](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/creates_nullvalue.py)|Indicator Blocking (F0006)|NtCreateKey, NtSetValueKey|
 |[tampers_etw](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/tampers_etw.py)|Indicator Blocking (F0006)|--|
 |[disables_wer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_wer.py)|Indicator Blocking (F0006)|--|
