@@ -101,7 +101,7 @@ See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://atta
 |[disables_windows_defender_logging](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windefender.py)|Disable or Evade Security Tools (F0004)|--|
 |[removes_windows_defender_contextmenu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windefender.py)|Disable or Evade Security Tools (F0004)|--|
 |[windows_defender_powershell](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windefender.py)|Disable or Evade Security Tools (F0004)|--|
-|[disables_browser_warn](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_browser_warn.py)|Disable or Evade Security Tools (F0004)|--|
+|[disables_browser_warn](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_browserwarn.py)|Disable or Evade Security Tools (F0004)|--|
 |[antiav_srp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_srp.py)|Disable or Evade Security Tools (F0004)|--|
 |[antiav_srp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_srp.py)|Disable or Evade Security Tools::Modify Policy (F0004.005)|--|
 |[bypass_firewall](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bypass_firewall.py)|Disable or Evade Security Tools (F0004)|--|
