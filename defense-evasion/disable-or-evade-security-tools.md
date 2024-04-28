@@ -73,8 +73,8 @@ See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://atta
 |[browser_security](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/browser_security.py)|Disable or Evade Security Tools (F0004)|--|
 |[disables_notificationcenter](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_notificationcenter.py)|Disable or Evade Security Tools (F0004)|--|
 |[clickfraud_volume](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/clickfraud_volume.py)|Disable or Evade Security Tools (F0004)|CoInternetSetFeatureEnabled|
-|[volatility_svcscan_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_svcscan_1.py)|Disable or Evade Security Tools (F0004)|--|
-|[volatility_svcscan_2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_svcscan_2.py)|Disable or Evade Security Tools (F0004)|--|
+|[volatility_svcscan_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_sig.py)|Disable or Evade Security Tools (F0004)|--|
+|[volatility_svcscan_2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_sig.py)|Disable or Evade Security Tools (F0004)|--|
 |[antisandbox_suspend](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_suspend.py)|Disable or Evade Security Tools (F0004)|NtSuspendThread|
 |[antiav_servicestop](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_servicestop.py)|Disable or Evade Security Tools (F0004)|OpenServiceA, ControlService, OpenServiceW|
 |[disables_security](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_security.py)|Disable or Evade Security Tools (F0004)|--|
