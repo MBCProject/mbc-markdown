@@ -83,8 +83,8 @@ See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://atta
 |[disables_windows_file_protection](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windows_file_protection.py)|Disable or Evade Security Tools (F0004)|--|
 |[disables_winfirewall](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_winfirewall.py)|Disable or Evade Security Tools (F0004)|--|
 |[disables_crashdumps](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_crashdumps.py)|Disable or Evade Security Tools (F0004)|--|
-|[disables_app_launch](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_app_launch.py)|Disable or Evade Security Tools (F0004)|--|
-|[disables_app_launch](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_app_launch.py)|Disable or Evade Security Tools::Modify Policy (F0004.005)|--|
+|[disables_app_launch](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_app.py)|Disable or Evade Security Tools (F0004)|--|
+|[disables_app_launch](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_app.py)|Disable or Evade Security Tools::Modify Policy (F0004.005)|--|
 |[clickfraud_cookies](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/clickfraud_cookies.py)|Disable or Evade Security Tools (F0004)|InternetSetOptionA|
 |[disables_wfp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_wfp.py)|Disable or Evade Security Tools (F0004)|NtWriteFile, CopyFileA, CopyFileExW, CopyFileW|
 |[disables_wfp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_wfp.py)|Disable or Evade Security Tools::Bypass Windows File Protection (F0004.007)|NtWriteFile, CopyFileA, CopyFileExW, CopyFileW|
