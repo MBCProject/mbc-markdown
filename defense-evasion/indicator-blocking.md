@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>28 April 2024</b></td>
 </tr>
 </table>
 
@@ -51,13 +51,13 @@ See ATT&CK: **Impair Defenses: Indicator Blocking ([T1562.006](https://attack.mi
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[tampers_powershell_logging](https://github.com/CAPESandbox/community/tree/master/modules/signatures/tampers_powershell_logging.py)|Indicator Blocking (F0006)|--|
-|[stealth_hidden_extension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_hidden_extension.py)|Indicator Blocking (F0006)|--|
-|[stealth_hiddenreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_hiddenreg.py)|Indicator Blocking (F0006)|--|
-|[stealth_hide_notifications](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_hide_notifications.py)|Indicator Blocking (F0006)|--|
-|[creates_nullvalue](https://github.com/CAPESandbox/community/tree/master/modules/signatures/creates_nullvalue.py)|Indicator Blocking (F0006)|NtCreateKey, NtSetValueKey|
-|[tampers_etw](https://github.com/CAPESandbox/community/tree/master/modules/signatures/tampers_etw.py)|Indicator Blocking (F0006)|--|
-|[disables_wer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/disables_wer.py)|Indicator Blocking (F0006)|--|
+|[tampers_powershell_logging](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/tampers_powershell_logging.py)|Indicator Blocking (F0006)|--|
+|[stealth_hidden_extension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hidden_extension.py)|Indicator Blocking (F0006)|--|
+|[stealth_hiddenreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hiddenreg.py)|Indicator Blocking (F0006)|--|
+|[stealth_hide_notifications](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hide_notifications.py)|Indicator Blocking (F0006)|--|
+|[creates_nullvalue](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/creates_nullvalue.py)|Indicator Blocking (F0006)|NtCreateKey, NtSetValueKey|
+|[tampers_etw](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/tampers_etw.py)|Indicator Blocking (F0006)|--|
+|[disables_wer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_wer.py)|Indicator Blocking (F0006)|--|
 
 ## References
 
