@@ -61,11 +61,11 @@ Rootkits can also be detected via memory dump analysis or virtual machine intros
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[spicyhotpot_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/spicyhotpot_behavior.py)|Rootkit (E1014)|--|
-|[accesses_primary_patition](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/accesses_primary_patition.py)|Rootkit (E1014)|--|
-|[direct_hdd_access](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/direct_hdd_access.py)|Rootkit (E1014)|--|
-|[enumerates_physical_drives](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/enumerates_physical_drives.py)|Rootkit (E1014)|--|
-|[physical_drive_access](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/physical_drive_access.py)|Rootkit (E1014)|--|
+|[spicyhotpot_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rootkit_spicyhotpot.py)|Rootkit (E1014)|--|
+|[accesses_primary_patition](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bootkit.py)|Rootkit (E1014)|--|
+|[direct_hdd_access](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bootkit.py)|Rootkit (E1014)|--|
+|[enumerates_physical_drives](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bootkit.py)|Rootkit (E1014)|--|
+|[physical_drive_access](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bootkit.py)|Rootkit (E1014)|--|
 
 ## References
 
