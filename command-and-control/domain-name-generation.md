@@ -47,9 +47,9 @@ This behavior is related to Unprotect technique U0906.
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[whois_create](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/whois_create.py)|Domain Name Generation (B0031)|--|
-|[network_dga](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dga.py)|Domain Name Generation (B0031)|--|
-|[network_dga_fraunhofer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dga_fraunhofer.py)|Domain Name Generation (B0031)|--|
+|[whois_create](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/whois_create.py)|Domain Name Generation (B0031)|--|
+|[network_dga](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_dga.py)|Domain Name Generation (B0031)|--|
+|[network_dga_fraunhofer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_dga_fraunhofer.py)|Domain Name Generation (B0031)|--|
 
 ## References
 
