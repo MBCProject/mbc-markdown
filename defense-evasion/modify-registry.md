@@ -56,10 +56,10 @@ See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112
 |[removes_networking_icon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_networking_icon.py)|Modify Registry (E1112)|--|
 |[tampers_powershell_logging](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/tampers_powershell_logging.py)|Modify Registry (E1112)|--|
 |[disables_power_options](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_power_options.py)|Modify Registry (E1112)|--|
-|[disables_cpl_disable](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_cpl_disable.py)|Modify Registry (E1112)|--|
+|[disables_cpl_disable](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_cpl_display.py)|Modify Registry (E1112)|--|
 |[browser_startpage](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/browser_startpage.py)|Modify Registry (E1112)|--|
-|[persistence_registry_script](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_registry_script.py)|Modify Registry (E1112)|RegSetValueExA, RegSetValueExW, NtSetValueKey|
-|[hides_recycle_bin_icon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/hides_recycle_bin_icon.py)|Modify Registry (E1112)|--|
+|[persistence_registry_script](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_fileless.py)|Modify Registry (E1112)|RegSetValueExA, RegSetValueExW, NtSetValueKey|
+|[hides_recycle_bin_icon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/hides_recyclebin_icon.py)|Modify Registry (E1112)|--|
 |[disables_restore_default_state](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_restore_default_state.py)|Modify Registry (E1112)|--|
 |[disables_auto_app_termination](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_auto_app_termination.py)|Modify Registry (E1112)|--|
 |[nemty_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/nemty_regkeys.py)|Modify Registry (E1112)|--|
