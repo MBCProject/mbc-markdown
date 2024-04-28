@@ -80,7 +80,7 @@ See ATT&CK: **Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques
 |[infostealer_keylog](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/infostealer_keylog.py)|Hijack Execution Flow::Procedure Hooking (F0015.007)|SetWindowsHookExA, GetAsyncKeyState, SetWindowsHookExW|
 |[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_mouse_hook.py)|Hijack Execution Flow (F0015)|SetWindowsHookExA, SetWindowsHookExW|
 |[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_mouse_hook.py)|Hijack Execution Flow::Procedure Hooking (F0015.007)|SetWindowsHookExA, SetWindowsHookExW|
-|[dll_load_uncommon_file_types](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/dll_load_uncommon_file_types.py)|Hijack Execution Flow (F0015)|LdrLoadDll|
+|[dll_load_uncommon_file_types](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/dll_load_uncommon.py)|Hijack Execution Flow (F0015)|LdrLoadDll|
 |[malicious_dynamic_function_loading](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/malicious_dynamic_function_loading.py)|Hijack Execution Flow (F0015)|LdrGetProcedureAddress, LdrLoadDll|
 
 ## References
