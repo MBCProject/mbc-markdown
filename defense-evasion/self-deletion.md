@@ -57,8 +57,8 @@ See ATT&CK: **Indicator Removal on Host: Uninstall Malicious Application ([T1630
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[trickbot_task_delete](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/trickbot_task_delete.py)|Self Deletion (F0007)|DeleteFileW|
-|[deletes_executed_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/deletes_executed_files.py)|Self Deletion (F0007)|--|
+|[trickbot_task_delete](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/trickbot_files.py)|Self Deletion (F0007)|DeleteFileW|
+|[deletes_executed_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/deletes_executed.py)|Self Deletion (F0007)|--|
 |[deletes_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/deletes_self.py)|Self Deletion (F0007)|NtDeleteFile, DeleteFileW, DeleteFileA, MoveFileWithProgressW, MoveFileWithProgressTransactedW|
 
 ## References
