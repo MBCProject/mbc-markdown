@@ -43,12 +43,12 @@ The MBC also associates the Bootkit behavior with Defense Evasion because the ma
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[accesses_primary_patition](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/accesses_primary_patition.py)|Bootkit (F0013)|--|
+|[accesses_primary_patition](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bootkit.py)|Bootkit (F0013)|--|
 |[bootkit](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bootkit.py)|Bootkit (F0013)|NtSetInformationFile, NtClose, DeviceIoControl, NtCreateFile, NtDuplicateObject, NtOpenFile, NtWriteFile, NtDeviceIoControlFile|
-|[direct_hdd_access](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/direct_hdd_access.py)|Bootkit (F0013)|--|
-|[enumerates_physical_drives](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/enumerates_physical_drives.py)|Bootkit (F0013)|--|
-|[physical_drive_access](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/physical_drive_access.py)|Bootkit (F0013)|--|
-|[suspicious_ioctl_scsipassthough](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/suspicious_ioctl_scsipassthough.py)|Bootkit (F0013)|DeviceIoControl, NtDeviceIoControlFile|
+|[direct_hdd_access](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bootkit.py)|Bootkit (F0013)|--|
+|[enumerates_physical_drives](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bootkit.py)|Bootkit (F0013)|--|
+|[physical_drive_access](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bootkit.py)|Bootkit (F0013)|--|
+|[suspicious_ioctl_scsipassthough](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bootkit.py)|Bootkit (F0013)|DeviceIoControl, NtDeviceIoControlFile|
 
 ## References
 
