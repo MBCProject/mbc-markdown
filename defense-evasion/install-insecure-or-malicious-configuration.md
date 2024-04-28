@@ -44,7 +44,7 @@ Malware may install malicious configuration settings or may modify existing conf
 |[bcdedit_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bcdedit_command.py)|Install Insecure or Malicious Configuration (B0047)|ShellExecuteExW, NtCreateUserProcess, CreateProcessInternalW|
 |[stealth_hidden_extension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hiddenextension.py)|Install Insecure or Malicious Configuration (B0047)|--|
 |[stealth_hiddenreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hiddenreg.py)|Install Insecure or Malicious Configuration (B0047)|--|
-|[stealth_hide_notifications](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hide_notifications.py)|Install Insecure or Malicious Configuration (B0047)|--|
+|[stealth_hide_notifications](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hidenotifications.py)|Install Insecure or Malicious Configuration (B0047)|--|
 |[disables_app_launch](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_app_launch.py)|Install Insecure or Malicious Configuration (B0047)|--|
 |[modify_hostfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modify_hostfile.py)|Install Insecure or Malicious Configuration (B0047)|--|
 |[antiav_srp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_srp.py)|Install Insecure or Malicious Configuration (B0047)|--|
