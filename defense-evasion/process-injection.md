@@ -83,12 +83,12 @@ The methods table includes existing ATT&CK sub-techniques, which have been enhan
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[volatility_handles_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_sig.py)|Process Injection (E1055)|--|
-|[volatility_ldrmodules_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_sig.py)|Process Injection (E1055)|--|
-|[volatility_ldrmodules_2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_sig.py)|Process Injection (E1055)|--|
-|[volatility_malfind_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_sig.py)|Process Injection (E1055)|--|
-|[volatility_malfind_2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_sig.py)|Process Injection (E1055)|--|
-|[volatility_modscan_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_sig.py)|Process Injection (E1055)|--|
+|[volatility_handles_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/volatility_sig.py)|Process Injection (E1055)|--|
+|[volatility_ldrmodules_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/volatility_sig.py)|Process Injection (E1055)|--|
+|[volatility_ldrmodules_2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/volatility_sig.py)|Process Injection (E1055)|--|
+|[volatility_malfind_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/volatility_sig.py)|Process Injection (E1055)|--|
+|[volatility_malfind_2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/volatility_sig.py)|Process Injection (E1055)|--|
+|[volatility_modscan_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/volatility_sig.py)|Process Injection (E1055)|--|
 |[injection_explorer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_explorer.py)|Process Injection (E1055)|NtReadVirtualMemory, NtWow64ReadVirtualMemory64, NtOpenProcess, FindWindowExA, SendNotifyMessageW, SendNotifyMessageA, NtCreateSection, SetWindowLongA, SetWindowLongW, FindWindowA, FindWindowW, FindWindowExW, ReadProcessMemory, SetWindowLongPtrA, NtOpenSection, SetWindowLongPtrW|
 |[injection_themeinitapihook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_themeinitapihook.py)|Process Injection (E1055)|ThemeInitApiHook|
 |[explorer_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/explorer_http.py)|Process Injection (E1055)|WinHttpConnect, WinHttpOpenRequest|
