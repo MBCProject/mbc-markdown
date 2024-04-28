@@ -68,28 +68,28 @@ See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112
 |[disables_smartscreen](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_smartscreen.py)|Modify Registry (E1112)|--|
 |[disables_context_menus](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_context_menus.py)|Modify Registry (E1112)|--|
 |[reg_binary](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Modify Registry (E1112)|RegCreateKeyExA, RegSetValueExA, RegCreateKeyExW, RegSetValueExW|
-|[stealth_hidden_extension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hidden_extension.py)|Modify Registry (E1112)|--|
+|[stealth_hidden_extension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hiddenextension.py)|Modify Registry (E1112)|--|
 |[disables_run_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_run_command.py)|Modify Registry (E1112)|--|
 |[persistence_ifeo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_ifeo.py)|Modify Registry (E1112)|--|
-|[persistence_slient_process_exit](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_slient_process_exit.py)|Modify Registry (E1112)|--|
+|[persistence_silent_process_exit](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_ifeo.py)|Modify Registry (E1112)|--|
 |[disables_backups](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_backups.py)|Modify Registry (E1112)|--|
 |[creates_largekey](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/creates_largekey.py)|Modify Registry (E1112)|RegSetValueExA, RegSetValueExW, NtSetValueKey|
 |[removes_username_startmenu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_username_startmenu.py)|Modify Registry (E1112)|--|
 |[stealth_hiddenreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hiddenreg.py)|Modify Registry (E1112)|--|
 |[disables_startmenu_search](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_startmenu_search.py)|Modify Registry (E1112)|--|
-|[stealth_hide_notifications](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hide_notifications.py)|Modify Registry (E1112)|--|
-|[disables_app_launch](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_app_launch.py)|Modify Registry (E1112)|--|
+|[stealth_hide_notifications](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hidenotifications.py)|Modify Registry (E1112)|--|
+|[disables_app_launch](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_app.py)|Modify Registry (E1112)|--|
 |[neshta_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/neshta_regkeys.py)|Modify Registry (E1112)|RegSetValueExA, RegSetValueExW|
 |[creates_nullvalue](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/creates_nullvalue.py)|Modify Registry (E1112)|NtCreateKey, NtSetValueKey|
-|[geodo_banking_trojan](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/geodo_banking_trojan.py)|Modify Registry (E1112)|--|
+|[geodo_banking_trojan](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/banker_geodo.py)|Modify Registry (E1112)|--|
 |[persistence_autorun](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_autorun.py)|Modify Registry (E1112)|NtSetValueKey, RegSetValueExA, RegSetValueExW, CreateServiceW, CreateServiceA|
-|[persistence_autorun_tasks](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_autorun_tasks.py)|Modify Registry (E1112)|NtSetValueKey, RegSetValueExA, RegSetValueExW, CreateServiceW, CreateServiceA|
-|[persistence_safeboot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_safeboot.py)|Modify Registry (E1112)|--|
+|[persistence_autorun_tasks](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_autorun.py)|Modify Registry (E1112)|NtSetValueKey, RegSetValueExA, RegSetValueExW, CreateServiceW, CreateServiceA|
+|[persistence_safeboot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_autorun.py)|Modify Registry (E1112)|--|
 |[modify_attachment_manager](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modify_attachment_manager.py)|Modify Registry (E1112)|--|
 |[modify_certs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modify_certs.py)|Modify Registry (E1112)|--|
 |[modify_proxy](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modify_proxy.py)|Modify Registry (E1112)|--|
 |[disables_appv_virtualization](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_appv_virtualization.py)|Modify Registry (E1112)|--|
-|[njrat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/njrat_regkeys.py)|Modify Registry (E1112)|--|
+|[njrat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/virus_neshta.py)|Modify Registry (E1112)|--|
 |[modify_uac_prompt](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modify_uac_prompt.py)|Modify Registry (E1112)|--|
 |[blackrat_registry_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/blackrat_registry_keys.py)|Modify Registry (E1112)|RegQueryValueExW, RegSetValueExW|
 |[rdptcp_key](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rdptcp_key.py)|Modify Registry (E1112)|--|
