@@ -34,12 +34,12 @@ Malware allocates thread local storage.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Dark Comet sets thread local storage values. [[1]](#1)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut sets thread local storage values. [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon sets thread local storage values. [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter sets thread local storage values. [[1]](#1)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip sets thread local storage values. [[1]](#1)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Rombertik sets thread local storage values. [[1]](#1)|
+|[**Dark Comet**](../../xample-malware/dark-comet.md)|2008|--|Dark Comet sets thread local storage values. [[1]](#1)|
+|[**Gamut**](../../xample-malware/gamut.md)|2014|--|Gamut sets thread local storage values. [[1]](#1)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|--|Hupigon sets thread local storage values. [[1]](#1)|
+|[**Kovter**](../../xample-malware/kovter.md)|2016|--|Kovter sets thread local storage values. [[1]](#1)|
+|[**Redhip**](../../xample-malware/redhip.md)|2011|--|Redhip sets thread local storage values. [[1]](#1)|
+|[**Rombertik**](../../xample-malware/rombertik.md)|2015|--|Rombertik sets thread local storage values. [[1]](#1)|
 
 ## Detection
 

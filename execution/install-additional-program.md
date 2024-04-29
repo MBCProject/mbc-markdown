@@ -58,7 +58,7 @@ Droppers may be described as “single stage” or “two stage.” While the fo
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|The malware installs an open-source program called mitmproxy. [[16]](#16)|
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|The malware contains an embedded PE file. [[19]](#19)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut contains an embedded PE file. [[19]](#19)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip contains an embedded PE file. [[19]](#19)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip contains an embedded PE file. [[19]](#19)|
 |[**ElectroRAT**](../xample-malware/electrorat.md)|2020|--|ElectroRat looks for wallets to steal cryptocurrency. [[20]](#20)|
 
 ## Detection

@@ -34,8 +34,8 @@ Malware resumes a thread.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|--|CryptoLocker resumes thread. [[1]](#1)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Dark Comet resumes a thread. [[1]](#1)|
+|[**CryptoLocker**](../../xample-malware/cryptolocker.md)|2013|--|CryptoLocker resumes thread. [[1]](#1)|
+|[**Dark Comet**](../../xample-malware/dark-comet.md)|2008|--|Dark Comet resumes a thread. [[1]](#1)|
 
 ## Detection
 

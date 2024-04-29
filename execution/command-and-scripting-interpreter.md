@@ -50,7 +50,7 @@ See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.or
 |[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut accepts command line arguments. [[9]](#9)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon accepts command line arguments. [[9]](#9)|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi accepts command line arguments. [[9]](#9)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip accepts command line arguments. [[9]](#9)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip accepts command line arguments. [[9]](#9)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware accepts command line arguments. [[9]](#9)|
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|The malware installs a script to inject a JavaScript script and modify web traffic. [[10]](#10)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|TrickBot accepts command line arguments. [[9]](#9)|

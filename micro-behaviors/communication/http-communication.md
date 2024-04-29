@@ -59,11 +59,11 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0002.010|The malware initializes IWebBrowser2. [[1]](#1)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0002.011|The malware extracts the HTTP body. [[1]](#1)|
-|[**Emotet**](../xample-malware/emotet.md)|2018|C0002.012|The malware creates a HTTP request. [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|C0002.009|Kovter connects to a HTTP server. [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|C0002.012|Kovter creates a HTTP request. [[1]](#1)|
+|[**BlackEnergy**](../../xample-malware/blackenergy.md)|2007|C0002.010|The malware initializes IWebBrowser2. [[1]](#1)|
+|[**BlackEnergy**](../../xample-malware/blackenergy.md)|2007|C0002.011|The malware extracts the HTTP body. [[1]](#1)|
+|[**Emotet**](../../xample-malware/emotet.md)|2018|C0002.012|The malware creates a HTTP request. [[1]](#1)|
+|[**Kovter**](../../xample-malware/kovter.md)|2016|C0002.009|Kovter connects to a HTTP server. [[1]](#1)|
+|[**Kovter**](../../xample-malware/kovter.md)|2016|C0002.012|Kovter creates a HTTP request. [[1]](#1)|
 
 ## Detection
 

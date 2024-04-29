@@ -46,7 +46,7 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 |[**WebCobra**](../xample-malware/webcobra.md)|2018|--|Malware learns about the system so it can drop compatible miner software. [[8]](#8)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|--|Malware uses Window's command prompt commands to gather system info, task list, installed drivers, and installed programs.  [[1]](#1)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|Malware uses Systeminfo to gather OS version, system configuration, BIOS, the motherboard, and processor. [[2]](#2)|
-|[**DarkComet**](../xample-malware/darkcomet.md)|2008|--|Malware can collect information about the computer, resources, and operating system version.  [[3]](#3)|
+|[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|Malware can collect information about the computer, resources, and operating system version.  [[3]](#3)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|--|Emotet collects information related to OS, processes, and sometimes mail client information and sends it to C2. [[4]](#4)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Malware gathers information (OS version, workgroup status, computer name, domain/workgroup name, file name of infected project file) about each computer in the network to spread itself. [[5]](#5)|
 |[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet checks OS version. [[5]](#5)|
@@ -57,7 +57,7 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon queries environment variables. [[9]](#9)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter gets disk information. [[9]](#9)|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi checks OS version. [[9]](#9)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip checks the OS version. [[9]](#9)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip checks the OS version. [[9]](#9)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Rombertik gets the disk size. [[9]](#9)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon gets the hostname. [[9]](#9)|
 |[**UP007**](../xample-malware/up007.md)|2016|--|The malware queries environment variables. [[9]](#9)|

@@ -48,11 +48,11 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|--|The malware adds registry entries to ensure automatic execution at system startup. [[9]](#9)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy 3 variant drops its main DLL component and then creates a .lnk shortcut to that file in the startup folder, allowing it to persist via a Run registry key. [[10]](#10) [[17]](#17)|
 |[**Conficker**](../xample-malware/conficker.md)|2008|--|To start itself at system boot, the virus saves a copy of its DLL form to a random filename in the Windows system folder, then adds registry keys to have svchost.exe invoke that DLL as an invisible network service. [[11]](#11)|
-|[**DarkComet**](../xample-malware/darkcomet.md)|2008|--|DarkComet adds several registry entries to enable automatic execution at startup. [[12]](#12)|
+|[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|DarkComet adds several registry entries to enable automatic execution at startup. [[12]](#12)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|--|To start itself at system boot, Emotet adds the downloaded payload to the registry to maintain persistence. [[13]](#13)|
 |[**Bagle**](../xample-malware/bagle.md)|2004|--|Bagle adds registry keys to enable its automatic execution at every system startup. [[14]](#14)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Malware adds registry keys to enable startup after reboot. [[15]](#15)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip persists via a Run registry key. [[17]](#17)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip persists via a Run registry key. [[17]](#17)|
 |[**WannaCry**](../xample-malware/wannacry.md)|2017|--|WannaCry creates two registry run keys to ensure persistence. [[18]](#18)|
 |[**CryptoWall**](../xample-malware/cryptowall.md)|A copy of Crytowall is placed in the startup folder and a directory at the root of the system drive. Also adds multiple "autostart" registry keys. [[19]](#19)|
 

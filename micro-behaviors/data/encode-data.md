@@ -41,20 +41,20 @@ Malware may encode data.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**CryptoLocker**](../xample-malware/cryptolocker.md)|2013|C0026.002|CryptoLocker encodes data using XOR. [[1]](#1)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|C0026.002|Dark Comet encodes data using XOR. [[1]](#1)|
-|[**DNSChanger**](../xample-malware/dnschanger.md)|2011|C0026.002|DNSChanger encodes data using XOR. [[1]](#1)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|C0026.002|Gamut encodes data using XOR. [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0026.002|Hupigon encodes data using XOR. [[1]](#1)|
-|[**Kraken**](../xample-malware/kraken.md)|2008|C0026.002|Kraken encodes data using XOR. [[1]](#1)|
-|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|C0026.002|Locky Bart encodes data using XOR. [[1]](#1)|
-|[**Mebromi**](../xample-malware/mebromi.md)|2011|C0026.002|Mebromi encodes data using XOR. [[1]](#1)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|C0026.002|Redhip encodes data using XOR. [[1]](#1)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|C0026.002|Rombertik encodes data using XOR. [[1]](#1)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|C0026.002|Shamoon encodes data using XOR. [[1]](#1)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|C0026.002|Stuxnet encodes data using XOR. [[1]](#1)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|C0026.002|TrickBot encodes data using XOR. [[1]](#1)|
-|[**UP007**](../xample-malware/up007.md)|2016|C0026.002|The malware encodes data using XOR. [[1]](#1)|
+|[**CryptoLocker**](../../xample-malware/cryptolocker.md)|2013|C0026.002|CryptoLocker encodes data using XOR. [[1]](#1)|
+|[**Dark Comet**](../../xample-malware/dark-comet.md)|2008|C0026.002|Dark Comet encodes data using XOR. [[1]](#1)|
+|[**DNSChanger**](../../xample-malware/dnschanger.md)|2011|C0026.002|DNSChanger encodes data using XOR. [[1]](#1)|
+|[**Gamut**](../../xample-malware/gamut.md)|2014|C0026.002|Gamut encodes data using XOR. [[1]](#1)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|C0026.002|Hupigon encodes data using XOR. [[1]](#1)|
+|[**Kraken**](../../xample-malware/kraken.md)|2008|C0026.002|Kraken encodes data using XOR. [[1]](#1)|
+|[**Locky Bart**](../../xample-malware/locky-bart.md)|2017|C0026.002|Locky Bart encodes data using XOR. [[1]](#1)|
+|[**Mebromi**](../../xample-malware/mebromi.md)|2011|C0026.002|Mebromi encodes data using XOR. [[1]](#1)|
+|[**Redhip**](../../xample-malware/redhip.md)|2011|C0026.002|Redhip encodes data using XOR. [[1]](#1)|
+|[**Rombertik**](../../xample-malware/rombertik.md)|2015|C0026.002|Rombertik encodes data using XOR. [[1]](#1)|
+|[**Shamoon**](../../xample-malware/shamoon.md)|2012|C0026.002|Shamoon encodes data using XOR. [[1]](#1)|
+|[**Stuxnet**](../../xample-malware/stuxnet.md)|2010|C0026.002|Stuxnet encodes data using XOR. [[1]](#1)|
+|[**TrickBot**](../../xample-malware/trickbot.md)|2016|C0026.002|TrickBot encodes data using XOR. [[1]](#1)|
+|[**UP007**](../../xample-malware/up007.md)|2016|C0026.002|The malware encodes data using XOR. [[1]](#1)|
 
 ## Detection
 

@@ -39,7 +39,7 @@ Memory dump evasion is an anti-forensic technique in which malware hinders retri
 |---|---|---|
 |**Code Encryption in Memory**|B0006.001|Encrypt the executing malware instance code in memory.|
 |**Erase the PE header**|B0006.002|Erase PE header from memory.|
-|**Feed Misinformation**|B0006.008|API behavior can be altered to prevent memory dumps. For example, inaccurate data can be reported when the contents of the physical memory of the system on which the malware instance is executing is retrieved. See [Hooking](../credential-access/hooking.md).|
+|**Feed Misinformation**|B0006.008|API behavior can be altered to prevent memory dumps. For example, inaccurate data can be reported when the contents of the physical memory of the system on which the malware instance is executing is retrieved. See [Hijack Execution Flow](../defense-evasion/hijack-execution-flow.md).|
 |**Flow Opcode Obstruction**|B0006.009|Flow opcodes (e.g., jumps, loops) are removed and emulated (or decrypted) by the packer during execution, resulting in incorrect dumps. [[6]](#6).|
 |**Guard Pages**|B0006.006|Encrypt blocks of code individually and decrypt temporarily only upon execution. This method is related to Unprotect technique U0102.|
 |**Hide virtual memory**|B0006.003|Hide arbitrary segments of virtual memory.|

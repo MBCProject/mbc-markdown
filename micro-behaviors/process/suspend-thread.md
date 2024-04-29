@@ -34,10 +34,10 @@ This behavior is related to Unprotect technique U0101.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Dark Comet suspends threads. [[1]](#1)|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR suspends threads. [[1]](#1)|
-|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|GravityRAT suspends threads. [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon suspends threads. [[1]](#1)|
+|[**Dark Comet**](../../xample-malware/dark-comet.md)|2008|--|Dark Comet suspends threads. [[1]](#1)|
+|[**GoBotKR**](../../xample-malware/gobotkr.md)|2019|--|GoBotKR suspends threads. [[1]](#1)|
+|[**GravityRAT**](../../xample-malware/gravity-rat.md)|2018|--|GravityRAT suspends threads. [[1]](#1)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|--|Hupigon suspends threads. [[1]](#1)|
 
 ## Detection
 

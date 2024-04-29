@@ -58,7 +58,7 @@ Malware may enumerate files and directories or may search for specific files or 
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR checks if a file exists. [[6]](#6)|
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|The malware gets a file size. [[6]](#6)|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi gets a file size. [[6]](#6)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip gets a file size. [[6]](#6)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip gets a file size. [[6]](#6)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware gets the file version info. [[6]](#6)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon gets a common file path. [[6]](#6)|
 |[**ElectroRAT**](../xample-malware/electrorat.md)|2020|--|ElectroRat looks for wallets to steal cryptocurrency. [[7]](#7)|

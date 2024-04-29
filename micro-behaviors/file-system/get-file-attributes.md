@@ -34,12 +34,12 @@ Malware gets file attributes.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Dark Comet gets file attributes. [[1]](#1)|
-|[**DNSChanger**](../xample-malware/dnschanger.md)|2011|--|DNSChanger gets file attributes. [[1]](#1)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut gets file attributes. [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon gets file attributes. [[1]](#1)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip gets file attributes. [[1]](#1)|
-|[**UP007**](../xample-malware/up007.md)|2016|--|UP007 gets file attributes. [[1]](#1)|
+|[**Dark Comet**](../../xample-malware/dark-comet.md)|2008|--|Dark Comet gets file attributes. [[1]](#1)|
+|[**DNSChanger**](../../xample-malware/dnschanger.md)|2011|--|DNSChanger gets file attributes. [[1]](#1)|
+|[**Gamut**](../../xample-malware/gamut.md)|2014|--|Gamut gets file attributes. [[1]](#1)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|--|Hupigon gets file attributes. [[1]](#1)|
+|[**Redhip**](../../xample-malware/redhip.md)|2011|--|Redhip gets file attributes. [[1]](#1)|
+|[**UP007**](../../xample-malware/up007.md)|2016|--|UP007 gets file attributes. [[1]](#1)|
 
 ## Detection
 

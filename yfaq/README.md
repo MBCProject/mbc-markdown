@@ -32,7 +32,7 @@
 * **Malware analysis support**: MBC's set of identified, organized behaviors helps an analyst know what to look for, informing the malware analysis process.
 
 ### What are objectives? ###
-**Objectives** correspond to the intentions behind malware behaviors. For example, malware may use [Hooking](../credential-access/hooking.md) (behavior) to load and execute code within the context of another process either to hide its execution (defense evasion objective), to gain elevated privileges (privilege escalation objective), or to access the process's memory (credential access objective). 
+**Objectives** correspond to the intentions behind malware behaviors. For example, malware may use [Hijack Execution Flow](../defense-evasion/hijack-execution-flow.md) (behavior) to load and execute code within the context of another process either to hide its execution (defense evasion objective), to gain elevated privileges (privilege escalation objective), or to access the process's memory (credential access objective). 
 
 ### How were behaviors identified? ###
 As discussed [below](#maec), many MBC behaviors stemmed from MAEC and EMA. Mapping [capa rules](https://github.com/fireeye/capa-rules) to MBC was another avenue for defining behaviors (especially MBC's micro-behaviors). We also identified MBC behaviors by studying publicly available analysis reports and output of automated analysis engines (some of which map behavior indicators to ATT&CK). Such resources enabled identification of MBC-enhanced ATT&CK techniques, as well as the definition of new behaviors for results that could not be mapped to ATT&CK.
@@ -120,7 +120,7 @@ Although one-to-one mappings are best practice, there may be some instances when
 Behaviors identified by automated tools are often intentionally broad to give an overview of the malware sample's behavior. Broad behaviors will often map to multiple MBC behaviors. For example, if a tool reports that Armadillo was used on a malware sample, both [Executable Code Obfuscation](../anti-static-analysis/executable-code-obfuscation.md) and [Software Packing](../anti-static-analysis/software-packing.md) behaviors apply.
 
 ### How are MBC behaviors, possibly at different levels of abstraction, associated? ###
-MBC does not define relationships between behaviors, so association of behaviors must be done at the reporting level. The [GoBotKR](../xample-malware/gobotkr.md) example [above](./gobotkr) illustrates how two behaviors can be associated by the human-readable text: "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2).
+MBC does not define relationships between behaviors, so association of behaviors must be done at the reporting level. The [GoBotKR](../xample-malware/gobotkr.md) example above illustrates how two behaviors can be associated by the human-readable text: "The malware installs two instances of itself on the system. The second instance (watchdog) monitors whether the first instance is still active and reinstalls it if it has been removed from the system" [[2]](#2).
 
 ### Can variant names captured by an anti-virus tool be captured in MBC? ###
 No. MBC captures behaviors and characteristics directly associated with malware code. Variant names are outside MBC's scope. A variant name may lead to published reports, in which case, one could use the report to map the sample to its associated behaviors.
@@ -180,7 +180,7 @@ Cuckoo Sandbox 2.0.7 includes mappings between its signatures and ATT&CK. The MB
 ## <a name="other"></a>MBC and Other Community Efforts ##
 
 ### <a name="maec"></a>What is the relationship between MAEC, EMA, and MBC? ###
-In short, the [Malware Attribute Enumeration and Characterization (MAEC)](http://maecproject.github.io/) led to the [Encyclopedia of Malware Attributes (EMA)](https://collaborate.mitre.org/ema/index.php/ema:Main_Page), and EMA led to the Malware Behavior Catalog.
+In short, the [Malware Attribute Enumeration and Characterization (MAEC)](http://maecproject.github.io/) led to the Encyclopedia of Malware Attributes (EMA), and EMA led to the Malware Behavior Catalog.
 
 MAEC is a community-developed structured language for encoding and sharing high-fidelity information about malware based upon attributes such as behaviors, artifacts, and relationships between malware samples. The vocabularies associated with MAEC define malware capabilities and behaviors, which are further defined and specified in EMA, along with "behavior instances" that capture specific malware instances/families exhibiting behaviors.
 
@@ -231,7 +231,7 @@ We can't predict what will happen in the long run, but currently there are no pl
 ### Why aren't ATT&CK [Initial Access](https://attack.mitre.org/tactics/TA0001/) techniques included in MBC? ###
 Initial Access - the way malware gains an initial foothold within a system - is not typically determined by analyzing the malware's code. For example, in ATT&CK's [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001/) sub-technique, the attachment may be a malicious executable file, but the *code* of the attached file's isn't related to its email delivery. This is not to say an analyst can't surmise initial access by studying a malware instance, but determining initial access requires evidence beyond the malware's code. 
 
-Some malware self-replicates or distributes other malware, but in keeping with MBC's *malware, code-oriented perspective*, such behaviors would be associated with the [LATERAL MOVEMENT](../lateral-movement), [EXECUTION](../execution), and/or [IMPACT](../impact) objectives in MBC. For example, if malware sends spearphishing email, its behavior would be captured by the [Send Email](../executionsend-email.md) behavior, which is associated with execution and lateral movement.
+Some malware self-replicates or distributes other malware, but in keeping with MBC's *malware, code-oriented perspective*, such behaviors would be associated with the [LATERAL MOVEMENT](../lateral-movement), [EXECUTION](../execution), and/or [IMPACT](../impact) objectives in MBC. For example, if malware sends spearphishing email, its behavior would be captured by the [Send Email](../execution/send-email.md) behavior, which is associated with execution and lateral movement.
 
 ### Why aren't [PRE-ATT&CK](https://attack.mitre.org/techniques/pre/) techniques used by malware authors included in MBC? ###
 **For example, why doesn't the [Obfuscate or Encrypt Code](https://attack.mitre.org/techniques/T1319/) technique under the [Adversary OPSEC](https://attack.mitre.org/tactics/TA0021/) tactic apply to malware showing signs of anti-analysis techniques?**

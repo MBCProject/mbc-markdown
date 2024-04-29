@@ -32,7 +32,7 @@
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip finds taskbars. [[1]](#1)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip finds taskbars. [[1]](#1)|
 
 ## Detection
 

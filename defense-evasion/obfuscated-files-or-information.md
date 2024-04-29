@@ -79,7 +79,7 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[**Kraken**](../xample-malware/kraken.md)|2008|E1027.m02|Kraken encodes data using XOR. [[9]](#9)|
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|E1027.m02|Locky Bart encodes data using XOR. [[9]](#9)|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|E1027.m02|Mebromi encodes data using XOR. [[9]](#9)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|E1027.m02|Redhip encodes data using XOR. [[9]](#9)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|E1027.m02|Redhip encodes data using XOR. [[9]](#9)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|E1027.m02|Rombertik encodes data using XOR. [[9]](#9)|
 |[**SamSam**](../xample-malware/samsam.md)|2015|E1027.m07|SamSam obfuscates functions, class names and strings, including the list of targeted file extensions, the help file contents and environment variables using DES encryption with a fixed hard-coded key and the IV. [[10]](#10)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|E1027.m02|Shamoon encodes data using XOR. [[9]](#9)|

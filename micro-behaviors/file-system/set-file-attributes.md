@@ -34,12 +34,12 @@ Malware sets file attributes.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**DNSChanger**](../xample-malware/dnschanger.md)|2011|--|DNSChanger sets file attributes. [[1]](#1)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut sets file attributes. [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon sets file attributes. [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter sets file attributes. [[1]](#1)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip sets file attributes. [[1]](#1)|
-|[**UP007**](../xample-malware/up007.md)|2016|--|UP007 sets file attributes. [[1]](#1)|
+|[**DNSChanger**](../../xample-malware/dnschanger.md)|2011|--|DNSChanger sets file attributes. [[1]](#1)|
+|[**Gamut**](../../xample-malware/gamut.md)|2014|--|Gamut sets file attributes. [[1]](#1)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|--|Hupigon sets file attributes. [[1]](#1)|
+|[**Kovter**](../../xample-malware/kovter.md)|2016|--|Kovter sets file attributes. [[1]](#1)|
+|[**Redhip**](../../xample-malware/redhip.md)|2011|--|Redhip sets file attributes. [[1]](#1)|
+|[**UP007**](../../xample-malware/up007.md)|2016|--|UP007 sets file attributes. [[1]](#1)|
 
 ## Detection
 
