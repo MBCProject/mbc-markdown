@@ -79,11 +79,11 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 |[recon_beacon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/recon_beacon.py)|System Information Discovery (E1082)|HttpOpenRequestA, HttpSendRequestA|
 |[uses_adfind](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/uses_adfind.py)|System Information Discovery (E1082)|--|
 |[antivm_generic_cpu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_cpu.py)|System Information Discovery (E1082)|--|
-|[accesses_mailslot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/accesses_mailslot.py)|System Information Discovery (E1082)|--|
-|[accesses_netlogon_regkey](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/accesses_netlogon_regkey.py)|System Information Discovery (E1082)|--|
+|[accesses_mailslot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/accesses_netlogon.py)|System Information Discovery (E1082)|--|
+|[accesses_netlogon_regkey](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/accesses_netlogon.py)|System Information Discovery (E1082)|--|
 |[antivm_generic_bios](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_bios.py)|System Information Discovery (E1082)|--|
 |[antivm_hyperv_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_hyperv_keys.py)|System Information Discovery (E1082)|--|
-|[uses_windows_utilities_nltest](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/uses_windows_utilities_nltest.py)|System Information Discovery (E1082)|--|
+|[uses_windows_utilities_nltest](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/windows_utilities.py)|System Information Discovery (E1082)|--|
 |[antivm_generic_scsi](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_scsi.py)|System Information Discovery (E1082)|RegOpenKeyExW, RegQueryValueExA, RegQueryValueExW, RegOpenKeyExA|
 |[antivm_parallels_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_parallels_keys.py)|System Information Discovery (E1082)|--|
 |[antivm_generic_diskreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_diskreg.py)|System Information Discovery (E1082)|--|
