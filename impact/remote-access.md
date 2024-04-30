@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -61,48 +61,48 @@ Note that the **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniqu
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[persistence_rdp_registry](https://github.com/CAPESandbox/community/tree/master/modules/signatures/persistence_rdp_registry.py)|Remote Access (B0022)|--|
-|[rat_spynet](https://github.com/CAPESandbox/community/tree/master/modules/signatures/rat_spynet.py)|Remote Access (B0022)|--|
-|[parallax_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/parallax_mutexes.py)|Remote Access (B0022)|--|
-|[rat_pcclient](https://github.com/CAPESandbox/community/tree/master/modules/signatures/rat_pcclient.py)|Remote Access (B0022)|--|
-|[rat_fynloski_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/rat_fynloski_mutexes.py)|Remote Access (B0022)|--|
-|[rat_beebus_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/rat_beebus_mutexes.py)|Remote Access (B0022)|--|
-|[xpertrat_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/xpertrat_files.py)|Remote Access (B0022)|--|
-|[xpertrat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/xpertrat_mutexes.py)|Remote Access (B0022)|--|
-|[warzonerat_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/warzonerat_files.py)|Remote Access (B0022)|--|
-|[warzonerat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/warzonerat_regkeys.py)|Remote Access (B0022)|--|
-|[evil_grab](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Remote Access (B0022)|RegCreateKeyExA, RegSetValueExA, RegCreateKeyExW, RegSetValueExW|
-|[PlugX](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Remote Access (B0022)|memcpy, RtlDecompressBuffer|
-|[ratsnif_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/ratsnif_mutexes.py)|Remote Access (B0022)|--|
-|[netwire_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/netwire_behavior.py)|Remote Access (B0022)|RegSetValueExA|
-|[njrat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/njrat_regkeys.py)|Remote Access (B0022)|--|
-|[rat_xtreme_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/rat_xtreme_mutexes.py)|Remote Access (B0022)|--|
-|[blackrat_apis](https://github.com/CAPESandbox/community/tree/master/modules/signatures/blackrat_apis.py)|Remote Access (B0022)|CryptHashData, RtlDecompressBuffer, CreateProcessInternalW|
-|[blackrat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/blackrat_mutexes.py)|Remote Access (B0022)|--|
-|[blackrat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/blackrat_network_activity.py)|Remote Access (B0022)|send|
-|[blackrat_registry_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/blackrat_registry_keys.py)|Remote Access (B0022)|RegQueryValueExW, RegSetValueExW|
-|[uses_rdp_clip](https://github.com/CAPESandbox/community/tree/master/modules/signatures/uses_rdp_clip.py)|Remote Access (B0022)|--|
-|[uses_remote_desktop_session](https://github.com/CAPESandbox/community/tree/master/modules/signatures/uses_remote_desktop_session.py)|Remote Access (B0022)|--|
-|[rat_plugx_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/rat_plugx_mutexes.py)|Remote Access (B0022)|--|
-|[obliquerat_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/obliquerat_files.py)|Remote Access (B0022)|--|
-|[obliquerat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/obliquerat_mutexes.py)|Remote Access (B0022)|--|
-|[obliquerat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/obliquerat_network_activity.py)|Remote Access (B0022)|send|
-|[venomrat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/venomrat_mutexes.py)|Remote Access (B0022)|--|
-|[trochilusrat_apis](https://github.com/CAPESandbox/community/tree/master/modules/signatures/trochilusrat_apis.py)|Remote Access (B0022)|OutputDebugStringW, NtCreateUserProcess, RegSetValueExW, CreateProcessInternalW|
-|[dcrat_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/dcrat_behavior.py)|Remote Access (B0022)|GetAddrInfo, GetAddrInfoW, CryptHashData|
-|[dcrat_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/dcrat_files.py)|Remote Access (B0022)|--|
-|[dcrat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/dcrat_mutexes.py)|Remote Access (B0022)|--|
-|[karagany_system_event_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/karagany_system_event_objects.py)|Remote Access (B0022)|NtCreateEventEx, NtCreateEvent|
-|[karagany_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/karagany_files.py)|Remote Access (B0022)|--|
-|[orcusrat_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/orcusrat_behavior.py)|Remote Access (B0022)|RegOpenKeyExW|
-|[limerat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/limerat_mutexes.py)|Remote Access (B0022)|--|
-|[limerat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/limerat_regkeys.py)|Remote Access (B0022)|--|
-|[rat_luminosity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/rat_luminosity.py)|Remote Access (B0022)|CryptHashData, NtCreateMutant, NtCreateFile|
-|[rat_nanocore](https://github.com/CAPESandbox/community/tree/master/modules/signatures/rat_nanocore.py)|Remote Access (B0022)|CryptHashData|
-|[static_rat_config](https://github.com/CAPESandbox/community/tree/master/modules/signatures/static_rat_config.py)|Remote Access (B0022)|--|
-|[remcos_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/remcos_files.py)|Remote Access (B0022)|--|
-|[remcos_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/remcos_mutexes.py)|Remote Access (B0022)|--|
-|[remcos_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/remcos_regkeys.py)|Remote Access (B0022)|--|
+|[persistence_rdp_registry](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_rdp_registry.py)|Remote Access (B0022)|--|
+|[rat_spynet](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_spynet.py)|Remote Access (B0022)|--|
+|[parallax_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/parallax_mutexes.py)|Remote Access (B0022)|--|
+|[rat_pcclient](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_pcclient.py)|Remote Access (B0022)|--|
+|[rat_fynloski_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_fynloski_mutexes.py)|Remote Access (B0022)|--|
+|[rat_beebus_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_beebus_mutexes.py)|Remote Access (B0022)|--|
+|[xpertrat_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/xpertrat_files.py)|Remote Access (B0022)|--|
+|[xpertrat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/xpertrat_mutexes.py)|Remote Access (B0022)|--|
+|[warzonerat_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/warzonerat_files.py)|Remote Access (B0022)|--|
+|[warzonerat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/warzonerat_regkeys.py)|Remote Access (B0022)|--|
+|[evil_grab](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/windows/CAPE.py)|Remote Access (B0022)|RegCreateKeyExA, RegSetValueExA, RegCreateKeyExW, RegSetValueExW|
+|[PlugX](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/windows/CAPE.py)|Remote Access (B0022)|memcpy, RtlDecompressBuffer|
+|[ratsnif_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ratsnif_mutexes.py)|Remote Access (B0022)|--|
+|[netwire_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/netwire_behavior.py)|Remote Access (B0022)|RegSetValueExA|
+|[njrat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/njrat_regkeys.py)|Remote Access (B0022)|--|
+|[rat_xtreme_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_xtreme_mutexes.py)|Remote Access (B0022)|--|
+|[blackrat_apis](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/blackrat_apis.py)|Remote Access (B0022)|CryptHashData, RtlDecompressBuffer, CreateProcessInternalW|
+|[blackrat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/blackrat_mutexes.py)|Remote Access (B0022)|--|
+|[blackrat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/blackrat_network_activity.py)|Remote Access (B0022)|send|
+|[blackrat_registry_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/blackrat_registry_keys.py)|Remote Access (B0022)|RegQueryValueExW, RegSetValueExW|
+|[uses_rdp_clip](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/uses_rdp_clip.py)|Remote Access (B0022)|--|
+|[uses_remote_desktop_session](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/uses_remote_desktop_session.py)|Remote Access (B0022)|--|
+|[rat_plugx_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_plugx_mutexes.py)|Remote Access (B0022)|--|
+|[obliquerat_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/obliquerat_files.py)|Remote Access (B0022)|--|
+|[obliquerat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/obliquerat_mutexes.py)|Remote Access (B0022)|--|
+|[obliquerat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/obliquerat_network_activity.py)|Remote Access (B0022)|send|
+|[venomrat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/venomrat_mutexes.py)|Remote Access (B0022)|--|
+|[trochilusrat_apis](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/trochilusrat_apis.py)|Remote Access (B0022)|OutputDebugStringW, NtCreateUserProcess, RegSetValueExW, CreateProcessInternalW|
+|[dcrat_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/dcrat_behavior.py)|Remote Access (B0022)|GetAddrInfo, GetAddrInfoW, CryptHashData|
+|[dcrat_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/dcrat_files.py)|Remote Access (B0022)|--|
+|[dcrat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/dcrat_mutexes.py)|Remote Access (B0022)|--|
+|[karagany_system_event_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/karagany_system_event_objects.py)|Remote Access (B0022)|NtCreateEventEx, NtCreateEvent|
+|[karagany_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/karagany_files.py)|Remote Access (B0022)|--|
+|[orcusrat_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/orcusrat_behavior.py)|Remote Access (B0022)|RegOpenKeyExW|
+|[limerat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/limerat_mutexes.py)|Remote Access (B0022)|--|
+|[limerat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/limerat_regkeys.py)|Remote Access (B0022)|--|
+|[rat_luminosity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_luminosity.py)|Remote Access (B0022)|CryptHashData, NtCreateMutant, NtCreateFile|
+|[rat_nanocore](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_nanocore.py)|Remote Access (B0022)|CryptHashData|
+|[static_rat_config](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/static_rat_config.py)|Remote Access (B0022)|--|
+|[remcos_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/remcos_files.py)|Remote Access (B0022)|--|
+|[remcos_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/remcos_mutexes.py)|Remote Access (B0022)|--|
+|[remcos_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/remcos_regkeys.py)|Remote Access (B0022)|--|
 
 ## References
 
