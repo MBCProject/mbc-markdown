@@ -49,9 +49,9 @@ This description refines the ATT&CK **Disk Wipe: Disk Content Wipe ([T1561.001](
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[deletes_shadow_copies](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/deletes_shadow_copies.py)|Disk Wipe (F0014)|ShellExecuteExW, NtCreateUserProcess, CreateProcessInternalW|
-|[deletes_system_state_backup](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/deletes_system_state_backup.py)|Disk Wipe (F0014)|ShellExecuteExW, NtCreateUserProcess, CreateProcessInternalW|
-|[wiper_zeroedbytes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/wiper_zeroedbytes.py)|Disk Wipe (F0014)|NtWriteFile|
+|[deletes_shadow_copies](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/deletes_shadowcopies.py)|Disk Wipe (F0014)|ShellExecuteExW, NtCreateUserProcess, CreateProcessInternalW|
+|[deletes_system_state_backup](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/deletes_system_backup.py)|Disk Wipe (F0014)|ShellExecuteExW, NtCreateUserProcess, CreateProcessInternalW|
+|[wiper_zeroedbytes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/wiper.py)|Disk Wipe (F0014)|NtWriteFile|
 
 ## References
 
