@@ -65,29 +65,29 @@ See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.or
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[office_postscript](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_postscript.py)|Command and Scripting Interpreter (E1059)|NtWriteFile|
+|[office_postscript](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_exploit.py)|Command and Scripting Interpreter (E1059)|NtWriteFile|
 |[js_suspicious_redirect](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/js_suspicious_redirect.py)|Command and Scripting Interpreter (E1059)|CDocument_write, JsEval, COleScript_ParseScriptText, COleScript_Compile|
-|[odbcconf_bypass](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/odbcconf_bypass.py)|Command and Scripting Interpreter (E1059)|--|
-|[regsvr32_squiblydoo_dll_load](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/regsvr32_squiblydoo_dll_load.py)|Command and Scripting Interpreter (E1059)|LdrLoadDll|
-|[squiblydoo_bypass](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/squiblydoo_bypass.py)|Command and Scripting Interpreter (E1059)|--|
-|[squiblytwo_bypass](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/squiblytwo_bypass.py)|Command and Scripting Interpreter (E1059)|--|
-|[exe_dropper_js](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/exe_dropper_js.py)|Command and Scripting Interpreter (E1059)|JsEval|
-|[persistence_registry_script](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_registry_script.py)|Command and Scripting Interpreter (E1059)|RegSetValueExA, RegSetValueExW, NtSetValueKey|
-|[ie_martian_children](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ie_martian_children.py)|Command and Scripting Interpreter (E1059)|--|
+|[odbcconf_bypass](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bypass_applocker.py)|Command and Scripting Interpreter (E1059)|--|
+|[regsvr32_squiblydoo_dll_load](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bypass_applocker.py)|Command and Scripting Interpreter (E1059)|LdrLoadDll|
+|[squiblydoo_bypass](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bypass_applocker.py)|Command and Scripting Interpreter (E1059)|--|
+|[squiblytwo_bypass](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bypass_applocker.py)|Command and Scripting Interpreter (E1059)|--|
+|[exe_dropper_js](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/dropper_js.py)|Command and Scripting Interpreter (E1059)|JsEval|
+|[persistence_registry_script](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_fileless.py)|Command and Scripting Interpreter (E1059)|RegSetValueExA, RegSetValueExW, NtSetValueKey|
+|[ie_martian_children](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/martians_ie.py)|Command and Scripting Interpreter (E1059)|--|
 |[bcdedit_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bcdedit_command.py)|Command and Scripting Interpreter (E1059)|ShellExecuteExW, NtCreateUserProcess, CreateProcessInternalW|
-|[office_martian_children](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_martian_children.py)|Command and Scripting Interpreter (E1059)|--|
+|[office_martian_children](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/martians_office.py)|Command and Scripting Interpreter (E1059)|--|
 |[js_phish](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/js_phish.py)|Command and Scripting Interpreter (E1059)|JsEval, COleScript_ParseScriptText, COleScript_Compile|
 |[disables_winfirewall](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_winfirewall.py)|Command and Scripting Interpreter (E1059)|--|
-|[script_tool_executed](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/script_tool_executed.py)|Command and Scripting Interpreter (E1059)|--|
-|[cmdline_obfuscation](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_obfuscation.py)|Command and Scripting Interpreter (E1059)|--|
-|[cmdline_switches](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_switches.py)|Command and Scripting Interpreter (E1059)|--|
-|[cmdline_terminate](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_terminate.py)|Command and Scripting Interpreter (E1059)|--|
-|[cmdline_forfiles_wildcard](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_forfiles_wildcard.py)|Command and Scripting Interpreter (E1059)|--|
-|[cmdline_http_link](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_http_link.py)|Command and Scripting Interpreter (E1059)|--|
-|[cmdline_long_string](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_long_string.py)|Command and Scripting Interpreter (E1059)|--|
-|[cmdline_reversed_http_link](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_reversed_http_link.py)|Command and Scripting Interpreter (E1059)|--|
-|[long_commandline](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/long_commandline.py)|Command and Scripting Interpreter (E1059)|--|
-|[powershell_renamed_commandline](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/powershell_renamed_commandline.py)|Command and Scripting Interpreter (E1059)|--|
+|[script_tool_executed](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/windows_utilities.py)|Command and Scripting Interpreter (E1059)|--|
+|[cmdline_obfuscation](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
+|[cmdline_switches](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
+|[cmdline_terminate](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
+|[cmdline_forfiles_wildcard](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
+|[cmdline_http_link](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
+|[cmdline_long_string](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
+|[cmdline_reversed_http_link](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
+|[long_commandline](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
+|[powershell_renamed_commandline](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
 |[wmi_script_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/wmi_script_process.py)|Command and Scripting Interpreter (E1059)|NtCreateUserProcess, CreateProcessInternalW|
 |[disables_mappeddrives_autodisconnect](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_mappeddrives_autodisconnect.py)|Command and Scripting Interpreter (E1059)|ShellExecuteExW, NtCreateUserProcess, CreateProcessInternalW|
 |[system_account_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_account_discovery_cmd.py)|Command and Scripting Interpreter (E1059)|--|
