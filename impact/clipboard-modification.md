@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>3.1</b></td>
+<td><b>3.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>12 February 2024</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -54,7 +54,7 @@ After E1510 was defined, T1510 was replaced by T1641.001, and Clipboard Data (<a
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[set_clipboard_data](https://github.com/CAPESandbox/community/tree/master/modules/signatures/set_clipboard_data.py)|Clipboard Modification (E1510)|SetClipboardData|
+|[set_clipboard_data](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/set_clipboard_data.py)|Clipboard Modification (E1510)|SetClipboardData|
 
 ## References
 
