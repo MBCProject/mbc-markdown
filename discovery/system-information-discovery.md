@@ -88,7 +88,7 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 |[antivm_parallels_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_parallels_keys.py)|System Information Discovery (E1082)|--|
 |[antivm_generic_diskreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_diskreg.py)|System Information Discovery (E1082)|--|
 |[antivm_generic_system](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_system.py)|System Information Discovery (E1082)|--|
-|[system_account_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_account_discovery_cmd.py)|System Information Discovery (E1082)|--|
+|[system_account_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py)|System Information Discovery (E1082)|--|
 |[system_currently_loggedin_user_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_currently_loggedin_user_cmd.py)|System Information Discovery (E1082)|--|
 |[system_info_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_info_discovery_cmd.py)|System Information Discovery (E1082)|--|
 |[system_info_discovery_pwsh](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_info_discovery_pwsh.py)|System Information Discovery (E1082)|--|
