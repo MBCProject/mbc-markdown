@@ -89,12 +89,12 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 |[antivm_generic_diskreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_diskreg.py)|System Information Discovery (E1082)|--|
 |[antivm_generic_system](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_system.py)|System Information Discovery (E1082)|--|
 |[system_account_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py)|System Information Discovery (E1082)|--|
-|[system_currently_loggedin_user_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_currently_loggedin_user_cmd.py)|System Information Discovery (E1082)|--|
-|[system_info_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_info_discovery_cmd.py)|System Information Discovery (E1082)|--|
-|[system_info_discovery_pwsh](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_info_discovery_pwsh.py)|System Information Discovery (E1082)|--|
-|[system_network_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_network_discovery_cmd.py)|System Information Discovery (E1082)|--|
-|[system_network_discovery_pwsh](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_network_discovery_pwsh.py)|System Information Discovery (E1082)|--|
-|[system_user_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_user_discovery_cmd.py)|System Information Discovery (E1082)|--|
+|[system_currently_loggedin_user_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py)|System Information Discovery (E1082)|--|
+|[system_info_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py)|System Information Discovery (E1082)|--|
+|[system_info_discovery_pwsh](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py)|System Information Discovery (E1082)|--|
+|[system_network_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py)|System Information Discovery (E1082)|--|
+|[system_network_discovery_pwsh](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py)|System Information Discovery (E1082)|--|
+|[system_user_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py)|System Information Discovery (E1082)|--|
 |[antivm_generic_services](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_services.py)|System Information Discovery (E1082)|RegOpenKeyExW, RegEnumKeyExW, RegEnumKeyExA, RegOpenKeyExA|
 |[antivm_generic_disk_setupapi](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_disk_setupapi.py)|System Information Discovery (E1082)|SetupDiGetClassDevsA, SetupDiGetClassDevsW|
 |[antisandbox_check_userdomain](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_check_userdomain.py)|System Information Discovery (E1082)|rtcEnvironBstr|
