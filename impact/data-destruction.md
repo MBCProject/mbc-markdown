@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -62,10 +62,10 @@ See ATT&CK: **Data Destruction ([T1485](https://attack.mitre.org/techniques/T148
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[clears_logs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/clears_logs.py)|Data Destruction (E1485)|--|
-|[ransomware_recyclebin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/ransomware_recyclebin.py)|Data Destruction (E1485)|--|
-|[uses_windows_utilities_cipher](https://github.com/CAPESandbox/community/tree/master/modules/signatures/uses_windows_utilities_cipher.py)|Data Destruction (E1485)|--|
-|[anomalous_deletefile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/anomalous_deletefile.py)|Data Destruction (E1485)|NtDeleteFile, DeleteFileW, DeleteFileA|
+|[clears_logs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/clears_logs.py)|Data Destruction (E1485)|--|
+|[ransomware_recyclebin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_recyclebin.py)|Data Destruction (E1485)|--|
+|[uses_windows_utilities_cipher](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/uses_windows_utilities_cipher.py)|Data Destruction (E1485)|--|
+|[anomalous_deletefile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/anomalous_deletefile.py)|Data Destruction (E1485)|NtDeleteFile, DeleteFileW, DeleteFileA|
 
 ## References
 
