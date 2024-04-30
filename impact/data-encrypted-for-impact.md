@@ -57,15 +57,15 @@ See ATT&CK: **Data Encrypted for Impact ([T1486](https://attack.mitre.org/techni
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[mass_data_encryption](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/mass_data_encryption.py)|Data Encrypted for Impact  (E1486)|CryptEncrypt|
+|[mass_data_encryption](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_crypto.py)|Data Encrypted for Impact  (E1486)|CryptEncrypt|
 |[ransomware_dmalocker](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_dmalocker.py)|Data Encrypted for Impact  (E1486)|RegSetValueExA|
 |[ransomware_revil_regkey](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_revil_regkey.py)|Data Encrypted for Impact  (E1486)|--|
 |[ransomware_radamant](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_radamant.py)|Data Encrypted for Impact  (E1486)|--|
-|[ransomware_extensions](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_extensions.py)|Data Encrypted for Impact  (E1486)|--|
-|[sodinokibi_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/sodinokibi_behavior.py)|Data Encrypted for Impact  (E1486)|bind, RegSetValueExW, WinHttpOpen, NtCreateUserProcess, CreateProcessInternalW|
+|[ransomware_extensions](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_fileextensions.py)|Data Encrypted for Impact  (E1486)|--|
+|[sodinokibi_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_sodinokibi.py)|Data Encrypted for Impact  (E1486)|bind, RegSetValueExW, WinHttpOpen, NtCreateUserProcess, CreateProcessInternalW|
 |[ransomware_message](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_message.py)|Data Encrypted for Impact  (E1486)|NtWriteFile|
 |[ransomware_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_files.py)|Data Encrypted for Impact  (E1486)|--|
-|[ransomware_file_modifications](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_file_modifications.py)|Data Encrypted for Impact  (E1486)|NtWriteFile, MoveFileWithProgressW, NtCreateFile, MoveFileWithProgressTransactedW|
+|[ransomware_file_modifications](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_filemodifications.py)|Data Encrypted for Impact  (E1486)|NtWriteFile, MoveFileWithProgressW, NtCreateFile, MoveFileWithProgressTransactedW|
 
 ## References
 
