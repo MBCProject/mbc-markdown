@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -55,7 +55,7 @@ Malware may attempt to gain information about the operating system and applicati
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[browser_needed](https://github.com/CAPESandbox/community/tree/master/modules/signatures/browser_needed.py)|Application Window Discovery (E1010)|FindWindowW, FindWindowExA, FindWindowExW, FindWindowA|
+|[browser_needed](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/browser_needed.py)|Application Window Discovery (E1010)|FindWindowW, FindWindowExA, FindWindowExW, FindWindowA|
 
 ## References
 
