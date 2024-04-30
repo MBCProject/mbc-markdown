@@ -50,8 +50,8 @@ The related **Network Denial of Service ([T1498](https://attack.mitre.org/techni
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
 |[cve_2016_7200](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cve_2016_7200.py)|Denial of Service (B0033)|JsEval, COleScript_ParseScriptText, COleScript_Compile|
-|[network_cnc_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_cnc_http.py)|Denial of Service (B0033)|--|
-|[cve_2015_2419_js](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cve_2015_2419_js.py)|Denial of Service (B0033)|JsEval, COleScript_ParseScriptText, COleScript_Compile|
+|[network_cnc_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_cnc_http.py)|Denial of Service (B0033)|--|
+|[cve_2015_2419_js](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cve_2015_2419.py)|Denial of Service (B0033)|JsEval, COleScript_ParseScriptText, COleScript_Compile|
 |[cve_2016-0189](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cve_2016-0189.py)|Denial of Service (B0033)|JsEval, COleScript_ParseScriptText, COleScript_Compile|
 
 ## References
