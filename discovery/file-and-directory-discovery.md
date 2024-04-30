@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.2</b></td>
+<td><b>2.3</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -79,24 +79,24 @@ Malware may enumerate files and directories or may search for specific files or 
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[antisandbox_cuckoo_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_cuckoo_files.py)|File and Directory Discovery (E1083)|--|
-|[antisandbox_threattrack_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_threattrack_files.py)|File and Directory Discovery (E1083)|--|
-|[antivm_directory_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_directory_objects.py)|File and Directory Discovery (E1083)|NtQueryDirectoryObject, NtOpenDirectoryObject|
-|[antivm_vmware_events](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_events.py)|File and Directory Discovery (E1083)|NtOpenEvent, NtCreateEvent|
-|[antivm_vmware_events](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_events.py)|File and Directory Discovery::Log File (E1083.m01)|NtOpenEvent, NtCreateEvent|
-|[antivm_vbox_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_devices.py)|File and Directory Discovery (E1083)|--|
-|[antivm_vmware_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_devices.py)|File and Directory Discovery (E1083)|--|
-|[antivm_vbox_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_files.py)|File and Directory Discovery (E1083)|--|
-|[antivm_vmware_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_libs.py)|File and Directory Discovery (E1083)|LdrLoadDll|
-|[antiav_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiav_detectfile.py)|File and Directory Discovery (E1083)|--|
-|[antivm_vpc_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vpc_files.py)|File and Directory Discovery (E1083)|--|
-|[antivm_vbox_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_libs.py)|File and Directory Discovery (E1083)|LdrLoadDll|
-|[driver_filtermanager](https://github.com/CAPESandbox/community/tree/master/modules/signatures/driver_filtermanager.py)|File and Directory Discovery (E1083)|--|
-|[antisandbox_joe_anubis_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_joe_anubis_files.py)|File and Directory Discovery (E1083)|--|
-|[antivm_vmware_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_files.py)|File and Directory Discovery (E1083)|--|
-|[antisandbox_fortinet_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_fortinet_files.py)|File and Directory Discovery (E1083)|--|
-|[antisandbox_sunbelt_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_sunbelt_files.py)|File and Directory Discovery (E1083)|--|
-|[antianalysis_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antianalysis_detectfile.py)|File and Directory Discovery (E1083)|--|
+|[antisandbox_cuckoo_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_cuckoo_files.py)|File and Directory Discovery (E1083)|--|
+|[antisandbox_threattrack_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_threattrack_files.py)|File and Directory Discovery (E1083)|--|
+|[antivm_directory_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_directory_objects.py)|File and Directory Discovery (E1083)|NtQueryDirectoryObject, NtOpenDirectoryObject|
+|[antivm_vmware_events](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_events.py)|File and Directory Discovery (E1083)|NtOpenEvent, NtCreateEvent|
+|[antivm_vmware_events](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_events.py)|File and Directory Discovery::Log File (E1083.m01)|NtOpenEvent, NtCreateEvent|
+|[antivm_vbox_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_devices.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vmware_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_devices.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vbox_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_files.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vmware_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_libs.py)|File and Directory Discovery (E1083)|LdrLoadDll|
+|[antiav_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_detectfile.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vpc_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vpc_files.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vbox_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_libs.py)|File and Directory Discovery (E1083)|LdrLoadDll|
+|[driver_filtermanager](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/driver_filtermanager.py)|File and Directory Discovery (E1083)|--|
+|[antisandbox_joe_anubis_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_joe_anubis_files.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vmware_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_files.py)|File and Directory Discovery (E1083)|--|
+|[antisandbox_fortinet_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_fortinet_files.py)|File and Directory Discovery (E1083)|--|
+|[antisandbox_sunbelt_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_sunbelt_files.py)|File and Directory Discovery (E1083)|--|
+|[antianalysis_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antianalysis_detectfile.py)|File and Directory Discovery (E1083)|--|
 
 ## References
 
