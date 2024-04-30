@@ -81,7 +81,7 @@ Malware may enumerate files and directories or may search for specific files or 
 |---|---|---|
 |[antisandbox_cuckoo_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_cuckoo_files.py)|File and Directory Discovery (E1083)|--|
 |[antisandbox_threattrack_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_threattrack_files.py)|File and Directory Discovery (E1083)|--|
-|[antivm_directory_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_directory_objects.py)|File and Directory Discovery (E1083)|NtQueryDirectoryObject, NtOpenDirectoryObject|
+|[antivm_directory_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_dirobjects.py)|File and Directory Discovery (E1083)|NtQueryDirectoryObject, NtOpenDirectoryObject|
 |[antivm_vmware_events](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_events.py)|File and Directory Discovery (E1083)|NtOpenEvent, NtCreateEvent|
 |[antivm_vmware_events](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_events.py)|File and Directory Discovery::Log File (E1083.m01)|NtOpenEvent, NtCreateEvent|
 |[antivm_vbox_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_devices.py)|File and Directory Discovery (E1083)|--|
