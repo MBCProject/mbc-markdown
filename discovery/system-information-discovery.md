@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.2</b></td>
+<td><b>2.3</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>6 February 2024</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -74,32 +74,32 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[antivm_generic_disk](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_disk.py)|System Information Discovery (E1082)|DeviceIoControl, NtClose, NtCreateFile, NtDuplicateObject, NtOpenFile, NtDeviceIoControlFile|
-|[recon_systeminfo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/recon_systeminfo.py)|System Information Discovery (E1082)|--|
-|[recon_beacon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/recon_beacon.py)|System Information Discovery (E1082)|HttpOpenRequestA, HttpSendRequestA|
-|[uses_adfind](https://github.com/CAPESandbox/community/tree/master/modules/signatures/uses_adfind.py)|System Information Discovery (E1082)|--|
-|[antivm_generic_cpu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_cpu.py)|System Information Discovery (E1082)|--|
-|[accesses_mailslot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/accesses_mailslot.py)|System Information Discovery (E1082)|--|
-|[accesses_netlogon_regkey](https://github.com/CAPESandbox/community/tree/master/modules/signatures/accesses_netlogon_regkey.py)|System Information Discovery (E1082)|--|
-|[antivm_generic_bios](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_bios.py)|System Information Discovery (E1082)|--|
-|[antivm_hyperv_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_hyperv_keys.py)|System Information Discovery (E1082)|--|
-|[uses_windows_utilities_nltest](https://github.com/CAPESandbox/community/tree/master/modules/signatures/uses_windows_utilities_nltest.py)|System Information Discovery (E1082)|--|
-|[antivm_generic_scsi](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_scsi.py)|System Information Discovery (E1082)|RegOpenKeyExW, RegQueryValueExA, RegQueryValueExW, RegOpenKeyExA|
-|[antivm_parallels_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_parallels_keys.py)|System Information Discovery (E1082)|--|
-|[antivm_generic_diskreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_diskreg.py)|System Information Discovery (E1082)|--|
-|[antivm_generic_system](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_system.py)|System Information Discovery (E1082)|--|
-|[system_account_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/system_account_discovery_cmd.py)|System Information Discovery (E1082)|--|
-|[system_currently_loggedin_user_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/system_currently_loggedin_user_cmd.py)|System Information Discovery (E1082)|--|
-|[system_info_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/system_info_discovery_cmd.py)|System Information Discovery (E1082)|--|
-|[system_info_discovery_pwsh](https://github.com/CAPESandbox/community/tree/master/modules/signatures/system_info_discovery_pwsh.py)|System Information Discovery (E1082)|--|
-|[system_network_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/system_network_discovery_cmd.py)|System Information Discovery (E1082)|--|
-|[system_network_discovery_pwsh](https://github.com/CAPESandbox/community/tree/master/modules/signatures/system_network_discovery_pwsh.py)|System Information Discovery (E1082)|--|
-|[system_user_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/system_user_discovery_cmd.py)|System Information Discovery (E1082)|--|
-|[antivm_generic_services](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_services.py)|System Information Discovery (E1082)|RegOpenKeyExW, RegEnumKeyExW, RegEnumKeyExA, RegOpenKeyExA|
-|[antivm_generic_disk_setupapi](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_generic_disk_setupapi.py)|System Information Discovery (E1082)|SetupDiGetClassDevsA, SetupDiGetClassDevsW|
-|[antisandbox_check_userdomain](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_check_userdomain.py)|System Information Discovery (E1082)|rtcEnvironBstr|
-|[browser_scanbox](https://github.com/CAPESandbox/community/tree/master/modules/signatures/browser_scanbox.py)|System Information Discovery (E1082)|JsEval, COleScript_ParseScriptText, COleScript_Compile|
-|[recon_fingerprint](https://github.com/CAPESandbox/community/tree/master/modules/signatures/recon_fingerprint.py)|System Information Discovery (E1082)|--|
+|[antivm_generic_disk](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_disk.py)|System Information Discovery (E1082)|DeviceIoControl, NtClose, NtCreateFile, NtDuplicateObject, NtOpenFile, NtDeviceIoControlFile|
+|[recon_systeminfo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/recon_systeminfo.py)|System Information Discovery (E1082)|--|
+|[recon_beacon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/recon_beacon.py)|System Information Discovery (E1082)|HttpOpenRequestA, HttpSendRequestA|
+|[uses_adfind](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/uses_adfind.py)|System Information Discovery (E1082)|--|
+|[antivm_generic_cpu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_cpu.py)|System Information Discovery (E1082)|--|
+|[accesses_mailslot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/accesses_mailslot.py)|System Information Discovery (E1082)|--|
+|[accesses_netlogon_regkey](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/accesses_netlogon_regkey.py)|System Information Discovery (E1082)|--|
+|[antivm_generic_bios](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_bios.py)|System Information Discovery (E1082)|--|
+|[antivm_hyperv_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_hyperv_keys.py)|System Information Discovery (E1082)|--|
+|[uses_windows_utilities_nltest](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/uses_windows_utilities_nltest.py)|System Information Discovery (E1082)|--|
+|[antivm_generic_scsi](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_scsi.py)|System Information Discovery (E1082)|RegOpenKeyExW, RegQueryValueExA, RegQueryValueExW, RegOpenKeyExA|
+|[antivm_parallels_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_parallels_keys.py)|System Information Discovery (E1082)|--|
+|[antivm_generic_diskreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_diskreg.py)|System Information Discovery (E1082)|--|
+|[antivm_generic_system](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_system.py)|System Information Discovery (E1082)|--|
+|[system_account_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_account_discovery_cmd.py)|System Information Discovery (E1082)|--|
+|[system_currently_loggedin_user_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_currently_loggedin_user_cmd.py)|System Information Discovery (E1082)|--|
+|[system_info_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_info_discovery_cmd.py)|System Information Discovery (E1082)|--|
+|[system_info_discovery_pwsh](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_info_discovery_pwsh.py)|System Information Discovery (E1082)|--|
+|[system_network_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_network_discovery_cmd.py)|System Information Discovery (E1082)|--|
+|[system_network_discovery_pwsh](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_network_discovery_pwsh.py)|System Information Discovery (E1082)|--|
+|[system_user_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/system_user_discovery_cmd.py)|System Information Discovery (E1082)|--|
+|[antivm_generic_services](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_services.py)|System Information Discovery (E1082)|RegOpenKeyExW, RegEnumKeyExW, RegEnumKeyExA, RegOpenKeyExA|
+|[antivm_generic_disk_setupapi](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_disk_setupapi.py)|System Information Discovery (E1082)|SetupDiGetClassDevsA, SetupDiGetClassDevsW|
+|[antisandbox_check_userdomain](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_check_userdomain.py)|System Information Discovery (E1082)|rtcEnvironBstr|
+|[browser_scanbox](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/browser_scanbox.py)|System Information Discovery (E1082)|JsEval, COleScript_ParseScriptText, COleScript_Compile|
+|[recon_fingerprint](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/recon_fingerprint.py)|System Information Discovery (E1082)|--|
 
 ## References
 
