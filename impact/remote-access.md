@@ -77,16 +77,16 @@ Note that the **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniqu
 |[netwire_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_netwire.py)|Remote Access (B0022)|RegSetValueExA|
 |[njrat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_njrat_regkeys.py)|Remote Access (B0022)|--|
 |[rat_xtreme_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_xtreme_mutex.py)|Remote Access (B0022)|--|
-|[blackrat_apis](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/blackrat_apis.py)|Remote Access (B0022)|CryptHashData, RtlDecompressBuffer, CreateProcessInternalW|
-|[blackrat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/blackrat_mutexes.py)|Remote Access (B0022)|--|
-|[blackrat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/blackrat_network_activity.py)|Remote Access (B0022)|send|
-|[blackrat_registry_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/blackrat_registry_keys.py)|Remote Access (B0022)|RegQueryValueExW, RegSetValueExW|
-|[uses_rdp_clip](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/uses_rdp_clip.py)|Remote Access (B0022)|--|
-|[uses_remote_desktop_session](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/uses_remote_desktop_session.py)|Remote Access (B0022)|--|
-|[rat_plugx_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_plugx_mutexes.py)|Remote Access (B0022)|--|
-|[obliquerat_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/obliquerat_files.py)|Remote Access (B0022)|--|
-|[obliquerat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/obliquerat_mutexes.py)|Remote Access (B0022)|--|
-|[obliquerat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/obliquerat_network_activity.py)|Remote Access (B0022)|send|
+|[blackrat_apis](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_blackremote.py)|Remote Access (B0022)|CryptHashData, RtlDecompressBuffer, CreateProcessInternalW|
+|[blackrat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_blackremote.py)|Remote Access (B0022)|--|
+|[blackrat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_blackremote.py)|Remote Access (B0022)|send|
+|[blackrat_registry_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_blackremote.py)|Remote Access (B0022)|RegQueryValueExW, RegSetValueExW|
+|[uses_rdp_clip](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/remote_desktop.py)|Remote Access (B0022)|--|
+|[uses_remote_desktop_session](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/remote_desktop.py)|Remote Access (B0022)|--|
+|[rat_plugx_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_plugx_mutex.py)|Remote Access (B0022)|--|
+|[obliquerat_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_oblique.py)|Remote Access (B0022)|--|
+|[obliquerat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_oblique.py)|Remote Access (B0022)|--|
+|[obliquerat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_oblique.py)|Remote Access (B0022)|send|
 |[venomrat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/venomrat_mutexes.py)|Remote Access (B0022)|--|
 |[trochilusrat_apis](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/trochilusrat_apis.py)|Remote Access (B0022)|OutputDebugStringW, NtCreateUserProcess, RegSetValueExW, CreateProcessInternalW|
 |[dcrat_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/dcrat_behavior.py)|Remote Access (B0022)|GetAddrInfo, GetAddrInfoW, CryptHashData|
