@@ -18,7 +18,7 @@
 
 * **CACAO Playbook Example** - An example [CACAO](https://github.com/oasis-tcs/cacao/tree/master/Examples/CACAO-2.0) playbook for [Locky Bart](../xample-malware/locky-bart.md) references MBC behaviors.
 
-* **MBC Website** - We're developing a website to replace the current markdown content.
+
 
 * **MBC Mailing List** - To join the MBC mailing list, please send a request to mbc@mitre.org.
 
