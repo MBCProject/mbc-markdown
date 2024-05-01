@@ -56,9 +56,9 @@ The related **Resource Hijacking ([T1496](https://attack.mitre.org/techniques/T1
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[cryptopool_domains](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cryptopool_domains.py)|Resource Hijacking (B0018)|GetAddrInfoW|
-|[cryptomining_stratum_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cryptomining_stratum_command.py)|Resource Hijacking (B0018)|--|
-|[cryptomining_stratum_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cryptomining_stratum_command.py)|Resource Hijacking::Cryptojacking (B0018.002)|--|
+|[cryptopool_domains](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cryptopools.py)|Resource Hijacking (B0018)|GetAddrInfoW|
+|[cryptomining_stratum_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cryptomining.py)|Resource Hijacking (B0018)|--|
+|[cryptomining_stratum_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cryptomining.py)|Resource Hijacking::Cryptojacking (B0018.002)|--|
 
 ## References
 <a name="1">[1]</a> B. G. a. M. Ahuje,"CrowdStrike Discovers First-Ever Dero Cryptojacking Campaign Targeting Kubernetes," CrowdStrike, blog, 15 Mar. 2023. [Online]. Available: https://www.crowdstrike.com/blog/crowdstrike-discovers-first-ever-dero-cryptojacking-campaign-targeting-kubernetes/.
