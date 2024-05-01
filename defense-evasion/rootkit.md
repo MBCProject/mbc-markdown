@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>3.1</b></td>
+<td><b>3.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>28 April 2024</b></td>
 </tr>
 </table>
 
@@ -61,11 +61,11 @@ Rootkits can also be detected via memory dump analysis or virtual machine intros
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[spicyhotpot_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/spicyhotpot_behavior.py)|Rootkit (E1014)|--|
-|[accesses_primary_patition](https://github.com/CAPESandbox/community/tree/master/modules/signatures/accesses_primary_patition.py)|Rootkit (E1014)|--|
-|[direct_hdd_access](https://github.com/CAPESandbox/community/tree/master/modules/signatures/direct_hdd_access.py)|Rootkit (E1014)|--|
-|[enumerates_physical_drives](https://github.com/CAPESandbox/community/tree/master/modules/signatures/enumerates_physical_drives.py)|Rootkit (E1014)|--|
-|[physical_drive_access](https://github.com/CAPESandbox/community/tree/master/modules/signatures/physical_drive_access.py)|Rootkit (E1014)|--|
+|[spicyhotpot_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rootkit_spicyhotpot.py)|Rootkit (E1014)|--|
+|[accesses_primary_patition](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bootkit.py)|Rootkit (E1014)|--|
+|[direct_hdd_access](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bootkit.py)|Rootkit (E1014)|--|
+|[enumerates_physical_drives](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bootkit.py)|Rootkit (E1014)|--|
+|[physical_drive_access](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bootkit.py)|Rootkit (E1014)|--|
 
 ## References
 

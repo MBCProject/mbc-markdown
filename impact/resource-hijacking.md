@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -56,9 +56,9 @@ The related **Resource Hijacking ([T1496](https://attack.mitre.org/techniques/T1
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[cryptopool_domains](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cryptopool_domains.py)|Resource Hijacking (B0018)|GetAddrInfoW|
-|[cryptomining_stratum_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cryptomining_stratum_command.py)|Resource Hijacking (B0018)|--|
-|[cryptomining_stratum_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cryptomining_stratum_command.py)|Resource Hijacking::Cryptojacking (B0018.002)|--|
+|[cryptopool_domains](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cryptopools.py)|Resource Hijacking (B0018)|GetAddrInfoW|
+|[cryptomining_stratum_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cryptomining.py)|Resource Hijacking (B0018)|--|
+|[cryptomining_stratum_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cryptomining.py)|Resource Hijacking::Cryptojacking (B0018.002)|--|
 
 ## References
 <a name="1">[1]</a> B. G. a. M. Ahuje,"CrowdStrike Discovers First-Ever Dero Cryptojacking Campaign Targeting Kubernetes," CrowdStrike, blog, 15 Mar. 2023. [Online]. Available: https://www.crowdstrike.com/blog/crowdstrike-discovers-first-ever-dero-cryptojacking-campaign-targeting-kubernetes/.

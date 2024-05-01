@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>28 April 2024</b></td>
 </tr>
 </table>
 
@@ -47,9 +47,9 @@ This behavior is related to Unprotect technique U0906.
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[whois_create](https://github.com/CAPESandbox/community/tree/master/modules/signatures/whois_create.py)|Domain Name Generation (B0031)|--|
-|[network_dga](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dga.py)|Domain Name Generation (B0031)|--|
-|[network_dga_fraunhofer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dga_fraunhofer.py)|Domain Name Generation (B0031)|--|
+|[whois_create](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/whois_create.py)|Domain Name Generation (B0031)|--|
+|[network_dga](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_dga.py)|Domain Name Generation (B0031)|--|
+|[network_dga_fraunhofer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_dga_fraunhofer.py)|Domain Name Generation (B0031)|--|
 
 ## References
 

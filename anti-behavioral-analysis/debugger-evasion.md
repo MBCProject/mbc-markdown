@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.2</b></td>
+<td><b>2.3</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>6 February 2024</b></td>
+<td><b>27 April 2024</b></td>
 </tr>
 </table>
 
@@ -91,11 +91,11 @@ The related **Debugger Evasion ([T1622](https://attack.mitre.org/techniques/T162
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_guardpages.py)|Debugger Evasion (B0002)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
-|[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_guardpages.py)|Debugger Evasion::Guard Pages (B0002.008)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
-|[antidebug_ntcreatethreadex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_ntcreatethreadex.py)|Debugger Evasion (B0002)|NtCreateThreadEx|
-|[debugs_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/debugs_self.py)|Debugger Evasion (B0002)|CreateProcessInternalW|
-|[debugs_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/debugs_self.py)|Debugger Evasion::Self-Debugging (B0002.024)|CreateProcessInternalW|
+|[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_guardpages.py)|Debugger Evasion (B0002)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
+|[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_guardpages.py)|Debugger Evasion::Guard Pages (B0002.008)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
+|[antidebug_ntcreatethreadex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_ntcreatethreadex.py)|Debugger Evasion (B0002)|NtCreateThreadEx|
+|[debugs_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/debugs_self.py)|Debugger Evasion (B0002)|CreateProcessInternalW|
+|[debugs_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/debugs_self.py)|Debugger Evasion::Self-Debugging (B0002.024)|CreateProcessInternalW|
 
 ## References
 

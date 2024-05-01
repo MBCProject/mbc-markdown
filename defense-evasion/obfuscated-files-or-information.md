@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -120,9 +120,8 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |---|---|---|
 |[compression](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Obfuscated Files or Information (E1027)|RtlDecompressBuffer|
 |[decryption](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Obfuscated Files or Information (E1027)|CryptDecrypt|
-|[Unpacker](https://github.com/CAPESandbox/community/tree/master/modules/signatures/Unpacker.py)|Obfuscated Files or Information (E1027)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
-|[cmdline_obfuscation](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cmdline_obfuscation.py)|Obfuscated Files or Information (E1027)|--|
-|[dotnet_code_compile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/dotnet_code_compile.py)|Obfuscated Files or Information (E1027)|NtWriteFile, CreateProcessInternalA, NtCreateUserProcess, CreateProcessInternalW|
+|[cmdline_obfuscation](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Obfuscated Files or Information (E1027)|--|
+|[dotnet_code_compile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/compile_dotnet_code.py)|Obfuscated Files or Information (E1027)|NtWriteFile, CreateProcessInternalA, NtCreateUserProcess, CreateProcessInternalW|
 
 ### E1027.m02 Snippet
 <details>

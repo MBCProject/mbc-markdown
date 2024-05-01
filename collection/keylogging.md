@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.2</b></td>
+<td><b>2.3</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>6 February 2024</b></td>
+<td><b>27 April 2024</b></td>
 </tr>
 </table>
 
@@ -66,9 +66,9 @@ See ATT&CK: **Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/te
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[infostealer_keylog](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_keylog.py)|Keylogging (F0002)|SetWindowsHookExA, GetAsyncKeyState, SetWindowsHookExW|
-|[infostealer_keylog](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_keylog.py)|Keylogging::Application Hook (F0002.001)|SetWindowsHookExA, GetAsyncKeyState, SetWindowsHookExW|
-|[browser_scanbox](https://github.com/CAPESandbox/community/tree/master/modules/signatures/browser_scanbox.py)|Keylogging (F0002)|JsEval, COleScript_ParseScriptText, COleScript_Compile|
+|[infostealer_keylog](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/infostealer_keylog.py)|Keylogging (F0002)|SetWindowsHookExA, GetAsyncKeyState, SetWindowsHookExW|
+|[infostealer_keylog](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/infostealer_keylog.py)|Keylogging::Application Hook (F0002.001)|SetWindowsHookExA, GetAsyncKeyState, SetWindowsHookExW|
+|[browser_scanbox](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/browser_scanbox.py)|Keylogging (F0002)|JsEval, COleScript_ParseScriptText, COleScript_Compile|
 
 ### F0002.002 Snippet
 <details>

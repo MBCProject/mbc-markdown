@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>28 April 2024</b></td>
 </tr>
 </table>
 
@@ -76,12 +76,12 @@ See ATT&CK: **Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[infostealer_keylog](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_keylog.py)|Hijack Execution Flow (F0015)|SetWindowsHookExA, GetAsyncKeyState, SetWindowsHookExW|
-|[infostealer_keylog](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_keylog.py)|Hijack Execution Flow::Procedure Hooking (F0015.007)|SetWindowsHookExA, GetAsyncKeyState, SetWindowsHookExW|
-|[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_mouse_hook.py)|Hijack Execution Flow (F0015)|SetWindowsHookExA, SetWindowsHookExW|
-|[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_mouse_hook.py)|Hijack Execution Flow::Procedure Hooking (F0015.007)|SetWindowsHookExA, SetWindowsHookExW|
-|[dll_load_uncommon_file_types](https://github.com/CAPESandbox/community/tree/master/modules/signatures/dll_load_uncommon_file_types.py)|Hijack Execution Flow (F0015)|LdrLoadDll|
-|[malicious_dynamic_function_loading](https://github.com/CAPESandbox/community/tree/master/modules/signatures/malicious_dynamic_function_loading.py)|Hijack Execution Flow (F0015)|LdrGetProcedureAddress, LdrLoadDll|
+|[infostealer_keylog](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/infostealer_keylog.py)|Hijack Execution Flow (F0015)|SetWindowsHookExA, GetAsyncKeyState, SetWindowsHookExW|
+|[infostealer_keylog](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/infostealer_keylog.py)|Hijack Execution Flow::Procedure Hooking (F0015.007)|SetWindowsHookExA, GetAsyncKeyState, SetWindowsHookExW|
+|[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_mouse_hook.py)|Hijack Execution Flow (F0015)|SetWindowsHookExA, SetWindowsHookExW|
+|[antisandbox_mouse_hook](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_mouse_hook.py)|Hijack Execution Flow::Procedure Hooking (F0015.007)|SetWindowsHookExA, SetWindowsHookExW|
+|[dll_load_uncommon_file_types](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/dll_load_uncommon.py)|Hijack Execution Flow (F0015)|LdrLoadDll|
+|[malicious_dynamic_function_loading](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/malicious_dynamic_function_loading.py)|Hijack Execution Flow (F0015)|LdrGetProcedureAddress, LdrLoadDll|
 
 ## References
 

@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>4.0</b></td>
+<td><b>4.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>18 December 2023</b></td>
+<td><b>27 April 2024</b></td>
 </tr>
 </table>
 
@@ -55,12 +55,12 @@ See ATT&CK Technique: **Archive Collected Data ([T1560](https://attack.mitre.org
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[encrypt_data_agenttesla_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/encrypt_data_agenttesla_http.py)|Archive Collected Data (E1560)|CryptEncrypt|
-|[encrypt_data_agenttesla_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/encrypt_data_agenttesla_http.py)|Archive Collected Data::Encryption (E1560.m02)|CryptEncrypt|
-|[encrypt_data_agentteslat2_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/encrypt_data_agentteslat2_http.py)|Archive Collected Data (E1560)|CryptEncrypt, GetUserNameW, GetComputerNameW|
-|[encrypt_data_agentteslat2_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/encrypt_data_agentteslat2_http.py)|Archive Collected Data::Encryption (E1560.m02)|CryptEncrypt, GetUserNameW, GetComputerNameW|
-|[encrypt_data_nanocore](https://github.com/CAPESandbox/community/tree/master/modules/signatures/encrypt_data_nanocore.py)|Archive Collected Data (E1560)|CryptEncrypt, GetUserNameW, GetComputerNameW|
-|[encrypt_data_nanocore](https://github.com/CAPESandbox/community/tree/master/modules/signatures/encrypt_data_nanocore.py)|Archive Collected Data::Encryption (E1560.m02)|CryptEncrypt, GetUserNameW, GetComputerNameW|
+|[encrypt_data_agenttesla_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/malware_data_encryption.py)|Archive Collected Data (E1560)|CryptEncrypt|
+|[encrypt_data_agenttesla_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/malware_data_encryption.py)|Archive Collected Data::Encryption (E1560.m02)|CryptEncrypt|
+|[encrypt_data_agentteslat2_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/malware_data_encryption.py)|Archive Collected Data (E1560)|CryptEncrypt, GetUserNameW, GetComputerNameW|
+|[encrypt_data_agentteslat2_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/malware_data_encryption.py)|Archive Collected Data::Encryption (E1560.m02)|CryptEncrypt, GetUserNameW, GetComputerNameW|
+|[encrypt_data_nanocore](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/malware_data_encryption.py)|Archive Collected Data (E1560)|CryptEncrypt, GetUserNameW, GetComputerNameW|
+|[encrypt_data_nanocore](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/malware_data_encryption.py)|Archive Collected Data::Encryption (E1560.m02)|CryptEncrypt, GetUserNameW, GetComputerNameW|
 
 ## References
 

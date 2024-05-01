@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.2</b></td>
+<td><b>2.3</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -64,9 +64,9 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[persistence_bootexecute](https://github.com/CAPESandbox/community/tree/master/modules/signatures/persistence_bootexecute.py)|Registry Run Keys / Startup Folder (F0012)|RegSetValueExA, RegSetValueExW, NtSetValueKey|
-|[geodo_banking_trojan](https://github.com/CAPESandbox/community/tree/master/modules/signatures/geodo_banking_trojan.py)|Registry Run Keys / Startup Folder (F0012)|--|
-|[persistence_autorun](https://github.com/CAPESandbox/community/tree/master/modules/signatures/persistence_autorun.py)|Registry Run Keys / Startup Folder (F0012)|NtSetValueKey, RegSetValueExA, RegSetValueExW, CreateServiceW, CreateServiceA|
+|[persistence_bootexecute](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_bootexecute.py)|Registry Run Keys / Startup Folder (F0012)|RegSetValueExA, RegSetValueExW, NtSetValueKey|
+|[geodo_banking_trojan](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/banker_geodo.py)|Registry Run Keys / Startup Folder (F0012)|--|
+|[persistence_autorun](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_autorun.py)|Registry Run Keys / Startup Folder (F0012)|NtSetValueKey, RegSetValueExA, RegSetValueExW, CreateServiceW, CreateServiceA|
 
 ### F0012 Snippet
 <details>
