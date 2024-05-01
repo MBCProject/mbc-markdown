@@ -99,10 +99,10 @@ Note that the **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniqu
 |[limerat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_limerat.py)|Remote Access (B0022)|--|
 |[rat_luminosity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_luminosity.py)|Remote Access (B0022)|CryptHashData, NtCreateMutant, NtCreateFile|
 |[rat_nanocore](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_nanocore.py)|Remote Access (B0022)|CryptHashData|
-|[static_rat_config](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/static_rat_config.py)|Remote Access (B0022)|--|
-|[remcos_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/remcos_files.py)|Remote Access (B0022)|--|
-|[remcos_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/remcos_mutexes.py)|Remote Access (B0022)|--|
-|[remcos_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/remcos_regkeys.py)|Remote Access (B0022)|--|
+|[static_rat_config](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/static_rat_config.py)|Remote Access (B0022)|--|
+|[remcos_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/remcos.py)|Remote Access (B0022)|--|
+|[remcos_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/remcos.py)|Remote Access (B0022)|--|
+|[remcos_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/remcos.py)|Remote Access (B0022)|--|
 
 ## References
 
