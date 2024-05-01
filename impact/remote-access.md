@@ -87,16 +87,16 @@ Note that the **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniqu
 |[obliquerat_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_oblique.py)|Remote Access (B0022)|--|
 |[obliquerat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_oblique.py)|Remote Access (B0022)|--|
 |[obliquerat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_oblique.py)|Remote Access (B0022)|send|
-|[venomrat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/venomrat_mutexes.py)|Remote Access (B0022)|--|
-|[trochilusrat_apis](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/trochilusrat_apis.py)|Remote Access (B0022)|OutputDebugStringW, NtCreateUserProcess, RegSetValueExW, CreateProcessInternalW|
-|[dcrat_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/dcrat_behavior.py)|Remote Access (B0022)|GetAddrInfo, GetAddrInfoW, CryptHashData|
-|[dcrat_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/dcrat_files.py)|Remote Access (B0022)|--|
-|[dcrat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/dcrat_mutexes.py)|Remote Access (B0022)|--|
-|[karagany_system_event_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/karagany_system_event_objects.py)|Remote Access (B0022)|NtCreateEventEx, NtCreateEvent|
-|[karagany_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/karagany_files.py)|Remote Access (B0022)|--|
-|[orcusrat_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/orcusrat_behavior.py)|Remote Access (B0022)|RegOpenKeyExW|
-|[limerat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/limerat_mutexes.py)|Remote Access (B0022)|--|
-|[limerat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/limerat_regkeys.py)|Remote Access (B0022)|--|
+|[venomrat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_venom.py)|Remote Access (B0022)|--|
+|[trochilusrat_apis](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_trochilus.py)|Remote Access (B0022)|OutputDebugStringW, NtCreateUserProcess, RegSetValueExW, CreateProcessInternalW|
+|[dcrat_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_dcrat.py)|Remote Access (B0022)|GetAddrInfo, GetAddrInfoW, CryptHashData|
+|[dcrat_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_dcrat.py)|Remote Access (B0022)|--|
+|[dcrat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_dcrat.py)|Remote Access (B0022)|--|
+|[karagany_system_event_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_karagany.py)|Remote Access (B0022)|NtCreateEventEx, NtCreateEvent|
+|[karagany_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_karagany.py)|Remote Access (B0022)|--|
+|[orcusrat_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_orcus.py)|Remote Access (B0022)|RegOpenKeyExW|
+|[limerat_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_limerat.py)|Remote Access (B0022)|--|
+|[limerat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_limerat.py)|Remote Access (B0022)|--|
 |[rat_luminosity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_luminosity.py)|Remote Access (B0022)|CryptHashData, NtCreateMutant, NtCreateFile|
 |[rat_nanocore](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_nanocore.py)|Remote Access (B0022)|CryptHashData|
 |[static_rat_config](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/static_rat_config.py)|Remote Access (B0022)|--|
