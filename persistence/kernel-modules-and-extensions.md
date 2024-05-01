@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.2</b></td>
+<td><b>2.3</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -49,9 +49,9 @@ See ATT&CK: **Boot or Logon Autostart Execution: Kernel Modules and Extensions (
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[volatility_devicetree_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/volatility_devicetree_1.py)|Kernel Modules and Extensions (F0010)|--|
-|[volatility_devicetree_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/volatility_devicetree_1.py)|Kernel Modules and Extensions::Device Driver (F0010.001)|--|
-|[driver_load](https://github.com/CAPESandbox/community/tree/master/modules/signatures/driver_load.py)|Kernel Modules and Extensions (F0010)|NtLoadDriver|
+|[volatility_devicetree_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_devicetree_1.py)|Kernel Modules and Extensions (F0010)|--|
+|[volatility_devicetree_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_devicetree_1.py)|Kernel Modules and Extensions::Device Driver (F0010.001)|--|
+|[driver_load](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/driver_load.py)|Kernel Modules and Extensions (F0010)|NtLoadDriver|
 
 ## References
 
