@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.3</b></td>
+<td><b>2.4</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
