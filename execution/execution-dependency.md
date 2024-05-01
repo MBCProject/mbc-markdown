@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>12 June 2023</b></td>
+<td><b>29 April 2024</b></td>
 </tr>
 </table>
 
@@ -34,7 +34,7 @@ Software may require certain run-time or library dependencies consistent with no
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Adwind jRAT**](../xample-malware/adwindjrat.md)|2019|--|Adwind jRAT uses standard Java commands to mask its behavior. [[1]](#1)|
+|[**Adwind jRAT**](../xample-malware/adwind-jrat.md)|2019|--|Adwind jRAT uses standard Java commands to mask its behavior. [[1]](#1)|
 
 ## References
 

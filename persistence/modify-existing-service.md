@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -46,12 +46,12 @@ See ATT&CK: **Create or Modify System Process::Windows Service ([T1543.003](http
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[volatility_svcscan_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/volatility_svcscan_1.py)|Modify Existing Service (F0011)|--|
-|[volatility_svcscan_2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/volatility_svcscan_2.py)|Modify Existing Service (F0011)|--|
-|[volatility_svcscan_3](https://github.com/CAPESandbox/community/tree/master/modules/signatures/volatility_svcscan_3.py)|Modify Existing Service (F0011)|--|
-|[antiav_servicestop](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiav_servicestop.py)|Modify Existing Service (F0011)|OpenServiceA, ControlService, OpenServiceW|
-|[persistence_service](https://github.com/CAPESandbox/community/tree/master/modules/signatures/persistence_service.py)|Modify Existing Service (F0011)|--|
-|[modify_security_center_warnings](https://github.com/CAPESandbox/community/tree/master/modules/signatures/modify_security_center_warnings.py)|Modify Existing Service (F0011)|--|
+|[volatility_svcscan_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/volatility_sig.py)|Modify Existing Service (F0011)|--|
+|[volatility_svcscan_2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/volatility_sig.py)|Modify Existing Service (F0011)|--|
+|[volatility_svcscan_3](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/volatility_sig.py)|Modify Existing Service (F0011)|--|
+|[antiav_servicestop](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_servicestop.py)|Modify Existing Service (F0011)|OpenServiceA, ControlService, OpenServiceW|
+|[persistence_service](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_service.py)|Modify Existing Service (F0011)|--|
+|[modify_security_center_warnings](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modifies_seccenter.py)|Modify Existing Service (F0011)|--|
 
 ## References
 

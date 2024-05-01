@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.2</b></td>
+<td><b>2.3</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>29 April 2024</b></td>
 </tr>
 </table>
 
@@ -46,4 +46,4 @@ The related **Data Manipulation: Stored Data Manipulation ([T1565.001](https://a
 
 <a name="1">[1]</a> "TRISIS Malware: Analysis of Safety System Targeted Malware, version 1.20171213," Dragos, 13 Dec. 2017. [Online]. Available: https://www.dragos.com/wp-content/uploads/TRISIS-01.pdf.
 
-<a name="2">[2]</a> https://content.fireeye.com/apt/rpt-apt38
+<a name="2">[2]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-apt38-2018-web_v5-1.pdf

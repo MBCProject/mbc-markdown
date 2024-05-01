@@ -45,13 +45,13 @@ Malware may use a cryptographic hash.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy hashes data via WinCrypt. [[1]](#1)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0029.001|BlackEnergy hashes data with MD5. [[1]](#1)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0029.002|BlackEnergy hashes data using SHA1. [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter hashes data via WinCrypt. [[1]](#1)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip hashes data via WinCrypt. [[1]](#1)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|C0029.002|Redhip hashes data using SHA1. [[1]](#1)|
-|[**UP007**](../xample-malware/up007.md)|2016|C0029.002|UP007 hashes data using SHA1. [[1]](#1)|
+|[**BlackEnergy**](../../xample-malware/blackenergy.md)|2007|--|BlackEnergy hashes data via WinCrypt. [[1]](#1)|
+|[**BlackEnergy**](../../xample-malware/blackenergy.md)|2007|C0029.001|BlackEnergy hashes data with MD5. [[1]](#1)|
+|[**BlackEnergy**](../../xample-malware/blackenergy.md)|2007|C0029.002|BlackEnergy hashes data using SHA1. [[1]](#1)|
+|[**Kovter**](../../xample-malware/kovter.md)|2016|--|Kovter hashes data via WinCrypt. [[1]](#1)|
+|[**Redhip**](../../xample-malware/redhip.md)|2011|--|Redhip hashes data via WinCrypt. [[1]](#1)|
+|[**Redhip**](../../xample-malware/redhip.md)|2011|C0029.002|Redhip hashes data using SHA1. [[1]](#1)|
+|[**UP007**](../../xample-malware/up007.md)|2016|C0029.002|UP007 hashes data using SHA1. [[1]](#1)|
 
 ## Detection
 

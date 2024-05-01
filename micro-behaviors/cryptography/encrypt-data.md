@@ -54,20 +54,20 @@ Malware may encrypt data.
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**TrickBot**](../../xample-malware/trickbot.md)|2016|C0027.001|The malware uses an AES CBC (256 bits) encryption algorithm for its loader and configuration files. [[1]](#1)|
-|[**Emotet**](../xample-malware/emotet.md)|2018|C0027.009|Emotet encrypts data using RC4 PRGA. [[8]](#8)|
+|[**Emotet**](../../xample-malware/emotet.md)|2018|C0027.009|Emotet encrypts data using RC4 PRGA. [[8]](#8)|
 |[**Emotet**](../../xample-malware/emotet.md)|2018|C0027.011|Emotet uses RSA to encrypt network traffic to its C2. [[2]](#2)|
 |[**GravityRAT**](../../xample-malware/gravity-rat.md)|2018|C0027.001|GravityRat v3 supports file AES file encryption. [[3]](#3)|
 |[**Poison Ivy**](../../xample-malware/poison-ivy.md)|2005|C0027.003|Poison Ivy's custom network protocol over TCP is encrypted using Camellia cipher with a 256-bit key. [[4]](#4)|
-|[**CHOPSTICK**](../xample-malware/chopstick.md)|2015|C0027.009|CHOPSTICK encrypts the configuration block using RC4 encryption. [[5]](#5)|
-|[**Matanbuchus**](../xample-malware/matanbuchus.md)|2021|C0027.009|The malware decrypts inner configurations stored in the binary. The malware also encrypts the value of each JSON key with RC4 and encodes the value with Base64. [[6]](#6) [[7]](#7)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0027.009|BlackEnergy encrypts data using RC4 via WinAPI. [[8]](#8)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|C0027.009|Dark Comet encrypts data using RC4 PRGA. [[8]](#8)|
-|[**DNSChanger**](../xample-malware/dnschanger.md)|2011|C0027.009|DNSChanger encrypts data using RC4 PRGA. [[8]](#8)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0027.004|Hupigon encrypts data using DES. [[8]](#8)|
-|[**Kraken**](../xample-malware/kraken.md)|2008|C0027.009|Kraken encrypts data using RC4 PRGA. [[8]](#8)|
-|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|C0027.009|Locky Bart encrypts data using RC4 PRGA. [[8]](#8)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip encrypts data using DPAPI. [[8]](#8)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|C0027.009|Rombertik encrypts data using RC4 PRGA. [[8]](#8)|
+|[**CHOPSTICK**](../../xample-malware/chopstick.md)|2015|C0027.009|CHOPSTICK encrypts the configuration block using RC4 encryption. [[5]](#5)|
+|[**Matanbuchus**](../../xample-malware/matanbuchus.md)|2021|C0027.009|The malware decrypts inner configurations stored in the binary. The malware also encrypts the value of each JSON key with RC4 and encodes the value with Base64. [[6]](#6) [[7]](#7)|
+|[**BlackEnergy**](../../xample-malware/blackenergy.md)|2007|C0027.009|BlackEnergy encrypts data using RC4 via WinAPI. [[8]](#8)|
+|[**Dark Comet**](../../xample-malware/dark-comet.md)|2008|C0027.009|Dark Comet encrypts data using RC4 PRGA. [[8]](#8)|
+|[**DNSChanger**](../../xample-malware/dnschanger.md)|2011|C0027.009|DNSChanger encrypts data using RC4 PRGA. [[8]](#8)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|C0027.004|Hupigon encrypts data using DES. [[8]](#8)|
+|[**Kraken**](../../xample-malware/kraken.md)|2008|C0027.009|Kraken encrypts data using RC4 PRGA. [[8]](#8)|
+|[**Locky Bart**](../../xample-malware/locky-bart.md)|2017|C0027.009|Locky Bart encrypts data using RC4 PRGA. [[8]](#8)|
+|[**Redhip**](../../xample-malware/redhip.md)|2011|--|Redhip encrypts data using DPAPI. [[8]](#8)|
+|[**Rombertik**](../../xample-malware/rombertik.md)|2015|C0027.009|Rombertik encrypts data using RC4 PRGA. [[8]](#8)|
 
 ## Detection
 

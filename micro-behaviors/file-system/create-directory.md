@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.2</b></td>
+<td><b>2.3</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>6 February 2024</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -34,13 +34,13 @@ Malware creates a directory.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut creates directories. [[1]](#1)|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR creates directories. [[1]](#1)|
-|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|GravityRAT creates directories. [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon creates directories. [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter creates directories. [[1]](#1)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip creates directories. [[1]](#1)|
-|[**UP007**](../xample-malware/up007.md)|2016|--|UP007 creates directories. [[1]](#1)|
+|[**Gamut**](../../xample-malware/gamut.md)|2014|--|Gamut creates directories. [[1]](#1)|
+|[**GoBotKR**](../../xample-malware/gobotkr.md)|2019|--|GoBotKR creates directories. [[1]](#1)|
+|[**GravityRAT**](../../xample-malware/gravity-rat.md)|2018|--|GravityRAT creates directories. [[1]](#1)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|--|Hupigon creates directories. [[1]](#1)|
+|[**Kovter**](../../xample-malware/kovter.md)|2016|--|Kovter creates directories. [[1]](#1)|
+|[**Redhip**](../../xample-malware/redhip.md)|2011|--|Redhip creates directories. [[1]](#1)|
+|[**UP007**](../../xample-malware/up007.md)|2016|--|UP007 creates directories. [[1]](#1)|
 
 ## Detection
 
@@ -51,6 +51,18 @@ Malware creates a directory.
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
 |[arkei_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/arkei_files.py)|Create Directory (C0046)|--|
+
+### C0046 Snippet
+<details>
+<summary> File System::Create Directory </summary>
+SHA256: 27253651170386863b148afb2a0fdda7780ae65cbc31405acbd99fa06b44b79f
+Location: 0x1400036d4
+<pre>
+xor     param_2, param_2        ; use default security attributes (param_2 is NULL)
+mov     param_1, rbp    ; use contents of rbp as directory name
+call    qword ptr [->KERNEL32.DLL::CreateDirectoryA]  ; call Windows API to create directory
+</pre>
+</details>
 
 ## References
 

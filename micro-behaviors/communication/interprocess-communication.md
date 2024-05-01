@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -43,9 +43,9 @@ The Interprocess Communication micro-behavior focuses on interprocess communicat
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0003.001|Hupigon creates two anonymous pipes. [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0003.004|Hupigon writes pipes. [[1]](#1)|
-|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|C0003.004|Poison Ivy writes pipes. [[1]](#1)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|C0003.001|Hupigon creates two anonymous pipes. [[1]](#1)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|C0003.004|Hupigon writes pipes. [[1]](#1)|
+|[**Poison Ivy**](../../xample-malware/poison-ivy.md)|2005|C0003.004|Poison Ivy writes pipes. [[1]](#1)|
 
 ## Detection
 
@@ -63,6 +63,24 @@ The Interprocess Communication micro-behavior focuses on interprocess communicat
 |---|---|---|
 |[ipc_namedpipe](https://github.com/CAPESandbox/community/tree/master/modules/signatures/ipc_namedpipe.py)|Interprocess Communication (C0003)|NtReadFile, NtCreateNamedPipeFile, NtWriteFile|
 |[ipc_namedpipe](https://github.com/CAPESandbox/community/tree/master/modules/signatures/ipc_namedpipe.py)|Interprocess Communication::Create Pipe (C0003.001)|NtReadFile, NtCreateNamedPipeFile, NtWriteFile|
+
+### C0003.002 Snippet
+<details>
+<summary> Communication::Interprocess Communication::Connect Pipe </summary>
+SHA256: e5897829835f3e9fbab71674ca06f48ff127ec014d1629817f0566203c93b732
+Location: 0x40167C
+<pre>
+call    qword ptr [->KERNEL32.DLL::CreateNamedPipeA]    ; stores return value in rax
+mov     r12, rax        ; r12 now contains a handle to the named pipe
+lea     rax, [rax + -0x1]
+cmp     rax, -0x3
+ja      LAB_004016dc
+xor     param_2, param_2        ; set value to zeroes.  param_2 is edx, which is sometimes used to hold the second argument to a function
+mov     param_1, r12    ; param_1 is rcx, which is sometimes used to hold the first argument to a function.  r12 contains the return value from KERNEL32.DLL::CreateNamedPipeA (see earlier mov instruction)
+lea     rdi, [rsp + 0x4c]
+call    qword ptr [->KERNEL32.DLL::ConnectNamedPipe] ; takes param_1 and param_2 as arguments.  Return value stored in rax.
+</pre>
+</details>
 
 ## References
 

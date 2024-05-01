@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -34,12 +34,12 @@ Malware creates a mutex.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|--|Poison Ivy has a default process mutex, but can be altered at build time. [[1]](#1)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Malware creates global mutexes that signal rootkit installation has occurred successfully. [[2]](#2)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon creates a mutex. [[3]](#3)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter creates a mutex. [[3]](#3)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip creates a mutex. [[3]](#3)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Rombertik creates a mutex. [[3]](#3)|
+|[**Poison Ivy**](../../xample-malware/poison-ivy.md)|2005|--|Poison Ivy has a default process mutex, but can be altered at build time. [[1]](#1)|
+|[**Stuxnet**](../../xample-malware/stuxnet.md)|2010|--|Malware creates global mutexes that signal rootkit installation has occurred successfully. [[2]](#2)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|--|Hupigon creates a mutex. [[3]](#3)|
+|[**Kovter**](../../xample-malware/kovter.md)|2016|--|Kovter creates a mutex. [[3]](#3)|
+|[**Redhip**](../../xample-malware/redhip.md)|2011|--|Redhip creates a mutex. [[3]](#3)|
+|[**Rombertik**](../../xample-malware/rombertik.md)|2015|--|Rombertik creates a mutex. [[3]](#3)|
 
 ## Detection
 
@@ -101,6 +101,19 @@ Malware creates a mutex.
 |[satan_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/satan_mutexes.py)|Create Mutex (C0042)|--|
 |[medusalocker_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/medusalocker_mutexes.py)|Create Mutex (C0042)|--|
 |[remcos_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/remcos_mutexes.py)|Create Mutex (C0042)|--|
+
+### C0042 Snippet
+<details>
+<summary> Process::Create Mutex </summary>
+SHA256: 0b8e662e7e595ef56396a298c367b74721d66591d856e8a8241fcdd60d08373c
+Location: 0x402A1E
+<pre>
+push    eax     ; name of mutex
+push    0x0     ; if the thread that creates the mutex owns it (false, in this case)
+push    0x0     ; optional security descriptor set to NULL, so default security descriptor will be used
+call    dword ptr [->KERNEL32.DLL::CreateMutexW]        ; call function to create mutex
+</pre>
+</details>
 
 ## References
 

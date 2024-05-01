@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.0</b></td>
+<td><b>2.1</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>13 September 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -35,3 +35,15 @@ Malware terminates a thread.
 |Tool: capa|Mapping|APIs|
 |---|---|---|
 |[terminate thread](https://github.com/mandiant/capa-rules/blob/master/host-interaction/thread/terminate/terminate-thread.yml)|Terminate Thread (C0039)|kernel32.TerminateThread, PsTerminateSystemThread, System.Threading.Thread.Abort|
+
+### C0039 Snippet
+<details>
+<summary> Process::Terminate Thread </summary>
+SHA256: 27253651170386863b148afb2a0fdda7780ae65cbc31405acbd99fa06b44b79f
+Location: 0x14000395B
+<pre>
+mov     param_1, qword ptr [DAT_14000ca58]      ; thread to terminate
+xor     param_2, param_2        ; set the thread's exit status to 0
+call    qword ptr [->KERNEL32.DLL::TerminateThread]     ; call the Windows API function to terminate the thread
+</pre>
+</details>

@@ -41,10 +41,10 @@ Malware may import, generate, or otherwise use an encryption key.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy creates new key via CryptAcquireContext. [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter creates a new key via CryptAcquireContext. [[1]](#1)|
-|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|Locky Bart creates a new key via CryptAcquireContext. [[1]](#1)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|C0028.002|Rombertik encrypts data using RC4 KSA. [[1]](#1)|
+|[**BlackEnergy**](../../xample-malware/blackenergy.md)|2007|--|BlackEnergy creates new key via CryptAcquireContext. [[1]](#1)|
+|[**Kovter**](../../xample-malware/kovter.md)|2016|--|Kovter creates a new key via CryptAcquireContext. [[1]](#1)|
+|[**Locky Bart**](../../xample-malware/locky-bart.md)|2017|--|Locky Bart creates a new key via CryptAcquireContext. [[1]](#1)|
+|[**Rombertik**](../../xample-malware/rombertik.md)|2015|C0028.002|Rombertik encrypts data using RC4 KSA. [[1]](#1)|
 
 ## Detection
 

@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -34,15 +34,15 @@ Malware terminates a process.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy terminates a process via fastfail. [[1]](#1)|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR terminates processes. [[1]](#1)|
-|[**GravityRAT**](../xample-malware/gravity-rat.md)|2018|--|GravityRAT terminates processes. [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon terminates processes. [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter terminates processes. [[1]](#1)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon terminates processes. [[1]](#1)|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|--|Stuxnet terminates processes. [[1]](#1)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|TrickBot terminates processes. [[1]](#1)|
-|[**UP007**](../xample-malware/up007.md)|2016|--|UP007 terminates processes. [[1]](#1)|
+|[**BlackEnergy**](../../xample-malware/blackenergy.md)|2007|--|BlackEnergy terminates a process via fastfail. [[1]](#1)|
+|[**GoBotKR**](../../xample-malware/gobotkr.md)|2019|--|GoBotKR terminates processes. [[1]](#1)|
+|[**GravityRAT**](../../xample-malware/gravity-rat.md)|2018|--|GravityRAT terminates processes. [[1]](#1)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|--|Hupigon terminates processes. [[1]](#1)|
+|[**Kovter**](../../xample-malware/kovter.md)|2016|--|Kovter terminates processes. [[1]](#1)|
+|[**Shamoon**](../../xample-malware/shamoon.md)|2012|--|Shamoon terminates processes. [[1]](#1)|
+|[**Stuxnet**](../../xample-malware/stuxnet.md)|2010|--|Stuxnet terminates processes. [[1]](#1)|
+|[**TrickBot**](../../xample-malware/trickbot.md)|2016|--|TrickBot terminates processes. [[1]](#1)|
+|[**UP007**](../../xample-malware/up007.md)|2016|--|UP007 terminates processes. [[1]](#1)|
 
 ## Detection
 
@@ -55,6 +55,17 @@ Malware terminates a process.
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
 |[terminates_remote_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/terminates_remote_process.py)|Terminate Process (C0018)|NtTerminateProcess|
+
+### C0018 Snippet
+<details>
+<summary> Process::Terminate Process </summary>
+SHA256: 27253651170386863b148afb2a0fdda7780ae65cbc31405acbd99fa06b44b79f
+Location: 0x1400083c7
+<pre>
+mov     ecx, eax        ; use the value stored in eax as the exit status for the exited process
+call    qword ptr [->MSVCRT.DLL::exit]  ; call the Windows API function to terminate the process
+</pre>
+</details>
 
 ## References
 

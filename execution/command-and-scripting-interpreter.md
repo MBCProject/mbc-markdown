@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -50,7 +50,7 @@ See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.or
 |[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut accepts command line arguments. [[9]](#9)|
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon accepts command line arguments. [[9]](#9)|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi accepts command line arguments. [[9]](#9)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip accepts command line arguments. [[9]](#9)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip accepts command line arguments. [[9]](#9)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware accepts command line arguments. [[9]](#9)|
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|The malware installs a script to inject a JavaScript script and modify web traffic. [[10]](#10)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|TrickBot accepts command line arguments. [[9]](#9)|
@@ -65,53 +65,63 @@ See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.or
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[office_postscript](https://github.com/CAPESandbox/community/tree/master/modules/signatures/office_postscript.py)|Command and Scripting Interpreter (E1059)|NtWriteFile|
-|[js_suspicious_redirect](https://github.com/CAPESandbox/community/tree/master/modules/signatures/js_suspicious_redirect.py)|Command and Scripting Interpreter (E1059)|CDocument_write, JsEval, COleScript_ParseScriptText, COleScript_Compile|
-|[odbcconf_bypass](https://github.com/CAPESandbox/community/tree/master/modules/signatures/odbcconf_bypass.py)|Command and Scripting Interpreter (E1059)|--|
-|[regsvr32_squiblydoo_dll_load](https://github.com/CAPESandbox/community/tree/master/modules/signatures/regsvr32_squiblydoo_dll_load.py)|Command and Scripting Interpreter (E1059)|LdrLoadDll|
-|[squiblydoo_bypass](https://github.com/CAPESandbox/community/tree/master/modules/signatures/squiblydoo_bypass.py)|Command and Scripting Interpreter (E1059)|--|
-|[squiblytwo_bypass](https://github.com/CAPESandbox/community/tree/master/modules/signatures/squiblytwo_bypass.py)|Command and Scripting Interpreter (E1059)|--|
-|[exe_dropper_js](https://github.com/CAPESandbox/community/tree/master/modules/signatures/exe_dropper_js.py)|Command and Scripting Interpreter (E1059)|JsEval|
-|[persistence_registry_script](https://github.com/CAPESandbox/community/tree/master/modules/signatures/persistence_registry_script.py)|Command and Scripting Interpreter (E1059)|RegSetValueExA, RegSetValueExW, NtSetValueKey|
-|[ie_martian_children](https://github.com/CAPESandbox/community/tree/master/modules/signatures/ie_martian_children.py)|Command and Scripting Interpreter (E1059)|--|
-|[bcdedit_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bcdedit_command.py)|Command and Scripting Interpreter (E1059)|ShellExecuteExW, NtCreateUserProcess, CreateProcessInternalW|
-|[office_martian_children](https://github.com/CAPESandbox/community/tree/master/modules/signatures/office_martian_children.py)|Command and Scripting Interpreter (E1059)|--|
-|[js_phish](https://github.com/CAPESandbox/community/tree/master/modules/signatures/js_phish.py)|Command and Scripting Interpreter (E1059)|JsEval, COleScript_ParseScriptText, COleScript_Compile|
-|[disables_winfirewall](https://github.com/CAPESandbox/community/tree/master/modules/signatures/disables_winfirewall.py)|Command and Scripting Interpreter (E1059)|--|
-|[script_tool_executed](https://github.com/CAPESandbox/community/tree/master/modules/signatures/script_tool_executed.py)|Command and Scripting Interpreter (E1059)|--|
-|[cmdline_obfuscation](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cmdline_obfuscation.py)|Command and Scripting Interpreter (E1059)|--|
-|[cmdline_switches](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cmdline_switches.py)|Command and Scripting Interpreter (E1059)|--|
-|[cmdline_terminate](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cmdline_terminate.py)|Command and Scripting Interpreter (E1059)|--|
-|[cmdline_forfiles_wildcard](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cmdline_forfiles_wildcard.py)|Command and Scripting Interpreter (E1059)|--|
-|[cmdline_http_link](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cmdline_http_link.py)|Command and Scripting Interpreter (E1059)|--|
-|[cmdline_long_string](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cmdline_long_string.py)|Command and Scripting Interpreter (E1059)|--|
-|[cmdline_reversed_http_link](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cmdline_reversed_http_link.py)|Command and Scripting Interpreter (E1059)|--|
-|[long_commandline](https://github.com/CAPESandbox/community/tree/master/modules/signatures/long_commandline.py)|Command and Scripting Interpreter (E1059)|--|
-|[powershell_renamed_commandline](https://github.com/CAPESandbox/community/tree/master/modules/signatures/powershell_renamed_commandline.py)|Command and Scripting Interpreter (E1059)|--|
-|[wmi_script_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/wmi_script_process.py)|Command and Scripting Interpreter (E1059)|NtCreateUserProcess, CreateProcessInternalW|
-|[disables_mappeddrives_autodisconnect](https://github.com/CAPESandbox/community/tree/master/modules/signatures/disables_mappeddrives_autodisconnect.py)|Command and Scripting Interpreter (E1059)|ShellExecuteExW, NtCreateUserProcess, CreateProcessInternalW|
-|[system_account_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/system_account_discovery_cmd.py)|Command and Scripting Interpreter (E1059)|--|
-|[system_currently_loggedin_user_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/system_currently_loggedin_user_cmd.py)|Command and Scripting Interpreter (E1059)|--|
-|[system_info_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/system_info_discovery_cmd.py)|Command and Scripting Interpreter (E1059)|--|
-|[system_info_discovery_pwsh](https://github.com/CAPESandbox/community/tree/master/modules/signatures/system_info_discovery_pwsh.py)|Command and Scripting Interpreter (E1059)|--|
-|[system_network_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/system_network_discovery_cmd.py)|Command and Scripting Interpreter (E1059)|--|
-|[system_network_discovery_pwsh](https://github.com/CAPESandbox/community/tree/master/modules/signatures/system_network_discovery_pwsh.py)|Command and Scripting Interpreter (E1059)|--|
-|[system_user_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/system_user_discovery_cmd.py)|Command and Scripting Interpreter (E1059)|--|
-|[powershell_network_connection](https://github.com/CAPESandbox/community/tree/master/modules/signatures/powershell_network_connection.py)|Command and Scripting Interpreter (E1059)|URLDownloadToFileW, HttpOpenRequestW, send, WSAConnect, InternetCrackUrlW, InternetCrackUrlA, InternetReadFile|
-|[powershell_scriptblock_logging](https://github.com/CAPESandbox/community/tree/master/modules/signatures/powershell_scriptblock_logging.py)|Command and Scripting Interpreter (E1059)|--|
-|[powershell_command_suspicious](https://github.com/CAPESandbox/community/tree/master/modules/signatures/powershell_command_suspicious.py)|Command and Scripting Interpreter (E1059)|--|
-|[powershell_renamed](https://github.com/CAPESandbox/community/tree/master/modules/signatures/powershell_renamed.py)|Command and Scripting Interpreter (E1059)|--|
-|[powershell_reversed](https://github.com/CAPESandbox/community/tree/master/modules/signatures/powershell_reversed.py)|Command and Scripting Interpreter (E1059)|--|
-|[powershell_variable_obfuscation](https://github.com/CAPESandbox/community/tree/master/modules/signatures/powershell_variable_obfuscation.py)|Command and Scripting Interpreter (E1059)|--|
-|[office_com_load](https://github.com/CAPESandbox/community/tree/master/modules/signatures/office_com_load.py)|Command and Scripting Interpreter (E1059)|LdrGetDllHandle, LdrLoadDll|
-|[office_vb_load](https://github.com/CAPESandbox/community/tree/master/modules/signatures/office_vb_load.py)|Command and Scripting Interpreter (E1059)|LdrGetDllHandle, LdrLoadDll|
-|[office_wmi_load](https://github.com/CAPESandbox/community/tree/master/modules/signatures/office_wmi_load.py)|Command and Scripting Interpreter (E1059)|LdrGetDllHandle, LdrLoadDll|
-|[document_script_exe_drop](https://github.com/CAPESandbox/community/tree/master/modules/signatures/document_script_exe_drop.py)|Command and Scripting Interpreter (E1059)|NtWriteFile|
-|[windows_defender_powershell](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows_defender_powershell.py)|Command and Scripting Interpreter (E1059)|--|
-|[office_suspicious_processes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/office_suspicious_processes.py)|Command and Scripting Interpreter (E1059)|NtCreateUserProcess, CreateProcessInternalW|
-|[script_created_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/script_created_process.py)|Command and Scripting Interpreter (E1059)|NtCreateUserProcess, CreateProcessInternalW|
-|[script_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/script_network_activity.py)|Command and Scripting Interpreter (E1059)|URLDownloadToFileW, HttpOpenRequestW, send, WSAConnect, InternetCrackUrlW, InternetCrackUrlA, SslEncryptPacket, InternetReadFile|
-|[suspicious_js_script](https://github.com/CAPESandbox/community/tree/master/modules/signatures/suspicious_js_script.py)|Command and Scripting Interpreter (E1059)|JsEval, COleScript_ParseScriptText|
+|[office_postscript](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_exploit.py)|Command and Scripting Interpreter (E1059)|NtWriteFile|
+|[js_suspicious_redirect](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/js_suspicious_redirect.py)|Command and Scripting Interpreter (E1059)|CDocument_write, JsEval, COleScript_ParseScriptText, COleScript_Compile|
+|[odbcconf_bypass](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bypass_applocker.py)|Command and Scripting Interpreter (E1059)|--|
+|[regsvr32_squiblydoo_dll_load](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bypass_applocker.py)|Command and Scripting Interpreter (E1059)|LdrLoadDll|
+|[squiblydoo_bypass](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bypass_applocker.py)|Command and Scripting Interpreter (E1059)|--|
+|[squiblytwo_bypass](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bypass_applocker.py)|Command and Scripting Interpreter (E1059)|--|
+|[exe_dropper_js](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/dropper_js.py)|Command and Scripting Interpreter (E1059)|JsEval|
+|[persistence_registry_script](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_fileless.py)|Command and Scripting Interpreter (E1059)|RegSetValueExA, RegSetValueExW, NtSetValueKey|
+|[ie_martian_children](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/martians_ie.py)|Command and Scripting Interpreter (E1059)|--|
+|[bcdedit_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bcdedit_command.py)|Command and Scripting Interpreter (E1059)|ShellExecuteExW, NtCreateUserProcess, CreateProcessInternalW|
+|[office_martian_children](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/martians_office.py)|Command and Scripting Interpreter (E1059)|--|
+|[js_phish](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/js_phish.py)|Command and Scripting Interpreter (E1059)|JsEval, COleScript_ParseScriptText, COleScript_Compile|
+|[disables_winfirewall](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_winfirewall.py)|Command and Scripting Interpreter (E1059)|--|
+|[script_tool_executed](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/windows_utilities.py)|Command and Scripting Interpreter (E1059)|--|
+|[cmdline_obfuscation](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
+|[cmdline_switches](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
+|[cmdline_terminate](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
+|[cmdline_forfiles_wildcard](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
+|[cmdline_http_link](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
+|[cmdline_long_string](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
+|[cmdline_reversed_http_link](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
+|[long_commandline](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
+|[powershell_renamed_commandline](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Command and Scripting Interpreter (E1059)|--|
+|[wmi_script_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/wmi.py)|Command and Scripting Interpreter (E1059)|NtCreateUserProcess, CreateProcessInternalW|
+|[disables_mappeddrives_autodisconnect](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_drives_autodisconnect.py)|Command and Scripting Interpreter (E1059)|ShellExecuteExW, NtCreateUserProcess, CreateProcessInternalW|
+|[system_account_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py)|Command and Scripting Interpreter (E1059)|--|
+|[system_currently_loggedin_user_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py)|Command and Scripting Interpreter (E1059)|--|
+|[system_info_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py)|Command and Scripting Interpreter (E1059)|--|
+|[system_info_discovery_pwsh](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py)|Command and Scripting Interpreter (E1059)|--|
+|[system_network_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py)|Command and Scripting Interpreter (E1059)|--|
+|[system_network_discovery_pwsh](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py)|Command and Scripting Interpreter (E1059)|--|
+|[system_user_discovery_cmd](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py)|Command and Scripting Interpreter (E1059)|--|
+|[powershell_network_connection](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/powershell_command.py)|Command and Scripting Interpreter (E1059)|URLDownloadToFileW, HttpOpenRequestW, send, WSAConnect, InternetCrackUrlW, InternetCrackUrlA, InternetReadFile|
+|[powershell_scriptblock_logging](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/powershell_command.py)|Command and Scripting Interpreter (E1059)|--|
+|[powershell_command_suspicious](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/powershell_command.py)|Command and Scripting Interpreter (E1059)|--|
+|[powershell_renamed](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/powershell_command.py)|Command and Scripting Interpreter (E1059)|--|
+|[powershell_reversed](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/powershell_command.py)|Command and Scripting Interpreter (E1059)|--|
+|[powershell_variable_obfuscation](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/powershell_command.py)|Command and Scripting Interpreter (E1059)|--|
+|[office_com_load](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_dll_loading.py)|Command and Scripting Interpreter (E1059)|LdrGetDllHandle, LdrLoadDll|
+|[office_vb_load](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_dll_loading.py)|Command and Scripting Interpreter (E1059)|LdrGetDllHandle, LdrLoadDll|
+|[office_wmi_load](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_dll_loading.py)|Command and Scripting Interpreter (E1059)|LdrGetDllHandle, LdrLoadDll|
+|[document_script_exe_drop](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/document_exedrop.py)|Command and Scripting Interpreter (E1059)|NtWriteFile|
+|[windows_defender_powershell](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windefender.py)|Command and Scripting Interpreter (E1059)|--|
+|[office_suspicious_processes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_suspicious_process.py)|Command and Scripting Interpreter (E1059)|NtCreateUserProcess, CreateProcessInternalW|
+|[script_created_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/script_downloader.py)|Command and Scripting Interpreter (E1059)|NtCreateUserProcess, CreateProcessInternalW|
+|[script_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/script_downloader.py)|Command and Scripting Interpreter (E1059)|URLDownloadToFileW, HttpOpenRequestW, send, WSAConnect, InternetCrackUrlW, InternetCrackUrlA, SslEncryptPacket, InternetReadFile|
+|[suspicious_js_script](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/script_downloader.py)|Command and Scripting Interpreter (E1059)|JsEval, COleScript_ParseScriptText|
+
+### E1059 Snippet
+<details>
+<summary> Execution::Command and Scripting Interpreter </summary>
+SHA256: 905b9db8cf5a3001318b28ee5dc674f8f65ca1e4306aab9e331b3bba24e7b8a8
+Location: 0x41B7A6
+<pre>
+call    dword ptr [->KERNEL32.DLL::GetCommandLineW]
+</pre>
+</details>
 
 ## References
 

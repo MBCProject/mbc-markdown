@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.2</b></td>
+<td><b>2.3</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -58,7 +58,7 @@ Droppers may be described as “single stage” or “two stage.” While the fo
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|The malware installs an open-source program called mitmproxy. [[16]](#16)|
 |[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|The malware contains an embedded PE file. [[19]](#19)|
 |[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut contains an embedded PE file. [[19]](#19)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip contains an embedded PE file. [[19]](#19)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip contains an embedded PE file. [[19]](#19)|
 |[**ElectroRAT**](../xample-malware/electrorat.md)|2020|--|ElectroRat looks for wallets to steal cryptocurrency. [[20]](#20)|
 
 ## Detection
@@ -70,9 +70,9 @@ Droppers may be described as “single stage” or “two stage.” While the fo
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[bitcoin_opencl](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bitcoin_opencl.py)|Install Additional Program (B0023)|--|
-|[dropper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/dropper.py)|Install Additional Program (B0023)|--|
-|[sniffer_winpcap](https://github.com/CAPESandbox/community/tree/master/modules/signatures/sniffer_winpcap.py)|Install Additional Program (B0023)|--|
+|[bitcoin_opencl](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bitcoin_opencl.py)|Install Additional Program (B0023)|--|
+|[dropper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/dropper.py)|Install Additional Program (B0023)|--|
+|[sniffer_winpcap](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/sniffer_winpcap.py)|Install Additional Program (B0023)|--|
 
 ## References
 <a name="1">"Cyclops Blink: Malware Analysis Report, Version 1.0," National Cyber Security Centre/GCHQ, 23 Feb. 2022. [Online]. Available: https://www.ncsc.gov.uk/files/Cyclops-Blink-Malware-Analysis-Report.pdf.

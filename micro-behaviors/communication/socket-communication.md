@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>3.1</b></td>
+<td><b>3.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -59,9 +59,9 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**SYNful Knock**](../../xample-malware/synful-knock.md)|2015|C0001.014|SYNful Knock initiates communication with the C2 server via a uniquely crafted TCP SYN packet sent to port 80 of the "implanted" router. [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0001.010|Hupigon creates a UDP socket. [[2]](#2)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|C0001.011|Rombertik creates a TCP socket. [[2]](#2)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|C0001.009|Shamoon initializes a Winsock library. [[2]](#2)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|C0001.010|Hupigon creates a UDP socket. [[2]](#2)|
+|[**Rombertik**](../../xample-malware/rombertik.md)|2015|C0001.011|Rombertik creates a TCP socket. [[2]](#2)|
+|[**Shamoon**](../../xample-malware/shamoon.md)|2012|C0001.009|Shamoon initializes a Winsock library. [[2]](#2)|
 
 ## Detection
 
@@ -89,6 +89,18 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[blackrat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/blackrat_network_activity.py)|Socket Communication (C0001)|send|
 |[obliquerat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/obliquerat_network_activity.py)|Socket Communication (C0001)|send|
 |[network_bind](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_bind.py)|Socket Communication (C0001)|listen, bind|
+
+### C0001.009 Snippet
+<details>
+<summary> Communication::Socket Communication::Initialize Winsock Library </summary>
+SHA256: 000b535ab2a4fec86e2d8254f8ed65c6ebd37309ed68692c929f8f93a99233f6
+Location: 0x472C92
+<pre>
+push    eax     ; pointer to WSADATA structure that the call to start Winsock will populate with the Windows socket data
+push    0x101   ; highest version of Winsock permitted for use in this application -- in this case, version 1.1 (major version in lowest-order byte, minor version in highest-order byte)
+call    WSOCK.DLL::WSAStartup   ; Initiate the Winsock DLL
+</pre>
+</details>
 
 ## References
 

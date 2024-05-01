@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.2</b></td>
+<td><b>2.3</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -46,40 +46,40 @@ Malware modifies the registry.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0036.005|BlackEnergy queries or enumerates a registry key. [[1]](#1)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|C0036.006|BlackEnergy queries or enumerates a registry value. [[1]](#1)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|C0036.001|Dark Comet sets registry values. [[1]](#1)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|C0036.002|Dark Comet deletes registry keys. [[1]](#1)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|C0036.005|Dark Comet queries or enumerates registry keys. [[1]](#1)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|C0036.006|Dark Comet queries or enumerates registry values. [[1]](#1)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|C0036.007|Dark Comet deletes registry values. [[1]](#1)|
-|[**DNSChanger**](../xample-malware/dnschanger.md)|2011|C0036.001|DNSChanger sets registry keys. [[1]](#1)|
-|[**DNSChanger**](../xample-malware/dnschanger.md)|2011|C0036.006|DNSChanger queries or enumerates registry values. [[1]](#1)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|C0036.001|Gamut sets registry values. [[1]](#1)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|C0036.002|Gamut deletes registry keys. [[1]](#1)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|C0036.005|Gamut queries or enumerates registry keys. [[1]](#1)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|C0036.006|Gamut queries or enumerates registry values. [[1]](#1)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|C0036.007|Gamut deletes registry values. [[1]](#1)|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|C0036.006|GoBotKR queries or enumerates registry values. [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0036.001|Hupigon sets registry values. [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0036.002|Hupigon deletes registry keys. [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0036.005|Hupigon queries or enumerates registry keys. [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0036.006|Hupigon queries or enumerates registry values. [[1]](#1)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0036.007|Hupigon deletes registry values. [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|C0036.004|Kovter creates or opens registry keys. [[1]](#1)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|C0036.006|Kovter queries or enumerates registry values. [[1]](#1)|
-|[**Locky Bart**](../xample-malware/locky-bart.md)|2017|C0036.001|Locky Bart sets registry values. [[1]](#1)|
-|[**Poison Ivy**](../xample-malware/poison-ivy.md)|2005|C0036.006|Poison Ivy queries or enumerates registry values. [[1]](#1)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|C0036.001|Redhip set registry values. [[1]](#1)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|C0036.002|Redhip deletes registry keys. [[1]](#1)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|C0036.006|Redhip queries or enumerates registry values. [[1]](#1)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|C0036.001|Rombertik sets registry values. [[1]](#1)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|C0036.002|Rombertik deletes registry keys. [[1]](#1)|
-|[**Rombertik**](../xample-malware/rombertik.md)|2015|C0036.006|Rombertik queries or enumerates registry values. [[1]](#1)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|C0036.006|Shamoon queries or enumerates registry values. [[1]](#1)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|C0036.007|Shamoon deletes registry values. [[1]](#1)|
-|[**UP007**](../xample-malware/up007.md)|2016|C0036.001|UP007 sets registry values. [[1]](#1)|
-|[**UP007**](../xample-malware/up007.md)|2016|C0036.006|UP007 queries or enumerates registry values. [[1]](#1)|
+|[**BlackEnergy**](../../xample-malware/blackenergy.md)|2007|C0036.005|BlackEnergy queries or enumerates a registry key. [[1]](#1)|
+|[**BlackEnergy**](../../xample-malware/blackenergy.md)|2007|C0036.006|BlackEnergy queries or enumerates a registry value. [[1]](#1)|
+|[**Dark Comet**](../../xample-malware/dark-comet.md)|2008|C0036.001|Dark Comet sets registry values. [[1]](#1)|
+|[**Dark Comet**](../../xample-malware/dark-comet.md)|2008|C0036.002|Dark Comet deletes registry keys. [[1]](#1)|
+|[**Dark Comet**](../../xample-malware/dark-comet.md)|2008|C0036.005|Dark Comet queries or enumerates registry keys. [[1]](#1)|
+|[**Dark Comet**](../../xample-malware/dark-comet.md)|2008|C0036.006|Dark Comet queries or enumerates registry values. [[1]](#1)|
+|[**Dark Comet**](../../xample-malware/dark-comet.md)|2008|C0036.007|Dark Comet deletes registry values. [[1]](#1)|
+|[**DNSChanger**](../../xample-malware/dnschanger.md)|2011|C0036.001|DNSChanger sets registry keys. [[1]](#1)|
+|[**DNSChanger**](../../xample-malware/dnschanger.md)|2011|C0036.006|DNSChanger queries or enumerates registry values. [[1]](#1)|
+|[**Gamut**](../../xample-malware/gamut.md)|2014|C0036.001|Gamut sets registry values. [[1]](#1)|
+|[**Gamut**](../../xample-malware/gamut.md)|2014|C0036.002|Gamut deletes registry keys. [[1]](#1)|
+|[**Gamut**](../../xample-malware/gamut.md)|2014|C0036.005|Gamut queries or enumerates registry keys. [[1]](#1)|
+|[**Gamut**](../../xample-malware/gamut.md)|2014|C0036.006|Gamut queries or enumerates registry values. [[1]](#1)|
+|[**Gamut**](../../xample-malware/gamut.md)|2014|C0036.007|Gamut deletes registry values. [[1]](#1)|
+|[**GoBotKR**](../../xample-malware/gobotkr.md)|2019|C0036.006|GoBotKR queries or enumerates registry values. [[1]](#1)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|C0036.001|Hupigon sets registry values. [[1]](#1)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|C0036.002|Hupigon deletes registry keys. [[1]](#1)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|C0036.005|Hupigon queries or enumerates registry keys. [[1]](#1)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|C0036.006|Hupigon queries or enumerates registry values. [[1]](#1)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|C0036.007|Hupigon deletes registry values. [[1]](#1)|
+|[**Kovter**](../../xample-malware/kovter.md)|2016|C0036.004|Kovter creates or opens registry keys. [[1]](#1)|
+|[**Kovter**](../../xample-malware/kovter.md)|2016|C0036.006|Kovter queries or enumerates registry values. [[1]](#1)|
+|[**Locky Bart**](../../xample-malware/locky-bart.md)|2017|C0036.001|Locky Bart sets registry values. [[1]](#1)|
+|[**Poison Ivy**](../../xample-malware/poison-ivy.md)|2005|C0036.006|Poison Ivy queries or enumerates registry values. [[1]](#1)|
+|[**Redhip**](../../xample-malware/redhip.md)|2011|C0036.001|Redhip set registry values. [[1]](#1)|
+|[**Redhip**](../../xample-malware/redhip.md)|2011|C0036.002|Redhip deletes registry keys. [[1]](#1)|
+|[**Redhip**](../../xample-malware/redhip.md)|2011|C0036.006|Redhip queries or enumerates registry values. [[1]](#1)|
+|[**Rombertik**](../../xample-malware/rombertik.md)|2015|C0036.001|Rombertik sets registry values. [[1]](#1)|
+|[**Rombertik**](../../xample-malware/rombertik.md)|2015|C0036.002|Rombertik deletes registry keys. [[1]](#1)|
+|[**Rombertik**](../../xample-malware/rombertik.md)|2015|C0036.006|Rombertik queries or enumerates registry values. [[1]](#1)|
+|[**Shamoon**](../../xample-malware/shamoon.md)|2012|C0036.006|Shamoon queries or enumerates registry values. [[1]](#1)|
+|[**Shamoon**](../../xample-malware/shamoon.md)|2012|C0036.007|Shamoon deletes registry values. [[1]](#1)|
+|[**UP007**](../../xample-malware/up007.md)|2016|C0036.001|UP007 sets registry values. [[1]](#1)|
+|[**UP007**](../../xample-malware/up007.md)|2016|C0036.006|UP007 queries or enumerates registry values. [[1]](#1)|
 
 ## Detection
 
@@ -219,6 +219,21 @@ Malware modifies the registry.
 |[bypass_firewall](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bypass_firewall.py)|Registry (C0036)|--|
 |[bypass_firewall](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bypass_firewall.py)|Registry::Set Registry Value (C0036.001)|--|
 |[remcos_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/remcos_regkeys.py)|Registry (C0036)|--|
+
+### C0036.005 Snippet
+<details>
+<summary> Registry::Query Registry Key </summary>
+SHA256: 1e0215f67fb7b02bc44f33bf6a5b884c3061cbeb38e0150b559635458951fa53
+Location: 0x408723
+<pre>
+push    eax     ; phkResult: stores pointer to handle containing open registry key
+push    0x1     ; samDesired: Desired access rights for opened key.  0x1 is KEY_QUERY_VALUE, which is required to query the value of the sought registry key
+push    0x0     ; ulOptions: Optional key set to 0, so no options passed to registry key
+push    ecx     ; lpSubKey: Optional parameter indicating a subkey to read from
+push    edx     ; handle to open registry key or name of registry key to open
+call    dword ptr [->ADVAPI32.DLL::RegOpenKeyExA] ; Windows API call which opens registry key for the query
+</pre>
+</details>
 
 ## References
 

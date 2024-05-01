@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.2</b></td>
+<td><b>2.3</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>27 April 2024</b></td>
 </tr>
 </table>
 
@@ -47,8 +47,8 @@ Malware accesses files that contain sensitive data or credentials related to Bit
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[infostealer_bitcoin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_bitcoin.py)|Cryptocurrency (B0028)|--|
-|[infostealer_bitcoin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_bitcoin.py)|Cryptocurrency::Bitcoin (B0028.001)|--|
+|[infostealer_bitcoin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/infostealer_bitcoin.py)|Cryptocurrency (B0028)|--|
+|[infostealer_bitcoin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/infostealer_bitcoin.py)|Cryptocurrency::Bitcoin (B0028.001)|--|
 
 ## References
 

@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>29 April 2024</b></td>
 </tr>
 </table>
 
@@ -32,7 +32,7 @@
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip finds taskbars. [[1]](#1)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip finds taskbars. [[1]](#1)|
 
 ## Detection
 

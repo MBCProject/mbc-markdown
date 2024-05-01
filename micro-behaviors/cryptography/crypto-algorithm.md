@@ -30,4 +30,4 @@
 
 A known crypto algorithm is implemented in the code and it is unknown whether it is from a public crypto library. 
 
-When the library is known, **Crypto Library ([C0059](../cryptography/crypto-lib.md))** micro-behavior should be used.
+When the library is known, **Crypto Library ([C0059](../cryptography/crypto-library.md))** micro-behavior should be used.

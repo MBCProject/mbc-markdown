@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>29 April 2024</b></td>
 </tr>
 </table>
 
@@ -44,8 +44,8 @@ The DNS Communication micro-behavior focuses on DNS communication.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|C0011.001|Hupigon resolves DNS. [[1]](#1)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|C0011.001|Shamoon resolves DNS. [[1]](#1)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|C0011.001|Hupigon resolves DNS. [[1]](#1)|
+|[**Shamoon**](../../xample-malware/shamoon.md)|2012|C0011.001|Shamoon resolves DNS. [[1]](#1)|
 
 ## Detection
 
@@ -64,6 +64,17 @@ The DNS Communication micro-behavior focuses on DNS communication.
 |[network_dns_tunneling_request](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_tunneling_request.py)|DNS Communication (C0011)|DnsQuery_A, DnsQuery_W|
 |[network_dns_doh_tls](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_doh_tls.py)|DNS Communication (C0011)|--|
 |[network_dga](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dga.py)|DNS Communication (C0011)|--|
+
+### C0011.001 Snippet
+<details>
+<summary> Communication::DNS Communication::Resolve </summary>
+SHA256: 000b535ab2a4fec86e2d8254f8ed65c6ebd37309ed68692c929f8f93a99233f6
+Location: 0x472CD3
+<pre>
+push    ebx     ; hostname to perform DNS lookup for
+call    WSOCK32.DLL::gethostbyname      ; Windows function which will retrieve an object representing the specified host
+</pre>
+</details>
 
 ## References
 

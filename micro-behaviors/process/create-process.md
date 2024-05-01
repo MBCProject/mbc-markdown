@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -42,20 +42,20 @@ Malware creates a process.
 
 |Name|Date|Method|Description|
 |---|---|---|---|
-|[**Stuxnet**](../xample-malware/stuxnet.md)|2010|C0017.002|Stuxnet will use WMI operations with the explorer.exe token in order to copy itself and execute on the remote share. [[1]](#1)|
-|[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy creates a process on Windows. [[2]](#2)|
-|[**Dark Comet**](../xample-malware/dark-comet.md)|2008|--|Dark Comet creates a process on Windows. [[2]](#2)|
-|[**Gamut**](../xample-malware/gamut.md)|2014|--|Gamut creates a process on Windows. [[2]](#2)|
-|[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR creates a process on Windows. [[2]](#2)|
-|[**Hupigon**](../xample-malware/hupigon.md)|2013|--|Hupigon creates a process on Windows. [[2]](#2)|
-|[**Kovter**](../xample-malware/kovter.md)|2016|--|Kovter creates a process on Windows. [[2]](#2)|
-|[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi creates a process on Windows. [[2]](#2)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip creates a process on Windows. [[2]](#2)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|C0017.003|Redhip creates a suspended process. [[2]](#2)|
-|[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon creates a process on Windows. [[2]](#2)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|--|TrickBot creates a process on Windows. [[2]](#2)|
-|[**TrickBot**](../xample-malware/trickbot.md)|2016|C0017.003|TrickBot creates a suspended process. [[2]](#2)|
-|[**UP007**](../xample-malware/up007.md)|2016|--|The malware creates a process on Windows. [[2]](#2)|
+|[**Stuxnet**](../../xample-malware/stuxnet.md)|2010|C0017.002|Stuxnet will use WMI operations with the explorer.exe token in order to copy itself and execute on the remote share. [[1]](#1)|
+|[**BlackEnergy**](../../xample-malware/blackenergy.md)|2007|--|BlackEnergy creates a process on Windows. [[2]](#2)|
+|[**Dark Comet**](../../xample-malware/dark-comet.md)|2008|--|Dark Comet creates a process on Windows. [[2]](#2)|
+|[**Gamut**](../../xample-malware/gamut.md)|2014|--|Gamut creates a process on Windows. [[2]](#2)|
+|[**GoBotKR**](../../xample-malware/gobotkr.md)|2019|--|GoBotKR creates a process on Windows. [[2]](#2)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|--|Hupigon creates a process on Windows. [[2]](#2)|
+|[**Kovter**](../../xample-malware/kovter.md)|2016|--|Kovter creates a process on Windows. [[2]](#2)|
+|[**Mebromi**](../../xample-malware/mebromi.md)|2011|--|Mebromi creates a process on Windows. [[2]](#2)|
+|[**Redhip**](../../xample-malware/redhip.md)|2011|--|Redhip creates a process on Windows. [[2]](#2)|
+|[**Redhip**](../../xample-malware/redhip.md)|2011|C0017.003|Redhip creates a suspended process. [[2]](#2)|
+|[**Shamoon**](../../xample-malware/shamoon.md)|2012|--|Shamoon creates a process on Windows. [[2]](#2)|
+|[**TrickBot**](../../xample-malware/trickbot.md)|2016|--|TrickBot creates a process on Windows. [[2]](#2)|
+|[**TrickBot**](../../xample-malware/trickbot.md)|2016|C0017.003|TrickBot creates a suspended process. [[2]](#2)|
+|[**UP007**](../../xample-malware/up007.md)|2016|--|The malware creates a process on Windows. [[2]](#2)|
 
 ## Detection
 
@@ -74,6 +74,30 @@ Malware creates a process.
 |[wmi_create_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/wmi_create_process.py)|Create Process (C0017)|NtCreateUserProcess, CreateProcessInternalW|
 |[wmi_create_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/wmi_create_process.py)|Create Process::Create Process via WMI (C0017.002)|NtCreateUserProcess, CreateProcessInternalW|
 |[script_created_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/script_created_process.py)|Create Process (C0017)|NtCreateUserProcess, CreateProcessInternalW|
+
+### C0049 Snippet
+<details>
+<summary> Process::Create Process </summary>
+SHA256: 465d3aac3ca4daa9ad4de04fcb999f358396efd7abceed9701c9c28c23c126db
+Location: 0x458C26
+<pre>
+lea     param_1, [ebp + 0xfffffeb0]
+push    param_1 ; pointer to PROCESS_INFORMATION struct to hold information about the new process
+lea     param_1, [ebp + 0xfffffec0]
+push    param_1 ; pointer to STARTUPINFO struct
+push    0x0     ; path to directory for new process -- if null, use same directory as calling process
+push    0x0     ; environment block for new process -- if null, use the calling process's environment block
+push    0x4     ; process creation flags (CREATE_SUSPENDED in this case)
+push    0x0     ; if heritable handles in the calling process should be inherited by the new process.  If false, inheritance will not occur.
+push    0x0     ; security attributes for new process.  If null, child processes cannot inherit thread running new process
+push    0x0     ; security attributes for new process.  If null, child processes cannot inherit handle for new process
+mov     param_1, dword ptr [ebp + local_8]
+call    FUN_00404dfc
+push    param_1 ; command line for new process to execute
+push    0x0     ; application name to be executed.  If null, use command line provided in another argument
+call    KERNEL32.DLL::CreateProcessA    ; Call Windows API function to create new process
+</pre>
+</details>
 
 ## References
 

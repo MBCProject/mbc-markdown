@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.2</b></td>
+<td><b>2.3</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -58,7 +58,7 @@ Malware may enumerate files and directories or may search for specific files or 
 |[**GoBotKR**](../xample-malware/gobotkr.md)|2019|--|GoBotKR checks if a file exists. [[6]](#6)|
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|--|The malware gets a file size. [[6]](#6)|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|--|Mebromi gets a file size. [[6]](#6)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip gets a file size. [[6]](#6)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip gets a file size. [[6]](#6)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|The malware gets the file version info. [[6]](#6)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon gets a common file path. [[6]](#6)|
 |[**ElectroRAT**](../xample-malware/electrorat.md)|2020|--|ElectroRat looks for wallets to steal cryptocurrency. [[7]](#7)|
@@ -79,24 +79,39 @@ Malware may enumerate files and directories or may search for specific files or 
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[antisandbox_cuckoo_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_cuckoo_files.py)|File and Directory Discovery (E1083)|--|
-|[antisandbox_threattrack_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_threattrack_files.py)|File and Directory Discovery (E1083)|--|
-|[antivm_directory_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_directory_objects.py)|File and Directory Discovery (E1083)|NtQueryDirectoryObject, NtOpenDirectoryObject|
-|[antivm_vmware_events](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_events.py)|File and Directory Discovery (E1083)|NtOpenEvent, NtCreateEvent|
-|[antivm_vmware_events](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_events.py)|File and Directory Discovery::Log File (E1083.m01)|NtOpenEvent, NtCreateEvent|
-|[antivm_vbox_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_devices.py)|File and Directory Discovery (E1083)|--|
-|[antivm_vmware_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_devices.py)|File and Directory Discovery (E1083)|--|
-|[antivm_vbox_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_files.py)|File and Directory Discovery (E1083)|--|
-|[antivm_vmware_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_libs.py)|File and Directory Discovery (E1083)|LdrLoadDll|
-|[antiav_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiav_detectfile.py)|File and Directory Discovery (E1083)|--|
-|[antivm_vpc_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vpc_files.py)|File and Directory Discovery (E1083)|--|
-|[antivm_vbox_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vbox_libs.py)|File and Directory Discovery (E1083)|LdrLoadDll|
-|[driver_filtermanager](https://github.com/CAPESandbox/community/tree/master/modules/signatures/driver_filtermanager.py)|File and Directory Discovery (E1083)|--|
-|[antisandbox_joe_anubis_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_joe_anubis_files.py)|File and Directory Discovery (E1083)|--|
-|[antivm_vmware_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_vmware_files.py)|File and Directory Discovery (E1083)|--|
-|[antisandbox_fortinet_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_fortinet_files.py)|File and Directory Discovery (E1083)|--|
-|[antisandbox_sunbelt_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_sunbelt_files.py)|File and Directory Discovery (E1083)|--|
-|[antianalysis_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antianalysis_detectfile.py)|File and Directory Discovery (E1083)|--|
+|[antisandbox_cuckoo_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_cuckoo_files.py)|File and Directory Discovery (E1083)|--|
+|[antisandbox_threattrack_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_threattrack_files.py)|File and Directory Discovery (E1083)|--|
+|[antivm_directory_objects](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_dirobjects.py)|File and Directory Discovery (E1083)|NtQueryDirectoryObject, NtOpenDirectoryObject|
+|[antivm_vmware_events](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_events.py)|File and Directory Discovery (E1083)|NtOpenEvent, NtCreateEvent|
+|[antivm_vmware_events](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_events.py)|File and Directory Discovery::Log File (E1083.m01)|NtOpenEvent, NtCreateEvent|
+|[antivm_vbox_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_devices.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vmware_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_devices.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vbox_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_files.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vmware_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_libs.py)|File and Directory Discovery (E1083)|LdrLoadDll|
+|[antiav_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_detectfile.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vpc_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vpc_files.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vbox_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_libs.py)|File and Directory Discovery (E1083)|LdrLoadDll|
+|[driver_filtermanager](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/driver_filtermanager.py)|File and Directory Discovery (E1083)|--|
+|[antisandbox_joe_anubis_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_joe_anubis_files.py)|File and Directory Discovery (E1083)|--|
+|[antivm_vmware_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_files.py)|File and Directory Discovery (E1083)|--|
+|[antisandbox_fortinet_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_fortinet_files.py)|File and Directory Discovery (E1083)|--|
+|[antisandbox_sunbelt_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_sunbelt_files.py)|File and Directory Discovery (E1083)|--|
+|[antianalysis_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antianalysis_detectfile.py)|File and Directory Discovery (E1083)|--|
+
+### E1083 Snippet
+<details>
+<summary> Discovery::File and Directory Discovery </summary>
+SHA256: 000b535ab2a4fec86e2d8254f8ed65c6ebd37309ed68692c929f8f93a99233f6
+Location: 0x409A62
+<pre>
+push    eax     ; argument to function containing file path to search
+call    KERNEL32.DLL::GetFileAttributesA        ; Function to retrieve file attributes for file path indicated by eax
+cmp     eax, -0x1       ; Test if function returned an error
+jz      lab_00409a71    ; If the function failed (the file's attributes were not retrieved and the return value is -1), jump to the specified address to continue execution
+test    al, 0x10        ; Test the lower 8 bits of the return value to check if the file is a directory
+jnz     lab_00409a75    ; If the returned result is not a directory, jump to the specified address to continue execution
+</pre>
+</details>
 
 ## References
 

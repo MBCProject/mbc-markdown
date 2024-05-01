@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.2</b></td>
+<td><b>2.3</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -48,11 +48,11 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|--|The malware adds registry entries to ensure automatic execution at system startup. [[9]](#9)|
 |[**BlackEnergy**](../xample-malware/blackenergy.md)|2007|--|BlackEnergy 3 variant drops its main DLL component and then creates a .lnk shortcut to that file in the startup folder, allowing it to persist via a Run registry key. [[10]](#10) [[17]](#17)|
 |[**Conficker**](../xample-malware/conficker.md)|2008|--|To start itself at system boot, the virus saves a copy of its DLL form to a random filename in the Windows system folder, then adds registry keys to have svchost.exe invoke that DLL as an invisible network service. [[11]](#11)|
-|[**DarkComet**](../xample-malware/darkcomet.md)|2008|--|DarkComet adds several registry entries to enable automatic execution at startup. [[12]](#12)|
+|[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|DarkComet adds several registry entries to enable automatic execution at startup. [[12]](#12)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|--|To start itself at system boot, Emotet adds the downloaded payload to the registry to maintain persistence. [[13]](#13)|
 |[**Bagle**](../xample-malware/bagle.md)|2004|--|Bagle adds registry keys to enable its automatic execution at every system startup. [[14]](#14)|
 |[**Vobfus**](../xample-malware/vobfus.md)|2016|--|Malware adds registry keys to enable startup after reboot. [[15]](#15)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|--|Redhip persists via a Run registry key. [[17]](#17)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|--|Redhip persists via a Run registry key. [[17]](#17)|
 |[**WannaCry**](../xample-malware/wannacry.md)|2017|--|WannaCry creates two registry run keys to ensure persistence. [[18]](#18)|
 |[**CryptoWall**](../xample-malware/cryptowall.md)|A copy of Crytowall is placed in the startup folder and a directory at the root of the system drive. Also adds multiple "autostart" registry keys. [[19]](#19)|
 
@@ -64,9 +64,40 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[persistence_bootexecute](https://github.com/CAPESandbox/community/tree/master/modules/signatures/persistence_bootexecute.py)|Registry Run Keys / Startup Folder (F0012)|RegSetValueExA, RegSetValueExW, NtSetValueKey|
-|[geodo_banking_trojan](https://github.com/CAPESandbox/community/tree/master/modules/signatures/geodo_banking_trojan.py)|Registry Run Keys / Startup Folder (F0012)|--|
-|[persistence_autorun](https://github.com/CAPESandbox/community/tree/master/modules/signatures/persistence_autorun.py)|Registry Run Keys / Startup Folder (F0012)|NtSetValueKey, RegSetValueExA, RegSetValueExW, CreateServiceW, CreateServiceA|
+|[persistence_bootexecute](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_bootexecute.py)|Registry Run Keys / Startup Folder (F0012)|RegSetValueExA, RegSetValueExW, NtSetValueKey|
+|[geodo_banking_trojan](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/banker_geodo.py)|Registry Run Keys / Startup Folder (F0012)|--|
+|[persistence_autorun](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_autorun.py)|Registry Run Keys / Startup Folder (F0012)|NtSetValueKey, RegSetValueExA, RegSetValueExW, CreateServiceW, CreateServiceA|
+
+### F0012 Snippet
+<details>
+<summary> Persistence::Registry Run Keys/Startup Folder </summary>
+SHA256: 0b8e662e7e595ef56396a298c367b74721d66591d856e8a8241fcdd60d08373c
+Location: 0x402994
+<pre>
+push    eax     ; where to store handle to created/opened registry key
+push    u_SOFTWARE\Microsoft\Windows\Curre_00429bb8     ; subkey to create -- in this case SOFTWARE\Microsoft\Windows\Current\Version\Run
+push    0x80000001      ; predefined registry key HKEY_CURRENT_USER
+call    dword ptr [->ADVAPI32.DLL::RegCreateKeyW]       ; call to Windows API function to create the registry key HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Current\Version\Run
+lea     ecx, [esp + 0x70]
+lea     edx, [ecx + 0x2]
+nop     dword ptr [eax]
+mov     ax, word ptr [ecx]
+add     ecx, 0x2
+test    ax, ax
+jnz     lab_004029b0
+sub     ecx, edx
+sar     ecx, 1
+lea     eax, [ecx * 0x2 + 0x2]
+push    eax     ; size of data to write to registry key
+lea     eax, [esp + 0x74]
+push    eax     ; data to write to registry key
+push    0x1     ; indicates that the type of value to be written to registry key is a string
+push    0x0     ; reserved parameter, must be NULL
+push    u_WinHoster_00429c14    ; name of the value to add to the key -- in this case, WinHoster
+push    dword ptr [esp + local_264]     ; handle to open registry key
+call    dword ptr [->ADVAPI32.DLL::RegSetValueExW]      ; API call to set registry value
+</pre>
+</details>
 
 ## References
 

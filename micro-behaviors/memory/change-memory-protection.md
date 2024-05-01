@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>30 April 2024</b></td>
 </tr>
 </table>
 
@@ -49,6 +49,23 @@ Malware may change memory protection. For example, read-write memory may be chan
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
 |[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_guardpages.py)|Change Memory Protection (C0008)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
+
+### C0008 Snippet
+<details>
+<summary> Memory::Change Memory Protection </summary>
+SHA256: 905b9db8cf5a3001318b28ee5dc674f8f65ca1e4306aab9e331b3bba24e7b8a8
+Location: 0x41AB74
+<pre>
+push    ecx     ; pointer to return value
+push    0x40    ; new memory protection option to apply -- in this case, read, write, and execute permissions will be applied to the pages
+mov     [DAT_01f56ff0], eax
+mov     eax, [DAT_00492fc4]
+push    edx     ; size of region to change access protection attributes (in bytes)
+push    eax     ; Address of first page in region where access protection attributes are to be changed
+; instructions from 0x41ab83 to 0x41abb4 omitted
+call    dword ptr [->KERNEL32.DLL::VirtualProtect]      ; call function to change memory protection attributes
+</pre>
+</details>
 
 ## References
 

@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -79,7 +79,7 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[**Kraken**](../xample-malware/kraken.md)|2008|E1027.m02|Kraken encodes data using XOR. [[9]](#9)|
 |[**Locky Bart**](../xample-malware/locky-bart.md)|2017|E1027.m02|Locky Bart encodes data using XOR. [[9]](#9)|
 |[**Mebromi**](../xample-malware/mebromi.md)|2011|E1027.m02|Mebromi encodes data using XOR. [[9]](#9)|
-|[**Redhip**](../xample-malware/rebhip.md)|2011|E1027.m02|Redhip encodes data using XOR. [[9]](#9)|
+|[**Redhip**](../xample-malware/redhip.md)|2011|E1027.m02|Redhip encodes data using XOR. [[9]](#9)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|E1027.m02|Rombertik encodes data using XOR. [[9]](#9)|
 |[**SamSam**](../xample-malware/samsam.md)|2015|E1027.m07|SamSam obfuscates functions, class names and strings, including the list of targeted file extensions, the help file contents and environment variables using DES encryption with a fixed hard-coded key and the IV. [[10]](#10)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|E1027.m02|Shamoon encodes data using XOR. [[9]](#9)|
@@ -120,9 +120,38 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |---|---|---|
 |[compression](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Obfuscated Files or Information (E1027)|RtlDecompressBuffer|
 |[decryption](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Obfuscated Files or Information (E1027)|CryptDecrypt|
-|[Unpacker](https://github.com/CAPESandbox/community/tree/master/modules/signatures/Unpacker.py)|Obfuscated Files or Information (E1027)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
-|[cmdline_obfuscation](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cmdline_obfuscation.py)|Obfuscated Files or Information (E1027)|--|
-|[dotnet_code_compile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/dotnet_code_compile.py)|Obfuscated Files or Information (E1027)|NtWriteFile, CreateProcessInternalA, NtCreateUserProcess, CreateProcessInternalW|
+|[cmdline_obfuscation](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py)|Obfuscated Files or Information (E1027)|--|
+|[dotnet_code_compile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/compile_dotnet_code.py)|Obfuscated Files or Information (E1027)|NtWriteFile, CreateProcessInternalA, NtCreateUserProcess, CreateProcessInternalW|
+
+### E1027.m02 Snippet
+<details>
+<summary> Obfuscated Files or Information::Encoding-Standard Algorithm </summary>
+SHA256: 5fb7f3fac0a9b9ab243ee642a0775500c524166ef075035c9510ccbab76ad633
+Location: 0x10001060
+<pre>
+mov     eax, dword ptr [esi + 0x38]
+xor     dword ptr [esi + 0xd0], eax
+mov     eax, dword ptr [esi + 0xf0]
+add     eax, 0xfff5b6c8
+add     eax, ecx
+mov     ecx, dword ptr [esi + 0x8c]
+add     dword ptr [esi + 0xc0], eax
+mov     eax, dword ptr [esi + 0x54]
+xor     dword ptr [ecx + edx*0x1], eax ; perform encryption operation
+add     edx, 0x4        ; adjust edx to next location to encrypt
+mov     eax, dword ptr [esi + 0x90]
+add     dword ptr [esi + 0x54], eax
+mov     ecx, dword ptr [esi + 0xe8]
+mov     eax, ecx
+xor     eax, 0xa4937
+add     dword ptr [esi + 0x68], eax
+mov     eax, dword ptr [esi + 0xa4]
+xor     eax, 0x4
+sub     dword ptr [esi + 0x60], eax
+cmp     edx, 0x36c8     ; perform comparison to check if all data encrypted
+jl      lab_10001060    ; jump to first line of sample
+</pre>
+</details>
 
 ## References
 

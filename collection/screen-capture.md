@@ -13,7 +13,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.2</b></td>
+<td><b>2.3</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -21,7 +21,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>6 February 2024</b></td>
+<td><b>27 April 2024</b></td>
 </tr>
 </table>
 
@@ -59,8 +59,30 @@ See ATT&CK: **Screen Capture ([T1113](https://attack.mitre.org/techniques/T1113/
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[poullight_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/poullight_files.py)|Screen Capture (E1113)|--|
-|[captures_screenshot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/captures_screenshot.py)|Screen Capture (E1113)|LdrGetProcedureAddress, NtCreateFile|
+|[poullight_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/infostealer_poullight.py)|Screen Capture (E1113)|--|
+|[captures_screenshot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/infostealer_screenshot.py)|Screen Capture (E1113)|LdrGetProcedureAddress, NtCreateFile|
+
+### E1113.m01 Snippet
+<details>
+<summary> Collection::Screen Capture::WinAPI </summary>
+SHA256: c6930e298bba86c01d0fe2c8262c46b4fce97c6c5037a193904cfc634246fbec
+Location: 0x4036de
+<pre>
+push    0xcc0020        ; Raster operation code to copy the source rectangle directly onto the destination rectangle
+push    0x0     ; y-coordinate of upper left corner of source rectangle
+push    0x0     ; x-coordinate of upper left corner of source rectangle
+push    dword ptr [esi] ; handle to source device
+push    eax     ; height of source/destination rectangles
+mov     eax, dword ptr [esi + 0xc]
+sub     eax, param_2
+sub     param_2, ebx
+push    eax     ; width of source/destination rectangles
+push    param_1 ; y-coordinate of upper left corner of destination rectangle
+push    param_2 ; x-coordinate of upper left corner of destination rectangle
+push    dword ptr [ebp + local_28]      ; handle to destingation device
+call    dword ptr [->GDI32.DLL::BitBlt] ; Windows API function to transfer a rectangle of pixels from one device to another
+</pre>
+</details>
 
 ## References
 

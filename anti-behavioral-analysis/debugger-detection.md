@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.2</b></td>
+<td><b>2.3</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>6 February 2024</b></td>
+<td><b>27 April 2024</b></td>
 </tr>
 </table>
 
@@ -129,21 +129,31 @@ Details on detecting debuggers can be found in the references.
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[antidebug_checkremotedebuggerpresent](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_checkremotedebuggerpresent.py)|Debugger Detection (B0001)|CheckRemoteDebuggerPresent, NtQueryInformationProcess|
-|[antiav_nthookengine_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiav_nthookengine_libs.py)|Debugger Detection (B0001)|LdrGetDllHandle, LdrLoadDll|
-|[antiav_nthookengine_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiav_nthookengine_libs.py)|Debugger Detection::API Hook Detection (B0001.001)|LdrGetDllHandle, LdrLoadDll|
-|[antidebug_setunhandledexceptionfilter](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_setunhandledexceptionfilter.py)|Debugger Detection (B0001)|SetUnhandledExceptionFilter|
-|[antidebug_setunhandledexceptionfilter](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_setunhandledexceptionfilter.py)|Debugger Detection::UnhandledExceptionFilter (B0001.030)|SetUnhandledExceptionFilter|
-|[antidebug_addvectoredexceptionhandler](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_addvectoredexceptionhandler.py)|Debugger Detection (B0001)|AddVectoredExceptionHandler|
-|[antidebug_outputdebugstring](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_outputdebugstring.py)|Debugger Detection (B0001)|GetLastError, SetLastError, OutputDebugStringW, OutputDebugStringA|
-|[antidebug_outputdebugstring](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_outputdebugstring.py)|Debugger Detection::OutputDebugString (B0001.016)|GetLastError, SetLastError, OutputDebugStringW, OutputDebugStringA|
-|[antidebug_gettickcount](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_gettickcount.py)|Debugger Detection (B0001)|GetTickCount|
-|[antidebug_gettickcount](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_gettickcount.py)|Debugger Detection::Timing/Delay Check GetTickCount (B0001.032)|GetTickCount|
-|[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_guardpages.py)|Debugger Detection (B0001)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
-|[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_guardpages.py)|Debugger Detection::Memory Breakpoints (B0001.009)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
-|[antidebug_ntsetinformationthread](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_ntsetinformationthread.py)|Debugger Detection (B0001)|NtSetInformationThread|
-|[antidebug_ntsetinformationthread](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_ntsetinformationthread.py)|Debugger Detection::NtSetInformationThread (B0001.014)|NtSetInformationThread|
-|[antidebug_debugactiveprocess](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_debugactiveprocess.py)|Debugger Detection (B0001)|DebugActiveProcess|
+|[antidebug_checkremotedebuggerpresent](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_checkremotedebuggerpresent.py)|Debugger Detection (B0001)|CheckRemoteDebuggerPresent, NtQueryInformationProcess|
+|[antiav_nthookengine_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_nthookengine_libs.py)|Debugger Detection (B0001)|LdrGetDllHandle, LdrLoadDll|
+|[antiav_nthookengine_libs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_nthookengine_libs.py)|Debugger Detection::API Hook Detection (B0001.001)|LdrGetDllHandle, LdrLoadDll|
+|[antidebug_setunhandledexceptionfilter](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_setunhandledexceptionfilter.py)|Debugger Detection (B0001)|SetUnhandledExceptionFilter|
+|[antidebug_setunhandledexceptionfilter](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_setunhandledexceptionfilter.py)|Debugger Detection::UnhandledExceptionFilter (B0001.030)|SetUnhandledExceptionFilter|
+|[antidebug_addvectoredexceptionhandler](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_addvectoredexceptionhandler.py)|Debugger Detection (B0001)|AddVectoredExceptionHandler|
+|[antidebug_outputdebugstring](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_outputdebugstring.py)|Debugger Detection (B0001)|GetLastError, SetLastError, OutputDebugStringW, OutputDebugStringA|
+|[antidebug_outputdebugstring](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_outputdebugstring.py)|Debugger Detection::OutputDebugString (B0001.016)|GetLastError, SetLastError, OutputDebugStringW, OutputDebugStringA|
+|[antidebug_gettickcount](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_gettickcount.py)|Debugger Detection (B0001)|GetTickCount|
+|[antidebug_gettickcount](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_gettickcount.py)|Debugger Detection::Timing/Delay Check GetTickCount (B0001.032)|GetTickCount|
+|[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_guardpages.py)|Debugger Detection (B0001)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
+|[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_guardpages.py)|Debugger Detection::Memory Breakpoints (B0001.009)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
+|[antidebug_ntsetinformationthread](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_ntsetinformationthread.py)|Debugger Detection (B0001)|NtSetInformationThread|
+|[antidebug_ntsetinformationthread](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_ntsetinformationthread.py)|Debugger Detection::NtSetInformationThread (B0001.014)|NtSetInformationThread|
+|[antidebug_debugactiveprocess](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_debugactiveprocess.py)|Debugger Detection (B0001)|DebugActiveProcess|
+
+### B0001.019 Snippet
+<details>
+<summary> Anti-Behavioral Analysis::Debugger Detection::Process Environment Block </summary>
+SHA256: e33a713b96b45e2b2e0da350c0fdaaf865139607066aadff3b67b0ced82ca8bc
+Location: 0x1800270A2
+<pre>
+mov     rax, qword ptr GS:[0x60]        ; GS:[0x60] contains a pointer to the Windows Process Environment Block on 64-bit versions of Windows.  This command is copying that pointer into the rax register.
+</pre>
+</details>
 
 ## References
 

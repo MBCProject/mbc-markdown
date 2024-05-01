@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.1</b></td>
+<td><b>2.2</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>5 December 2023</b></td>
+<td><b>27 April 2024</b></td>
 </tr>
 </table>
 
@@ -57,12 +57,12 @@ Detects whether the malware instance is being executed inside an emulator. If so
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[antiemu_windefend](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiemu_windefend.py)|Emulator Detection (B0004)|--|
-|[antivm_bochs_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_bochs_keys.py)|Emulator Detection (B0004)|--|
-|[antivm_bochs_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antivm_bochs_keys.py)|Emulator Detection::Check Emulator-related Registry Keys (B0004.003)|--|
-|[antiemu_wine_func](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiemu_wine_func.py)|Emulator Detection (B0004)|LdrGetProcedureAddress|
-|[antiemu_wine_reg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiemu_wine_reg.py)|Emulator Detection (B0004)|--|
-|[antiemu_wine_reg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiemu_wine_reg.py)|Emulator Detection::Check Emulator-related Registry Keys (B0004.003)|--|
+|[antiemu_windefend](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiemu_windefend.py)|Emulator Detection (B0004)|--|
+|[antivm_bochs_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_bochs_keys.py)|Emulator Detection (B0004)|--|
+|[antivm_bochs_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_bochs_keys.py)|Emulator Detection::Check Emulator-related Registry Keys (B0004.003)|--|
+|[antiemu_wine_func](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiemu_wine_func.py)|Emulator Detection (B0004)|LdrGetProcedureAddress|
+|[antiemu_wine_reg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiemu_wine.py)|Emulator Detection (B0004)|--|
+|[antiemu_wine_reg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiemu_wine.py)|Emulator Detection::Check Emulator-related Registry Keys (B0004.003)|--|
 
 ## References
 
