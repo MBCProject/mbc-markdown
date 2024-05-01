@@ -65,7 +65,7 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
 |[persistence_bootexecute](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_bootexecute.py)|Registry Run Keys / Startup Folder (F0012)|RegSetValueExA, RegSetValueExW, NtSetValueKey|
-|[geodo_banking_trojan](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/geodo_banking_trojan.py)|Registry Run Keys / Startup Folder (F0012)|--|
+|[geodo_banking_trojan](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/banker_geodo.py)|Registry Run Keys / Startup Folder (F0012)|--|
 |[persistence_autorun](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_autorun.py)|Registry Run Keys / Startup Folder (F0012)|NtSetValueKey, RegSetValueExA, RegSetValueExW, CreateServiceW, CreateServiceA|
 
 ## References
