@@ -49,8 +49,8 @@ See ATT&CK: **Boot or Logon Autostart Execution: Kernel Modules and Extensions (
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[volatility_devicetree_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_devicetree_1.py)|Kernel Modules and Extensions (F0010)|--|
-|[volatility_devicetree_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/volatility_devicetree_1.py)|Kernel Modules and Extensions::Device Driver (F0010.001)|--|
+|[volatility_devicetree_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/volatility_sig.py)|Kernel Modules and Extensions (F0010)|--|
+|[volatility_devicetree_1](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/volatility_sig.py)|Kernel Modules and Extensions::Device Driver (F0010.001)|--|
 |[driver_load](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/driver_load.py)|Kernel Modules and Extensions (F0010)|NtLoadDriver|
 
 ## References
