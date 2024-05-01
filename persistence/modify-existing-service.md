@@ -51,7 +51,7 @@ See ATT&CK: **Create or Modify System Process::Windows Service ([T1543.003](http
 |[volatility_svcscan_3](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/volatility_sig.py)|Modify Existing Service (F0011)|--|
 |[antiav_servicestop](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_servicestop.py)|Modify Existing Service (F0011)|OpenServiceA, ControlService, OpenServiceW|
 |[persistence_service](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_service.py)|Modify Existing Service (F0011)|--|
-|[modify_security_center_warnings](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modify_security_center_warnings.py)|Modify Existing Service (F0011)|--|
+|[modify_security_center_warnings](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modifies_seccenter.py)|Modify Existing Service (F0011)|--|
 
 ## References
 
