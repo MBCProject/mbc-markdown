@@ -90,6 +90,18 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[obliquerat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/obliquerat_network_activity.py)|Socket Communication (C0001)|send|
 |[network_bind](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_bind.py)|Socket Communication (C0001)|listen, bind|
 
+### C0001.009 Snippet
+<details>
+<summary> Communication::Socket Communication::Initialize Winsock Library </summary>
+SHA256: 000b535ab2a4fec86e2d8254f8ed65c6ebd37309ed68692c929f8f93a99233f6
+Location: 0x472C92
+<pre>
+push    eax     ; pointer to WSADATA structure that the call to start Winsock will populate with the Windows socket data
+push    0x101   ; highest version of Winsock permitted for use in this application -- in this case, version 1.1 (major version in lowest-order byte, minor version in highest-order byte)
+call    WSOCK.DLL::WSAStartup   ; Initiate the Winsock DLL
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> https://www.mandiant.com/resources/synful-knock-acis

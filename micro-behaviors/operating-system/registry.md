@@ -220,6 +220,21 @@ Malware modifies the registry.
 |[bypass_firewall](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bypass_firewall.py)|Registry::Set Registry Value (C0036.001)|--|
 |[remcos_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/remcos_regkeys.py)|Registry (C0036)|--|
 
+### C0036.005 Snippet
+<details>
+<summary> Registry::Query Registry Key </summary>
+SHA256: 1e0215f67fb7b02bc44f33bf6a5b884c3061cbeb38e0150b559635458951fa53
+Location: 0x408723
+<pre>
+push    eax     ; phkResult: stores pointer to handle containing open registry key
+push    0x1     ; samDesired: Desired access rights for opened key.  0x1 is KEY_QUERY_VALUE, which is required to query the value of the sought registry key
+push    0x0     ; ulOptions: Optional key set to 0, so no options passed to registry key
+push    ecx     ; lpSubKey: Optional parameter indicating a subkey to read from
+push    edx     ; handle to open registry key or name of registry key to open
+call    dword ptr [->ADVAPI32.DLL::RegOpenKeyExA] ; Windows API call which opens registry key for the query
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022

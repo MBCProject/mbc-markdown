@@ -47,6 +47,18 @@ Malware allocates thread local storage.
 |---|---|---|
 |[set thread local storage value](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/set-thread-local-storage-value.yml)|Set Thread Local Storage Value (C0041)|kernel32.TlsSetValue|
 
+### C0041 Snippet
+<details>
+<summary> Process::Set Thread Local Storage Value </summary>
+SHA256: 3ac8c22eb7c59d35fe49c20f2a0eca06765543dfb15f455a5557af4428066641
+Location: 0x180005B08
+<pre>
+mov     param_2, rbx    ; Value to be stored in TLS index
+mov     param_1, edi    ; TLS index
+call    qword ptr [->KERNEL32.DLL::TlsSetValue] ; Call Windows API function to store value in thread's thread local storage (TLS) at the specified index
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022

@@ -54,6 +54,26 @@ Malware creates a thread.
 |[antidebug_ntcreatethreadex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_ntcreatethreadex.py)|Create Thread (C0038)|NtCreateThreadEx|
 |[antidebug_ntsetinformationthread](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_ntsetinformationthread.py)|Create Thread (C0038)|NtSetInformationThread|
 
+### C0038 Snippet
+<details>
+<summary> Process::Create Thread </summary>
+SHA256: 465d3aac3ca4daa9ad4de04fcb999f358396efd7abceed9701c9c28c23c126db
+Location: 0x404915
+<pre>
+mov     param_2, dword ptr [ebp + param_4]
+push    param_2 ; Pointer to location where thread handler will be returned
+mov     param_2, dword ptr [ebp + param_5]
+push    param_2 ; Flags controlling thread creation
+push    param_1 ; Pointer to variable to be passed to thread
+mov     param_1, FUN_004048b8
+push    param_1 ; Pointer to function where thread will begin execution
+push    esi     ; Size of stack for new thread
+push    ebx     ; Pointer to security attributes for thread.  If null, the handle to the thread cannot be inherited
+call    KERNEL32.DLL::CreateThread ; Call to thread creation API
+</pre>
+</details>
+
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022

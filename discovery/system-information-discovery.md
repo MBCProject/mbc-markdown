@@ -37,6 +37,7 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 |Name|ID|Description|
 |---|---|---|
 |**Generate Windows Exception**|E1082.m01|Malware may trigger an exception as a way of gathering system details.|
+|**Enumerate Environment Variables**|E1082.m02|Malware may query environmental variables as a way of gathering system details.|
 
 ## Use in Malware
 
@@ -100,6 +101,18 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 |[antisandbox_check_userdomain](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antisandbox_check_userdomain.py)|System Information Discovery (E1082)|rtcEnvironBstr|
 |[browser_scanbox](https://github.com/CAPESandbox/community/tree/master/modules/signatures/browser_scanbox.py)|System Information Discovery (E1082)|JsEval, COleScript_ParseScriptText, COleScript_Compile|
 |[recon_fingerprint](https://github.com/CAPESandbox/community/tree/master/modules/signatures/recon_fingerprint.py)|System Information Discovery (E1082)|--|
+
+### E1082.m02 Snippet
+<details>
+<summary> System Information Discovery </summary>
+SHA256: e4b36a1d4e70d988efa2ec27e5a639be5eb0880474f746851c13e56f007a8377
+Location: 0x004017e9
+<pre>
+push    eax     ; push register to store return value onto the stack
+push    u_ALLUSERSPROFILE_0041a9a4      ; push argument to function (name of the sought environment variable - in this case, ALLUSERSPROFILE)
+call    dword ptr [->KERNEL32.DLL::GetEnvironmentVariableW]     ; call function to get environment variable value
+</pre>
+</details>
 
 ## References
 

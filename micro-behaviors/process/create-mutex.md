@@ -102,6 +102,19 @@ Malware creates a mutex.
 |[medusalocker_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/medusalocker_mutexes.py)|Create Mutex (C0042)|--|
 |[remcos_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/remcos_mutexes.py)|Create Mutex (C0042)|--|
 
+### C0042 Snippet
+<details>
+<summary> Process::Create Mutex </summary>
+SHA256: 0b8e662e7e595ef56396a298c367b74721d66591d856e8a8241fcdd60d08373c
+Location: 0x402A1E
+<pre>
+push    eax     ; name of mutex
+push    0x0     ; if the thread that creates the mutex owns it (false, in this case)
+push    0x0     ; optional security descriptor set to NULL, so default security descriptor will be used
+call    dword ptr [->KERNEL32.DLL::CreateMutexW]        ; call function to create mutex
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> https://www.fortinet.com/blog/threat-research/deep-analysis-of-new-poison-ivy-variant

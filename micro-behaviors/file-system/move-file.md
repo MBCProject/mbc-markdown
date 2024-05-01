@@ -51,6 +51,20 @@ Malware moves a file.
 |---|---|---|
 |[move_file_on_reboot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/move_file_on_reboot.py)|Move File (C0063)|MoveFileWithProgressTransactedA, MoveFileWithProgressTransactedW|
 
+### C0063 Snippet
+<details>
+<summary> File System::Move File </summary>
+SHA256: bb8c0e477512adab1db26eb77fe10dadbc5dcbf8e94569061c7199ca4626a420
+Location: 0x41a61d
+<pre>
+push    0x4     ; option to delay move until the next reboot
+push    edi     ; new name for the moved file
+lea     eax, [ebp + 0xffffefc4]
+push    eax     ; name of the file to be moved
+call    dword ptr [->KERNEL32.DLL::MoveFileExW] ; Windows API function to move the file from one name to another
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022

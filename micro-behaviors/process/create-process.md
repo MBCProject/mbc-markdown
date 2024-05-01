@@ -75,6 +75,30 @@ Malware creates a process.
 |[wmi_create_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/wmi_create_process.py)|Create Process::Create Process via WMI (C0017.002)|NtCreateUserProcess, CreateProcessInternalW|
 |[script_created_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/script_created_process.py)|Create Process (C0017)|NtCreateUserProcess, CreateProcessInternalW|
 
+### C0049 Snippet
+<details>
+<summary> Process::Create Process </summary>
+SHA256: 465d3aac3ca4daa9ad4de04fcb999f358396efd7abceed9701c9c28c23c126db
+Location: 0x458C26
+<pre>
+lea     param_1, [ebp + 0xfffffeb0]
+push    param_1 ; pointer to PROCESS_INFORMATION struct to hold information about the new process
+lea     param_1, [ebp + 0xfffffec0]
+push    param_1 ; pointer to STARTUPINFO struct
+push    0x0     ; path to directory for new process -- if null, use same directory as calling process
+push    0x0     ; environment block for new process -- if null, use the calling process's environment block
+push    0x4     ; process creation flags (CREATE_SUSPENDED in this case)
+push    0x0     ; if heritable handles in the calling process should be inherited by the new process.  If false, inheritance will not occur.
+push    0x0     ; security attributes for new process.  If null, child processes cannot inherit thread running new process
+push    0x0     ; security attributes for new process.  If null, child processes cannot inherit handle for new process
+mov     param_1, dword ptr [ebp + local_8]
+call    FUN_00404dfc
+push    param_1 ; command line for new process to execute
+push    0x0     ; application name to be executed.  If null, use command line provided in another argument
+call    KERNEL32.DLL::CreateProcessA    ; Call Windows API function to create new process
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en

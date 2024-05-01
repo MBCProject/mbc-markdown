@@ -56,6 +56,17 @@ Malware terminates a process.
 |---|---|---|
 |[terminates_remote_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/terminates_remote_process.py)|Terminate Process (C0018)|NtTerminateProcess|
 
+### C0018 Snippet
+<details>
+<summary> Process::Terminate Process </summary>
+SHA256: 27253651170386863b148afb2a0fdda7780ae65cbc31405acbd99fa06b44b79f
+Location: 0x1400083c7
+<pre>
+mov     ecx, eax        ; use the value stored in eax as the exit status for the exited process
+call    qword ptr [->MSVCRT.DLL::exit]  ; call the Windows API function to terminate the process
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022

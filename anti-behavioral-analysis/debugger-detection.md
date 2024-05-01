@@ -145,6 +145,16 @@ Details on detecting debuggers can be found in the references.
 |[antidebug_ntsetinformationthread](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_ntsetinformationthread.py)|Debugger Detection::NtSetInformationThread (B0001.014)|NtSetInformationThread|
 |[antidebug_debugactiveprocess](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_debugactiveprocess.py)|Debugger Detection (B0001)|DebugActiveProcess|
 
+### B0001.019 Snippet
+<details>
+<summary> Anti-Behavioral Analysis::Debugger Detection::Process Environment Block </summary>
+SHA256: e33a713b96b45e2b2e0da350c0fdaaf865139607066aadff3b67b0ced82ca8bc
+Location: 0x1800270A2
+<pre>
+mov     rax, qword ptr GS:[0x60]        ; GS:[0x60] contains a pointer to the Windows Process Environment Block on 64-bit versions of Windows.  This command is copying that pointer into the rax register.
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> S. Yosef,"RASPBERRY ROBIN: ANTI-EVASION HOW-TO & EXPLOIT ANALYSIS," https://research.checkpoint.com/, 18 Apr 2023. [Online]. Available: https://research.checkpoint.com/2023/raspberry-robin-anti-evasion-how-to-exploit-analysis/.  

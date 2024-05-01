@@ -68,6 +68,37 @@ See ATT&CK: **Boot or Logon Autostart Execution: Registry Run Keys / Startup Fol
 |[geodo_banking_trojan](https://github.com/CAPESandbox/community/tree/master/modules/signatures/geodo_banking_trojan.py)|Registry Run Keys / Startup Folder (F0012)|--|
 |[persistence_autorun](https://github.com/CAPESandbox/community/tree/master/modules/signatures/persistence_autorun.py)|Registry Run Keys / Startup Folder (F0012)|NtSetValueKey, RegSetValueExA, RegSetValueExW, CreateServiceW, CreateServiceA|
 
+### F0012 Snippet
+<details>
+<summary> Persistence::Registry Run Keys/Startup Folder </summary>
+SHA256: 0b8e662e7e595ef56396a298c367b74721d66591d856e8a8241fcdd60d08373c
+Location: 0x402994
+<pre>
+push    eax     ; where to store handle to created/opened registry key
+push    u_SOFTWARE\Microsoft\Windows\Curre_00429bb8     ; subkey to create -- in this case SOFTWARE\Microsoft\Windows\Current\Version\Run
+push    0x80000001      ; predefined registry key HKEY_CURRENT_USER
+call    dword ptr [->ADVAPI32.DLL::RegCreateKeyW]       ; call to Windows API function to create the registry key HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Current\Version\Run
+lea     ecx, [esp + 0x70]
+lea     edx, [ecx + 0x2]
+nop     dword ptr [eax]
+mov     ax, word ptr [ecx]
+add     ecx, 0x2
+test    ax, ax
+jnz     lab_004029b0
+sub     ecx, edx
+sar     ecx, 1
+lea     eax, [ecx * 0x2 + 0x2]
+push    eax     ; size of data to write to registry key
+lea     eax, [esp + 0x74]
+push    eax     ; data to write to registry key
+push    0x1     ; indicates that the type of value to be written to registry key is a string
+push    0x0     ; reserved parameter, must be NULL
+push    u_WinHoster_00429c14    ; name of the value to add to the key -- in this case, WinHoster
+push    dword ptr [esp + local_264]     ; handle to open registry key
+call    dword ptr [->ADVAPI32.DLL::RegSetValueExW]      ; API call to set registry value
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> https://threatvector.cylance.com/en_us/home/windows-registry-persistence-part-2-the-run-keys-and-search-order.html

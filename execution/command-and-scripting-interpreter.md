@@ -113,6 +113,16 @@ See ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.or
 |[script_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/script_network_activity.py)|Command and Scripting Interpreter (E1059)|URLDownloadToFileW, HttpOpenRequestW, send, WSAConnect, InternetCrackUrlW, InternetCrackUrlA, SslEncryptPacket, InternetReadFile|
 |[suspicious_js_script](https://github.com/CAPESandbox/community/tree/master/modules/signatures/suspicious_js_script.py)|Command and Scripting Interpreter (E1059)|JsEval, COleScript_ParseScriptText|
 
+### E1059 Snippet
+<details>
+<summary> Execution::Command and Scripting Interpreter </summary>
+SHA256: 905b9db8cf5a3001318b28ee5dc674f8f65ca1e4306aab9e331b3bba24e7b8a8
+Location: 0x41B7A6
+<pre>
+call    dword ptr [->KERNEL32.DLL::GetCommandLineW]
+</pre>
+</details>
+
 ## References
 
 <a name="1">[1]</a> https://www.cyber.nj.gov/threat-center/threat-profiles/trojan-variants/poison-ivy
