@@ -56,6 +56,8 @@ The DNS Communication micro-behavior focuses on DNS communication.
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
+|[network_dns_suspicious.py](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|DNS Communication (C0011)|--|
+
 
 
 ### C0011.001 Snippet
