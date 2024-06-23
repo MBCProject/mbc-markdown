@@ -56,14 +56,7 @@ The DNS Communication micro-behavior focuses on DNS communication.
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[network_dns_blockchain](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_blockchain.py)|DNS Communication (C0011)|--|
-|[network_dns_idn](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_idn.py)|DNS Communication (C0011)|DnsQueryA|
-|[network_dns_opennic](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_opennic.py)|DNS Communication (C0011)|--|
-|[network_dns_reverse_proxy](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_reverse_proxy.py)|DNS Communication (C0011)|--|
-|[network_dns_suspicious_querytype](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_suspicious_querytype.py)|DNS Communication (C0011)|DnsQueryA|
-|[network_dns_tunneling_request](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_tunneling_request.py)|DNS Communication (C0011)|DnsQuery_A, DnsQuery_W|
-|[network_dns_doh_tls](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_doh_tls.py)|DNS Communication (C0011)|--|
-|[network_dga](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dga.py)|DNS Communication (C0011)|--|
+
 
 ### C0011.001 Snippet
 <details>
