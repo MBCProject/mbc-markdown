@@ -56,9 +56,13 @@ The DNS Communication micro-behavior focuses on DNS communication.
 
 |Tool: CAPE|Mapping|Class|APIs|
 |---|---|---|---|
-|[network_dns_suspicious.py](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSTunnelingRequest|DNS Communication (C0011)|DnsQuery_A, DnsQuery_W|
-
-
+|[network_dns_suspicious.py](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSTunnelingRequest|DNS Communication (C0011)|DnsQuery_A, DnsQuery_W, DnsQuery_UTF8|
+|[network_dns_suspicious.py](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSIDN|DNS Communication (C0011)|DnsQueryA|
+|[network_dns_suspicious.py](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSSuspiciousQueryType|DNS Communication (C0011)|DnsQueryA|
+|[network_dns_suspicious.py](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSBlockChain|DNS Communication (C0011)|--|
+|[network_dns_suspicious.py](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSOpenNIC|DNS Communication (C0011)|--|
+|[network_dns_suspicious.py](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDOHTLS|DNS Communication (C0011)|--|
+|[network_dns_suspicious.py](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSReverseProxy|DNS Communication (C0011)|--|
 
 ### C0011.001 Snippet
 <details>
