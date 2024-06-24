@@ -39,7 +39,7 @@ This micro-behavior focuses on SMTP communication.
 
 ## Detection
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[network_smtp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_smtp.py)|SMTP Communication (C0012)|--|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[network_smtp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_smtp.py)|SMTP Communication (C0012)|--|
 
