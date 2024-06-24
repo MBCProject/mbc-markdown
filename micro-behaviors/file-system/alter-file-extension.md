@@ -38,6 +38,8 @@ Malware alters a file extension. This could be done for many reasons, including 
 
 ## Detection
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[mimics_filename](https://github.com/CAPESandbox/community/blob/master/modules/signatures/all/mimics_filename.py)|MimicsExtension|Alter File Extension (C0015)|--|
+|[ransomware_filemodifications](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_filemodifications.py)|RansomwareFileModifications|Alter File Extension (C0015)|MoveFileWithProgressW, MoveFileWithProgressTransactedW, NtCreateFile, NtWriteFile|
+|[ransomware_fileextensions](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_fileextensions.py)|RansomwareExtensions|Alter File Extension (C0015)|--|
