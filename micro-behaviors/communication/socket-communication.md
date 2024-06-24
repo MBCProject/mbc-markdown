@@ -87,6 +87,8 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |---|---|---|---|
 |[network_excessive_udp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_excessive_udp.py)|NetworkExcessiveUDP|Socket Communication (C0001)|--|
 |[network_bind](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_bind.py)|NetworkBIND|Socket Communication (C0001)|listen, bind|
+|[rat_blackremote](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/rat_blackremote.py)|BlackRATNetworkActivity|Socket Communication (C0001)|send|
+|[rat_oblique](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/rat_oblique.py)|ObliquekRATNetworkActivity|Socket Communication (C0001)|send|
 
 ### C0001.009 Snippet
 <details>
