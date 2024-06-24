@@ -46,7 +46,6 @@ The methods below are those of most interest in malware analysis. Details can be
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[nemty_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/nemty_network_activity.py)|WinINet (C0005)|InternetOpenA, InternetOpenUrlA|
 
 ### C0005.001 Snippet
 <details>
