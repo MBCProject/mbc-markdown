@@ -59,10 +59,9 @@ The Interprocess Communication micro-behavior focuses on interprocess communicat
 |[connect pipe](https://github.com/mandiant/capa-rules/blob/master/communication/named-pipe/connect/connect-pipe.yml)|Interprocess Communication::Connect Pipe (C0003.002)|kernel32.ConnectNamedPipe, kernel32.CallNamedPipe, System.IO.Pipes.NamedPipeClientStream::Connect, System.IO.Pipes.NamedPipeClientStream::ConnectAsync|
 |[read pipe](https://github.com/mandiant/capa-rules/blob/master/communication/named-pipe/read/read-pipe.yml)|Interprocess Communication::Read Pipe (C0003.003)|kernel32.PeekNamedPipe, kernel32.ReadFile, kernel32.TransactNamedPipe, kernel32.CallNamedPipe|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
 |[ipc_namedpipe](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ipc_namedpipe.py)|Interprocess Communication (C0003)|NtReadFile, NtCreateNamedPipeFile, NtWriteFile|
-|[ipc_namedpipe](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ipc_namedpipe.py)|Interprocess Communication::Create Pipe (C0003.001)|NtReadFile, NtCreateNamedPipeFile, NtWriteFile|
 
 ### C0003.002 Snippet
 <details>
