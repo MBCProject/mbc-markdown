@@ -43,12 +43,11 @@ Malware creates a file.
 |---|---|---|
 |[create or open file](https://github.com/mandiant/capa-rules/blob/master/lib/create-or-open-file.yml)|Create File (C0016)|CreateFile, CreateFileEx, IoCreateFile, IoCreateFileEx, ZwOpenFile, ZwCreateFile, NtOpenFile, NtCreateFile, LZCreateFile, LZOpenFile, fopen, fopen64, fdopen, freopen, open, openat|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[spreading_autoruninf](https://github.com/CAPESandbox/community/tree/master/modules/signatures/spreading_autoruninf.py)|Create File (C0016)|--|
-|[ransomware_message](https://github.com/CAPESandbox/community/tree/master/modules/signatures/ransomware_message.py)|Create File (C0016)|NtWriteFile|
-|[copies_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/copies_self.py)|Create File (C0016)|--|
-|[office_write_exe](https://github.com/CAPESandbox/community/tree/master/modules/signatures/office_write_exe.py)|Create File (C0016)|NtWriteFile|
-|[stealth_file](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_file.py)|Create File (C0016)|NtSetInformationFile, NtClose, NtCreateFile, NtDuplicateObject, NtOpenFile|
-|[ransomware_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/ransomware_files.py)|Create File (C0016)|--|
-|[ransomware_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/ransomware_files.py)|Create File::Create Ransomware File (C0016.002)|--|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[spreading_autoruninf](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/spreading_autoruninf.py)|CreatesAutorunInf|Create File (C0016)|--|
+|[ransomware_message](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_message.py)|RansomwareMessage|Create File (C0016)|NtWriteFile|
+|[copies_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/copies_self.py)|CopiesSelf|Create File (C0016)|--|
+|[office_write_exe](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_write_exe.py)|OfficeWriteEXE|Create File (C0016)|NtWriteFile|
+|[stealth_file](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_file.py)|StealthFile|Create File (C0016)|NtSetInformationFile, NtClose, NtCreateFile, NtDuplicateObject, NtOpenFile|
+|[ransomware_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_files.py)|RansomwareFiles|Create File (C0016), Create File::Create Ransomware File (C0016.002)|--|
