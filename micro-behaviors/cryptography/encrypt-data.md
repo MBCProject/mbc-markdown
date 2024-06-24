@@ -98,10 +98,7 @@ Malware may encrypt data.
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[mass_data_encryption](https://github.com/CAPESandbox/community/tree/master/modules/signatures/mass_data_encryption.py)|Encrypt Data (C0027)|CryptEncrypt|
-|[encrypt_data_agenttesla_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/encrypt_data_agenttesla_http.py)|Encrypt Data (C0027)|CryptEncrypt|
-|[encrypt_data_agentteslat2_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/encrypt_data_agentteslat2_http.py)|Encrypt Data (C0027)|CryptEncrypt, GetUserNameW, GetComputerNameW|
-|[encrypt_data_nanocore](https://github.com/CAPESandbox/community/tree/master/modules/signatures/encrypt_data_nanocore.py)|Encrypt Data (C0027)|CryptEncrypt, GetUserNameW, GetComputerNameW|
+
 
 ## Code Snippets
 
