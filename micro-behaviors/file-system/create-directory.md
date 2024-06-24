@@ -50,7 +50,6 @@ Malware creates a directory.
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[arkei_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/arkei_files.py)|Create Directory (C0046)|--|
 
 ### C0046 Snippet
 <details>
