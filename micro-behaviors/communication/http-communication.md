@@ -109,7 +109,7 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[bot_dirtjumper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_dirtjumper.py)|DirtJumper|HTTP Communication (C0002)|--|
 |[bot_dirtjumper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_dirtjumper.py)|DirtJumper|HTTP Communication::Send Data (C0002.005)|--|
 |[bot_athenahttp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_athenahttp.py)|AthenaHttp|HTTP Communication (C0002)|--|
-|[http_request](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/http_request.py)|HTTP Communication (C0002)|HttpOpenRequestA, HttpOpenRequestW, InternetConnectW, InternetOpenUrlA, InternetConnectA, InternetOpenUrlW, WinHttpGetProxyForUrl|
+|[http_request](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/http_request.py)|HTTP_Request|HTTP Communication (C0002)|HttpOpenRequestA, HttpOpenRequestW, InternetConnectW, InternetOpenUrlA, InternetConnectA, InternetOpenUrlW, WinHttpGetProxyForUrl|
 |[banker_zeus_url](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/banker_zeus_url.py)|ZeusURL|HTTP Communication (C0002)|--|
 
 ### C0002.017 Snippet
