@@ -94,15 +94,6 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[connect to HTTP server](https://github.com/mandiant/capa-rules/blob/master/communication/http/client/connect-to-http-server.yml)|HTTP Communication::Connect to Server (C0002.009)|wininet.InternetConnect|
 |[extract HTTP body](https://github.com/mandiant/capa-rules/blob/master/communication/http/client/extract-http-body.yml)|HTTP Communication::Extract Body (C0002.011)|--|
 
-|[explorer_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/explorer_http.py)|HTTP Communication (C0002)|WinHttpConnect, WinHttpOpenRequest|
-|[koadic_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/koadic_network_activity.py)|HTTP Communication (C0002)|HttpOpenRequestW, WinHttpOpenRequest|
-|[http_request](https://github.com/CAPESandbox/community/tree/master/modules/signatures/http_request.py)|HTTP Communication (C0002)|HttpOpenRequestA, HttpOpenRequestW, InternetConnectW, InternetOpenUrlA, InternetConnectA, InternetOpenUrlW, WinHttpGetProxyForUrl|
-|[cmdline_http_link](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cmdline_http_link.py)|HTTP Communication (C0002)|--|
-|[cmdline_reversed_http_link](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cmdline_reversed_http_link.py)|HTTP Communication (C0002)|--|
-|[https_urls](https://github.com/CAPESandbox/community/tree/master/modules/signatures/https_urls.py)|HTTP Communication (C0002)|InternetOpenUrlW, InternetOpenUrlA|
-|[network_document_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_document_http.py)|HTTP Communication (C0002)|URLDownloadToFileW, HttpOpenRequestW, InternetCrackUrlW, InternetCrackUrlA, WSASend, InternetReadFile|
-|[downloads_from_filehosting](https://github.com/CAPESandbox/community/tree/master/modules/signatures/downloads_from_filehosting.py)|HTTP Communication (C0002)|WinHttpOpenRequest, InternetOpenUrlA|
-|[purplewave_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/purplewave_network_activity.py)|HTTP Communication (C0002)|InternetOpenW, HttpOpenRequestW, HttpSendRequestW, HttpAddRequestHeadersA|
 |Tool: CAPE|Class|Mapping|APIs|
 |---|---|---|---|
 |[internet_dropper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/internet_dropper.py)|Internet_Dropper|HTTP Communication (C0002)|HttpOpenRequestA, InternetConnectA, HttpOpenRequestW, InternetConnectW|
