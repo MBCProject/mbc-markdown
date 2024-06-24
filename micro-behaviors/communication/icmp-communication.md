@@ -43,5 +43,6 @@ This micro-behavior is related to ICMP communication.
 |---|---|---|
 |[send ICMP echo request](https://github.com/mandiant/capa-rules/blob/master/communication/icmp/send-icmp-echo-request.yml)|ICMP Communication::Echo Request (C0014.002)|IcmpSendEcho, IcmpSendEcho2, IcmpSendEcho2Ex, Icmp6SendEcho2, IcmpCreateFile, Icmp6CreateFile, IcmpCloseHandle|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|||||
