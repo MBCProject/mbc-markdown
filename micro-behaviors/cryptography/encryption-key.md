@@ -57,8 +57,6 @@ Malware may import, generate, or otherwise use an encryption key.
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[mass_data_encryption](https://github.com/CAPESandbox/community/tree/master/modules/signatures/mass_data_encryption.py)|Encryption Key (C0028)|CryptEncrypt|
-|[generates_crypto_key](https://github.com/CAPESandbox/community/tree/master/modules/signatures/generates_crypto_key.py)|Encryption Key (C0028)|CryptGenKey, CryptExportKey|
 
 ## References
 
