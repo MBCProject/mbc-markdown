@@ -49,7 +49,7 @@ Malware copies a file.
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[injection_needextension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/injection_needextension.py)|Copy File (C0045)|NtCreateUserProcess, CreateProcessInternalW|
+|[injection_needextension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_needextension.py)|Copy File (C0045)|NtCreateUserProcess, CreateProcessInternalW|
 
 ## References
 
