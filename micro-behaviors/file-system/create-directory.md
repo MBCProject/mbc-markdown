@@ -48,8 +48,9 @@ Malware creates a directory.
 |---|---|---|
 |[create directory](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/create/create-directory.yml)|Create Directory (C0046)|kernel32.CreateDirectory, kernel32.CreateDirectoryEx, kernel32.CreateDirectoryTransacted, NtCreateDirectoryObject, ZwCreateDirectoryObject, SHCreateDirectory, SHCreateDirectoryEx, _mkdir, _wmkdir, System.IO.Directory::CreateDirectory, System.IO.DirectoryInfo::Create, System.IO.DirectoryInfo::CreateSubdirectory|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[infostealer_arkei](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/infostealer_arkei.py)|ArkeiFiles|Create Directory (C0046)|--|
 
 ### C0046 Snippet
 <details>
