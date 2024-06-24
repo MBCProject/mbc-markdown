@@ -86,8 +86,6 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
 |[network_excessive_udp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_excessive_udp.py)|Socket Communication (C0001)|--|
-|[blackrat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/blackrat_network_activity.py)|Socket Communication (C0001)|send|
-|[obliquerat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/obliquerat_network_activity.py)|Socket Communication (C0001)|send|
 |[network_bind](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_bind.py)|Socket Communication (C0001)|listen, bind|
 
 ### C0001.009 Snippet
