@@ -98,7 +98,16 @@ Malware may encrypt data.
 
 |Tool: CAPE|Class|Mapping|APIs|
 |---|---|---|---|
-
+|[rat_dcrat](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/rat_dcrat.py)|DCRatAPIs|Encrypt Data (C0027)|CryptHashData|
+|[rat_nanocore](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/rat_nanocore.py)|NanocoreRAT|Encrypt Data (C0027)|CryptHashData|
+|[ransomware_crypto](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_crypto.py)|MassDataEncryption|NanocoreRAT|Encrypt Data (C0027)|CryptEncrypt|
+|[rat_luminosity](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/rat_luminosity.py)|LuminosityRAT|Encrypt Data (C0027)|CryptHashData|
+|[script_downloader](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/script_downloader.py)|ScriptNetworkActvity|Encrypt Data (C0027)|SslEncryptPacket|
+|[ransomware_filemodifications](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_filemodifications.py)|RansomwareFileModifications|Encrypt Data (C0027)|--|
+|[rat_blackremote](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/rat_blackremote.py)|BlackRATAPIs|Encrypt Data (C0027)|CryptHashData|
+|[malware_data_encryption](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/malware_data_encryption.py)|EnryptDataAgentTeslaHTTP|Encrypt Data (C0027)|CryptEncrypt|
+|[malware_data_encryption](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/malware_data_encryption.py)|EnryptDataNanoCore|Encrypt Data (C0027)|CryptEncrypt, GetComputerNameW, GetUserNameW|
+|[malware_data_encryption](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/malware_data_encryption.py)|EnryptDataAgentTeslaHTTPT2|Encrypt Data (C0027)|CryptEncrypt, GetComputerNameW, GetUserNameW|
 
 ## Code Snippets
 
