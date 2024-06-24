@@ -111,6 +111,16 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[bot_athenahttp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_athenahttp.py)|AthenaHttp|HTTP Communication (C0002)|--|
 |[http_request](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/http_request.py)|HTTP_Request|HTTP Communication (C0002)|HttpOpenRequestA, HttpOpenRequestW, InternetConnectW, InternetOpenUrlA, InternetConnectA, InternetOpenUrlW, WinHttpGetProxyForUrl|
 |[banker_zeus_url](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/banker_zeus_url.py)|ZeusURL|HTTP Communication (C0002)|--|
+|[reacon_beacon](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/recon_beacon.py)|Recon_Beacon|HTTP Communication (C0002)|HttpSendRequestA,HttpOpenRequestA|
+|[network_docfile_http](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/network_docfile_http.py)|NetworkDocumentHTTP|HTTP Communication (C0002)|InternetCrackUrlW, InternetCrackUrlA, URLDownloadToFileW, HttpOpenRequestW, InternetReadFile, WSASend|
+|[infostealer_purplewave](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/infostealer_purplewave.py)|PurpleWaveNetworkAcivity|HTTP Communication (C0002)|InternetOpenW, HttpAddRequestHeadersA, HttpSendRequestW, HttpOpenRequestW|
+|[filehostings](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/filehostings.py)|Modiloader_APIs|HTTP Communication (C0002)|InternetOpenUrlA, WinHttpOpenRequest|
+|[network_explorer](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/network_explorer.py)|ExplorerHTTP|HTTP Communication (C0002)|WinHttpConnect, WinHttpOpenRequest|
+|[cmdline_anomaly.py](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/cmdline_anomaly.py)|CommandLineHTTPLink|HTTP Communication (C0002)|--|
+|[cmdline_anomaly.py](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/cmdline_anomaly.py)|CommandLineReversedHTTPLink|HTTP Communication (C0002)|--|
+|[exploitation_framework_koadic.py](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/exploitation_framework_koadic.py)|KoadicNetworkActivity|HTTP Communication (C0002)|WinHttpOpenRequest, HttpOpenRequestW|
+|[ransomware_sodinokibi](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_sodinokibi.py)|sodinokibi|HTTP Communication (C0002)|WinHttpOpen|
+|[powershell_command](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/powershell_command.py)|PowerShellNetworkConnection|HTTP Communication (C0002)|HttpOpenRequestW|
 
 ### C0002.017 Snippet
 <details>
