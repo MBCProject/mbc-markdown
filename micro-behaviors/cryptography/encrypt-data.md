@@ -96,8 +96,8 @@ Malware may encrypt data.
 |[encrypt data using skipjack](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/skipjack/encrypt-data-using-skipjack.yml)|Encrypt Data::Skipjack (C0027.013)|--|
 |[encrypt data using blowfish](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/blowfish/encrypt-data-using-blowfish.yml)|Encrypt Data::Blowfish (C0027.002)|--|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
 
 
 ## Code Snippets
