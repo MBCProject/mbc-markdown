@@ -56,11 +56,11 @@ Malware deletes a file.
 
 |Tool: CAPE|Class|Mapping|APIs|
 |---|---|---|---|
-|[clears_logs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/clears_logs.py)|Delete File (C0047)|--|
-|[removes_zoneid_ads](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_zoneid_ads.py)|Delete File (C0047)|DeleteFileW, DeleteFileA|
-|[ransomware_recyclebin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_recyclebin.py)|Delete File (C0047)|--|
-|[anomalous_deletefile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/anomalous_deletefile.py)|Delete File (C0047)|NtDeleteFile, DeleteFileW, DeleteFileA|
-|[deletes_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/.py)|Delete File (C0047)|NtDeleteFile, DeleteFileW, DeleteFileA, MoveFileWithProgressW, MoveFileWithProgressTransactedW|
+|[clears_logs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/clears_logs.py)|ClearsLogs|Delete File (C0047)|--|
+|[removes_zoneid_ads](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_zoneid_ads.py)|RemovesZoneIdADS|Delete File (C0047)|DeleteFileW, DeleteFileA|
+|[ransomware_recyclebin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_recyclebin.py)|RansomwareRecyclebin|Delete File (C0047)|--|
+|[anomalous_deletefile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/anomalous_deletefile.py)|anomalous_deletefile|Delete File (C0047)|NtDeleteFile, DeleteFileW, DeleteFileA|
+|[deletes_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/deletes_self.py)|DeletesSelf|Delete File (C0047)|NtDeleteFile, DeleteFileW, DeleteFileA, MoveFileWithProgressW, MoveFileWithProgressTransactedW|
 
 ### C0047 Snippet
 <details>
