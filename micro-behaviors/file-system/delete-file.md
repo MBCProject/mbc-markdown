@@ -54,12 +54,11 @@ Malware deletes a file.
 |---|---|---|
 |[delete file](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/delete/delete-file.yml)|Delete File (C0047)|kernel32.DeleteFile, DeleteFileTransacted, NtDeleteFile, ZwDeleteFile, remove, _wremove, System.IO.File::Delete, System.IO.FileSystemInfo::Delete, kernel32.SHFileOperation, MoveFileEx|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
 |[clears_logs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/clears_logs.py)|Delete File (C0047)|--|
 |[removes_zoneid_ads](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_zoneid_ads.py)|Delete File (C0047)|DeleteFileW, DeleteFileA|
 |[ransomware_recyclebin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_recyclebin.py)|Delete File (C0047)|--|
-|[trickbot_task_delete](https://github.com/CAPESandbox/community/tree/master/modules/signatures/trickbot_task_delete.py)|Delete File (C0047)|DeleteFileW|
 |[anomalous_deletefile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/anomalous_deletefile.py)|Delete File (C0047)|NtDeleteFile, DeleteFileW, DeleteFileA|
 |[deletes_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/.py)|Delete File (C0047)|NtDeleteFile, DeleteFileW, DeleteFileA, MoveFileWithProgressW, MoveFileWithProgressTransactedW|
 
