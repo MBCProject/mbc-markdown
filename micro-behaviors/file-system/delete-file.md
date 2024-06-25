@@ -61,6 +61,10 @@ Malware deletes a file.
 |[ransomware_recyclebin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_recyclebin.py)|RansomwareRecyclebin|Delete File (C0047)|--|
 |[anomalous_deletefile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/anomalous_deletefile.py)|anomalous_deletefile|Delete File (C0047)|NtDeleteFile, DeleteFileW, DeleteFileA|
 |[deletes_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/deletes_self.py)|DeletesSelf|Delete File (C0047)|NtDeleteFile, DeleteFileW, DeleteFileA, MoveFileWithProgressW, MoveFileWithProgressTransactedW|
+|[trickbot_files](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/trickbot_files.py)||Delete File (C0047)|DeleteFileW|
+|[ransomware_filemodifications](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_filemodifications.py)|RansomwareFileModifications|Delete File (C0047)|MoveFileWithProgressW, MoveFileWithProgressTransactedW, NtCreateFile, NtWriteFile|
+|[deletes_files *(Linux)*)](https://github.com/CAPESandbox/community/blob/master/modules/signatures/linux/deletes_files.py)|LinuxDeletesFile|Delete File (C0047)|--|
+|[removes_zoneid_ads](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/removes_zoneid_ads.py)|RemovesZoneIdADS|Delete File (C0047)|DeleteFileA, DeleteFileW|
 
 ### C0047 Snippet
 <details>
