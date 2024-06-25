@@ -60,12 +60,12 @@ Malware reads a file.
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[reads_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/reads_self.py)|Read File (C0051)|NtReadFile, NtSetInformationFile, NtClose, NtCreateFile, NtOpenFile|
-|[accesses_sysvol](https://github.com/CAPESandbox/community/tree/master/modules/signatures/accesses_sysvol.py)|Read File (C0051)|--|
-|[antidebug_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_devices.py)|Read File (C0051)|--|
-|[antiav_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiav_detectfile.py)|Read File (C0051)|--|
-|[infostealer_browser](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_browser.py)|Read File (C0051)|NtReadFile, CopyFileA, CopyFileExW, CopyFileW|
-|[antianalysis_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antianalysis_detectfile.py)|Read File (C0051)|--|
+|[reads_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/reads_self.py)|Read File (C0051)|NtReadFile, NtSetInformationFile, NtClose, NtCreateFile, NtOpenFile|
+|[accesses_sysvol](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/accesses_sysvol.py)|Read File (C0051)|--|
+|[antidebug_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_devices.py)|Read File (C0051)|--|
+|[antiav_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_detectfile.py)|Read File (C0051)|--|
+|[infostealer_browser](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/infostealer_browser.py)|Read File (C0051)|NtReadFile, CopyFileA, CopyFileExW, CopyFileW|
+|[antianalysis_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antianalysis_detectfile.py)|Read File (C0051)|--|
 
 ### C0051 Snippet
 <details>
