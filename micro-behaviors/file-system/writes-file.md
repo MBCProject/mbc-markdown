@@ -55,9 +55,9 @@ Malware writes to a file.
 |[write file on Windows](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/write/write-file-on-windows.yml)|Writes File (C0052)|kernel32.WriteFile, kernel32.WriteFileEx, NtWriteFile, ZwWriteFile, _fwrite, fwrite, System.IO.File::WriteAllBytes, System.IO.File::WriteAllBytesAsync, System.IO.File::WriteAllLines, System.IO.File::WriteAllLinesAsync, System.IO.File::WriteAllText, System.IO.File::WriteAllTextAsync, System.IO.File::AppendAllLines, System.IO.File::AppendAllLinesAsync, System.IO.File::AppendAllText, System.IO.File::AppendAllTextAsync, System.IO.File::AppendText, System.IO.FileInfo::AppendText|
 |[create process memory minidump](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/dump/create-process-memory-minidump.yml)|Writes File (C0052)|dbghelp.MiniDumpWriteDump|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[upatre_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/upatre_files.py)|Writes File (C0052)|--|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[upatre_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/upatre_files.py)|UpatreFiles|Writes File (C0052)|--|
 
 ### C0052 Snippet
 <details>
