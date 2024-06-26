@@ -114,7 +114,8 @@ Malware modifies the registry.
 |[disables_context_menus](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_context_menus.py)|DisablesContextMenus|Registry (C0036)|--|
 |[antivm_generic_bios](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_bios.py)|AntiVMBios|Registry (C0036), Registry::Query Registry Key (C0036.005)|--|
 |[disables_run_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_run_command.py)|DisableRunCommand|Registry (C0036)|--|
-|[persistence_ifeo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_ifeo.py)|Registry (C0036)|--|
+|[persistence_ifeo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_ifeo.py)|PersistenceIFEO|Registry (C0036)|--|
+|[persistence_ifeo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_ifeo.py)|PersistenceSilentProcessExit|Registry (C0036)|--|
 |[antivm_vbox_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_keys.py)|VBoxDetectKeys|Registry (C0036), Registry::Query Registry Key (C0036.005)|--|
 |[packer_armadillo_regkey](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_armadillo_regkey.py)|ArmadilloRegKey|Registry (C0036)|--|
 |[disables_backups](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_backups.py)|DisablesBackups|Registry (C0036)|--|
@@ -218,8 +219,6 @@ Malware modifies the registry.
 |[disables_restore_default_state](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_restore_default_state.py)|DisablesRestoreDefaultState|Registry (C0036)|--|
 |[disables_context_menus](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_context_menus.py)|DisablesContextMenus|Registry (C0036)|--|
 |[ransomware_nemty](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_nemty.py)|NemtyRegkeys|Registry (C0036)|--|
-|[ransomware_nemty](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_nemty.py)|NemtyNote|--| NtWriteFile|
-|[ransomware_nemty](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_nemty.py)|NemtyNetworkActivity|--| InternetOpenA, InternetOpenUrlA|
 |[disables_cpl_display](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_cpl_display.py)|DisablesCPLDisplay|Registry (C0036)|--|
 |[antivm_generic_diskreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_diskreg.py)|AntiVMDiskReg|Registry (C0036), Registry::Query Registry Key (C0036.005)|--|
 |[modifies_oem](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modifies_oem.py)|ModifiesOEMInformation|Registry (C0036)|--|
