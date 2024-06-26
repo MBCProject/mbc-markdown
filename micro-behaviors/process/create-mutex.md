@@ -48,17 +48,16 @@ Malware creates a mutex.
 |[create mutex](https://github.com/mandiant/capa-rules/blob/master/host-interaction/mutex/create-mutex.yml)|Create Mutex (C0042)|kernel32.CreateMutex, kernel32.CreateMutexEx, System.Threading.Mutex::ctor|
 |[lock file](https://github.com/mandiant/capa-rules/blob/master/host-interaction/mutex/lock-file.yml)|Create Mutex (C0042)|fcntl|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[banker_zeus_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/banker_zeus_mutex.py)|Create Mutex (C0042)|--|
-|[parallax_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/parallax_mutexes.py)|Create Mutex (C0042)|--|
-|[packer_armadillo_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/packer_armadillo_mutex.py)|Create Mutex (C0042)|--|
-|[trickbot_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/trickbot_mutex.py)|Create Mutex (C0042)|--|
-|[banker_cridex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/banker_cridex.py)|Create Mutex (C0042)|--|
-|[deepfreeze_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/deepfreeze_mutex.py)|Create Mutex (C0042)|--|
-|[bot_russkill](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bot_russkill.py)|Create Mutex (C0042)|--|
-|[banker_zeus_p2p](https://github.com/CAPESandbox/community/tree/master/modules/signatures/banker_zeus_p2p.py)|Create Mutex (C0042)|--|
-|[carberp_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/carberp_mutex.py)|Create Mutex (C0042)|--|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[banker_zeus_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/banker_zeus_mutex.py)|ZeusMutexes|Create Mutex (C0042)|--|
+|[packer_armadillo_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_armadillo_mutex.py)|ArmadilloMutex|Create Mutex (C0042)|--|
+|[trickbot_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/trickbot_mutex.py)|TrickBotMutexes|Create Mutex (C0042)|--|
+|[banker_cridex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/banker_cridex.py)|Cridex|Create Mutex (C0042)|--|
+|[deepfreeze_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/deepfreeze_mutex.py)|DeepFreezeMutex|Create Mutex (C0042)|--|
+|[bot_russkill](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bot_russkill.py)|Ruskill|Create Mutex (C0042)|--|
+|[banker_zeus_p2p](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/banker_zeus_p2p.py)|ZeusP2P|Create Mutex (C0042)|--|
+|[carberp_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/carberp_mutex.py)|CarberpMutexes|Create Mutex (C0042)|--|
 
 ### C0042 Snippet
 <details>
