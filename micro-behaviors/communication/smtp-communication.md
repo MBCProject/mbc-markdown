@@ -41,5 +41,5 @@ This micro-behavior focuses on SMTP communication.
 
 |Tool: CAPE|Class|Mapping|APIs|
 |---|---|---|---|
-|[network_smtp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_smtp.py)|SMTP Communication (C0012)|--|
+|[network_smtp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_smtp.py)|NetworkSMTP|SMTP Communication (C0012)|--|
 

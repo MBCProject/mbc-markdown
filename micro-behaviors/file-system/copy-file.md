@@ -48,7 +48,7 @@ Malware copies a file.
 |[copy file](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/copy/copy-file.yml)|Copy File (C0045)|kernel32.CopyFile, kernel32.CopyFileEx, CopyFile2, CopyFileTransacted, LZCopy, System.IO.FileInfo::CopyTo, System.IO.File::Copy, kernel32.SHFileOperation|
 
 |Tool: CAPE|Class|Mapping|APIs|
-|---|---|---|
+|---|---|---|---|
 |[injection_needextension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_needextension.py)|InjectionExtension|Copy File (C0045)|NtCreateUserProcess, CreateProcessInternalW|
 
 ## References

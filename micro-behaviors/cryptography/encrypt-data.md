@@ -100,7 +100,7 @@ Malware may encrypt data.
 |---|---|---|---|
 |[rat_dcrat](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/rat_dcrat.py)|DCRatAPIs|Encrypt Data (C0027)|CryptHashData|
 |[rat_nanocore](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/rat_nanocore.py)|NanocoreRAT|Encrypt Data (C0027)|CryptHashData|
-|[ransomware_crypto](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_crypto.py)|MassDataEncryption|NanocoreRAT|Encrypt Data (C0027)|CryptEncrypt|
+|[ransomware_crypto](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_crypto.py)|MassDataEncryption|Encrypt Data (C0027)|CryptEncrypt|
 |[rat_luminosity](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/rat_luminosity.py)|LuminosityRAT|Encrypt Data (C0027)|CryptHashData|
 |[script_downloader](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/script_downloader.py)|ScriptNetworkActvity|Encrypt Data (C0027)|SslEncryptPacket|
 |[ransomware_filemodifications](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_filemodifications.py)|RansomwareFileModifications|Encrypt Data (C0027)|--|
