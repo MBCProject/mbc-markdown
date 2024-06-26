@@ -46,9 +46,9 @@ Malware may change memory protection. For example, read-write memory may be chan
 
 ## Detection
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_guardpages.py)|Change Memory Protection (C0008)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[antidebug_guardpages](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_guardpages.py)|antidebug_guardpages|Change Memory Protection (C0008)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
 
 ### C0008 Snippet
 <details>
