@@ -57,14 +57,6 @@ Malware writes to a file.
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
-|[poullight_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/poullight_files.py)|Writes File (C0052)|--|
-|[masslogger_artifacts](https://github.com/CAPESandbox/community/tree/master/modules/signatures/masslogger_artifacts.py)|Writes File (C0052)|CryptDecrypt, FindFirstFileExW|
-|[masslogger_version](https://github.com/CAPESandbox/community/tree/master/modules/signatures/masslogger_version.py)|Writes File (C0052)|NtWriteFile|
-|[writes_sysvol](https://github.com/CAPESandbox/community/tree/master/modules/signatures/writes_sysvol.py)|Writes File (C0052)|--|
-|[wiper_zeroedbytes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/wiper_zeroedbytes.py)|Writes File (C0052)|NtWriteFile|
-|[modify_hostfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/modify_hostfile.py)|Writes File (C0052)|--|
-|[apocalypse_stealer_file_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/apocalypse_stealer_file_behavior.py)|Writes File (C0052)|--|
-|[echelon_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/echelon_files.py)|Writes File (C0052)|--|
 |[upatre_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/upatre_files.py)|Writes File (C0052)|--|
 
 ### C0052 Snippet
