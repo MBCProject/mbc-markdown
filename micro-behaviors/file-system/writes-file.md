@@ -65,7 +65,7 @@ Malware writes to a file.
 |[modify_hostfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/modify_hostfile.py)|Writes File (C0052)|--|
 |[apocalypse_stealer_file_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/apocalypse_stealer_file_behavior.py)|Writes File (C0052)|--|
 |[echelon_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/echelon_files.py)|Writes File (C0052)|--|
-|[upatre_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/upatre_files.py)|Writes File (C0052)|--|
+|[upatre_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/upatre_files.py)|Writes File (C0052)|--|
 
 ### C0052 Snippet
 <details>
