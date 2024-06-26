@@ -138,7 +138,6 @@ Malware modifies the registry.
 |[disables_event_logging](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_event_logging.py)|DisablesEventLogging|Registry (C0036)|--|
 |[antivm_generic_system](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_system.py)|AntiVMSystem|Registry (C0036), Registry::Query Registry Key (C0036.005)|--
 |[browser_addon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/browser_addon.py)|BrowserAddon|Registry (C0036),Registry::Set Registry Value (C0036.001)|--|
-
 |[removes_startmenu_defaults](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_startmenu_defaults.py)|RemovesStartMenuDefaults|Registry (C0036)|--|
 |[disables_uac](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_uac.py)|DisablesUAC|Registry (C0036)|--|
 |[disables_wer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_wer.py)|DisablesWER|Registry (C0036)|--|
@@ -151,6 +150,98 @@ Malware modifies the registry.
 |[recon_fingerprint](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/recon_fingerprint.py)|Fingerprint|Registry (C0036)|--|
 |[removes_pinned_programs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_pinned_programs.py)|RemovesPinnedPrograms|Registry (C0036)|--|
 |[bypass_firewall](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bypass_firewall.py)|BypassFirewall|Registry (C0036), Registry::Set Registry Value (C0036.001)|--|
+|[antivm_vmware_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_keys.py)|VMwareDetectKeys|Registry (C0036), Registry::Query Registry Key (C0036.005)|--|
+|[antivm_vbox_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vbox_keys.py)|VBoxDetectKeys|Registry (C0036), Registry::Query Registry Key (C0036.005)|--|
+|[disables_smartscreen](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_smartscreen.py)|DisablesSmartScreen|Registry (C0036)|--|
+|[recon_fingerprint](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/recon_fingerprint.py)|Fingerprint|Registry (C0036)|--|
+|[browser_proxy](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/browser_proxy.py)|ModifyProxy|Registry (C0036), Registry::Set Registry Value (C0036.001)|--|
+|[stealth_hiddenextension](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hiddenextension.py)|StealthHiddenExtension|Registry (C0036)|--|
+|[rat_blackremote](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_blackremote.py)|BlackRATRegistryKeys|Registry (C0036)| RegSetValueExW, RegQueryValueExW|
+|[disables_event_logging](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_event_logging.py)|DisablesEventLogging|Registry (C0036)|--|
+|[disables_sysrestore](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_sysrestore.py)|DisablesSystemRestore|Registry (C0036)|--|
+|[removes_pinned_programs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_pinned_programs.py)|RemovesPinnedPrograms|Registry (C0036)|--|
+|[removes_startmenu_defaults](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_startmenu_defaults.py)|RemovesStartMenuDefaults|Registry (C0036)|--|
+|[rat_warzone](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_warzone.py)|WarzoneRATRegkeys|Registry (C0036)|--|
+|[bypass_firewall](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bypass_firewall.py)|BypassFirewall|Registry (C0036), Registry::Set Registry Value (C0036.001)|--|
+|[stealth_hidenotifications](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hidenotifications.py)|StealthHideNotifications|Registry (C0036)|--|
+|[stealth_hiddenreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hiddenreg.py)|StealthHiddenReg|Registry (C0036)|--|
+|[ransomware_revil_regkey](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_revil_regkey.py)|RevilRegkey|Registry (C0036)|--|
+|[accesses_netlogon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/accesses_netlogon.py)|AccessesMailslot|Registry (C0036), Registry::Open Registry Key (C0036.003)]|--|
+|[accesses_netlogon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/accesses_netlogon.py)|AccessesNetlogonRegkey|Registry (C0036), Registry::Open Registry Key (C0036.003)]|--|
+|[browser_addon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/browser_addon.py)|BrowserAddon|Registry (C0036), Registry::Set Registry Value (C0036.001)|--|
+|[antivm_generic_scsi](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_scsi.py)|AntiVMSCSI|Registry (C0036), Registry::Query Registry Key (C0036.005)| RegOpenKeyExA, RegOpenKeyExW, RegQueryValueExA, RegQueryValueExW|
+|[recon_programs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/recon_programs.py)|InstalledApps|Registry (C0036)| RegQueryValueExA, RegQueryValueExW|
+|[disables_windefender](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windefender.py)|DisablesWindowsDefender|Registry (C0036)|--|
+|[disables_windefender](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windefender.py)|RemovesWindowsDefenderContextMenu|Registry (C0036)|--|
+|[disables_windefender](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windefender.py)|DisablesWindowsDefenderLogging|Registry (C0036)|--|
+|[disables_windefender](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windefender.py)|DisablesWindowsDefenderDISM|Registry (C0036)|--|
+|[office_dll_loading](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_dll_loading.py)|OfficePerfKey|Registry (C0036)|--|
+|[disables_folder_options](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_folder_options.py)|DisableFolderOptions|Registry (C0036)|--|
+|[ransomware_radamant](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_radamant.py)|RansomwareRadamant|Registry (C0036)|--|
+|[antiav_bypass](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_bypass.py)|ModifiesAttachmentManager|Registry (C0036), Registry::Set Registry Value (C0036.001)|--|
+|[rat_spynet](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_spynet.py)|SpynetRat|Registry (C0036)|--|
+|[rat_njrat_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_njrat_regkeys.py)|NjratRegkeys|Registry (C0036)|--|
+|[disables_uac](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_uac.py)|DisablesUAC|Registry (C0036)|--|
+|[remcos](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/remcos.py)|RemcosRegkeys|Registry (C0036)|--|
+|[disables_power_options](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_power_options.py)|DisablesPowerOptions|Registry (C0036)|--|
+|[browser_bho](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/browser_bho.py)|BrowserHelperObject|Registry (C0036), Registry::Set Registry Value (C0036.001)|--|
+|[disables_windowsupdate](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windowsupdate.py)|DisablesWindowsUpdate|Registry (C0036)|--|
+|[antivm_vpc_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vpc_keys.py)|VPCDetectKeys|Registry (C0036), Registry::Query Registry Key (C0036.005)|--|
+|[antivm_hyperv_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_hyperv_keys.py)|HyperVDetectKeys|Registry (C0036), Registry::Query Registry Key (C0036.005)|--|
+|[antivm_xen_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_xen_keys.py)|XenDetectKeys|Registry (C0036), Registry::Query Registry Key (C0036.005)|--|
+|[antivm_generic_system](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_system.py)|AntiVMSystem|Registry (C0036), Registry::Query Registry Key (C0036.005)|--|
+|[antiemu_wine](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiemu_wine.py)|WineDetectReg|Registry (C0036), Registry::Query Registry Key (C0036.005)|--|
+|[virus_neshta](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/virus_neshta.py)|NeshtaRegKeys|Registry (C0036)| RegSetValueExA, RegSetValueExW|
+|[antivm_generic_bios](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_bios.py)|AntiVMBios|Registry (C0036), Registry::Query Registry Key (C0036.005)|--|
+|[hides_recyclebin_icon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/hides_recyclebin_icon.py)|HidesRecycleBinIcon|Registry (C0036)|--|
+|[antiav_detectreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_detectreg.py)|AntiAVDetectReg|Registry (C0036), Registry::Query Registry Key (C0036.005)|--|
+|[browser_security](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/browser_security.py)|BrowserSecurity|Registry (C0036), Registry::Set Registry Value (C0036.001)|--|
+|[banker_geodo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/banker_geodo.py)|Geodo|Registry (C0036), Registry::Set Registry Value (C0036.001)|--|
+|[antivm_generic_services](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_services.py)|AntiVMServices|Registry (C0036), Registry::Query Registry Key (C0036.005) Registry::Query Registry Value (C0036.006)| RegOpenKeyExA, RegEnumKeyExA, RegOpenKeyExW, RegEnumKeyExW|
+|[antiav_srp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_srp.py)|AntiAVSRP|Registry (C0036), Registry::Set Registry Value (C0036.001)|--|
+|[antivm_parallels_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_parallels_keys.py)|ParallelsDetectKeys|Registry (C0036), Registry::Query Registry Key (C0036.005)|--|
+|[disables_startmenu_search](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_startmenu_search.py)|DisablesStartMenuSearch|Registry (C0036)|--|
+|[office_security](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_security.py)|OfficeSecurity|Registry (C0036)|--|
+|[tampers_etw](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/tampers_etw.py)|TampersETW|Registry (C0036)|--|
+|[persistence_ifeo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_ifeo.py)|PersistenceIFEO|Registry (C0036)|--|
+|[persistence_ifeo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_ifeo.py)|PersistenceSilentProcessExit|Registry (C0036)|--|
+|[persistence_shim](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_shim.py)|PersistenceShimDatabase|Registry (C0036)|--|
+|[disables_app](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_app.py)|DisablesAppLaunch|Registry (C0036)|--|
+|[disables_backups](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_backups.py)|DisablesBackups|Registry (C0036)|--|
+|[disables_appv_virtualization](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_appv_virtualization.py)|DisablesAppVirtualiztion|Registry (C0036)|--|
+|[disables_browserwarn](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_browserwarn.py)|DisablesBrowserWarn|Registry (C0036)|--|
+|[creates_largekey](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/creates_largekey.py)|CreatesLargeKey|Registry (C0036)| NtSetValueKey, RegSetValueExA RegSetValueExW])|
+|[remote_desktop](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/remote_desktop.py)|RDPTCPKey|Registry (C0036)|--|
+|[ransomware_medusalocker](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_medusalocker.py)|MedusaLockerRegkeys|Registry (C0036)|--|
+|[antivm_generic_cpu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_cpu.py)|AntiVMCPU|Registry (C0036), Registry::Query Registry Key (C0036.005)| filter_apinames = set(|
+|[disables_app_autotermination](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_app_autotermination.py)|DisablesAutomaticAppTermination|Registry (C0036)|--|
+|[disables_restore_default_state](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_restore_default_state.py)|DisablesRestoreDefaultState|Registry (C0036)|--|
+|[disables_context_menus](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_context_menus.py)|DisablesContextMenus|Registry (C0036)|--|
+|[ransomware_nemty](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_nemty.py)|NemtyRegkeys|Registry (C0036)|--|
+|[ransomware_nemty](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_nemty.py)|NemtyNote|--| NtWriteFile|
+|[ransomware_nemty](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_nemty.py)|NemtyNetworkActivity|--| InternetOpenA, InternetOpenUrlA|
+|[disables_cpl_display](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_cpl_display.py)|DisablesCPLDisplay|Registry (C0036)|--|
+|[antivm_generic_diskreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_diskreg.py)|AntiVMDiskReg|Registry (C0036), Registry::Query Registry Key (C0036.005)|--|
+|[modifies_oem](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modifies_oem.py)|ModifiesOEMInformation|Registry (C0036)|--|
+|[forces_mappeddrives_uac](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/forces_mappeddrives_uac.py)|MappedDrivesUAC| Registry (C0036)|--|
+|[rat_limerat](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_limerat.py)|LimeRATRegkeys|Registry (C0036)|--|
+|[persistence_remotedesktop](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_remotedesktop.py)|PersistenceRDPRegistry|Registry (C0036)|--|
+|[prevents_safeboot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/prevents_safeboot.py)|PreventsSafeboot|Registry (C0036)|--|
+|[removes_sec_maintain_icon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_sec_maintain_icon.py)|RemovesSecurityAndMaintenanceIcon|Registry (C0036)|--|
+|[creates_nullvalue](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/creates_nullvalue.py)|CreatesNullValue|Registry (C0036)| NtSetValueKey, NtCreateKey|
+|[antianalysis_detectreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antianalysis_detectreg.py)|AntiAnalysisDetectReg|Registry (C0036), Registry::Open Registry Key (C0036.003)]|--|
+|[disables_notificationcenter](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_notificationcenter.py)|DisablesNotificationCenter|Registry (C0036)|--|
+|[trojan_ursnif](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/trojan_ursnif.py)|UrsnifBehavior|Registry (C0036)|--|
+|[packer_armadillo_regkey](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/packer_armadillo_regkey.py)|ArmadilloRegKey| Registry (C0036)|--|
+|[browser_startpage](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/browser_startpage.py)|browser_startpage|Registry (C0036), Registry::Set Registry Value (C0036.001)|--|
+|[tampers_powershell_logging](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/tampers_powershell_logging.py)|TampersPowerShellLogging|Registry (C0036)|--|
+|[credential_access](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/credential_access.py)|EnablesWDigest|Registry (C0036)|--|
+|[disables_run_command](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_run_command.py)|DisableRunCommand|Registry (C0036)|--|
+|[backdoor_ketrican_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/backdoor_ketrican_regkeys.py)|KetricanRegkeys| Registry (C0036), Registry::Query Registry Key (C0036.005)|--|
+|[removes_networking_icon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_networking_icon.py)|RemovesNetworkingIcon|Registry (C0036)|--|
+|[modifies_certs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/modifies_certs.py)|ModifiesCerts| Registry (C0036)|--|
+|[removes_username_startmenu](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_username_startmenu.py)|RemovesUsernameStartMenu|Registry (C0036)|--|
+|[disables_wer](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_wer.py)|DisablesWER|Registry (C0036)|--|
 
 ### C0036.005 Snippet
 <details>
