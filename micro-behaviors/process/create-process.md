@@ -70,10 +70,6 @@ Malware creates a process.
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
 |[stealth_system_procname](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_system_procname.py)|Create Process (C0017)|ShellExecuteExW, CreateProcessInternalW|
-|[stack_pivot_process_create](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stack_pivot_process_create.py)|Create Process (C0017)|NtCreateUserProcess, CreateProcessInternalW|
-|[wmi_create_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/wmi_create_process.py)|Create Process (C0017)|NtCreateUserProcess, CreateProcessInternalW|
-|[wmi_create_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/wmi_create_process.py)|Create Process::Create Process via WMI (C0017.002)|NtCreateUserProcess, CreateProcessInternalW|
-|[script_created_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/script_created_process.py)|Create Process (C0017)|NtCreateUserProcess, CreateProcessInternalW|
 
 ### C0049 Snippet
 <details>
