@@ -62,7 +62,7 @@ Malware creates a mutex.
 |[rat_plugx_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_plugx_mutex.py)|PlugxMutexes|Create Mutex (C0042)|--|
 |[rat_spynet](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_spynet.py)|SpynetRat|Create Mutex (C0042)|--|
 |[rat_limerat](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_limerat.py)|LimeRATMutexes|Create Mutex (C0042)|--|
-|[rat_dcrat](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_dcrat.py)|DCRatMutexCreate Mutex (C0042)|--|
+|[rat_dcrat](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_dcrat.py)|DCRatMutex|Create Mutex (C0042)|--|
 |[rat_nanocore](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_nanocore.py)|NanocoreRAT|Create Mutex (C0042)|--|
 |[bot_russkill](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bot_russkill.py)|Ruskill|Create Mutex (C0042)|--|
 |[rat_fynloski_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_fynloski_mutex.py)|FynloskiMutexes|Create Mutex (C0042)|--|
