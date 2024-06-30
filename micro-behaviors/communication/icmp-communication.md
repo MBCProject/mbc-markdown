@@ -43,7 +43,7 @@ This micro-behavior is related to ICMP communication.
 |---|---|---|
 |[send ICMP echo request](https://github.com/mandiant/capa-rules/blob/master/communication/icmp/send-icmp-echo-request.yml)|ICMP Communication::Echo Request (C0014.002)|IcmpSendEcho, IcmpSendEcho2, IcmpSendEcho2Ex, Icmp6SendEcho2, IcmpCreateFile, Icmp6CreateFile, IcmpCloseHandle|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[suspicious_ping_use](https://github.com/CAPESandbox/community/tree/master/modules/signatures/suspicious_ping_use.py)|ICMP Communication (C0014)|--|
-|[network_icmp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_icmp.py)|ICMP Communication (C0014)|--|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[network_icmp](https://github.com/CAPESandbox/community/blob/master/modules/signatures/all/network_icmp.py)|NetworkICMP|ICMP Communication (C0014)|--|
+|[windows_utilities](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/windows_utilities.py)|SuspiciousPingUse|ICMP Communication (C0014)|--|

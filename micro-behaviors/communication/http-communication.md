@@ -94,31 +94,33 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[connect to HTTP server](https://github.com/mandiant/capa-rules/blob/master/communication/http/client/connect-to-http-server.yml)|HTTP Communication::Connect to Server (C0002.009)|wininet.InternetConnect|
 |[extract HTTP body](https://github.com/mandiant/capa-rules/blob/master/communication/http/client/extract-http-body.yml)|HTTP Communication::Extract Body (C0002.011)|--|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[internet_dropper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/internet_dropper.py)|HTTP Communication (C0002)|HttpOpenRequestA, InternetConnectA, HttpOpenRequestW, InternetConnectW|
-|[bot_madness](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bot_madness.py)|HTTP Communication (C0002)|--|
-|[bot_madness](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bot_madness.py)|HTTP Communication::Send Request (C0002.003)|--|
-|[bot_drive](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bot_drive.py)|HTTP Communication (C0002)|--|
-|[bot_drive](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bot_drive.py)|HTTP Communication::Send Data (C0002.005)|--|
-|[network_cnc_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_cnc_http.py)|HTTP Communication (C0002)|--|
-|[recon_beacon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/recon_beacon.py)|HTTP Communication (C0002)|HttpOpenRequestA, HttpSendRequestA|
-|[network_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_http.py)|HTTP Communication (C0002)|--|
-|[explorer_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/explorer_http.py)|HTTP Communication (C0002)|WinHttpConnect, WinHttpOpenRequest|
-|[bot_drive2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bot_drive2.py)|HTTP Communication (C0002)|--|
-|[bot_drive2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bot_drive2.py)|HTTP Communication::Send Data (C0002.005)|--|
-|[bot_dirtjumper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bot_dirtjumper.py)|HTTP Communication (C0002)|--|
-|[bot_dirtjumper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bot_dirtjumper.py)|HTTP Communication::Send Data (C0002.005)|--|
-|[bot_athenahttp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/bot_athenahttp.py)|HTTP Communication (C0002)|--|
-|[koadic_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/koadic_network_activity.py)|HTTP Communication (C0002)|HttpOpenRequestW, WinHttpOpenRequest|
-|[http_request](https://github.com/CAPESandbox/community/tree/master/modules/signatures/http_request.py)|HTTP Communication (C0002)|HttpOpenRequestA, HttpOpenRequestW, InternetConnectW, InternetOpenUrlA, InternetConnectA, InternetOpenUrlW, WinHttpGetProxyForUrl|
-|[cmdline_http_link](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cmdline_http_link.py)|HTTP Communication (C0002)|--|
-|[cmdline_reversed_http_link](https://github.com/CAPESandbox/community/tree/master/modules/signatures/cmdline_reversed_http_link.py)|HTTP Communication (C0002)|--|
-|[https_urls](https://github.com/CAPESandbox/community/tree/master/modules/signatures/https_urls.py)|HTTP Communication (C0002)|InternetOpenUrlW, InternetOpenUrlA|
-|[network_document_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_document_http.py)|HTTP Communication (C0002)|URLDownloadToFileW, HttpOpenRequestW, InternetCrackUrlW, InternetCrackUrlA, WSASend, InternetReadFile|
-|[banker_zeus_url](https://github.com/CAPESandbox/community/tree/master/modules/signatures/banker_zeus_url.py)|HTTP Communication (C0002)|--|
-|[downloads_from_filehosting](https://github.com/CAPESandbox/community/tree/master/modules/signatures/downloads_from_filehosting.py)|HTTP Communication (C0002)|WinHttpOpenRequest, InternetOpenUrlA|
-|[purplewave_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/purplewave_network_activity.py)|HTTP Communication (C0002)|InternetOpenW, HttpOpenRequestW, HttpSendRequestW, HttpAddRequestHeadersA|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[internet_dropper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/internet_dropper.py)|Internet_Dropper|HTTP Communication (C0002)|HttpOpenRequestA, InternetConnectA, HttpOpenRequestW, InternetConnectW|
+|[bot_madness](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_madness.py)|Madness|HTTP Communication (C0002)|--|
+|[bot_madness](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_madness.py)|Madness|HTTP Communication::Send Request (C0002.003)|--|
+|[bot_drive](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_drive.py)|Drive|HTTP Communication (C0002)|--|
+|[bot_drive](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_drive.py)|Drive|HTTP Communication::Send Data (C0002.005)|--|
+|[network_cnc_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_cnc_http.py)|NetworkCnCHTTP|HTTP Communication (C0002)|--|
+|[recon_beacon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/recon_beacon.py)|Recon_Beacon|HTTP Communication (C0002)|HttpOpenRequestA, HttpSendRequestA|
+|[network_http](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_http.py)|NetworkHTTP|HTTP Communication (C0002)|--|
+|[bot_drive2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_drive2.py)|Drive2|HTTP Communication (C0002)|--|
+|[bot_drive2](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_drive2.py)|Drive2|HTTP Communication::Send Data (C0002.005)|--|
+|[bot_dirtjumper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_dirtjumper.py)|DirtJumper|HTTP Communication (C0002)|--|
+|[bot_dirtjumper](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_dirtjumper.py)|DirtJumper|HTTP Communication::Send Data (C0002.005)|--|
+|[bot_athenahttp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_athenahttp.py)|AthenaHttp|HTTP Communication (C0002)|--|
+|[http_request](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/http_request.py)|HTTP_Request|HTTP Communication (C0002)|HttpOpenRequestA, HttpOpenRequestW, InternetConnectW, InternetOpenUrlA, InternetConnectA, InternetOpenUrlW, WinHttpGetProxyForUrl|
+|[banker_zeus_url](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/banker_zeus_url.py)|ZeusURL|HTTP Communication (C0002)|--|
+|[reacon_beacon](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/recon_beacon.py)|Recon_Beacon|HTTP Communication (C0002)|HttpSendRequestA,HttpOpenRequestA|
+|[network_docfile_http](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/network_docfile_http.py)|NetworkDocumentHTTP|HTTP Communication (C0002)|InternetCrackUrlW, InternetCrackUrlA, URLDownloadToFileW, HttpOpenRequestW, InternetReadFile, WSASend|
+|[infostealer_purplewave](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/infostealer_purplewave.py)|PurpleWaveNetworkAcivity|HTTP Communication (C0002)|InternetOpenW, HttpAddRequestHeadersA, HttpSendRequestW, HttpOpenRequestW|
+|[filehostings](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/filehostings.py)|Modiloader_APIs|HTTP Communication (C0002)|InternetOpenUrlA, WinHttpOpenRequest|
+|[network_explorer](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/network_explorer.py)|ExplorerHTTP|HTTP Communication (C0002)|WinHttpConnect, WinHttpOpenRequest|
+|[cmdline_anomaly.py](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/cmdline_anomaly.py)|CommandLineHTTPLink|HTTP Communication (C0002)|--|
+|[cmdline_anomaly.py](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/cmdline_anomaly.py)|CommandLineReversedHTTPLink|HTTP Communication (C0002)|--|
+|[exploitation_framework_koadic.py](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/exploitation_framework_koadic.py)|KoadicNetworkActivity|HTTP Communication (C0002)|WinHttpOpenRequest, HttpOpenRequestW|
+|[ransomware_sodinokibi](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_sodinokibi.py)|sodinokibi|HTTP Communication (C0002)|WinHttpOpen|
+|[powershell_command](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/powershell_command.py)|PowerShellNetworkConnection|HTTP Communication (C0002)|HttpOpenRequestW|
 
 ### C0002.017 Snippet
 <details>

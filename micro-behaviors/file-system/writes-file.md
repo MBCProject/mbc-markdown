@@ -55,17 +55,18 @@ Malware writes to a file.
 |[write file on Windows](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/write/write-file-on-windows.yml)|Writes File (C0052)|kernel32.WriteFile, kernel32.WriteFileEx, NtWriteFile, ZwWriteFile, _fwrite, fwrite, System.IO.File::WriteAllBytes, System.IO.File::WriteAllBytesAsync, System.IO.File::WriteAllLines, System.IO.File::WriteAllLinesAsync, System.IO.File::WriteAllText, System.IO.File::WriteAllTextAsync, System.IO.File::AppendAllLines, System.IO.File::AppendAllLinesAsync, System.IO.File::AppendAllText, System.IO.File::AppendAllTextAsync, System.IO.File::AppendText, System.IO.FileInfo::AppendText|
 |[create process memory minidump](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/dump/create-process-memory-minidump.yml)|Writes File (C0052)|dbghelp.MiniDumpWriteDump|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[poullight_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/poullight_files.py)|Writes File (C0052)|--|
-|[masslogger_artifacts](https://github.com/CAPESandbox/community/tree/master/modules/signatures/masslogger_artifacts.py)|Writes File (C0052)|CryptDecrypt, FindFirstFileExW|
-|[masslogger_version](https://github.com/CAPESandbox/community/tree/master/modules/signatures/masslogger_version.py)|Writes File (C0052)|NtWriteFile|
-|[writes_sysvol](https://github.com/CAPESandbox/community/tree/master/modules/signatures/writes_sysvol.py)|Writes File (C0052)|--|
-|[wiper_zeroedbytes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/wiper_zeroedbytes.py)|Writes File (C0052)|NtWriteFile|
-|[modify_hostfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/modify_hostfile.py)|Writes File (C0052)|--|
-|[apocalypse_stealer_file_behavior](https://github.com/CAPESandbox/community/tree/master/modules/signatures/apocalypse_stealer_file_behavior.py)|Writes File (C0052)|--|
-|[echelon_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/echelon_files.py)|Writes File (C0052)|--|
-|[upatre_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/upatre_files.py)|Writes File (C0052)|--|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[upatre_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/upatre_files.py)|UpatreFiles|Writes File (C0052)|--|
+|[wiper](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/wiper.py)|WiperZeroedBytes|Writes File (C0052)|NtWriteFile|
+|[modifies_hostsfile](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/modifies_hostsfile.py)|Modifies_HostFile|Writes File (C0052)|--|
+|[accesses_sysvol](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/accesses_sysvol.py)|WritesSysvol|Writes File (C0052)|--|
+|[trojan_ursnif](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/trojan_ursnif.py)|UrsnifBehavior|Writes File (C0052)|--|
+|[infostealer_poullight](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/infostealer_poullight.py)|PoullightFiles|Writes File (C0052)|--|
+|[infostealer_echelon](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/infostealer_echelon.py)|EchelonFiles|Writes File (C0052)|--|
+|[infostealer_apocalypse](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/infostealer_apocalypse.py)|ApocalypseStealerFileBehavior|Writes File (C0052)|--|
+|[infostealer_masslogger](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/infostealer_masslogger.py)|MassLoggerVersion|Writes File (C0052)|NtWriteFile|
+|[infostealer_masslogger](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/infostealer_masslogger.py)|MassLoggerArtifacts|Writes File (C0052)|FindFirstFileExW, CryptDecrypt|
 
 ### C0052 Snippet
 <details>

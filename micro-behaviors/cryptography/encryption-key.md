@@ -55,10 +55,10 @@ Malware may import, generate, or otherwise use an encryption key.
 |[encrypt data using RC4 KSA](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/rc4/encrypt-data-using-rc4-ksa.yml)|Encryption Key::RC4 KSA (C0028.002)|--|
 |[reference public RSA key](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/rsa/reference-public-rsa-key.yml)|Encryption Key (C0028)|--|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[mass_data_encryption](https://github.com/CAPESandbox/community/tree/master/modules/signatures/mass_data_encryption.py)|Encryption Key (C0028)|CryptEncrypt|
-|[generates_crypto_key](https://github.com/CAPESandbox/community/tree/master/modules/signatures/generates_crypto_key.py)|Encryption Key (C0028)|CryptGenKey, CryptExportKey|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[ransomware_crypto](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_crypto.py)|MassDataEncryption|Encryption Key (C0028)|CryptEncrypt|
+|[crypto_apis](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/crypto_apis.py)|CryptGenKey|Encryption Key (C0028)|CryptGenKey, CryptExportKey|
 
 ## References
 

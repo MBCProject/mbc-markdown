@@ -44,9 +44,10 @@ The methods below are those of most interest in malware analysis. Details can be
 
 ## Detection
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[nemty_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/nemty_network_activity.py)|WinINet (C0005)|InternetOpenA, InternetOpenUrlA|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[ransomware_nemty](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_nemty.py)|NemtyNetworkActivity|WinINet (C0005), InternetOpen	(C0005.002), InternetOpenURL (C0005.003)|InternetOpenA, InternetOpenUrlA|
+|[powershell_command](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/powershell_command.py)|PowerShellNetworkConnection|WinINet (C0005)|InternetCrackUrlW, InternetCrackUrlA|
 
 ### C0005.001 Snippet
 <details>
