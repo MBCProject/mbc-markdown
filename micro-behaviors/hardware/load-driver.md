@@ -42,6 +42,6 @@ Malware loads a device driver or minifilter.
 |---|---|---|
 |[start minifilter driver](https://github.com/mandiant/capa-rules/blob/master/host-interaction/filter/start-minifilter-driver.yml)|Load Driver::Minifilter (C0023.001)|FltStartFiltering|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[driver_load](https://github.com/CAPESandbox/community/tree/master/modules/signatures/driver_load.py)|Load Driver (C0023)|NtLoadDriver|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[driver_load](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/driver_load.py)|DriverLoad|Load Driver (C0023)|NtLoadDriver|

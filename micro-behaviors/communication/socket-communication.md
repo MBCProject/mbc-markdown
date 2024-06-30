@@ -83,12 +83,24 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[send data on socket](https://github.com/mandiant/capa-rules/blob/master/communication/socket/send/send-data-on-socket.yml)|Socket Communication::Send Data (C0001.007)|ws2_32.send, ws2_32.sendto, ws2_32.WSASend, ws2_32.WSASendMsg, ws2_32.WSASendTo, send, System.Net.Sockets.Socket::Send, System.Net.Sockets.Socket::SendAsync, System.Net.Sockets.Socket::SendTo, System.Net.Sockets.Socket::SendToAsync, System.Net.Sockets.UdpClient::Send|
 |[receive data on socket](https://github.com/mandiant/capa-rules/blob/master/communication/socket/receive/receive-data-on-socket.yml)|Socket Communication::Receive Data (C0001.006)|ws2_32.recv, ws2_32.recvfrom, ws2_32.WSARecv, ws2_32.WSARecvDisconnect, ws2_32.WSARecvEx, ws2_32.WSARecvFrom, ws2_32.WSARecvMsg, recv, System.Net.Sockets.Socket::Receive, System.Net.Sockets.Socket::ReceiveAsync, System.Net.Sockets.Socket::ReceiveFrom, System.Net.Sockets.Socket::ReceiveFromAsync, System.Net.Sockets.Socket::ReceiveMessageFrom, System.Net.Sockets.Socket::ReceiveMessageFromAsync, System.Net.Sockets.Socket::BeginReceive, System.Net.Sockets.Socket::BeginReceiveFrom, System.Net.Sockets.Socket::BeginReceiveMessageFrom, System.Net.Sockets.Socket::EndReceive, System.Net.Sockets.Socket::EndReceiveFrom, System.Net.Sockets.Socket::EndReceiveMessageFrom|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[network_excessive_udp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_excessive_udp.py)|Socket Communication (C0001)|--|
-|[blackrat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/blackrat_network_activity.py)|Socket Communication (C0001)|send|
-|[obliquerat_network_activity](https://github.com/CAPESandbox/community/tree/master/modules/signatures/obliquerat_network_activity.py)|Socket Communication (C0001)|send|
-|[network_bind](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_bind.py)|Socket Communication (C0001)|listen, bind|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[network_excessive_udp](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_excessive_udp.py)|NetworkExcessiveUDP|Socket Communication (C0001)|--|
+|[network_bind](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_bind.py)|NetworkBIND|Socket Communication (C0001)|listen, bind|
+|[rat_blackremote](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/rat_blackremote.py)|BlackRATNetworkActivity|Socket Communication (C0001)|send|
+|[rat_oblique](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/rat_oblique.py)|ObliquekRATNetworkActivity|Socket Communication (C0001)|send|
+
+### C0001.009 Snippet
+<details>
+<summary> Communication::Socket Communication::Initialize Winsock Library </summary>
+SHA256: 000b535ab2a4fec86e2d8254f8ed65c6ebd37309ed68692c929f8f93a99233f6
+Location: 0x472C92
+<pre>
+push    eax     ; pointer to WSADATA structure that the call to start Winsock will populate with the Windows socket data
+push    0x101   ; highest version of Winsock permitted for use in this application -- in this case, version 1.1 (major version in lowest-order byte, minor version in highest-order byte)
+call    WSOCK.DLL::WSAStartup   ; Initiate the Winsock DLL
+</pre>
+</details>
 
 ### C0001.009 Snippet
 <details>

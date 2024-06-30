@@ -54,16 +54,26 @@ The DNS Communication micro-behavior focuses on DNS communication.
 |[reference DNS over HTTPS endpoints](https://github.com/mandiant/capa-rules/blob/master/communication/dns/reference-dns-over-https-endpoints.yml)|DNS Communication::Server Connect (C0011.002)|--|
 |[resolve DNS](https://github.com/mandiant/capa-rules/blob/master/communication/dns/resolve-dns.yml)|DNS Communication::Resolve (C0011.001)|ws2_32.gethostbyname, DnsQuery_A, DnsQuery_W, DnsQuery_UTF8, DnsQueryEx, getaddrinfo, GetAddrInfo, GetAddrInfoEx, gethostbyname, getaddrinfo, getnameinfo, gethostent, System.Net.Dns::GetHostAddresses|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[network_dns_blockchain](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_blockchain.py)|DNS Communication (C0011)|--|
-|[network_dns_idn](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_idn.py)|DNS Communication (C0011)|DnsQueryA|
-|[network_dns_opennic](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_opennic.py)|DNS Communication (C0011)|--|
-|[network_dns_reverse_proxy](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_reverse_proxy.py)|DNS Communication (C0011)|--|
-|[network_dns_suspicious_querytype](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_suspicious_querytype.py)|DNS Communication (C0011)|DnsQueryA|
-|[network_dns_tunneling_request](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_tunneling_request.py)|DNS Communication (C0011)|DnsQuery_A, DnsQuery_W|
-|[network_dns_doh_tls](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dns_doh_tls.py)|DNS Communication (C0011)|--|
-|[network_dga](https://github.com/CAPESandbox/community/tree/master/modules/signatures/network_dga.py)|DNS Communication (C0011)|--|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[network_dns_suspicious.py](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSTunnelingRequest|DNS Communication (C0011)|DnsQuery_A, DnsQuery_W|
+|[network_dns_suspicious.py](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSIDN|DNS Communication (C0011)|DnsQueryA|
+|[network_dns_suspicious.py](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSSuspiciousQueryType|DNS Communication (C0011)|DnsQueryA|
+|[network_dns_suspicious.py](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSBlockChain|DNS Communication (C0011)|--|
+|[network_dns_suspicious.py](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSOpenNIC|DNS Communication (C0011)|--|
+|[network_dns_suspicious.py](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDOHTLS|DNS Communication (C0011)|--|
+|[network_dns_suspicious.py](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSReverseProxy|DNS Communication (C0011)|--|
+
+### C0011.001 Snippet
+<details>
+<summary> Communication::DNS Communication::Resolve </summary>
+SHA256: 000b535ab2a4fec86e2d8254f8ed65c6ebd37309ed68692c929f8f93a99233f6
+Location: 0x472CD3
+<pre>
+push    ebx     ; hostname to perform DNS lookup for
+call    WSOCK32.DLL::gethostbyname      ; Windows function which will retrieve an object representing the specified host
+</pre>
+</details>
 
 ### C0011.001 Snippet
 <details>

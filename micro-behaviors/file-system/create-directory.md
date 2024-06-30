@@ -48,9 +48,21 @@ Malware creates a directory.
 |---|---|---|
 |[create directory](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/create/create-directory.yml)|Create Directory (C0046)|kernel32.CreateDirectory, kernel32.CreateDirectoryEx, kernel32.CreateDirectoryTransacted, NtCreateDirectoryObject, ZwCreateDirectoryObject, SHCreateDirectory, SHCreateDirectoryEx, _mkdir, _wmkdir, System.IO.Directory::CreateDirectory, System.IO.DirectoryInfo::Create, System.IO.DirectoryInfo::CreateSubdirectory|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[arkei_files](https://github.com/CAPESandbox/community/tree/master/modules/signatures/arkei_files.py)|Create Directory (C0046)|--|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[infostealer_arkei](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/infostealer_arkei.py)|ArkeiFiles|Create Directory (C0046)|--|
+
+### C0046 Snippet
+<details>
+<summary> File System::Create Directory </summary>
+SHA256: 27253651170386863b148afb2a0fdda7780ae65cbc31405acbd99fa06b44b79f
+Location: 0x1400036d4
+<pre>
+xor     param_2, param_2        ; use default security attributes (param_2 is NULL)
+mov     param_1, rbp    ; use contents of rbp as directory name
+call    qword ptr [->KERNEL32.DLL::CreateDirectoryA]  ; call Windows API to create directory
+</pre>
+</details>
 
 ### C0046 Snippet
 <details>

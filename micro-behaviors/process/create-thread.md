@@ -48,11 +48,31 @@ Malware creates a thread.
 |[create thread](https://github.com/mandiant/capa-rules/blob/master/host-interaction/thread/create/create-thread.yml)|Create Thread (C0038)|kernel32.CreateThread, _beginthread, _beginthreadex, PsCreateSystemThread, SHCreateThread, SHCreateThreadWithHandle, kernel32.CreateRemoteThread, kernel32.CreateRemoteThreadEx, RtlCreateUserThread, ntdll.NtCreateThread, ntdll.NtCreateThreadEx, ntdll.ZwCreateThread, ntdll.ZwCreateThreadEx, pthread_create, System.Threading.Thread::Start, System.Threading.Thread::ctor|
 |[spawn thread to RWX shellcode](https://github.com/mandiant/capa-rules/blob/master/load-code/shellcode/spawn-thread-to-rwx-shellcode.yml)|Create Thread (C0038)|--|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[injection_create_remote_thread](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Create Thread (C0038)|--|
-|[antidebug_ntcreatethreadex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_ntcreatethreadex.py)|Create Thread (C0038)|NtCreateThreadEx|
-|[antidebug_ntsetinformationthread](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_ntsetinformationthread.py)|Create Thread (C0038)|NtSetInformationThread|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[injection_create_remote_thread](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|CAPE_InjectionCreateRemoteThread|Create Thread (C0038)|--|
+|[antidebug_ntcreatethreadex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_ntcreatethreadex.py)|antidebug_ntcreatethreadex|Create Thread (C0038)|NtCreateThreadEx|
+|[antidebug_ntsetinformationthread](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_ntsetinformationthread.py)|antidebug_ntsetinformationthread|Create Thread (C0038)|NtSetInformationThread|
+
+### C0038 Snippet
+<details>
+<summary> Process::Create Thread </summary>
+SHA256: 465d3aac3ca4daa9ad4de04fcb999f358396efd7abceed9701c9c28c23c126db
+Location: 0x404915
+<pre>
+mov     param_2, dword ptr [ebp + param_4]
+push    param_2 ; Pointer to location where thread handler will be returned
+mov     param_2, dword ptr [ebp + param_5]
+push    param_2 ; Flags controlling thread creation
+push    param_1 ; Pointer to variable to be passed to thread
+mov     param_1, FUN_004048b8
+push    param_1 ; Pointer to function where thread will begin execution
+push    esi     ; Size of stack for new thread
+push    ebx     ; Pointer to security attributes for thread.  If null, the handle to the thread cannot be inherited
+call    KERNEL32.DLL::CreateThread ; Call to thread creation API
+</pre>
+</details>
+
 
 ### C0038 Snippet
 <details>

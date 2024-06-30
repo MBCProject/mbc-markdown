@@ -58,14 +58,29 @@ Malware reads a file.
 |[read file on Linux](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/read/read-file-on-linux.yml)|Read File (C0051)|fgetc, fgets, getc, getchar, read, getline, getdelim, fgetwc, getwc, fscanf, vfscanf, fread|
 |[read .ini file](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/read/read-ini-file.yml)|Read File (C0051)|GetPrivateProfileInt, GetPrivateProfileString, GetPrivateProfileStruct, GetPrivateProfileSection, GetPrivateProfileSectionNames, GetFullPathName|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[reads_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/reads_self.py)|Read File (C0051)|NtReadFile, NtSetInformationFile, NtClose, NtCreateFile, NtOpenFile|
-|[accesses_sysvol](https://github.com/CAPESandbox/community/tree/master/modules/signatures/accesses_sysvol.py)|Read File (C0051)|--|
-|[antidebug_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antidebug_devices.py)|Read File (C0051)|--|
-|[antiav_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antiav_detectfile.py)|Read File (C0051)|--|
-|[infostealer_browser](https://github.com/CAPESandbox/community/tree/master/modules/signatures/infostealer_browser.py)|Read File (C0051)|NtReadFile, CopyFileA, CopyFileExW, CopyFileW|
-|[antianalysis_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/antianalysis_detectfile.py)|Read File (C0051)|--|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[reads_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/reads_self.py)|ReadsSelf|Read File (C0051)|NtReadFile, NtSetInformationFile, NtClose, NtCreateFile, NtOpenFile|
+|[accesses_sysvol](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/accesses_sysvol.py)|AccessesSysvol|Read File (C0051)|--|
+|[antidebug_devices](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antidebug_devices.py)|AntiDBGDevices|Read File (C0051)|--|
+|[antiav_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_detectfile.py)|AntiAVDetectFile|Read File (C0051)|--|
+|[infostealer_browser](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/infostealer_browser.py)|BrowserStealer|Read File (C0051)|NtReadFile, CopyFileA, CopyFileExW, CopyFileW|
+|[antianalysis_detectfile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antianalysis_detectfile.py)|AntiAnalysisDetectFile|Read File (C0051)|--|
+
+### C0051 Snippet
+<details>
+<summary> File System::Read File </summary>
+SHA256: e5897829835f3e9fbab71674ca06f48ff127ec014d1629817f0566203c93b732
+Location: 0x401762
+<pre>
+mov     r9, rdi         ; variable that will hold number of bytes actually read from file
+mov     r8d, ebx        ; number of bytes to read
+mov     param_2, rsi    ; pointer to buffer that will hold content read from file
+mov     param_1, r12    ; handle to the device/file to read from
+mov     qword ptr [rsp + local_58], 0x0 ; optional pointer to OVERLAPPED structure (in this case, it is NULL)
+call    qword ptr [->KERNEL32.DLL::ReadFile] ; API call to read file specified in param_1
+</pre>
+</details>
 
 ### C0051 Snippet
 <details>
@@ -85,4 +100,3 @@ call    qword ptr [->KERNEL32.DLL::ReadFile] ; API call to read file specified i
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
-

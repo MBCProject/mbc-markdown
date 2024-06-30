@@ -67,13 +67,36 @@ Malware creates a process.
 |[create a process with modified I/O handles and window](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/create/create-a-process-with-modified-io-handles-and-window.yml)|Create Process (C0017)|kernel32.CreateProcess, kernel32.CreateProcessInternal, advapi32.CreateProcessAsUser, advapi32.CreateProcessWithLogon, advapi32.CreateProcessWithToken, kernel32.GetStartupInfo, System.Diagnostics.Process::Start|
 |[create process suspended](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/create/create-process-suspended.yml)|Create Process::Create Suspended Process (C0017.003)|kernel32.CreateProcess, advapi32.CreateProcessAsUser|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[stealth_system_procname](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stealth_system_procname.py)|Create Process (C0017)|ShellExecuteExW, CreateProcessInternalW|
-|[stack_pivot_process_create](https://github.com/CAPESandbox/community/tree/master/modules/signatures/stack_pivot_process_create.py)|Create Process (C0017)|NtCreateUserProcess, CreateProcessInternalW|
-|[wmi_create_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/wmi_create_process.py)|Create Process (C0017)|NtCreateUserProcess, CreateProcessInternalW|
-|[wmi_create_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/wmi_create_process.py)|Create Process::Create Process via WMI (C0017.002)|NtCreateUserProcess, CreateProcessInternalW|
-|[script_created_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/script_created_process.py)|Create Process (C0017)|NtCreateUserProcess, CreateProcessInternalW|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|---|---|---|
+|[stealth_system_procname](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_system_procname.py)|StealthSystemProcName|Create Process (C0017)|ShellExecuteExW, CreateProcessInternalW|
+|[stack_pivot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stack_pivot.py)|StackPivotProcessCreate|Create Process (C0017)|CreateProcessInternalW,  NtCreateUserProcess|
+|[wmi](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/wmi.py)|WMICreateProcess|Create Process (C0017), Create Process:Create Process via WMI (C0017.002)| CreateProcessInternalW, NtCreateUserProcess|
+|[script_downloader](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/script_downloader.py)|ScriptCreatedProcess|Create Process (C0017)|CreateProcessInternalW, NtCreateUserProcess|
+
+### C0049 Snippet
+<details>
+<summary> Process::Create Process </summary>
+SHA256: 465d3aac3ca4daa9ad4de04fcb999f358396efd7abceed9701c9c28c23c126db
+Location: 0x458C26
+<pre>
+lea     param_1, [ebp + 0xfffffeb0]
+push    param_1 ; pointer to PROCESS_INFORMATION struct to hold information about the new process
+lea     param_1, [ebp + 0xfffffec0]
+push    param_1 ; pointer to STARTUPINFO struct
+push    0x0     ; path to directory for new process -- if null, use same directory as calling process
+push    0x0     ; environment block for new process -- if null, use the calling process's environment block
+push    0x4     ; process creation flags (CREATE_SUSPENDED in this case)
+push    0x0     ; if heritable handles in the calling process should be inherited by the new process.  If false, inheritance will not occur.
+push    0x0     ; security attributes for new process.  If null, child processes cannot inherit thread running new process
+push    0x0     ; security attributes for new process.  If null, child processes cannot inherit handle for new process
+mov     param_1, dword ptr [ebp + local_8]
+call    FUN_00404dfc
+push    param_1 ; command line for new process to execute
+push    0x0     ; application name to be executed.  If null, use command line provided in another argument
+call    KERNEL32.DLL::CreateProcessA    ; Call Windows API function to create new process
+</pre>
+</details>
 
 ### C0049 Snippet
 <details>
