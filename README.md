@@ -130,7 +130,7 @@ The table below lists MBC behaviors and related ATT&CK techniques. In most cases
 |**B0031**|COMMAND AND CONTROL|**Domain Name Generation**|Dynamic Resolution: Domain Name Generation ([T1568.002](https://attack.mitre.org/techniques/T1568/002))|
 |**B0032**|ANTI-STATIC ANALYSIS|**Executable Code Obfuscation**|*none*|
 |**B0033**|IMPACT|**Denial of Service**|Network Denial of Service ([T1498](https://attack.mitre.org/techniques/T1498))|
-|**B0034**|ANTI-STATIC ANALYSIS|**Executable Code Obfuscation**|*none*|
+|**B0034**|ANTI-STATIC ANALYSIS|**Executable Code Optimization**|*none*|
 |**B0035**|PERSISTENCE|**Shutdown Event**|*none*|
 |**B0036**|ANTI-BEHAVIORAL ANALYSIS|**Capture Evasion**|*none*|
 |**B0037**|DEFENSE EVASION|**Bypass Data Execution Prevention**|*none*|
