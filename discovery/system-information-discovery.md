@@ -71,7 +71,7 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 |[get disk information](https://github.com/mandiant/capa-rules/blob/master/host-interaction/hardware/storage/get-disk-information.yml)|System Information Discovery (E1082)|kernel32.GetDriveType, kernel32.GetLogicalDrives, kernel32.GetVolumeInformation, kernel32.GetVolumeNameForVolumeMountPoint, kernel32.GetVolumePathNamesForVolumeName, kernel32.GetLogicalDriveStrings, kernel32.QueryDosDevice|
 |[get disk information via IOCTL](https://github.com/mandiant/capa-rules/blob/v7.1.0/nursery/get-disk-information-via-ioctl.yml)|System Information Discovery (E1082)|--|
 |[get volume information via IOCTL](https://github.com/mandiant/capa-rules/blob/v7.1.0/nursery/get-volume-information-via-ioctl.yml)|System Information Discovery (E1082)|--|
-|[get disk size](https://github.com/mandiant/capa-rules/blob/master/host-interaction/hardware/storage/get-disk-size.yml)|System Information Discovery (E1082)|kernel32.GetDiskFreeSpace, kernel32.GetDiskFreeSpaceEx, DeviceIoControl|
+|[get disk size](https://github.com/mandiant/capa-rules/blob/master/host-interaction/hardware/storage/get-disk-size.yml)|System Information Discovery (E1082)|kernel32.GetDiskFreeSpace, kernel32.GetDiskFreeSpaceEx|
 |[check OS version](https://github.com/mandiant/capa-rules/blob/master/host-interaction/os/version/check-os-version.yml)|System Information Discovery (E1082)|--|
 |[get hostname](https://github.com/mandiant/capa-rules/blob/master/host-interaction/os/hostname/get-hostname.yml)|System Information Discovery (E1082)|kernel32.GetComputerName, kernel32.GetComputerNameEx, GetComputerObjectName, ws2_32.gethostname, gethostname|
 
