@@ -40,5 +40,5 @@ Malware installs a driver or minifilter.
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[install driver](https://github.com/mandiant/capa-rules/blob/master/host-interaction/driver/install-driver.yml)|Install Driver (C0037)|ntdll.NtLoadDriver, ZwLoadDriver|
+|[install driver](https://github.com/mandiant/capa-rules/blob/master/host-interaction/driver/install-driver.yml)|Install Driver (C0037)|ntdll.NtLoadDriver, ZwLoadDriver, NtSetSystemInformation ZwSetSystemInformation|
 |[register minifilter driver](https://github.com/mandiant/capa-rules/blob/master/host-interaction/filter/register-minifilter-driver.yml)|Install Driver::Minifilter (C0037.001)|FltRegisterFilter|
