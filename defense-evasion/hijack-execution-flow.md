@@ -71,7 +71,7 @@ See ATT&CK: **Hijack Execution Flow ([T1574](https://attack.mitre.org/techniques
 |Tool: capa|Mapping|APIs|
 |---|---|---|
 |[create new application domain in .NET](https://github.com/mandiant/capa-rules/blob/master/host-interaction/memory/create-new-application-domain-in-dotnet.yml)|Hijack Execution Flow (F0015)|--|
-|[execute shellcode via Windows callback function](https://github.com/mandiant/capa-rules/blob/master/load-code/shellcode/execute-shellcode-via-windows-callback-function.yml)|Hijack Execution Flow::Abuse Windows Function Calls (F0015.006)|EnumDateFormats, GrayString, LineDDA, EnumChildWindows, EnumDesktops, EnumDesktopWindows, EnumSystemCodePages, EnumSystemGeoID, EnumSystemLanguageGroups, EnumSystemLocales, EnumThreadWindows, EnumUILanguages, EnumWindows, EnumChildWindows, EnumTimeFormats|
+|[execute shellcode via Windows callback function](https://github.com/mandiant/capa-rules/blob/master/load-code/shellcode/execute-shellcode-via-windows-callback-function.yml)|Hijack Execution Flow::Abuse Windows Function Calls (F0015.006)|CallWindowProc, EnumCalendarInfo, EnumCalendarInfoEx, EnumDateFormats, GrayString, LineDDA, EnumChildWindows, EnumDesktops, EnumDesktopWindows, EnumFontFamilies, EnumFontFamiliesEx, EnumFonts, EnumProps, EnumPropsEx, EnumResourceTypes, EnumSystemCodePages, EnumSystemGeoID, EnumSystemLanguageGroups, EnumSystemLocales, EnumThreadWindows, EnumUILanguages, EnumWindows, EnumChildWindows, EnumTimeFormats|
 |[rebuild import table](https://github.com/mandiant/capa-rules/blob/master/load-code/pe/rebuild-import-table.yml)|Hijack Execution Flow::Import Address Table Hooking (F0015.003)|LoadLibraryA, GetProcAddress|
 
 |Tool: CAPE|Mapping|APIs|

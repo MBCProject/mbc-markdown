@@ -52,7 +52,7 @@ The DNS Communication micro-behavior focuses on DNS communication.
 |Tool: capa|Mapping|APIs|
 |---|---|---|
 |[reference DNS over HTTPS endpoints](https://github.com/mandiant/capa-rules/blob/master/communication/dns/reference-dns-over-https-endpoints.yml)|DNS Communication::Server Connect (C0011.002)|--|
-|[resolve DNS](https://github.com/mandiant/capa-rules/blob/master/communication/dns/resolve-dns.yml)|DNS Communication::Resolve (C0011.001)|ws2_32.gethostbyname, DnsQuery_A, DnsQuery_W, DnsQuery_UTF8, DnsQueryEx, getaddrinfo, GetAddrInfo, GetAddrInfoEx, gethostbyname, getaddrinfo, getnameinfo, gethostent, System.Net.Dns::GetHostAddresses|
+|[resolve DNS](https://github.com/mandiant/capa-rules/blob/master/communication/dns/resolve-dns.yml)|DNS Communication::Resolve (C0011.001)|ws2_32.gethostbyname, DnsQuery_A, DnsQuery_W, DnsQuery_UTF8, DnsQueryEx, GetAddrInfo, GetAddrInfoW, GetAddrInfoEx, gethostbyname, getaddrinfo, getnameinfo, gethostent, System.Net.Dns::GetHostAddresses|
 
 |Tool: CAPE|Class|Mapping|APIs|
 |---|---|---|---|
