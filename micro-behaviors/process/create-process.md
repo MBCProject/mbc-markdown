@@ -71,7 +71,7 @@ Malware creates a process.
 |---|---|---|---|
 |[stealth_system_procname](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_system_procname.py)|StealthSystemProcName|Create Process (C0017)|ShellExecuteExW, CreateProcessInternalW|
 |[stack_pivot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stack_pivot.py)|StackPivotProcessCreate|Create Process (C0017)|CreateProcessInternalW,  NtCreateUserProcess|
-|[wmi](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/wmi.py)|WMICreateProcess|Create Process (C0017), Create Process:Create Process via WMI (C0017.002)| CreateProcessInternalW, NtCreateUserProcess|
+|[wmi](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/wmi.py)|WMICreateProcess|Create Process:Create Process via WMI (C0017.002)| CreateProcessInternalW, NtCreateUserProcess|
 |[script_downloader](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/script_downloader.py)|ScriptCreatedProcess|Create Process (C0017)|CreateProcessInternalW, NtCreateUserProcess|
 
 ### C0049 Snippet

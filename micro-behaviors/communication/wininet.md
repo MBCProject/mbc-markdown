@@ -46,7 +46,8 @@ The methods below are those of most interest in malware analysis. Details can be
 
 |Tool: CAPE|Class|Mapping|APIs|
 |---|---|---|---|
-|[ransomware_nemty](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_nemty.py)|NemtyNetworkActivity|WinINet (C0005), InternetOpen	(C0005.002), InternetOpenURL (C0005.003)|InternetOpenA, InternetOpenUrlA|
+|[ransomware_nemty](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_nemty.py)|NemtyNetworkActivity|InternetOpen (C0005.002)|InternetOpenA, InternetOpenUrlA|
+|[ransomware_nemty](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_nemty.py)|NemtyNetworkActivity|InternetOpenURL (C0005.003)|InternetOpenA, InternetOpenUrlA|
 |[powershell_command](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/powershell_command.py)|PowerShellNetworkConnection|WinINet (C0005)|InternetCrackUrlW, InternetCrackUrlA|
 
 ### C0005.001 Snippet

@@ -35,8 +35,8 @@ Malware deletes a directory.
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Gamut**](../../xample-malware/gamut.md)|2014|--|Gamut deletes directories. [[1]](#1)|
-|[**Hupigon**](../../xample-malware/hupigon.md)|2013|--|Delete directory (This capa rule had 1 match) [[1]](#1)|
-|[**Kovter**](../../xample-malware/kovter.md)|2016|--|Delete directory (This capa rule had 4 matches) [[1]](#1)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|--|Delete directory [[1]](#1)|
+|[**Kovter**](../../xample-malware/kovter.md)|2016|--|Delete directory [[1]](#1)|
 
 ## Detection
 

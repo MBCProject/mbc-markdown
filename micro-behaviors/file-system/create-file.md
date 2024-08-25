@@ -69,9 +69,9 @@ Malware creates a file.
 |[office_exploit](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/office_exploit.py)|OfficePostScript|Create File (C0016)|NtWriteFile|
 |[rat_nanocore](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/rat_nanocore.py)|NanocoreRAT|Create File (C0016)|CryptHashData|
 |[infostealer_qulab](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/infostealer_qulab.py)|QulabFiles|Create File (C0016)|--|
-|[ransomware_files](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_files.py)|RansomwareFiles|Create File (C0016), Create File::Create Ransomware File (C0016.002)|--|
+|[ransomware_files](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_files.py)|RansomwareFiles|Create File::Create Ransomware File (C0016.002)|--|
 |[rat_dcrat](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/rat_dcrat.py)|DCRatFiles|Create File (C0016)|--|
-|[office_rtf](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/office_rtf.py)|RTFEmbeddedOfficeFile|Create File (C0016), Create File::Create Office Document (C0016.001)|--|
+|[office_rtf](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/office_rtf.py)|RTFEmbeddedOfficeFile|Create File::Create Office Document (C0016.001)|--|
 |[stack_pivot](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/stack_pivot.py)|StackPivotFileCreated|Create File (C0016)|NtCreateFile|
 |[infostealer_masslogger](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/infostealer_masslogger.py)|MassLoggerFiles|Create File (C0016)|--|
 |[stealth_file](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/stealth_file.py)|StealthFile|Create File (C0016)|NtCreateFile, NtDuplicateObject, NtOpenFile, NtClose, NtSetInformationFile|
