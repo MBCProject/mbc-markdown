@@ -47,11 +47,11 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |Name|ID|Description|
 |---|---|---|
 |**Encoding**|E1027.m01|A malware sample, file, or other information is encoded. This method is related to the subsequently defined ATT&CK sub-technique **Encrypted/Encoded File ([T1027.013](https://attack.mitre.org/techniques/T1027/013/))**.|
-|**Encoding-Custom Algorithm**|E1027.m03|A custom algorithm is used to encode a malware sample, file or other information. This method is related to Unprotect technique U0702.|
-|**Encoding-Standard Algorithm**|[E1027.m02](#e1027m02-snippet)|A standard algorithm (e.g., base64) is used to encode a malware sample, file, or other information. This method is related to Unprotect technique U0701 and U0706.|
+|**Encoding - Custom Algorithm**|E1027.m03|A custom algorithm is used to encode a malware sample, file or other information. This method is related to Unprotect technique U0702.|
+|**Encoding - Standard Algorithm**|[E1027.m02](#e1027m02-snippet)|A standard algorithm (e.g., base64) is used to encode a malware sample, file, or other information. This method is related to Unprotect technique U0701 and U0706.|
 |**Encryption**|E1027.m04|A malware sample, file, or other information is encrypted. This method is related to Unprotect technique U0703 and to the subsequently defined ATT&CK sub-technique **Encrypted/Encoded File ([T1027.013](https://attack.mitre.org/techniques/T1027/013/))**.|
-|**Encryption-Custom Algorithm**|E1027.m08|A custom algorithm is used to encrypt a malware sample, file, or other information.|
-|**Encryption-Standard Algorithm**|E1027.m05|A standard algorithm (e.g., Rijndael/AES, DES, RC4) is used to encrypt a malware sample, file, or other information. This method is related to Unprotect technique U0701.|
+|**Encryption - Custom Algorithm**|E1027.m08|A custom algorithm is used to encrypt a malware sample, file, or other information.|
+|**Encryption - Standard Algorithm**|E1027.m05|A standard algorithm (e.g., Rijndael/AES, DES, RC4) is used to encrypt a malware sample, file, or other information. This method is related to Unprotect technique U0701.|
 |**Encryption of Code**|E1027.m06|A file's executable code is encrypted, but not necessarily the file's data.|
 |**Encryption of Data**|E1027.m07|A file's data is encrypted, but not necessarily the file's code.|
 
@@ -106,6 +106,7 @@ Instead of being listed alphabetically, methods have been grouped to better faci
 |[encrypt data using DES](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/des/encrypt-data-using-des.yml)|Obfuscated Files or Information::Encryption-Standard Algorithm (E1027.m05)|--|
 |[encrypt data using DES via WinAPI](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/des/encrypt-data-using-des-via-winapi.yml)|Obfuscated Files or Information::Encryption-Standard Algorithm (E1027.m05)|CryptGenKey, CryptDeriveKey, CryptImportKey, CryptAcquireContext, CryptEncrypt, CryptDecrypt|
 |[encrypt data using RC4 with custom key via WinAPI](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/rc4/encrypt-data-using-rc4-with-custom-key-via-winapi.yml)|Obfuscated Files or Information::Encryption-Standard Algorithm (E1027.m05)|CryptImportKey, CryptAcquireContext, CryptEncrypt|
+|[encrypt data using RC4 via SystemFunction033](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/rc4/encrypt-data-using-rc4-via-systemfunction033.yml)|Obfuscated Files or Information::Encryption-Standard Algorithm (E1027.m05)|SystemFunction033|
 |[encrypt data using RC4 via WinAPI](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/rc4/encrypt-data-using-rc4-via-winapi.yml)|Obfuscated Files or Information::Encryption-Standard Algorithm (E1027.m05)|CryptGenKey, CryptDeriveKey, CryptImportKey, CryptAcquireContext, CryptEncrypt, CryptDecrypt|
 |[encrypt data using skipjack](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/skipjack/encrypt-data-using-skipjack.yml)|Obfuscated Files or Information::Encryption-Standard Algorithm (E1027.m05)|--|
 |[encrypt data using blowfish](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/blowfish/encrypt-data-using-blowfish.yml)|Obfuscated Files or Information::Encryption-Standard Algorithm (E1027.m05)|--|

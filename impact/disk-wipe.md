@@ -46,6 +46,7 @@ This description refines the ATT&CK **Disk Wipe: Disk Content Wipe ([T1561.001](
 |Tool: capa|Mapping|APIs|
 |---|---|---|
 |[overwrite Master Boot Record (MBR)](https://github.com/mandiant/capa-rules/blob/master/impact/wipe-disk/wipe-mbr/overwrite-master-boot-record-mbr.yml)|Disk Wipe (F0014)|kernel32.WriteFile|
+|[delete drive layout via IOCTL](https://github.com/mandiant/capa-rules/blob/master/impact/wipe-disk/delete-drive-layout-via-ioctl.yml)|Disk Wipe (F0014)|--|
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|

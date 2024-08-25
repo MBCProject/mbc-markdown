@@ -51,7 +51,7 @@ Malware writes to a file.
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[write file on Linux](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/write/write-file-on-linux.yml)|Writes File (C0052)|fputc, fputs, putc, write, fputwc, putwc, fputws, write, fwrite, putwchar|
+|[write file on Linux](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/write/write-file-on-linux.yml)|Writes File (C0052)|fputc, fputs, putc, write, fputwc, putwc, fputws, fwrite, putwchar, dprintf, vdprnitf, fprintf, vfprintf|
 |[write file on Windows](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/write/write-file-on-windows.yml)|Writes File (C0052)|kernel32.WriteFile, kernel32.WriteFileEx, NtWriteFile, ZwWriteFile, _fwrite, fwrite, System.IO.File::WriteAllBytes, System.IO.File::WriteAllBytesAsync, System.IO.File::WriteAllLines, System.IO.File::WriteAllLinesAsync, System.IO.File::WriteAllText, System.IO.File::WriteAllTextAsync, System.IO.File::AppendAllLines, System.IO.File::AppendAllLinesAsync, System.IO.File::AppendAllText, System.IO.File::AppendAllTextAsync, System.IO.File::AppendText, System.IO.FileInfo::AppendText|
 |[create process memory minidump](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/dump/create-process-memory-minidump.yml)|Writes File (C0052)|dbghelp.MiniDumpWriteDump|
 

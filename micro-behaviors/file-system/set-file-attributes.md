@@ -45,7 +45,7 @@ Malware sets file attributes.
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[change file permission on Linux](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/change-file-permission-on-linux.yml)|Set File Attributes (C0050)|chown, fchown, lchown, fchownat|
+|[change file permission on Linux](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/change-file-permission-on-linux.yml)|Set File Attributes (C0050)|chown, fchown, lchown, fchownat, chmod, fchmod, fchmodat|
 |[set file attributes](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/meta/set-file-attributes.yml)|Set File Attributes (C0050)|kernel32.SetFileAttributes, ZwSetInformationFile, NtSetInformationFile, System.IO.File::SetAttributes, System.IO.File::SetCreationTime, System.IO.File::SetCreationTimeUtc, System.IO.File::SetLastAccessTime, System.IO.File::SetLastAccessTimeUtc, System.IO.File::SetLastWriteTime, System.IO.File::SetLastWriteTimeUtc|
 
 ### C0050 Snippet
