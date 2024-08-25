@@ -35,7 +35,7 @@ Malware may utilize a compression library.
 |Name|Date|Method|Description|
 |---|---|---|---|
 |[**Dark Comet**](../../xample-malware/dark-comet.md)|2008|--|DarkComet linked against ZLIB. [[1]](#1)|
-|[**Hupigon**](../../xample-malware/hupigon.md)|2013|--|Linked against ZLIB (This capa rule had 1 match) [[1]](#1)|
+|[**Hupigon**](../../xample-malware/hupigon.md)|2013|--|Linked against ZLIB [[1]](#1)|
 
 ## Detection
 
