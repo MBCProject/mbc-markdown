@@ -28,7 +28,7 @@
 
 # Create Mutex
 
-Malware creates a mutex. 
+Malware creates a mutex. Mutexes may be created for synchronization purposes.
 
 ## Use in Malware
 
