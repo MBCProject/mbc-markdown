@@ -29,7 +29,6 @@ Micro-behaviors related to processes.
 * **Set Thread Context** [C0072](../process/set-thread-context.md)
 * **Set Thread Local Storage Value** [C0041](../process/set-thread-local-storage-value.md)
 * **Suspend Thread** [C0055](../process/suspend-thread.md)	
-* **Synchronization** [C0022](../process/synchronization.md)
 * **Terminate Process** [C0018](../process/terminate-process.md)
 * **Terminate Thread** [C0039](../process/terminate-thread.md)
 * **Unmap Section View** [C0070](../process/unmap-section-view.md)
