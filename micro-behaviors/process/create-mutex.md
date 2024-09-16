@@ -21,14 +21,14 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>30 April 2024</b></td>
+<td><b>16 September 2024</b></td>
 </tr>
 </table>
 
 
 # Create Mutex
 
-Malware creates a mutex. Mutexes may be created for synchronization purposes.
+Malware creates a mutex. Mutexes may be created for synchronization purposes (two or more processes/threads to share a resource).
 
 ## Use in Malware
 
