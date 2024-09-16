@@ -139,7 +139,6 @@
 |C0001|**[Socket Communication](https://github.com/MBCProject/mbc-markdown/blob/main/micro-behaviors/communication/socket-communication.md)**|COMMUNICATION|
 |C0009|**[Stack Pivot](https://github.com/MBCProject/mbc-markdown/blob/main/micro-behaviors/memory/stack-pivot.md)**|MEMORY|
 |C0055|**[Suspend Thread](https://github.com/MBCProject/mbc-markdown/blob/main/micro-behaviors/process/suspend-thread.md)**|PROCESS|
-|C0022|**[Synchronization](https://github.com/MBCProject/mbc-markdown/blob/main/micro-behaviors/process/synchronization.md)**|PROCESS|
 |C0018|**[Terminate Process](https://github.com/MBCProject/mbc-markdown/blob/main/micro-behaviors/process/terminate-process.md)**|PROCESS|
 |C0039|**[Terminate Thread](https://github.com/MBCProject/mbc-markdown/blob/main/micro-behaviors/process/terminate-thread.md)**|PROCESS|
 |C0070|**[Unmap Section View](https://github.com/MBCProject/mbc-markdown/blob/main/micro-behaviors/process/unmap-section-view.md)**|PROCESS|
