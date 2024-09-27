@@ -63,9 +63,9 @@ Malware may decrypt data.
 |[encrypt or decrypt via WinCrypt](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/encrypt-or-decrypt-via-wincrypt.yml)|Decrypt Data (C0031)|CryptEncrypt, CryptDecrypt, CryptAcquireContext, CryptGenKey, CryptImportKey|
 |[decrypt data using AES via x86 extensions](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/encryption/aes/decrypt-data-using-aes-via-x86-extensions.yml)|Decrypt Data::AES (C0031.001)|--|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[decryption](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Decrypt Data (C0031)|CryptDecrypt|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|--|---|---|
+|[decryption](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|CAPE_Decryption|Decrypt Data (C0031)|CryptDecrypt|
 
 ## Code Snippets
 
