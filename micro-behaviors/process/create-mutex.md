@@ -56,7 +56,7 @@ Malware creates a mutex. Mutexes may be created for synchronization purposes (tw
 |[banker_cridex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/banker_cridex.py)|Cridex|Create Mutex (C0042)|--|
 |[deepfreeze_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/deepfreeze_mutex.py)|DeepFreezeMutex|Create Mutex (C0042)|--|
 |[bot_russkill](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bot_russkill.py)|Ruskill|Create Mutex (C0042)|--|
-|[banker_zeus_p2p](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/banker_zeus_p2p.py)|ZeusP2P|Create Mutex (C0042)|--|
+|[banker_zeus_p2p](https://github.com/CAPESandbox/community/blob/master/modules/signatures/all/banker_zeus_p2p.py)|ZeusP2P|Create Mutex (C0042)|--|
 |[carberp_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/carberp_mutex.py)|CarberpMutexes|Create Mutex (C0042)|--|
 |[ransomware_radamant](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_radamant.py)|RansomwareRadamant|Create Mutex (C0042)|--|
 |[rat_plugx_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/rat_plugx_mutex.py)|PlugxMutexes|Create Mutex (C0042)|--|

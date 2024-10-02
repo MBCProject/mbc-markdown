@@ -193,7 +193,7 @@ Malware modifies the registry.
 |[antivm_xen_keys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_xen_keys.py)|XenDetectKeys|Registry::Query Registry Key (C0036.005)|--|
 |[antivm_generic_system](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_system.py)|AntiVMSystem|Registry::Query Registry Key (C0036.005)|--|
 |[antiemu_wine](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiemu_wine.py)|WineDetectReg|Registry::Query Registry Key (C0036.005)|--|
-|[virus_neshta](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/virus_neshta.py)|NeshtaRegKeys|Registry (C0036)| RegSetValueExA, RegSetValueExW|
+|[virus_neshta](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/virus_neshta.py)|NeshtaRegKeys|Registry (C0036)| RegSetValueExA, RegSetValueExW|
 |[antivm_generic_bios](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_bios.py)|AntiVMBios|Registry::Query Registry Key (C0036.005)|--|
 |[hides_recyclebin_icon](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/hides_recyclebin_icon.py)|HidesRecycleBinIcon|Registry (C0036)|--|
 |[antiav_detectreg](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antiav_detectreg.py)|AntiAVDetectReg|Registry::Query Registry Key (C0036.005)|--|

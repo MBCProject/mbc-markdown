@@ -52,9 +52,9 @@ Malware terminates a process.
 |[terminate process via kill](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/terminate/terminate-process-via-kill.yml)|Terminate Process (C0018)|kill|
 |[terminate process](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/terminate/terminate-process.yml)|Terminate Process (C0018)|System.Diagnostics.Process::Kill, System.Diagnostics.Process::WaitForExit, System.Diagnostics.Process::WaitForExitAsync, System.Environment::Exit, System.Windows.Forms.Application::Exit, kernel32.TerminateProcess, ntdll.NtTerminateProcess, kernel32.ExitProcess|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[terminates_remote_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/terminates_remote_process.py)|Terminate Process (C0018)|NtTerminateProcess|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|--|---|---|
+|[terminates_remote_process](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/terminates_process.py)|TerminatesRemoteProcess|Terminate Process (C0018)|NtTerminateProcess|
 
 ### C0018 Snippet
 <details>

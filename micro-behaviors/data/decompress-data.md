@@ -54,9 +54,9 @@ Malware may decompress data.
 |[decompress data using QuickLZ](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/compression/decompress-data-using-quicklz.yml)|Decompress Data::QuickLZ (C0025.001)|--|
 |[decompress data using UCL](https://github.com/mandiant/capa-rules/blob/master/data-manipulation/compression/decompress-data-using-ucl.yml)|Decompress Data (C0025)|--|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[compression](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Decompress Data (C0025)|RtlDecompressBuffer|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|--|---|---|
+|[compression](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|CAPE_Compression|Decompress Data (C0025)|RtlDecompressBuffer|
 
 ## References
 

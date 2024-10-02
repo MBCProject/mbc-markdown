@@ -45,7 +45,7 @@ Malware allocates thread local storage.
 
 |Tool: capa|Mapping|APIs|
 |---|---|---|
-|[set thread local storage value](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/set-thread-local-storage-value.yml)|Set Thread Local Storage Value (C0041)|kernel32.TlsSetValue|
+|[set thread local storage value](https://github.com/mandiant/capa-rules/blob/master/host-interaction/thread/tls/set-thread-local-storage-value.yml)|Set Thread Local Storage Value (C0041)|kernel32.TlsSetValue|
 
 ### C0041 Snippet
 <details>
