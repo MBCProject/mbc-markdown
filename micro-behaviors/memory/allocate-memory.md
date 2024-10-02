@@ -50,7 +50,7 @@ Malware allocates memory, often to unpack itself.
 |---|---|---|
 |[allocate or change RWX memory](https://github.com/mandiant/capa-rules/blob/master/host-interaction/process/inject/allocate-or-change-rwx-memory.yml)|Allocate Memory (C0007)|--|
 |[allocate memory](https://github.com/mandiant/capa-rules/blob/master/lib/allocate-memory.yml)|Allocate Memory (C0007)|kernel32.VirtualAlloc, kernel32.VirtualAllocEx, kernel32.VirtualAllocExNuma, kernel32.VirtualProtect, kernel32.VirtualProtectEx, NtAllocateVirtualMemory, ZwAllocateVirtualMemory, NtMapViewOfSection, ZwMapViewOfSection, NtProtectVirtualMemory, ZwProtectVirtualMemory|
-|[allocate RW memory](https://github.com/mandiant/capa-rules/blob/master/lib/allocate-rw-memory.yml)|Allocate Memory (C0007)|--|
+|[allocate or change RW memory](https://github.com/mandiant/capa-rules/blob/master/lib/allocate-or-change-rw-memory.yml)|Allocate Memory (C0007)|--|
 |[spawn thread to RWX shellcode](https://github.com/mandiant/capa-rules/blob/master/load-code/shellcode/spawn-thread-to-rwx-shellcode.yml)|Allocate Memory (C0007)|--|
 
 |Tool: CAPE|Mapping|APIs|
