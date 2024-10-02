@@ -53,9 +53,9 @@ Malware allocates memory, often to unpack itself.
 |[allocate or change RW memory](https://github.com/mandiant/capa-rules/blob/master/lib/allocate-or-change-rw-memory.yml)|Allocate Memory (C0007)|--|
 |[spawn thread to RWX shellcode](https://github.com/mandiant/capa-rules/blob/master/load-code/shellcode/spawn-thread-to-rwx-shellcode.yml)|Allocate Memory (C0007)|--|
 
-|Tool: CAPE|Mapping|APIs|
-|---|---|---|
-|[Unpacker](https://github.com/CAPESandbox/community/tree/master/modules/signatures/Unpacker.py)|Allocate Memory (C0007)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
+|Tool: CAPE|Class|Mapping|APIs|
+|---|--|---|---|
+|[Unpacker](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|CAPE_Unpacker|Allocate Memory (C0007)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
 
 ### C0007 Snippet
 <details>
