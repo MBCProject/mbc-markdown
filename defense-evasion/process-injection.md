@@ -100,7 +100,7 @@ The methods table includes existing ATT&CK sub-techniques, which have been enhan
 |[transacted_hollowing](https://github.com/kevoreilly/CAPEv2/blob/master/modules/signatures/CAPE.py)|Process Injection (E1055)|NtRollbackTransaction, NtMapViewOfSection, RtlSetCurrentTransaction|
 |[persistence_ifeo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_ifeo.py)|Process Injection (E1055)|--|
 |[persistence_ifeo](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_ifeo.py)|Process Injection::Injection and Persistence via Registry Modification (E1055.m02)|--|
-|[persistence_silent_process_exit](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_silent_process_exit.py)|Process Injection (E1055)|--|
+|[persistence_silent_process_exit](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/persistence_ifeo.py)|Process Injection (E1055)|--|
 |[injection_rwx](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_rwx.py)|Process Injection (E1055)|VirtualProtectEx, NtAllocateVirtualMemory, NtProtectVirtualMemory|
 |[persistence_shim_database](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_shim.py)|Process Injection::Injection using Shims (E1055.m03)|--|
 |[injection_runpe](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_runpe.py)|Process Injection (E1055)|--|
