@@ -79,7 +79,7 @@ See ATT&CK: **Modify Registry ([T1112](https://attack.mitre.org/techniques/T1112
 |[disables_startmenu_search](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_startmenu_search.py)|Modify Registry (E1112)|--|
 |[stealth_hide_notifications](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_hidenotifications.py)|Modify Registry (E1112)|--|
 |[disables_app_launch](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_app.py)|Modify Registry (E1112)|--|
-|[neshta_regkeys](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/neshta_regkeys.py)|Modify Registry (E1112)|RegSetValueExA, RegSetValueExW|
+|[neshta_regkeys](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/virus_neshta.py)|Modify Registry (E1112)|RegSetValueExA, RegSetValueExW|
 |[creates_nullvalue](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/creates_nullvalue.py)|Modify Registry (E1112)|NtCreateKey, NtSetValueKey|
 |[geodo_banking_trojan](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/banker_geodo.py)|Modify Registry (E1112)|--|
 |[persistence_autorun](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_autorun.py)|Modify Registry (E1112)|NtSetValueKey, RegSetValueExA, RegSetValueExW, CreateServiceW, CreateServiceA|
