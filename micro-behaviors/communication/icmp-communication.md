@@ -46,4 +46,4 @@ This micro-behavior is related to ICMP communication.
 |Tool: CAPE|Class|Mapping|APIs|
 |---|---|---|---|
 |[network_icmp](https://github.com/CAPESandbox/community/blob/master/modules/signatures/all/network_icmp.py)|NetworkICMP|ICMP Communication (C0014)|--|
-|[windows_utilities](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/windows_utilities.py)|SuspiciousPingUse|ICMP Communication (C0014)|--|
+|[suspicious_ping_use](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/windows_utilities.py)|SuspiciousPingUse|ICMP Communication (C0014)|--|
