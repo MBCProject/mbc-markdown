@@ -56,13 +56,14 @@ The DNS Communication micro-behavior focuses on DNS communication.
 
 |Tool: CAPE|Class|Mapping|APIs|
 |---|---|---|---|
-|[network_dns_tunneling_request](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSTunnelingRequest|DNS Communication (C0011)|DnsQuery_A, DnsQuery_W|
-|[network_dns_idn](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSIDN|DNS Communication (C0011)|DnsQueryA|
-|[network_dns_suspicious_querytype](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSSuspiciousQueryType|DNS Communication (C0011)|DnsQueryA|
 |[network_dns_blockchain](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSBlockChain|DNS Communication (C0011)|--|
+|[network_dns_idn](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSIDN|DNS Communication (C0011)|DnsQueryA|
 |[network_dns_opennic](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSOpenNIC|DNS Communication (C0011)|--|
-|[network_dns_doh_tls](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDOHTLS|DNS Communication (C0011)|--|
 |[network_dns_reverse_proxy](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSReverseProxy|DNS Communication (C0011)|--|
+|[network_dns_suspicious_querytype](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSSuspiciousQueryType|DNS Communication (C0011)|DnsQueryA|
+|[network_dns_tunneling_request](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDNSTunnelingRequest|DNS Communication (C0011)|DnsQuery_A, DnsQuery_W|
+|[network_dns_doh_tls](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py)|NetworkDOHTLS|DNS Communication (C0011)|--|
+|[network_dga](https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_dga.py)|NetworkDGA|DNS Communication (C0011)| --|
 
 ### C0011.001 Snippet
 <details>
