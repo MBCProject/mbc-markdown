@@ -50,7 +50,7 @@ Malware creates a directory.
 
 |Tool: CAPE|Class|Mapping|APIs|
 |---|---|---|---|
-|[infostealer_arkei](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/infostealer_arkei.py)|ArkeiFiles|Create Directory (C0046)|--|
+|[arkei_files](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/infostealer_arkei.py)|ArkeiFiles|Create Directory (C0046)|--|
 
 ### C0046 Snippet
 <details>
