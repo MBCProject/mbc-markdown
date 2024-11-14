@@ -70,9 +70,10 @@ Malware creates a process.
 |Tool: CAPE|Class|Mapping|APIs|
 |---|---|---|---|
 |[stealth_system_procname](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_system_procname.py)|StealthSystemProcName|Create Process (C0017)|ShellExecuteExW, CreateProcessInternalW|
-|[stack_pivot](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stack_pivot.py)|StackPivotProcessCreate|Create Process (C0017)|CreateProcessInternalW,  NtCreateUserProcess|
-|[wmi](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/wmi.py)|WMICreateProcess|Create Process:Create Process via WMI (C0017.002)| CreateProcessInternalW, NtCreateUserProcess|
-|[script_downloader](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/script_downloader.py)|ScriptCreatedProcess|Create Process (C0017)|CreateProcessInternalW, NtCreateUserProcess|
+|[stack_pivot_process_create](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stack_pivot.py)|StackPivotProcessCreate|Create Process (C0017)|CreateProcessInternalW,  NtCreateUserProcess|
+|[wmi_create_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/wmi.py)|WMICreateProcess|Create Process (C0017)| CreateProcessInternalW, NtCreateUserProcess|
+|[wmi_create_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/wmi.py)|WMICreateProcess|Create Process::Create Process via WMI (C0017.002)| CreateProcessInternalW, NtCreateUserProcess|
+|[script_created_process](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/script_downloader.py)|ScriptCreatedProcess|Create Process (C0017)|CreateProcessInternalW, NtCreateUserProcess|
 
 ### C0049 Snippet
 <details>
