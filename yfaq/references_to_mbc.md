@@ -15,6 +15,7 @@ The following table contains community references to MBC:
 | Mar 2023​ | S. Kumari, “TRY HACK ME: Basic Static Analysis Write-Up,” Medium, 3/13/2023. https://medium.com/@kumarishefu.4507/try-hack-me-basic-static-analysis-write-up-500b0e23792d ​|
 | Feb 2023​ | L. Zeltser, “SANS DFIR Malware Analysis Tips and Tricks Poster.” https://www.sans.org/posters/malware-analysis-tips-tricks-poster/ ​|
 | Oct 2022​ | M. Smith, “MalGen: Malware Generation with Specific Behaviors to Improve Machine Learning-based Detectors.” https://www.osti.gov/biblio/1893244 ​|
+| Sep 2022 | R. Marinho et al, ”Introdução à Análise de Códigos Maliciosos para ambiente Windows.” https://sol.sbc.org.br/livros/index.php/sbc/catalog/download/107/479/752-1 ​|
 | Aug 2022 | AccidentalRebel, “Talking about Mitre's Malware Behavior Catalog” Blackhat Middle East & Africa community meetup lightning talk, 2022. https://www.accidentalrebel.com/talking-about-mitres-malware-behavior-catalog.html   |
 | Jul 2022​ | K. Licudine, “MBCScan,” scans a file for MBC behaviors. https://github.com/accidentalrebel/mbcscan ​|
 | May 2022​ | “Hackers-Tools.” https://github.com/Willian-2-0-0-1/Hacker-s-Tools-/blob/main/README.md ​|
