@@ -49,7 +49,7 @@ Malware checks a mutex.
 |[antivm_vpc_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vpc_mutex.py)|VPCDetectMutex|Check Mutex (C0043)|--|
 |[antisandbox_sboxie_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_sboxie_mutex.py)|AntisandboxSboxieMutex|Check Mutex (C0043)|--|
 |[antivm_vmware_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_vmware_mutexes.py)|VMwareDetectMutexes|Check Mutex (C0043)|--|
-|[infostealer_purplewave](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/infostealer_purplewave.py)|PurpleWaveMutexes|Check Mutex (C0043)|--|
+|[purplewave_mutexes](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/infostealer_purplewave.py)|PurpleWaveMutexes|Check Mutex (C0043)|--|
 |[antisandbox_sboxie_mutex](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_sboxie_mutex.py)|AntisandboxSboxieMutex|Check Mutex (C0043)|--|
 
 ### C0043 Snippet
