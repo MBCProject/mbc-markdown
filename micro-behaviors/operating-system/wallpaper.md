@@ -38,4 +38,4 @@ Malware modifies the wallpaper.
 
 |Tool: CAPE|Class|Mapping|APIs|
 |---|---|---|---|
-|[modifies_wallpaper](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/modifies_wallpaper.py)|ModifiesDesktopWallpaper|Wallpaper (C0035)|SystemParametersInfoA, SystemParametersInfoW|
+|[modify_desktop_wallpaper](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/modifies_wallpaper.py)|ModifiesDesktopWallpaper|Wallpaper (C0035)|SystemParametersInfoA, SystemParametersInfoW|

@@ -57,14 +57,14 @@ Malware deletes a file.
 |Tool: CAPE|Class|Mapping|APIs|
 |---|---|---|---|
 |[clears_logs](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/clears_logs.py)|ClearsLogs|Delete File (C0047)|--|
-|[removes_zoneid_ads](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_zoneid_ads.py)|RemovesZoneIdADS|Delete File (C0047)|DeleteFileW, DeleteFileA|
-|[ransomware_recyclebin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_recyclebin.py)|RansomwareRecyclebin|Delete File (C0047)|--|
+|[trickbot_task_delete](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/trickbot_files.py)|TrickBotTaskDelete|Delete File (C0047)|DeleteFileW|
+|[upatre_behavior](https://github.com/CAPESandbox/community/blob/master/modules/signatures/deprecated/upatre_apis.py)|Upatre_APIs|Delete File (C0047)|DeleteFileA|
+|[ransomware_file_modifications](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_filemodifications.py)|RansomwareFileModifications|Delete File (C0047)|MoveFileWithProgressW, MoveFileWithProgressTransactedW, NtCreateFile, NtWriteFile|
 |[anomalous_deletefile](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/anomalous_deletefile.py)|anomalous_deletefile|Delete File (C0047)|NtDeleteFile, DeleteFileW, DeleteFileA|
 |[deletes_self](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/deletes_self.py)|DeletesSelf|Delete File (C0047)|NtDeleteFile, DeleteFileW, DeleteFileA, MoveFileWithProgressW, MoveFileWithProgressTransactedW|
-|[trickbot_files](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/trickbot_files.py)||Delete File (C0047)|DeleteFileW|
-|[ransomware_filemodifications](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/ransomware_filemodifications.py)|RansomwareFileModifications|Delete File (C0047)|MoveFileWithProgressW, MoveFileWithProgressTransactedW, NtCreateFile, NtWriteFile|
-|[deletes_files *(Linux)*)](https://github.com/CAPESandbox/community/blob/master/modules/signatures/linux/deletes_files.py)|LinuxDeletesFile|Delete File (C0047)|--|
-|[removes_zoneid_ads](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/removes_zoneid_ads.py)|RemovesZoneIdADS|Delete File (C0047)|DeleteFileA, DeleteFileW|
+|[deletes_files](https://github.com/CAPESandbox/community/blob/master/modules/signatures/linux/deletes_files.py)|LinuxDeletesFile|Delete File (C0047)|--|
+|[ransomware_recyclebin](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ransomware_recyclebin.py)|RansomwareRecyclebin|Delete File (C0047)|--|
+|[removes_zoneid_ads](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/removes_zoneid_ads.py)|RemovesZoneIdADS|Delete File (C0047)|DeleteFileW, DeleteFileA|
 
 ### C0047 Snippet
 <details>
