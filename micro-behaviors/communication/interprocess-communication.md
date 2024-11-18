@@ -61,6 +61,7 @@ The Interprocess Communication micro-behavior focuses on interprocess communicat
 
 |Tool: CAPE|Class|Mapping|APIs|
 |---|---|---|---|
+|[ipc_namedpipe](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ipc_namedpipe.py)|IPC_NamedPipe|Interprocess Communication (C0003)|NtReadFile, NtCreateNamedPipeFile, NtWriteFile|
 |[ipc_namedpipe](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/ipc_namedpipe.py)|IPC_NamedPipe|Interprocess Communication::Create Pipe (C0003.001)|NtReadFile, NtCreateNamedPipeFile, NtWriteFile|
 
 ### C0003.002 Snippet
