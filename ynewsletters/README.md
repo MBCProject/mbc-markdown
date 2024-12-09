@@ -1,6 +1,6 @@
 ## <a name="faq"></a>Malware Behavior Catalog Newsletters ##
 
-<a href="./09232024.md">September 2024</a>
+<a href="./12092024.md">December 2024</a>
 
 <a href="./05012024.md">May 2024</a>
 
