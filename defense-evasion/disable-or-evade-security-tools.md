@@ -67,6 +67,7 @@ See ATT&CK: **Impair Defenses: Disable or Modify Tools ([T1562.001](https://atta
 |[protect spawned processes with mitigation policies](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-av/protect-spawned-processes-with-mitigation-policies.yml)|Disable or Evade Security Tools::Modify Policy (F0004.005)|UpdateProcThreadAttribute|
 |[bypass Windows File Protection](https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/windows-file-protection/bypass-windows-file-protection.yml)|Disable or Evade Security Tools::Bypass Windows File Protection (F0004.007)|--|
 |[disable driver code integrity](https://github.com/mandiant/capa-rules/blob/master/host-interaction/driver/disable-driver-code-integrity.yml)|Disable or Evade Security Tools::Disable Code Integrity (F0004.009)|--|
+|[overwrite DLL .text section to remove hooks](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-av/overwrite-dll-text-section-to-remove-hooks.yml)|Disable or Evade Security Tools (F0004)|GetModuleHandle, GetModuleHandleEx|
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
