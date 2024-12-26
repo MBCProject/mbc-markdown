@@ -54,7 +54,7 @@ See ATT&CK: **Indicator Removal on Host: Uninstall Malicious Application ([T1630
 |Tool: capa|Mapping|APIs|
 |---|---|---|
 |[self delete](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-forensic/self-deletion/self-delete.yml)|Self Deletion::COMSPEC Environment Variable (F0007.001)|--|
-|[self delete using alternate data streams](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-forensic/self-deletion/self-delete-using-alternate-data-streams.yml)|Defense Evasion::Self Deletion (F0007)|SetFileInformationByHandle|
+|[self delete using alternate data streams](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/anti-forensic/self-deletion/self-delete-using-alternate-data-streams.yml)|Defense Evasion::Self Deletion (F0007)|SetFileInformationByHandle, kernel32.SetFileInformationByHandle|
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|

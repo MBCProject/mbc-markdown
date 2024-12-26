@@ -88,6 +88,7 @@ This description refines the ATT&CK **Obfuscated Files or Information: Software 
 |[packed with nspack](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/nspack/packed-with-nspack.yml)|Software Packing (F0001)|--|
 |[packed with kkrunchy](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/kkrunchy/packed-with-kkrunchy.yml)|Software Packing (F0001)|--|
 |[packed with PESpin](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/pespin/packed-with-pespin.yml)|Software Packing (F0001)|--|
+|[packed with nmm-protect](https://github.com/mandiant/capa-rules/blob/master/anti-analysis/packer/nmm-protect/packed-with-nmm-protect.yml)|Software Packing::VMProtect (F0001.010)|--|
 
 |Tool: CAPE|Mapping|APIs|
 |---|---|---|
