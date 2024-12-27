@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <td><b>Version</b></td>
-<td><b>2.3</b></td>
+<td><b>2.4</b></td>
 </tr>
 <tr>
 <td><b>Created</b></td>
@@ -25,7 +25,7 @@
 </tr>
 <tr>
 <td><b>Last Modified</b></td>
-<td><b>27 April 2024</b></td>
+<td><b>27 December 2024</b></td>
 </tr>
 </table>
 
