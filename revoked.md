@@ -3,7 +3,7 @@ The Malware Behavior Catalog has revoked a small number of behaviors and methods
 
 | Revoked ID | Behavior or Method | Revocation Date | Reason |
 |--- |--- |--- |--- |
-| E1608 | Install Certificate | Feb. 14, 2024 | Changed from enhanced ATT&CK technique ID (E-prefix) to enhanced ATT&CK sub-technique ID (F-prefix).  Current ID is F0016 |
-| B0001.007 | Interrupt 1 | Aug. 2, 2022 | Merged into B0001.006 to create a more general 'Interruption' method |
-| B0012.004 | Variable Recomposition | Nov. 21, 2022 | Moved to B0032.021 |
-| C0032.004 | Verhoeff | Feb. 1, 2023 | Not actually used in malware? |
+| B0001.007 | Interrupt 1 | 2 August 2022 | Merged into B0001.006 to create a more general 'Interruption' method |
+| B0012.004 | Variable Recomposition | 21 November 2022 | Moved to B0032.021 |
+| C0032.004 | Verhoeff | 1 February 2023 | Not actually used in malware |
+| E1608 | Install Certificate | 14 February 2024 | Changed from enhanced ATT&CK technique ID (E-prefix) to enhanced ATT&CK sub-technique ID (F-prefix).  Current ID is F0016 |
