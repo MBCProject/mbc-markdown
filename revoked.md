@@ -3,6 +3,7 @@ The Malware Behavior Catalog has revoked a small number of behaviors and methods
 
 | Revoked ID | Behavior or Method | Revocation Date | Reason |
 |--- |--- |--- |--- |
+| C0013 | UDP Communication | 25 September 2020 | Merged into C0001 because UDP also communicates over socket interfaces |
 | B0001.007 | Interrupt 1 | 2 August 2022 | Merged into B0001.006 to create a more general 'Interruption' method |
 | B0012.004 | Variable Recomposition | 21 November 2022 | Moved to B0032.021 |
 | C0032.004 | Verhoeff | 1 February 2023 | Not actually used in malware |
