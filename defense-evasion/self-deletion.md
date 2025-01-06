@@ -48,6 +48,7 @@ See ATT&CK: **Indicator Removal on Host: Uninstall Malicious Application ([T1630
 |[**CozyCar**](../xample-malware/cozycar.md)|2010|--|CozyCar has a dll file that serves as a cleanup mechanism for its dropped binary. [[2]](#2)|
 |[**SearchAwesome**](../xample-malware/searchawesome.md)|2018|--|The malware will monitor if a specific file gets deleted and then will delete itself. [[3]](#3)|
 |[**WannaCry**](../xample-malware/wannacry.md)|2017|--|WannaCry looks for a DNS entry and if the entry exists, it terminates and deletes itself. [[4]](#4)|
+|[**Snake**](../xample-malware/snake.md)|2004|--|Snake can delete itself. [[5]](#5)|
 
 ## Detection
 
@@ -71,3 +72,5 @@ See ATT&CK: **Indicator Removal on Host: Uninstall Malicious Application ([T1630
 <a name="3">[3]</a> https://www.malwarebytes.com/blog/news/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection
 
 <a name="4">[4]</a> https://www.mandiant.com/resources/blog/wannacry-malware-profile
+
+<a name="5">[5]</a> https://www.cybereason.com/blog/research/threat-analysis-report-snake-infostealer-malware
