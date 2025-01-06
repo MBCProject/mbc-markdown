@@ -62,6 +62,7 @@ See ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/tec
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|--|Rombertik gets the disk size. [[9]](#9)|
 |[**Shamoon**](../xample-malware/shamoon.md)|2012|--|Shamoon gets the hostname. [[9]](#9)|
 |[**UP007**](../xample-malware/up007.md)|2016|--|The malware queries environment variables. [[9]](#9)|
+|[**Snake**](../xample-malware/snake.md)|2004|--|Snake gets the OS version, disk size, machine name, and geographic location [[11]](#11)|
 
 ## Detection
 
@@ -135,3 +136,5 @@ call    dword ptr [->KERNEL32.DLL::GetEnvironmentVariableW]     ; call function 
 <a name="9">[9]</a> capa v4.0, analyzed at MITRE on 10/12/2022
 
 <a name="10">[10]</a> https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/
+
+<a name="11">[11]</a> https://www.cybereason.com/blog/research/threat-analysis-report-snake-infostealer-malware
