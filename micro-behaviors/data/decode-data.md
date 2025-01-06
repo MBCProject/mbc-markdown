@@ -36,3 +36,13 @@ Malware may decode data.
 |---|---|---|
 |**Base64**|C0053.001|Malware may decode data using base64.|
 |**XOR**|C0053.002|Malware may use XOR to decode data.|
+
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Snake**](../xample-malware/snake.md)|2004|C0053.001|Snake decodes data stored in base64 during the unpacking process [[1]](#1)|
+
+## References
+
+<a name="1">[1]</a> https://www.cybereason.com/blog/research/threat-analysis-report-snake-infostealer-malware
