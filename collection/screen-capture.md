@@ -49,6 +49,7 @@ See ATT&CK: **Screen Capture ([T1113](https://attack.mitre.org/techniques/T1113/
 |[**Hupigon**](../xample-malware/hupigon.md)|2013|E1113.m01|Malware captures screenshots. [[5]](#5)|
 |[**Kovter**](../xample-malware/kovter.md)|2016|E1113.m01|Malware captures screenshots. [[5]](#5)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|E1113.m01|Malware captures screenshots. [[5]](#5)|
+|[**Snake**](../xample-malware/snake.md)|2004|--|Malware captures screenshots. [[6]](#6)|
 
 ## Detection
 
@@ -95,4 +96,6 @@ call    dword ptr [->GDI32.DLL::BitBlt] ; Windows API function to transfer a rec
 <a name="4">[4]</a> https://web.archive.org/web/20210307034415/https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf
 
 <a name="5">[5]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
+<a name="6">[6]</a> https://www.cybereason.com/blog/research/threat-analysis-report-snake-infostealer-malware
 
