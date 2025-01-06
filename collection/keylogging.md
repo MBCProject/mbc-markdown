@@ -56,6 +56,7 @@ See ATT&CK: **Input Capture: Keylogging ([T1056.001](https://attack.mitre.org/te
 |[**Redhip**](../xample-malware/redhip.md)|2011|F0002.002|Malware logs keystrokes via polling. [[9]](#9)|
 |[**Rombertik**](../xample-malware/rombertik.md)|2015|F0002.002|Malware logs keystrokes via polling. [[9]](#9)|
 |[**Ursnif**](../xample-malware/ursnif.md)|2016|F0002.002|Malware logs keystrokes via polling. [[9]](#9)|
+|[**Snake**](../xample-malware/snake.md)|2004|F0002.001|Malware logs keystrokes via application hook. [[10]](#10)|
 
 ## Detection
 
@@ -103,4 +104,6 @@ setnz   al      ; if the previous condition is not met (the zero flag is 1), a 1
 <a name="8">[8]</a> https://www.mandiant.com/sites/default/files/2021-09/rpt-poison-ivy.pdf
 
 <a name="9">[9]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
+<a name="10">[10]</a> https://www.cybereason.com/blog/research/threat-analysis-report-snake-infostealer-malware
 
