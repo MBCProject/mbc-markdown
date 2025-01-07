@@ -37,6 +37,12 @@ Malware creates a file.
 |**Create Office Document**|C0016.001|An Office document is created.|
 |**Create Ransomware File**|C0016.002|Create a file used by ransomware.|
 
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Snake**](../../xample-malware/snake.md)|2004|--|Snake creates files. [[1]](#1)|
+
 ## Detection
 
 |Tool: capa|Mapping|APIs|
@@ -71,3 +77,8 @@ Malware creates a file.
 |[stack_pivot_file_created](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/stack_pivot.py)|StackPivotFileCreated|Create File (C0016)|NtCreateFile|
 |[masslogger_files](https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/infostealer_masslogger.py)|MassLoggerFiles|Create File (C0016)|--|
 |[stealth_file](https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/stealth_file.py)|StealthFile|Create File (C0016)|NtSetInformationFile, NtClose, NtCreateFile, NtDuplicateObject, NtOpenFile|
+
+## References
+
+<a name="1">[1]</a> https://www.cybereason.com/blog/research/threat-analysis-report-snake-infostealer-malware
+
