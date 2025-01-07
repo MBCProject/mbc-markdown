@@ -40,6 +40,7 @@ Malware copies a file.
 |[**Mebromi**](../../xample-malware/mebromi.md)|2011|--|Mebromi copies files. [[1]](#1)|
 |[**Redhip**](../../xample-malware/redhip.md)|2011|--|Redhip copies files. [[1]](#1)|
 |[**Shamoon**](../../xample-malware/shamoon.md)|2012|--|Shamoon copies files. [[1]](#1)|
+|[**Snake**](../../xample-malware/snake.md)|2004|--|Snake copies files. [[2]](#2)|
 
 ## Detection
 
@@ -54,4 +55,6 @@ Malware copies a file.
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
+<a name="2">[2]</a> https://www.cybereason.com/blog/research/threat-analysis-report-snake-infostealer-malware
 
