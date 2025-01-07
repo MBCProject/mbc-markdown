@@ -34,6 +34,7 @@ Malware may compress data.
 
 |Name|ID|Description|
 |---|---|---|
+|**aPLib**|C0024.003|Malware decompresses data using aPLib.|
 |**IEncodingFilterFactory**|C0024.002|Malware compresses data using IEncodingFilterFactory.|
 |**QuickLZ**|C0024.001|Malware compresses data using QuickLZ.|
 
