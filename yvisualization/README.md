@@ -1,17 +1,33 @@
 # Malware Behavior Visualization
 
-We investigated the [STIX Visualizer (STIXviz)](https://github.com/oasis-open/cti-stix-visualization) and the [Attack Flow Builder (AFB)](https://github.com/center-for-threat-informed-defense/attack-flow) for visualizing malware behaviors as defined by MBC and ATT&CK. Example graphs are given for [Lactrodectus]() and [IceID](). 
-
-We assume the reader is familiar with [Structured Thrreat Information Expression (STIX)](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html) (a language and serialization format used to exchange cyber threat intelligence) and [Attack Flow](https://github.com/center-for-threat-informed-defense/attack-flow) (a language for describing how cyber adversaries combine and sequende offensive techniques to achieve their goals).
+We investigated the [STIX Visualizer (STIXviz)](https://github.com/oasis-open/cti-stix-visualization) and the [Attack Flow Builder (AFB)](https://github.com/center-for-threat-informed-defense/attack-flow) for visualizing malware behaviors as defined by MBC and ATT&CK. We assume the reader is familiar with [Structured Thrreat Information Expression (STIX)](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html) (a language and serialization format used to exchange cyber threat intelligence) and [Attack Flow](https://github.com/center-for-threat-informed-defense/attack-flow) (a language for describing how cyber adversaries combine and sequence offensive techniques to achieve their goals).
 
 **Choosing between STIXviz and AFB**
 
-The STIXviz user interface is more advanced than AFB's, so if STIX content is available or easy for the user to generate, STIXviz may be the better option. However, creating a behavior graph when a STIX representation is not available is much easier with AFB. Capturing temporal flow/chronology is also in AFB (AFB was designed for "flows").
+The STIXviz user interface is more advanced than AFB's, so if STIX content is available or easy for the user to generate, STIXviz may be the better option. However, creating a behavior graph when a STIX representation is not available is much easier with AFB. 
 
 Other considerations:
-- Relationships in AFB are very basic (details not captured).
+- Both tools offer unique advantages and may be best used in combination. 
+- Capturing temporal flow/chronology is easy in AFB (AFB was designed for "flows").
+- AFB relationships are very basic compared to STIX Relationship Objects (SROs).
 - For someone familiar with STIX, building a graph in AFB may take more time than generating STIX.
 - AFB can be used as a tool for generating STIX. The AFB "Publish Attack Flow" option produces a STIX bundle. The resulting JSON output is not fully aligned with STIX (for example, STIX Relationship Objects are missing) but the output is a good start and can be displayed in STIXviz. 
+
+## Example Behavior Graphs 
+
+**IceID**
+
+- [AFB graph]() (image)
+- [STIX graph]() (image)
+- [.afb file]() (loadable into AFB)
+- [STIX JSON file]() (loadable into STIXviz)
+
+**Lactrodectus**
+
+- [AFB graph]() (image)
+- [STIX graph]() (image)
+- [.afb file]() (loadable into AFB)
+- [STIX JSON file]() (loadable into STIXviz)
 
 ## **[STIX Visualizer](https://github.com/oasis-open/cti-stix-visualization)**
 The STIX Visualizer (STIXviz) displays STIX content supported by various schemas. Malware analysis information should be captured in STIX using the [Malware Behavior Extension](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/malware-behavior-8e9); details and its schema are available in the [OASIS Common Object Repository (COR)](https://github.com/oasis-open/cti-stix-common-objects/tree/main).
