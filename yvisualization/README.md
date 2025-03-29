@@ -65,7 +65,7 @@ The Attack Flow Builder allows a user to build a graph by inserting nodes and ed
 - [AFB STIX Extension Definition Object](https://github.com/center-for-threat-informed-defense/attack-flow/tree/main/stix)
 - [Attack Flow STIX schema](https://github.com/center-for-threat-informed-defense/attack-flow/tree/main/stix)     
 
-**Usage Note**
+**Usage Notes**
 
 - ATT&CK Tactics and Techniques are available in property drop-down menus.
 - MBC Behaviors and Methods must be manually entered.
