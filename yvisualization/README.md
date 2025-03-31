@@ -15,19 +15,19 @@ Other considerations:
 
 ## Example Behavior Graphs 
 
-**IceID**
+**IcedID**
 
-- [AFB graph]() (image)
-- [STIX graph]() (image)
-- [.afb file]() (loadable into AFB)
-- [STIX JSON file]() (loadable into STIXviz)
+- [AFB graph](./attack-flow-builder/icedid/IcedID-032725.png) (image)
+- [STIX graph](./stix-visualizer/icedid/icedid-viz.png) (image)
+- [.afb file](./attack-flow-builder/icedid/IcedID-032725.afb) (loadable into AFB)
+- [STIX JSON file](./stix-visualizer/icedid/icedid-stix.json) (loadable into STIXviz)
 
 **Lactrodectus**
 
-- [AFB graph]() (image)
-- [STIX graph]() (image)
-- [.afb file]() (loadable into AFB)
-- [STIX JSON file]() (loadable into STIXviz)
+- [AFB graph](./attack-flow-builder/latrodectus/Latrodectus-032725.png) (image)
+- [STIX graph](./stix-visualizer/latrodectus/latrodectus-viz.png) (image)
+- [.afb file](./attack-flow-builder/latrodectus/Latrodectus-032725.afb) (loadable into AFB)
+- [STIX JSON file](./stix-visualizer/latrodectus/latrodectus-stix.json) (loadable into STIXviz)
 
 ## **[STIX Visualizer](https://github.com/oasis-open/cti-stix-visualization)**
 The STIX Visualizer (STIXviz) displays STIX content supported by various schemas. Malware analysis information should be captured in STIX using the [Malware Behavior Extension](https://github.com/oasis-open/cti-stix-common-objects/tree/main/extension-definition-specifications/malware-behavior-8e9); details and its schema are available in the [OASIS Common Object Repository (COR)](https://github.com/oasis-open/cti-stix-common-objects/tree/main).
@@ -45,7 +45,8 @@ The STIX Visualizer (STIXviz) displays STIX content supported by various schemas
 
 **Usage Notes**
 - For a node to be visable in STIXviz, the object's STIX JSON must be included in the STIX Bundle. The required JSON objects can be found in the STIX 2 representations for [MBC](https://github.com/MBCProject/mbc-stix2.1) and [ATT&CK](https://github.com/mitre/cti/tree/master/enterprise-attack).
-- A custom STIXviz [configuation file - CONFIG FILE MADE AVAILABLE IN yvisualizaiton FOLDER]() is needed to display MBC content.
+- A custom STIXviz [configuation file](./stix-visualizer/stix2viz.js) is needed to display MBC content.
+- A custom set of [MBC icons](./stix-visualizer/mbc-icons.js) is available for displaying MBC content in STIXViz.  Otherwise, STIXviz will use a generic marker for all the object types it does not recognize.
 
 **Best Practices**
 
