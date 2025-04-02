@@ -88,7 +88,7 @@ The Attack Flow Builder allows a user to build a graph by inserting nodes and ed
 **Usage Notes**
 
 - ATT&CK Tactics and Techniques are available in property drop-down menus.
-- MBC Behaviors and Methods must be manually entered.
+- MBC Behaviors, Methods, and Objectives must be manually entered.
 - Any Action node without an incoming edge is considered a start_ref to the Flow.
 - AFB relationships are all generic "related-to" (i.e., relationships have no properties).
 - In the STIX output, relationships are only created between Attack Flow objects (Actions, Assets).
@@ -96,7 +96,7 @@ The Attack Flow Builder allows a user to build a graph by inserting nodes and ed
 
 **Best Practices**
 
-- Used the description field for details that will help the viewer's understanding.
+- Use the description field for details that will help the viewer's understanding.
 - When capturing ATT&CK content, Action objects are better than STIX objects because they offer drop-down menus of ATT&CK Tactics and Techniques.
 - MBC content should be captured with Action objects to align with the capture of ATT&CK content. 
 - STIX Observables should be used instead of AFB Assets because they have more properties for capturing details.
