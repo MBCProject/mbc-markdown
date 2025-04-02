@@ -17,6 +17,7 @@ Other considerations:
 
 **IcedID**
 
+- [Source blog](https://www.cybereason.com/blog/threat-analysis-from-icedid-to-domain-compromise)
 - [AFB graph](./attack-flow-builder/icedid/IcedID-032725.png) (image)
 - [STIX graph](./stix-visualizer/icedid/icedid-viz.png) (image)
 - [.afb file](./attack-flow-builder/icedid/IcedID-032725.afb) (loadable into AFB)
@@ -24,6 +25,7 @@ Other considerations:
 
 **Lactrodectus**
 
+- [Source blog](https://www.bitsight.com/blog/latrodectus-are-you-coming-back)
 - [AFB graph](./attack-flow-builder/latrodectus/Latrodectus-032725.png) (image)
 - [STIX graph](./stix-visualizer/latrodectus/latrodectus-viz.png) (image)
 - [.afb file](./attack-flow-builder/latrodectus/Latrodectus-032725.afb) (loadable into AFB)
