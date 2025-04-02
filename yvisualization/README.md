@@ -1,6 +1,6 @@
 # Malware Behavior Visualization
 
-We investigated the [STIX Visualizer (STIXviz)](https://github.com/oasis-open/cti-stix-visualization) and the [Attack Flow Builder (AFB)](https://github.com/center-for-threat-informed-defense/attack-flow) for visualizing malware behaviors as defined by MBC and ATT&CK. We assume the reader is familiar with [Structured Thrreat Information Expression (STIX)](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html) (a language and serialization format used to exchange cyber threat intelligence) and [Attack Flow](https://github.com/center-for-threat-informed-defense/attack-flow) (a language for describing how cyber adversaries combine and sequence offensive techniques to achieve their goals).
+We investigated the [STIX Visualizer (STIXviz)](https://github.com/oasis-open/cti-stix-visualization) and the [Attack Flow Builder (AFB)](https://github.com/center-for-threat-informed-defense/attack-flow) for visualizing malware behaviors as defined by MBC and ATT&CK. We assume the reader is familiar with [Structured Threat Information Expression (STIX)](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html) (a language and serialization format used to exchange cyber threat intelligence) and [Attack Flow](https://github.com/center-for-threat-informed-defense/attack-flow) (a language for describing how cyber adversaries combine and sequence offensive techniques to achieve their goals).
 
 **Choosing between STIXviz and AFB**
 
