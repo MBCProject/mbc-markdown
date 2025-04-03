@@ -63,6 +63,7 @@ This description refines the ATT&CK **Obfuscated Files or Information: Software 
 |[**DarkComet**](../xample-malware/dark-comet.md)|2008|--|DarkComet has the option to compress its payload using UPX or MPRESS.  [[6]](#6)|
 |[**TrickBot**](../xample-malware/trickbot.md)|2016|--|The malware has a custom packer to obfuscate itself. [[7]](#7)|
 |[**Emotet**](../xample-malware/emotet.md)|2018|F0001.005|Emotet uses custom packers which first decrypt the loaders and the loaders decrypt and load Emotet's main payloads. [[8]](#8)|
+|[**Snake**](../xample-malware/snake.md)|2004|--|Snake is distributed in a packed format. [[9]](#9)|
 
 ## Detection
 
@@ -134,4 +135,6 @@ This description refines the ATT&CK **Obfuscated Files or Information: Software 
 <a name="7">[7]</a> https://www.securityartwork.es/wp-content/uploads/2017/07/Trickbot-report-S2-Grupo.pdf
 
 <a name="8">[8]</a> https://documents.trendmicro.com/assets/white_papers/ExploringEmotetsActivities_Final.pdf
+
+<a name="9">[9]</a> https://www.cybereason.com/blog/research/threat-analysis-report-snake-infostealer-malware
 

@@ -47,6 +47,7 @@ Malware deletes a file.
 |[**Shamoon**](../../xample-malware/shamoon.md)|2012|--|Shamoon deletes files. [[1]](#1)|
 |[**Stuxnet**](../../xample-malware/stuxnet.md)|2010|--|Stuxnet deletes files. [[1]](#1)|
 |[**UP007**](../../xample-malware/up007.md)|2016|--|UP007 deletes files. [[1]](#1)|
+|[**Snake**](../../xample-malware/snake.md)|2004|--|Snake deletes files. [[2]](#2)|
 
 ## Detection
 
@@ -83,4 +84,7 @@ sbb     eax, eax        ; isolate the carry flag from the previous comparison.  
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
+<a name="2">[2]</a> https://www.cybereason.com/blog/research/threat-analysis-report-snake-infostealer-malware
+
 

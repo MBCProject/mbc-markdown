@@ -55,6 +55,8 @@ Malware may decrypt data.
 |---|---|---|---|
 |[**BlackEnergy**](../../xample-malware/blackenergy.md)|2007|--|BlackEnergy encrypts or decrypts via WinCrypt. [[1]](#1)|
 |[**Kovter**](../../xample-malware/kovter.md)|2016|--|Encrypt or decrypt via WinCrypt [[1]](#1)|
+|[**Snake**](../../xample-malware/snake.md)|2004|C0031.001|Decrypts credential stores using AES [[2]](#2)|
+|[**Snake**](../../xample-malware/snake.md)|2004|C0031.005|Decrypts .NET assembly with 3DES [[2]](#2)|
 
 ## Detection
 
@@ -128,4 +130,6 @@ retn
 ## References
 
 <a name="1">[1]</a> capa v4.0, analyzed at MITRE on 10/12/2022
+
+<a name="2">[2]</a> https://www.cybereason.com/blog/research/threat-analysis-report-snake-infostealer-malware
 

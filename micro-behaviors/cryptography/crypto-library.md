@@ -37,6 +37,12 @@ Malware uses a crypto library.
 |**API Call**|C0059.001|Malware uses crypto API calls.|
 |**Static Public Library**|C0059.002|A public crypto library is embedded in the code.|
 
+## Use in Malware
+
+|Name|Date|Method|Description|
+|---|---|---|---|
+|[**Snake**](../../xample-malware/snake.md)|2004|C0059.001|Snake uses API calls to interface with cryptographic libraries. [[1]](#1)|
+
 ## Detection
 
 |Tool: capa|Mapping|APIs|
@@ -46,3 +52,7 @@ Malware uses a crypto library.
 |[linked against OpenSSL](https://github.com/mandiant/capa-rules/blob/master/linking/static/openssl/linked-against-openssl.yml)|Crypto Library (C0059)|--|
 |[linked against PolarSSL/mbed TLS](https://github.com/mandiant/capa-rules/blob/master/linking/static/polarssl/linked-against-polarsslmbed-tls.yml)|Crypto Library (C0059)|--|
 |[linked against wolfSSL](https://github.com/mandiant/capa-rules/blob/master/linking/static/wolfssl/linked-against-wolfssl.yml)|Crypto Library (C0059)|--|
+
+## References
+
+<a name="1">[1]</a> https://www.cybereason.com/blog/research/threat-analysis-report-snake-infostealer-malware
