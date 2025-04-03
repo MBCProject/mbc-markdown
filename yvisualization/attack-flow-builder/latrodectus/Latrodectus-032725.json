@@ -1,0 +1,749 @@
+{
+  "type": "bundle",
+  "id": "bundle--01ade9ab-1f53-4a2e-ad67-ec97110f0a16",
+  "spec_version": "2.1",
+  "created": "2025-03-31T13:09:11.852Z",
+  "modified": "2025-03-31T13:09:11.852Z",
+  "objects": [
+    {
+      "type": "extension-definition",
+      "id": "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4",
+      "spec_version": "2.1",
+      "created": "2022-08-02T19:34:35.143Z",
+      "modified": "2022-08-02T19:34:35.143Z",
+      "name": "Attack Flow",
+      "description": "Extends STIX 2.1 with features to create Attack Flows.",
+      "created_by_ref": "identity--fb9c968a-745b-4ade-9b25-c324172197f4",
+      "schema": "https://center-for-threat-informed-defense.github.io/attack-flow/stix/attack-flow-schema-2.0.0.json",
+      "version": "2.0.0",
+      "extension_types": [
+        "new-sdo"
+      ],
+      "external_references": [
+        {
+          "source_name": "Documentation",
+          "description": "Documentation for Attack Flow",
+          "url": "https://center-for-threat-informed-defense.github.io/attack-flow"
+        },
+        {
+          "source_name": "GitHub",
+          "description": "Source code repository for Attack Flow",
+          "url": "https://github.com/center-for-threat-informed-defense/attack-flow"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "id": "identity--fb9c968a-745b-4ade-9b25-c324172197f4",
+      "spec_version": "2.1",
+      "created": "2022-08-02T19:34:35.143Z",
+      "modified": "2022-08-02T19:34:35.143Z",
+      "created_by_ref": "identity--fb9c968a-745b-4ade-9b25-c324172197f4",
+      "name": "MITRE Center for Threat-Informed Defense",
+      "identity_class": "organization"
+    },
+    {
+      "type": "attack-flow",
+      "id": "attack-flow--63e420c7-562f-4a0a-ac7d-7e59f6b904c3",
+      "spec_version": "2.1",
+      "created": "2025-02-04T14:50:20.511Z",
+      "modified": "2025-03-31T13:09:11.853Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "created_by_ref": "identity--98a5dd1b-9f86-4599-aa25-9ef0b78f3791",
+      "start_refs": [
+        "attack-action--257ffdd4-bb50-425b-9091-f82fc184eccc",
+        "attack-action--7083e4bb-73a9-4982-b891-e65a17fd4cb3",
+        "attack-action--c7f20500-3dab-4ffc-b3cb-545a1b901925",
+        "attack-action--582fdf4c-da5a-45f9-ae83-b9dad0d8ccc5",
+        "attack-action--0eea63f2-14c5-404e-840d-1bcf082fe164",
+        "attack-condition--ed9ce25e-3124-46c3-9800-bf118b65c99c"
+      ],
+      "name": "Latrodectus",
+      "scope": "malware",
+      "external_references": [
+        {
+          "source_name": "Latrodectus, are you coming back? | Bitsight",
+          "url": "https://www.bitsight.com/blog/latrodectus-are-you-coming-back"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "id": "identity--98a5dd1b-9f86-4599-aa25-9ef0b78f3791",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.853Z",
+      "modified": "2025-03-31T13:09:11.853Z",
+      "name": "Maddie Bright",
+      "identity_class": "individual",
+      "contact_information": "mbright@mitre.org"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--257ffdd4-bb50-425b-9091-f82fc184eccc",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.853Z",
+      "modified": "2025-03-31T13:09:11.853Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Process Environment Block BeingDebugged",
+      "tactic_id": "OB0001",
+      "technique_id": "B0001.035"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--7083e4bb-73a9-4982-b891-e65a17fd4cb3",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.853Z",
+      "modified": "2025-03-31T13:09:11.853Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Check Processes",
+      "tactic_id": "OB0001",
+      "technique_id": "B0009.004",
+      "description": "Assesses for > 75 running processes for Windows 10 and newer, > 50 for OS older than Windows 10"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--c7f20500-3dab-4ffc-b3cb-545a1b901925",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Modern Specs Check",
+      "tactic_id": "OB0001",
+      "technique_id": "B0009.013",
+      "description": "Checks for 64-bit host"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--582fdf4c-da5a-45f9-ae83-b9dad0d8ccc5",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Unique Hardware/Firmware Check - MAC Address",
+      "tactic_id": "OB0001",
+      "technique_id": "B0009.028",
+      "description": "Ensures MAC addresses exist and are valid values"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--0eea63f2-14c5-404e-840d-1bcf082fe164",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Check Mutex",
+      "tactic_id": "OC0003",
+      "technique_id": "C0043",
+      "description": "Looks for mutex named 'running'",
+      "effect_refs": [
+        "attack-condition--4091668b-3f98-4b05-95a9-521ec3d6703a"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--e594ebea-5a98-4200-81ac-6a688e657831",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "System Information Discovery",
+      "tactic_id": "OB0007",
+      "technique_id": "E1082",
+      "description": "GetVolumeInformationW is used to determine the serial number for computing the bot ID",
+      "effect_refs": [
+        "attack-action--961e50bf-5799-43f2-9277-df5d72d27de3"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--218c1310-e244-493c-a8d5-76a71befb735",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "XOR",
+      "tactic_id": "OC0004",
+      "technique_id": "C0053.002",
+      "description": "Decodes XOR-encrypted file contents"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--25137e20-5ce8-42f5-ba2e-ff1cbc5c32c5",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Read File",
+      "tactic_id": "OC0001",
+      "technique_id": "C0051",
+      "description": "Fetches the C2 URLs",
+      "effect_refs": [
+        "attack-action--218c1310-e244-493c-a8d5-76a71befb735"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--6daf1e2b-0451-4233-9274-4e29c95e4204",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Authentication",
+      "tactic_id": "OB0004",
+      "technique_id": "B0030.011",
+      "description": "sends MAC addresses, hostname, and host domain"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--f7a96d30-4e16-4955-94bc-64aa95732254",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "RC4",
+      "tactic_id": "OC0005",
+      "technique_id": "C0027.009",
+      "technique_ref": "attack-pattern--005a06c6-14bf-4118-afa0-ebcd8aebb0c9",
+      "description": "Encypt the C2 beacon",
+      "effect_refs": [
+        "attack-action--02f64672-ba05-4090-b1ef-066a28e7f0a5"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--02f64672-ba05-4090-b1ef-066a28e7f0a5",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Base64",
+      "tactic_id": "OC0005",
+      "technique_id": "C0026.001",
+      "description": "Encode the C2 beacon",
+      "effect_refs": [
+        "attack-action--29c279a7-55af-4e93-9bc6-68923570ac0f"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--c7b64762-30d9-42af-90f3-994fd35ae504",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Directory Listing",
+      "tactic_id": "OB0004",
+      "technique_id": "B0030.012",
+      "description": "Collects file names from desktop"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--f0d4d59a-1f6a-4d51-8c6a-268be304f864",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Send System Information",
+      "tactic_id": "OB0004",
+      "technique_id": "B0030.006",
+      "description": "Runs pre-set group of WIndows recon commands"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--8fafaa85-739d-4c15-9038-f9f0cf20c92e",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Process Discovery",
+      "tactic_id": "TA0007",
+      "tactic_ref": "x-mitre-tactic--c17c5845-175e-4421-9713-829d0573dbc9",
+      "technique_id": "T1057",
+      "technique_ref": "attack-pattern--8f4a33ec-8b1f-4b80-a2f6-642b2e479580",
+      "description": "collects PIDs and names of running processes"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--17382d39-8d97-457d-9a89-0f8d77dae0de",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Server to Client File Transfer",
+      "tactic_id": "OB0004",
+      "technique_id": "B0030.003",
+      "description": "Downloads DLL or EXE files"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--9bbbe9ff-b82f-40d9-840d-c6ad2439b7e6",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Execute File",
+      "tactic_id": "OB0004",
+      "technique_id": "B0030.013",
+      "description": "Uses rundll32 or cmd.exe to execute transferred files"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--f5c36be6-4afc-45bb-b98e-76f4f6a1e09b",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Ingress Tool Transfer",
+      "tactic_id": "OB0004",
+      "technique_id": "E1105",
+      "description": "Downloads a stealer module"
+    },
+    {
+      "type": "grouping",
+      "id": "grouping--1d85143a-059a-438c-a794-10012880f3e8",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "name": "Sandbox/VM Checks",
+      "context": "Malware checks to ensure it is not executing within an analysis environment",
+      "object_refs": [
+        "attack-condition--ed9ce25e-3124-46c3-9800-bf118b65c99c",
+        "attack-action--582fdf4c-da5a-45f9-ae83-b9dad0d8ccc5",
+        "attack-action--257ffdd4-bb50-425b-9091-f82fc184eccc",
+        "attack-action--7083e4bb-73a9-4982-b891-e65a17fd4cb3",
+        "attack-action--0eea63f2-14c5-404e-840d-1bcf082fe164",
+        "attack-action--c7f20500-3dab-4ffc-b3cb-545a1b901925"
+      ]
+    },
+    {
+      "type": "attack-condition",
+      "id": "attack-condition--ed9ce25e-3124-46c3-9800-bf118b65c99c",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "description": "Discovers Indication of Execution in Sandbox?",
+      "on_false_refs": [
+        "attack-action--e594ebea-5a98-4200-81ac-6a688e657831"
+      ],
+      "on_true_refs": [
+        "attack-action--f2cc7510-ee8e-46b2-b110-56e51506d094"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--961e50bf-5799-43f2-9277-df5d72d27de3",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Non-cryptographic Hash: FNV Hash",
+      "tactic_id": "OC0004",
+      "technique_id": "C0030.005",
+      "description": "Used to calculate group ID",
+      "effect_refs": [
+        "attack-action--2e8bc208-cd80-44ed-ad8f-cf71d00749d3"
+      ]
+    },
+    {
+      "type": "attack-condition",
+      "id": "attack-condition--0f72ef7c-2379-44d9-9927-424fcfb6968c",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "description": "C2 File Exists?",
+      "on_true_refs": [
+        "attack-action--25137e20-5ce8-42f5-ba2e-ff1cbc5c32c5"
+      ],
+      "on_false_refs": [
+        "attack-action--6daf1e2b-0451-4233-9274-4e29c95e4204"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--2e8bc208-cd80-44ed-ad8f-cf71d00749d3",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Self-Discovery",
+      "tactic_id": "OB0007",
+      "technique_id": "B0038",
+      "description": "Check exe running from %appdata%",
+      "effect_refs": [
+        "attack-condition--c8cbe298-71ee-4ae3-92eb-dbd4e2e66a4f"
+      ]
+    },
+    {
+      "type": "attack-condition",
+      "id": "attack-condition--c8cbe298-71ee-4ae3-92eb-dbd4e2e66a4f",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "description": "Executing from AppData?",
+      "on_false_refs": [
+        "attack-action--3444fb5b-da4d-462f-88ce-3f7453e37f47"
+      ],
+      "on_true_refs": [
+        "attack-action--d0667ee0-ef70-49e0-a96a-b6777bda94ce"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--3444fb5b-da4d-462f-88ce-3f7453e37f47",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Copy FIle",
+      "tactic_id": "OC0001",
+      "technique_id": "C0045",
+      "description": "Copies executable to %appdata%",
+      "effect_refs": [
+        "attack-action--f2cfaa6c-5204-4708-8864-8f1d277c3170"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--73fd998a-ea52-4cdb-a957-e08cbefef97d",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Delete FIle",
+      "tactic_id": "OC0001",
+      "technique_id": "C0047",
+      "description": "Deletes old executable after executing in appdata"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--d0667ee0-ef70-49e0-a96a-b6777bda94ce",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Scheduled Task",
+      "tactic_id": "TA0003",
+      "tactic_ref": "x-mitre-tactic--5bc1d813-693e-4823-9961-abf9af4b0e92",
+      "technique_id": "T1053.005",
+      "technique_ref": "attack-pattern--005a06c6-14bf-4118-afa0-ebcd8aebb0c9",
+      "description": "Creates task which runs at every logon",
+      "effect_refs": [
+        "attack-condition--0f72ef7c-2379-44d9-9927-424fcfb6968c"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--bc4c9f48-8244-494a-9241-7b062bd4620d",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Receive Data",
+      "tactic_id": "OB0004",
+      "technique_id": "B0030.002",
+      "description": "Receives commands from C2"
+    },
+    {
+      "type": "grouping",
+      "id": "grouping--56d45603-8674-4651-8e68-b9aa9ffa8737",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "name": "C2 Commands",
+      "context": "Commands malware receives from C2 and sends data in response",
+      "object_refs": [
+        "attack-action--c7b64762-30d9-42af-90f3-994fd35ae504",
+        "attack-action--f0d4d59a-1f6a-4d51-8c6a-268be304f864",
+        "attack-action--9bbbe9ff-b82f-40d9-840d-c6ad2439b7e6",
+        "attack-action--f5c36be6-4afc-45bb-b98e-76f4f6a1e09b",
+        "attack-action--17382d39-8d97-457d-9a89-0f8d77dae0de",
+        "attack-action--aa621f2f-6695-4280-a648-12b7399d740b",
+        "attack-action--8fafaa85-739d-4c15-9038-f9f0cf20c92e"
+      ]
+    },
+    {
+      "type": "attack-condition",
+      "id": "attack-condition--4091668b-3f98-4b05-95a9-521ec3d6703a",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "description": "Does the mutex already exist?",
+      "on_true_refs": [
+        "attack-action--ea43ca4b-a714-46fa-a2a7-6c0dce01d9e6"
+      ],
+      "on_false_refs": [
+        "attack-action--f2cc7510-ee8e-46b2-b110-56e51506d094"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--ea43ca4b-a714-46fa-a2a7-6c0dce01d9e6",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Create Mutex",
+      "tactic_id": "OC0003",
+      "technique_id": "C0041",
+      "description": "Mutex ensures only one instance of malware is running"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--aa621f2f-6695-4280-a648-12b7399d740b",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Write File",
+      "tactic_id": "OC0001",
+      "technique_id": "C0052",
+      "description": "Updates C2 URL file"
+    },
+    {
+      "type": "grouping",
+      "id": "grouping--2b4339ab-0b45-4cea-935f-9eda3205ab0a",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "name": "C2 Communications Loop",
+      "context": "After a C2 connection is established, the bot waits to receive commands and sends data back to the C2.",
+      "object_refs": [
+        "attack-action--f7a96d30-4e16-4955-94bc-64aa95732254",
+        "grouping--56d45603-8674-4651-8e68-b9aa9ffa8737",
+        "attack-action--bc4c9f48-8244-494a-9241-7b062bd4620d"
+      ]
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--29c279a7-55af-4e93-9bc6-68923570ac0f",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Send Data",
+      "tactic_id": "OB0004",
+      "technique_id": "B0030.001",
+      "description": "Data collected by implant as per C2 commands is sent to C2 via HTTPS"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--f2cc7510-ee8e-46b2-b110-56e51506d094",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Suicide Exit",
+      "tactic_id": "OB0009",
+      "technique_id": "B0025.001"
+    },
+    {
+      "type": "file",
+      "id": "file--4d78d74a-eaf4-477d-ad24-fdbba67fa4cd",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "name": "Executable"
+    },
+    {
+      "type": "attack-action",
+      "id": "attack-action--f2cfaa6c-5204-4708-8864-8f1d277c3170",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.854Z",
+      "modified": "2025-03-31T13:09:11.854Z",
+      "extensions": {
+        "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
+          "extension_type": "new-sdo"
+        }
+      },
+      "name": "Command and Scripting Interpreter",
+      "technique_id": "T1059",
+      "technique_ref": "attack-pattern--7385dfaf-6886-4229-9ecd-6fd678040830",
+      "effect_refs": [
+        "attack-action--d0667ee0-ef70-49e0-a96a-b6777bda94ce",
+        "attack-action--73fd998a-ea52-4cdb-a957-e08cbefef97d"
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--6780f44b-8e45-4f5e-a711-4075fe133e2d",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.855Z",
+      "modified": "2025-03-31T13:09:11.855Z",
+      "relationship_type": "related-to",
+      "source_ref": "attack-action--218c1310-e244-493c-a8d5-76a71befb735",
+      "target_ref": "grouping--2b4339ab-0b45-4cea-935f-9eda3205ab0a"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--c4f5f848-38e3-49df-84c4-19ee77a12f14",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.855Z",
+      "modified": "2025-03-31T13:09:11.855Z",
+      "relationship_type": "related-to",
+      "source_ref": "attack-action--6daf1e2b-0451-4233-9274-4e29c95e4204",
+      "target_ref": "grouping--2b4339ab-0b45-4cea-935f-9eda3205ab0a"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--5558d034-8b62-420b-9b76-9de3fe217b4f",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.855Z",
+      "modified": "2025-03-31T13:09:11.855Z",
+      "relationship_type": "related-to",
+      "source_ref": "attack-action--3444fb5b-da4d-462f-88ce-3f7453e37f47",
+      "target_ref": "file--4d78d74a-eaf4-477d-ad24-fdbba67fa4cd"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--22778212-ea2d-41bb-b207-248a2fd9e048",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.855Z",
+      "modified": "2025-03-31T13:09:11.855Z",
+      "relationship_type": "related-to",
+      "source_ref": "file--4d78d74a-eaf4-477d-ad24-fdbba67fa4cd",
+      "target_ref": "attack-action--73fd998a-ea52-4cdb-a957-e08cbefef97d"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--34d11c40-be04-48ca-9799-c1f134037a24",
+      "spec_version": "2.1",
+      "created": "2025-03-31T13:09:11.855Z",
+      "modified": "2025-03-31T13:09:11.855Z",
+      "relationship_type": "related-to",
+      "source_ref": "file--4d78d74a-eaf4-477d-ad24-fdbba67fa4cd",
+      "target_ref": "attack-action--f2cfaa6c-5204-4708-8864-8f1d277c3170"
+    }
+  ]
+}
