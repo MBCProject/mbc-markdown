@@ -53,6 +53,6 @@ Malware uses a crypto library.
 |[linked against PolarSSL/mbed TLS](https://github.com/mandiant/capa-rules/blob/master/linking/static/polarssl/linked-against-polarsslmbed-tls.yml)|Crypto Library (C0059)|--|
 |[linked against wolfSSL](https://github.com/mandiant/capa-rules/blob/master/linking/static/wolfssl/linked-against-wolfssl.yml)|Crypto Library (C0059)|--|
 
-##References
+## References
 
 <a name="1">[1]</a> https://www.cybereason.com/blog/research/threat-analysis-report-snake-infostealer-malware
