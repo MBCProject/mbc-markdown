@@ -1951,16 +1951,6 @@
         {
             "type": "relationship",
             "spec_version": "2.1",
-            "id": "relationship--e6eef865-31b4-4dc9-9bf4-ec3a5ba364b6",
-            "created": "2025-02-12T15:52:19.755036Z",
-            "modified": "2025-02-12T15:52:19.755036Z",
-            "relationship_type": "uses",
-            "source_ref": "malware--c7e6c857-6891-4c09-953e-16ac17d6a867",
-            "target_ref": "malware-method--9d13adf5-2774-4ea2-bbb1-ba8e8e3ca7ea"
-        },
-        {
-            "type": "relationship",
-            "spec_version": "2.1",
             "id": "relationship--cdf21cbf-996a-44de-8215-13abaffd3773",
             "created": "2025-02-12T15:52:19.755102Z",
             "modified": "2025-02-12T15:52:19.755102Z",
@@ -1974,16 +1964,6 @@
             "id": "relationship--5e23a867-2d1c-413b-807d-6247ea361579",
             "created": "2025-02-12T15:52:19.755168Z",
             "modified": "2025-02-12T15:52:19.755168Z",
-            "relationship_type": "uses",
-            "source_ref": "malware--c7e6c857-6891-4c09-953e-16ac17d6a867",
-            "target_ref": "malware-method--f52bfd6d-ddfa-4552-b99b-8558d5eac711"
-        },
-        {
-            "type": "relationship",
-            "spec_version": "2.1",
-            "id": "relationship--b20d500d-16eb-45a5-9cbc-14f25b5c7273",
-            "created": "2025-02-12T15:52:19.755235Z",
-            "modified": "2025-02-12T15:52:19.755235Z",
             "relationship_type": "uses",
             "source_ref": "malware--c7e6c857-6891-4c09-953e-16ac17d6a867",
             "target_ref": "malware-method--f52bfd6d-ddfa-4552-b99b-8558d5eac711"
